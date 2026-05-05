@@ -111,36 +111,27 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  <!-- SCHEDULED:2026-05-05 -->
-  <!--
+
   <url>
     <loc>https://www.ilaaj.ai/blog/khansi-ka-ilaj</loc>
-    <lastmod>2026-05-03</lastmod>
+    <lastmod>2026-05-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  -->
-  <!-- /SCHEDULED -->
-  <!-- SCHEDULED:2026-05-05 -->
-  <!--
+
   <url>
     <loc>https://www.ilaaj.ai/blog/sugar-ka-ilaj</loc>
-    <lastmod>2026-05-03</lastmod>
+    <lastmod>2026-05-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  -->
-  <!-- /SCHEDULED -->
-  <!-- SCHEDULED:2026-05-05 -->
-  <!--
+
   <url>
     <loc>https://www.ilaaj.ai/blog/blood-pressure-ka-ilaj</loc>
-    <lastmod>2026-05-03</lastmod>
+    <lastmod>2026-05-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  -->
-  <!-- /SCHEDULED -->
   <!-- SCHEDULED:2026-05-06 -->
   <!--
   <url>
