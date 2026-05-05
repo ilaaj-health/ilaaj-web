@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1777700925998,
-  "projectRoot": "D:\\ud2\\ilaaj-ai-web",
+  "lastScanned": 1778005935919,
+  "projectRoot": "D:\\products\\ilaaj\\ilaaj_flutter_node\\ilaaj-ai-web",
   "techStack": {
     "languages": [],
     "frameworks": [],
@@ -37,34 +37,34 @@
     "assets": {
       "path": "assets",
       "purpose": "Static assets",
-      "fileCount": 6,
-      "lastAccessed": 1777700925975,
+      "fileCount": 8,
+      "lastAccessed": 1778005935871,
       "keyFiles": [
+        "2nd card.jpeg",
         "apple-touch-icon.png",
         "favicon-16x16.png",
         "favicon-32x32.png",
-        "favicon.png",
-        "Icon-192.png"
+        "favicon.png"
       ]
     },
     "blog": {
       "path": "blog",
       "purpose": null,
-      "fileCount": 7,
-      "lastAccessed": 1777700925977,
+      "fileCount": 47,
+      "lastAccessed": 1778005935872,
       "keyFiles": [
-        "cancer-101-what-you-need-to-know.html",
-        "cold-or-flu-how-to-tell-the-difference-and-when-to-seek-care.html",
-        "healthy-eating-during-the-holidays.html",
-        "hypertrophic-cardiomyopathy-a-common-genetic-heart-condition-thats-significantly-underdiagnosed.html",
-        "online-doctor-pakistan-mein.html"
+        "acne-ka-ilaj.html",
+        "ai-doctor-pakistan.html",
+        "ai-health-assistant-urdu.html",
+        "ai-prescription-pakistan.html",
+        "ai-symptom-checker-pakistan.html"
       ]
     },
     "css": {
       "path": "css",
       "purpose": null,
       "fileCount": 2,
-      "lastAccessed": 1777700925977,
+      "lastAccessed": 1778005935873,
       "keyFiles": [
         "blog.css",
         "styles.css"
@@ -73,21 +73,21 @@
     "old-v1": {
       "path": "old-v1",
       "purpose": null,
-      "fileCount": 11,
-      "lastAccessed": 1777700925978,
+      "fileCount": 13,
+      "lastAccessed": 1778005935873,
       "keyFiles": [
+        "next-env.d.ts",
         "next.config.js",
         "package-lock.json",
         "package.json",
-        "postcss.config.js",
-        "README.md"
+        "postcss.config.js"
       ]
     },
     "seo": {
       "path": "seo",
       "purpose": null,
       "fileCount": 2,
-      "lastAccessed": 1777700925978,
+      "lastAccessed": 1778005935874,
       "keyFiles": [
         "ACTION-PLAN.md",
         "FULL-AUDIT-REPORT.md"
@@ -97,7 +97,7 @@
       "path": "old-v1\\app",
       "purpose": "Application code",
       "fileCount": 5,
-      "lastAccessed": 1777700925979,
+      "lastAccessed": 1778005935875,
       "keyFiles": [
         "globals.css",
         "layout.tsx",
@@ -108,7 +108,7 @@
       "path": "old-v1\\components",
       "purpose": "UI components",
       "fileCount": 5,
-      "lastAccessed": 1777700925979,
+      "lastAccessed": 1778005935885,
       "keyFiles": [
         "DotGrid.css",
         "DotGrid.js",
@@ -119,7 +119,7 @@
       "path": "old-v1\\lib",
       "purpose": "Library code",
       "fileCount": 1,
-      "lastAccessed": 1777700925980,
+      "lastAccessed": 1778005935886,
       "keyFiles": [
         "utils.ts"
       ]
@@ -128,80 +128,8 @@
   "hotPaths": [
     {
       "path": "index.html",
-      "accessCount": 3,
-      "lastAccessed": 1777701705863,
-      "type": "file"
-    },
-    {
-      "path": "blog.html",
-      "accessCount": 3,
-      "lastAccessed": 1777701714998,
-      "type": "file"
-    },
-    {
-      "path": "doctors.html",
-      "accessCount": 3,
-      "lastAccessed": 1777701727258,
-      "type": "file"
-    },
-    {
-      "path": "privacy-policy.html",
-      "accessCount": 3,
-      "lastAccessed": 1777701731129,
-      "type": "file"
-    },
-    {
-      "path": "support.html",
-      "accessCount": 3,
-      "lastAccessed": 1777701737697,
-      "type": "file"
-    },
-    {
-      "path": "terms-and-conditions.html",
-      "accessCount": 3,
-      "lastAccessed": 1777701744176,
-      "type": "file"
-    },
-    {
-      "path": "blog\\cancer-101-what-you-need-to-know.html",
-      "accessCount": 3,
-      "lastAccessed": 1777701750652,
-      "type": "file"
-    },
-    {
-      "path": "blog\\cold-or-flu-how-to-tell-the-difference-and-when-to-seek-care.html",
-      "accessCount": 3,
-      "lastAccessed": 1777701757477,
-      "type": "file"
-    },
-    {
-      "path": "blog\\healthy-eating-during-the-holidays.html",
-      "accessCount": 3,
-      "lastAccessed": 1777701764424,
-      "type": "file"
-    },
-    {
-      "path": "blog\\hypertrophic-cardiomyopathy-a-common-genetic-heart-condition-thats-significantly-underdiagnosed.html",
-      "accessCount": 3,
-      "lastAccessed": 1777701771300,
-      "type": "file"
-    },
-    {
-      "path": "blog\\online-doctor-pakistan-mein.html",
-      "accessCount": 3,
-      "lastAccessed": 1777701778041,
-      "type": "file"
-    },
-    {
-      "path": "blog\\start-the-new-year-strong-with-healthy.html",
-      "accessCount": 3,
-      "lastAccessed": 1777701784429,
-      "type": "file"
-    },
-    {
-      "path": "blog\\understanding-radiation-therapy-a-guide-for-patients-and-families.html",
-      "accessCount": 3,
-      "lastAccessed": 1777701791383,
+      "accessCount": 2,
+      "lastAccessed": 1778006460434,
       "type": "file"
     }
   ],

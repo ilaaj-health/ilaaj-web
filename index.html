@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+  <!-- Redirect ad/social traffic (fbclid, gclid, utm_*) straight to chat app -->
+  <script>
+    (function () {
+      try {
+        var qs = window.location.search;
+        if (!qs) return;
+        var params = new URLSearchParams(qs);
+        var triggers = ['fbclid', 'gclid', 'gbraid', 'wbraid', 'msclkid', 'ttclid', 'utm_source', 'utm_medium', 'utm_campaign'];
+        var hit = triggers.some(function (k) { return params.has(k); });
+        if (hit) {
+          window.location.replace('https://app.ilaaj.ai/chat' + qs + window.location.hash);
+        }
+      } catch (e) {}
+    })();
+  </script>
   <!-- Sentry: error tracking only (replay disabled — PostHog handles recordings) -->
   <script src="https://js.sentry-cdn.com/defa6ca82daea4d4c49a8b69b87c53cc.min.js" crossorigin="anonymous" defer></script>
   <script>
