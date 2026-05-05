@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <!-- Sentry: error tracking + session replay -->
+  <script src="https://js.sentry-cdn.com/defa6ca82daea4d4c49a8b69b87c53cc.min.js" crossorigin="anonymous"></script>
+  <script>
+    window.sentryOnLoad = function () {
+      Sentry.init({
+        integrations: [Sentry.replayIntegration({ maskAllText: false, blockAllMedia: false })],
+        tracesSampleRate: 0.1,
+        replaysSessionSampleRate: 0.1,
+        replaysOnErrorSampleRate: 1.0,
+      });
+    };
+  </script>
+  <!-- PostHog: product analytics + session replay -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_xjBQ5vUS7nTJz4jHta6d5dDE7jHdtFjFuqkxAJjvcFzo', { api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only', cross_subdomain_cookie: true });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XKTHF96');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Symptom Checker Pakistan — Free Online | Ilaaj AI</title>
+  <meta name="description" content="Pakistan ka pehla AI symptom checker Roman Urdu mein. Apne symptoms describe karein aur AI ka analysis hasil karein, doctor-verified prescription ke option ke saath.">
+  <meta name="robots" content="noindex,follow" data-scheduled="1">
+  <meta name="keywords" content="ai symptom checker pakistan, online symptom checker urdu, free symptom checker, symptoms check karne ka tarika, ilaaj ai">
+  <meta name="geo.region" content="PK">
+  <meta name="geo.placename" content="Pakistan">
+  <meta name="google-site-verification" content="8RtzwgVYowrMGF4E77jnKOX33seYEQTuXmxps2XkPxI">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.ilaaj.ai/blog/ai-symptom-checker-pakistan">
+  <link rel="alternate" hreflang="ur-PK" href="https://www.ilaaj.ai/blog/ai-symptom-checker-pakistan" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ilaaj.ai/blog/ai-symptom-checker-pakistan" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/logo/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/logo/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/logo/site.webmanifest" />
+
+  <!-- PWA / Mobile -->
+  <meta name="theme-color" content="#00897B">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="IlaajAI">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AI Symptom Checker Pakistan — Apne Symptoms Online Check Karein | Ilaaj AI">
+  <meta property="og:description" content="Pakistan ka pehla AI symptom checker Roman Urdu mein. Apne symptoms describe karein aur AI ka analysis hasil karein, doctor-verified prescription ke option ke saath.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ilaaj.ai/blog/ai-symptom-checker-pakistan">
+  <meta property="og:image" content="https://images.pexels.com/photos/4108167/pexels-photo-4108167.jpeg?auto=compress&cs=tinysrgb&w=1200">
+  <meta property="og:image:alt" content="Smartphone health app">
+  <meta property="og:site_name" content="Ilaaj AI">
+  <meta property="og:locale" content="ur_PK">
+  <meta property="article:published_time" content="2026-05-03T16:45:00.000Z">
+  <meta property="article:modified_time" content="2026-05-03T16:45:00.000Z">
+  <meta property="article:author" content="Ilaaj AI Medical Team">
+  <meta property="article:section" content="AI Healthcare">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ilaajai">
+  <meta name="twitter:creator" content="@ilaajai">
+  <meta name="twitter:title" content="AI Symptom Checker Pakistan — Apne Symptoms Online Check Karein | Ilaaj AI">
+  <meta name="twitter:description" content="Pakistan ka pehla AI symptom checker Roman Urdu mein. Apne symptoms describe karein aur AI ka analysis hasil karein, doctor-verified prescription ke option ke saath.">
+  <meta name="twitter:image" content="https://images.pexels.com/photos/4108167/pexels-photo-4108167.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNTMD61HWL"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KNTMD61HWL');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/blog.css">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.ilaaj.ai/blog/ai-symptom-checker-pakistan"
+  },
+  "headline": "AI Symptom Checker Pakistan — Apne Symptoms Online Check Karein",
+  "description": "Pakistan ka pehla AI symptom checker Roman Urdu mein. Apne symptoms describe karein aur AI ka analysis hasil karein, doctor-verified prescription ke option ke saath.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://images.pexels.com/photos/4108167/pexels-photo-4108167.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  },
+  "datePublished": "2026-05-03T16:45:00.000Z",
+  "dateModified": "2026-05-03T16:45:00.000Z",
+  "author": {
+    "@type": "Organization",
+    "name": "Ilaaj AI Medical Team",
+    "url": "https://www.ilaaj.ai/doctors"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ilaaj AI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.ilaaj.ai/assets/Icon-192.png"
+    }
+  },
+  "keywords": "ai symptom checker pakistan, online symptom checker urdu, free symptom checker, symptoms check karne ka tarika, ilaaj ai",
+  "inLanguage": "ur",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Ilaaj AI Blog",
+    "url": "https://www.ilaaj.ai/blog"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.ilaaj.ai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.ilaaj.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "AI Symptom Checker Pakistan — Apne Symptoms Online Check Karein",
+      "item": "https://www.ilaaj.ai/blog/ai-symptom-checker-pakistan"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Online AI symptom checker kitna accurate hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Modern AI symptom checkers (Ilaaj AI, Ada Health, Symptomate) common conditions ke liye 70-80% accurate hain. Magar yeh diagnostic tools nahi hain — yeh \"first-pass triage\" tools hain. Ilaaj AI ka approach behtar hai kyunke yeh symptom check ke baad PMDC doctor verification ka direct path deta hai. Sirf symptom checker pe rely karna galat hai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "AI symptom checker free hai Pakistan mein?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Haan, Ilaaj AI ka symptom checker bilkul free hai. Aap unlimited times symptoms check kar sakte hain, AI ke recommendations le sakte hain, aur self-care guidance hasil kar sakte hain. Sirf doctor-verified prescription ke liye nominal payment hai. WebMD aur similar international tools bhi free hain magar Roman Urdu support nahi."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ilaaj AI WebMD se behtar kyun hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "WebMD English-only hai aur US disease patterns pe based hai — Pakistan mein dengue, typhoid, smog ki specific consideration nahi. WebMD aksar har symptom pe rare/scary conditions dikhata hai (\"cyberchondria\"). Ilaaj AI: 1) Roman Urdu native, 2) Pakistan-specific diseases, 3) Focused likely diagnoses, 4) PMDC doctor verification path, 5) Local OTC medications recommend karta hai (Panadol, Brufen, Calpol)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kya AI symptom checker doctor ki jagah le sakta hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bilkul nahi. AI symptom checker doctor ka replacement nahi — yeh triage tool hai. Doctor physical examination, lab tests, imaging, aur experience-based judgment provide karte hain jo AI nahi kar sakta. Ilaaj AI is liye AI assessment + PMDC doctor verification ka combination provide karta hai — best of both worlds. Serious conditions mein direct doctor consultation zaruri hai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Symptom checker ke results pe medication shuru kar sakte hain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "OTC medications (Panadol, Calpol, Strepsils) ke liye Ilaaj AI ki recommendations safe hain. Magar prescription medications (antibiotics, BP dawai, blood thinners) ke liye doctor verification zaruri. Ilaaj AI symptom check ke baad one-click doctor consultation provide karta hai jo proper prescription dega. Apni marzi se antibiotics ya prescription drugs shuru karna khatra hai."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKTHF96"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar navbar--scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="/" class="navbar__brand">
+        <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="navbar__logo">
+        <span class="navbar__name">Ilaaj AI</span>
+      </a>
+      <div class="navbar__center" id="navLinks">
+        <a href="/#how-it-works" class="navbar__link">How It Works</a>
+        <a href="/#features" class="navbar__link">Features</a>
+        <a href="../blog.html" class="navbar__link navbar__link--active">Blog</a>
+        <a href="/#faq" class="navbar__link">FAQ</a>
+      </div>
+      <div class="navbar__right">
+        <a href="https://app.ilaaj.ai" class="btn btn--primary btn--sm navbar__cta">
+          Start Your Consultation
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile" id="mobileMenu">
+      <a href="/#how-it-works" class="navbar__mobile-link">How It Works</a>
+      <a href="/#features" class="navbar__mobile-link">Features</a>
+      <a href="../blog.html" class="navbar__mobile-link">Blog</a>
+      <a href="/#faq" class="navbar__mobile-link">FAQ</a>
+      <a href="https://app.ilaaj.ai" class="btn btn--primary btn--full">Start Your Consultation</a>
+    </div>
+  </nav>
+
+  <main>
+    <article class="blog-post">
+      <div class="container">
+        <a href="../blog.html" class="blog-post__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Articles
+        </a>
+
+        <div class="blog-post__featured-image"><img src="https://images.pexels.com/photos/4108167/pexels-photo-4108167.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Smartphone health app"></div>
+
+        <div class="blog-post__author">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI Medical Team" class="blog-post__author-avatar">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name">Ilaaj AI Medical Team</div>
+            <div class="blog-post__author-creds">PMDC-verified doctors reviewing every article</div>
+            <div class="blog-post__author-dates">Published: May 3, 2026 | Last reviewed: May 3, 2026</div>
+          </div>
+        </div>
+
+        <h1 class="blog-post__title">AI Symptom Checker Pakistan — Apne Symptoms Online Check Karein</h1>
+
+        <div class="blog-post__tldr">
+          <div class="blog-post__tldr-title">TL;DR — Key Takeaways</div>
+          <ul>
+            <li>Ilaaj AI symptom checker free aur Roman Urdu mein</li>
+            <li>WebMD/Symptomate se behtar local context</li>
+            <li>Structured questions, scary results nahi</li>
+            <li>Doctor consultation ka direct option</li>
+            <li>24/7 available, family profiles built-in</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+<h2>AI Symptom Checker Kya Hai?</h2>
+<p>AI symptom checker ek tool hai jo aap ke symptoms ke base par possible diagnoses, urgency level, aur next steps suggest karta hai. WebMD aur Symptomate jaisi international tools English mein hain — magar Pakistan ki population ke liye Roman Urdu support, local diseases (dengue, typhoid, smog-related), aur cultural context zaruri hai.</p>
+
+<table class="blog-post__quick-facts">
+  <caption>Symptom Checker Tools Comparison</caption>
+  <tbody>
+    <tr><td>WebMD</td><td>English only, US-focused, scary results</td></tr>
+    <tr><td>Symptomate</td><td>English, European context</td></tr>
+    <tr><td>Isabel</td><td>English, doctor-focused</td></tr>
+    <tr><td>Ada Health</td><td>English-Urdu limited, no Pakistan context</td></tr>
+    <tr><td>Ilaaj AI</td><td>Roman Urdu native, Pakistan diseases, doctor verify</td></tr>
+  </tbody>
+</table>
+
+<h2>Ilaaj AI Symptom Checker Ki Khasoosiyat</h2>
+
+<h3>1. Roman Urdu Native</h3>
+<p>"Mujhe pet dard hai aur ulti aa rahi hai" — bilkul aam zubaan mein symptoms describe karein.</p>
+
+<h3>2. Pakistani Disease Context</h3>
+<p>AI samajhta hai ke Pakistan mein common conditions kya hain:</p>
+<ul>
+<li>Dengue (mosmi)</li>
+<li>Typhoid (kharab pani)</li>
+<li>Smog-related respiratory</li>
+<li>Heat stroke (garmi)</li>
+<li>Hepatitis A/B prevalence</li>
+<li>TB endemic</li>
+</ul>
+
+<h3>3. Structured Questions, Not Scary Diagnoses</h3>
+<p>WebMD aap ko har symptom pe cancer aur rare diseases dikhata hai. Ilaaj AI focused questions puchta hai aur most likely conditions identify karta hai.</p>
+
+<h3>4. Doctor Verification Built-In</h3>
+<p>Symptom checker analysis ke baad agar doctor-verified prescription chahiye to one-click upgrade.</p>
+
+<h3>5. Family Profiles</h3>
+<p>Bachay ke liye separate context, parents ke liye separate.</p>
+
+<h2>AI Symptom Checker Kaise Use Karein?</h2>
+
+<h3>Step 1 — Symptoms Describe Karein</h3>
+<p>"Mujhe 3 din se khansi aur halki bukhar hai" — bas itna shuru ke liye kafi.</p>
+
+<h3>Step 2 — AI Follow-Up Questions</h3>
+<p>5-7 structured questions:</p>
+<ul>
+<li>Khansi balgham wali ya khushk?</li>
+<li>Bukhar kitna degree?</li>
+<li>Sans phoolna?</li>
+<li>Smoking history?</li>
+<li>Recent travel?</li>
+<li>Family mein koi sick?</li>
+</ul>
+
+<h3>Step 3 — Possible Diagnoses</h3>
+<p>AI most likely conditions list karta hai with probabilities:</p>
+<ul>
+<li>Viral upper respiratory infection (most likely)</li>
+<li>Bronchitis</li>
+<li>Allergic rhinitis</li>
+<li>Sinusitis</li>
+</ul>
+
+<h3>Step 4 — Urgency Level</h3>
+<ul>
+<li><strong>Self-care:</strong> Halki conditions, ghareloo ilaj</li>
+<li><strong>See a doctor:</strong> 1-2 din mein appointment</li>
+<li><strong>Urgent care:</strong> Aaj mein doctor</li>
+<li><strong>Emergency:</strong> 1122 ya ER foran</li>
+</ul>
+
+<h3>Step 5 — Recommended Actions</h3>
+<ul>
+<li>Specific home remedies</li>
+<li>OTC medication options</li>
+<li>Red flags to watch</li>
+<li>Doctor consultation option (one-click)</li>
+</ul>
+
+<div class="blog-post__inline-cta">
+  <p>Apne symptoms abhi check karein — Ilaaj AI ka free symptom assessment, Roman Urdu mein.</p>
+  <a href="https://app.ilaaj.ai">Free Symptom Check Karein</a>
+</div>
+
+<h2>Common Symptoms — Quick Examples</h2>
+
+<h3>Sir Dard</h3>
+<p>AI yeh dimensions check karta hai: location (one side / both / front / back), severity, duration, triggers, associated symptoms (vision changes, nausea), aur red flags (sudden severe, neurological symptoms).</p>
+
+<h3>Pet Dard</h3>
+<p>Location (upper / lower / right / left), nature (constant / colicky), associated symptoms (fever, vomiting, blood), eating relationship, aur red flags (rigid abdomen, blood in stool).</p>
+
+<h3>Bukhar</h3>
+<p>Duration, peak temperature, pattern, associated symptoms (rash, joint pain, eye pain — dengue suspect), recent travel, aur red flags (neck stiffness, rash, breathing difficulty).</p>
+
+<h3>Khansi</h3>
+<p>Type (dry / productive), duration, blood, fever, weight loss (TB suspect), smoking history, aur red flags (hemoptysis, severe shortness of breath).</p>
+
+<h3>Skin Rash</h3>
+<p>Location, characteristics, itching, fever, recent medications, contact history, aur red flags (extensive blistering, mouth involvement — Stevens-Johnson).</p>
+
+<h2>AI Symptom Checker Ke Limitations</h2>
+<p>Honestly, koi bhi symptom checker — Ilaaj AI included — yeh nahi kar sakta:</p>
+<ul>
+<li>Physical examination</li>
+<li>Lab tests</li>
+<li>Imaging (X-ray, ultrasound, MRI)</li>
+<li>Direct emergency diagnosis</li>
+<li>Complex chronic disease management alone</li>
+</ul>
+
+<p>Ilaaj AI is liye <strong>doctor consultation ka direct path</strong> integrate karta hai — symptom analysis ke baad PMDC doctor se prescription le sakte hain.</p>
+
+<h2>Pakistan Mein Common Misuse</h2>
+<ul>
+<li>Hospital emergency mein symptom checker use karna</li>
+<li>Severe symptoms ko self-diagnose karna</li>
+<li>Online se medication shuru karna bina doctor</li>
+<li>Children's symptoms ko adult symptom checker mein check karna</li>
+<li>Mental health crises mein delay</li>
+</ul>
+
+<h2>AI Symptom Checker Kab BEST Hai?</h2>
+<ul>
+<li>Halki to medium symptoms</li>
+<li>Recurring conditions follow-up</li>
+<li>Health anxiety reduction (real diagnosis vs imagined)</li>
+<li>Education about symptoms</li>
+<li>Doctor visit ke liye preparation</li>
+<li>Medication side effects assessment</li>
+<li>Lab test results interpretation</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>Ilaaj AI ka symptom checker Pakistan ka <strong>first AI tool</strong> hai jo Roman Urdu mein samjhta hai aur local disease patterns recognize karta hai. WebMD jaisi scary results nahi — focused, structured analysis. Magar serious symptoms mein hamesha doctor consultation ya emergency care zaruri hai. <strong>Aaj try karein</strong> — free, ghar baithe.</p>
+        </div>
+
+        <div class="blog-post__faq">
+          <h2>Frequently Asked Questions</h2>
+          <div class="blog-post__faq-item">
+            <h3>Online AI symptom checker kitna accurate hai?</h3>
+            <p>Modern AI symptom checkers (Ilaaj AI, Ada Health, Symptomate) common conditions ke liye 70-80% accurate hain. Magar yeh diagnostic tools nahi hain — yeh "first-pass triage" tools hain. Ilaaj AI ka approach behtar hai kyunke yeh symptom check ke baad <strong>PMDC doctor verification</strong> ka direct path deta hai. Sirf symptom checker pe rely karna galat hai.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>AI symptom checker free hai Pakistan mein?</h3>
+            <p>Haan, Ilaaj AI ka <strong>symptom checker bilkul free</strong> hai. Aap unlimited times symptoms check kar sakte hain, AI ke recommendations le sakte hain, aur self-care guidance hasil kar sakte hain. Sirf doctor-verified prescription ke liye nominal payment hai. WebMD aur similar international tools bhi free hain magar Roman Urdu support nahi.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>Ilaaj AI WebMD se behtar kyun hai?</h3>
+            <p>WebMD English-only hai aur US disease patterns pe based hai — Pakistan mein dengue, typhoid, smog ki specific consideration nahi. WebMD aksar har symptom pe rare/scary conditions dikhata hai ("cyberchondria"). Ilaaj AI: 1) Roman Urdu native, 2) Pakistan-specific diseases, 3) Focused likely diagnoses, 4) PMDC doctor verification path, 5) Local OTC medications recommend karta hai (Panadol, Brufen, Calpol).</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>Kya AI symptom checker doctor ki jagah le sakta hai?</h3>
+            <p><strong>Bilkul nahi</strong>. AI symptom checker doctor ka replacement nahi — yeh triage tool hai. Doctor physical examination, lab tests, imaging, aur experience-based judgment provide karte hain jo AI nahi kar sakta. Ilaaj AI is liye AI assessment + PMDC doctor verification ka combination provide karta hai — best of both worlds. Serious conditions mein direct doctor consultation zaruri hai.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>Symptom checker ke results pe medication shuru kar sakte hain?</h3>
+            <p>OTC medications (Panadol, Calpol, Strepsils) ke liye Ilaaj AI ki recommendations safe hain. Magar prescription medications (antibiotics, BP dawai, blood thinners) ke liye <strong>doctor verification zaruri</strong>. Ilaaj AI symptom check ke baad one-click doctor consultation provide karta hai jo proper prescription dega. Apni marzi se antibiotics ya prescription drugs shuru karna khatra hai.</p>
+          </div>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="blog-post__related">
+          <h2>Related Articles</h2>
+          <ul class="blog-post__related-list">
+            <li><a href="ai-doctor-pakistan.html">AI Doctor Pakistan — How Ilaaj Works</a></li>
+            <li><a href="ai-prescription-pakistan.html">AI Prescription Pakistan</a></li>
+            <li><a href="../blog.html">Browse All Health Articles &rarr;</a></li>
+          </ul>
+        </div>
+
+        <div class="blog-post__about">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="blog-post__about-logo">
+          <div class="blog-post__about-text">
+            <strong>About Ilaaj AI</strong>
+            <p>Ilaaj AI is Pakistan's first AI-powered health platform. Chat about your symptoms in Urdu or English, get AI-powered triage, and receive doctor-verified prescriptions — affordable and accessible, 24/7.</p>
+          </div>
+        </div>
+
+        <div class="blog-post__cta">
+          <div class="blog-post__cta-card">
+            <h3 class="blog-post__cta-title">Need Health Advice?</h3>
+            <p class="blog-post__cta-desc">Chat with our AI health assistant in any language. Get doctor-verified prescriptions at affordable rates.</p>
+            <div class="blog-post__cta-actions">
+              <a href="https://app.ilaaj.ai" class="btn btn--hero-primary">Try Ilaaj AI Now</a>
+              <a href="../blog.html" class="btn--outline">Read More Articles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <img src="../assets/ilaaj-logo.jpg" alt="Ilaaj AI" class="footer__logo-img" width="36" height="36" loading="lazy">
+            <span class="footer__logo-text">Ilaaj AI</span>
+          </div>
+          <p class="footer__brand-desc">Pakistan's first AI-powered health platform. Chat about your symptoms in any language, get AI triage, and receive doctor-verified prescriptions &mdash; affordable and accessible, 24/7.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/ilaaj_ai/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.516 2.497 5.783 2.225 7.149 2.163 8.415 2.105 8.795 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.987 15.668 24 15.259 24 12s-.013-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324A6.162 6.162 0 0 0 12 5.838zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61588590745625" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+            <a href="https://x.com/ilaajai" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Product</h4>
+          <ul class="footer__links">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#how-it-works">How It Works</a></li>
+            <li><a href="/#doctors">Our Doctors</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="../support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <p class="footer__contact-text">Questions or feedback?</p>
+          <a href="mailto:support@ilaaj.ai" class="footer__email">support@ilaaj.ai</a>
+          <p class="footer__emergency">For emergencies, call <strong>1122</strong> (Rescue)</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span class="footer-year"></span> Ilaaj AI. All rights reserved.</p>
+        <p class="footer__disclaimer">Ilaaj AI is for general health consultations and non-emergency medical guidance. For emergencies, call 1122 (Rescue) or visit the nearest hospital.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+    document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());
+  </script>
+  <!-- Tawk.to Live Chat (lazy-loaded) -->
+  <script>
+  (function() {
+    var tawkLoaded = false;
+    function loadTawk() {
+      if (tawkLoaded) return;
+      tawkLoaded = true;
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/69ce56b0127eae1c37be0e72/1jl70596p';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    }
+    document.addEventListener('scroll', loadTawk, {once: true});
+    document.addEventListener('click', loadTawk, {once: true});
+    document.addEventListener('mouseover', loadTawk, {once: true});
+  })();
+  </script>
+</body>
+</html>

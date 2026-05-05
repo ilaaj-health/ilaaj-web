@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "mcp__plugin_figma_figma__whoami",
+      "Bash(curl:*)",
+      "mcp__plugin_figma_figma__generate_figma_design",
+      "Bash(start:*)",
+      "WebFetch(domain:pagespeed.web.dev)",
+      "WebFetch(domain:www.googleapis.com)",
+      "Bash(npx tsc:*)"
+    ]
+  }
+}

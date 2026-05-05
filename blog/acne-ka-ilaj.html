@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <!-- Sentry: error tracking + session replay -->
+  <script src="https://js.sentry-cdn.com/defa6ca82daea4d4c49a8b69b87c53cc.min.js" crossorigin="anonymous"></script>
+  <script>
+    window.sentryOnLoad = function () {
+      Sentry.init({
+        integrations: [Sentry.replayIntegration({ maskAllText: false, blockAllMedia: false })],
+        tracesSampleRate: 0.1,
+        replaysSessionSampleRate: 0.1,
+        replaysOnErrorSampleRate: 1.0,
+      });
+    };
+  </script>
+  <!-- PostHog: product analytics + session replay -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_xjBQ5vUS7nTJz4jHta6d5dDE7jHdtFjFuqkxAJjvcFzo', { api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only', cross_subdomain_cookie: true });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XKTHF96');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acne Ka Ilaj — Pimples Khatam Karne Ka Tarika | Ilaaj AI</title>
+  <meta name="description" content="Acne (pimples) ka ilaj — chehre ke daane khatam karne ka tarika, best cream, diet aur dermatologist tips. Pakistan ki complete Urdu skincare guide.">
+  <meta name="robots" content="noindex,follow" data-scheduled="1">
+  <meta name="keywords" content="acne ka ilaj, pimples ka ilaj urdu, chehre ke dane ka ilaj, face par dane khatam karne ka tarika, pimple cream, daad ka ilaj">
+  <meta name="geo.region" content="PK">
+  <meta name="geo.placename" content="Pakistan">
+  <meta name="google-site-verification" content="8RtzwgVYowrMGF4E77jnKOX33seYEQTuXmxps2XkPxI">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.ilaaj.ai/blog/acne-ka-ilaj">
+  <link rel="alternate" hreflang="ur-PK" href="https://www.ilaaj.ai/blog/acne-ka-ilaj" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ilaaj.ai/blog/acne-ka-ilaj" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/logo/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/logo/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/logo/site.webmanifest" />
+
+  <!-- PWA / Mobile -->
+  <meta name="theme-color" content="#00897B">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="IlaajAI">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Acne Ka Ilaj — Pimples, Daane aur Skin Treatment Pakistan | Ilaaj AI">
+  <meta property="og:description" content="Acne (pimples) ka ilaj — chehre ke daane khatam karne ka tarika, best cream, diet aur dermatologist tips. Pakistan ki complete Urdu skincare guide.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ilaaj.ai/blog/acne-ka-ilaj">
+  <meta property="og:image" content="https://images.pexels.com/photos/8589763/pexels-photo-8589763.jpeg?auto=compress&cs=tinysrgb&w=1200">
+  <meta property="og:image:alt" content="Man with pimples on cheek">
+  <meta property="og:site_name" content="Ilaaj AI">
+  <meta property="og:locale" content="ur_PK">
+  <meta property="article:published_time" content="2026-05-03T10:30:00.000Z">
+  <meta property="article:modified_time" content="2026-05-03T10:30:00.000Z">
+  <meta property="article:author" content="Ilaaj AI Medical Team">
+  <meta property="article:section" content="Skin Care">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ilaajai">
+  <meta name="twitter:creator" content="@ilaajai">
+  <meta name="twitter:title" content="Acne Ka Ilaj — Pimples, Daane aur Skin Treatment Pakistan | Ilaaj AI">
+  <meta name="twitter:description" content="Acne (pimples) ka ilaj — chehre ke daane khatam karne ka tarika, best cream, diet aur dermatologist tips. Pakistan ki complete Urdu skincare guide.">
+  <meta name="twitter:image" content="https://images.pexels.com/photos/8589763/pexels-photo-8589763.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNTMD61HWL"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KNTMD61HWL');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/blog.css">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.ilaaj.ai/blog/acne-ka-ilaj"
+  },
+  "headline": "Acne Ka Ilaj — Pimples, Daane aur Skin Treatment Pakistan",
+  "description": "Acne (pimples) ka ilaj — chehre ke daane khatam karne ka tarika, best cream, diet aur dermatologist tips. Pakistan ki complete Urdu skincare guide.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://images.pexels.com/photos/8589763/pexels-photo-8589763.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  },
+  "datePublished": "2026-05-03T10:30:00.000Z",
+  "dateModified": "2026-05-03T10:30:00.000Z",
+  "author": {
+    "@type": "Organization",
+    "name": "Ilaaj AI Medical Team",
+    "url": "https://www.ilaaj.ai/doctors"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ilaaj AI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.ilaaj.ai/assets/Icon-192.png"
+    }
+  },
+  "keywords": "acne ka ilaj, pimples ka ilaj urdu, chehre ke dane ka ilaj, face par dane khatam karne ka tarika, pimple cream, daad ka ilaj",
+  "inLanguage": "ur",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Ilaaj AI Blog",
+    "url": "https://www.ilaaj.ai/blog"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.ilaaj.ai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.ilaaj.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Acne Ka Ilaj — Pimples, Daane aur Skin Treatment Pakistan",
+      "item": "https://www.ilaaj.ai/blog/acne-ka-ilaj"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Pimples ka best ilaj kya hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Halki acne ke liye salicylic acid 1-2% face wash + niacinamide serum + non-comedogenic moisturizer + SPF 30+ sunscreen daily. Spot treatment mein benzoyl peroxide 2.5%. Result aane mein 6-8 hafte lagte hain. Severe acne mein dermatologist se topical retinoids, antibiotics, ya Roaccutane ki zarurat parti hai. Ilaaj AI pe online dermatologist mashwara available hai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Chehre ke daane khatam karne ka tarika?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pehlay step: comedogenic products band karein (heavy oils, makeup). Roz 2 baar gentle cleanser. Active ingredient lagayein (salicylic acid ya benzoyl peroxide). Moisturizer aur sunscreen miss na karein. Daane dabain bilkul mat. 6-8 hafte consistency. Diet mein dairy aur sugar kam, pani zyada. Result na ho to dermatologist."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Pimples ke daag (scars) kaise jaate hain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Halki dark spots (post-inflammatory) 3-6 mahine mein khud fade ho jate hain — sunscreen SPF 50+ daily zaruri. Vitamin C serum aur niacinamide accelerate karte hain. Deep scars (icepick, boxcar) ke liye microneedling, chemical peels, ya laser dermatologist clinic mein. Roaccutane scarring rokta hai severe acne mein."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hormonal acne ka ilaj kya hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hormonal acne aurato mein jaw line aur thori pe periods ke around aata hai. Treatment: gynecologist se birth control pills (Yasmin, Diane-35) ya spironolactone (anti-androgen). PCOS test karwana zaruri kyunke aksar saath chalti hai. Topical treatments alone aksar kafi nahi — systemic dawai chahiye. Ilaaj AI pe female doctors available hain."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Skin whitening creams safe hain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pakistan mein available zyadatar \"whitening creams\" (Faiza, Stillman's, Goree, etc.) mein illegal steroids hote hain. Yeh shuru mein skin gora karti hain magar 6 mahine baad: skin patli, daane, redness, broken capillaries, aur permanent damage. Bilkul avoid karein. Glow ke liye sunscreen, vitamin C serum, aur niacinamide use karein."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKTHF96"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar navbar--scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="/" class="navbar__brand">
+        <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="navbar__logo">
+        <span class="navbar__name">Ilaaj AI</span>
+      </a>
+      <div class="navbar__center" id="navLinks">
+        <a href="/#how-it-works" class="navbar__link">How It Works</a>
+        <a href="/#features" class="navbar__link">Features</a>
+        <a href="../blog.html" class="navbar__link navbar__link--active">Blog</a>
+        <a href="/#faq" class="navbar__link">FAQ</a>
+      </div>
+      <div class="navbar__right">
+        <a href="https://app.ilaaj.ai" class="btn btn--primary btn--sm navbar__cta">
+          Start Your Consultation
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile" id="mobileMenu">
+      <a href="/#how-it-works" class="navbar__mobile-link">How It Works</a>
+      <a href="/#features" class="navbar__mobile-link">Features</a>
+      <a href="../blog.html" class="navbar__mobile-link">Blog</a>
+      <a href="/#faq" class="navbar__mobile-link">FAQ</a>
+      <a href="https://app.ilaaj.ai" class="btn btn--primary btn--full">Start Your Consultation</a>
+    </div>
+  </nav>
+
+  <main>
+    <article class="blog-post">
+      <div class="container">
+        <a href="../blog.html" class="blog-post__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Articles
+        </a>
+
+        <div class="blog-post__featured-image"><img src="https://images.pexels.com/photos/8589763/pexels-photo-8589763.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Man with pimples on cheek"></div>
+
+        <div class="blog-post__author">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI Medical Team" class="blog-post__author-avatar">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name">Ilaaj AI Medical Team</div>
+            <div class="blog-post__author-creds">PMDC-verified doctors reviewing every article</div>
+            <div class="blog-post__author-dates">Published: May 3, 2026 | Last reviewed: May 3, 2026</div>
+          </div>
+        </div>
+
+        <h1 class="blog-post__title">Acne Ka Ilaj — Pimples, Daane aur Skin Treatment Pakistan</h1>
+
+        <div class="blog-post__tldr">
+          <div class="blog-post__tldr-title">TL;DR — Key Takeaways</div>
+          <ul>
+            <li>Acne hormones, oil production aur bacteria ki wajah se</li>
+            <li>Benzoyl peroxide aur salicylic acid OTC mein effective</li>
+            <li>Dairy aur high-glycemic foods acne barhate hain</li>
+            <li>Pimple ko dabain mat — scar reh jata hai</li>
+            <li>Severe ya scarring acne mein dermatologist + Roaccutane</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+<h2>Acne Kya Hai aur Kyun Hota Hai?</h2>
+<p>Acne tab hota hai jab aap ke skin pores band ho jate hain — oil (sebum), dead skin cells, aur bacteria (P. acnes) mil kar inflammation karte hain. Pakistan mein garmi, pasina, smog aur high-sugar diet acne ko barhate hain.</p>
+
+<table class="blog-post__quick-facts">
+  <caption>Acne — Pakistan Mein Aam Facts</caption>
+  <tbody>
+    <tr><td>Most affected age</td><td>13-25 saal — magar 30-40s mein bhi adult acne</td></tr>
+    <tr><td>Common areas</td><td>Chehra, peet, sina, kandhe</td></tr>
+    <tr><td>Main triggers</td><td>Hormones, diet, stress, kharaab cosmetics, garmi</td></tr>
+    <tr><td>Time to see results</td><td>Treatment se 6-8 hafte minimum</td></tr>
+    <tr><td>Pakistan mein common type</td><td>Inflammatory aur hormonal acne</td></tr>
+  </tbody>
+</table>
+
+<h2>Acne Ki Types</h2>
+<ul>
+<li><strong>Whiteheads:</strong> Choti safed daane, bandh pores</li>
+<li><strong>Blackheads:</strong> Khulay pores mein oil oxidize ho ke kale</li>
+<li><strong>Papules:</strong> Laal sukh daane, chubhne wale</li>
+<li><strong>Pustules:</strong> Pus wale daane (peep)</li>
+<li><strong>Cystic acne:</strong> Bare, deep, painful — scarring ka khatra</li>
+<li><strong>Hormonal acne:</strong> Jaw line aur thori pe, periods se related</li>
+</ul>
+
+<h2>Acne Ki Wajuhat</h2>
+<ul>
+<li><strong>Hormones</strong> — teenage, periods, PCOS, pregnancy</li>
+<li><strong>Genetics</strong> — family history</li>
+<li><strong>Diet</strong> — dairy, sugar, white bread, fast food</li>
+<li><strong>Stress</strong> — cortisol oil production barhata</li>
+<li><strong>Skincare products</strong> — comedogenic creams, makeup</li>
+<li><strong>Pollution aur smog</strong> — Lahore/Karachi mein major issue</li>
+<li><strong>Sweat aur garmi</strong></li>
+<li><strong>Mobile phone aur takiye ka cover</strong> — bacteria</li>
+<li><strong>Steroids</strong> — illegally used "skin whitening" creams</li>
+</ul>
+
+<h2>Acne Ka Ghareloo Ilaj (Halki Cases Mein)</h2>
+
+<h3>1. Tea Tree Oil</h3>
+<p>5% tea tree oil benzoyl peroxide jitna effective hai. Direct na lagayein — carrier oil (jojoba) ke saath mix karein, spot pe lagayein.</p>
+
+<h3>2. Honey aur Cinnamon Mask</h3>
+<p>1 chamach shahed + 1/2 chamach dalcheeni powder. 15 minute lagayein. Hafte mein 2 baar.</p>
+
+<h3>3. Aloe Vera Gel</h3>
+<p>Direct plant se gel ya pure aloe vera. Soothing aur slightly antibacterial.</p>
+
+<h3>4. Green Tea</h3>
+<p>Green tea bag thanda kar ke face pe rakhein 5-10 minute. Inflammation reduce.</p>
+
+<h3>5. Ice Cubes</h3>
+<p>Painful pimple pe ice 1-2 minute lagayein — soojan kam.</p>
+
+<h2>Best OTC Treatments — Pakistan Mein</h2>
+
+<h3>Cleansers:</h3>
+<ul>
+<li>Cetaphil Gentle Skin Cleanser (sensitive skin)</li>
+<li>Neutrogena Oil-Free Acne Wash (salicylic acid)</li>
+<li>Cerave Foaming Cleanser</li>
+</ul>
+
+<h3>Active Ingredients:</h3>
+<ul>
+<li><strong>Salicylic acid 0.5-2%:</strong> Pores clean karta hai. Cetaphil DermaControl, Neutrogena</li>
+<li><strong>Benzoyl peroxide 2.5-5%:</strong> Bacteria maarta. Persol, Acnomel</li>
+<li><strong>Niacinamide 5-10%:</strong> Inflammation aur pigmentation. The Ordinary, Cosrx</li>
+<li><strong>Adapalene 0.1%:</strong> Differin gel — strong, prescription pe milta tha, ab OTC</li>
+</ul>
+
+<h3>Moisturizer aur Sunscreen Zaruri:</h3>
+<p>Bohat acne treatments skin dry karte hain — non-comedogenic moisturizer (Cetaphil, Cerave) aur SPF 30+ daily. Pakistan ki dhoop mein sunscreen scarring se bachata hai.</p>
+
+<div class="blog-post__inline-cta">
+  <p>Acne 6 mahine se chal raha hai? Ilaaj AI pe dermatologist se mashwara — Roaccutane ya prescription treatments ki rehnumai milegi.</p>
+  <a href="https://app.ilaaj.ai">Skin Specialist Se Milein</a>
+</div>
+
+<h2>Diet aur Acne</h2>
+<p>Research kehti hai ke yeh foods acne barha sakte hain:</p>
+<ul>
+<li><strong>Dairy</strong> — khaaskar skim milk</li>
+<li><strong>Sugar</strong> — soft drinks, mithai, bakery</li>
+<li><strong>White bread, white rice, paratha</strong> — high glycemic</li>
+<li><strong>Fast food aur fried items</strong></li>
+<li><strong>Whey protein supplements</strong></li>
+</ul>
+
+<p><strong>Acne ke liye faida deti hain:</strong></p>
+<ul>
+<li>Sabzi aur phal (vitamin A, C, zinc)</li>
+<li>Omega-3 (machli, akhrot)</li>
+<li>Bhar pet pani</li>
+<li>Green tea</li>
+<li>Probiotic dahi</li>
+</ul>
+
+<h2>Skincare Routine — Pakistan Mein Realistic</h2>
+
+<h3>Subah:</h3>
+<ol>
+<li>Gentle cleanser (Cetaphil)</li>
+<li>Toner (optional, alcohol-free)</li>
+<li>Moisturizer (oil-free)</li>
+<li>Sunscreen SPF 30+ (zaroori)</li>
+</ol>
+
+<h3>Raat:</h3>
+<ol>
+<li>Cleanser (makeup removed)</li>
+<li>Treatment (salicylic acid ya benzoyl peroxide spot)</li>
+<li>Moisturizer</li>
+<li>Hafte mein 1-2 baar exfoliant (BHA)</li>
+</ol>
+
+<h2>Yeh Mat Karein</h2>
+<ul>
+<li><strong>Daane mat dabain</strong> — scar reh jata hai aur infection phailta hai</li>
+<li>Roz 5-6 baar face mat dhoein — skin dry hoti hai</li>
+<li>Scrub roz mat karein — irritation</li>
+<li>"Skin whitening" creams (especially "Faiza", "Stillman's") — steroids hote hain, long-term skin barbad</li>
+<li>Mobile phone face pe lagane mat dein</li>
+<li>Takiya cover hafte mein change karein</li>
+</ul>
+
+<h2>Hormonal Acne (Aurato Mein)</h2>
+<p>Jaw line aur thori pe daane jo periods ke around barhein — hormonal hain. Ilaj:</p>
+<ul>
+<li><strong>Birth control pills</strong> (Yasmin, Diane-35) — gynecologist mashware se</li>
+<li><strong>Spironolactone</strong> — hormonal acne mein effective, doctor parchee pe</li>
+<li><strong>PCOS treatment</strong> agar diagnose ho</li>
+</ul>
+
+<h2>Severe Acne — Doctor Treatments</h2>
+<ul>
+<li><strong>Topical retinoids</strong> (Tretinoin, Adapalene)</li>
+<li><strong>Oral antibiotics</strong> (Doxycycline, Minocycline) — short term</li>
+<li><strong>Isotretinoin (Roaccutane)</strong> — cystic/scarring acne ke liye game changer, magar strict monitoring zaruri</li>
+<li><strong>Chemical peels</strong> aur <strong>laser</strong> — clinics mein</li>
+</ul>
+
+<h2>Acne Ke Daag (Scars) Ka Ilaj</h2>
+<ul>
+<li>Vitamin C serum aur niacinamide pigmentation kam karte hain</li>
+<li>Sunscreen SPF 50+ scars ko gehra hone se rokta hai</li>
+<li>Microneedling, chemical peels, ya laser — dermatologist clinic mein</li>
+<li>Patience zaruri — 3-6 mahine minimum visible improvement</li>
+</ul>
+
+<h2>Kab Doctor Ko Milein?</h2>
+<ul>
+<li>OTC se 8-12 hafte mein faida nahi</li>
+<li>Cystic / nodular acne (deep painful)</li>
+<li>Daag par rahe hain</li>
+<li>Hormonal pattern (jaw line, thori, periods)</li>
+<li>Mental health pe asar ho raha hai</li>
+<li>Acne aur PCOS ke symptoms (irregular periods, hair growth)</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>Acne treatable hai magar <strong>patience aur consistency zaruri</strong>. Kisi bhi treatment ka result 6-8 hafte minimum lagta hai. Steroid-based "whitening creams" se dur rahein — long-term skin destroy karte hain. <strong>Ilaaj AI</strong> pe aap dermatologist se Roman Urdu mein mashwara le sakte hain — prescription, products aur lifestyle plan, ghar baithe.</p>
+        </div>
+
+        <div class="blog-post__faq">
+          <h2>Frequently Asked Questions</h2>
+          <div class="blog-post__faq-item">
+            <h3>Pimples ka best ilaj kya hai?</h3>
+            <p>Halki acne ke liye salicylic acid 1-2% face wash + niacinamide serum + non-comedogenic moisturizer + SPF 30+ sunscreen daily. Spot treatment mein benzoyl peroxide 2.5%. Result aane mein 6-8 hafte lagte hain. Severe acne mein dermatologist se topical retinoids, antibiotics, ya Roaccutane ki zarurat parti hai. Ilaaj AI pe online dermatologist mashwara available hai.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>Chehre ke daane khatam karne ka tarika?</h3>
+            <p>Pehlay step: comedogenic products band karein (heavy oils, makeup). Roz 2 baar gentle cleanser. Active ingredient lagayein (salicylic acid ya benzoyl peroxide). Moisturizer aur sunscreen miss na karein. Daane dabain bilkul mat. 6-8 hafte consistency. Diet mein dairy aur sugar kam, pani zyada. Result na ho to dermatologist.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>Pimples ke daag (scars) kaise jaate hain?</h3>
+            <p>Halki dark spots (post-inflammatory) 3-6 mahine mein khud fade ho jate hain — sunscreen SPF 50+ daily zaruri. Vitamin C serum aur niacinamide accelerate karte hain. Deep scars (icepick, boxcar) ke liye microneedling, chemical peels, ya laser dermatologist clinic mein. Roaccutane scarring rokta hai severe acne mein.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>Hormonal acne ka ilaj kya hai?</h3>
+            <p>Hormonal acne aurato mein jaw line aur thori pe periods ke around aata hai. Treatment: gynecologist se birth control pills (Yasmin, Diane-35) ya spironolactone (anti-androgen). PCOS test karwana zaruri kyunke aksar saath chalti hai. Topical treatments alone aksar kafi nahi — systemic dawai chahiye. Ilaaj AI pe female doctors available hain.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>Skin whitening creams safe hain?</h3>
+            <p><strong>Pakistan mein available zyadatar "whitening creams" (Faiza, Stillman's, Goree, etc.) mein illegal steroids hote hain.</strong> Yeh shuru mein skin gora karti hain magar 6 mahine baad: skin patli, daane, redness, broken capillaries, aur permanent damage. Bilkul avoid karein. Glow ke liye sunscreen, vitamin C serum, aur niacinamide use karein.</p>
+          </div>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="blog-post__related">
+          <h2>Related Articles</h2>
+          <ul class="blog-post__related-list">
+            <li><a href="baal-jhadne-ka-ilaj.html">Baal Jhadne Ka Ilaj — Wajah aur Treatment</a></li>
+            <li><a href="allergy-ka-ilaj.html">Allergy Ka Ilaj — Skin aur Mausmi</a></li>
+            <li><a href="../blog.html">Browse All Health Articles &rarr;</a></li>
+          </ul>
+        </div>
+
+        <div class="blog-post__about">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="blog-post__about-logo">
+          <div class="blog-post__about-text">
+            <strong>About Ilaaj AI</strong>
+            <p>Ilaaj AI is Pakistan's first AI-powered health platform. Chat about your symptoms in Urdu or English, get AI-powered triage, and receive doctor-verified prescriptions — affordable and accessible, 24/7.</p>
+          </div>
+        </div>
+
+        <div class="blog-post__cta">
+          <div class="blog-post__cta-card">
+            <h3 class="blog-post__cta-title">Need Health Advice?</h3>
+            <p class="blog-post__cta-desc">Chat with our AI health assistant in any language. Get doctor-verified prescriptions at affordable rates.</p>
+            <div class="blog-post__cta-actions">
+              <a href="https://app.ilaaj.ai" class="btn btn--hero-primary">Try Ilaaj AI Now</a>
+              <a href="../blog.html" class="btn--outline">Read More Articles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <img src="../assets/ilaaj-logo.jpg" alt="Ilaaj AI" class="footer__logo-img" width="36" height="36" loading="lazy">
+            <span class="footer__logo-text">Ilaaj AI</span>
+          </div>
+          <p class="footer__brand-desc">Pakistan's first AI-powered health platform. Chat about your symptoms in any language, get AI triage, and receive doctor-verified prescriptions &mdash; affordable and accessible, 24/7.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/ilaaj_ai/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.516 2.497 5.783 2.225 7.149 2.163 8.415 2.105 8.795 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.987 15.668 24 15.259 24 12s-.013-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324A6.162 6.162 0 0 0 12 5.838zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61588590745625" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+            <a href="https://x.com/ilaajai" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Product</h4>
+          <ul class="footer__links">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#how-it-works">How It Works</a></li>
+            <li><a href="/#doctors">Our Doctors</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="../support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <p class="footer__contact-text">Questions or feedback?</p>
+          <a href="mailto:support@ilaaj.ai" class="footer__email">support@ilaaj.ai</a>
+          <p class="footer__emergency">For emergencies, call <strong>1122</strong> (Rescue)</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span class="footer-year"></span> Ilaaj AI. All rights reserved.</p>
+        <p class="footer__disclaimer">Ilaaj AI is for general health consultations and non-emergency medical guidance. For emergencies, call 1122 (Rescue) or visit the nearest hospital.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+    document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());
+  </script>
+  <!-- Tawk.to Live Chat (lazy-loaded) -->
+  <script>
+  (function() {
+    var tawkLoaded = false;
+    function loadTawk() {
+      if (tawkLoaded) return;
+      tawkLoaded = true;
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/69ce56b0127eae1c37be0e72/1jl70596p';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    }
+    document.addEventListener('scroll', loadTawk, {once: true});
+    document.addEventListener('click', loadTawk, {once: true});
+    document.addEventListener('mouseover', loadTawk, {once: true});
+  })();
+  </script>
+</body>
+</html>

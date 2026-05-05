@@ -1,0 +1,7 @@
+# robots.txt for IlaajAI
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Sitemaps
+Sitemap: https://ilaaj.ai/sitemap.xml

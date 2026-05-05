@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python \"C:\\\\Users\\\\devv\\\\.claude\\\\plugins\\\\cache\\\\agricidaniel-seo\\\\claude-seo\\\\1.8.2\\\\scripts\\\\fetch_page.py\" \"https://www.ilaaj.ai\")",
+      "Bash(python *)",
+      "Bash(py --version)",
+      "Bash(curl -s -L \"https://www.ilaaj.ai\" -o /tmp/ilaaj_home.html --max-time 30 -A \"Mozilla/5.0\")",
+      "Read(//tmp/**)",
+      "Bash(curl *)"
+    ]
+  }
+}

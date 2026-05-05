@@ -1,0 +1,33 @@
+{
+  "buildCommand": null,
+  "outputDirectory": ".",
+  "framework": null,
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/blog.html", "destination": "/blog", "permanent": true },
+    { "source": "/privacy-policy.html", "destination": "/privacy-policy", "permanent": true },
+    { "source": "/terms-and-conditions.html", "destination": "/terms-and-conditions", "permanent": true },
+    { "source": "/support.html", "destination": "/support", "permanent": true },
+    { "source": "/doctors.html", "destination": "/doctors", "permanent": true },
+    { "source": "/blog/:slug.html", "destination": "/blog/:slug", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/blog", "destination": "/blog.html" },
+    { "source": "/privacy-policy", "destination": "/privacy-policy.html" },
+    { "source": "/terms-and-conditions", "destination": "/terms-and-conditions.html" },
+    { "source": "/support", "destination": "/support.html" },
+    { "source": "/doctors", "destination": "/doctors.html" },
+    { "source": "/blog/:slug", "destination": "/blog/:slug.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "index, follow"
+        }
+      ]
+    }
+  ]
+}

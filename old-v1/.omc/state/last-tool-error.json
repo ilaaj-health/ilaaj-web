@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"cd d:/products/ilaaj/ilaaj_flutter_node/ilaaj-ai-web && echo \\\"=== Files ===\\\" && ls -la doctors.html && echo \\\"\\\" && echo \\\"=== Navbar links in index.html ===\\\" && grep -n \\\"navbar__link\\...",
+  "error": "Exit code 49\n=== Files ===\n-rw-r--r-- 1 devv 197121 15443 Apr 28 16:43 doctors.html\n\n=== Navbar links in index.html ===\n147:        <a href=\"#how-it-works\" class=\"navbar__link\" data-i18n=\"nav-how\">How It Works</a>\n148:        <a href=\"#features\" class=\"navbar__link\" data-i18n=\"nav-features\">Features</a>\n149:        <a href=\"#doctors\" class=\"navbar__link\" data-i18n=\"nav-doctors\">Doctors</a>\n150:        <a href=\"blog.html\" class=\"navbar__link\" data-i18n=\"nav-blog\">Blog</a>\n151:        <a href=\"#fa...",
+  "timestamp": "2026-04-28T11:44:10.456Z",
+  "retry_count": 1
+}

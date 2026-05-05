@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "ilaaj.ai"
+        }
+      ],
+      "destination": "https://www.ilaaj.ai/$1",
+      "permanent": true
+    }
+  ]
+}

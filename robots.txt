@@ -1,0 +1,45 @@
+User-agent: *
+Allow: /
+Disallow: /old-v1/
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 2
+
+User-agent: GPTBot
+Allow: /
+Disallow: /old-v1/
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /old-v1/
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /old-v1/
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: CCBot
+Disallow: /
+
+Sitemap: https://www.ilaaj.ai/sitemap.xml

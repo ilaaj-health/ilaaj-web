@@ -1,0 +1,7 @@
+{
+  "tool_name": "Grep",
+  "tool_input_preview": "{\"pattern\":\"<footer class=\\\"footer\\\">\",\"path\":\"D:/products/ilaaj/ilaaj_flutter_node/ilaaj-ai-web/blog\",\"output_mode\":\"content\",\"-n\":true}",
+  "error": "spawn C:\\Users\\devv\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\vendor\\ripgrep\\x64-win32\\rg.exe ENOENT",
+  "timestamp": "2026-04-30T07:18:16.437Z",
+  "retry_count": 1
+}

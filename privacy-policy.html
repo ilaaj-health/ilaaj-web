@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <!-- Sentry: error tracking + session replay -->
+  <script src="https://js.sentry-cdn.com/defa6ca82daea4d4c49a8b69b87c53cc.min.js" crossorigin="anonymous"></script>
+  <script>
+    window.sentryOnLoad = function () {
+      Sentry.init({
+        integrations: [Sentry.replayIntegration({ maskAllText: false, blockAllMedia: false })],
+        tracesSampleRate: 0.1,
+        replaysSessionSampleRate: 0.1,
+        replaysOnErrorSampleRate: 1.0,
+      });
+    };
+  </script>
+  <!-- PostHog: product analytics + session replay -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_xjBQ5vUS7nTJz4jHta6d5dDE7jHdtFjFuqkxAJjvcFzo', { api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only', cross_subdomain_cookie: true });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XKTHF96');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Ilaaj AI – Your Health Data, Protected</title>
+  <meta name="description" content="Learn how Ilaaj AI collects, uses &amp; safeguards your health data. We are committed to your privacy and never sell personal information.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.ilaaj.ai/privacy-policy">
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="/assets/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#00897B">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="IlaajAI">
+  <meta name="geo.region" content="PK">
+  <meta name="google-site-verification" content="8RtzwgVYowrMGF4E77jnKOX33seYEQTuXmxps2XkPxI">
+  <meta property="og:title" content="Privacy Policy | Ilaaj AI">
+  <meta property="og:description" content="Ilaaj AI is committed to protecting your health data. Read our privacy policy to understand how your information is collected and secured.">
+  <meta property="og:url" content="https://www.ilaaj.ai/privacy-policy">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="IlaajAI">
+  <meta property="og:image" content="https://www.ilaaj.ai/assets/ilaaj-logo.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Privacy Policy | Ilaaj AI">
+  <meta name="twitter:description" content="Ilaaj AI is committed to protecting your health data. Read our privacy policy to understand how your information is collected and secured.">
+  <meta name="twitter:creator" content="@ilaajai">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNTMD61HWL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KNTMD61HWL');
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Privacy Policy",
+    "description": "Ilaaj AI privacy policy — how we collect, use, and protect your health data.",
+    "url": "https://www.ilaaj.ai/privacy-policy",
+    "publisher": {"@type": "Organization", "name": "Ilaaj AI", "url": "https://www.ilaaj.ai"}
+  }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .legal-page { padding: 7rem 0 4rem; }
+    .legal-header { text-align: center; margin-bottom: 3rem; }
+    .legal-header__icon { width: 64px; height: 64px; background: var(--primary-100); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; }
+    .legal-header__title { font-size: var(--font-size-5xl); font-weight: 900; color: var(--gray-900); margin-bottom: 0.75rem; }
+    .legal-header__date { color: var(--gray-500); font-size: var(--font-size-base); }
+    .legal-content { max-width: 800px; margin: 0 auto; }
+    .legal-section { background: var(--gray-50); border-radius: var(--radius-xl); padding: 2rem; margin-bottom: 1.5rem; }
+    .legal-section--highlight { background: var(--primary-50); border: 1px solid var(--primary-200); }
+    .legal-section--warning { background: #fefce8; border: 1px solid #fde68a; }
+    .legal-section h2 { font-size: 1.35rem; font-weight: 700; color: var(--gray-900); margin-bottom: 1rem; }
+    .legal-section h3 { font-size: 1.1rem; font-weight: 600; color: var(--gray-900); margin-bottom: 0.75rem; margin-top: 1.5rem; }
+    .legal-section p { color: var(--gray-700); line-height: 1.7; margin-bottom: 0.75rem; }
+    .legal-section ul { list-style: none; padding: 0; margin: 0.5rem 0 1rem 1rem; }
+    .legal-section ul li { color: var(--gray-700); line-height: 1.7; padding: 0.2rem 0; }
+    .legal-section ul li::before { content: "\2022"; color: var(--primary-600); font-weight: bold; display: inline-block; width: 1em; margin-left: -1em; }
+    .legal-section .ai-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+    .legal-section .ai-icon { width: 48px; height: 48px; background: var(--primary-100); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: var(--primary-600); flex-shrink: 0; }
+    .legal-contact p { margin-bottom: 0.4rem; }
+    .legal-contact strong { color: var(--gray-900); }
+    @media (max-width: 768px) {
+      .legal-header__title { font-size: var(--font-size-3xl); }
+      .legal-section { padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKTHF96"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="/" class="navbar__brand">
+        <img src="assets/Icon-192.png" alt="Ilaaj AI" class="navbar__logo">
+        <span class="navbar__name">Ilaaj AI</span>
+      </a>
+      <div class="navbar__right">
+        <a href="/" class="btn btn--primary btn--sm navbar__cta">
+          &larr; Back to Home
+        </a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile" id="mobileMenu">
+      <a href="/" class="navbar__mobile-link">&larr; Back to Home</a>
+    </div>
+  </nav>
+
+  <main class="legal-page">
+    <div class="container">
+      <div class="legal-header">
+        <div class="legal-header__icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-600)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h1 class="legal-header__title">Privacy Policy</h1>
+        <p class="legal-header__date">Last updated: April 8, 2026</p>
+      </div>
+
+      <div class="legal-content">
+        <div class="legal-section">
+          <h2>Introduction</h2>
+          <p>At Ilaaj AI, we respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your information when you use our service.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>Information We Collect</h2>
+          <p>We may collect information that you provide to us, including:</p>
+          <ul>
+            <li>Personal information (name, phone number, email)</li>
+            <li>Health-related information you choose to share</li>
+            <li>Device and usage information</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h2>How We Use Your Information</h2>
+          <p>We use the information we collect to:</p>
+          <ul>
+            <li>Provide and improve our services</li>
+            <li>Respond to your inquiries and requests</li>
+            <li>Ensure the security of our platform</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <div class="ai-header">
+            <div class="ai-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1.27A7 7 0 0 1 14 23h-4a7 7 0 0 1-6.73-4H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/></svg>
+            </div>
+            <h2 style="margin-bottom:0">Artificial Intelligence (AI) Usage</h2>
+          </div>
+
+          <h3>Data Collection and Sharing</h3>
+          <p>Our app utilizes third-party AI services to enhance user experience and deliver personalized health-related responses. In order to generate responses, the app may send the following types of data to the AI system:</p>
+          <ul>
+            <li>User queries and inputs (health-related questions)</li>
+            <li>Interaction history and preferences</li>
+            <li>Non-identifiable technical metadata</li>
+          </ul>
+          <p>We do not share:</p>
+          <ul>
+            <li>Name</li>
+            <li>Email</li>
+            <li>Phone number</li>
+            <li>Location</li>
+            <li>Any personally identifiable information</li>
+          </ul>
+
+          <h3>User Consent</h3>
+          <p>Before any data is shared with third-party AI systems, we obtain explicit user consent. This consent is collected through a prompt displayed during the onboarding process or prior to using any feature that relies on AI technology. Users must accept the terms to proceed with using the AI-powered features.</p>
+
+          <h3>Data Processing and Retention</h3>
+          <p>The data sent to third-party AI services is processed to provide relevant responses and recommendations. The data is temporarily stored and processed by our AI service providers as part of their standard data processing protocol.</p>
+          <p>Once the data is processed, it is either deleted or anonymized according to the AI service provider's retention policy. The AI service processes data temporarily for response generation and does not retain user data beyond the processing time.</p>
+
+          <h3>Third-Party AI Service Providers</h3>
+          <p>The AI services that process user data include third-party AI providers that specialize in natural language processing and health-related information. These providers operate under strict data protection and privacy standards.</p>
+          <p>For specific information about which AI service providers we use, please contact us using the contact information provided in this Privacy Policy.</p>
+
+          <h3>Data Security</h3>
+          <p>We implement encryption and security measures to protect user data while it is transmitted to third-party AI systems. Data is securely processed in accordance with industry standards to ensure user privacy and protection.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>Data Security</h2>
+          <p>We implement appropriate security measures to protect your personal information. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>Your Rights</h2>
+          <p>You have the right to access, update, or delete your personal information. You can contact us at any time to exercise these rights.</p>
+        </div>
+
+        <div class="legal-section">
+          <h2>Changes to This Policy</h2>
+          <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the updated policy on this page.</p>
+        </div>
+
+        <div class="legal-section legal-section--highlight legal-contact">
+          <h2>Contact Us</h2>
+          <p>If you have any questions about this Privacy Policy, please contact us:</p>
+          <p><strong>Email:</strong> support@ilaaj.ai</p>
+          <p><strong>Phone:</strong> +92-324-819-9663</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <img src="assets/ilaaj-logo.jpg" alt="Ilaaj AI" class="footer__logo-img" width="36" height="36" loading="lazy">
+            <span class="footer__logo-text">Ilaaj AI</span>
+          </div>
+          <p class="footer__brand-desc">Pakistan's first AI-powered health platform. Chat about your symptoms in any language, get AI triage, and receive doctor-verified prescriptions &mdash; affordable and accessible, 24/7.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/ilaaj_ai/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.516 2.497 5.783 2.225 7.149 2.163 8.415 2.105 8.795 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.987 15.668 24 15.259 24 12s-.013-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324A6.162 6.162 0 0 0 12 5.838zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61588590745625" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+            <a href="https://x.com/ilaajai" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Product</h4>
+          <ul class="footer__links">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#how-it-works">How It Works</a></li>
+            <li><a href="/#doctors">Our Doctors</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <p class="footer__contact-text">Questions or feedback?</p>
+          <a href="mailto:support@ilaaj.ai" class="footer__email">support@ilaaj.ai</a>
+          <p class="footer__emergency">For emergencies, call <strong>1122</strong> (Rescue)</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span class="footer-year"></span> Ilaaj AI. All rights reserved.</p>
+        <p class="footer__disclaimer">Ilaaj AI is for general health consultations and non-emergency medical guidance. For emergencies, call 1122 (Rescue) or visit the nearest hospital.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    window.addEventListener('scroll', () => { navbar.classList.toggle('navbar--scrolled', window.scrollY > 50); });
+    navToggle.addEventListener('click', () => { navToggle.classList.toggle('active'); mobileMenu.classList.toggle('active'); });
+    document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());
+  </script>
+
+  <!-- Tawk.to Live Chat (lazy-loaded) -->
+  <script>
+  (function() {
+    var tawkLoaded = false;
+    function loadTawk() {
+      if (tawkLoaded) return;
+      tawkLoaded = true;
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/69ce56b0127eae1c37be0e72/1jl70596p';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    }
+    document.addEventListener('scroll', loadTawk, {once: true});
+    document.addEventListener('click', loadTawk, {once: true});
+    document.addEventListener('mouseover', loadTawk, {once: true});
+  })();
+  </script>
+</body>
+</html>

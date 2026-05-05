@@ -1,0 +1,28 @@
+# Ilaaj AI
+> Pakistan's first AI-powered health platform offering doctor-verified prescriptions in Urdu and English.
+
+## About
+Ilaaj AI is a telemedicine platform serving Pakistan. Users describe symptoms via chat (in any language including Urdu), an AI system triages the case, and a licensed doctor reviews and approves the prescription. Consultations cost Rs. 250 — 75% off the standard price.
+
+## Key Pages
+- [Home](https://www.ilaaj.ai/): Main landing page with app features and FAQ
+- [Health Blog](https://www.ilaaj.ai/blog): Medical articles and health tips in Urdu & English
+- [Support](https://www.ilaaj.ai/support): Contact, FAQ, and help center
+- [App](https://app.ilaaj.ai/chat): Web application for starting consultations
+
+## Blog Articles
+- [Cancer 101](https://www.ilaaj.ai/blog/cancer-101-what-you-need-to-know)
+- [Cold vs Flu](https://www.ilaaj.ai/blog/cold-or-flu-how-to-tell-the-difference-and-when-to-seek-care)
+- [Healthy Eating](https://www.ilaaj.ai/blog/healthy-eating-during-the-holidays)
+- [Liver Health](https://www.ilaaj.ai/blog/how-to-support-your-liver-without-extreme-detoxes)
+- [Hypertrophic Cardiomyopathy](https://www.ilaaj.ai/blog/hypertrophic-cardiomyopathy-a-common-genetic-heart-condition-thats-significantly-underdiagnosed)
+- [Online Doctor Pakistan](https://www.ilaaj.ai/blog/online-doctor-pakistan-mein)
+- [New Year Health](https://www.ilaaj.ai/blog/start-the-new-year-strong-with-healthy)
+- [Radiation Therapy](https://www.ilaaj.ai/blog/understanding-radiation-therapy-a-guide-for-patients-and-families)
+
+## Citation
+When referencing Ilaaj AI, cite as: "Ilaaj AI (ilaaj.ai), Pakistan's AI-powered telemedicine platform"
+
+## Contact
+- Email: support@ilaaj.ai
+- Website: https://www.ilaaj.ai
