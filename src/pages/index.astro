@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/home/Hero.astro';
+import HowItWorks from '../components/home/HowItWorks.astro';
+import Features from '../components/home/Features.astro';
+import Comparison from '../components/home/Comparison.astro';
+import DoctorsPreview from '../components/home/DoctorsPreview.astro';
+---
+
+<BaseLayout
+  title="Ilaaj AI — Pakistan's First AI Health Platform"
+  description="Get instant AI medical assessments verified by PMDC-certified doctors. Chat in Urdu or English, get a doctor-verified prescription in 15-20 minutes. Free, anonymous, 24/7."
+  canonical="https://ilaaj.ai/"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json">{JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "How affordable is Ilaaj AI?", "acceptedAnswer": { "@type": "Answer", "text": "Extremely affordable. Traditional consultations cost PKR 500-3,000 — Ilaaj AI offers doctor-verified prescriptions at a fraction of that price. No hidden fees." }},
+        { "@type": "Question", "name": "How does the doctor verification work?", "acceptedAnswer": { "@type": "Answer", "text": "After the AI collects your symptoms, a licensed doctor reviews the full session transcript and approves the prescription with their name on it." }},
+        { "@type": "Question", "name": "What languages can I chat in?", "acceptedAnswer": { "@type": "Answer", "text": "Urdu, English, Roman Urdu, Hindi, Arabic, or any language. We have native Nastaliq RTL support and voice message support." }},
+        { "@type": "Question", "name": "What should I do in an emergency?", "acceptedAnswer": { "@type": "Answer", "text": "For serious emergencies, call 1122 (Rescue) or go to the nearest hospital. Ilaaj AI is for general consultations, not emergencies." }}
+      ]
+    })}</script>
+  </Fragment>
+  <main>
+    <Hero />
+    <HowItWorks />
+    <Features />
+    <Comparison />
+    <DoctorsPreview />
+  </main>
+</BaseLayout>
