@@ -297,24 +297,20 @@ ul {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-100);
   transition: all var(--transition-base);
 }
 
 .navbar--scrolled {
-  background: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.06);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
 }
 
 .navbar__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 4rem;
+  height: 5rem;
 }
 
 .navbar__brand {
@@ -324,40 +320,38 @@ ul {
 }
 
 .navbar__logo {
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: var(--radius-md);
 }
 
 .navbar__name {
   font-size: var(--font-size-2xl);
   font-weight: 800;
-  color: var(--gray-900);
+  color: var(--primary-700);
   letter-spacing: -0.02em;
+  font-family: 'Space Grotesk', Inter, sans-serif;
 }
 
 .navbar__center {
   display: flex;
   align-items: center;
   gap: 0.25rem;
-  background: var(--gray-100);
-  border-radius: var(--radius-full);
-  padding: 0.25rem;
 }
 
 .navbar__link {
   font-size: var(--font-size-sm);
-  font-weight: 500;
+  font-weight: 600;
   color: var(--gray-500);
-  padding: 0.375rem 1rem;
-  border-radius: var(--radius-full);
-  transition: all var(--transition-fast);
+  padding: 0.5rem 1rem;
+  border-bottom: 2px solid transparent;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+  font-family: 'Space Grotesk', Inter, sans-serif;
 }
 
 .navbar__link:hover {
-  color: var(--gray-900);
-  background: var(--white);
-  box-shadow: var(--shadow-sm);
+  color: var(--primary-600);
+  border-bottom-color: var(--primary-500);
 }
 
 .navbar__right {
@@ -366,8 +360,10 @@ ul {
 }
 
 .navbar__cta {
-  padding: 0.5rem 1.25rem;
+  padding: 0.4rem 1.1rem;
   font-size: var(--font-size-sm);
+  font-weight: 600;
+  border-radius: var(--radius-lg);
 }
 
 /* Hamburger */
@@ -1046,7 +1042,7 @@ ul {
 }
 
 .steps__tab.active {
-  background: var(--primary-400);
+  background: var(--primary-600);
   border-color: var(--primary-600);
   color: var(--white);
   box-shadow: 0 4px 14px rgba(13, 148, 136, 0.3);

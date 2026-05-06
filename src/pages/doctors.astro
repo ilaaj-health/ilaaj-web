@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import DoctorsList from '../components/home/DoctorsList.astro';
+---
+
+<BaseLayout
+  title="Our Verified Doctors | PMDC-Registered Physicians — Ilaaj AI Pakistan"
+  description="Meet 13+ PMDC-registered doctors who verify every prescription on Ilaaj AI. GPs, gynaecologists, dermatologists across Pakistan."
+  canonical="https://ilaaj.ai/doctors"
+>
+  <main>
+    <section class="doctors-hero">
+      <div class="container">
+        <div class="doctors-hero__content">
+          <span class="section-header__tag">PMDC Verified</span>
+          <h1>Our Verified Doctors</h1>
+          <p class="doctors-hero__desc">Every prescription on Ilaaj AI is reviewed and approved by a licensed, PMDC-registered doctor. No AI-only prescriptions — ever.</p>
+        </div>
+      </div>
+    </section>
+
+    <DoctorsList />
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta__card reveal">
+          <div class="cta__card-content">
+            <h2 class="cta__title">Get Doctor-Verified Health Advice</h2>
+            <p>Chat with our AI, get your symptoms assessed, and receive a doctor-verified prescription in 15-20 minutes.</p>
+            <a href="https://app.ilaaj.ai/chat" class="btn btn--hero-primary btn--lg">
+              Start Free Consultation
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

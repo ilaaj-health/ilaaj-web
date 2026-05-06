@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/home/Hero.astro';
+import HowItWorks from '../../components/home/HowItWorks.astro';
+import Features from '../../components/home/Features.astro';
+import Comparison from '../../components/home/Comparison.astro';
+import DoctorsPreview from '../../components/home/DoctorsPreview.astro';
+import FAQ from '../../components/home/FAQ.astro';
+---
+
+<BaseLayout
+  lang="ur"
+  title="علاج AI — پاکستان کا پہلا AI صحت پلیٹ فارم"
+  description="فوری AI طبی تشخیص حاصل کریں، PMDC سرٹیفائیڈ ڈاکٹروں سے تصدیق شدہ۔ اردو یا انگریزی میں بات کریں، 15-20 منٹ میں ڈاکٹر سے تصدیق شدہ نسخہ پائیں۔"
+  canonical="https://ilaaj.ai/ur/"
+>
+  <main>
+    <Hero />
+    <HowItWorks />
+    <Features />
+    <Comparison />
+    <DoctorsPreview lang="ur" />
+    <FAQ />
+  </main>
+</BaseLayout>

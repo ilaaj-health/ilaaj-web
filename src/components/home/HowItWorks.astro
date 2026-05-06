@@ -1,0 +1,72 @@
+---
+import HowItWorksSteps from './HowItWorksSteps.astro';
+---
+
+<section class="flow" id="how-it-works" aria-labelledby="flow-title">
+  <div class="container">
+    <div class="flow__header reveal">
+      <span class="flow__tag">Kaise Kaam Karta Hai</span>
+      <h2 class="flow__title" id="flow-title">3 Steps. Doctor Aapka Naam Kabhi Nahin Dekhta.</h2>
+      <p class="flow__desc">AI aap ki baat sunti hai, doctor sirf case dekhta hai. Aap ka naam, phone ya email kabhi share nahin hota.</p>
+      <div class="flow__stats">
+        <div class="flow__stat"><span class="flow__stat-num">5,000+</span><span class="flow__stat-label">Prescriptions Verified</span></div>
+        <div class="flow__stat-divider"></div>
+        <div class="flow__stat"><span class="flow__stat-num">~20 min</span><span class="flow__stat-label">Average Time</span></div>
+        <div class="flow__stat-divider"></div>
+        <div class="flow__stat"><span class="flow__stat-num">4.9★</span><span class="flow__stat-label">Patient Rating</span></div>
+      </div>
+    </div>
+
+    <div class="steps__tabs reveal">
+      <button class="steps__tab active" data-step="0"><span class="steps__tab-fill"></span><span class="steps__tab-num">1</span><span class="steps__tab-label">Phone Se Login</span></button>
+      <button class="steps__tab" data-step="1"><span class="steps__tab-fill"></span><span class="steps__tab-num">2</span><span class="steps__tab-label">AI Se Baat Karein</span></button>
+      <button class="steps__tab" data-step="2"><span class="steps__tab-fill"></span><span class="steps__tab-num">3</span><span class="steps__tab-label">Prescription Milein</span></button>
+    </div>
+
+    <HowItWorksSteps />
+
+    <div class="flow__receive reveal">
+      <p class="flow__receive-label">Aapko milta hai:</p>
+      <div class="flow__receive-items">
+        <div class="flow__receive-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><polyline points="9 15 11 17 15 13"/></svg><span>PDF Prescription</span></div>
+        <div class="flow__receive-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.57 3.42 2 2 0 0 1 3.54 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.72a16 16 0 0 0 6 6l.88-.88a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Phone par delivery</span></div>
+        <div class="flow__receive-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>Pharmacy-ready format</span></div>
+        <div class="flow__receive-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>15-20 min mein</span></div>
+      </div>
+    </div>
+
+    <div class="flow__cta reveal">
+      <a href="https://app.ilaaj.ai" class="btn btn--hero-primary btn--lg btn--pulse">
+        Shuru Karein &mdash; Bilkul Muft
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <p class="flow__cta-note">Phone number se login · Bilkul muft</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    const flowSection = document.querySelector('.flow');
+    if (!flowSection) return;
+    const tabs = flowSection.querySelectorAll<HTMLElement>('.steps__tab');
+    const panels = flowSection.querySelectorAll('.steps__panel');
+    let timer: ReturnType<typeof setTimeout>;
+
+    function activate(step: number) {
+      clearTimeout(timer);
+      tabs.forEach((t, i) => {
+        t.classList.remove('active');
+        const fill = t.querySelector('.steps__tab-fill') as HTMLElement | null;
+        if (fill) { fill.style.animation = 'none'; void fill.offsetWidth; fill.style.animation = ''; }
+        panels[i]?.classList.remove('active');
+      });
+      tabs[step]?.classList.add('active');
+      panels[step]?.classList.add('active');
+      timer = setTimeout(() => activate((step + 1) % tabs.length), 5000);
+    }
+
+    tabs.forEach((tab, i) => tab.addEventListener('click', () => activate(i)));
+    activate(0);
+  })();
+</script>

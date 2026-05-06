@@ -1,0 +1,90 @@
+---
+import { localePath } from '../../i18n/utils';
+import type { Lang } from '../../i18n/utils';
+import '../../styles/doctors-preview.css';
+
+interface Props { lang?: Lang }
+const { lang = 'en' } = Astro.props;
+
+const doctors = [
+  { name:"Dr. M Mujeed ur Rehman", spec:"General Physician", qual:"MBBS, RMP", exp:"5 Yrs", photo:"https://res.cloudinary.com/dpaz2mhy6/image/upload/v1774861881/l2qbg2ewfvhjvg2rmxsl.jpg" },
+  { name:"Dr. Maria Mohsin", spec:"General Physician", qual:"MBBS", exp:"4 Yrs", photo:"https://res.cloudinary.com/dpaz2mhy6/image/upload/v1774970468/n6aksbu49oalzyjl4qzg.jpg" },
+  { name:"Dr. Sikandar Zulfiqar", spec:"General Physician", qual:"MBBS", exp:"4 Yrs", photo:"https://res.cloudinary.com/dpaz2mhy6/image/upload/v1774955149/edxuypgskvkedpdq5dqd.jpg" },
+  { name:"Dr. Tabinda", spec:"General Physician", qual:"MBBS", exp:"4 Yrs", photo:"https://res.cloudinary.com/dpaz2mhy6/image/upload/v1775058269/xetfs13oxme0bkvqpnpj.jpg" },
+  { name:"Dr. Wasifa Ahmad", spec:"General Practitioner", qual:"MBBS", exp:"4+ Yrs", photo:"https://res.cloudinary.com/dpaz2mhy6/image/upload/v1775137767/wrihl0ul6buppj7conzr.jpg" },
+  { name:"Dr. Sabeen Fatima Rizvi", spec:"General Practitioner", qual:"MBBS, MCPS", exp:"10+ Yrs", photo:"https://res.cloudinary.com/dpaz2mhy6/image/upload/v1775648768/e2j611x9q2viow8s6mbt.png" },
+  { name:"Dr. Sara Ali Khan", spec:"Gynaecologist", qual:"MBBS, FCPS, MRCOG-1", exp:"10 Yrs", photo:"https://res.cloudinary.com/dpaz2mhy6/image/upload/v1776350887/ged3x1h29plfzzblkrwh.png" },
+  { name:"Dr. Saira Zafar", spec:"General Practitioner", qual:"MBBS, MHPE", exp:"10.5 Yrs", photo:"https://res.cloudinary.com/dpaz2mhy6/image/upload/v1776334958/zwpaowaamnt8euxzlkzh.png" },
+  { name:"Dr. Umme Aeman Khan", spec:"Dermatologist", qual:"FCPS Derm, SCE UK", exp:"11 Yrs", photo:"https://res.cloudinary.com/dpaz2mhy6/image/upload/v1777285210/hjtt4bqgajqutvxsh783.png" },
+  { name:"Dr. Hadia Nadeem", spec:"General Physician", qual:"MBBS (RMP)", exp:"6 Yrs", photo:"https://res.cloudinary.com/dpaz2mhy6/image/upload/v1777026468/djo9viajggkqf2kjkn0j.jpg" },
+  { name:"Dr. Muneeb Mubashar", spec:"General Practitioner", qual:"MBBS, MPH", exp:"4 Yrs", photo:"https://res.cloudinary.com/dpaz2mhy6/image/upload/v1776844359/qdfkg95niecs74jtefgm.jpg" },
+  { name:"Dr. Ibtasam Ahmad", spec:"General Practitioner", qual:"MBBS, PGR", exp:"7 Yrs", photo:"https://res.cloudinary.com/dpaz2mhy6/image/upload/v1777365610/pbf9ztkeyfytmbtm4dsc.jpg" },
+];
+---
+
+<section class="dp-section" id="doctors">
+  <div class="container">
+    <div class="dp-header">
+      <div class="dp-header__left">
+        <span class="dp-badge">PMDC VERIFIED</span>
+        <h2 class="dp-title">Consult with Our Premium Verified Specialists</h2>
+        <p class="dp-desc">Access Pakistan's top-tier healthcare professionals, rigorously vetted by Ilaaj AI and PMDC for expert digital consultation.</p>
+      </div>
+      <div class="dp-navs">
+        <button class="dp-nav" id="dpPrev" aria-label="Previous">&#8249;</button>
+        <button class="dp-nav" id="dpNext" aria-label="Next">&#8250;</button>
+      </div>
+    </div>
+    <div class="dp-track-wrap">
+      <div class="dp-track" id="dpTrack">
+        {doctors.map(d => (
+          <div class="dp-card">
+            <img src={d.photo} alt={d.name} class="dp-card__photo" width="88" height="88" loading="lazy" />
+            <div class="dp-card__name">{d.name}</div>
+            <div class="dp-card__spec">{d.spec}</div>
+            <div class="dp-card__quals">{d.qual.split(',').map(q=><span class="dp-chip">{q.trim()}</span>)}<span class="dp-chip">{d.exp} Exp.</span></div>
+            <a href="https://app.ilaaj.ai/chat" class="dp-card__btn">Book Appointment</a>
+          </div>
+        ))}
+      </div>
+    </div>
+    <div class="dp-footer">
+      <div class="dp-dots" id="dpDots"></div>
+      <a href={localePath('/doctors', lang)} class="btn btn--outline">View All Doctors</a>
+    </div>
+  </div>
+</section>
+
+<script is:inline>
+(function(){
+  var t=document.getElementById('dpTrack'),de=document.getElementById('dpDots');
+  if(!t||!de)return;
+  var pg=0,tot=t.children.length,timer;
+  function pp(){return window.innerWidth<768?1:3}
+  function pgs(){return Math.ceil(tot/pp())}
+  function buildDots(){
+    de.innerHTML='';
+    for(var i=0;i<pgs();i++){
+      var d=document.createElement('span');
+      d.className='dp-dot'+(i===pg?' active':'');
+      d.onclick=(function(n){return function(){resetTimer();go(n)}})(i);
+      de.appendChild(d);
+    }
+  }
+  function go(n){
+    pg=((n%pgs())+pgs())%pgs();
+    var w=t.parentElement.offsetWidth,g=24,c=(w-g*(pp()-1))/pp();
+    t.style.transform='translateX(-'+(pg*pp()*(c+g))+'px)';
+    de.querySelectorAll('.dp-dot').forEach(function(d,i){d.classList.toggle('active',i===pg)});
+  }
+  function startTimer(){timer=setInterval(function(){go(pg+1)},3500)}
+  function resetTimer(){clearInterval(timer);startTimer()}
+  buildDots();
+  document.getElementById('dpPrev').onclick=function(){resetTimer();go(pg-1)};
+  document.getElementById('dpNext').onclick=function(){resetTimer();go(pg+1)};
+  t.parentElement.addEventListener('mouseenter',function(){clearInterval(timer)});
+  t.parentElement.addEventListener('mouseleave',startTimer);
+  window.addEventListener('resize',function(){pg=0;buildDots();go(0)});
+  startTimer();
+})();
+</script>

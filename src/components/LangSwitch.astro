@@ -1,0 +1,22 @@
+---
+import type { Lang } from '../i18n/utils';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const currentPath = Astro.url.pathname;
+const targetPath = lang === 'en'
+  ? `/ur${currentPath}`
+  : currentPath.replace(/^\/ur/, '') || '/';
+
+const targetLang: Lang = lang === 'en' ? 'ur' : 'en';
+---
+
+<a href={targetPath} class="lang-switch" lang={targetLang}>
+  {t('lang.switch')}
+</a>

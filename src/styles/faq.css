@@ -1,0 +1,45 @@
+.faq-hero { padding: 6rem 0 4rem; background: linear-gradient(135deg, var(--primary-800) 0%, var(--primary-600) 100%); text-align: center; color: white; }
+.faq-hero h1 { font-size: clamp(1.75rem, 4vw, 2.75rem); font-weight: 800; margin: 1rem 0 0.75rem; }
+.faq-hero p { opacity: 0.85; max-width: 600px; margin: 0 auto 2rem; }
+.faq-hero__tag { background: rgba(255,255,255,0.18) !important; color: white !important; }
+.faq-search { max-width: 600px; margin: 0 auto; }
+.faq-search input { width: 100%; padding: 0.9rem 1.25rem; border: none; border-radius: var(--radius-xl); font-size: 1rem; font-family: inherit; outline: none; box-shadow: 0 4px 24px rgba(0,0,0,0.15); color: var(--gray-900); }
+.faq-search__tags { margin-top: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; align-items: center; font-size: 0.8rem; }
+.faq-search__tags span { color: rgba(255,255,255,0.7); }
+.faq-search__tags a { color: white; font-weight: 600; }
+.faq-body { padding: 3rem 0 5rem; }
+.faq-layout { display: grid; grid-template-columns: 260px 1fr; gap: 3rem; align-items: start; }
+.faq-sidebar { position: sticky; top: 5rem; }
+.faq-sidebar__label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray-400); margin-bottom: 0.75rem; }
+.faq-sidebar nav { display: flex; flex-direction: column; gap: 0.25rem; margin-bottom: 2rem; }
+.faq-cat { display: flex; align-items: center; padding: 0.9rem 1.1rem; border-radius: var(--radius-lg); color: var(--gray-600); font-weight: 500; text-decoration: none; transition: background 0.15s, color 0.15s; }
+.faq-cat:hover, .faq-cat.active { background: var(--primary-700); color: white; }
+.faq-contact { background: var(--primary-50); border-radius: var(--radius-xl); padding: 1.5rem; }
+.faq-contact h4 { font-weight: 700; color: var(--primary-700); margin-bottom: 0.4rem; }
+.faq-contact p { font-size: 0.85rem; color: var(--gray-500); margin-bottom: 1rem; }
+.faq-contact .btn { display: block; text-align: center; margin-bottom: 0.5rem; }
+.faq-section { margin-bottom: 3rem; scroll-margin-top: 6rem; }
+.faq-section h2 { font-size: 1.5rem; font-weight: 700; color: var(--primary-800); margin-bottom: 1.25rem; padding-bottom: 0.75rem; border-bottom: 2px solid var(--primary-100); }
+.faq-item { background: white; border: 1px solid var(--gray-100); border-radius: var(--radius-xl); margin-bottom: 0.75rem; overflow: hidden; transition: box-shadow 0.2s; }
+.faq-item:hover { box-shadow: 0 2px 12px rgba(13,148,136,0.1); }
+.faq-item[open] { border-color: var(--primary-200); box-shadow: 0 0 0 2px rgba(13,148,136,0.1); }
+.faq-item summary { padding: 1.25rem 1.5rem; cursor: pointer; font-weight: 600; color: var(--gray-900); list-style: none; display: flex; justify-content: space-between; align-items: center; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; font-size: 1.25rem; color: var(--primary-600); }
+.faq-item[open] summary::after { content: '−'; }
+.faq-item[open] summary { color: var(--primary-700); }
+.faq-item p { padding: 0 1.5rem 1.25rem; color: var(--gray-600); line-height: 1.7; margin: 0; }
+.faq-banner { background: linear-gradient(135deg, var(--primary-800) 0%, var(--primary-600) 100%); border-radius: var(--radius-2xl); padding: 3rem; text-align: center; color: white; margin-bottom: 3rem; }
+.faq-banner h3 { font-size: 1.75rem; font-weight: 700; margin-bottom: 0.75rem; }
+.faq-banner p { opacity: 0.85; max-width: 520px; margin: 0 auto; }
+.faq-bento { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 3rem; }
+.faq-bento__card { background: var(--gray-50); border-radius: var(--radius-2xl); padding: 2rem; }
+.faq-bento__card--primary { background: var(--primary-800); }
+.faq-bento__card--primary h4 { color: white !important; }
+.faq-bento__card--primary p { color: rgba(255,255,255,0.85) !important; margin-bottom: 1.25rem; }
+.faq-bento__card h4 { font-size: 1.25rem; font-weight: 700; color: var(--primary-800); margin-bottom: 0.75rem; }
+.faq-bento__card > p { font-size: 0.9rem; color: var(--gray-600); margin-bottom: 1.25rem; }
+.faq-bento__apps { display: flex; gap: 0.75rem; }
+.btn--white { background: white; color: var(--primary-800); font-weight: 700; border: none; }
+.btn--white:hover { background: var(--gray-100); }
+@media (max-width: 768px) { .faq-layout { grid-template-columns: 1fr; } .faq-sidebar { position: static; } .faq-bento { grid-template-columns: 1fr; } }

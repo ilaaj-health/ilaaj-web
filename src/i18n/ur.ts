@@ -1,0 +1,26 @@
+const ur = {
+  'nav.how': 'یہ کیسے کام کرتا ہے',
+  'nav.features': 'خصوصیات',
+  'nav.doctors': 'ڈاکٹرز',
+  'nav.blog': 'بلاگ',
+  'nav.faq': 'سوالات',
+  'nav.cta': 'چیٹ شروع کریں',
+  'footer.tagline': 'پاکستان کا پہلا AI صحت پلیٹ فارم۔ اپنی علامات کسی بھی زبان میں بتائیں، AI ٹرائیج حاصل کریں، اور ڈاکٹر سے تصدیق شدہ نسخہ پائیں — سستا اور ہر وقت دستیاب۔',
+  'footer.product': 'پروڈکٹ',
+  'footer.features': 'خصوصیات',
+  'footer.how': 'یہ کیسے کام کرتا ہے',
+  'footer.faq': 'سوالات',
+  'footer.app': 'ایپ کھولیں',
+  'footer.legal': 'قانونی',
+  'footer.privacy': 'پرائیویسی پالیسی',
+  'footer.terms': 'شرائط و ضوابط',
+  'footer.support': 'سپورٹ',
+  'footer.contact': 'رابطہ',
+  'footer.contact.text': 'سوالات یا رائے؟',
+  'footer.emergency': 'ہنگامی صورت میں کال کریں',
+  'footer.rights': 'جملہ حقوق محفوظ ہیں۔',
+  'footer.disclaimer': 'علاج AI عام صحت مشاورت کے لیے ہے، ہنگامی حالات کے لیے نہیں۔ ہنگامی صورت میں 1122 (ریسکیو) پر کال کریں یا قریبی ہسپتال جائیں۔',
+  'lang.switch': 'English',
+};
+
+export default ur;

@@ -1,0 +1,115 @@
+---
+// Animated 3-state phone mockup for hero section
+---
+
+<div class="relative w-full min-h-[480px] sm:min-h-[520px] lg:aspect-square lg:min-h-0 max-w-[540px] mx-auto lg:ml-auto group">
+  <div class="absolute -top-4 left-1/2 -translate-x-1/2 w-48 h-1.5 bg-surface-container rounded-full overflow-hidden z-30">
+    <div class="progress-bar-fill h-full bg-secondary shadow-[0_0_8px_rgba(0,105,111,0.5)]"></div>
+  </div>
+  <div class="absolute inset-0 bg-slate-50/50 rounded-[2.5rem] shadow-[0_40px_100px_-20px_rgba(0,30,64,0.15)] border border-white p-4 backdrop-blur-sm overflow-hidden">
+
+    <!-- State 1: Chat -->
+    <div class="hero-state hero-state-1 flex flex-col p-6 space-y-6">
+      <div class="flex items-center gap-3 border-b border-outline-variant/20 pb-4">
+        <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white">
+          <span class="material-symbols-outlined text-xl">smart_toy</span>
+        </div>
+        <div>
+          <p class="text-sm font-bold text-primary">Ilaaj AI Assistant</p>
+          <p class="text-[10px] text-secondary font-medium">Online • AI Health Guide</p>
+        </div>
+      </div>
+      <div class="space-y-4 overflow-y-auto">
+        <div class="flex flex-col gap-1 max-w-[80%]">
+          <div class="bg-white p-3.5 rounded-2xl rounded-tl-none shadow-sm border border-outline-variant/10">
+            <p class="text-sm text-on-surface">Assalam-o-Alaikum! Aap kaise hain? Bataiye main aapki kya madad kar sakta hoon?</p>
+          </div>
+          <span class="text-[10px] text-on-surface-variant/60 ml-1">10:02 AM</span>
+        </div>
+        <div class="flex flex-col gap-1 max-w-[80%] self-end">
+          <div class="bg-primary text-white p-3.5 rounded-2xl rounded-tr-none shadow-md">
+            <p class="text-sm">Walaikum Assalam. Mujhe kal raat se bukhar hai aur gala kharab hai.</p>
+          </div>
+          <span class="text-[10px] text-on-surface-variant/60 mr-1 text-right">10:03 AM</span>
+        </div>
+        <div class="flex flex-col gap-1 max-w-[80%]">
+          <div class="bg-white p-3.5 rounded-2xl rounded-tl-none shadow-sm border border-outline-variant/10">
+            <div class="flex gap-1 items-center text-primary-container">
+              <span class="text-xs font-medium">Analyzing symptoms</span>
+              <div class="flex gap-0.5 ml-1">
+                <span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- State 2: Doctor Verification -->
+    <div class="hero-state hero-state-2 flex flex-col items-center justify-center p-8 bg-white/40">
+      <div class="relative w-48 h-48 flex items-center justify-center mb-8">
+        <div class="absolute inset-0 border-2 border-secondary/10 rounded-3xl overflow-hidden">
+          <div class="scanning-line absolute w-full h-1 bg-gradient-to-r from-transparent via-secondary to-transparent"></div>
+        </div>
+        <div class="heartbeat-icon w-24 h-24 rounded-full bg-secondary/10 flex items-center justify-center border border-secondary/20 shadow-[0_0_40px_rgba(0,219,231,0.2)]">
+          <span class="material-symbols-outlined text-5xl text-secondary" style="font-variation-settings:'FILL' 1;">medical_services</span>
+        </div>
+      </div>
+      <div class="text-center space-y-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 bg-secondary/10 text-secondary rounded-full border border-secondary/20">
+          <span class="material-symbols-outlined text-sm" style="font-variation-settings:'FILL' 1;">verified</span>
+          <span class="text-[10px] font-bold tracking-widest uppercase">PMDC Verification</span>
+        </div>
+        <h3 class="font-h2 text-2xl text-primary">Doctor Reviewing</h3>
+        <div class="flex items-center justify-center gap-3 bg-white p-3 rounded-xl border border-outline-variant/30 shadow-sm">
+          <div class="w-10 h-10 rounded-full bg-slate-200 border-2 border-white flex items-center justify-center overflow-hidden">
+            <span class="material-symbols-outlined text-slate-400">person</span>
+          </div>
+          <div class="text-left">
+            <p class="text-xs font-bold text-primary">Dr. Salman Farooq</p>
+            <p class="text-[10px] text-on-surface-variant">Reg No: #44921-A</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- State 3: Prescription -->
+    <div class="hero-state hero-state-3 flex flex-col p-6 items-center justify-center bg-slate-50">
+      <div class="w-full max-w-sm bg-white rounded-2xl shadow-2xl border border-outline-variant/20 overflow-hidden transform rotate-1">
+        <div class="bg-primary p-4 flex justify-between items-center text-white">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center">
+              <span class="material-symbols-outlined text-lg">description</span>
+            </div>
+            <span class="text-sm font-bold">Digital Prescription</span>
+          </div>
+          <span class="text-[10px] font-medium opacity-80">ID: IL-9920-X</span>
+        </div>
+        <div class="p-5 space-y-4">
+          <div class="flex justify-between items-start border-b border-outline-variant/10 pb-4">
+            <div><p class="text-[10px] uppercase font-bold text-on-surface-variant tracking-wider">Patient</p><p class="text-sm font-bold text-primary">Zain Ahmed</p></div>
+            <div class="text-right"><p class="text-[10px] uppercase font-bold text-on-surface-variant tracking-wider">Date</p><p class="text-sm font-medium">May 24, 2024</p></div>
+          </div>
+          <div class="space-y-2">
+            <p class="text-[10px] uppercase font-bold text-on-surface-variant tracking-wider">Medication</p>
+            <div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low border border-outline-variant/10">
+              <div class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary text-sm">medication</span><p class="text-xs font-bold text-primary">Panadol CF (500mg)</p></div>
+              <span class="text-[10px] text-on-surface-variant">1-0-1</span>
+            </div>
+            <div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low border border-outline-variant/10">
+              <div class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary text-sm">medication</span><p class="text-xs font-bold text-primary">Augmentin (625mg)</p></div>
+              <span class="text-[10px] text-on-surface-variant">1-1-1</span>
+            </div>
+          </div>
+          <div class="pt-3 border-t border-dashed border-outline-variant/40 flex justify-between items-end">
+            <div><span class="text-[8px] font-bold text-secondary uppercase">✓ Digitally Signed</span><p class="italic text-xs font-serif text-primary-container/60 mt-1">Dr. Salman Farooq</p></div>
+            <span class="material-symbols-outlined text-4xl text-primary/30">qr_code_2</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute -top-12 -right-12 w-48 h-48 bg-secondary/5 blur-[80px] rounded-full pointer-events-none"></div>
+    <div class="absolute -bottom-12 -left-12 w-48 h-48 bg-primary/5 blur-[80px] rounded-full pointer-events-none"></div>
+  </div>
+</div>

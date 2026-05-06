@@ -1,0 +1,74 @@
+---
+import Analytics from '../components/Analytics.astro';
+import TailwindConfig from '../components/TailwindConfig.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import type { Lang } from '../i18n/utils';
+import '../../css/styles.css';
+import '../styles/hero.css';
+import '../styles/comparison.css';
+
+interface Props {
+  lang?: Lang;
+  title: string;
+  description: string;
+  canonical?: string;
+  ogImage?: string;
+  noindex?: boolean;
+}
+
+const {
+  lang = 'en',
+  title,
+  description,
+  canonical = Astro.url.href,
+  ogImage = '/assets/ilaaj-logo.jpg',
+  noindex = false,
+} = Astro.props;
+
+const isRtl = lang === 'ur';
+const siteUrl = 'https://ilaaj.ai';
+const enUrl = Astro.url.href.replace(`${siteUrl}/ur`, siteUrl);
+const urUrl = lang === 'ur' ? Astro.url.href : `${siteUrl}/ur${Astro.url.pathname}`;
+---
+
+<!doctype html>
+<html lang={lang} dir={isRtl ? 'rtl' : 'ltr'}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content={noindex ? 'noindex,nofollow' : 'index,follow'} />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="en" href={enUrl} />
+    <link rel="alternate" hreflang="ur" href={urUrl} />
+    <link rel="alternate" hreflang="x-default" href={enUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <slot name="head" />
+    <TailwindConfig />
+    <Analytics />
+  </head>
+  <body>
+    <!-- GTM noscript -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKTHF96" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <Nav lang={lang} />
+    <slot />
+    <Footer lang={lang} />
+    <script>
+      const revealObserver = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); revealObserver.unobserve(e.target); }});
+      }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+      document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+    </script>
+  </body>
+</html>
