@@ -1,4 +1,5 @@
 /* Comparison table styles */
+.cv2-table { display:grid; grid-template-columns:1.2fr 1.8fr 1.5fr 1.5fr; min-width:640px; overflow-x:auto; }
 .compare-v2 .cv2-h { padding:22px 18px; background:#fff; border-bottom:1px solid #EEF1F5; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; position:relative; }
 .compare-v2 .cv2-h--label { align-items:flex-start; padding-left:22px; padding-right:10px; }
 .compare-v2 .cv2-h-icon { width:44px; height:44px; border-radius:10px; background:#F1F5F9; display:inline-flex; align-items:center; justify-content:center; }
@@ -12,7 +13,7 @@
 .compare-v2 .cv2-cell--label { justify-content:flex-start; padding-left:22px; color:#0F172A; font-weight:700; font-size:14px; font-family:'Space Grotesk',Inter,sans-serif; }
 .compare-v2 .cv2-dot { width:8px; height:8px; border-radius:50%; background:#EF4444; flex-shrink:0; }
 .compare-v2 .cv2-tri { width:0; height:0; border-left:6px solid transparent; border-right:6px solid transparent; border-bottom:10px solid #F59E0B; flex-shrink:0; }
-.compare-v2 .cv2-cell--stack { flex-direction:column; gap:4px; justify-content:center; align-items:flex-start; }
+.compare-v2 .cv2-cell--stack { flex-direction:row; gap:6px; align-items:center; }
 .compare-v2 .cv2-stack-x { color:#DC2626; font-weight:700; font-size:16px; }
 .compare-v2 .cv2-stack-sub { font-size:12px; color:#64748B; }
 .compare-v2 .cv2-cell--us { background:#ECFDF5; flex-direction:column; gap:2px; border-bottom-color:#D1FAE5; align-items:flex-start; text-align:left; }

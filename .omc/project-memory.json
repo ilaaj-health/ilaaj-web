@@ -133,6 +133,12 @@
       "type": "file"
     },
     {
+      "path": "src\\styles\\comparison.css",
+      "accessCount": 12,
+      "lastAccessed": 1778071393125,
+      "type": "file"
+    },
+    {
       "path": "blog.html",
       "accessCount": 11,
       "lastAccessed": 1778061051229,
@@ -163,15 +169,15 @@
       "type": "file"
     },
     {
-      "path": "src\\styles\\comparison.css",
-      "accessCount": 6,
-      "lastAccessed": 1778066857787,
-      "type": "file"
-    },
-    {
       "path": "src\\components\\home\\DoctorsPreview.astro",
       "accessCount": 6,
       "lastAccessed": 1778067137876,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\home\\Comparison.astro",
+      "accessCount": 5,
+      "lastAccessed": 1778071083003,
       "type": "file"
     },
     {
@@ -214,12 +220,6 @@
       "path": "blog\\bukhar-ka-ilaj.html",
       "accessCount": 3,
       "lastAccessed": 1778063542036,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\home\\Comparison.astro",
-      "accessCount": 3,
-      "lastAccessed": 1778066449579,
       "type": "file"
     },
     {
