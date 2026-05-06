@@ -1,0 +1,50 @@
+---
+import { posts } from '../../data/blog-posts';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+
+export function getStaticPaths() {
+  return posts.map(p => ({ params: { slug: p.slug }, props: { post: p } }));
+}
+
+const { post } = Astro.props;
+
+let articleHtml = '';
+try {
+  const raw = fs.readFileSync(
+    path.join(process.cwd(), 'blog', `${post.slug}.html`), 'utf-8'
+  );
+  const s = raw.indexOf('<article');
+  const e = raw.lastIndexOf('</article>');
+  if (s >= 0 && e > s) {
+    articleHtml = raw.slice(raw.indexOf('>', s) + 1, e)
+      .replace(/href="\.\.\/blog\.html"/g, 'href="/blog"');
+  }
+} catch {}
+---
+
+<BaseLayout
+  title={`${post.title} | Ilaaj AI`}
+  description={post.excerpt}
+  canonical={`https://ilaaj.ai/blog/${post.slug}`}
+  ogImage={post.img}
+>
+  <main>
+    {articleHtml
+      ? <article class="blog-post" set:html={articleHtml} />
+      : <article class="blog-post">
+          <div class="container">
+            <a href="/blog" class="blog-post__back">← Back to Blog</a>
+            <h1 class="blog-post__title">{post.title}</h1>
+            <div class="blog-post__content"><p>{post.excerpt}</p></div>
+            <a href="https://app.ilaaj.ai/chat" class="btn btn--primary">Get Advice from AI →</a>
+          </div>
+        </article>
+    }
+  </main>
+</BaseLayout>
+
+<style is:global>
+  @import '../../../css/blog.css';
+</style>

@@ -128,8 +128,8 @@
   "hotPaths": [
     {
       "path": "css\\styles.css",
-      "accessCount": 17,
-      "lastAccessed": 1778068801225,
+      "accessCount": 19,
+      "lastAccessed": 1778069492711,
       "type": "file"
     },
     {
@@ -151,6 +151,18 @@
       "type": "file"
     },
     {
+      "path": "src\\styles\\faq.css",
+      "accessCount": 7,
+      "lastAccessed": 1778069637759,
+      "type": "file"
+    },
+    {
+      "path": "src\\pages\\support.astro",
+      "accessCount": 7,
+      "lastAccessed": 1778069874536,
+      "type": "file"
+    },
+    {
       "path": "src\\styles\\comparison.css",
       "accessCount": 6,
       "lastAccessed": 1778066857787,
@@ -160,12 +172,6 @@
       "path": "src\\components\\home\\DoctorsPreview.astro",
       "accessCount": 6,
       "lastAccessed": 1778067137876,
-      "type": "file"
-    },
-    {
-      "path": "src\\styles\\faq.css",
-      "accessCount": 5,
-      "lastAccessed": 1778062835452,
       "type": "file"
     },
     {
@@ -193,9 +199,9 @@
       "type": "file"
     },
     {
-      "path": "src\\pages\\support.astro",
-      "accessCount": 3,
-      "lastAccessed": 1778061641555,
+      "path": "src\\pages\\privacy-policy.astro",
+      "accessCount": 4,
+      "lastAccessed": 1778069820590,
       "type": "file"
     },
     {
@@ -223,6 +229,30 @@
       "type": "file"
     },
     {
+      "path": "src\\data\\blog-posts.ts",
+      "accessCount": 3,
+      "lastAccessed": 1778068912514,
+      "type": "file"
+    },
+    {
+      "path": "src\\pages\\blog\\[slug].astro",
+      "accessCount": 3,
+      "lastAccessed": 1778069303272,
+      "type": "file"
+    },
+    {
+      "path": "src\\styles\\doctors-preview.css",
+      "accessCount": 3,
+      "lastAccessed": 1778069644763,
+      "type": "file"
+    },
+    {
+      "path": "src\\pages\\terms-and-conditions.astro",
+      "accessCount": 3,
+      "lastAccessed": 1778069833297,
+      "type": "file"
+    },
+    {
       "path": "index.html",
       "accessCount": 2,
       "lastAccessed": 1778006460434,
@@ -241,21 +271,21 @@
       "type": "file"
     },
     {
-      "path": "src\\data\\blog-posts.ts",
-      "accessCount": 2,
-      "lastAccessed": 1778063471160,
-      "type": "file"
-    },
-    {
-      "path": "src\\styles\\doctors-preview.css",
-      "accessCount": 2,
-      "lastAccessed": 1778067255744,
-      "type": "file"
-    },
-    {
       "path": "src\\components\\TailwindConfig.astro",
       "accessCount": 2,
       "lastAccessed": 1778068767557,
+      "type": "file"
+    },
+    {
+      "path": "src\\pages\\blog\\index.astro",
+      "accessCount": 2,
+      "lastAccessed": 1778068912179,
+      "type": "file"
+    },
+    {
+      "path": "src\\styles\\legal.css",
+      "accessCount": 2,
+      "lastAccessed": 1778069844287,
       "type": "file"
     },
     {
@@ -349,18 +379,6 @@
       "type": "file"
     },
     {
-      "path": "src\\pages\\privacy-policy.astro",
-      "accessCount": 1,
-      "lastAccessed": 1778060871050,
-      "type": "file"
-    },
-    {
-      "path": "src\\pages\\terms-and-conditions.astro",
-      "accessCount": 1,
-      "lastAccessed": 1778060880746,
-      "type": "file"
-    },
-    {
       "path": "faq.html",
       "accessCount": 1,
       "lastAccessed": 1778060964503,
@@ -376,12 +394,6 @@
       "path": "publish-today.py",
       "accessCount": 1,
       "lastAccessed": 1778061060379,
-      "type": "file"
-    },
-    {
-      "path": "src\\pages\\blog\\index.astro",
-      "accessCount": 1,
-      "lastAccessed": 1778061499278,
       "type": "file"
     },
     {

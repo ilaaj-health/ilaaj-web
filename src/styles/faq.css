@@ -1,7 +1,7 @@
-.faq-hero { padding: 6rem 0 4rem; background: linear-gradient(135deg, var(--primary-800) 0%, var(--primary-600) 100%); text-align: center; color: white; }
+.faq-hero { padding: 6rem 0 4rem; background: linear-gradient(135deg, var(--gray-50) 0%, #f0fdfa 100%); text-align: center; color: var(--gray-900); }
 .faq-hero h1 { font-size: clamp(1.75rem, 4vw, 2.75rem); font-weight: 800; margin: 1rem 0 0.75rem; }
-.faq-hero p { opacity: 0.85; max-width: 600px; margin: 0 auto 2rem; }
-.faq-hero__tag { background: rgba(255,255,255,0.18) !important; color: white !important; }
+.faq-hero p { color: var(--gray-500); max-width: 600px; margin: 0 auto 2rem; }
+.faq-hero__tag { background: var(--primary-50) !important; color: var(--primary-700) !important; }
 .faq-search { max-width: 600px; margin: 0 auto; }
 .faq-search input { width: 100%; padding: 0.9rem 1.25rem; border: none; border-radius: var(--radius-xl); font-size: 1rem; font-family: inherit; outline: none; box-shadow: 0 4px 24px rgba(0,0,0,0.15); color: var(--gray-900); }
 .faq-search__tags { margin-top: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; align-items: center; font-size: 0.8rem; }

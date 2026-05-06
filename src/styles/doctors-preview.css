@@ -28,7 +28,7 @@
 @media (max-width: 768px) { .dp-card { flex: 0 0 calc(85% - 0.75rem); } .dp-header { flex-direction: column; } }
 .dl-section { padding: 3rem 0 5rem; }
 .dl-toolbar { margin-bottom: 2rem; }
-.dl-search { width: 100%; padding: 0.85rem 1.25rem; border: 1.5px solid var(--gray-200); border-radius: var(--radius-xl); font-size: 1rem; font-family: inherit; outline: none; color: var(--gray-900); margin-bottom: 1rem; transition: border-color 0.2s; box-sizing: border-box; }
+.dl-search { width: 100%; padding: 0.85rem 1.25rem; border: 1.5px solid var(--gray-200); border-radius: 999px; font-size: 1rem; font-family: inherit; outline: none; color: var(--gray-900); margin-bottom: 1rem; transition: border-color 0.2s; box-sizing: border-box; }
 .dl-search:focus { border-color: var(--primary-500); box-shadow: 0 0 0 3px rgba(13,148,136,0.1); }
 .dl-filters { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .dl-filter { padding: 0.45rem 1.1rem; border-radius: 999px; border: 1.5px solid var(--gray-200); background: white; color: var(--gray-600); font-size: 0.82rem; font-weight: 600; cursor: pointer; transition: all 0.15s; font-family: inherit; }

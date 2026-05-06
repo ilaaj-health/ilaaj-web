@@ -1370,7 +1370,7 @@ ul {
 /* ==================== FAQ ==================== */
 .faq {
   padding: var(--section-py) 0;
-  background: var(--white);
+  background: linear-gradient(135deg, var(--gray-50) 0%, #f0fdfa 100%);
 }
 
 .faq__layout {
@@ -2091,8 +2091,8 @@ ul {
 /* Doctors page hero */
 .doctors-hero {
   padding: 8rem 0 3rem;
-  background: linear-gradient(135deg, var(--primary-600), var(--primary-800));
-  color: var(--white);
+  background: linear-gradient(135deg, var(--gray-50) 0%, #f0fdfa 100%);
+  color: var(--gray-900);
 }
 
 .doctors-hero__back {
@@ -2100,13 +2100,13 @@ ul {
   align-items: center;
   gap: 0.35rem;
   font-size: var(--font-size-sm);
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--primary-600);
   margin-bottom: 1.5rem;
   transition: color var(--transition-fast);
 }
 
 .doctors-hero__back:hover {
-  color: var(--white);
+  color: var(--primary-700);
 }
 
 .doctors-hero h1 {
@@ -2118,7 +2118,7 @@ ul {
 
 .doctors-hero p {
   font-size: var(--font-size-lg);
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--gray-500);
   max-width: 600px;
 }
 
@@ -2128,11 +2128,11 @@ ul {
   gap: 0.5rem;
   margin-top: 1.5rem;
   font-size: var(--font-size-sm);
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--gray-500);
 }
 
 .doctors-hero__note svg {
-  stroke: rgba(255, 255, 255, 0.7);
+  stroke: var(--gray-400);
   flex-shrink: 0;
 }
 

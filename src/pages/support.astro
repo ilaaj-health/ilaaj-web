@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/legal.css';
 import '../styles/support.css';
 ---
 
@@ -8,17 +9,19 @@ import '../styles/support.css';
   description="Need help with Ilaaj AI? Contact our support team via email, phone or live chat. Available 24/7 for technical, billing & account questions."
   canonical="https://ilaaj.ai/support"
 >
-  <main class="legal-page">
-    <div class="container">
-      <div class="legal-header">
-        <div class="legal-header__icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--primary-600)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+  <main>
+    <section class="legal-hero">
+      <div class="container">
+        <div class="legal-hero__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--primary-600)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
         </div>
-        <h1 class="legal-header__title">Support Center</h1>
-        <p class="legal-header__desc">We're here to help! Get in touch with our support team for any questions or issues.</p>
+        <h1 class="legal-hero__title">Support Center</h1>
+        <p class="legal-hero__meta">We're here to help — get in touch anytime.</p>
       </div>
+    </section>
 
-      <div class="legal-content">
+    <div class="legal-body">
+      <div class="container">
         <div class="contact-grid">
           <div class="contact-card contact-card--email">
             <div class="contact-card__icon">
