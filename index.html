@@ -80,6 +80,24 @@
   })();
   </script>
   <!-- End Google Tag Manager -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1697266221447949');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1697266221447949&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ilaaj AI | AI Se Baat Karein, Anonymous Doctor Verifies — 100% Free</title>
@@ -217,6 +235,188 @@
   </script>
 
   <!-- GA4 moved to end of body -->
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       NEW HERO PREVIEW — dependencies (Tailwind CDN, fonts, animations)
+       Drop-in support for the section injected after the existing hero
+       below. Tailwind utility classes don't conflict with the existing
+       BEM classes (.hero__title, .flow__title, etc.) so this is safe to
+       leave loaded alongside the legacy CSS. ─────────────────────── */ -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <script>
+    if (window.tailwind) {
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-fixed": "#ccfbf1",
+              "error-container": "#ffdad6",
+              "on-tertiary": "#ffffff",
+              "outline-variant": "#c3c6d1",
+              "on-surface-variant": "#43474f",
+              "surface-container": "#eceef0",
+              "primary-fixed": "#d5e3ff",
+              "on-tertiary-container": "#3eabab",
+              "surface": "#f7f9fb",
+              "secondary-fixed-dim": "#5eead4",
+              "on-primary-fixed": "#0f766e",
+              "tertiary": "#002323",
+              "on-surface": "#191c1e",
+              "on-secondary-fixed-variant": "#004f54",
+              "on-error-container": "#93000a",
+              "on-secondary-container": "#006a70",
+              "inverse-primary": "#a7c8ff",
+              "surface-bright": "#f7f9fb",
+              "on-secondary": "#ffffff",
+              "on-primary-container": "#799dd6",
+              "error": "#ba1a1a",
+              "inverse-surface": "#2d3133",
+              "primary-fixed-dim": "#a7c8ff",
+              "on-primary-fixed-variant": "#1f477b",
+              "on-secondary-fixed": "#0f766e",
+              "tertiary-fixed": "#8cf3f3",
+              "tertiary-fixed-dim": "#6fd7d6",
+              "primary-container": "#0f766e",
+              "inverse-on-surface": "#eff1f3",
+              "primary": "#0d9488",
+              "on-primary": "#ffffff",
+              "on-background": "#191c1e",
+              "outline": "#737780",
+              "surface-container-highest": "#e0e3e5",
+              "background": "#f7f9fb",
+              "on-tertiary-fixed": "#002020",
+              "surface-tint": "#0d9488",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-fixed-variant": "#004f4f",
+              "on-error": "#ffffff",
+              "surface-container-low": "#f2f4f6",
+              "secondary": "#0f766e",
+              "tertiary-container": "#003a3a",
+              "secondary-container": "#00f1fe",
+              "surface-container-high": "#e6e8ea",
+              "surface-dim": "#d8dadc",
+              "surface-variant": "#e0e3e5"
+            },
+            fontFamily: {
+              "h1": ["Space Grotesk"], "h2": ["Space Grotesk"],
+              "body-md": ["Inter"], "body-lg": ["Inter"],
+              "label-caps": ["Inter"], "roman-urdu-support": ["Inter"]
+            },
+            fontSize: {
+              "h1":   ["48px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }],
+              "h2":   ["32px", { lineHeight: "1.2", fontWeight: "600" }],
+              "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+              "body-md": ["16px", { lineHeight: "1.5", fontWeight: "400" }],
+              "roman-urdu-support": ["16px", { lineHeight: "1.6", fontWeight: "500" }],
+              "label-caps": ["12px", { lineHeight: "1", letterSpacing: "0.05em", fontWeight: "700" }]
+            }
+          }
+        }
+      };
+    }
+  </script>
+  <style>
+    /* ─── Global font sync — applies the new hero's typography to the whole site
+       so /index, /blog, /doctors, /support all read the same.
+       Inter for body text, Space Grotesk for headings + display. ─────── */
+    html, body {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    }
+    h1, h2, h3, h4, h5, h6,
+    .hero__title, .flow__title, .section-title,
+    .nav__brand, .new-hero-preview .font-h1, .new-hero-preview .font-h2 {
+      font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif !important;
+    }
+
+    /* Scoped to the new-hero preview block to avoid bleed */
+    .new-hero-preview .glass-card {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(0, 51, 102, 0.1);
+    }
+    .new-hero-preview .shimmer-btn {
+      background: linear-gradient(90deg, #0d9488 0%, #0f766e 100%);
+      position: relative; overflow: hidden;
+      transition:
+        transform 220ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 240ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-position 600ms ease;
+      background-size: 200% 100%;
+      background-position: 0% 50%;
+    }
+    .new-hero-preview .shimmer-btn:hover {
+      transform: translateY(-3px) scale(1.02);
+      background-position: 100% 50%;
+      box-shadow:
+        0 22px 40px -10px rgba(13, 148, 136, 0.55),
+        0 10px 20px -6px rgba(15, 118, 110, 0.45),
+        inset 0 1px 0 rgba(255,255,255,0.25) !important;
+    }
+    .new-hero-preview .shimmer-btn:active {
+      transform: translateY(-1px) scale(0.99);
+      transition-duration: 80ms;
+    }
+    /* Arrow nudges right + circle brightens on hover */
+    .new-hero-preview .shimmer-btn .material-symbols-outlined {
+      transition: transform 220ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .new-hero-preview .shimmer-btn:hover .material-symbols-outlined {
+      transform: translateX(4px);
+    }
+    .new-hero-preview .shimmer-btn::after {
+      content: ''; position: absolute; top: -50%; left: -50%;
+      width: 200%; height: 200%;
+      background: linear-gradient(45deg, transparent 20%, rgba(255,255,255,0.1) 50%, transparent 80%);
+      animation: nh-shimmer 3s infinite;
+    }
+    @keyframes nh-shimmer {
+      0%   { transform: translate(-30%, -30%); }
+      100% { transform: translate(30%, 30%); }
+    }
+    .new-hero-preview .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    @keyframes nh-masterCycle {
+      0%, 32%   { opacity: 1; transform: translateY(0) scale(1); visibility: visible; }
+      33%, 100% { opacity: 0; transform: translateY(20px) scale(0.95); visibility: hidden; }
+    }
+    @keyframes nh-progressLine {
+      0%   { width: 0%; }
+      30%, 33%   { width: 33.33%; }
+      63%, 66%   { width: 66.66%; }
+      96%, 100%  { width: 100%; }
+    }
+    @keyframes nh-scan {
+      0%   { top: 0%;   opacity: 0; }
+      50%  { opacity: 1; }
+      100% { top: 100%; opacity: 0; }
+    }
+    @keyframes nh-heartbeat {
+      0%, 100% { transform: scale(1); }
+      15%, 45% { transform: scale(1.15); }
+      30%      { transform: scale(1); }
+    }
+    @keyframes nh-pulse {
+      0%, 100% { opacity: 1;   transform: scale(1); }
+      50%      { opacity: 0.3; transform: scale(0.8); }
+    }
+    .new-hero-preview .hero-state { position: absolute; inset: 0; transition: all 0.6s cubic-bezier(0.4,0,0.2,1); }
+    .new-hero-preview .hero-state-1 { animation: nh-masterCycle 12s infinite 0s; }
+    .new-hero-preview .hero-state-2 { animation: nh-masterCycle 12s infinite 4s; opacity: 0; visibility: hidden; }
+    .new-hero-preview .hero-state-3 { animation: nh-masterCycle 12s infinite 8s; opacity: 0; visibility: hidden; }
+    .new-hero-preview .progress-bar-fill { animation: nh-progressLine 12s infinite linear; }
+    .new-hero-preview .scanning-line     { animation: nh-scan 2s infinite linear; }
+    .new-hero-preview .heartbeat-icon    { animation: nh-heartbeat 1.5s infinite ease-in-out; }
+    .new-hero-preview .typing-dot {
+      width: 4px; height: 4px; background: currentColor; border-radius: 50%;
+      animation: nh-pulse 1s infinite;
+    }
+    .new-hero-preview .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+    .new-hero-preview .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+  </style>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -261,60 +461,180 @@
 
   <main>
 
-    <!-- ==================== HERO ==================== -->
-    <section class="hero">
-      <div class="container hero__inner">
-        <!-- Centered text content -->
-        <div class="hero__content reveal">
-          <h1 class="hero__title">
-            <!-- Variant D: privacy-first — "doctor never sees your name" -->
-            <span class="hero__v hero__v--D">
-              <span>Doctor Aapka Naam<br>Kabhi Nahin Dekhta.</span><br>
-              <span class="hero__title-highlight">AI Se Baat Karein, Verified Prescription Lein.</span>
-            </span>
-            <!-- Variant E: comfort-first — "you only talk to AI" -->
-            <span class="hero__v hero__v--E">
-              <span>Sirf AI Se<br>Baat Karein.</span><br>
-              <span class="hero__title-highlight">Doctor Sirf Prescription Verify Karta Hai.</span>
-            </span>
-          </h1>
-          <p class="hero__subtitle">
-            AI aap ki history leta hai. PMDC doctor sirf <strong>age + gender</strong> dekh kar Prescription verify karta hai &mdash; <strong>15-20 min, bilkul muft.</strong>
-          </p>
-          <div class="hero__actions">
-            <a href="https://app.ilaaj.ai/chat" class="btn btn--hero-primary btn--lg" data-i18n="hero-btn-primary">
-              AI Se Baat Karein &mdash; Muft Mashwara
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    <!-- ==================== NEW HERO PREVIEW (Tailwind / animated mockup) ====================
+         Pasted from stitch_ilaaj_ai_brand_creative — wrapped in `.new-hero-preview` so the
+         scoped styles + Tailwind utilities don't bleed into the legacy site CSS.
+         Drop this block to remove the preview later. ─────────────────────────────────────── -->
+    <div class="new-hero-preview">
+    <section class="relative min-h-[85vh] flex items-center overflow-hidden bg-white font-body-md text-on-background">
+      <div class="container mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center z-10 py-12">
+        <div class="max-w-2xl">
+          <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-label-caps mb-6">PAKISTAN'S FIRST AI-CLINIC</span>
+          <h1 class="font-h1 text-h1 text-primary-container mb-6">Health Advice, <br><span class="text-secondary">Aitmaad</span> Ke Saath.</h1>
+          <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">Get instant AI medical assessments, verified by PMDC-certified doctors. Quality healthcare now accessible from every corner of Pakistan.</p>
+          <div class="flex">
+            <a
+              href="https://app.ilaaj.ai/chat"
+              class="shimmer-btn group inline-flex items-center justify-center gap-3 px-7 py-3.5 rounded-full text-white font-bold text-base no-underline transition-transform hover:-translate-y-0.5 active:scale-[0.98]"
+              style="
+                box-shadow:
+                  0 12px 28px -8px rgba(13, 148, 136, 0.55),
+                  0 4px 12px -4px rgba(15, 118, 110, 0.35),
+                  inset 0 1px 0 rgba(255,255,255,0.18);
+              "
+            >
+              AI Se Baat Karein — Muft Mashwara
+              <span
+                class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-white/15 group-hover:bg-white/25 transition-colors"
+              >
+                <span class="material-symbols-outlined" style="font-size:18px">arrow_forward</span>
+              </span>
             </a>
-          </div>
-          <ul class="hero__ticks" aria-label="What's included">
-            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Naam Private Rehta Hai</li>
-            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 100% Free</li>
-            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> PMDC Doctors</li>
-            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 15-20 Min Rx</li>
-          </ul>
-          <div class="hero__proof">
-            <div class="hero__avatars" aria-hidden="true">
-              <!-- Decorative team indicators. Swap to real doctor headshots when available. -->
-              <span class="hero__avatar hero__avatar--1">AK</span>
-              <span class="hero__avatar hero__avatar--2">HR</span>
-              <span class="hero__avatar hero__avatar--3">SI</span>
-              <span class="hero__avatar hero__avatar--4">BA</span>
-            </div>
-            <p class="hero__social-proof">
-              <strong>PMDC verified doctors</strong> &mdash; har Prescription verified
-            </p>
           </div>
         </div>
 
-        <!-- Phone showcase removed: redacted-ID privacy visual lives in the "How It Works" section below
-             which renders as the next viewport on both mobile and desktop. -->
+        <!-- High Fidelity UI Mockup Container
+             On mobile we drop the aspect-square (it crops the chat list) and use a
+             generous min-height instead, so all 3 chat bubbles + the typing dots fit. -->
+        <div class="relative w-full min-h-[480px] sm:min-h-[520px] lg:aspect-square lg:min-h-0 max-w-[540px] mx-auto lg:ml-auto group">
+          <!-- Progress Stepper -->
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 w-48 h-1.5 bg-surface-container rounded-full overflow-hidden z-30">
+            <div class="progress-bar-fill h-full bg-secondary shadow-[0_0_8px_rgba(0,105,111,0.5)]"></div>
+          </div>
+          <div class="absolute inset-0 bg-slate-50/50 rounded-[2.5rem] shadow-[0_40px_100px_-20px_rgba(0,30,64,0.15)] border border-white p-4 backdrop-blur-sm overflow-hidden">
 
+            <!-- Step 1: Chat Interaction -->
+            <div class="hero-state hero-state-1 flex flex-col p-6 space-y-6">
+              <div class="flex items-center gap-3 border-b border-outline-variant/20 pb-4">
+                <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white">
+                  <span class="material-symbols-outlined text-xl">smart_toy</span>
+                </div>
+                <div>
+                  <p class="text-sm font-bold text-primary">Ilaaj AI Assistant</p>
+                  <p class="text-[10px] text-secondary font-medium">Online • AI Health Guide</p>
+                </div>
+              </div>
+              <div class="space-y-4 overflow-y-auto">
+                <div class="flex flex-col gap-1 max-w-[80%]">
+                  <div class="bg-white p-3.5 rounded-2xl rounded-tl-none shadow-sm border border-outline-variant/10">
+                    <p class="text-sm text-on-surface">Assalam-o-Alaikum! Aap kaise hain? Bataiye main aapki kya madad kar sakta hoon?</p>
+                  </div>
+                  <span class="text-[10px] text-on-surface-variant/60 ml-1">10:02 AM</span>
+                </div>
+                <div class="flex flex-col gap-1 max-w-[80%] self-end">
+                  <div class="bg-primary text-white p-3.5 rounded-2xl rounded-tr-none shadow-md">
+                    <p class="text-sm font-roman-urdu-support">Walaikum Assalam. Mujhe kal raat se bukhar hai aur gala kharab hai.</p>
+                  </div>
+                  <span class="text-[10px] text-on-surface-variant/60 mr-1 text-right">10:03 AM</span>
+                </div>
+                <div class="flex flex-col gap-1 max-w-[80%]">
+                  <div class="bg-white p-3.5 rounded-2xl rounded-tl-none shadow-sm border border-outline-variant/10">
+                    <div class="flex gap-1 items-center text-primary-container">
+                      <span class="text-xs font-medium">Analyzing symptoms</span>
+                      <div class="flex gap-0.5 ml-1">
+                        <span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <!-- Trust-pills bar removed — content was duplicated in hero ticks + flow section. -->
+            <!-- Step 2: Doctor Verification -->
+            <div class="hero-state hero-state-2 flex flex-col items-center justify-center p-8 bg-white/40">
+              <div class="relative w-48 h-48 flex items-center justify-center mb-8">
+                <div class="absolute inset-0 border-2 border-secondary/10 rounded-3xl overflow-hidden">
+                  <div class="scanning-line absolute w-full h-1 bg-gradient-to-r from-transparent via-secondary to-transparent"></div>
+                  <div class="absolute inset-0 bg-[radial-gradient(circle,rgba(0,219,231,0.05)_1px,transparent_1px)] bg-[size:15px_15px]"></div>
+                </div>
+                <div class="heartbeat-icon w-24 h-24 rounded-full bg-secondary/10 flex items-center justify-center border border-secondary/20 shadow-[0_0_40px_rgba(0,219,231,0.2)]">
+                  <span class="material-symbols-outlined text-5xl text-secondary" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+                </div>
+              </div>
+              <div class="text-center space-y-3">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-secondary/10 text-secondary rounded-full border border-secondary/20">
+                  <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+                  <span class="text-[10px] font-bold tracking-widest uppercase">PMDC Verification</span>
+                </div>
+                <h3 class="font-h2 text-2xl text-primary">Doctor Reviewing</h3>
+                <div class="flex items-center justify-center gap-3 bg-white p-3 rounded-xl border border-outline-variant/30 shadow-sm">
+                  <div class="w-10 h-10 rounded-full bg-slate-200 border-2 border-white flex items-center justify-center overflow-hidden">
+                    <span class="material-symbols-outlined text-slate-400">person</span>
+                  </div>
+                  <div class="text-left">
+                    <p class="text-xs font-bold text-primary">Dr. Salman Farooq</p>
+                    <p class="text-[10px] text-on-surface-variant">Reg No: #44921-A</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <!-- Step 3: Prescription Card -->
+            <div class="hero-state hero-state-3 flex flex-col p-6 items-center justify-center bg-slate-50">
+              <div class="w-full max-w-sm bg-white rounded-2xl shadow-2xl border border-outline-variant/20 overflow-hidden transform rotate-1">
+                <div class="bg-primary p-4 flex justify-between items-center text-white">
+                  <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center">
+                      <span class="material-symbols-outlined text-lg">description</span>
+                    </div>
+                    <span class="text-sm font-bold">Digital Prescription</span>
+                  </div>
+                  <span class="text-[10px] font-medium opacity-80">ID: IL-9920-X</span>
+                </div>
+                <div class="p-5 space-y-5">
+                  <div class="flex justify-between items-start border-b border-outline-variant/10 pb-4">
+                    <div>
+                      <p class="text-[10px] uppercase font-bold text-on-surface-variant tracking-wider">Patient</p>
+                      <p class="text-sm font-bold text-primary">Zain Ahmed</p>
+                    </div>
+                    <div class="text-right">
+                      <p class="text-[10px] uppercase font-bold text-on-surface-variant tracking-wider">Date</p>
+                      <p class="text-sm font-medium">May 24, 2024</p>
+                    </div>
+                  </div>
+                  <div class="space-y-3">
+                    <p class="text-[10px] uppercase font-bold text-on-surface-variant tracking-wider">Medication</p>
+                    <div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low border border-outline-variant/10">
+                      <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-secondary text-sm">medication</span>
+                        <p class="text-xs font-bold text-primary">Panadol CF (500mg)</p>
+                      </div>
+                      <span class="text-[10px] text-on-surface-variant">1-0-1</span>
+                    </div>
+                    <div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low border border-outline-variant/10">
+                      <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-secondary text-sm">medication</span>
+                        <p class="text-xs font-bold text-primary">Augmentin (625mg)</p>
+                      </div>
+                      <span class="text-[10px] text-on-surface-variant">1-1-1</span>
+                    </div>
+                  </div>
+                  <div class="pt-4 mt-2 border-t border-dashed border-outline-variant/40 flex justify-between items-end">
+                    <div class="space-y-2">
+                      <div class="flex items-center gap-1">
+                        <span class="material-symbols-outlined text-secondary text-xs" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        <span class="text-[8px] font-bold text-secondary uppercase">Digitally Signed</span>
+                      </div>
+                      <div class="italic text-xs font-serif text-primary-container/60 opacity-80">Dr. Salman Farooq</div>
+                    </div>
+                    <div class="w-14 h-14 bg-surface rounded-lg p-1 border border-outline-variant/20">
+                      <span class="material-symbols-outlined text-4xl text-primary/30">qr_code_2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="absolute -top-12 -right-12 w-48 h-48 bg-secondary/5 blur-[80px] rounded-full pointer-events-none"></div>
+            <div class="absolute -bottom-12 -left-12 w-48 h-48 bg-primary/5 blur-[80px] rounded-full pointer-events-none"></div>
+          </div>
+        </div>
       </div>
+
+      <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-secondary-fixed/10 to-transparent pointer-events-none"></div>
+      <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-background to-transparent pointer-events-none"></div>
     </section>
+    </div>
 
     <!-- ==================== HOW IT WORKS (privacy flow) ==================== -->
     <section class="flow" id="how-it-works" aria-labelledby="flow-title">
@@ -671,90 +991,227 @@
       </div>
     </section>
 
-    <!-- ==================== COMPARISON ==================== -->
-    <section class="compare">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-header__tag">Competitors Se Moazna</span>
-          <h2 class="section-header__title">Ilaaj AI vs Baaqi Sab</h2>
-          <p class="section-header__desc">OlaDoc, Marham aur traditional clinics se seedha moazna karein</p>
+    <!-- ==================== COMPARISON (redesigned, light theme) ==================== -->
+    <section class="compare-v2 py-20 md:py-28 bg-[#F4F6FA]">
+      <div class="container mx-auto px-6 lg:px-12">
+        <!-- Header -->
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="inline-block px-4 py-1.5 rounded-full bg-[#CCFBF1] text-[#0F766E] text-[11px] font-bold tracking-[0.10em] uppercase mb-5">
+            Competitors Se Moazna
+          </span>
+          <h2 class="text-4xl md:text-5xl font-bold text-[#0F172A] tracking-tight mb-4" style="font-family:'Space Grotesk',Inter,sans-serif">
+            Ilaaj AI <span class="text-[#0D9488]">vs</span> Baaqi Sab
+          </h2>
+          <p class="text-base md:text-lg text-[#64748B]">
+            OlaDoc, Marham aur traditional clinics se seedha moazna karein
+          </p>
         </div>
 
-        <div class="compare__tbl-wrap reveal">
-          <!-- Header -->
-          <div class="compare__tbl-row compare__tbl-head">
-            <div class="compare__tbl-feat"></div>
-            <div class="compare__tbl-col compare__tbl-col--clinic">
-              <div class="compare__tbl-col-icon">🏥</div>
-              <div class="compare__tbl-col-name">Traditional Clinic</div>
+        <!-- Comparison card -->
+        <div class="bg-white rounded-3xl shadow-[0_20px_50px_-15px_rgba(15,23,42,0.10)] overflow-hidden border border-[#EEF1F5]">
+          <div class="grid grid-cols-4 min-w-[640px]" style="overflow-x:auto;">
+
+            <!-- ── Header row ── -->
+            <div class="cv2-h cv2-h--label">
+              <span class="text-xs font-medium text-[#94A3B8]" style="letter-spacing:0.02em">Key Features</span>
             </div>
-            <div class="compare__tbl-col compare__tbl-col--comp">
-              <div class="compare__tbl-col-icon">📱</div>
-              <div class="compare__tbl-col-name">OlaDoc / Marham</div>
+            <div class="cv2-h cv2-h--col">
+              <div class="cv2-h-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21V12h6v9"/></svg></div>
+              <div class="cv2-h-name">Traditional Clinic</div>
             </div>
-            <div class="compare__tbl-col compare__tbl-col--us">
-              <div class="compare__tbl-col-badge">Best Choice</div>
-              <div class="compare__tbl-col-name">Ilaaj AI</div>
+            <div class="cv2-h cv2-h--col">
+              <div class="cv2-h-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><line x1="11" y1="18" x2="13" y2="18"/></svg></div>
+              <div class="cv2-h-name">OlaDoc / Marham</div>
             </div>
-          </div>
+            <div class="cv2-h cv2-h--us">
+              <span class="cv2-h-badge">Recommended</span>
+              <div class="cv2-h-icon cv2-h-icon--us">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.4 1 1.1 1 1.8V18h6v-1.5c0-.7.4-1.4 1-1.8A7 7 0 0 0 12 2z"/></svg>
+              </div>
+              <div class="cv2-h-name cv2-h-name--us">Ilaaj AI</div>
+            </div>
 
-          <!-- Row: Fees -->
-          <div class="compare__tbl-row">
-            <div class="compare__tbl-feat">Fees</div>
-            <div class="compare__tbl-cell compare__tbl-cell--bad">PKR 500–3,000</div>
-            <div class="compare__tbl-cell compare__tbl-cell--bad">PKR 800–3,000</div>
-            <div class="compare__tbl-cell compare__tbl-cell--good compare__tbl-cell--us">Bilkul Muft</div>
-          </div>
+            <!-- ── Row: Fees ── -->
+            <div class="cv2-cell cv2-cell--label">Fees</div>
+            <div class="cv2-cell cv2-cell--bad"><span class="cv2-dot"></span>PKR 500–3,000</div>
+            <div class="cv2-cell cv2-cell--bad"><span class="cv2-dot"></span>PKR 800–3,000</div>
+            <div class="cv2-cell cv2-cell--us">
+              <div class="cv2-us-main">Bilkul Muft</div>
+              <div class="cv2-us-sub">FREE FOREVER</div>
+            </div>
 
-          <!-- Row: Wait Time -->
-          <div class="compare__tbl-row">
-            <div class="compare__tbl-feat">Wait Time</div>
-            <div class="compare__tbl-cell compare__tbl-cell--bad">1–3 ghante OPD</div>
-            <div class="compare__tbl-cell compare__tbl-cell--mid">30 min – 2 hrs</div>
-            <div class="compare__tbl-cell compare__tbl-cell--good compare__tbl-cell--us">Fori — koi intezaar nahin</div>
-          </div>
+            <!-- ── Row: Wait Time ── -->
+            <div class="cv2-cell cv2-cell--label">Wait Time</div>
+            <div class="cv2-cell cv2-cell--bad"><span class="cv2-dot"></span>1–3 ghante OPD</div>
+            <div class="cv2-cell cv2-cell--mid"><span class="cv2-tri"></span>30 min – 2 hrs</div>
+            <div class="cv2-cell cv2-cell--us">
+              <div class="cv2-us-main">Fori</div>
+              <div class="cv2-us-sub">koi intezaar nahin</div>
+            </div>
 
-          <!-- Row: Language -->
-          <div class="compare__tbl-row">
-            <div class="compare__tbl-feat">Language</div>
-            <div class="compare__tbl-cell compare__tbl-cell--mid">Doctor pe depend</div>
-            <div class="compare__tbl-cell compare__tbl-cell--bad">Sirf English</div>
-            <div class="compare__tbl-cell compare__tbl-cell--good compare__tbl-cell--us">Urdu + English + Roman</div>
-          </div>
+            <!-- ── Row: Language ── -->
+            <div class="cv2-cell cv2-cell--label">Language</div>
+            <div class="cv2-cell cv2-cell--mid"><span class="cv2-tri"></span>Doctor pe depend</div>
+            <div class="cv2-cell cv2-cell--bad"><span class="cv2-dot"></span>Sirf English</div>
+            <div class="cv2-cell cv2-cell--us">
+              <div class="cv2-us-main cv2-us-main--inline">Urdu + English + Roman</div>
+            </div>
 
-          <!-- Row: Privacy -->
-          <div class="compare__tbl-row">
-            <div class="compare__tbl-feat">Privacy</div>
-            <div class="compare__tbl-cell compare__tbl-cell--bad">In-person, koi privacy nahin</div>
-            <div class="compare__tbl-cell compare__tbl-cell--mid">Profile required</div>
-            <div class="compare__tbl-cell compare__tbl-cell--good compare__tbl-cell--us">100% Anonymous</div>
-          </div>
+            <!-- ── Row: Privacy ── -->
+            <div class="cv2-cell cv2-cell--label">Privacy</div>
+            <div class="cv2-cell cv2-cell--bad cv2-cell--stack">
+              <div class="cv2-stack-x">×</div>
+              <div class="cv2-stack-sub">In-person, koi privacy nahin</div>
+            </div>
+            <div class="cv2-cell cv2-cell--mid"><span class="cv2-tri"></span>Profile required</div>
+            <div class="cv2-cell cv2-cell--us">
+              <div class="cv2-us-main cv2-us-main--inline">100% Anonymous</div>
+            </div>
 
-          <!-- Row: Availability -->
-          <div class="compare__tbl-row">
-            <div class="compare__tbl-feat">Availability</div>
-            <div class="compare__tbl-cell compare__tbl-cell--bad">Clinic hours only</div>
-            <div class="compare__tbl-cell compare__tbl-cell--mid">Doctor schedule pe</div>
-            <div class="compare__tbl-cell compare__tbl-cell--good compare__tbl-cell--us">24/7 — raat ko bhi</div>
-          </div>
+            <!-- ── Row: Availability ── -->
+            <div class="cv2-cell cv2-cell--label">Availability</div>
+            <div class="cv2-cell cv2-cell--bad"><span class="cv2-dot"></span>Clinic hours only</div>
+            <div class="cv2-cell cv2-cell--mid"><span class="cv2-tri"></span>Doctor schedule pe</div>
+            <div class="cv2-cell cv2-cell--us">
+              <div class="cv2-us-main cv2-us-main--inline">24/7 — raat ko bhi</div>
+            </div>
 
-          <!-- Row: Prescription -->
-          <div class="compare__tbl-row">
-            <div class="compare__tbl-feat">PMDC Prescription</div>
-            <div class="compare__tbl-cell compare__tbl-cell--mid">Kaagaz par</div>
-            <div class="compare__tbl-cell compare__tbl-cell--mid">Digital (fees ke saath)</div>
-            <div class="compare__tbl-cell compare__tbl-cell--good compare__tbl-cell--us">PDF — instant delivery</div>
-          </div>
+            <!-- ── Row: PMDC Prescription ── -->
+            <div class="cv2-cell cv2-cell--label">PMDC Prescription</div>
+            <div class="cv2-cell cv2-cell--mid"><span class="cv2-tri"></span>Kaagaz par</div>
+            <div class="cv2-cell cv2-cell--mid"><span class="cv2-tri"></span>Digital (fees ke saath)</div>
+            <div class="cv2-cell cv2-cell--us">
+              <div class="cv2-us-main cv2-us-main--inline">PDF — instant delivery</div>
+            </div>
 
-          <!-- Row: App Download -->
-          <div class="compare__tbl-row">
-            <div class="compare__tbl-feat">App Download</div>
-            <div class="compare__tbl-cell compare__tbl-cell--good">Nahin</div>
-            <div class="compare__tbl-cell compare__tbl-cell--bad">Zaruri hai</div>
-            <div class="compare__tbl-cell compare__tbl-cell--good compare__tbl-cell--us">Nahin — browser se kaam karta hai</div>
+            <!-- ── Row: App Download ── -->
+            <div class="cv2-cell cv2-cell--label cv2-cell--last">App Download</div>
+            <div class="cv2-cell cv2-cell--good cv2-cell--last">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="margin-right:6px"><polyline points="20 6 9 17 4 12"/></svg>
+              Nahin
+            </div>
+            <div class="cv2-cell cv2-cell--bad cv2-cell--last"><span class="cv2-dot"></span>Zaruri hai</div>
+            <div class="cv2-cell cv2-cell--us cv2-cell--last">
+              <div class="cv2-us-main cv2-us-main--inline">Nahin — browser se kaam karta hai</div>
+            </div>
+
           </div>
         </div>
       </div>
+
+      <style>
+        .compare-v2 .cv2-h {
+          padding: 22px 18px;
+          background: #FFFFFF;
+          border-bottom: 1px solid #EEF1F5;
+          display: flex; flex-direction: column; align-items: center; justify-content: center;
+          gap: 10px;
+          position: relative;
+        }
+        .compare-v2 .cv2-h--label { align-items: flex-start; padding-left: 22px; padding-right: 10px; }
+        .compare-v2 .cv2-h-icon {
+          width: 44px; height: 44px; border-radius: 10px;
+          background: #F1F5F9;
+          display: inline-flex; align-items: center; justify-content: center;
+        }
+        .compare-v2 .cv2-h-name {
+          font-size: 15px; font-weight: 700; color: #0F172A;
+          font-family: 'Space Grotesk', Inter, sans-serif;
+          text-align: center;
+        }
+
+        /* Recommended column — solid teal */
+        .compare-v2 .cv2-h--us {
+          background: linear-gradient(180deg, #14B8A6 0%, #0D9488 100%);
+          color: #FFFFFF;
+          border-bottom: 0;
+        }
+        .compare-v2 .cv2-h-icon--us {
+          background: rgba(255,255,255,0.18);
+        }
+        .compare-v2 .cv2-h-name--us { color: #FFFFFF; }
+        .compare-v2 .cv2-h-badge {
+          position: absolute;
+          top: 12px; right: 12px;
+          background: #FACC15;
+          color: #422006;
+          font-size: 9px; font-weight: 800;
+          letter-spacing: 0.08em; text-transform: uppercase;
+          padding: 4px 8px; border-radius: 999px;
+        }
+
+        /* Body cells */
+        .compare-v2 .cv2-cell {
+          padding: 18px 18px;
+          background: #FFFFFF;
+          border-bottom: 1px solid #EEF1F5;
+          display: flex; align-items: center; justify-content: center;
+          gap: 8px;
+          font-size: 14px; color: #475569;
+          text-align: center;
+        }
+        .compare-v2 .cv2-cell--last { border-bottom: 0; }
+        .compare-v2 .cv2-cell--label {
+          justify-content: flex-start;
+          padding-left: 22px;
+          color: #0F172A; font-weight: 700; font-size: 14px;
+          font-family: 'Space Grotesk', Inter, sans-serif;
+        }
+        .compare-v2 .cv2-cell--bad { color: #475569; }
+        .compare-v2 .cv2-cell--mid { color: #475569; }
+        .compare-v2 .cv2-cell--good { color: #16A34A; }
+
+        /* Markers */
+        .compare-v2 .cv2-dot {
+          width: 8px; height: 8px; border-radius: 50%;
+          background: #EF4444; flex-shrink: 0;
+        }
+        .compare-v2 .cv2-tri {
+          width: 0; height: 0;
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
+          border-bottom: 10px solid #F59E0B;
+          flex-shrink: 0;
+        }
+
+        /* Privacy stacked variant */
+        .compare-v2 .cv2-cell--stack {
+          flex-direction: column; gap: 4px;
+        }
+        .compare-v2 .cv2-stack-x {
+          color: #DC2626; font-weight: 700; font-size: 16px;
+        }
+        .compare-v2 .cv2-stack-sub {
+          font-size: 12px; color: #64748B;
+        }
+
+        /* Recommended column — body cells */
+        .compare-v2 .cv2-cell--us {
+          background: #ECFDF5;
+          flex-direction: column; gap: 2px;
+          border-bottom-color: #D1FAE5;
+        }
+        .compare-v2 .cv2-cell--us.cv2-cell--last { border-bottom: 0; }
+        .compare-v2 .cv2-us-main {
+          font-size: 18px; font-weight: 700; color: #0F172A;
+          font-family: 'Space Grotesk', Inter, sans-serif;
+          letter-spacing: -0.01em;
+        }
+        .compare-v2 .cv2-us-main--inline { font-size: 14.5px; }
+        .compare-v2 .cv2-us-sub {
+          font-size: 10px; font-weight: 700;
+          color: #0F766E;
+          letter-spacing: 0.06em; text-transform: uppercase;
+        }
+
+        /* Mobile: collapse to 4 cols horizontally scrollable */
+        @media (max-width: 768px) {
+          .compare-v2 .grid { font-size: 13px; }
+          .compare-v2 .cv2-h-name, .compare-v2 .cv2-cell--label { font-size: 13px; }
+          .compare-v2 .cv2-us-main { font-size: 15px; }
+          .compare-v2 .cv2-cell, .compare-v2 .cv2-h { padding: 14px 10px; }
+        }
+      </style>
     </section>
 
     <!-- ==================== SECURITY ==================== -->
@@ -1391,6 +1848,16 @@
         cta_text: (a.textContent || '').trim().slice(0, 60),
         cta_href: a.getAttribute('href')
       });
+      // Meta Pixel: fire Lead event when CTA clicked (for ad optimization)
+      try {
+        if (typeof fbq === 'function') {
+          fbq('track', 'Lead', {
+            content_name: (a.textContent || '').trim().slice(0, 60),
+            content_category: location,
+            source_url: window.location.pathname
+          });
+        }
+      } catch (e) {}
     }, true); // capture phase so it runs even if click handler stopPropagation's
   })();
   </script>

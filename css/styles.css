@@ -1819,8 +1819,7 @@ ul {
 /* Carousel (home page) */
 .doctors__carousel-wrap {
   overflow: hidden;
-  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  /* side-fade mask removed — edge cards now render at full opacity */
 }
 
 .doctors__carousel {
