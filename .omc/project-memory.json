@@ -175,15 +175,15 @@
       "type": "file"
     },
     {
-      "path": "src\\components\\home\\Comparison.astro",
-      "accessCount": 5,
-      "lastAccessed": 1778071083003,
+      "path": "src\\pages\\faq.astro",
+      "accessCount": 6,
+      "lastAccessed": 1778071581225,
       "type": "file"
     },
     {
-      "path": "src\\pages\\faq.astro",
-      "accessCount": 4,
-      "lastAccessed": 1778062557878,
+      "path": "src\\components\\home\\Comparison.astro",
+      "accessCount": 5,
+      "lastAccessed": 1778071083003,
       "type": "file"
     },
     {
