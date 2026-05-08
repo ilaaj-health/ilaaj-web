@@ -169,6 +169,12 @@
       "type": "file"
     },
     {
+      "path": "src\\pages\\privacy-policy.astro",
+      "accessCount": 7,
+      "lastAccessed": 1778228045078,
+      "type": "file"
+    },
+    {
       "path": "src\\components\\home\\DoctorsPreview.astro",
       "accessCount": 6,
       "lastAccessed": 1778067137876,
@@ -202,12 +208,6 @@
       "path": "src\\pages\\doctors.astro",
       "accessCount": 4,
       "lastAccessed": 1778067249191,
-      "type": "file"
-    },
-    {
-      "path": "src\\pages\\privacy-policy.astro",
-      "accessCount": 4,
-      "lastAccessed": 1778069820590,
       "type": "file"
     },
     {
