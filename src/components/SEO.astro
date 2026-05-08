@@ -1,0 +1,49 @@
+---
+import type { Lang } from '../i18n/utils';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical: string;
+  ogImage: string;
+  ogType?: string;
+  noindex?: boolean;
+  lang?: Lang;
+  enUrl: string;
+  urUrl: string;
+}
+
+const {
+  title, description, canonical, ogImage,
+  ogType = 'website', noindex = false, lang = 'en', enUrl, urUrl,
+} = Astro.props;
+
+const locale = lang === 'ur' ? 'ur_PK' : 'en_PK';
+const altLocale = lang === 'ur' ? 'en_PK' : 'ur_PK';
+const ogImageUrl = ogImage.startsWith('http') ? ogImage : `https://www.ilaaj.ai${ogImage}`;
+---
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{title}</title>
+<meta name="description" content={description} />
+<meta name="robots" content={noindex ? 'noindex,nofollow' : 'index,follow'} />
+<link rel="canonical" href={canonical} />
+<link rel="alternate" hreflang="en" href={enUrl} />
+<link rel="alternate" hreflang="ur" href={urUrl} />
+<link rel="alternate" hreflang="x-default" href={enUrl} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={ogImageUrl} />
+<meta property="og:url" content={canonical} />
+<meta property="og:type" content={ogType} />
+<meta property="og:locale" content={locale} />
+<meta property="og:locale:alternate" content={altLocale} />
+<meta property="og:site_name" content="Ilaaj AI" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImageUrl} />
+<link rel="icon" type="image/png" href="/favicon.png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/manifest.json" />
