@@ -27,10 +27,12 @@ const ogImageUrl = ogImage.startsWith('http') ? ogImage : `https://www.ilaaj.ai$
 ---
 
 <meta charset="UTF-8" />
+<meta name="google-site-verification" content="REPLACE_WITH_GSC_VERIFICATION_CODE" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>{title}</title>
 <meta name="description" content={description} />
-<meta name="robots" content={noindex ? 'noindex,nofollow' : 'index,follow'} />
+<meta name="robots" content={noindex ? 'noindex,nofollow' : 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1'} />
+<meta name="googlebot" content={noindex ? 'noindex,nofollow' : 'index, follow'} />
 {keywords && <meta name="keywords" content={keywords} />}
 <link rel="canonical" href={canonical} />
 <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
