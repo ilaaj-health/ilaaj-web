@@ -22,7 +22,7 @@ function entry(loc: string, lastmod: string, changefreq: string, priority: strin
 }
 
 export const GET: APIRoute = () => {
-  const published = posts.filter(p => !p.scheduled || p.scheduled <= TODAY);
+  const published = posts;
 
   const staticEntries = staticPages
     .map(p => entry(p.loc, TODAY, p.changefreq, p.priority))
