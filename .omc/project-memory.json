@@ -370,6 +370,12 @@
       "accessCount": 1,
       "lastAccessed": 1778235593363,
       "type": "directory"
+    },
+    {
+      "path": "FULL-AUDIT-REPORT.md",
+      "accessCount": 1,
+      "lastAccessed": 1778235988315,
+      "type": "file"
     }
   ],
   "userDirectives": []

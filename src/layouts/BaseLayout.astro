@@ -17,6 +17,8 @@ interface Props {
   ogImage?: string;
   ogType?: string;
   noindex?: boolean;
+  keywords?: string;
+  hasUrdu?: boolean;
 }
 
 const {
@@ -27,18 +29,21 @@ const {
   ogImage = '/assets/ilaaj-logo.jpg',
   ogType = 'website',
   noindex = false,
+  keywords = '',
+  hasUrdu = false,
 } = Astro.props;
 
 const isRtl = lang === 'ur';
 const siteUrl = 'https://www.ilaaj.ai';
-const enUrl = Astro.url.href.replace(`${siteUrl}/ur`, siteUrl);
-const urUrl = lang === 'ur' ? Astro.url.href : `${siteUrl}/ur${Astro.url.pathname}`;
+const enUrl = canonical.replace(`${siteUrl}/ur`, siteUrl);
+const _path = new URL(canonical).pathname.replace(/\/$/, '');
+const urUrl = lang === 'ur' ? canonical : `${siteUrl}/ur${_path}`;
 ---
 
 <!doctype html>
 <html lang={lang} dir={isRtl ? 'rtl' : 'ltr'}>
   <head>
-    <SEO {title} {description} {canonical} {ogImage} {ogType} {noindex} {lang} {enUrl} {urUrl} />
+    <SEO {title} {description} {canonical} {ogImage} {ogType} {noindex} {lang} {enUrl} {urUrl} {keywords} {hasUrdu} />
     <slot name="head" />
     <TailwindConfig />
     <Analytics />

@@ -11,11 +11,14 @@ interface Props {
   lang?: Lang;
   enUrl: string;
   urUrl: string;
+  keywords?: string;
+  hasUrdu?: boolean;
 }
 
 const {
   title, description, canonical, ogImage,
   ogType = 'website', noindex = false, lang = 'en', enUrl, urUrl,
+  keywords = '', hasUrdu = false,
 } = Astro.props;
 
 const locale = lang === 'ur' ? 'ur_PK' : 'en_PK';
@@ -28,9 +31,11 @@ const ogImageUrl = ogImage.startsWith('http') ? ogImage : `https://www.ilaaj.ai$
 <title>{title}</title>
 <meta name="description" content={description} />
 <meta name="robots" content={noindex ? 'noindex,nofollow' : 'index,follow'} />
+{keywords && <meta name="keywords" content={keywords} />}
 <link rel="canonical" href={canonical} />
+<link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 <link rel="alternate" hreflang="en" href={enUrl} />
-<link rel="alternate" hreflang="ur" href={urUrl} />
+{hasUrdu && <link rel="alternate" hreflang="ur" href={urUrl} />}
 <link rel="alternate" hreflang="x-default" href={enUrl} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
