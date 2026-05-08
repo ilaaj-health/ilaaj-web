@@ -36,7 +36,7 @@ const {
 const isRtl = lang === 'ur';
 const siteUrl = 'https://www.ilaaj.ai';
 const enUrl = canonical.replace(`${siteUrl}/ur`, siteUrl);
-const _path = new URL(canonical).pathname.replace(/\/$/, '');
+const _path = canonical.replace(siteUrl, '').replace(/\/$/, '');
 const urUrl = lang === 'ur' ? canonical : `${siteUrl}/ur${_path}`;
 ---
 
