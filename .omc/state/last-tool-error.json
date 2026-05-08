@@ -1,7 +1,7 @@
 {
-  "tool_name": "PowerShell",
-  "tool_input_preview": "{\"command\":\"Get-ChildItem \\\"D:\\\\ilaaj\\\\ilaaj-web\\\\public\\\" -Recurse | Select-Object FullName | head -20\",\"description\":\"Verify public/ directory contents\"}",
-  "error": "Exit code 1\nhead : The term 'head' is not recognized as the name of a cmdlet, function, script file, or operable program. Check \r\nthe spelling of the name, or if a path was included, verify that the path is correct and try again.\r\nAt line:1 char:79\r\n+ ... \\ilaaj\\ilaaj-web\\public\" -Recurse | Select-Object FullName | head -20\r\n+                                                                  ~~~~\r\n    + CategoryInfo          : ObjectNotFound: (head:String) [], CommandNotFoundException\r\n    + Full...",
-  "timestamp": "2026-05-06T10:08:02.671Z",
+  "tool_name": "Read",
+  "tool_input_preview": "{\"file_path\":\"D:\\\\products\\\\new_ilaaj\\\\ilaaj-web\\\\index.html\"}",
+  "error": "File content (44248 tokens) exceeds maximum allowed tokens (25000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole file.",
+  "timestamp": "2026-05-08T07:34:08.945Z",
   "retry_count": 1
 }

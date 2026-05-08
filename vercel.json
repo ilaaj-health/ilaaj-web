@@ -3,6 +3,12 @@
   "outputDirectory": "dist",
   "framework": "astro",
   "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "ilaaj.ai" }],
+      "destination": "https://www.ilaaj.ai/$1",
+      "permanent": true
+    },
     { "source": "/index.html", "destination": "/", "permanent": true },
     { "source": "/blog.html", "destination": "/blog", "permanent": true },
     { "source": "/privacy-policy.html", "destination": "/privacy-policy", "permanent": true },
@@ -16,7 +22,23 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "index, follow" }
+        { "key": "X-Robots-Tag", "value": "index, follow" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/css/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=86400, stale-while-revalidate=604800" }
       ]
     }
   ]

@@ -10,9 +10,18 @@ h1,h2,h3,h4,h5,h6,.hero__title,.flow__title,.section-title,.nav__brand {
 .new-hero-preview .shimmer-btn {
   background: linear-gradient(90deg,#0d9488 0%,#0f766e 100%);
   position: relative; overflow: hidden;
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: 0.75rem; padding: 0.875rem 1.75rem; border-radius: 9999px;
+  color: white; font-weight: 700; font-size: 1rem; text-decoration: none;
   transition: transform 220ms cubic-bezier(.4,0,.2,1), box-shadow 240ms cubic-bezier(.4,0,.2,1), background-position 600ms ease;
   background-size: 200% 100%; background-position: 0% 50%;
 }
+.new-hero-preview .hero-cta-icon {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 1.75rem; height: 1.75rem; border-radius: 9999px;
+  background: rgba(255,255,255,0.15); transition: background 200ms; flex-shrink: 0;
+}
+.new-hero-preview .shimmer-btn:hover .hero-cta-icon { background: rgba(255,255,255,0.25); }
 .new-hero-preview .shimmer-btn:hover {
   transform: translateY(-3px) scale(1.02); background-position: 100% 50%;
   box-shadow: 0 22px 40px -10px rgba(13,148,136,0.55), 0 10px 20px -6px rgba(15,118,110,0.45), inset 0 1px 0 rgba(255,255,255,0.25) !important;

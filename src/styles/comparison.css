@@ -1,3 +1,15 @@
+/* Comparison section wrapper */
+.compare-v2 { padding: 5rem 0; background: #F4F6FA; }
+@media (min-width: 768px) { .compare-v2 { padding: 7rem 0; } }
+.cv2-inner { max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; }
+@media (min-width: 1024px) { .cv2-inner { padding: 0 3rem; } }
+.cv2-intro { text-align: center; max-width: 42rem; margin: 0 auto 3rem; }
+.cv2-tag { display: inline-block; padding: 0.375rem 1rem; border-radius: 9999px; background: #CCFBF1; color: #0F766E; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 1.25rem; }
+.cv2-title { font-family: 'Space Grotesk', Inter, sans-serif; font-size: clamp(1.75rem, 4vw, 3rem); font-weight: 700; color: #0F172A; letter-spacing: -0.01em; margin-bottom: 1rem; }
+.cv2-desc { font-size: 1rem; color: #64748B; }
+@media (min-width: 768px) { .cv2-desc { font-size: 1.125rem; } }
+.cv2-outer { background: white; border-radius: 1.5rem; box-shadow: 0 20px 50px -15px rgba(15,23,42,0.10); overflow: hidden; border: 1px solid #EEF1F5; }
+
 /* Comparison table styles */
 .cv2-table { display:grid; grid-template-columns:1.2fr 1.8fr 1.5fr 1.5fr; min-width:640px; overflow-x:auto; }
 .compare-v2 .cv2-h { padding:22px 18px; background:#fff; border-bottom:1px solid #EEF1F5; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; position:relative; }

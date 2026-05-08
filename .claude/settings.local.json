@@ -6,7 +6,11 @@
       "Bash(py --version)",
       "Bash(curl -s -L \"https://www.ilaaj.ai\" -o /tmp/ilaaj_home.html --max-time 30 -A \"Mozilla/5.0\")",
       "Read(//tmp/**)",
-      "Bash(curl *)"
+      "Bash(curl *)",
+      "Bash(Get-ChildItem -Path \"D:\\\\products\\\\new_ilaaj\\\\ilaaj-web\" -Depth 1)",
+      "Bash(Select-Object Name, LastWriteTime)",
+      "Bash(npm install *)",
+      "Bash(npm run *)"
     ]
   }
 }

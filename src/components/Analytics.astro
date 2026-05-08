@@ -17,12 +17,22 @@
   })();
 </script>
 
-<!-- Sentry: error tracking -->
-<script src="https://js.sentry-cdn.com/defa6ca82daea4d4c49a8b69b87c53cc.min.js" crossorigin="anonymous" defer is:inline></script>
+<!-- Sentry: error tracking (lazy) -->
 <script is:inline>
-  window.sentryOnLoad = function () {
-    Sentry.init({ tracesSampleRate: 0, replaysSessionSampleRate: 0, replaysOnErrorSampleRate: 0 });
-  };
+  (function() {
+    var loaded = false;
+    function loadSentry() {
+      if (loaded) return; loaded = true;
+      window.sentryOnLoad = function() {
+        Sentry.init({ tracesSampleRate: 0, replaysSessionSampleRate: 0, replaysOnErrorSampleRate: 0 });
+      };
+      var s = document.createElement('script');
+      s.src = 'https://js.sentry-cdn.com/defa6ca82daea4d4c49a8b69b87c53cc.min.js';
+      s.crossOrigin = 'anonymous'; s.async = true;
+      document.head.appendChild(s);
+    }
+    'requestIdleCallback' in window ? requestIdleCallback(loadSentry, { timeout: 4000 }) : setTimeout(loadSentry, 4000);
+  })();
 </script>
 
 <!-- PostHog: analytics + session replay (lazy) -->
