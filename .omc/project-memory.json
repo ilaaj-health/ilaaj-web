@@ -216,9 +216,15 @@
       "type": "file"
     },
     {
+      "path": "src",
+      "accessCount": 3,
+      "lastAccessed": 1778241606111,
+      "type": "directory"
+    },
+    {
       "path": "src\\pages\\index.astro",
-      "accessCount": 2,
-      "lastAccessed": 1778225522050,
+      "accessCount": 3,
+      "lastAccessed": 1778241612587,
       "type": "file"
     },
     {
@@ -280,12 +286,6 @@
       "accessCount": 2,
       "lastAccessed": 1778226377192,
       "type": "file"
-    },
-    {
-      "path": "src",
-      "accessCount": 2,
-      "lastAccessed": 1778241071527,
-      "type": "directory"
     },
     {
       "path": "src\\i18n\\en.ts",
@@ -375,6 +375,18 @@
       "path": "FULL-AUDIT-REPORT.md",
       "accessCount": 1,
       "lastAccessed": 1778235988315,
+      "type": "file"
+    },
+    {
+      "path": "src\\i18n",
+      "accessCount": 1,
+      "lastAccessed": 1778241606542,
+      "type": "directory"
+    },
+    {
+      "path": "src\\components\\SEO.astro",
+      "accessCount": 1,
+      "lastAccessed": 1778241623400,
       "type": "file"
     }
   ],
