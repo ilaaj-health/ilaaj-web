@@ -1,7 +1,7 @@
 {
-  "tool_name": "Read",
-  "tool_input_preview": "{\"file_path\":\"D:\\\\products\\\\new_ilaaj\\\\ilaaj-web\\\\index.html\"}",
-  "error": "File content (44248 tokens) exceeds maximum allowed tokens (25000). Use offset and limit parameters to read specific portions of the file, or search for specific content instead of reading the whole file.",
-  "timestamp": "2026-05-08T07:34:08.945Z",
+  "tool_name": "PowerShell",
+  "tool_input_preview": "{\"command\":\"python --version 2>&1; python3 --version 2>&1; py --version 2>&1\",\"description\":\"Check Python availability\"}",
+  "error": "Exit code 49\npython : Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.\r\nAt line:1 char:1\r\n+ python --version 2>&1; python3 --version 2>&1; py --version 2>&1\r\n+ ~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : NotSpecified: (Python was not ...cution aliases.:String) [], RemoteException\r\n    + FullyQualifiedErrorId : NativeCommandError\r\n \r\npython3 : Python was not foun...",
+  "timestamp": "2026-05-08T10:20:06.462Z",
   "retry_count": 1
 }

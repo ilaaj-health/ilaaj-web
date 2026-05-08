@@ -364,6 +364,12 @@
       "accessCount": 1,
       "lastAccessed": 1778226318153,
       "type": "file"
+    },
+    {
+      "path": "C:\\Users\\devv\\.claude\\plugins\\cache\\agricidaniel-seo\\claude-seo\\1.8.2",
+      "accessCount": 1,
+      "lastAccessed": 1778235593363,
+      "type": "directory"
     }
   ],
   "userDirectives": []
