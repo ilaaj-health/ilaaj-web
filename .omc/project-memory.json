@@ -198,6 +198,18 @@
   },
   "hotPaths": [
     {
+      "path": "",
+      "accessCount": 4,
+      "lastAccessed": 1778241086007,
+      "type": "directory"
+    },
+    {
+      "path": "src\\layouts\\BaseLayout.astro",
+      "accessCount": 4,
+      "lastAccessed": 1778241093263,
+      "type": "file"
+    },
+    {
       "path": "astro.config.ts",
       "accessCount": 3,
       "lastAccessed": 1778225548197,
@@ -214,12 +226,6 @@
       "accessCount": 2,
       "lastAccessed": 1778225660823,
       "type": "directory"
-    },
-    {
-      "path": "src\\layouts\\BaseLayout.astro",
-      "accessCount": 2,
-      "lastAccessed": 1778225675610,
-      "type": "file"
     },
     {
       "path": "src\\components\\TailwindConfig.astro",
@@ -277,8 +283,8 @@
     },
     {
       "path": "src",
-      "accessCount": 1,
-      "lastAccessed": 1778225301892,
+      "accessCount": 2,
+      "lastAccessed": 1778241071527,
       "type": "directory"
     },
     {
@@ -334,12 +340,6 @@
       "accessCount": 1,
       "lastAccessed": 1778225405049,
       "type": "file"
-    },
-    {
-      "path": "",
-      "accessCount": 1,
-      "lastAccessed": 1778225917180,
-      "type": "directory"
     },
     {
       "path": "src\\styles\\hero-mockup.css",
