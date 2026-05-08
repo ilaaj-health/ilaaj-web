@@ -1,4 +1,4 @@
----
+﻿---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/faq.css';
 const cats = [{ id:'general', label:'General' },{ id:'security', label:'Security' },{ id:'medical', label:'Medical' },{ id:'prescription', label:'Prescription' }];
@@ -26,12 +26,13 @@ const sections = [
 const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": sections.flatMap(s => s.items.map(item => ({ "@type": "Question", "name": item.q, "acceptedAnswer": { "@type": "Answer", "text": item.a } }))) };
 ---
 <BaseLayout
-  title="Help Center | Ilaaj AI — Digital Healthcare Support"
+  title=”Help Center | Ilaaj AI — Digital Healthcare Support”
   description="Find answers about AI diagnostics, doctor consultations, and Pakistan's premier digital healthcare platform."
-  canonical="https://www.ilaaj.ai/faq/"
+  canonical="https://www.ilaaj.ai/faq"
+  keywords="ilaaj AI FAQ, how does ilaaj AI work, telemedicine questions Pakistan, AI doctor questions, online prescription FAQ, PMDC doctor verification, health platform help Pakistan, AI health assistant guide"
 >
   <Fragment slot="head">
-    <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>
   </Fragment>
 <main>
 <section class="faq-hero">
