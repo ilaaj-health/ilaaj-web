@@ -1,31 +1,60 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1778005935919,
-  "projectRoot": "D:\\products\\ilaaj\\ilaaj_flutter_node\\ilaaj-ai-web",
+  "lastScanned": 1778414627466,
+  "projectRoot": "D:\\ilaaj\\ilaaj-web",
   "techStack": {
-    "languages": [],
-    "frameworks": [],
-    "packageManager": null,
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "tsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "astro",
+        "version": "5.7.0",
+        "category": "fullstack"
+      }
+    ],
+    "packageManager": "npm",
     "runtime": null
   },
   "build": {
-    "buildCommand": null,
+    "buildCommand": "npm run build",
     "testCommand": null,
     "lintCommand": null,
-    "devCommand": null,
-    "scripts": {}
+    "devCommand": "npm run dev",
+    "scripts": {
+      "dev": "astro dev",
+      "build": "astro build",
+      "preview": "astro preview"
+    }
   },
   "conventions": {
     "namingStyle": null,
     "importStyle": null,
     "testPattern": null,
-    "fileOrganization": null
+    "fileOrganization": "type-based"
   },
   "structure": {
     "isMonorepo": false,
     "workspaces": [],
     "mainDirectories": [
-      "assets"
+      "assets",
+      "public",
+      "src"
     ],
     "gitBranches": {
       "defaultBranch": "main",
@@ -38,7 +67,7 @@
       "path": "assets",
       "purpose": "Static assets",
       "fileCount": 8,
-      "lastAccessed": 1778005935871,
+      "lastAccessed": 1778414627447,
       "keyFiles": [
         "2nd card.jpeg",
         "apple-touch-icon.png",
@@ -51,7 +80,7 @@
       "path": "blog",
       "purpose": null,
       "fileCount": 47,
-      "lastAccessed": 1778005935872,
+      "lastAccessed": 1778414627447,
       "keyFiles": [
         "acne-ka-ilaj.html",
         "ai-doctor-pakistan.html",
@@ -64,360 +93,384 @@
       "path": "css",
       "purpose": null,
       "fileCount": 2,
-      "lastAccessed": 1778005935873,
+      "lastAccessed": 1778414627455,
       "keyFiles": [
         "blog.css",
         "styles.css"
       ]
     },
-    "old-v1": {
-      "path": "old-v1",
-      "purpose": null,
-      "fileCount": 13,
-      "lastAccessed": 1778005935873,
+    "dist": {
+      "path": "dist",
+      "purpose": "Distribution/build output",
+      "fileCount": 6,
+      "lastAccessed": 1778414627455,
       "keyFiles": [
-        "next-env.d.ts",
-        "next.config.js",
-        "package-lock.json",
-        "package.json",
-        "postcss.config.js"
+        "apple-touch-icon.png",
+        "favicon-16x16.png",
+        "favicon-32x32.png",
+        "favicon.png",
+        "Icon-192.png"
+      ]
+    },
+    "public": {
+      "path": "public",
+      "purpose": "Public files",
+      "fileCount": 5,
+      "lastAccessed": 1778414627455,
+      "keyFiles": [
+        "apple-touch-icon.png",
+        "favicon-16x16.png",
+        "favicon-32x32.png",
+        "favicon.png",
+        "Icon-192.png"
       ]
     },
     "seo": {
       "path": "seo",
       "purpose": null,
       "fileCount": 2,
-      "lastAccessed": 1778005935874,
+      "lastAccessed": 1778414627456,
       "keyFiles": [
         "ACTION-PLAN.md",
         "FULL-AUDIT-REPORT.md"
       ]
     },
-    "old-v1\\app": {
-      "path": "old-v1\\app",
-      "purpose": "Application code",
-      "fileCount": 5,
-      "lastAccessed": 1778005935875,
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 0,
+      "lastAccessed": 1778414627456,
+      "keyFiles": []
+    },
+    "dist\\assets": {
+      "path": "dist\\assets",
+      "purpose": "Static assets",
+      "fileCount": 8,
+      "lastAccessed": 1778414627457,
       "keyFiles": [
-        "globals.css",
-        "layout.tsx",
-        "page.tsx"
+        "2nd card.jpeg",
+        "apple-touch-icon.png",
+        "favicon-16x16.png"
       ]
     },
-    "old-v1\\components": {
-      "path": "old-v1\\components",
+    "public\\assets": {
+      "path": "public\\assets",
+      "purpose": "Static assets",
+      "fileCount": 8,
+      "lastAccessed": 1778414627458,
+      "keyFiles": [
+        "2nd card.jpeg",
+        "apple-touch-icon.png",
+        "favicon-16x16.png"
+      ]
+    },
+    "src\\components": {
+      "path": "src\\components",
       "purpose": "UI components",
       "fileCount": 5,
-      "lastAccessed": 1778005935885,
+      "lastAccessed": 1778414627458,
       "keyFiles": [
-        "DotGrid.css",
-        "DotGrid.js",
-        "FaqAccordion.tsx"
+        "Analytics.astro",
+        "Footer.astro",
+        "LangSwitch.astro"
       ]
     },
-    "old-v1\\lib": {
-      "path": "old-v1\\lib",
-      "purpose": "Library code",
+    "src\\data": {
+      "path": "src\\data",
+      "purpose": "Data files",
       "fileCount": 1,
-      "lastAccessed": 1778005935886,
+      "lastAccessed": 1778414627458,
       "keyFiles": [
-        "utils.ts"
+        "blog-posts.ts"
+      ]
+    },
+    "src\\pages": {
+      "path": "src\\pages",
+      "purpose": "Page components",
+      "fileCount": 6,
+      "lastAccessed": 1778414627459,
+      "keyFiles": [
+        "doctors.astro",
+        "faq.astro",
+        "index.astro"
       ]
     }
   },
   "hotPaths": [
     {
-      "path": "css\\styles.css",
-      "accessCount": 19,
-      "lastAccessed": 1778069492711,
-      "type": "file"
-    },
-    {
-      "path": "src\\styles\\comparison.css",
-      "accessCount": 12,
-      "lastAccessed": 1778071393125,
-      "type": "file"
-    },
-    {
-      "path": "blog.html",
-      "accessCount": 11,
-      "lastAccessed": 1778061051229,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\Nav.astro",
-      "accessCount": 7,
-      "lastAccessed": 1778062839818,
+      "path": "src\\components\\LangSwitch.astro",
+      "accessCount": 6,
+      "lastAccessed": 1778415925449,
       "type": "file"
     },
     {
       "path": "src\\layouts\\BaseLayout.astro",
-      "accessCount": 7,
-      "lastAccessed": 1778066639875,
+      "accessCount": 6,
+      "lastAccessed": 1778417636228,
       "type": "file"
     },
     {
-      "path": "src\\styles\\faq.css",
-      "accessCount": 7,
-      "lastAccessed": 1778069637759,
-      "type": "file"
-    },
-    {
-      "path": "src\\pages\\support.astro",
-      "accessCount": 7,
-      "lastAccessed": 1778069874536,
-      "type": "file"
-    },
-    {
-      "path": "src\\pages\\privacy-policy.astro",
-      "accessCount": 7,
-      "lastAccessed": 1778228045078,
+      "path": "src\\components\\Nav.astro",
+      "accessCount": 5,
+      "lastAccessed": 1778415326308,
       "type": "file"
     },
     {
       "path": "src\\components\\home\\DoctorsPreview.astro",
-      "accessCount": 6,
-      "lastAccessed": 1778067137876,
-      "type": "file"
-    },
-    {
-      "path": "src\\pages\\faq.astro",
-      "accessCount": 6,
-      "lastAccessed": 1778071581225,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\home\\Comparison.astro",
       "accessCount": 5,
-      "lastAccessed": 1778071083003,
+      "lastAccessed": 1778415893388,
       "type": "file"
     },
     {
-      "path": "src\\pages\\index.astro",
-      "accessCount": 4,
-      "lastAccessed": 1778062576018,
-      "type": "file"
-    },
-    {
-      "path": "",
-      "accessCount": 4,
-      "lastAccessed": 1778063463728,
+      "path": "css\\styles.css",
+      "accessCount": 5,
+      "lastAccessed": 1778415930124,
       "type": "directory"
     },
     {
-      "path": "src\\pages\\doctors.astro",
+      "path": "src\\pages\\faq.astro",
       "accessCount": 4,
-      "lastAccessed": 1778067249191,
+      "lastAccessed": 1778416217471,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\home\\Features.astro",
+      "accessCount": 4,
+      "lastAccessed": 1778416236194,
+      "type": "file"
+    },
+    {
+      "path": "astro.config.ts",
+      "accessCount": 3,
+      "lastAccessed": 1778415298767,
       "type": "file"
     },
     {
       "path": "src\\i18n\\en.ts",
       "accessCount": 3,
-      "lastAccessed": 1778062855015,
-      "type": "file"
-    },
-    {
-      "path": "blog\\bukhar-ka-ilaj.html",
-      "accessCount": 3,
-      "lastAccessed": 1778063542036,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\home\\HowItWorks.astro",
-      "accessCount": 3,
-      "lastAccessed": 1778068654029,
-      "type": "file"
-    },
-    {
-      "path": "src\\data\\blog-posts.ts",
-      "accessCount": 3,
-      "lastAccessed": 1778068912514,
-      "type": "file"
-    },
-    {
-      "path": "src\\pages\\blog\\[slug].astro",
-      "accessCount": 3,
-      "lastAccessed": 1778069303272,
-      "type": "file"
-    },
-    {
-      "path": "src\\styles\\doctors-preview.css",
-      "accessCount": 3,
-      "lastAccessed": 1778069644763,
-      "type": "file"
-    },
-    {
-      "path": "src\\pages\\terms-and-conditions.astro",
-      "accessCount": 3,
-      "lastAccessed": 1778069833297,
-      "type": "file"
-    },
-    {
-      "path": "index.html",
-      "accessCount": 2,
-      "lastAccessed": 1778006460434,
-      "type": "file"
-    },
-    {
-      "path": "vercel.json",
-      "accessCount": 2,
-      "lastAccessed": 1778061553062,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\home\\FAQ.astro",
-      "accessCount": 2,
-      "lastAccessed": 1778062245527,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\TailwindConfig.astro",
-      "accessCount": 2,
-      "lastAccessed": 1778068767557,
-      "type": "file"
-    },
-    {
-      "path": "src\\pages\\blog\\index.astro",
-      "accessCount": 2,
-      "lastAccessed": 1778068912179,
-      "type": "file"
-    },
-    {
-      "path": "src\\styles\\legal.css",
-      "accessCount": 2,
-      "lastAccessed": 1778069844287,
-      "type": "file"
-    },
-    {
-      "path": "CLAUDE.md",
-      "accessCount": 1,
-      "lastAccessed": 1778059894488,
-      "type": "file"
-    },
-    {
-      "path": "package.json",
-      "accessCount": 1,
-      "lastAccessed": 1778060186703,
-      "type": "file"
-    },
-    {
-      "path": "astro.config.ts",
-      "accessCount": 1,
-      "lastAccessed": 1778060187912,
-      "type": "file"
-    },
-    {
-      "path": "tsconfig.json",
-      "accessCount": 1,
-      "lastAccessed": 1778060188629,
-      "type": "file"
-    },
-    {
-      "path": "src\\i18n\\ur.ts",
-      "accessCount": 1,
-      "lastAccessed": 1778060207159,
+      "lastAccessed": 1778415309465,
       "type": "file"
     },
     {
       "path": "src\\i18n\\utils.ts",
+      "accessCount": 3,
+      "lastAccessed": 1778415313062,
+      "type": "file"
+    },
+    {
+      "path": "src\\pages\\index.astro",
+      "accessCount": 3,
+      "lastAccessed": 1778415746339,
+      "type": "file"
+    },
+    {
+      "path": "src\\pages\\en\\index.astro",
+      "accessCount": 3,
+      "lastAccessed": 1778415776329,
+      "type": "file"
+    },
+    {
+      "path": "src\\i18n\\ur.ts",
+      "accessCount": 2,
+      "lastAccessed": 1778415271922,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\home\\Hero.astro",
+      "accessCount": 2,
+      "lastAccessed": 1778415278700,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\home\\HowItWorks.astro",
+      "accessCount": 2,
+      "lastAccessed": 1778415279060,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\home\\HowItWorksSteps.astro",
+      "accessCount": 2,
+      "lastAccessed": 1778415279403,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\Footer.astro",
+      "accessCount": 2,
+      "lastAccessed": 1778415553969,
+      "type": "file"
+    },
+    {
+      "path": "src\\styles\\doctors-preview.css",
+      "accessCount": 2,
+      "lastAccessed": 1778415898161,
+      "type": "file"
+    },
+    {
+      "path": "src\\pages\\doctors.astro",
+      "accessCount": 2,
+      "lastAccessed": 1778418033353,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\home\\DoctorsList.astro",
+      "accessCount": 2,
+      "lastAccessed": 1778418044594,
+      "type": "file"
+    },
+    {
+      "path": "C:\\Users\\amara\\AppData\\Local\\Temp\\claude\\D--ilaaj-ilaaj-web\\42bed1b5-8b54-47f9-8554-603606a92646\\tasks\\biaic2hdh.output",
       "accessCount": 1,
-      "lastAccessed": 1778060209208,
+      "lastAccessed": 1778414735432,
       "type": "file"
     },
     {
       "path": "src\\components\\Analytics.astro",
       "accessCount": 1,
-      "lastAccessed": 1778060239590,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\LangSwitch.astro",
-      "accessCount": 1,
-      "lastAccessed": 1778060242076,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\Footer.astro",
-      "accessCount": 1,
-      "lastAccessed": 1778060275049,
-      "type": "file"
-    },
-    {
-      "path": "src\\styles\\hero.css",
-      "accessCount": 1,
-      "lastAccessed": 1778060527530,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\home\\HeroMockup.astro",
-      "accessCount": 1,
-      "lastAccessed": 1778060599222,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\home\\Hero.astro",
-      "accessCount": 1,
-      "lastAccessed": 1778060609570,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\home\\HowItWorksSteps.astro",
-      "accessCount": 1,
-      "lastAccessed": 1778060638278,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\home\\Features.astro",
-      "accessCount": 1,
-      "lastAccessed": 1778060677056,
+      "lastAccessed": 1778414751517,
       "type": "file"
     },
     {
       "path": "src\\pages\\ur\\index.astro",
       "accessCount": 1,
-      "lastAccessed": 1778060793930,
+      "lastAccessed": 1778414828588,
       "type": "file"
     },
     {
-      "path": "faq.html",
+      "path": "src\\components\\home\\FAQ.astro",
       "accessCount": 1,
-      "lastAccessed": 1778060964503,
+      "lastAccessed": 1778414966494,
       "type": "file"
     },
     {
-      "path": "support.html",
+      "path": "src\\components\\home\\Comparison.astro",
       "accessCount": 1,
-      "lastAccessed": 1778060964681,
+      "lastAccessed": 1778415280212,
       "type": "file"
     },
     {
-      "path": "publish-today.py",
+      "path": "src\\pages\\privacy-policy.astro",
       "accessCount": 1,
-      "lastAccessed": 1778061060379,
+      "lastAccessed": 1778415285760,
       "type": "file"
     },
     {
-      "path": "src\\styles\\support.css",
+      "path": "src\\pages\\terms-and-conditions.astro",
       "accessCount": 1,
-      "lastAccessed": 1778061616974,
+      "lastAccessed": 1778415285854,
       "type": "file"
     },
     {
-      "path": "src\\i18n",
+      "path": "src\\pages\\support.astro",
       "accessCount": 1,
-      "lastAccessed": 1778062844923,
+      "lastAccessed": 1778415286213,
+      "type": "file"
+    },
+    {
+      "path": "src\\pages\\blog\\index.astro",
+      "accessCount": 1,
+      "lastAccessed": 1778415286912,
+      "type": "file"
+    },
+    {
+      "path": "src\\i18n\\pk.ts",
+      "accessCount": 1,
+      "lastAccessed": 1778415305459,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\home\\en\\Hero.astro",
+      "accessCount": 1,
+      "lastAccessed": 1778415359631,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\home\\en\\HowItWorksSteps.astro",
+      "accessCount": 1,
+      "lastAccessed": 1778415381599,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\home\\en\\HowItWorks.astro",
+      "accessCount": 1,
+      "lastAccessed": 1778415403077,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\home\\en\\Comparison.astro",
+      "accessCount": 1,
+      "lastAccessed": 1778415431343,
+      "type": "file"
+    },
+    {
+      "path": "src\\pages\\en\\faq.astro",
+      "accessCount": 1,
+      "lastAccessed": 1778415471820,
+      "type": "file"
+    },
+    {
+      "path": "src\\pages\\en\\doctors.astro",
+      "accessCount": 1,
+      "lastAccessed": 1778415479830,
+      "type": "file"
+    },
+    {
+      "path": "src\\pages\\en\\privacy-policy.astro",
+      "accessCount": 1,
+      "lastAccessed": 1778415492054,
+      "type": "file"
+    },
+    {
+      "path": "src\\pages\\en\\terms-and-conditions.astro",
+      "accessCount": 1,
+      "lastAccessed": 1778415504900,
+      "type": "file"
+    },
+    {
+      "path": "src\\pages\\en\\support.astro",
+      "accessCount": 1,
+      "lastAccessed": 1778415517575,
+      "type": "file"
+    },
+    {
+      "path": "src\\pages\\en\\blog\\index.astro",
+      "accessCount": 1,
+      "lastAccessed": 1778415530554,
+      "type": "file"
+    },
+    {
+      "path": "src\\components",
+      "accessCount": 1,
+      "lastAccessed": 1778415545024,
       "type": "directory"
     },
     {
-      "path": "C:\\Users\\amara\\AppData\\Local\\Temp\\claude\\D--ilaaj-ilaaj-web\\e981421c-febb-4ffe-9013-73690bef4513\\tasks\\bmpcmv5m3.output",
+      "path": "C:\\Users\\amara\\AppData\\Local\\Temp\\claude\\D--ilaaj-ilaaj-web\\42bed1b5-8b54-47f9-8554-603606a92646\\tasks\\bafh932d1.output",
       "accessCount": 1,
-      "lastAccessed": 1778066769947,
+      "lastAccessed": 1778415590227,
       "type": "file"
     },
     {
-      "path": "src\\components\\home\\DoctorsList.astro",
+      "path": "src\\styles\\features.css",
       "accessCount": 1,
-      "lastAccessed": 1778067241504,
+      "lastAccessed": 1778416142980,
+      "type": "file"
+    },
+    {
+      "path": "src\\data\\faq-pk.ts",
+      "accessCount": 1,
+      "lastAccessed": 1778416193580,
+      "type": "file"
+    },
+    {
+      "path": "src\\pages\\blog\\[slug].astro",
+      "accessCount": 1,
+      "lastAccessed": 1778420705057,
+      "type": "file"
+    },
+    {
+      "path": "src\\pages\\en\\blog\\[slug].astro",
+      "accessCount": 1,
+      "lastAccessed": 1778420714916,
       "type": "file"
     }
   ],

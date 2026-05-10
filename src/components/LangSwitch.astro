@@ -1,22 +1,24 @@
 ---
 import type { Lang } from '../i18n/utils';
-import { useTranslations } from '../i18n/utils';
-
-interface Props {
-  lang: Lang;
-}
-
+interface Props { lang: Lang; }
 const { lang } = Astro.props;
-const t = useTranslations(lang);
-
-const currentPath = Astro.url.pathname;
-const targetPath = lang === 'en'
-  ? `/ur${currentPath}`
-  : currentPath.replace(/^\/ur/, '') || '/';
-
-const targetLang: Lang = lang === 'en' ? 'ur' : 'en';
+const p = Astro.url.pathname;
+const enHref = p.startsWith('/en') ? p : p.startsWith('/ur') ? '/en' + p.slice(3) : '/en' + (p === '/' ? '' : p);
+const pkHref = p.startsWith('/en') ? (p.slice(3) || '/') : p.startsWith('/ur') ? (p.slice(3) || '/') : p;
+const isEn = lang === 'en';
 ---
-
-<a href={targetPath} class="lang-switch" lang={targetLang}>
-  {t('lang.switch')}
-</a>
+<div class="lang-switch">
+  <a href={pkHref} class:list={['lang-switch__btn', { active: !isEn }]} data-lang="pk">
+    <img src="https://flagcdn.com/w20/pk.png" width="18" height="12" alt="Pakistan" class="lang-switch__flag-img" /><span class="lang-switch__code">PK</span>
+  </a>
+  <a href={enHref} class:list={['lang-switch__btn', { active: isEn }]} data-lang="en">
+    <span class="lang-switch__flag">🌐</span><span class="lang-switch__code">EN</span>
+  </a>
+</div>
+<script is:inline>
+  document.querySelectorAll('.lang-switch__btn').forEach(function(b) {
+    b.addEventListener('click', function() {
+      localStorage.setItem('ilaaj-lang-pref', b.getAttribute('data-lang'));
+    });
+  });
+</script>

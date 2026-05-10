@@ -18,7 +18,7 @@ interface Props {
 }
 
 const {
-  lang = 'en',
+  lang = 'pk',
   title,
   description,
   canonical = Astro.url.href,
@@ -55,6 +55,39 @@ const urUrl = lang === 'ur' ? Astro.url.href : `${siteUrl}/ur${Astro.url.pathnam
     <slot name="head" />
     <TailwindConfig />
     <Analytics />
+    <script is:inline>
+    (function(){try{
+      var pref=localStorage.getItem('ilaaj-lang-pref');
+      var path=window.location.pathname;
+      var isEn=path.startsWith('/en/')||path==='/en';
+      var isPk=!isEn&&!path.startsWith('/ur');
+      // Stored preference → redirect instantly, no async needed
+      if(pref){
+        if(pref==='en'&&isPk){window.location.replace('/en'+(path==='/'?'':path));return;}
+        if(pref==='pk'&&isEn){window.location.replace(path.slice(3)||'/');return;}
+        return;
+      }
+      // Only fetch IP once per browser session — not on every page load
+      if(sessionStorage.getItem('ilaaj-ip')){return;}
+      sessionStorage.setItem('ilaaj-ip','1');
+      // Cancel redirect if user has already scrolled (no mid-scroll jumps)
+      var scrolled=false;
+      window.addEventListener('scroll',function(){scrolled=true;},{once:true,passive:true});
+      fetch('https://ipapi.co/country/')
+        .then(function(r){return r.text();})
+        .then(function(c){
+          if(scrolled)return;
+          c=c.trim();
+          if(c==='PK'){
+            localStorage.setItem('ilaaj-lang-pref','pk');
+            if(isEn)window.location.replace(path.slice(3)||'/');
+          } else {
+            localStorage.setItem('ilaaj-lang-pref','en');
+            if(isPk)window.location.replace('/en'+(path==='/'?'':path));
+          }
+        }).catch(function(){});
+    }catch(e){}})();
+    </script>
   </head>
   <body>
     <!-- GTM noscript -->

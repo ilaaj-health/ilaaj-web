@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/home/en/Hero.astro';
+import HowItWorks from '../../components/home/en/HowItWorks.astro';
+import Features from '../../components/home/Features.astro';
+import Comparison from '../../components/home/en/Comparison.astro';
+import DoctorsPreview from '../../components/home/DoctorsPreview.astro';
+---
+<BaseLayout
+  lang="en"
+  title="Ilaaj AI — Pakistan's First AI Health Platform"
+  description="Get instant AI medical assessments verified by PMDC-certified doctors. Chat in Urdu or English, get a doctor-verified prescription in 15-20 minutes. Free, anonymous, 24/7."
+  canonical="https://ilaaj.ai/en/"
+>
+  <main>
+    <Hero />
+    <HowItWorks />
+    <Features />
+    <Comparison />
+    <DoctorsPreview lang="en" />
+  </main>
+</BaseLayout>
