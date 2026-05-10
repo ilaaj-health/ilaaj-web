@@ -49,34 +49,29 @@ const urUrl = lang === 'ur' ? canonical : `${siteUrl}/ur${_path}`;
     <Analytics />
     <script is:inline>
     (function(){try{
-      var pref=localStorage.getItem('ilaaj-lang-pref');
       var path=window.location.pathname;
       var isEn=path.startsWith('/en/')||path==='/en';
       var isPk=!isEn&&!path.startsWith('/ur');
-      // Stored preference → redirect instantly, no async needed
-      if(pref){
-        if(pref==='en'&&isPk){window.location.replace('/en'+(path==='/'?'':path));return;}
-        if(pref==='pk'&&isEn){window.location.replace(path.slice(3)||'/');return;}
-        return;
+      function redir(lang){
+        if(lang==='en'&&isPk){window.location.replace('/en'+(path==='/'?'':path));}
+        else if(lang==='pk'&&isEn){window.location.replace(path.slice(3)||'/');}
       }
-      // Only fetch IP once per browser session — not on every page load
-      if(sessionStorage.getItem('ilaaj-ip')){return;}
-      sessionStorage.setItem('ilaaj-ip','1');
-      // Cancel redirect if user has already scrolled (no mid-scroll jumps)
+      // Manual click preference (set by language switcher) — highest priority
+      var manual=localStorage.getItem('ilaaj-lang-manual');
+      if(manual){redir(manual);return;}
+      // Geo result cached for this session
+      var geo=sessionStorage.getItem('ilaaj-geo-lang');
+      if(geo){redir(geo);return;}
+      // Detect country — ipinfo.io (50k req/month free, JSON API)
       var scrolled=false;
       window.addEventListener('scroll',function(){scrolled=true;},{once:true,passive:true});
-      fetch('https://ipapi.co/country/')
-        .then(function(r){return r.text();})
-        .then(function(c){
+      fetch('https://ipinfo.io/json?fields=country')
+        .then(function(r){return r.json();})
+        .then(function(d){
           if(scrolled)return;
-          c=c.trim();
-          if(c==='PK'){
-            localStorage.setItem('ilaaj-lang-pref','pk');
-            if(isEn)window.location.replace(path.slice(3)||'/');
-          } else {
-            localStorage.setItem('ilaaj-lang-pref','en');
-            if(isPk)window.location.replace('/en'+(path==='/'?'':path));
-          }
+          var lang=(d&&d.country==='PK')?'pk':'en';
+          sessionStorage.setItem('ilaaj-geo-lang',lang);
+          redir(lang);
         }).catch(function(){});
     }catch(e){}})();
     </script>

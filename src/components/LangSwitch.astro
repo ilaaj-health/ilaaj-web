@@ -18,7 +18,7 @@ const isEn = lang === 'en';
 <script is:inline>
   document.querySelectorAll('.lang-switch__btn').forEach(function(b) {
     b.addEventListener('click', function() {
-      localStorage.setItem('ilaaj-lang-pref', b.getAttribute('data-lang'));
+      localStorage.setItem('ilaaj-lang-manual', b.getAttribute('data-lang'));
     });
   });
 </script>
