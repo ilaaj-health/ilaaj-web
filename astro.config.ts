@@ -8,8 +8,8 @@ export default defineConfig({
   compressHTML: true,
   integrations: [],
   i18n: {
-    defaultLocale: 'pk',
-    locales: ['pk', 'en', 'ur'],
+    defaultLocale: 'en',
+    locales: ['en', 'pk', 'ur'],
     routing: {
       prefixDefaultLocale: false,
     },

@@ -3,8 +3,12 @@ import type { Lang } from '../i18n/utils';
 interface Props { lang: Lang; }
 const { lang } = Astro.props;
 const p = Astro.url.pathname;
-const enHref = p.startsWith('/en') ? p : p.startsWith('/ur') ? '/en' + p.slice(3) : '/en' + (p === '/' ? '' : p);
-const pkHref = p.startsWith('/en') ? (p.slice(3) || '/') : p.startsWith('/ur') ? (p.slice(3) || '/') : p;
+const isPk = p.startsWith('/pk');
+const isUr = p.startsWith('/ur');
+// EN href: strip /pk or /ur prefix
+const enHref = isPk ? (p.slice(3) || '/') : isUr ? (p.slice(3) || '/') : p;
+// PK href: add /pk prefix
+const pkHref = isPk ? p : isUr ? '/pk' + p.slice(3) : '/pk' + (p === '/' ? '' : p);
 const isEn = lang === 'en';
 ---
 <div class="lang-switch">

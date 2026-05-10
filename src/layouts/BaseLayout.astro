@@ -22,7 +22,7 @@ interface Props {
 }
 
 const {
-  lang = 'pk',
+  lang = 'en',
   title,
   description,
   canonical = Astro.url.href,
@@ -35,34 +35,32 @@ const {
 
 const isRtl = lang === 'ur';
 const siteUrl = 'https://www.ilaaj.ai';
-const enUrl = canonical.replace(`${siteUrl}/ur`, siteUrl);
-const _path = canonical.replace(siteUrl, '').replace(/\/$/, '');
-const urUrl = lang === 'ur' ? canonical : `${siteUrl}/ur${_path}`;
+const _path = canonical.replace(siteUrl, '').replace(/^\/pk/, '').replace(/^\/ur/, '').replace(/\/$/, '');
+const enUrl = `${siteUrl}${_path || '/'}`;
+const pkUrl = `${siteUrl}/pk${_path}`;
+const urUrl = `${siteUrl}/ur${_path}`;
 ---
 
 <!doctype html>
 <html lang={lang} dir={isRtl ? 'rtl' : 'ltr'}>
   <head>
-    <SEO {title} {description} {canonical} {ogImage} {ogType} {noindex} {lang} {enUrl} {urUrl} {keywords} {hasUrdu} />
+    <SEO {title} {description} {canonical} {ogImage} {ogType} {noindex} {lang} {enUrl} {pkUrl} {urUrl} {keywords} {hasUrdu} />
     <slot name="head" />
     <TailwindConfig />
     <Analytics />
     <script is:inline>
     (function(){try{
       var path=window.location.pathname;
-      var isEn=path.startsWith('/en/')||path==='/en';
-      var isPk=!isEn&&!path.startsWith('/ur');
+      var isEn=!path.startsWith('/pk')&&!path.startsWith('/ur');
+      var isPk=path.startsWith('/pk');
       function redir(lang){
-        if(lang==='en'&&isPk){window.location.replace('/en'+(path==='/'?'':path));}
-        else if(lang==='pk'&&isEn){window.location.replace(path.slice(3)||'/');}
+        if(lang==='pk'&&!isPk){window.location.replace('/pk'+(path==='/'?'':path));}
+        else if(lang==='en'&&isPk){window.location.replace(path.slice(3)||'/');}
       }
-      // Manual click preference (set by language switcher) — highest priority
       var manual=localStorage.getItem('ilaaj-lang-manual');
       if(manual){redir(manual);return;}
-      // Geo result cached for this session
       var geo=sessionStorage.getItem('ilaaj-geo-lang');
       if(geo){redir(geo);return;}
-      // Detect country — ipinfo.io (50k req/month free, JSON API)
       var scrolled=false;
       window.addEventListener('scroll',function(){scrolled=true;},{once:true,passive:true});
       fetch('https://ipinfo.io/json?fields=country')

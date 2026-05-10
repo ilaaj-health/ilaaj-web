@@ -1,0 +1,104 @@
+﻿---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import '../../styles/legal.css';
+import '../../styles/support.css';
+---
+
+<BaseLayout
+  lang=”pk”
+  title=”Support Center | Ilaaj AI — Get Help 24/7”
+  description=”Need help with Ilaaj AI? Contact our support team via email, phone or live chat. Available 24/7 for technical, billing & account questions.”
+  canonical=”https://www.ilaaj.ai/pk/support”
+  keywords=”ilaaj AI support, contact ilaaj AI, customer service Pakistan health app, ilaaj AI help center, technical support telemedicine, health app contact Pakistan”
+>
+  <main>
+    <section class="legal-hero">
+      <div class="container">
+        <div class="legal-hero__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--primary-600)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+        <h1 class="legal-hero__title">Support Center</h1>
+        <p class=”legal-hero__meta”>We're here to help — get in touch anytime.</p>
+      </div>
+    </section>
+
+    <div class="legal-body">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-card contact-card--email">
+            <div class="contact-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <h3>Email Us</h3>
+            <p>Send us an email anytime</p>
+            <a href="mailto:support@ilaaj.ai">support@ilaaj.ai</a>
+          </div>
+          <div class="contact-card contact-card--phone">
+            <div class="contact-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <h3>Call Us</h3>
+            <p>Mon-Fri, 9AM-6PM PKT</p>
+            <a href="tel:+923248199663">+92-324-819-9663</a>
+          </div>
+          <div class="contact-card contact-card--chat">
+            <div class="contact-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3>Live Chat</h3>
+            <p>Chat with us in-app</p>
+            <span class="badge">Available 24/7</span>
+          </div>
+        </div>
+
+        <div class="support-form">
+          <h2>Send us a Message</h2>
+          <form id="supportForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="technical">Technical Issue</option>
+                <option value="account">Account Help</option>
+                <option value="billing">Billing Question</option>
+                <option value="feature">Feature Request</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us how we can help you..." required></textarea>
+            </div>
+            <button type="submit" class="form-submit">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+
+<script>
+  document.getElementById('supportForm')?.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const name = (document.getElementById('name') as HTMLInputElement).value;
+    const sel = document.getElementById('subject') as HTMLSelectElement;
+    const subject = sel.options[sel.selectedIndex].text;
+    const email = (document.getElementById('email') as HTMLInputElement).value;
+    const message = (document.getElementById('message') as HTMLTextAreaElement).value;
+    const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
+    window.location.href = `mailto:support@ilaaj.ai?subject=${encodeURIComponent(subject + ' - Ilaaj AI Support')}&body=${encodeURIComponent(body)}`;
+  });
+</script>
