@@ -62,28 +62,17 @@ const urUrl = lang === 'ur' ? canonical : `${siteUrl}/ur${_path}`;
       // Geo result cached for this session
       var geo=sessionStorage.getItem('ilaaj-geo-lang');
       if(geo){redir(geo);return;}
-      // Detect country — Cloudflare CDN trace (free, no rate limit, no CORS)
+      // Detect country — ipinfo.io (50k req/month free, JSON API)
       var scrolled=false;
       window.addEventListener('scroll',function(){scrolled=true;},{once:true,passive:true});
-      fetch('https://cloudflare.com/cdn-cgi/trace')
-        .then(function(r){return r.text();})
-        .then(function(t){
+      fetch('https://ipinfo.io/json?fields=country')
+        .then(function(r){return r.json();})
+        .then(function(d){
           if(scrolled)return;
-          var m=t.match(/^loc=(.+)$/m);
-          var lang=(m&&m[1].trim()==='PK')?'pk':'en';
+          var lang=(d&&d.country==='PK')?'pk':'en';
           sessionStorage.setItem('ilaaj-geo-lang',lang);
           redir(lang);
-        }).catch(function(){
-          // fallback: ipapi.co
-          fetch('https://ipapi.co/country/')
-            .then(function(r){return r.text();})
-            .then(function(c){
-              if(scrolled)return;
-              var lang=c.trim()==='PK'?'pk':'en';
-              sessionStorage.setItem('ilaaj-geo-lang',lang);
-              redir(lang);
-            }).catch(function(){});
-        });
+        }).catch(function(){});
     }catch(e){}})();
     </script>
   </head>
