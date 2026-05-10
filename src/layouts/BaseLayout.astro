@@ -61,12 +61,7 @@ const urUrl = `${siteUrl}/ur${_path}`;
       if(manual){redir(manual);return;}
       var geo=sessionStorage.getItem('ilaaj-geo-lang');
       if(geo){redir(geo);return;}
-      // Primary: timezone detection — Asia/Karachi is unique to Pakistan, instant, no API
-      try{
-        var tz=Intl.DateTimeFormat().resolvedOptions().timeZone;
-        if(tz==='Asia/Karachi'){sessionStorage.setItem('ilaaj-geo-lang','pk');redir('pk');return;}
-      }catch(e){}
-      // Fallback: ipinfo.io for non-Karachi timezones
+      // Client-side IP detection (fallback for local dev — Vercel handles geo redirects in production via vercel.json)
       var scrolled=false;
       window.addEventListener('scroll',function(){scrolled=true;},{once:true,passive:true});
       fetch('https://ipinfo.io/json?fields=country')

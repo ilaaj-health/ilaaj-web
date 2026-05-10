@@ -22,7 +22,9 @@ const isEn = lang === 'en';
 <script is:inline>
   document.querySelectorAll('.lang-switch__btn').forEach(function(b) {
     b.addEventListener('click', function() {
-      localStorage.setItem('ilaaj-lang-manual', b.getAttribute('data-lang'));
+      var lang = b.getAttribute('data-lang');
+      localStorage.setItem('ilaaj-lang-manual', lang);
+      document.cookie = 'ilaaj-lang-manual=' + lang + ';path=/;max-age=31536000;SameSite=Lax';
     });
   });
 </script>
