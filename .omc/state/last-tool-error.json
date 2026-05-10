@@ -1,7 +1,0 @@
-{
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"find D:/ilaaj/ilaaj-web/src/pages -name \\\"*.astro\\\" | head -40 && echo \\\"---\\\" && ls D:/ilaaj/ilaaj-web/src/i18n/ 2>/dev/null && echo \\\"---\\\" && ls D:/ilaaj/ilaaj-web/src/pages/en/ 2>/dev/...",
-  "error": "Exit code 2\nD:/ilaaj/ilaaj-web/src/pages/blog/index.astro\nD:/ilaaj/ilaaj-web/src/pages/blog/[slug].astro\nD:/ilaaj/ilaaj-web/src/pages/doctors.astro\nD:/ilaaj/ilaaj-web/src/pages/faq.astro\nD:/ilaaj/ilaaj-web/src/pages/index.astro\nD:/ilaaj/ilaaj-web/src/pages/privacy-policy.astro\nD:/ilaaj/ilaaj-web/src/pages/support.astro\nD:/ilaaj/ilaaj-web/src/pages/terms-and-conditions.astro\nD:/ilaaj/ilaaj-web/src/pages/ur/index.astro\n---\nen.ts\nur.ts\nutils.ts\n---",
-  "timestamp": "2026-05-10T12:07:02.816Z",
-  "retry_count": 1
-}

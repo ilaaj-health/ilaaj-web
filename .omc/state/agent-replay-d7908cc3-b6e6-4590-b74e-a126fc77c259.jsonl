@@ -1,9 +1,0 @@
-{"t":0,"agent":"system","event":"skill_invoked","skill_name":"claude-seo:seo-audit"}
-{"t":0,"agent":"a1a8915","agent_type":"claude-seo:seo-technical","event":"agent_start","parent_mode":"none"}
-{"t":0,"agent":"a3a2a41","agent_type":"claude-seo:seo-content","event":"agent_start","parent_mode":"none"}
-{"t":0,"agent":"a4c8785","agent_type":"claude-seo:seo-schema","event":"agent_start","parent_mode":"none"}
-{"t":0,"agent":"afd8fd8","agent_type":"claude-seo:seo-performance","event":"agent_start","parent_mode":"none"}
-{"t":0,"agent":"a3a2a41","agent_type":"claude-seo:seo-content","event":"agent_stop","success":true,"duration_ms":94662}
-{"t":0,"agent":"a1a8915","agent_type":"claude-seo:seo-technical","event":"agent_stop","success":true,"duration_ms":131564}
-{"t":0,"agent":"afd8fd8","agent_type":"claude-seo:seo-performance","event":"agent_stop","success":true,"duration_ms":94482}
-{"t":0,"agent":"a4c8785","agent_type":"claude-seo:seo-schema","event":"agent_stop","success":true,"duration_ms":115287}
