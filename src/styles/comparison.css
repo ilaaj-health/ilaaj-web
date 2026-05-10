@@ -9,9 +9,10 @@
 .cv2-desc { font-size: 1rem; color: #64748B; }
 @media (min-width: 768px) { .cv2-desc { font-size: 1.125rem; } }
 .cv2-outer { background: white; border-radius: 1.5rem; box-shadow: 0 20px 50px -15px rgba(15,23,42,0.10); overflow: hidden; border: 1px solid #EEF1F5; }
+@media (max-width: 767px) { .cv2-outer { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 1rem; } }
 
 /* Comparison table styles */
-.cv2-table { display:grid; grid-template-columns:1.2fr 1.8fr 1.5fr 1.5fr; min-width:640px; overflow-x:auto; }
+.cv2-table { display:grid; grid-template-columns:1.2fr 1.8fr 1.5fr 1.5fr; min-width:600px; }
 .compare-v2 .cv2-h { padding:22px 18px; background:#fff; border-bottom:1px solid #EEF1F5; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; position:relative; }
 .compare-v2 .cv2-h--label { align-items:flex-start; padding-left:22px; padding-right:10px; }
 .compare-v2 .cv2-h-icon { width:44px; height:44px; border-radius:10px; background:#F1F5F9; display:inline-flex; align-items:center; justify-content:center; }
@@ -34,9 +35,13 @@
 .compare-v2 .cv2-us-main--inline { font-size:14.5px; }
 .compare-v2 .cv2-us-sub { font-size:10px; font-weight:700; color:#0F766E; letter-spacing:.06em; text-transform:uppercase; }
 .compare-v2 .cv2-cell--good { color:#16A34A; }
-@media(max-width:768px) {
-  .compare-v2 .grid { font-size:13px; }
-  .compare-v2 .cv2-h-name, .compare-v2 .cv2-cell--label { font-size:13px; }
-  .compare-v2 .cv2-us-main { font-size:15px; }
-  .compare-v2 .cv2-cell, .compare-v2 .cv2-h { padding:14px 10px; }
+@media(max-width:767px) {
+  .compare-v2 .cv2-h-name, .compare-v2 .cv2-cell--label { font-size:12px; }
+  .compare-v2 .cv2-us-main { font-size:13px; }
+  .compare-v2 .cv2-us-main--inline { font-size:12px; }
+  .compare-v2 .cv2-cell, .compare-v2 .cv2-h { padding:12px 8px; font-size:12px; }
+  .compare-v2 .cv2-cell--label { padding-left:12px; }
+  .compare-v2 .cv2-h { gap:6px; }
+  .compare-v2 .cv2-h-icon { width:34px; height:34px; }
+  .compare-v2 .cv2-intro { margin-bottom:2rem; }
 }
