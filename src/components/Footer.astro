@@ -6,7 +6,7 @@ interface Props {
   lang?: Lang;
 }
 
-const { lang = 'en' } = Astro.props;
+const { lang = 'pk' } = Astro.props;
 const t = useTranslations(lang);
 const lp = (p: string) => localePath(p, lang);
 const year = new Date().getFullYear();

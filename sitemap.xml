@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://www.ilaaj.ai/</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ilaaj.ai/doctors</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ilaaj.ai/blog</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ilaaj.ai/support</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ilaaj.ai/privacy-policy</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ilaaj.ai/terms-and-conditions</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ilaaj.ai/blog/cancer-101-what-you-need-to-know</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ilaaj.ai/blog/cold-or-flu-how-to-tell-the-difference-and-when-to-seek-care</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ilaaj.ai/blog/healthy-eating-during-the-holidays</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ilaaj.ai/blog/hypertrophic-cardiomyopathy-a-common-genetic-heart-condition-thats-significantly-underdiagnosed</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ilaaj.ai/blog/online-doctor-pakistan-mein</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ilaaj.ai/blog/start-the-new-year-strong-with-healthy</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ilaaj.ai/blog/understanding-radiation-therapy-a-guide-for-patients-and-families</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ilaaj.ai/blog/sir-dard-ka-ilaj</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ilaaj.ai/blog/pet-dard-ka-ilaj</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ilaaj.ai/blog/bukhar-ka-ilaj</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ilaaj.ai/blog/khansi-ka-ilaj</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ilaaj.ai/blog/sugar-ka-ilaj</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ilaaj.ai/blog/blood-pressure-ka-ilaj</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- SCHEDULED:2026-05-06 -->
+  <!--
+  <url>
+    <loc>https://www.ilaaj.ai/blog/acne-ka-ilaj</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  -->
+  <!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-06 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/baal-jhadne-ka-ilaj</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-06 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/periods-irregular-ka-ilaj</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-07 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/depression-ka-ilaj</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-07 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/kamar-dard-ka-ilaj</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-07 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/gala-kharab-ka-ilaj</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-08 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/qabz-ka-ilaj</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-08 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/allergy-ka-ilaj</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-08 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/motapa-kam-karne-ka-tarika</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-09 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/panadol-uses-dosage</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-09 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/panadol-extra-uses</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-09 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/brufen-400-uses</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<url>
+    <loc>https://www.ilaaj.ai/blog/augmentin-625-uses</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ilaaj.ai/blog/risek-20-uses</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ilaaj.ai/blog/flagyl-tablet-uses</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- SCHEDULED:2026-05-11 -->
+  <!--
+  <url>
+    <loc>https://www.ilaaj.ai/blog/arinac-forte-uses</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  -->
+  <!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-11 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/calpol-syrup-dose</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-11 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/metformin-500-uses-urdu</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-12 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/ponstan-tablet-uses</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-12 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/disprin-uses</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-12 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/ventolin-inhaler-uses</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-13 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/imodium-capsule-uses</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-13 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/loprin-75-uses</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-13 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/velosef-500-uses</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-14 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/ai-doctor-pakistan</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-14 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/ai-symptom-checker-pakistan</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-14 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/ai-prescription-pakistan</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-15 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/chat-with-ai-doctor</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-15 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/ai-health-assistant-urdu</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-15 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/ilaaj-vs-marham-vs-oladoc</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-16 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/sugar-kya-hai</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-16 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/blood-pressure-kya-hai</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-16 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/dengue-ki-alamat</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+<!-- SCHEDULED:2026-05-17 -->
+<!--
+<url>
+    <loc>https://www.ilaaj.ai/blog/pregnancy-week-by-week-urdu</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+-->
+<!-- /SCHEDULED -->
+</urlset>

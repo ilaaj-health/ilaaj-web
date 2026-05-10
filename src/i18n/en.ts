@@ -4,7 +4,7 @@ const en = {
   'nav.doctors': 'Doctors',
   'nav.blog': 'Blog',
   'nav.faq': 'FAQ',
-  'nav.cta': 'Mashwara Lain',
+  'nav.cta': 'Get Free Advice',
   'footer.tagline': "Pakistan's first AI-powered health platform. Chat about your symptoms in any language, get AI triage, and receive doctor-verified prescriptions — affordable and accessible, 24/7.",
   'footer.product': 'Product',
   'footer.features': 'Features',
@@ -20,7 +20,7 @@ const en = {
   'footer.emergency': 'For emergencies, call',
   'footer.rights': 'All rights reserved.',
   'footer.disclaimer': 'Ilaaj AI is for general health consultations and non-emergency medical guidance. For emergencies, call 1122 (Rescue) or visit the nearest hospital.',
-  'lang.switch': 'اردو',
+  'lang.switch': 'PK',
 };
 
 export default en;

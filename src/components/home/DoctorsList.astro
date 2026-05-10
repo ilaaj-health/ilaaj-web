@@ -36,7 +36,13 @@ const specialties = [...new Set(doctors.map(d => d.spec))];
       {doctors.map(d => (
         <div class="dp-card dl-card" data-name={d.name.toLowerCase()} data-spec={d.spec}>
           <img src={d.photo} alt={d.name} class="dp-card__photo" width="88" height="88" loading="lazy" />
-          <div class="dp-card__name">{d.name}</div>
+          <div class="dp-card__name">
+              {d.name}
+              <svg class="dp-verified" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-label="Verified">
+                <circle cx="12" cy="12" r="12" fill="var(--primary-600)"/>
+                <path d="M7 12l3 3 7-7" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
           <div class="dp-card__spec">{d.spec}</div>
           <div class="dp-card__quals">{d.qual.split(',').map(q=><span class="dp-chip">{q.trim()}</span>)}<span class="dp-chip">{d.exp} Exp.</span></div>
           <a href="https://app.ilaaj.ai/chat" class="dp-card__btn">Book Appointment</a>

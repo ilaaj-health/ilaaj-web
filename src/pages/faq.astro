@@ -1,35 +1,13 @@
-﻿---
+---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/faq.css';
-const cats = [{ id:'general', label:'General' },{ id:'security', label:'Security' },{ id:'medical', label:'Medical' },{ id:'prescription', label:'Prescription' }];
-const sections = [
-  { id:'general', title:'General Questions', items:[
-    { q:'What is Ilaaj AI and how does it work?', a:'Ilaaj AI is a Pakistan-centric digital healthcare platform using advanced AI to provide preliminary diagnostics and connect you with PMDC-verified doctors. Our AI analyzes your symptoms and guides you to the right specialist.' },
-    { q:'Is the service available across all cities?', a:'Yes — digital consultation and AI diagnostics are available nationwide. Physical services like medicine delivery and lab tests operate in Karachi, Lahore, Islamabad, and Faisalabad.' },
-    { q:'How affordable is Ilaaj AI?', a:'AI consultation and doctor verification are completely free. You only pay for medicines or lab tests if you choose them. No hidden charges, no consultation fees.' },
-  ]},
-  { id:'security', title:'Data & Privacy', items:[
-    { q:'Is my medical data secure?', a:'Yes. We use bank-grade AES-256 encryption for all data, following HIPAA principles and local data-protection regulations. Your medical history is accessible only to you and doctors you choose.' },
-    { q:'Who can see my diagnostic results?', a:'Only you. If you book a consultation, the assigned PMDC-verified doctor receives temporary access to your health history for an accurate second opinion.' },
-    { q:'Can I use it for sensitive health topics?', a:'Absolutely. You can chat anonymously without revealing your name or phone number — ideal for private concerns before approaching a clinic.' },
-  ]},
-  { id:'medical', title:'Medical & Doctors', items:[
-    { q:'How does the doctor verification work?', a:'Every doctor is verified against the PMDC registry — license number, specialty, and active practicing status confirmed before any case review.' },
-    { q:'What languages can I chat in?', a:'English, Urdu (Nastaleeq), and Roman Urdu. The AI auto-detects your language and replies in kind. Mixing languages works perfectly too.' },
-    { q:"How do I add family members?", a:"From the chat sidebar tap 'Add family member', enter their name, age, and relationship. Each member gets their own thread and medical history under your account." },
-  ]},
-  { id:'prescription', title:'Prescription & Delivery', items:[
-    { q:'How long does prescription approval take?', a:'Typically 15–30 minutes during peak hours, often faster. Once approved by a PMDC doctor, your prescription arrives as a downloadable PDF in your chat thread.' },
-    { q:'What should I do in an emergency?', a:'Ilaaj AI is not a replacement for emergency services. For life-threatening symptoms call 1122 or go to the nearest emergency room immediately.' },
-  ]},
-];
+import { catsPk as cats, sectionsPk as sections } from '../data/faq-pk';
 const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": sections.flatMap(s => s.items.map(item => ({ "@type": "Question", "name": item.q, "acceptedAnswer": { "@type": "Answer", "text": item.a } }))) };
 ---
 <BaseLayout
-  title=”Help Center | Ilaaj AI — Digital Healthcare Support”
-  description="Find answers about AI diagnostics, doctor consultations, and Pakistan's premier digital healthcare platform."
-  canonical="https://www.ilaaj.ai/faq"
-  keywords="ilaaj AI FAQ, how does ilaaj AI work, telemedicine questions Pakistan, AI doctor questions, online prescription FAQ, PMDC doctor verification, health platform help Pakistan, AI health assistant guide"
+  title="Help Center | Ilaaj AI — Digital Healthcare Support"
+  description="Ilaaj AI ke baare mein sawalat ke jawab pائیں — AI diagnostics, doctor consultations, aur Pakistan ka premier digital health platform."
+  canonical="https://ilaaj.ai/faq"
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>
@@ -38,22 +16,22 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", "mainE
 <section class="faq-hero">
   <div class="container">
     <span class="section-header__tag faq-hero__tag">Help Center</span>
-    <h1>How can we assist your health journey today?</h1>
-    <p>Find answers to questions about AI diagnostics, doctor consultations, and Pakistan's premier digital healthcare platform.</p>
+    <h1>Aapki Sehat Ka Sawal — Hum Yahan Hain</h1>
+    <p>AI diagnostics, doctor consultations, aur Ilaaj AI ke baare mein apne sawalat ke jawab pائیں۔</p>
     <div class="faq-search">
-      <input id="faqSearch" type="text" placeholder="Search for help…" />
-      <div class="faq-search__tags"><span>Popular:</span><a href="#security">PMDC Verification</a><a href="#prescription">Prescription Delivery</a><a href="#medical">Lab Tests</a></div>
+      <input id="faqSearch" type="text" placeholder="Koi sawal dhundein…" />
+      <div class="faq-search__tags"><span>Popular:</span><a href="#security">PMDC Verification</a><a href="#prescription">Prescription</a><a href="#medical">Doctors</a></div>
     </div>
   </div>
 </section>
 <section class="faq-body">
 <div class="container"><div class="faq-layout">
   <aside class="faq-sidebar">
-    <p class="faq-sidebar__label">Support Categories</p>
+    <p class="faq-sidebar__label">Categories</p>
     <nav>{cats.map(c => <a class="faq-cat" href={`#${c.id}`}>{c.label}</a>)}</nav>
     <div class="faq-contact">
-      <h4>Still need help?</h4>
-      <p>Our 24/7 medical support team is ready to assist you.</p>
+      <h4>Aur madad chahiye?</h4>
+      <p>Hamari 24/7 support team aapki madad ke liye tayyar hai۔</p>
       <a href="https://wa.me/923248199663" target="_blank" rel="noopener" class="btn btn--primary btn--sm">WhatsApp</a>
       <a href="mailto:support@ilaaj.ai" class="btn btn--outline btn--sm">Email Us</a>
     </div>
@@ -71,18 +49,18 @@ const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", "mainE
       </div>
     ))}
     <div class="faq-banner">
-      <h3>Trusted by 500k+ Patients</h3>
-      <p>AI algorithms trained on diverse medical data ensuring accuracy for the Pakistani demographic.</p>
+      <h3>500k+ Patients Ka Bharosa</h3>
+      <p>Pakistani demographic ke liye accurate AI — diverse medical data par trained algorithms.</p>
     </div>
     <div class="faq-bento">
       <div class="faq-bento__card faq-bento__card--primary">
         <h4>Doctor Portal</h4>
-        <p>Are you a healthcare professional? Join Pakistan's fastest-growing digital clinic.</p>
+        <p>Kya aap healthcare professional hain? Pakistan ke fastest-growing digital clinic mein shamil hon.</p>
         <a href="https://wa.me/923248199663?text=Hi%2C%20I%27m%20a%20healthcare%20professional%20interested%20in%20joining%20Ilaaj%20AI%20as%20a%20doctor." target="_blank" rel="noopener" class="btn btn--white btn--sm">Partner With Us</a>
       </div>
       <div class="faq-bento__card">
         <h4>Mobile App</h4>
-        <p>Manage your health on the go. Get instant alerts and health tracking.</p>
+        <p>Apni sehat manage karein — instant alerts aur health tracking ke saath.</p>
         <div class="faq-bento__apps"><span class="btn btn--primary btn--sm">App Store</span><span class="btn btn--primary btn--sm">Play Store</span></div>
       </div>
     </div>

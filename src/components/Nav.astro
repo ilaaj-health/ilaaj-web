@@ -7,7 +7,7 @@ interface Props {
   lang?: Lang;
 }
 
-const { lang = 'en' } = Astro.props;
+const { lang = 'pk' } = Astro.props;
 const t = useTranslations(lang);
 const lp = (p: string) => localePath(p, lang);
 ---
@@ -28,7 +28,7 @@ const lp = (p: string) => localePath(p, lang);
     </div>
 
     <div class="navbar__right">
-      {/* <LangSwitch lang={lang} /> */}
+      <LangSwitch lang={lang} />
       <a href="https://app.ilaaj.ai/chat" class="btn btn--primary btn--sm navbar__cta">
         {t('nav.cta')}
       </a>
@@ -45,7 +45,7 @@ const lp = (p: string) => localePath(p, lang);
     <a href={lp('/doctors')} class="navbar__mobile-link">{t('nav.doctors')}</a>
     <a href={lp('/blog')} class="navbar__mobile-link">{t('nav.blog')}</a>
     <a href={lp('/faq')} class="navbar__mobile-link">{t('nav.faq')}</a>
-    {/* <LangSwitch lang={lang} /> */}
+    <LangSwitch lang={lang} />
   </div>
 </nav>
 
