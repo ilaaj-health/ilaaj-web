@@ -15,6 +15,13 @@ const staticPages = [
   { loc: '/support', priority: '0.5', changefreq: 'monthly' },
   { loc: '/privacy-policy', priority: '0.3', changefreq: 'yearly' },
   { loc: '/terms-and-conditions', priority: '0.3', changefreq: 'yearly' },
+  { loc: '/pk/', priority: '0.9', changefreq: 'daily' },
+  { loc: '/pk/blog', priority: '0.8', changefreq: 'weekly' },
+  { loc: '/pk/doctors', priority: '0.7', changefreq: 'monthly' },
+  { loc: '/pk/faq', priority: '0.6', changefreq: 'monthly' },
+  { loc: '/pk/support', priority: '0.5', changefreq: 'monthly' },
+  { loc: '/pk/privacy-policy', priority: '0.3', changefreq: 'yearly' },
+  { loc: '/pk/terms-and-conditions', priority: '0.3', changefreq: 'yearly' },
 ];
 
 function entry(loc: string, lastmod: string, changefreq: string, priority: string) {

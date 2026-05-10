@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import '../../styles/faq.css';
+import { catsPk as cats, sectionsPk as sections } from '../../data/faq-pk';
+const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": sections.flatMap(s => s.items.map(item => ({ "@type": "Question", "name": item.q, "acceptedAnswer": { "@type": "Answer", "text": item.a } }))) };
+---
+<BaseLayout
+  lang="pk"
+  title="Help Center | Ilaaj AI — Digital Healthcare Support"
+  description="Ilaaj AI ke baare mein sawalat ke jawab pائیں — AI diagnostics, doctor consultations, aur Pakistan ka premier digital health platform."
+  canonical="https://www.ilaaj.ai/pk/faq"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>
+  </Fragment>
+<main>
+<section class="faq-hero">
+  <div class="container">
+    <span class="section-header__tag faq-hero__tag">Help Center</span>
+    <h1>Aapki Sehat Ka Sawal — Hum Yahan Hain</h1>
+    <p>AI diagnostics, doctor consultations, aur Ilaaj AI ke baare mein apne sawalat ke jawab pائیں۔</p>
+    <div class="faq-search">
+      <input id="faqSearch" type="text" placeholder="Koi sawal dhundein…" />
+      <div class="faq-search__tags"><span>Popular:</span><a href="#security">PMDC Verification</a><a href="#prescription">Prescription</a><a href="#medical">Doctors</a></div>
+    </div>
+  </div>
+</section>
+<section class="faq-body">
+<div class="container"><div class="faq-layout">
+  <aside class="faq-sidebar">
+    <p class="faq-sidebar__label">Categories</p>
+    <nav>{cats.map(c => <a class="faq-cat" href={`#${c.id}`}>{c.label}</a>)}</nav>
+    <div class="faq-contact">
+      <h4>Aur madad chahiye?</h4>
+      <p>Hamari 24/7 support team aapki madad ke liye tayyar hai۔</p>
+      <a href="https://wa.me/923248199663" target="_blank" rel="noopener" class="btn btn--primary btn--sm">WhatsApp</a>
+      <a href="mailto:support@ilaaj.ai" class="btn btn--outline btn--sm">Email Us</a>
+    </div>
+  </aside>
+  <div class="faq-content">
+    {sections.map(s => (
+      <div class="faq-section" id={s.id}>
+        <h2>{s.title}</h2>
+        {s.items.map(item => (
+          <details class="faq-item">
+            <summary>{item.q}</summary>
+            <p>{item.a}</p>
+          </details>
+        ))}
+      </div>
+    ))}
+    <div class="faq-banner">
+      <h3>500k+ Patients Ka Bharosa</h3>
+      <p>Pakistani demographic ke liye accurate AI — diverse medical data par trained algorithms.</p>
+    </div>
+    <div class="faq-bento">
+      <div class="faq-bento__card faq-bento__card--primary">
+        <h4>Doctor Portal</h4>
+        <p>Kya aap healthcare professional hain? Pakistan ke fastest-growing digital clinic mein shamil hon.</p>
+        <a href="https://wa.me/923248199663?text=Hi%2C%20I%27m%20a%20healthcare%20professional%20interested%20in%20joining%20Ilaaj%20AI%20as%20a%20doctor." target="_blank" rel="noopener" class="btn btn--white btn--sm">Partner With Us</a>
+      </div>
+      <div class="faq-bento__card">
+        <h4>Mobile App</h4>
+        <p>Apni sehat manage karein — instant alerts aur health tracking ke saath.</p>
+        <div class="faq-bento__apps"><span class="btn btn--primary btn--sm">App Store</span><span class="btn btn--primary btn--sm">Play Store</span></div>
+      </div>
+    </div>
+  </div>
+</div></div>
+</section>
+</main>
+</BaseLayout>
+<script>
+  document.querySelectorAll('.faq-cat').forEach(l => l.addEventListener('click', () => { document.querySelectorAll('.faq-cat').forEach(x => x.classList.remove('active')); l.classList.add('active'); }));
+  const s = document.getElementById('faqSearch') as HTMLInputElement | null;
+  s?.addEventListener('input', () => { const q = s.value.trim().toLowerCase(); document.querySelectorAll<HTMLElement>('.faq-item').forEach(el => { el.style.display = (!q || el.textContent!.toLowerCase().includes(q)) ? '' : 'none'; }); });
+</script>
