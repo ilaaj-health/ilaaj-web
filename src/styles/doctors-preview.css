@@ -26,7 +26,7 @@
 .dp-dots { display: flex; gap: 0.5rem; }
 .dp-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--gray-200); cursor: pointer; transition: all 0.2s; display: inline-block; }
 .dp-dot.active { background: var(--primary-600); width: 24px; border-radius: 4px; }
-@media (max-width: 768px) { .dp-card { flex: 0 0 calc(85% - 0.75rem); } .dp-header { flex-direction: column; } }
+@media (max-width: 768px) { .dp-card { flex: 0 0 100%; } .dp-header { flex-direction: column; } }
 .dl-section { padding: 3rem 0 5rem; }
 .dl-toolbar { margin-bottom: 2rem; }
 .dl-search { width: 100%; padding: 0.85rem 1.25rem; border: 1.5px solid var(--gray-200); border-radius: 999px; font-size: 1rem; font-family: inherit; outline: none; color: var(--gray-900); margin-bottom: 1rem; transition: border-color 0.2s; box-sizing: border-box; }
