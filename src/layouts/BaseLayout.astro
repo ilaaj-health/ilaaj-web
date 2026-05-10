@@ -1,5 +1,6 @@
 ---
 import Analytics from '../components/Analytics.astro';
+import SEO from '../components/SEO.astro';
 import TailwindConfig from '../components/TailwindConfig.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
@@ -14,7 +15,10 @@ interface Props {
   description: string;
   canonical?: string;
   ogImage?: string;
+  ogType?: string;
   noindex?: boolean;
+  keywords?: string;
+  hasUrdu?: boolean;
 }
 
 const {
@@ -22,36 +26,24 @@ const {
   title,
   description,
   canonical = Astro.url.href,
-  ogImage = '/assets/ilaaj-logo.jpg',
+  ogImage = '/assets/og_ilaaj.png',
+  ogType = 'website',
   noindex = false,
+  keywords = '',
+  hasUrdu = false,
 } = Astro.props;
 
 const isRtl = lang === 'ur';
-const siteUrl = 'https://ilaaj.ai';
-const enUrl = Astro.url.href.replace(`${siteUrl}/ur`, siteUrl);
-const urUrl = lang === 'ur' ? Astro.url.href : `${siteUrl}/ur${Astro.url.pathname}`;
+const siteUrl = 'https://www.ilaaj.ai';
+const enUrl = canonical.replace(`${siteUrl}/ur`, siteUrl);
+const _path = canonical.replace(siteUrl, '').replace(/\/$/, '');
+const urUrl = lang === 'ur' ? canonical : `${siteUrl}/ur${_path}`;
 ---
 
 <!doctype html>
 <html lang={lang} dir={isRtl ? 'rtl' : 'ltr'}>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title}</title>
-    <meta name="description" content={description} />
-    <meta name="robots" content={noindex ? 'noindex,nofollow' : 'index,follow'} />
-    <link rel="canonical" href={canonical} />
-    <link rel="alternate" hreflang="en" href={enUrl} />
-    <link rel="alternate" hreflang="ur" href={urUrl} />
-    <link rel="alternate" hreflang="x-default" href={enUrl} />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:image" content={ogImage} />
-    <meta property="og:url" content={canonical} />
-    <meta property="og:type" content="website" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/manifest.json" />
+    <SEO {title} {description} {canonical} {ogImage} {ogType} {noindex} {lang} {enUrl} {urUrl} {keywords} {hasUrdu} />
     <slot name="head" />
     <TailwindConfig />
     <Analytics />
@@ -98,10 +90,30 @@ const urUrl = lang === 'ur' ? Astro.url.href : `${siteUrl}/ur${Astro.url.pathnam
     <slot />
     <Footer lang={lang} />
     <script>
+      document.documentElement.classList.add('js-ready');
       const revealObserver = new IntersectionObserver(entries => {
         entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); revealObserver.unobserve(e.target); }});
       }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
       document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+    </script>
+    <script is:inline>
+      (function() {
+        window.Tawk_API = window.Tawk_API || {};
+        if (window.innerWidth <= 768) {
+          window.Tawk_API.onLoad = function() { window.Tawk_API.minimize(); };
+          window.Tawk_API.onChatMaximized = function() { window.Tawk_API.minimize(); };
+        }
+        window.addEventListener('load', function() {
+          setTimeout(function() {
+            var s1 = document.createElement('script'), s0 = document.getElementsByTagName('script')[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/69ce56b0127eae1c37be0e72/1jl70596p';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+          }, 4000);
+        });
+      })();
     </script>
   </body>
 </html>

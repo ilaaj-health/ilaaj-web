@@ -6,7 +6,23 @@
       "Bash(py --version)",
       "Bash(curl -s -L \"https://www.ilaaj.ai\" -o /tmp/ilaaj_home.html --max-time 30 -A \"Mozilla/5.0\")",
       "Read(//tmp/**)",
-      "Bash(curl *)"
+      "Bash(curl *)",
+      "Bash(Get-ChildItem -Path \"D:\\\\products\\\\new_ilaaj\\\\ilaaj-web\" -Depth 1)",
+      "Bash(Select-Object Name, LastWriteTime)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "PowerShell(py *)",
+      "WebFetch(domain:www.ilaaj.ai)",
+      "PowerShell($response = Invoke-WebRequest -Uri \"https://www.ilaaj.ai/\" -UseBasicParsing; $html = $response.Content; $headEnd = $html.IndexOf\\('</head>'\\); $head = $html.Substring\\(0, [Math]::Min\\($headEnd + 7, 8000\\)\\); Write-Output $head)",
+      "PowerShell($response = Invoke-WebRequest -Uri \"https://www.ilaaj.ai/\" -UseBasicParsing -Method Head; $response.Headers | ForEach-Object { \"$\\($_.Key\\): $\\($_.Value\\)\" })",
+      "PowerShell($response = Invoke-WebRequest -Uri \"https://www.ilaaj.ai/\" -UseBasicParsing; $html = $response.Content; $ldStart = $html.IndexOf\\('<script type=\"application/ld+json\">'\\); $ldEnd = $html.LastIndexOf\\('</script>'\\) + 9; $ldSection = $html.Substring\\($ldStart, [Math]::Min\\($ldEnd - $ldStart + 200, 6000\\)\\); Write-Output $ldSection)",
+      "PowerShell($response = Invoke-WebRequest -Uri \"https://www.ilaaj.ai/blog/sir-dard-ka-ilaj/\" -UseBasicParsing; $html = $response.Content; $headEnd = $html.IndexOf\\('</head>'\\); $head = $html.Substring\\(0, [Math]::Min\\($headEnd + 7, 5000\\)\\); Write-Output $head)",
+      "PowerShell($response = Invoke-WebRequest -Uri \"https://www.ilaaj.ai/ur/\" -UseBasicParsing; $html = $response.Content; $headEnd = $html.IndexOf\\('</head>'\\); $head = $html.Substring\\(0, [Math]::Min\\($headEnd + 7, 4000\\)\\); Write-Output $head)",
+      "PowerShell(try { $response = Invoke-WebRequest -Uri \"https://www.ilaaj.ai/\" -UseBasicParsing -Method GET; $headers = $response.Headers; foreach \\($key in $headers.Keys\\) { Write-Output \"$key : $\\($headers[$key]\\)\" } } catch { Write-Output $_.Exception.Message })",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"https://www.ilaaj.ai/ur/blog/sir-dard-ka-ilaj/\" -UseBasicParsing; Write-Output \"STATUS: $\\($r.StatusCode\\)\" } catch { Write-Output \"STATUS: $\\($_.Exception.Response.StatusCode.value__\\) - $\\($_.Exception.Message\\)\" })",
+      "PowerShell($response = Invoke-WebRequest -Uri \"https://www.ilaaj.ai/faq/\" -UseBasicParsing; $html = $response.Content; $headEnd = $html.IndexOf\\('</head>'\\); $head = $html.Substring\\(0, [Math]::Min\\($headEnd + 7, 3000\\)\\); Write-Output $head)",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"https://www.ilaaj.ai/llms.txt\" -UseBasicParsing; Write-Output \"STATUS: $\\($r.StatusCode\\)\"; Write-Output $r.Content } catch { Write-Output \"STATUS: $\\($_.Exception.Response.StatusCode.value__\\) - Not found\" })",
+      "PowerShell($r = Invoke-WebRequest -Uri \"https://www.ilaaj.ai/blog/\" -UseBasicParsing; $html = $r.Content; $links = [regex]::Matches\\($html, 'href=\"\\(/blog/[^\"]+\\)\"'\\) | ForEach-Object { $_.Groups[1].Value } | Sort-Object -Unique; Write-Output \"Total blog links: $\\($links.Count\\)\"; $links)"
     ]
   }
 }

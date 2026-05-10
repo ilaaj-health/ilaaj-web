@@ -2,12 +2,16 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/faq.css';
 import { catsPk as cats, sectionsPk as sections } from '../data/faq-pk';
+const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": sections.flatMap(s => s.items.map(item => ({ "@type": "Question", "name": item.q, "acceptedAnswer": { "@type": "Answer", "text": item.a } }))) };
 ---
 <BaseLayout
   title="Help Center | Ilaaj AI — Digital Healthcare Support"
   description="Ilaaj AI ke baare mein sawalat ke jawab pائیں — AI diagnostics, doctor consultations, aur Pakistan ka premier digital health platform."
   canonical="https://ilaaj.ai/faq"
 >
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>
+  </Fragment>
 <main>
 <section class="faq-hero">
   <div class="container">

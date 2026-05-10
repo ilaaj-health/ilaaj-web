@@ -1,20 +1,48 @@
----
+﻿---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import DoctorsList from '../components/home/DoctorsList.astro';
+
+const physicianSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Ilaaj AI PMDC-Verified Doctors",
+  "url": "https://www.ilaaj.ai/doctors",
+  "itemListElement": [
+    { name:"Dr. M Mujeed ur Rehman", spec:"General Physician", qual:"MBBS, RMP" },
+    { name:"Dr. Maria Mohsin", spec:"General Physician", qual:"MBBS" },
+    { name:"Dr. Sikandar Zulfiqar", spec:"General Physician", qual:"MBBS" },
+    { name:"Dr. Tabinda", spec:"General Physician", qual:"MBBS" },
+    { name:"Dr. Wasifa Ahmad", spec:"General Practitioner", qual:"MBBS" },
+    { name:"Dr. Sabeen Fatima Rizvi", spec:"General Practitioner", qual:"MBBS, MCPS" },
+    { name:"Dr. Sara Ali Khan", spec:"Gynaecologist", qual:"MBBS, FCPS, MRCOG-1" },
+    { name:"Dr. Saira Zafar", spec:"General Practitioner", qual:"MBBS, MHPE" },
+    { name:"Dr. Umme Aeman Khan", spec:"Dermatologist", qual:"FCPS Derm, SCE UK" },
+    { name:"Dr. Hadia Nadeem", spec:"General Physician", qual:"MBBS (RMP)" },
+    { name:"Dr. Muneeb Mubashar", spec:"General Practitioner", qual:"MBBS, MPH" },
+    { name:"Dr. Ibtasam Ahmad", spec:"General Practitioner", qual:"MBBS, PGR" },
+  ].map((d, i) => ({
+    "@type": "ListItem", "position": i + 1,
+    "item": { "@type": "Physician", "name": d.name, "medicalSpecialty": d.spec, "hasCredential": d.qual, "worksFor": { "@id": "https://www.ilaaj.ai/#organization" } }
+  }))
+};
 ---
 
 <BaseLayout
-  title="Our Verified Doctors | PMDC-Registered Physicians — Ilaaj AI Pakistan"
-  description="Meet 13+ PMDC-registered doctors who verify every prescription on Ilaaj AI. GPs, gynaecologists, dermatologists across Pakistan."
-  canonical="https://ilaaj.ai/doctors"
+  title=”Our Verified Doctors | PMDC-Registered Physicians — Ilaaj AI Pakistan”
+  description=”Meet 13+ PMDC-registered doctors who verify every prescription on Ilaaj AI. GPs, gynaecologists, dermatologists across Pakistan.”
+  canonical=”https://www.ilaaj.ai/doctors”
+  keywords=”PMDC verified doctors Pakistan, online doctor consultation Pakistan, specialist doctors online, doctor finder Pakistan, gynaecologist online Pakistan, dermatologist online Pakistan, PMDC registered physician, telemedicine doctors Pakistan, book doctor online Pakistan, GP online Pakistan”
 >
+  <Fragment slot=”head”>
+    <script type=”application/ld+json” set:html={JSON.stringify(physicianSchema)}></script>
+  </Fragment>
   <main>
     <section class="doctors-hero">
       <div class="container">
         <div class="doctors-hero__content">
           <span class="section-header__tag">PMDC Verified</span>
           <h1>Our Verified Doctors</h1>
-          <p class="doctors-hero__desc">Every prescription on Ilaaj AI is reviewed and approved by a licensed, PMDC-registered doctor. No AI-only prescriptions — ever.</p>
+          <p class=”doctors-hero__desc”>Every prescription on Ilaaj AI is reviewed and approved by a licensed, PMDC-registered doctor. No AI-only prescriptions — ever.</p>
         </div>
       </div>
     </section>

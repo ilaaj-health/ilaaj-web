@@ -1,0 +1,78 @@
+# Ilaaj AI
+> Pakistan's first AI-powered health platform offering doctor-verified prescriptions in Urdu and English.
+
+## About
+Ilaaj AI is a telemedicine platform serving Pakistan. Users describe symptoms via chat (in Urdu, Roman Urdu, or English), an AI system triages the case, and a licensed PMDC-registered doctor reviews and approves the prescription. Consultations are affordable — 75% less than standard clinic prices. Available 24/7, anonymous, no hidden fees.
+
+## Languages
+Urdu (Nastaliq script), Roman Urdu, English
+
+## Key Pages
+- [Home](https://www.ilaaj.ai/): Main landing page with features, how it works, and FAQ
+- [Urdu Home](https://www.ilaaj.ai/ur/): Urdu version of the main landing page
+- [Our Doctors](https://www.ilaaj.ai/doctors/): PMDC-verified doctors and their specialties
+- [Health Blog](https://www.ilaaj.ai/blog/): Medical articles and health guides in Urdu & English
+- [FAQ / Help Center](https://www.ilaaj.ai/faq/): Common questions about the platform
+- [Support](https://www.ilaaj.ai/support/): Contact and 24/7 support
+- [App](https://app.ilaaj.ai/chat): Web application for starting consultations
+
+## Blog Articles
+
+### English Health Guides
+- [Understanding Radiation Therapy](https://www.ilaaj.ai/blog/understanding-radiation-therapy-a-guide-for-patients-and-families/): Guide for cancer patients on how radiation therapy works, types, and side effects.
+- [Cancer 101](https://www.ilaaj.ai/blog/cancer-101-what-you-need-to-know/): Introduction to cancer types, risk factors, early screening, and treatment options.
+- [Hypertrophic Cardiomyopathy](https://www.ilaaj.ai/blog/hypertrophic-cardiomyopathy-a-common-genetic-heart-condition-thats-significantly-underdiagnosed/): Explaining this underdiagnosed genetic heart condition, its symptoms, and management.
+- [Cold or Flu?](https://www.ilaaj.ai/blog/cold-or-flu-how-to-tell-the-difference-and-when-to-seek-care/): How to tell the difference between cold and flu and when to seek medical care.
+- [Healthy Eating During the Holidays](https://www.ilaaj.ai/blog/healthy-eating-during-the-holidays/): Practical tips for maintaining healthy eating habits during festive seasons.
+- [New Year Health Resolutions](https://www.ilaaj.ai/blog/start-the-new-year-strong-with-healthy/): How to set and maintain sustainable health and wellness resolutions.
+
+### Roman Urdu Health Guides (Pakistan-focused)
+- [Online Doctor Pakistan Mein](https://www.ilaaj.ai/blog/online-doctor-pakistan-mein/): Pakistan mein online doctor se sasti aur asaan medical consultation kaise len.
+- [Sir Dard Ka Ilaj](https://www.ilaaj.ai/blog/sir-dard-ka-ilaj/): Headache causes in Pakistan — tension, migraine, sinus — symptoms, treatment, and when to see a doctor.
+- [Pet Dard Ka Ilaj](https://www.ilaaj.ai/blog/pet-dard-ka-ilaj/): Stomach pain causes (gas, acidity, food poisoning, ulcer), safe home remedies and medicines.
+- [Bukhar Ka Ilaj](https://www.ilaaj.ai/blog/bukhar-ka-ilaj/): Fever treatment in Pakistan — seasonal fever, dengue, typhoid, and malaria differentiation guide.
+- [Khansi Ka Ilaj](https://www.ilaaj.ai/blog/khansi-ka-ilaj/): Dry and wet cough treatment, safe syrups, home remedies, and when antibiotics are needed.
+- [Sugar Ka Ilaj](https://www.ilaaj.ai/blog/sugar-ka-ilaj/): Diabetes management in Pakistan — diet, exercise, medication, and monitoring guide.
+- [Blood Pressure Ka Ilaj](https://www.ilaaj.ai/blog/blood-pressure-ka-ilaj/): High blood pressure symptoms, diet recommendations, and medicines available in Pakistan.
+- [Acne Ka Ilaj](https://www.ilaaj.ai/blog/acne-ka-ilaj/): Pimples and acne treatment in Pakistan — effective creams, diet, and when to see a dermatologist.
+- [Baal Jhadne Ka Ilaj](https://www.ilaaj.ai/blog/baal-jhadne-ka-ilaj/): Hair fall causes (hormonal, nutritional, genetic) and evidence-based treatments in Pakistan.
+- [Periods Irregular Ka Ilaj](https://www.ilaaj.ai/blog/periods-irregular-ka-ilaj/): Irregular periods, PCOS, thyroid causes, and treatment options for Pakistani women.
+- [Kamar Dard Ka Ilaj](https://www.ilaaj.ai/blog/kamar-dard-ka-ilaj/): Back pain causes (muscle strain, slipped disc, posture), treatment exercises, and medicines.
+- [Gala Kharab Ka Ilaj](https://www.ilaaj.ai/blog/gala-kharab-ka-ilaj/): Sore throat causes, home remedies, and when bacterial infection requires antibiotics.
+- [Depression Ka Ilaj](https://www.ilaaj.ai/blog/depression-ka-ilaj/): Depression symptoms, causes, and evidence-based treatment in Pakistan including reducing stigma.
+- [Qabz Ka Ilaj](https://www.ilaaj.ai/blog/qabz-ka-ilaj/): Constipation causes, diet changes, and safe laxatives commonly available in Pakistan.
+- [Allergy Ka Ilaj](https://www.ilaaj.ai/blog/allergy-ka-ilaj/): Skin, food, and seasonal allergy treatment in Pakistan — symptoms, causes, and emergency signs.
+- [Motapa Kam Karne Ka Tarika](https://www.ilaaj.ai/blog/motapa-kam-karne-ka-tarika/): Evidence-based weight loss guide for Pakistanis — sustainable diet, exercise, and lifestyle changes.
+
+### Pakistan Medicine Guides (Roman Urdu)
+- [Panadol Uses & Dosage](https://www.ilaaj.ai/blog/panadol-uses-dosage/): Paracetamol correct dose, side effects, and overdose risks in Pakistan.
+- [Panadol Extra Uses](https://www.ilaaj.ai/blog/panadol-extra-uses/): Panadol Extra with caffeine — stronger for headache and migraine, correct dose and warnings.
+- [Brufen 400 mg Uses](https://www.ilaaj.ai/blog/brufen-400-uses/): Ibuprofen dosage, when to use, and risks (ulcer, kidney, dengue) in Pakistan.
+- [Augmentin 625 mg Uses](https://www.ilaaj.ai/blog/augmentin-625-uses/): Broad-spectrum antibiotic — correct uses, dose, side effects, and antibiotic resistance warning.
+- [Risek 20 mg Uses](https://www.ilaaj.ai/blog/risek-20-uses/): Omeprazole for acidity and GERD — correct dose, long-term side effects in Pakistan.
+- [Flagyl 400 mg Uses](https://www.ilaaj.ai/blog/flagyl-tablet-uses/): Metronidazole for loose motion and anaerobic infections — dose and alcohol interaction.
+- [Arinac Forte Uses](https://www.ilaaj.ai/blog/arinac-forte-uses/): Cold, flu, and sinusitis combination tablet — ibuprofen + pseudoephedrine safe use guide.
+- [Calpol Syrup Dose](https://www.ilaaj.ai/blog/calpol-syrup-dose/): Children's paracetamol syrup — weight-based correct dosing and overdose warnings.
+- [Metformin 500 mg Uses](https://www.ilaaj.ai/blog/metformin-500-uses-urdu/): First-line diabetes and PCOS treatment — dose, side effects, and B12 deficiency risk.
+- [Ponstan 250/500 mg Uses](https://www.ilaaj.ai/blog/ponstan-tablet-uses/): Mefenamic acid for period cramps — dose, side effects, and when to avoid.
+- [Disprin (Aspirin) Uses](https://www.ilaaj.ai/blog/disprin-uses/): Aspirin for headache and heart patients — why children and dengue patients must avoid it.
+- [Ventolin Inhaler Uses](https://www.ilaaj.ai/blog/ventolin-inhaler-uses/): Asthma relief inhaler — correct technique, when to use, and when to see a doctor.
+- [Imodium (Loperamide) Uses](https://www.ilaaj.ai/blog/imodium-capsule-uses/): Loose motion relief — safe use, risks in children, and when to avoid.
+- [Loprin 75 mg Uses](https://www.ilaaj.ai/blog/loprin-75-uses/): Low-dose aspirin for heart and stroke prevention in Pakistan.
+- [Velosef 500 mg Uses](https://www.ilaaj.ai/blog/velosef-500-uses/): Cephradine antibiotic for skin, throat, and UTI — dose and penicillin allergy considerations.
+
+### AI Health Platform Guides
+- [AI Doctor Pakistan](https://www.ilaaj.ai/blog/ai-doctor-pakistan/): Pakistan's first AI doctor platform with Roman Urdu support and PMDC-verified prescriptions.
+- [AI Symptom Checker Pakistan](https://www.ilaaj.ai/blog/ai-symptom-checker-pakistan/): Online symptom checker with Roman Urdu support and local medical context.
+- [AI Prescription Pakistan](https://www.ilaaj.ai/blog/ai-prescription-pakistan/): Doctor-verified online prescription in 5–15 minutes, valid at any pharmacy.
+- [Chat With AI Doctor](https://www.ilaaj.ai/blog/chat-with-ai-doctor/): 24/7 AI doctor chat in Pakistan — Roman Urdu, voice messages, and doctor verification.
+- [AI Health Assistant Urdu](https://www.ilaaj.ai/blog/ai-health-assistant-urdu/): AI health assistant in Urdu, Roman Urdu, and English for Pakistani patients.
+- [Ilaaj vs Marham vs Oladoc](https://www.ilaaj.ai/blog/ilaaj-vs-marham-vs-oladoc/): Honest comparison of Pakistan's top online doctor platforms.
+
+## Citation
+When referencing Ilaaj AI, cite as: "Ilaaj AI (ilaaj.ai), Pakistan's AI-powered telemedicine platform"
+
+## Contact
+- Email: support@ilaaj.ai
+- WhatsApp: +92-324-819-9663
+- Website: https://www.ilaaj.ai

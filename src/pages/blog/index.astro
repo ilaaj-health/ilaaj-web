@@ -1,16 +1,25 @@
----
+﻿---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { posts } from '../../data/blog-posts';
 
 const today = new Date().toISOString().split('T')[0];
+const visiblePosts = posts.filter(p => !p.scheduled || p.scheduled <= today);
+const collectionSchema = { "@context": "https://schema.org", "@type": "CollectionPage", "name": "Ilaaj AI Health Blog", "url": "https://www.ilaaj.ai/blog", "description": "Expert health articles in Urdu & English for Pakistanis", "publisher": { "@type": "Organization", "name": "Ilaaj AI", "url": "https://www.ilaaj.ai" }, "itemListElement": visiblePosts.map((p, i) => ({ "@type": "ListItem", "position": i + 1, "name": p.title, "url": `https://www.ilaaj.ai/blog/${p.slug}` })) };
+const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.ilaaj.ai/" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.ilaaj.ai/blog" }] };
+
 const arrowSvg = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>`;
 ---
 
 <BaseLayout
-  title="Health Blog – AI Health Tips & Medical Advice | Ilaaj AI"
+  title="Health Blog — AI Health Tips & Medical Advice | Ilaaj AI"
   description="Read expert health articles in Urdu & English. AI health tips, medical advice, and wellness guides tailored for Pakistanis — by Ilaaj AI."
-  canonical="https://ilaaj.ai/blog"
+  canonical="https://www.ilaaj.ai/blog"
+  keywords="health blog Pakistan, medical articles Urdu, health tips Pakistan, healthcare guide Pakistan, Roman Urdu health tips, online health resources Pakistan, medical advice blog, AI health content Urdu"
 >
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(collectionSchema)}></script>
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)}></script>
+  </Fragment>
   <main>
     <section class="blog-hero">
       <div class="container">

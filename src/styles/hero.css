@@ -10,39 +10,47 @@ h1,h2,h3,h4,h5,h6,.hero__title,.flow__title,.section-title,.nav__brand {
 .new-hero-preview .shimmer-btn {
   background: linear-gradient(90deg,#0d9488 0%,#0f766e 100%);
   position: relative; overflow: hidden;
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: 0.75rem; padding: 0.875rem 1.75rem; border-radius: 9999px;
+  color: white; font-weight: 700; font-size: 1rem; text-decoration: none;
   transition: transform 220ms cubic-bezier(.4,0,.2,1), box-shadow 240ms cubic-bezier(.4,0,.2,1), background-position 600ms ease;
   background-size: 200% 100%; background-position: 0% 50%;
 }
+.new-hero-preview .hero-cta-icon {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 1.75rem; height: 1.75rem; border-radius: 9999px;
+  background: rgba(255,255,255,0.15); transition: background 200ms; flex-shrink: 0;
+}
+.new-hero-preview .shimmer-btn:hover .hero-cta-icon { background: rgba(255,255,255,0.25); }
 .new-hero-preview .shimmer-btn:hover {
   transform: translateY(-3px) scale(1.02); background-position: 100% 50%;
   box-shadow: 0 22px 40px -10px rgba(13,148,136,0.55), 0 10px 20px -6px rgba(15,118,110,0.45), inset 0 1px 0 rgba(255,255,255,0.25) !important;
 }
 .new-hero-preview .shimmer-btn:active { transform: translateY(-1px) scale(0.99); transition-duration: 80ms; }
-.new-hero-preview .shimmer-btn .material-symbols-outlined { transition: transform 220ms cubic-bezier(.4,0,.2,1); }
-.new-hero-preview .shimmer-btn:hover .material-symbols-outlined { transform: translateX(4px); }
+.new-hero-preview .hero-cta-arrow { transition: transform 220ms cubic-bezier(.4,0,.2,1); }
+.new-hero-preview .shimmer-btn:hover .hero-cta-arrow { transform: translateX(4px); }
 .new-hero-preview .shimmer-btn::after {
   content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%;
   background: linear-gradient(45deg,transparent 20%,rgba(255,255,255,0.1) 50%,transparent 80%);
   animation: nh-shimmer 3s infinite;
 }
-.new-hero-preview .material-symbols-outlined { font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24; }
 @keyframes nh-shimmer { 0%{transform:translate(-30%,-30%)} 100%{transform:translate(30%,30%)} }
 @keyframes nh-masterCycle {
   0%,32%{opacity:1;transform:translateY(0) scale(1);visibility:visible}
   33%,100%{opacity:0;transform:translateY(20px) scale(0.95);visibility:hidden}
 }
 @keyframes nh-progressLine {
-  0%{width:0%} 30%,33%{width:33.33%} 63%,66%{width:66.66%} 96%,100%{width:100%}
+  0%{transform:scaleX(0)} 30%,33%{transform:scaleX(0.333)} 63%,66%{transform:scaleX(0.666)} 96%,100%{transform:scaleX(1)}
 }
-@keyframes nh-scan { 0%{top:0%;opacity:0} 50%{opacity:1} 100%{top:100%;opacity:0} }
+@keyframes nh-scan { 0%{transform:translateY(0);opacity:0} 50%{opacity:1} 100%{transform:translateY(12rem);opacity:0} }
 @keyframes nh-heartbeat { 0%,100%{transform:scale(1)} 15%,45%{transform:scale(1.15)} 30%{transform:scale(1)} }
 @keyframes nh-pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.3;transform:scale(0.8)} }
 .new-hero-preview .hero-state { position:absolute; inset:0; transition:all 0.6s cubic-bezier(.4,0,.2,1); }
 .new-hero-preview .hero-state-1 { animation:nh-masterCycle 12s infinite 0s; }
 .new-hero-preview .hero-state-2 { animation:nh-masterCycle 12s infinite 4s; opacity:0; visibility:hidden; }
 .new-hero-preview .hero-state-3 { animation:nh-masterCycle 12s infinite 8s; opacity:0; visibility:hidden; }
-.new-hero-preview .progress-bar-fill { animation:nh-progressLine 12s infinite linear; }
-.new-hero-preview .scanning-line { animation:nh-scan 2s infinite linear; }
+.new-hero-preview .progress-bar-fill { transform-origin:left center; will-change:transform; animation:nh-progressLine 12s infinite linear; }
+.new-hero-preview .scanning-line { position:absolute; left:0; right:0; height:2px; top:0; will-change:transform; animation:nh-scan 2s infinite linear; }
 .new-hero-preview .heartbeat-icon { animation:nh-heartbeat 1.5s infinite ease-in-out; }
 .new-hero-preview .typing-dot { width:4px; height:4px; background:currentColor; border-radius:50%; animation:nh-pulse 1s infinite; }
 .new-hero-preview .typing-dot:nth-child(2){animation-delay:.2s}

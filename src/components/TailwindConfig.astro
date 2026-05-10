@@ -1,47 +1,9 @@
 ---
-// Tailwind CDN + design tokens + Google Fonts (required for hero section)
+// Non-blocking Space Grotesk — Inter is self-hosted via @font-face in styles.css
 ---
 <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries" is:inline></script>
-<script is:inline>
-  if (window.tailwind) {
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "secondary-fixed":"#ccfbf1","outline-variant":"#c3c6d1",
-            "on-surface-variant":"#43474f","surface-container":"#eceef0",
-            "surface":"#f7f9fb","on-primary-fixed":"#0f766e",
-            "on-surface":"#191c1e","on-secondary-container":"#006a70",
-            "primary-container":"#0f766e","primary":"#0d9488",
-            "on-primary":"#ffffff","on-background":"#191c1e",
-            "outline":"#737780","background":"#f7f9fb",
-            "secondary":"#0f766e","surface-container-low":"#f2f4f6",
-            "surface-container-lowest":"#ffffff","surface-dim":"#d8dadc",
-            "on-secondary-fixed":"#0f766e","secondary-fixed-dim":"#5eead4",
-            "on-secondary":"#ffffff","error":"#ba1a1a",
-            "surface-container-high":"#e6e8ea","surface-tint":"#0d9488",
-            "surface-variant":"#e0e3e5","surface-bright":"#f7f9fb",
-            "on-error":"#ffffff","on-tertiary":"#ffffff",
-            "on-secondary-fixed-variant":"#004f54","inverse-surface":"#2d3133"
-          },
-          fontFamily: {
-            "h1":["Space Grotesk"],"h2":["Space Grotesk"],
-            "body-md":["Inter"],"body-lg":["Inter"],
-            "label-caps":["Inter"],"roman-urdu-support":["Inter"]
-          },
-          fontSize: {
-            "h1":["48px",{lineHeight:"1.1",letterSpacing:"-0.02em",fontWeight:"700"}],
-            "h2":["32px",{lineHeight:"1.2",fontWeight:"600"}],
-            "body-lg":["18px",{lineHeight:"1.6"}],
-            "body-md":["16px",{lineHeight:"1.5"}],
-            "label-caps":["12px",{lineHeight:"1",letterSpacing:"0.05em",fontWeight:"700"}]
-          }
-        }
-      }
-    };
-  }
-</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" media="print" onload="this.media='all'" />
+<noscript>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" />
+</noscript>
