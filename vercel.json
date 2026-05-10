@@ -9,6 +9,20 @@
       "destination": "https://www.ilaaj.ai/$1",
       "permanent": true
     },
+    {
+      "source": "/",
+      "has": [{ "type": "header", "key": "x-vercel-ip-country", "value": "PK" }],
+      "missing": [{ "type": "cookie", "key": "ilaaj-lang-manual" }],
+      "destination": "/pk",
+      "permanent": false
+    },
+    {
+      "source": "/:path((?!pk|ur|_astro|_vercel|api|assets|favicon|robots|sitemap).+)",
+      "has": [{ "type": "header", "key": "x-vercel-ip-country", "value": "PK" }],
+      "missing": [{ "type": "cookie", "key": "ilaaj-lang-manual" }],
+      "destination": "/pk/:path",
+      "permanent": false
+    },
     { "source": "/:path+/", "destination": "/:path", "permanent": true },
     { "source": "/index.html", "destination": "/", "permanent": true },
     { "source": "/blog.html", "destination": "/blog", "permanent": true },
