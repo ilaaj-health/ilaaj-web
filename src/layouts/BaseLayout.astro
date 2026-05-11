@@ -51,17 +51,21 @@ const urUrl = `${siteUrl}/ur${_path}`;
     <script is:inline>
     (function(){try{
       var path=window.location.pathname;
-      var isEn=!path.startsWith('/pk')&&!path.startsWith('/ur');
       var isPk=path.startsWith('/pk');
+      var isUr=path.startsWith('/ur');
       function redir(lang){
-        if(lang==='pk'&&!isPk){window.location.replace('/pk'+(path==='/'?'':path));}
-        else if(lang==='en'&&isPk){window.location.replace(path.slice(3)||'/');}
+        if(lang==='pk'&&!isPk&&!isUr){window.location.replace('/pk'+(path==='/'?'':path));}
+        else if(lang==='en'&&(isPk||isUr)){window.location.replace((isPk?path.slice(3):path.slice(3))||'/');}
       }
+      // Manual user preference always wins
       var manual=localStorage.getItem('ilaaj-lang-manual');
       if(manual){redir(manual);return;}
+      // Production: Vercel handles geo redirects via x-vercel-ip-country header (vercel.json)
+      // Local dev only: fall back to ipinfo.io API
+      var isLocal=window.location.hostname==='localhost'||window.location.hostname==='127.0.0.1';
+      if(!isLocal)return;
       var geo=sessionStorage.getItem('ilaaj-geo-lang');
       if(geo){redir(geo);return;}
-      // Client-side IP detection (fallback for local dev — Vercel handles geo redirects in production via vercel.json)
       var scrolled=false;
       window.addEventListener('scroll',function(){scrolled=true;},{once:true,passive:true});
       fetch('https://ipinfo.io/json?fields=country')
@@ -71,7 +75,7 @@ const urUrl = `${siteUrl}/ur${_path}`;
           var lang=(d&&d.country==='PK')?'pk':'en';
           sessionStorage.setItem('ilaaj-geo-lang',lang);
           redir(lang);
-        }).catch(function(){sessionStorage.setItem('ilaaj-geo-lang','en');});
+        }).catch(function(){}); // Don't cache on failure — avoid false 'en' lock
     }catch(e){}})();
     </script>
   </head>
