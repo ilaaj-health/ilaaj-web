@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Sentry: error tracking + session replay -->
+  <script src="https://js.sentry-cdn.com/defa6ca82daea4d4c49a8b69b87c53cc.min.js" crossorigin="anonymous"></script>
+  <script>
+    window.sentryOnLoad = function () {
+      Sentry.init({
+        integrations: [Sentry.replayIntegration({ maskAllText: false, blockAllMedia: false })],
+        tracesSampleRate: 0.1,
+        replaysSessionSampleRate: 0.1,
+        replaysOnErrorSampleRate: 1.0,
+      });
+    };
+  </script>
+  <!-- PostHog: product analytics + session replay -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_xjBQ5vUS7nTJz4jHta6d5dDE7jHdtFjFuqkxAJjvcFzo', { api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only', cross_subdomain_cookie: true });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XKTHF96');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1697266221447949');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1697266221447949&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sore Throat Treatment — Causes, Home Remedies and Best Medicine | Ilaaj AI</title>
+  <meta name="description" content="Sore throat treatment guide for Pakistan. Home remedies, lozenges, antibiotics and when to see a doctor — practical advice for all ages.">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="sore throat treatment pakistan, sore throat home remedies, strep throat treatment, throat infection antibiotics, tonsillitis treatment, gala kharab ka ilaj english">
+  <meta name="geo.region" content="PK">
+  <meta name="geo.placename" content="Pakistan">
+  <meta name="google-site-verification" content="8RtzwgVYowrMGF4E77jnKOX33seYEQTuXmxps2XkPxI">
+
+  <!-- Canonical + hreflang -->
+  <link rel="canonical" href="https://www.ilaaj.ai/blog/gala-kharab-ka-ilaj">
+  <link rel="alternate" hreflang="ur-PK" href="https://www.ilaaj.ai/pk/blog/gala-kharab-ka-ilaj" />
+  <link rel="alternate" hreflang="en" href="https://www.ilaaj.ai/blog/gala-kharab-ka-ilaj" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ilaaj.ai/blog/gala-kharab-ka-ilaj" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/logo/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/logo/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/logo/site.webmanifest" />
+
+  <!-- PWA / Mobile -->
+  <meta name="theme-color" content="#00897B">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="IlaajAI">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sore Throat Treatment — Causes, Home Remedies and Best Medicine | Ilaaj AI">
+  <meta property="og:description" content="Sore throat treatment guide for Pakistan. Home remedies, lozenges, antibiotics and when to see a doctor — practical advice for all ages.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ilaaj.ai/blog/gala-kharab-ka-ilaj">
+  <meta property="og:image" content="https://res.cloudinary.com/df2jfaqf2/image/upload/f_auto,q_auto,w_1200/v1778419124/blog/gala-kharab-ka-ilaj.jpg">
+  <meta property="og:image:alt" content="Woman with sore throat / neck pain">
+  <meta property="og:site_name" content="Ilaaj AI">
+  <meta property="og:locale" content="en_PK">
+  <meta property="article:published_time" content="2026-05-03T11:45:00.000Z">
+  <meta property="article:modified_time" content="2026-05-03T11:45:00.000Z">
+  <meta property="article:author" content="Ilaaj AI Medical Team">
+  <meta property="article:section" content="Respiratory Health">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ilaajai">
+  <meta name="twitter:creator" content="@ilaajai">
+  <meta name="twitter:title" content="Sore Throat Treatment — Causes, Home Remedies and Best Medicine | Ilaaj AI">
+  <meta name="twitter:description" content="Sore throat treatment guide for Pakistan. Home remedies, lozenges, antibiotics and when to see a doctor — practical advice for all ages.">
+  <meta name="twitter:image" content="https://res.cloudinary.com/df2jfaqf2/image/upload/f_auto,q_auto,w_1200/v1778419124/blog/gala-kharab-ka-ilaj.jpg">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNTMD61HWL"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KNTMD61HWL');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="../../css/blog.css">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.ilaaj.ai/blog/gala-kharab-ka-ilaj"
+  },
+  "headline": "Sore Throat Treatment — Causes, Home Remedies and Best Medicine",
+  "description": "Sore throat treatment guide for Pakistan. Home remedies, lozenges, antibiotics and when to see a doctor — practical advice for all ages.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://res.cloudinary.com/df2jfaqf2/image/upload/f_auto,q_auto,w_1200/v1778419124/blog/gala-kharab-ka-ilaj.jpg"
+  },
+  "datePublished": "2026-05-03T11:45:00.000Z",
+  "dateModified": "2026-05-03T11:45:00.000Z",
+  "author": {
+    "@type": "Organization",
+    "name": "Ilaaj AI Medical Team",
+    "url": "https://www.ilaaj.ai/doctors"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ilaaj AI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.ilaaj.ai/assets/Icon-192.png"
+    }
+  },
+  "keywords": "sore throat treatment pakistan, sore throat home remedies, strep throat treatment, throat infection antibiotics, tonsillitis treatment",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Ilaaj AI Blog",
+    "url": "https://www.ilaaj.ai/blog"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.ilaaj.ai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.ilaaj.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Sore Throat Treatment — Causes, Home Remedies and Best Medicine",
+      "item": "https://www.ilaaj.ai/blog/gala-kharab-ka-ilaj"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the best treatment for a sore throat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The most proven approach: warm salt water gargle 3–4 times a day, warm fluids (tea, soup, honey and ginger), and Strepsils or Difflam lozenges. For pain, Brufen 400 mg or Panadol 500 mg. 90% of sore throats are viral and resolve on their own within 5–7 days. Antibiotics are only needed for strep throat — confirmation from a doctor is essential."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are antibiotics necessary for a sore throat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only for bacterial infection (strep throat). Signs: sudden severe pain, fever above 101°F, pus patches on the tonsils, no cough, swollen glands in the neck. Antibiotics are useless for viral sore throat and cause side effects. A doctor confirms with a throat swab or rapid strep test. If strep is confirmed, a 10-day course of Calvepen or Amoxil is required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does the voice become hoarse?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common causes of a hoarse voice: viral infection (laryngitis), overuse of the voice, smoking, acid reflux, allergies, or in rare cases vocal cord nodules. It should resolve within a week. Voice rest, hydration, and quitting smoking are the most important steps. If hoarseness persists for more than 3 weeks, see an ENT specialist — a vocal cord examination is needed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the treatment for a sore throat in children?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In children, a combination of fever and sore throat may indicate strep — a doctor is needed. Calpol is safe for fever and pain. For children aged 6 and above, salt water gargling, lozenges, and warm honey (for children over 1 year) are safe. Give soft foods (broth, yoghurt, ice cream) and plenty of fluids. If there are pus patches or swallowing is very difficult, see a doctor immediately."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do about swollen tonsils?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "First try salt water gargling, lozenges, and painkillers. If there are white pus patches on the tonsils, fever, or difficulty breathing, it is likely a bacterial infection and antibiotics are needed. For recurrent tonsillitis (5–7 times a year), a tonsillectomy may be required. See an ENT specialist for evaluation. Both hot and cold beverages can be soothing — go with your preference."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKTHF96"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar navbar--scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="/" class="navbar__brand">
+        <img src="../../assets/Icon-192.png" alt="Ilaaj AI" class="navbar__logo">
+        <span class="navbar__name">Ilaaj AI</span>
+      </a>
+      <div class="navbar__center" id="navLinks">
+        <a href="/#how-it-works" class="navbar__link">How It Works</a>
+        <a href="/#features" class="navbar__link">Features</a>
+        <a href="../../blog.html" class="navbar__link navbar__link--active">Blog</a>
+        <a href="/#faq" class="navbar__link">FAQ</a>
+      </div>
+      <div class="navbar__right">
+        <a href="https://app.ilaaj.ai" class="btn btn--primary btn--sm navbar__cta">
+          Get Free Advice
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile" id="mobileMenu">
+      <a href="/#how-it-works" class="navbar__mobile-link">How It Works</a>
+      <a href="/#features" class="navbar__mobile-link">Features</a>
+      <a href="../../blog.html" class="navbar__mobile-link">Blog</a>
+      <a href="/#faq" class="navbar__mobile-link">FAQ</a>
+      <a href="https://app.ilaaj.ai" class="btn btn--primary btn--full">Get Free Advice</a>
+    </div>
+  </nav>
+
+  <main>
+    <article class="blog-post">
+      <div class="container">
+        <a href="../../blog.html" class="blog-post__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Articles
+        </a>
+
+        <div class="blog-post__featured-image"><img src="https://res.cloudinary.com/df2jfaqf2/image/upload/f_auto,q_auto,w_1200/v1778419124/blog/gala-kharab-ka-ilaj.jpg" alt="Woman with sore throat / neck pain"></div>
+
+        <div class="blog-post__author">
+          <img src="../../assets/Icon-192.png" alt="Ilaaj AI Medical Team" class="blog-post__author-avatar">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name">Ilaaj AI Medical Team</div>
+            <div class="blog-post__author-creds">PMDC-verified doctors reviewing every article</div>
+            <div class="blog-post__author-dates">Published: May 3, 2026 | Last reviewed: May 3, 2026</div>
+          </div>
+        </div>
+
+        <h1 class="blog-post__title">Sore Throat Treatment — Causes, Home Remedies and Best Medicine</h1>
+
+        <div class="blog-post__tldr">
+          <div class="blog-post__tldr-title">TL;DR — Key Takeaways</div>
+          <ul>
+            <li>90% of sore throats are viral — antibiotics are useless</li>
+            <li>Strep throat (bacterial) requires antibiotics</li>
+            <li>Warm salt water gargle is the most proven home remedy</li>
+            <li>Severe difficulty swallowing or pus is an emergency</li>
+            <li>Fever plus sore throat in children requires a test</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+<h2>Causes of Sore Throat</h2>
+<p>Sore throat is very common in Pakistan during season changes and smog season. Causes include:</p>
+
+<table class="blog-post__quick-facts">
+  <caption>Sore Throat — Causes</caption>
+  <tbody>
+    <tr><td>Viral (90%)</td><td>Common cold, flu, COVID</td></tr>
+    <tr><td>Bacterial (10%)</td><td>Strep throat — antibiotics required</td></tr>
+    <tr><td>Allergy</td><td>Smog, dust, pollen</td></tr>
+    <tr><td>Acid reflux</td><td>Stomach acid reaching the throat</td></tr>
+    <tr><td>Smoke / Pollution</td><td>Smoking or passive smoke</td></tr>
+    <tr><td>Vocal strain</td><td>Overuse of the voice</td></tr>
+  </tbody>
+</table>
+
+<h2>Recognising the Symptoms</h2>
+<ul>
+<li>Pain or irritation in the throat</li>
+<li>Difficulty swallowing</li>
+<li>Hoarse or changed voice</li>
+<li>Fever (more prominent in bacterial infection)</li>
+<li>Swollen and red tonsils</li>
+<li>White or yellow patches on tonsils (strep)</li>
+<li>Headache, body aches</li>
+</ul>
+
+<h2>Viral vs Bacterial Sore Throat</h2>
+
+<h3>Viral (Antibiotics Useless):</h3>
+<ul>
+<li>Cough, runny nose, blocked nose</li>
+<li>Mild to moderate fever</li>
+<li>Hoarse voice</li>
+<li>Watery eyes</li>
+<li>Resolves on its own within 3–7 days</li>
+</ul>
+
+<h3>Strep (Bacterial — Antibiotics Required):</h3>
+<ul>
+<li>Sudden severe throat pain</li>
+<li>Fever above 101°F</li>
+<li>White pus patches on the tonsils</li>
+<li>No cough</li>
+<li>Swollen glands in the neck (lymph nodes)</li>
+<li>Headache, stomach pain (especially in children)</li>
+</ul>
+
+<p><strong>Confirmation:</strong> Via throat swab test or rapid strep test. A doctor can also make a good assessment based on symptoms alone.</p>
+
+<h2>Home Remedies for Sore Throat</h2>
+
+<h3>1. Warm Salt Water Gargle</h3>
+<p>The most proven home remedy. Mix 1/2 teaspoon of salt in 1 cup of warm water. Gargle for 30–60 seconds, 3–4 times a day.</p>
+
+<h3>2. Honey and Ginger</h3>
+<p>Mix 1 teaspoon of honey, lemon juice, and grated ginger in warm water. Take 2–3 times a day.</p>
+
+<h3>3. Warm Broth / Soup</h3>
+<p>Chicken broth soothes the throat and keeps you hydrated.</p>
+
+<h3>4. Hot or Cold Beverages</h3>
+<p>Warm green tea or cold ice cream — both help (go with your preference).</p>
+
+<h3>5. Steam Inhalation</h3>
+<p>10 minutes, twice a day. Drape a towel over your head to trap the steam.</p>
+
+<h3>6. Stay Hydrated</h3>
+<p>Drink plenty of water — keeps the throat moist.</p>
+
+<h3>7. Humidifier or Damp Cloth</h3>
+<p>Maintain humidity in the room, especially when using air conditioning.</p>
+
+<h2>Best OTC Medicine</h2>
+<ul>
+<li><strong>Lozenges:</strong> Strepsils, Vicks Throat Drops, Difflam — instant soothing</li>
+<li><strong>Anti-inflammatory:</strong> Brufen 400 mg or Panadol 500 mg — for pain and fever</li>
+<li><strong>Throat sprays:</strong> Difflam spray (benzydamine) — strong relief</li>
+<li><strong>Antihistamine:</strong> For allergy-related sore throat — Telfast, Zyrtec</li>
+<li><strong>Antacid:</strong> If caused by GERD — Risek 20 mg or Pantop</li>
+</ul>
+
+<div class="blog-post__inline-cta">
+  <p>Has your sore throat lasted more than 5 days or is your fever rising? Consult a doctor on Ilaaj AI — for the right diagnosis and antibiotics if needed.</p>
+  <a href="https://app.ilaaj.ai">Chat with AI Doctor Now</a>
+</div>
+
+<h2>Antibiotics for Strep Throat</h2>
+<p>If strep throat is confirmed:</p>
+<ul>
+<li><strong>Penicillin V (Calvepen):</strong> First line, 10-day course</li>
+<li><strong>Amoxicillin (Amoxil):</strong> 7–10 days</li>
+<li><strong>Augmentin 625 mg:</strong> For resistant cases</li>
+<li><strong>Erythromycin / Azithromycin:</strong> For penicillin allergy</li>
+</ul>
+
+<p><strong>Important:</strong> Complete the full antibiotic course. Stopping early risks rheumatic fever (heart valve damage). In Pakistan, untreated strep is a major cause of rheumatic heart disease — correct diagnosis is essential.</p>
+
+<h2>Tonsillitis</h2>
+<p>If tonsils become recurrently infected (5–7 times a year), a <strong>tonsillectomy (surgical removal of tonsils)</strong> may be required. Evaluation by an ENT specialist is needed.</p>
+
+<h2>Special Considerations in Pakistan</h2>
+<ul>
+<li><strong>Smog season:</strong> N95 mask and indoor air purifier</li>
+<li><strong>Fasting (Roza):</strong> Pay special attention to hydration at sehri and iftar</li>
+<li><strong>Singers and teachers:</strong> Voice rest and warm-up exercises</li>
+<li><strong>Acid reflux:</strong> Late dinners and spicy food are common triggers in Pakistan</li>
+</ul>
+
+<h2>Preventing Sore Throat</h2>
+<ul>
+<li>Wash your hands regularly</li>
+<li>Keep distance from sick people</li>
+<li>Avoid smoking and passive smoke</li>
+<li>Wear an N95 mask in smog</li>
+<li>Stay hydrated</li>
+<li>Rest your voice when your throat is sore</li>
+<li>Avoid direct airflow from air conditioning</li>
+<li>Change your toothbrush every 3 months</li>
+</ul>
+
+<h2>When to See a Doctor Urgently</h2>
+<ul>
+<li>Difficulty breathing or swallowing</li>
+<li>Difficulty opening the mouth (jaw locked)</li>
+<li>Muffled voice (possible peritonsillar abscess)</li>
+<li>Fever above 101°F with pus on the tonsils</li>
+<li>Coughing up blood</li>
+<li>Severe pain lasting more than 3 days</li>
+<li>Any sore throat lasting more than 1 week</li>
+<li>Rash on the body (scarlet fever)</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>Most sore throats are viral and resolve on their own within 5–7 days. Antibiotics are only needed for strep throat. In Pakistan, untreated strep causes rheumatic heart disease — so correct diagnosis is crucial. <strong>Ilaaj AI</strong> provides AI assessment plus doctor consultation for the right treatment — in just a few minutes, from home.</p>
+        </div>
+
+        <div class="blog-post__faq">
+          <h2>Frequently Asked Questions</h2>
+          <div class="blog-post__faq-item">
+            <h3>What is the best treatment for a sore throat?</h3>
+            <p>The most proven approach: warm salt water gargle 3–4 times a day, warm fluids (tea, soup, honey and ginger), and Strepsils or Difflam lozenges. For pain, Brufen 400 mg or Panadol 500 mg. 90% of sore throats are viral and resolve on their own within 5–7 days. Antibiotics are only needed for strep throat — confirmation from a doctor is essential.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>Are antibiotics necessary for a sore throat?</h3>
+            <p>Only for bacterial infection (strep throat). Signs: sudden severe pain, fever above 101°F, pus patches on the tonsils, no cough, swollen glands in the neck. Antibiotics are useless for viral sore throat and cause side effects. A doctor confirms with a throat swab or rapid strep test. If strep is confirmed, a 10-day course of Calvepen or Amoxil is required.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>Why does the voice become hoarse?</h3>
+            <p>Common causes of a hoarse voice: viral infection (laryngitis), overuse of the voice, smoking, acid reflux, allergies, or in rare cases vocal cord nodules. It should resolve within a week. Voice rest, hydration, and quitting smoking are the most important steps. If hoarseness persists for more than 3 weeks, see an ENT specialist — a vocal cord examination is needed.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>What is the treatment for a sore throat in children?</h3>
+            <p>In children, a combination of fever and sore throat may indicate strep — a doctor is needed. Calpol is safe for fever and pain. For children aged 6 and above, salt water gargling, lozenges, and warm honey (for children over 1 year) are safe. Give soft foods (broth, yoghurt, ice cream) and plenty of fluids. If there are pus patches or swallowing is very difficult, see a doctor immediately.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>What should I do about swollen tonsils?</h3>
+            <p>First try salt water gargling, lozenges, and painkillers. If there are white pus patches on the tonsils, fever, or difficulty breathing, it is likely a bacterial infection and antibiotics are needed. For recurrent tonsillitis (5–7 times a year), a tonsillectomy may be required. See an ENT specialist for evaluation. Both hot and cold beverages can be soothing — go with your preference.</p>
+          </div>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="blog-post__related">
+          <h2>Related Articles</h2>
+          <ul class="blog-post__related-list">
+            <li><a href="khansi-ka-ilaj.html">Cough Treatment — Dry and Productive Cough</a></li>
+            <li><a href="augmentin-625-uses.html">Augmentin 625 — Uses, Dosage, Warnings</a></li>
+            <li><a href="../../blog.html">Browse All Health Articles &rarr;</a></li>
+          </ul>
+        </div>
+
+        <div class="blog-post__about">
+          <img src="../../assets/Icon-192.png" alt="Ilaaj AI" class="blog-post__about-logo">
+          <div class="blog-post__about-text">
+            <strong>About Ilaaj AI</strong>
+            <p>Ilaaj AI is Pakistan's first AI-powered health platform. Chat about your symptoms in Urdu or English, get AI-powered triage, and receive doctor-verified prescriptions — affordable and accessible, 24/7.</p>
+          </div>
+        </div>
+
+        <div class="blog-post__cta">
+          <div class="blog-post__cta-card">
+            <h3 class="blog-post__cta-title">Need Health Advice?</h3>
+            <p class="blog-post__cta-desc">Chat with our AI health assistant in any language. Get doctor-verified prescriptions at affordable rates.</p>
+            <div class="blog-post__cta-actions">
+              <a href="https://app.ilaaj.ai" class="btn btn--hero-primary">Try Ilaaj AI Now</a>
+              <a href="../../blog.html" class="btn--outline">Read More Articles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <img src="../../assets/ilaaj-logo.jpg" alt="Ilaaj AI" class="footer__logo-img" width="36" height="36" loading="lazy">
+            <span class="footer__logo-text">Ilaaj AI</span>
+          </div>
+          <p class="footer__brand-desc">Pakistan's first AI-powered health platform. Chat about your symptoms in any language, get AI triage, and receive doctor-verified prescriptions &mdash; affordable and accessible, 24/7.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/ilaaj_ai/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.516 2.497 5.783 2.225 7.149 2.163 8.415 2.105 8.795 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.987 15.668 24 15.259 24 12s-.013-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324A6.162 6.162 0 0 0 12 5.838zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61588590745625" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+            <a href="https://x.com/ilaajai" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Product</h4>
+          <ul class="footer__links">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#how-it-works">How It Works</a></li>
+            <li><a href="/#doctors">Our Doctors</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="../../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../../terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="../../support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <p class="footer__contact-text">Questions or feedback?</p>
+          <a href="mailto:support@ilaaj.ai" class="footer__email">support@ilaaj.ai</a>
+          <p class="footer__emergency">For emergencies, call <strong>1122</strong> (Rescue)</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span class="footer-year"></span> Ilaaj AI. All rights reserved.</p>
+        <p class="footer__disclaimer">Ilaaj AI is for general health consultations and non-emergency medical guidance. For emergencies, call 1122 (Rescue) or visit the nearest hospital.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+    document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());
+  </script>
+  <!-- Tawk.to Live Chat (lazy-loaded) -->
+  <script>
+  (function() {
+    var tawkLoaded = false;
+    function loadTawk() {
+      if (tawkLoaded) return;
+      tawkLoaded = true;
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/69ce56b0127eae1c37be0e72/1jl70596p';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    }
+    document.addEventListener('scroll', loadTawk, {once: true});
+    document.addEventListener('click', loadTawk, {once: true});
+    document.addEventListener('mouseover', loadTawk, {once: true});
+  })();
+  </script>
+</body>
+</html>

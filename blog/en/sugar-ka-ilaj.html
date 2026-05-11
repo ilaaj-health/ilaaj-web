@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Sentry: error tracking + session replay -->
+  <script src="https://js.sentry-cdn.com/defa6ca82daea4d4c49a8b69b87c53cc.min.js" crossorigin="anonymous"></script>
+  <script>
+    window.sentryOnLoad = function () {
+      Sentry.init({
+        integrations: [Sentry.replayIntegration({ maskAllText: false, blockAllMedia: false })],
+        tracesSampleRate: 0.1,
+        replaysSessionSampleRate: 0.1,
+        replaysOnErrorSampleRate: 1.0,
+      });
+    };
+  </script>
+  <!-- PostHog: product analytics + session replay -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_xjBQ5vUS7nTJz4jHta6d5dDE7jHdtFjFuqkxAJjvcFzo', { api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only', cross_subdomain_cookie: true });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XKTHF96');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1697266221447949');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1697266221447949&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diabetes Treatment — Control, Diet and Medicine in Pakistan | Ilaaj AI</title>
+  <meta name="description" content="Complete guide to diabetes treatment in Pakistan. High blood sugar emergency care, Type 1 and Type 2 diabetes diet, exercise, and best medicines including Metformin (Glucophage). PMDC-verified advice.">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="diabetes treatment Pakistan, blood sugar control, Type 2 diabetes medicine, Metformin Pakistan, diabetes diet Pakistan, high blood sugar treatment, HbA1c Pakistan">
+  <meta name="geo.region" content="PK">
+  <meta name="geo.placename" content="Pakistan">
+  <meta name="google-site-verification" content="8RtzwgVYowrMGF4E77jnKOX33seYEQTuXmxps2XkPxI">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.ilaaj.ai/blog/sugar-ka-ilaj">
+  <link rel="alternate" hreflang="ur-PK" href="https://www.ilaaj.ai/pk/blog/sugar-ka-ilaj" />
+  <link rel="alternate" hreflang="en" href="https://www.ilaaj.ai/blog/sugar-ka-ilaj" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ilaaj.ai/blog/sugar-ka-ilaj" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/logo/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/logo/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/logo/site.webmanifest" />
+
+  <!-- PWA / Mobile -->
+  <meta name="theme-color" content="#00897B">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="IlaajAI">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Diabetes Treatment — Control, Diet and Medicine in Pakistan | Ilaaj AI">
+  <meta property="og:description" content="Complete guide to diabetes treatment in Pakistan. High blood sugar emergency care, Type 1 and Type 2 diabetes diet, exercise, and best medicines including Metformin (Glucophage).">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ilaaj.ai/blog/sugar-ka-ilaj">
+  <meta property="og:image" content="https://res.cloudinary.com/df2jfaqf2/image/upload/f_auto,q_auto,w_1200/v1778419111/blog/sugar-ka-ilaj.jpg">
+  <meta property="og:image:alt" content="Hands holding glucose meter — diabetes">
+  <meta property="og:site_name" content="Ilaaj AI">
+  <meta property="og:locale" content="en_PK">
+  <meta property="article:published_time" content="2026-05-03T10:00:00.000Z">
+  <meta property="article:modified_time" content="2026-05-03T10:00:00.000Z">
+  <meta property="article:author" content="Ilaaj AI Medical Team">
+  <meta property="article:section" content="Diabetes">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ilaajai">
+  <meta name="twitter:creator" content="@ilaajai">
+  <meta name="twitter:title" content="Diabetes Treatment — Control, Diet and Medicine in Pakistan | Ilaaj AI">
+  <meta name="twitter:description" content="Complete guide to diabetes treatment in Pakistan. High blood sugar emergency care, Type 1 and Type 2 diabetes diet, exercise, and best medicines including Metformin (Glucophage).">
+  <meta name="twitter:image" content="https://res.cloudinary.com/df2jfaqf2/image/upload/f_auto,q_auto,w_1200/v1778419111/blog/sugar-ka-ilaj.jpg">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNTMD61HWL"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KNTMD61HWL');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="../../css/blog.css">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.ilaaj.ai/blog/sugar-ka-ilaj"
+  },
+  "headline": "Diabetes Treatment — Control, Diet and Medicine in Pakistan",
+  "description": "Complete guide to diabetes treatment in Pakistan. High blood sugar emergency care, Type 1 and Type 2 diabetes diet, exercise, and best medicines including Metformin (Glucophage).",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://res.cloudinary.com/df2jfaqf2/image/upload/f_auto,q_auto,w_1200/v1778419111/blog/sugar-ka-ilaj.jpg"
+  },
+  "datePublished": "2026-05-03T10:00:00.000Z",
+  "dateModified": "2026-05-03T10:00:00.000Z",
+  "author": {
+    "@type": "Organization",
+    "name": "Ilaaj AI Medical Team",
+    "url": "https://www.ilaaj.ai/doctors"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ilaaj AI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.ilaaj.ai/assets/Icon-192.png"
+    }
+  },
+  "keywords": "diabetes treatment Pakistan, blood sugar control, Type 2 diabetes medicine, Metformin Pakistan, diabetes diet Pakistan",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Ilaaj AI Blog",
+    "url": "https://www.ilaaj.ai/blog"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.ilaaj.ai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.ilaaj.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Diabetes Treatment — Control, Diet and Medicine in Pakistan",
+      "item": "https://www.ilaaj.ai/blog/sugar-ka-ilaj"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the best medicine for diabetes in Pakistan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For Type 2 diabetes, Metformin (Glucophage) is the first-line medicine — affordable, safe, and effective. Depending on the situation, a doctor may also prescribe Sulfonylureas, DPP-4 inhibitors, SGLT2 inhibitors, or newer GLP-1 agents (Ozempic). Type 1 diabetes requires insulin for life. Never change your medication without consulting your doctor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are natural ways to control blood sugar in Pakistan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bitter gourd (karela) juice, black seed (kalonji), fenugreek seeds (methi), jamun, and cinnamon (dalcheeni) are all proven to slightly lower blood sugar. However, these are supplements — not replacements for medication. The most effective natural approach is: reduce refined carbohydrates, walk daily, cut out sweets and soft drinks, and lose 5–10% of body weight."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the immediate treatment for high blood sugar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If your reading is 250+ mg/dL: drink plenty of water (kidneys excrete sugar through urine), take a 20–30 minute light walk, do not skip your regular insulin or medication, stop eating bread and rice — only vegetables and protein. Recheck after 1–2 hours. A reading of 400+, vomiting, fruity breath, or loss of consciousness is a DKA emergency — go to the ER immediately."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should a diabetic eat in Pakistan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Good options: chapati made with a mix of wheat and chickpea flour, brown or basmati rice (portion-controlled), lentils, eggs, skinless chicken, fish, vegetables (spinach, bitter gourd, okra), and low-GI fruits (apple, jamun, guava). Eat small meals 3–5 times a day. Avoid: sweets, soft drinks, white bread, fried food, mango/bananas/grapes in large amounts, big portions of white rice, and late-night meals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is fasting (Ramadan) safe for people with diabetes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on your blood sugar control and medication. Fasting is generally not safe for Type 1 diabetes or advanced Type 2 diabetes (on insulin). You must consult your doctor before Ramadan to adjust medication timing. At sehri, eat protein and slow-digesting foods. At iftar, limit dates to 2–3 and eat a light meal. A Continuous Glucose Monitor is recommended."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKTHF96"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar navbar--scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="/" class="navbar__brand">
+        <img src="../../assets/Icon-192.png" alt="Ilaaj AI" class="navbar__logo">
+        <span class="navbar__name">Ilaaj AI</span>
+      </a>
+      <div class="navbar__center" id="navLinks">
+        <a href="/#how-it-works" class="navbar__link">How It Works</a>
+        <a href="/#features" class="navbar__link">Features</a>
+        <a href="../../blog.html" class="navbar__link navbar__link--active">Blog</a>
+        <a href="/#faq" class="navbar__link">FAQ</a>
+      </div>
+      <div class="navbar__right">
+        <a href="https://app.ilaaj.ai" class="btn btn--primary btn--sm navbar__cta">
+          Get Free Advice
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile" id="mobileMenu">
+      <a href="/#how-it-works" class="navbar__mobile-link">How It Works</a>
+      <a href="/#features" class="navbar__mobile-link">Features</a>
+      <a href="../../blog.html" class="navbar__mobile-link">Blog</a>
+      <a href="/#faq" class="navbar__mobile-link">FAQ</a>
+      <a href="https://app.ilaaj.ai" class="btn btn--primary btn--full">Get Free Advice</a>
+    </div>
+  </nav>
+
+  <main>
+    <article class="blog-post">
+      <div class="container">
+        <a href="../../blog.html" class="blog-post__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Articles
+        </a>
+
+        <div class="blog-post__featured-image"><img src="https://res.cloudinary.com/df2jfaqf2/image/upload/f_auto,q_auto,w_1200/v1778419111/blog/sugar-ka-ilaj.jpg" alt="Hands holding glucose meter — diabetes"></div>
+
+        <div class="blog-post__author">
+          <img src="../../assets/Icon-192.png" alt="Ilaaj AI Medical Team" class="blog-post__author-avatar">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name">Ilaaj AI Medical Team</div>
+            <div class="blog-post__author-creds">PMDC-verified doctors reviewing every article</div>
+            <div class="blog-post__author-dates">Published: May 3, 2026 | Last reviewed: May 3, 2026</div>
+          </div>
+        </div>
+
+        <h1 class="blog-post__title">Diabetes Treatment — Control, Diet and Medicine in Pakistan</h1>
+
+        <div class="blog-post__tldr">
+          <div class="blog-post__tldr-title">TL;DR — Key Takeaways</div>
+          <ul>
+            <li>Pakistan has the world's 3rd largest diabetic population</li>
+            <li>Type 2 diabetes accounts for 90% of cases and is largely controllable through lifestyle</li>
+            <li>Metformin is the first-line medication — take only on doctor's prescription</li>
+            <li>30 minutes of daily walking plus diet changes are the most effective interventions</li>
+            <li>Fasting glucose 126+ mg/dL or HbA1c 6.5%+ confirms a diabetes diagnosis</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+<h2>What Is Diabetes?</h2>
+<p>In diabetes, your body either produces too little <strong>insulin</strong> or the insulin it makes does not work properly. Insulin is the hormone that delivers blood sugar into cells for energy. When insulin is insufficient, sugar accumulates in the bloodstream and gradually damages the eyes, kidneys, heart, and feet.</p>
+
+<table class="blog-post__quick-facts">
+  <caption>Diabetes in Pakistan — Key Facts</caption>
+  <tbody>
+    <tr><td>Total cases</td><td>More than 33 million adults — 3rd largest in the world</td></tr>
+    <tr><td>Most common type</td><td>Type 2 — 90% of cases (lifestyle-related)</td></tr>
+    <tr><td>Pre-diabetes</td><td>Another 40 million people are on the borderline</td></tr>
+    <tr><td>Diagnosis criteria</td><td>Fasting glucose 126+ mg/dL or HbA1c 6.5%+</td></tr>
+    <tr><td>Target HbA1c</td><td>Below 7% for most diabetic patients</td></tr>
+  </tbody>
+</table>
+
+<h2>Recognising the Symptoms of Diabetes</h2>
+<ul>
+<li>Excessive thirst</li>
+<li>Frequent urination, especially at night</li>
+<li>Intense hunger despite losing weight</li>
+<li>Persistent tiredness and fatigue</li>
+<li>Blurred vision</li>
+<li>Slow-healing wounds</li>
+<li>Recurrent fungal infections (particularly in the genital area)</li>
+<li>Tingling or numbness in the hands and feet</li>
+</ul>
+
+<h2>Types of Diabetes</h2>
+
+<h3>Type 1 Diabetes</h3>
+<p>Usually begins in childhood or young adulthood. The pancreas produces no insulin at all. <strong>Insulin injections</strong> are required for life. In Pakistan, 5–10% of diabetics have Type 1.</p>
+
+<h3>Type 2 Diabetes (Most Common)</h3>
+<p>Affects adults and is largely lifestyle-related. The pancreas produces insulin, but cells do not respond to it properly. Controlled with <strong>diet, exercise, and medication</strong>. Around 90% of Pakistani diabetics have this type.</p>
+
+<h3>Gestational Diabetes</h3>
+<p>Develops during pregnancy and usually resolves after delivery, but increases the risk of Type 2 diabetes later in life.</p>
+
+<h2>Diabetes Treatment — Lifestyle First</h2>
+
+<h3>1. Diet — The Most Important Factor</h3>
+<p>Pakistan's traditional diet (rice, flatbread, sweets) is a challenge for blood sugar management. Make these changes:</p>
+
+<ul>
+<li><strong>Bread (roti):</strong> Replace white-flour roti with a wheat-and-chickpea flour blend, or jowar/bajra rotis</li>
+<li><strong>Rice:</strong> Choose brown rice or low-GI basmati with strict portion control</li>
+<li><strong>Sweets and bakery items:</strong> Mostly avoid; an occasional small portion is acceptable</li>
+<li><strong>Soft drinks and juices:</strong> Eliminate entirely — drink water or green tea instead</li>
+<li><strong>Fruit:</strong> Apple, jamun, guava, and kinno are fine — mangoes, bananas, and grapes are high in sugar</li>
+<li><strong>Vegetables:</strong> Spinach, bitter gourd (proven blood-sugar-lowering), okra, and black-eyed peas</li>
+<li><strong>Protein:</strong> Lentils, eggs, chicken (skinless), and fish — include in every meal</li>
+<li><strong>Healthy fats:</strong> Almonds, walnuts, olive oil, avocado (in moderation)</li>
+<li><strong>Smaller, more frequent meals</strong> — 3 to 5 times a day instead of 2 large ones</li>
+</ul>
+
+<h3>2. Exercise</h3>
+<p>A daily <strong>30-minute walk</strong> can lower blood sugar by 30–50 mg/dL. Aim for at least 5 days a week. Resistance training (light weights) also improves insulin sensitivity.</p>
+
+<h3>3. Lose Weight</h3>
+<p>Losing just <strong>5–10% of body weight</strong> can put Type 2 diabetes into remission. Abdominal fat is particularly harmful.</p>
+
+<h3>4. Stress and Sleep</h3>
+<p>The stress hormone cortisol raises blood sugar. Getting 7–8 hours of sleep nightly and practising deep breathing or prayer/meditation is genuinely beneficial.</p>
+
+<h2>Best Diabetes Medicines Available in Pakistan</h2>
+<p>These medications require a doctor's prescription:</p>
+
+<ul>
+<li><strong>Metformin (Glucophage):</strong> First-line choice — affordable and safe. 500–2000 mg/day</li>
+<li><strong>Sulfonylureas (Glimepiride, Gliclazide):</strong> Stimulate the pancreas to produce more insulin</li>
+<li><strong>DPP-4 inhibitors (Sitagliptin):</strong> Newer class with fewer side effects</li>
+<li><strong>SGLT2 inhibitors (Empagliflozin):</strong> Also protect the heart and kidneys</li>
+<li><strong>GLP-1 agonists (Ozempic, Trulicity):</strong> Aid weight loss but are expensive</li>
+<li><strong>Insulin:</strong> Essential for Type 1; used in advanced Type 2 cases</li>
+</ul>
+
+<div class="blog-post__inline-cta">
+  <p>Struggling to control your blood sugar? Get doctor-verified advice and medication adjustments on Ilaaj AI — in just a few minutes.</p>
+  <a href="https://app.ilaaj.ai">Chat with a Diabetes Specialist</a>
+</div>
+
+<h2>Immediate Treatment for High Blood Sugar</h2>
+<p>If your reading is 250+ mg/dL:</p>
+<ul>
+<li>Drink plenty of water (the kidneys excrete excess sugar through urine)</li>
+<li>Take a 20–30 minute light walk</li>
+<li>Do not skip your regular insulin or medication</li>
+<li>Stop eating bread and rice immediately — only vegetables and protein</li>
+<li>Recheck after 1–2 hours</li>
+<li>A reading of 400+, or symptoms alongside it, is an ER emergency (risk of DKA)</li>
+</ul>
+
+<h2>Low Blood Sugar (Hypoglycaemia)</h2>
+<p>This can occur in diabetics when medication dosage is too high. Symptoms include sweating, trembling, anxiety, hunger, and fainting.</p>
+
+<p><strong>Immediate action:</strong> Take 3–4 teaspoons of sugar dissolved in water, glucose tablets, or juice. Recheck after 15 minutes. If the person is unconscious, do not give anything by mouth — go to hospital immediately.</p>
+
+<h2>Special Considerations for Pakistan</h2>
+<ul>
+<li><strong>Ramadan fasting:</strong> Consult your doctor beforehand — medication timing must be adjusted</li>
+<li><strong>Foot care:</strong> Inspect your feet daily; treat any cut or injury immediately. Diabetic foot is an extremely common complication in Pakistan</li>
+<li><strong>Eye check:</strong> Annual retinal examination is essential</li>
+<li><strong>Kidney test:</strong> Urine albumin and creatinine every 6 months</li>
+<li><strong>HbA1c:</strong> Check every 3 months</li>
+</ul>
+
+<h2>When to See a Doctor Immediately</h2>
+<ul>
+<li>Blood sugar 400+ mg/dL or 60– mg/dL</li>
+<li>Extreme thirst, frequent urination, vomiting, or "fruity" smelling breath — signs of DKA</li>
+<li>Loss of consciousness or confusion</li>
+<li>Foot ulcer or infection</li>
+<li>Sudden blurred vision</li>
+<li>Pregnant with uncontrolled blood sugar</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>There is currently no complete cure for diabetes, but it is <strong>entirely manageable</strong>. Medication alone is not enough — diet, exercise, regular monitoring, and doctor visits all play a role. In Pakistan, traditional remedies such as bitter gourd and black seed do provide some benefit, but they cannot replace prescribed medication. On <strong>Ilaaj AI</strong>, you can get regular follow-ups, medication adjustments, and diet plans — without waiting in a long queue at an endocrinology clinic.</p>
+        </div>
+
+        <div class="blog-post__faq">
+          <h2>Frequently Asked Questions</h2>
+          <div class="blog-post__faq-item">
+            <h3>What is the best medicine for diabetes in Pakistan?</h3>
+            <p>For Type 2 diabetes, Metformin (Glucophage) is the first-line choice — affordable, safe, and effective. Depending on the situation, a doctor may also prescribe Sulfonylureas, DPP-4 inhibitors, SGLT2 inhibitors, or newer GLP-1 agents (Ozempic). Type 1 diabetes requires insulin for life. Never change your medication without your doctor's guidance.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>What are natural ways to control blood sugar?</h3>
+            <p>Bitter gourd (karela) juice, black seed (kalonji), fenugreek seeds (methi), jamun, and cinnamon are all proven to moderately lower blood sugar. However, these are supplements — not replacements for medication. The most effective natural approach is: cut refined carbohydrates, walk daily, eliminate sweets and soft drinks, and lose 5–10% of body weight.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>What is the immediate treatment for high blood sugar?</h3>
+            <p>If your reading is 250+ mg/dL: drink plenty of water, take a 20–30 minute light walk, do not skip your regular insulin or medication, stop eating bread and rice. Eat only vegetables and protein. Recheck after 1–2 hours. A reading of 400+, vomiting, fruity breath, or loss of consciousness is a DKA emergency — go to hospital immediately.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>What should a diabetic eat in Pakistan?</h3>
+            <p>Good choices include chapati made with wheat-and-chickpea flour, brown rice, lentils, eggs, skinless chicken, fish, vegetables (spinach, bitter gourd, okra), and low-GI fruits (apple, jamun, guava). Eat small meals 3–5 times a day. Avoid sweets, soft drinks, white bread, fried food, large portions of mango, bananas, grapes, or white rice, and late-night meals.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>Is fasting in Ramadan safe for diabetics?</h3>
+            <p>It depends on your blood sugar control and medication. Fasting is generally not safe for Type 1 diabetes or advanced Type 2 (on insulin). You must consult your doctor before Ramadan to adjust medication timing. At sehri, eat protein and slow-digesting foods. At iftar, limit dates to 2–3 and keep the meal light. A Continuous Glucose Monitor is highly recommended.</p>
+          </div>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="blog-post__related">
+          <h2>Related Articles</h2>
+          <ul class="blog-post__related-list">
+            <li><a href="blood-pressure-ka-ilaj.html">Blood Pressure Treatment — High BP Symptoms, Diet and Best Medicine</a></li>
+            <li><a href="../motapa-kam-karne-ka-tarika.html">Weight Loss — How to Reduce Obesity</a></li>
+            <li><a href="../../blog.html">Browse All Health Articles &rarr;</a></li>
+          </ul>
+        </div>
+
+        <div class="blog-post__about">
+          <img src="../../assets/Icon-192.png" alt="Ilaaj AI" class="blog-post__about-logo">
+          <div class="blog-post__about-text">
+            <strong>About Ilaaj AI</strong>
+            <p>Ilaaj AI is Pakistan's first AI-powered health platform. Chat about your symptoms in Urdu or English, get AI-powered triage, and receive doctor-verified prescriptions — affordable and accessible, 24/7.</p>
+          </div>
+        </div>
+
+        <div class="blog-post__cta">
+          <div class="blog-post__cta-card">
+            <h3 class="blog-post__cta-title">Need Health Advice?</h3>
+            <p class="blog-post__cta-desc">Chat with our AI health assistant in any language. Get doctor-verified prescriptions at affordable rates.</p>
+            <div class="blog-post__cta-actions">
+              <a href="https://app.ilaaj.ai" class="btn btn--hero-primary">Start Consultation</a>
+              <a href="../../blog.html" class="btn--outline">Read More Articles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <img src="../../assets/ilaaj-logo.jpg" alt="Ilaaj AI" class="footer__logo-img" width="36" height="36" loading="lazy">
+            <span class="footer__logo-text">Ilaaj AI</span>
+          </div>
+          <p class="footer__brand-desc">Pakistan's first AI-powered health platform. Chat about your symptoms in any language, get AI triage, and receive doctor-verified prescriptions &mdash; affordable and accessible, 24/7.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/ilaaj_ai/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.516 2.497 5.783 2.225 7.149 2.163 8.415 2.105 8.795 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.987 15.668 24 15.259 24 12s-.013-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324A6.162 6.162 0 0 0 12 5.838zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61588590745625" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+            <a href="https://x.com/ilaajai" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Product</h4>
+          <ul class="footer__links">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#how-it-works">How It Works</a></li>
+            <li><a href="/#doctors">Our Doctors</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="../../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../../terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="../../support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <p class="footer__contact-text">Questions or feedback?</p>
+          <a href="mailto:support@ilaaj.ai" class="footer__email">support@ilaaj.ai</a>
+          <p class="footer__emergency">For emergencies, call <strong>1122</strong> (Rescue)</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span class="footer-year"></span> Ilaaj AI. All rights reserved.</p>
+        <p class="footer__disclaimer">Ilaaj AI is for general health consultations and non-emergency medical guidance. For emergencies, call 1122 (Rescue) or visit the nearest hospital.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+    document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());
+  </script>
+  <!-- Tawk.to Live Chat (lazy-loaded) -->
+  <script>
+  (function() {
+    var tawkLoaded = false;
+    function loadTawk() {
+      if (tawkLoaded) return;
+      tawkLoaded = true;
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/69ce56b0127eae1c37be0e72/1jl70596p';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    }
+    document.addEventListener('scroll', loadTawk, {once: true});
+    document.addEventListener('click', loadTawk, {once: true});
+    document.addEventListener('mouseover', loadTawk, {once: true});
+  })();
+  </script>
+</body>
+</html>

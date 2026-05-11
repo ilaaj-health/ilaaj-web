@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Sentry: error tracking + session replay -->
+  <script src="https://js.sentry-cdn.com/defa6ca82daea4d4c49a8b69b87c53cc.min.js" crossorigin="anonymous"></script>
+  <script>
+    window.sentryOnLoad = function () {
+      Sentry.init({
+        integrations: [Sentry.replayIntegration({ maskAllText: false, blockAllMedia: false })],
+        tracesSampleRate: 0.1,
+        replaysSessionSampleRate: 0.1,
+        replaysOnErrorSampleRate: 1.0,
+      });
+    };
+  </script>
+  <!-- PostHog: product analytics + session replay -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_xjBQ5vUS7nTJz4jHta6d5dDE7jHdtFjFuqkxAJjvcFzo', { api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only', cross_subdomain_cookie: true });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XKTHF96');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1697266221447949');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1697266221447949&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What is Diabetes — Complete Guide to Sugar Disease in Pakistan | Ilaaj AI</title>
+  <meta name="description" content="What is diabetes (sugar disease), types, symptoms, causes and diagnosis. Complete educational guide to Type 2 diabetes for Pakistan.">
+  <meta name="robots" content="noindex,follow" data-scheduled="1">
+  <meta name="keywords" content="what is diabetes, diabetes symptoms Pakistan, type 2 diabetes Pakistan, sugar disease, diabetes diagnosis Pakistan, blood glucose Pakistan">
+  <meta name="geo.region" content="PK">
+  <meta name="geo.placename" content="Pakistan">
+  <meta name="google-site-verification" content="8RtzwgVYowrMGF4E77jnKOX33seYEQTuXmxps2XkPxI">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.ilaaj.ai/blog/sugar-kya-hai">
+  <link rel="alternate" hreflang="ur-PK" href="https://www.ilaaj.ai/pk/blog/sugar-kya-hai" />
+  <link rel="alternate" hreflang="en" href="https://www.ilaaj.ai/blog/sugar-kya-hai" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ilaaj.ai/blog/sugar-kya-hai" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/logo/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/logo/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/logo/site.webmanifest" />
+
+  <!-- PWA / Mobile -->
+  <meta name="theme-color" content="#00897B">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="IlaajAI">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="What is Diabetes — Complete Guide to Sugar Disease in Pakistan | Ilaaj AI">
+  <meta property="og:description" content="What is diabetes (sugar disease), types, symptoms, causes and diagnosis. Complete educational guide to Type 2 diabetes for Pakistan.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ilaaj.ai/blog/sugar-kya-hai">
+  <meta property="og:image" content="https://res.cloudinary.com/df2jfaqf2/image/upload/f_auto,q_auto,w_1200/v1778419357/blog/sugar-kya-hai.jpg">
+  <meta property="og:image:alt" content="Person holding glucose meter">
+  <meta property="og:site_name" content="Ilaaj AI">
+  <meta property="og:locale" content="en_PK">
+  <meta property="article:published_time" content="2026-05-03T18:00:00.000Z">
+  <meta property="article:modified_time" content="2026-05-03T18:00:00.000Z">
+  <meta property="article:author" content="Ilaaj AI Medical Team">
+  <meta property="article:section" content="Diabetes">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ilaajai">
+  <meta name="twitter:creator" content="@ilaajai">
+  <meta name="twitter:title" content="What is Diabetes — Complete Guide to Sugar Disease in Pakistan | Ilaaj AI">
+  <meta name="twitter:description" content="What is diabetes (sugar disease), types, symptoms, causes and diagnosis. Complete educational guide to Type 2 diabetes for Pakistan.">
+  <meta name="twitter:image" content="https://res.cloudinary.com/df2jfaqf2/image/upload/f_auto,q_auto,w_1200/v1778419357/blog/sugar-kya-hai.jpg">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNTMD61HWL"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KNTMD61HWL');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="../../css/blog.css">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.ilaaj.ai/blog/sugar-kya-hai"
+  },
+  "headline": "What is Diabetes — Complete Guide to Sugar Disease in Pakistan",
+  "description": "What is diabetes (sugar disease), types, symptoms, causes and diagnosis. Complete educational guide to Type 2 diabetes for Pakistan.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://res.cloudinary.com/df2jfaqf2/image/upload/f_auto,q_auto,w_1200/v1778419357/blog/sugar-kya-hai.jpg"
+  },
+  "datePublished": "2026-05-03T18:00:00.000Z",
+  "dateModified": "2026-05-03T18:00:00.000Z",
+  "author": {
+    "@type": "Organization",
+    "name": "Ilaaj AI Medical Team",
+    "url": "https://www.ilaaj.ai/doctors"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ilaaj AI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.ilaaj.ai/assets/Icon-192.png"
+    }
+  },
+  "keywords": "what is diabetes, diabetes symptoms Pakistan, type 2 diabetes Pakistan, sugar disease, diabetes diagnosis Pakistan",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Ilaaj AI Blog",
+    "url": "https://www.ilaaj.ai/blog"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.ilaaj.ai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.ilaaj.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "What is Diabetes — Complete Guide to Sugar Disease in Pakistan",
+      "item": "https://www.ilaaj.ai/blog/sugar-kya-hai"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the main cause of diabetes (sugar disease)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Type 1 diabetes is an autoimmune condition where the pancreas produces no insulin at all. Type 2 (90% of cases) is caused by insulin resistance — usually a combination of genetics and lifestyle (overweight, low exercise, white rice/bread diet, sedentary habits). Pakistan's South Asian population has a much higher genetic predisposition — 2 to 4 times the risk compared to Europeans. Family history is the single strongest predictor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I recognise diabetes? What are the symptoms?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Classic symptoms: excessive thirst, frequent urination (especially at night), extreme hunger but unexplained weight loss. Other signs: constant fatigue, blurred vision, slow wound healing, recurrent fungal infections, tingling in hands and feet, dry mouth. In Type 2, 50% of people have no symptoms — it is discovered on a routine blood test. Annual screening is essential after age 40."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which test is used to diagnose diabetes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "3 main tests: 1) Fasting blood glucose (8 hours fasting) — 126 mg/dL or above = diabetes. 2) HbA1c (3-month average) — 6.5% or above = diabetes. 3) OGTT (oral glucose tolerance) — 200 mg/dL or above 2 hours after 75g glucose. A random glucose of 200+ with symptoms also confirms the diagnosis. HbA1c every 6 months is the best monitoring test for people with diabetes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Type 2 diabetes be reversed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Early-stage Type 2 diabetes can be reversed or put into remission through lifestyle changes. Losing 5–10% of body weight leads to significant improvement in 60% of people. A strict low-carb diet, daily exercise (30-minute walk), and stress management combined can bring HbA1c below 6.5%. However, ongoing monitoring is essential — the 'cure' is not permanent; the lifestyle change must be maintained permanently. Type 1 diabetes cannot be reversed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is diabetes hereditary?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The genetic factor is strong but not deterministic. Type 2 risk: if a direct relative (parent, sibling) has diabetes, your risk doubles. If both parents have it, risk is 5–7 times higher. South Asian ancestry carries a 2–4 times higher baseline risk than Europeans. However, lifestyle factors (weight, exercise, diet) are more important than genes — prevention is possible even for high-risk individuals. The genetic component in Type 1 is less strong."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKTHF96"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar navbar--scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="/" class="navbar__brand">
+        <img src="../../assets/Icon-192.png" alt="Ilaaj AI" class="navbar__logo">
+        <span class="navbar__name">Ilaaj AI</span>
+      </a>
+      <div class="navbar__center" id="navLinks">
+        <a href="/#how-it-works" class="navbar__link">How It Works</a>
+        <a href="/#features" class="navbar__link">Features</a>
+        <a href="../../blog.html" class="navbar__link navbar__link--active">Blog</a>
+        <a href="/#faq" class="navbar__link">FAQ</a>
+      </div>
+      <div class="navbar__right">
+        <a href="https://app.ilaaj.ai" class="btn btn--primary btn--sm navbar__cta">
+          Get Free Advice
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile" id="mobileMenu">
+      <a href="/#how-it-works" class="navbar__mobile-link">How It Works</a>
+      <a href="/#features" class="navbar__mobile-link">Features</a>
+      <a href="../../blog.html" class="navbar__mobile-link">Blog</a>
+      <a href="/#faq" class="navbar__mobile-link">FAQ</a>
+      <a href="https://app.ilaaj.ai" class="btn btn--primary btn--full">Get Free Advice</a>
+    </div>
+  </nav>
+
+  <main>
+    <article class="blog-post">
+      <div class="container">
+        <a href="../../blog.html" class="blog-post__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Articles
+        </a>
+
+        <div class="blog-post__featured-image"><img src="https://res.cloudinary.com/df2jfaqf2/image/upload/f_auto,q_auto,w_1200/v1778419357/blog/sugar-kya-hai.jpg" alt="Person holding glucose meter"></div>
+
+        <div class="blog-post__author">
+          <img src="../../assets/Icon-192.png" alt="Ilaaj AI Medical Team" class="blog-post__author-avatar">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name">Ilaaj AI Medical Team</div>
+            <div class="blog-post__author-creds">PMDC-verified doctors reviewing every article</div>
+            <div class="blog-post__author-dates">Published: May 3, 2026 | Last reviewed: May 3, 2026</div>
+          </div>
+        </div>
+
+        <h1 class="blog-post__title">What is Diabetes — Complete Guide to Sugar Disease in Pakistan</h1>
+
+        <div class="blog-post__tldr">
+          <div class="blog-post__tldr-title">TL;DR — Key Takeaways</div>
+          <ul>
+            <li>Diabetes is an abnormally high level of glucose (sugar) in the blood</li>
+            <li>Type 1 (no insulin produced), Type 2 (insulin does not work properly)</li>
+            <li>Pakistan has the world's 3rd largest diabetic population</li>
+            <li>Symptoms: excessive thirst, frequent urination, fatigue, weight loss</li>
+            <li>Diagnosis: fasting glucose 126+ mg/dL or HbA1c 6.5%+</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+<h2>What is Diabetes (Sugar Disease)?</h2>
+<p>Diabetes (medical term: diabetes mellitus) is a condition in which the <strong>level of glucose (sugar) in your blood rises above normal</strong>. This happens because your body either produces <strong>too little insulin</strong> or cannot use it effectively.</p>
+
+<h3>What is Insulin?</h3>
+<p>Insulin is produced in the pancreas (an organ near the stomach). It is a hormone that carries blood sugar into cells where it is used for energy. Think of insulin as the key that unlocks the door to your cells for glucose.</p>
+
+<table class="blog-post__quick-facts">
+  <caption>Diabetes in Pakistan — Statistics</caption>
+  <tbody>
+    <tr><td>Total cases</td><td>33 million adults — 3rd largest in the world</td></tr>
+    <tr><td>Pre-diabetes</td><td>40 million more people on the borderline</td></tr>
+    <tr><td>Awareness</td><td>50% of patients unaware of their diagnosis</td></tr>
+    <tr><td>South Asian risk</td><td>2–4 times higher than other ethnicities</td></tr>
+    <tr><td>Average diagnosis age</td><td>40–50 years (and falling)</td></tr>
+  </tbody>
+</table>
+
+<h2>Types of Diabetes</h2>
+
+<h3>1. Type 1 Diabetes (5–10% of Cases)</h3>
+<p>The pancreas produces <strong>no insulin at all</strong>. This is an autoimmune condition in which the body's immune cells attack and destroy the insulin-producing cells of the pancreas.</p>
+
+<p><strong>Key characteristics:</strong></p>
+<ul>
+<li>Usually begins in childhood or young adulthood</li>
+<li><strong>Insulin injections are required for life</strong></li>
+<li>Symptoms develop suddenly</li>
+<li>Patients are often slim</li>
+<li>Family history is not always present</li>
+</ul>
+
+<h3>2. Type 2 Diabetes (90% of Cases)</h3>
+<p>The pancreas produces insulin, but the <strong>body's cells do not respond to it</strong> (insulin resistance). In Pakistan, 90% of diabetics have this type.</p>
+
+<p><strong>Key characteristics:</strong></p>
+<ul>
+<li>Usually affects adults, but increasingly seen in teenagers</li>
+<li>Related to both lifestyle and genetics</li>
+<li>Symptoms develop slowly</li>
+<li>Family history is a strong predictor</li>
+<li>Patients are often overweight</li>
+<li>Manageable with diet, exercise, and medication</li>
+</ul>
+
+<h3>3. Gestational Diabetes</h3>
+<p>Diabetes that develops during pregnancy. It usually resolves after the baby is born, but increases the risk of developing Type 2 diabetes in the future.</p>
+
+<h3>4. Pre-Diabetes</h3>
+<p>Blood sugar is higher than normal but not yet in the diabetes range. Reversible with lifestyle changes.</p>
+
+<h2>Symptoms of Diabetes</h2>
+
+<h3>Classic Symptoms (The Three P's):</h3>
+<ul>
+<li><strong>Polydipsia:</strong> Excessive thirst</li>
+<li><strong>Polyuria:</strong> Frequent urination — especially at night</li>
+<li><strong>Polyphagia:</strong> Excessive hunger</li>
+</ul>
+
+<h3>Other Common Symptoms:</h3>
+<ul>
+<li><strong>Unexplained weight loss</strong> without dieting (especially in Type 1)</li>
+<li><strong>Constant fatigue</strong></li>
+<li><strong>Blurred vision</strong></li>
+<li><strong>Slow wound healing</strong></li>
+<li><strong>Recurrent fungal infections</strong> (genital area, mouth)</li>
+<li><strong>Tingling or numbness in hands and feet</strong></li>
+<li><strong>Dry mouth</strong></li>
+<li><strong>Skin rashes</strong></li>
+<li><strong>Reduced sex drive</strong></li>
+<li><strong>Erectile dysfunction</strong></li>
+</ul>
+
+<h3>Hidden Symptoms in Type 2:</h3>
+<p>In Pakistan, 50% of Type 2 diabetics are unaware of their diagnosis because symptoms develop slowly. It is often discovered on a routine blood test.</p>
+
+<h2>Causes of Diabetes</h2>
+
+<h3>Type 1:</h3>
+<ul>
+<li>Genetic predisposition</li>
+<li>Autoimmune attack on the pancreas</li>
+<li>Possible viral trigger</li>
+<li>Family history (less significant than in Type 2)</li>
+</ul>
+
+<h3>Type 2 (Common in Pakistan):</h3>
+<ul>
+<li><strong>Genetics:</strong> South Asian ancestry — high risk</li>
+<li><strong>Family history:</strong> A direct relative with diabetes doubles your risk</li>
+<li><strong>Obesity:</strong> Especially belly fat</li>
+<li><strong>Physical inactivity</strong></li>
+<li><strong>Diet:</strong> White rice, white bread, sweets, soft drinks</li>
+<li><strong>Age:</strong> 45 years and above</li>
+<li><strong>History of gestational diabetes</strong></li>
+<li><strong>PCOS</strong> (in women)</li>
+<li><strong>High blood pressure, high cholesterol</strong></li>
+<li><strong>Stress and poor sleep</strong></li>
+<li><strong>Smoking</strong></li>
+</ul>
+
+<h2>Diagnosis of Diabetes</h2>
+
+<h3>Tests:</h3>
+
+<table class="blog-post__quick-facts">
+  <thead><tr><td><strong>Test</strong></td><td><strong>Normal</strong></td><td><strong>Pre-Diabetes</strong></td><td><strong>Diabetes</strong></td></tr></thead>
+  <tbody>
+    <tr><td>Fasting glucose</td><td>&lt; 100 mg/dL</td><td>100–125</td><td>126+</td></tr>
+    <tr><td>Random glucose</td><td>&lt; 140 mg/dL</td><td>140–199</td><td>200+</td></tr>
+    <tr><td>HbA1c</td><td>&lt; 5.7%</td><td>5.7–6.4%</td><td>6.5%+</td></tr>
+    <tr><td>OGTT (2 hours)</td><td>&lt; 140 mg/dL</td><td>140–199</td><td>200+</td></tr>
+  </tbody>
+</table>
+
+<h3>HbA1c — The Most Important Test</h3>
+<p>HbA1c shows the average blood sugar level over the past 3 months. In Pakistan, it is recommended every 6 months for people with diabetes and those at high risk.</p>
+
+<h2>Complications of Diabetes</h2>
+<p>Untreated or poorly controlled diabetes leads to serious complications:</p>
+
+<h3>Acute (Sudden):</h3>
+<ul>
+<li><strong>DKA (Diabetic Ketoacidosis)</strong> — mainly in Type 1, life-threatening</li>
+<li><strong>HHS (Hyperosmolar Hyperglycaemic State)</strong> — severely high blood sugar</li>
+<li><strong>Hypoglycaemia</strong> — dangerously low blood sugar, often from medication overdose</li>
+</ul>
+
+<h3>Chronic (Long-term):</h3>
+<ul>
+<li><strong>Eye damage</strong> (retinopathy) — a leading cause of blindness</li>
+<li><strong>Kidney damage</strong> (nephropathy) — the top cause of dialysis in Pakistan</li>
+<li><strong>Nerve damage</strong> (neuropathy) — numbness in feet, foot ulcers</li>
+<li><strong>Heart disease</strong> — heart attack risk 2–4 times higher</li>
+<li><strong>Stroke risk</strong> 2–4 times higher</li>
+<li><strong>Foot amputations</strong> — from diabetic foot ulcers</li>
+<li><strong>Erectile dysfunction</strong></li>
+<li><strong>Increased susceptibility to infections</strong></li>
+</ul>
+
+<div class="blog-post__inline-cta">
+  <p>Need a blood sugar test or worried about diabetes? Chat with an AI doctor on Ilaaj AI — lab test guidance and a treatment plan from home.</p>
+  <a href="https://app.ilaaj.ai">Chat with AI Doctor Now</a>
+</div>
+
+<h2>Risk Factors — Are You at Risk?</h2>
+<p>You should be tested for diabetes if any of the following apply:</p>
+<ul>
+<li>Age 40 or above</li>
+<li>Family history of diabetes</li>
+<li>Overweight (BMI 23+)</li>
+<li>Abdominal obesity (waist 90+ cm in men, 80+ cm in women)</li>
+<li>Previous gestational diabetes</li>
+<li>PCOS</li>
+<li>High blood pressure (140/90+)</li>
+<li>High cholesterol</li>
+<li>Sedentary lifestyle</li>
+<li>South Asian ancestry</li>
+<li>Pre-diabetes diagnosis</li>
+</ul>
+
+<h2>Diabetes and Pakistan</h2>
+<p>Why is there a diabetes epidemic in Pakistan?</p>
+<ul>
+<li><strong>South Asian genetic predisposition</strong> — 2–4 times the risk of Europeans</li>
+<li><strong>Diet:</strong> White rice, white bread, sweets, ghee — high glycaemic load</li>
+<li><strong>Sedentary urban lifestyle</strong></li>
+<li><strong>Stress and poor sleep</strong></li>
+<li><strong>Low awareness</strong></li>
+<li><strong>Late diagnosis</strong></li>
+<li><strong>Affordability barriers</strong> for medications and monitoring</li>
+</ul>
+
+<h2>Prevention (Type 2)</h2>
+<p>Type 2 diabetes is <strong>preventable</strong>:</p>
+<ul>
+<li><strong>Maintain a healthy weight</strong> (losing 5–10% of body weight reduces risk by 60%)</li>
+<li><strong>Walk 30 minutes daily</strong></li>
+<li><strong>Healthy diet:</strong> Whole grains, vegetables, lentils, fish</li>
+<li><strong>Reduce white rice and white bread</strong></li>
+<li><strong>Cut out sweets and soft drinks</strong></li>
+<li><strong>Annual screening</strong> after age 40</li>
+<li><strong>Stress management</strong></li>
+<li><strong>7–8 hours of sleep</strong></li>
+</ul>
+
+<h2>Type 1 vs Type 2 — Quick Comparison</h2>
+
+<table class="blog-post__quick-facts">
+  <thead><tr><td><strong>Type 1</strong></td><td><strong>Type 2</strong></td></tr></thead>
+  <tbody>
+    <tr><td>No insulin produced</td><td>Insulin produced but not effective</td></tr>
+    <tr><td>5–10% of cases</td><td>90% of cases</td></tr>
+    <tr><td>Childhood / young adulthood</td><td>Usually 40+</td></tr>
+    <tr><td>Typically slim patients</td><td>Often overweight</td></tr>
+    <tr><td>Sudden onset of symptoms</td><td>Slow onset of symptoms</td></tr>
+    <tr><td>Lifelong insulin required</td><td>Tablets + lifestyle often sufficient</td></tr>
+    <tr><td>Autoimmune</td><td>Genetic + lifestyle</td></tr>
+    <tr><td>No cure</td><td>Reversible with lifestyle changes (early stage)</td></tr>
+  </tbody>
+</table>
+
+<h2>Conclusion</h2>
+<p>Diabetes is a <strong>silent epidemic in Pakistan</strong> that causes serious complications if left untreated. However, with early diagnosis and lifestyle changes, it is manageable — and even reversible in Type 2 at an early stage. <strong>Get an annual screening after age 40; those with a family history should test earlier</strong>. Chat with a doctor on <strong>Ilaaj AI</strong> for consultation and lab test guidance from home.</p>
+        </div>
+
+        <div class="blog-post__faq">
+          <h2>Frequently Asked Questions</h2>
+          <div class="blog-post__faq-item">
+            <h3>What is the main cause of diabetes (sugar disease)?</h3>
+            <p>Type 1 diabetes is an autoimmune condition where the pancreas produces no insulin. Type 2 (90% of cases) is caused by <strong>insulin resistance</strong> — usually genetics combined with lifestyle (overweight, low exercise, white rice/bread diet, sedentary habits). Pakistan's South Asian population carries a much higher genetic predisposition — 2 to 4 times the risk of Europeans. Family history is the single strongest predictor.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>How do I recognise diabetes? What are the symptoms?</h3>
+            <p>Classic symptoms: excessive thirst, frequent urination (especially at night), extreme hunger but weight loss. Other signs: fatigue, blurred vision, slow wound healing, recurrent fungal infections, tingling in hands and feet, dry mouth. In Type 2, 50% of people have no symptoms — it is found on a routine blood test. <strong>Annual screening is essential after age 40.</strong></p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>Which test is used to diagnose diabetes?</h3>
+            <p><strong>3 main tests:</strong> 1) Fasting blood glucose (8 hours fasting) — 126 mg/dL or above = diabetes. 2) HbA1c (3-month average) — 6.5% or above = diabetes. 3) OGTT (oral glucose tolerance) — 200 mg/dL or above 2 hours after 75g glucose. A random glucose of 200+ with symptoms also confirms the diagnosis. <strong>HbA1c</strong> every 6 months is the best monitoring test for people with diabetes.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>Can Type 2 diabetes be reversed?</h3>
+            <p><strong>Early-stage Type 2 diabetes can be reversed or put into remission through lifestyle changes</strong>. Losing 5–10% of body weight leads to significant improvement in 60% of people. A strict low-carb diet, daily exercise (30-minute walk), and stress management can bring HbA1c below 6.5%. However, ongoing monitoring is essential — the "cure" is not permanent; the lifestyle change must be maintained. Type 1 cannot be reversed.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>Is diabetes hereditary?</h3>
+            <p>The genetic factor is strong but not deterministic. <strong>Type 2 risk:</strong> If a direct relative (parent, sibling) has diabetes, your risk doubles. If both parents have it, risk is 5–7 times higher. South Asian ancestry carries a 2–4 times higher baseline risk than Europeans. However, lifestyle factors (weight, exercise, diet) are more important than genes — prevention is possible even for high-risk individuals. The genetic component in Type 1 is less strong.</p>
+          </div>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="blog-post__related">
+          <h2>Related Articles</h2>
+          <ul class="blog-post__related-list">
+            <li><a href="../sugar-ka-ilaj.html">Diabetes Treatment — How to Control Blood Sugar</a></li>
+            <li><a href="blood-pressure-kya-hai.html">What is Blood Pressure — Complete Guide to Hypertension</a></li>
+            <li><a href="../../blog.html">Browse All Health Articles &rarr;</a></li>
+          </ul>
+        </div>
+
+        <div class="blog-post__about">
+          <img src="../../assets/Icon-192.png" alt="Ilaaj AI" class="blog-post__about-logo">
+          <div class="blog-post__about-text">
+            <strong>About Ilaaj AI</strong>
+            <p>Ilaaj AI is Pakistan's first AI-powered health platform. Chat about your symptoms in Urdu or English, get AI-powered triage, and receive doctor-verified prescriptions — affordable and accessible, 24/7.</p>
+          </div>
+        </div>
+
+        <div class="blog-post__cta">
+          <div class="blog-post__cta-card">
+            <h3 class="blog-post__cta-title">Need Health Advice?</h3>
+            <p class="blog-post__cta-desc">Chat with our AI health assistant in any language. Get doctor-verified prescriptions at affordable rates.</p>
+            <div class="blog-post__cta-actions">
+              <a href="https://app.ilaaj.ai" class="btn btn--hero-primary">Start Consultation</a>
+              <a href="../../blog.html" class="btn--outline">Read More Articles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <img src="../../assets/ilaaj-logo.jpg" alt="Ilaaj AI" class="footer__logo-img" width="36" height="36" loading="lazy">
+            <span class="footer__logo-text">Ilaaj AI</span>
+          </div>
+          <p class="footer__brand-desc">Pakistan's first AI-powered health platform. Chat about your symptoms in any language, get AI triage, and receive doctor-verified prescriptions &mdash; affordable and accessible, 24/7.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/ilaaj_ai/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.516 2.497 5.783 2.225 7.149 2.163 8.415 2.105 8.795 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.987 15.668 24 15.259 24 12s-.013-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324A6.162 6.162 0 0 0 12 5.838zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61588590745625" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+            <a href="https://x.com/ilaajai" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Product</h4>
+          <ul class="footer__links">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#how-it-works">How It Works</a></li>
+            <li><a href="/#doctors">Our Doctors</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="../../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../../terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="../../support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <p class="footer__contact-text">Questions or feedback?</p>
+          <a href="mailto:support@ilaaj.ai" class="footer__email">support@ilaaj.ai</a>
+          <p class="footer__emergency">For emergencies, call <strong>1122</strong> (Rescue)</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span class="footer-year"></span> Ilaaj AI. All rights reserved.</p>
+        <p class="footer__disclaimer">Ilaaj AI is for general health consultations and non-emergency medical guidance. For emergencies, call 1122 (Rescue) or visit the nearest hospital.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+    document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());
+  </script>
+  <!-- Tawk.to Live Chat (lazy-loaded) -->
+  <script>
+  (function() {
+    var tawkLoaded = false;
+    function loadTawk() {
+      if (tawkLoaded) return;
+      tawkLoaded = true;
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/69ce56b0127eae1c37be0e72/1jl70596p';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    }
+    document.addEventListener('scroll', loadTawk, {once: true});
+    document.addEventListener('click', loadTawk, {once: true});
+    document.addEventListener('mouseover', loadTawk, {once: true});
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Sentry: error tracking + session replay -->
+  <script src="https://js.sentry-cdn.com/defa6ca82daea4d4c49a8b69b87c53cc.min.js" crossorigin="anonymous"></script>
+  <script>
+    window.sentryOnLoad = function () {
+      Sentry.init({
+        integrations: [Sentry.replayIntegration({ maskAllText: false, blockAllMedia: false })],
+        tracesSampleRate: 0.1,
+        replaysSessionSampleRate: 0.1,
+        replaysOnErrorSampleRate: 1.0,
+      });
+    };
+  </script>
+  <!-- PostHog: product analytics + session replay -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_xjBQ5vUS7nTJz4jHta6d5dDE7jHdtFjFuqkxAJjvcFzo', { api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only', cross_subdomain_cookie: true });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XKTHF96');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1697266221447949');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1697266221447949&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pregnancy Week by Week — Complete Trimester Guide for Pakistan | Ilaaj AI</title>
+  <meta name="description" content="Pregnancy week by week guide for Pakistani women — first, second, and third trimester explained in detail. Symptoms, baby development, diet, warning signs, and when to see a gynecologist.">
+  <meta name="robots" content="noindex,follow" data-scheduled="1">
+  <meta name="keywords" content="pregnancy week by week Pakistan, pregnancy trimester guide, pregnancy symptoms Pakistan, antenatal care Pakistan, pregnancy diet Pakistan, gestational diabetes Pakistan">
+  <meta name="geo.region" content="PK">
+  <meta name="geo.placename" content="Pakistan">
+  <meta name="google-site-verification" content="8RtzwgVYowrMGF4E77jnKOX33seYEQTuXmxps2XkPxI">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.ilaaj.ai/blog/pregnancy-week-by-week-urdu">
+  <link rel="alternate" hreflang="ur-PK" href="https://www.ilaaj.ai/pk/blog/pregnancy-week-by-week-urdu" />
+  <link rel="alternate" hreflang="en" href="https://www.ilaaj.ai/blog/pregnancy-week-by-week-urdu" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ilaaj.ai/blog/pregnancy-week-by-week-urdu" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/logo/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/logo/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/logo/site.webmanifest" />
+
+  <!-- PWA / Mobile -->
+  <meta name="theme-color" content="#00897B">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="IlaajAI">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pregnancy Week by Week — Complete Trimester Guide for Pakistan | Ilaaj AI">
+  <meta property="og:description" content="Pregnancy week by week guide for Pakistani women — first, second, and third trimester explained in detail. Symptoms, baby development, diet, warning signs, and when to see a gynecologist.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ilaaj.ai/blog/pregnancy-week-by-week-urdu">
+  <meta property="og:image" content="https://res.cloudinary.com/df2jfaqf2/image/upload/f_auto,q_auto,w_1200/v1778419363/blog/pregnancy-week-by-week-urdu.jpg">
+  <meta property="og:image:alt" content="Pregnant woman holding belly">
+  <meta property="og:site_name" content="Ilaaj AI">
+  <meta property="og:locale" content="en_PK">
+  <meta property="article:published_time" content="2026-05-03T18:45:00.000Z">
+  <meta property="article:modified_time" content="2026-05-03T18:45:00.000Z">
+  <meta property="article:author" content="Ilaaj AI Medical Team">
+  <meta property="article:section" content="Pregnancy & Maternal Health">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ilaajai">
+  <meta name="twitter:creator" content="@ilaajai">
+  <meta name="twitter:title" content="Pregnancy Week by Week — Complete Trimester Guide for Pakistan | Ilaaj AI">
+  <meta name="twitter:description" content="Pregnancy week by week guide for Pakistani women — first, second, and third trimester explained in detail. Symptoms, baby development, diet, and warning signs.">
+  <meta name="twitter:image" content="https://res.cloudinary.com/df2jfaqf2/image/upload/f_auto,q_auto,w_1200/v1778419363/blog/pregnancy-week-by-week-urdu.jpg">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNTMD61HWL"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KNTMD61HWL');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="../../css/blog.css">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.ilaaj.ai/blog/pregnancy-week-by-week-urdu"
+  },
+  "headline": "Pregnancy Week by Week — Complete Trimester Guide for Pakistan",
+  "description": "Pregnancy week by week guide for Pakistani women — first, second, and third trimester explained in detail. Symptoms, baby development, diet, warning signs, and when to see a gynecologist.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://res.cloudinary.com/df2jfaqf2/image/upload/f_auto,q_auto,w_1200/v1778419363/blog/pregnancy-week-by-week-urdu.jpg"
+  },
+  "datePublished": "2026-05-03T18:45:00.000Z",
+  "dateModified": "2026-05-03T18:45:00.000Z",
+  "author": {
+    "@type": "Organization",
+    "name": "Ilaaj AI Medical Team",
+    "url": "https://www.ilaaj.ai/doctors"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ilaaj AI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.ilaaj.ai/assets/Icon-192.png"
+    }
+  },
+  "keywords": "pregnancy week by week Pakistan, pregnancy trimester guide, pregnancy symptoms Pakistan, antenatal care Pakistan, pregnancy diet Pakistan",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Ilaaj AI Blog",
+    "url": "https://www.ilaaj.ai/blog"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.ilaaj.ai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.ilaaj.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Pregnancy Week by Week — Complete Trimester Guide for Pakistan",
+      "item": "https://www.ilaaj.ai/blog/pregnancy-week-by-week-urdu"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the early signs of pregnancy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common early signs (weeks 4–8): missed period, morning sickness (nausea/vomiting — usually starts weeks 6–8), extreme fatigue, breast tenderness, frequent urination, mood swings, smell sensitivity, food cravings or aversions. A urine pregnancy test (from week 4 onward) confirms pregnancy. Doctor confirmation and first ultrasound at weeks 6–8. Symptoms vary between women."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I see a gynecologist during pregnancy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Book your first appointment as soon as pregnancy is confirmed. Recommended schedule: 1st trimester — every 4 weeks; 2nd trimester — every 4 weeks; 3rd trimester weeks 28–36 — every 2 weeks; week 36 onward — weekly. Key scans: NT scan (weeks 11–13), anomaly scan (weeks 18–22), glucose tolerance test (weeks 24–28). High-risk pregnancies require more frequent visits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I eat and avoid during pregnancy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Eat: whole grains (whole-wheat roti, brown rice), protein (eggs, low-mercury fish, chicken, lentils), calcium (milk, spinach), iron (spinach, well-cooked meat, dates), folate (green leafy vegetables), vitamin C fruits, healthy fats (almonds, walnuts). Avoid: raw meat/eggs/sushi, unpasteurized dairy, high-mercury fish, excess caffeine (max 200 mg/day), alcohol completely, smoking/paan/gutka, soft cheeses, liver, some herbal teas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which medications are safe during pregnancy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Generally safe: Paracetamol (Panadol — for fever/pain), iron supplements, calcium, folic acid, prenatal vitamins, Lactulose (for constipation), ranitidine/Risek (for acidity — on doctor's advice), penicillins (Augmentin) and cephalosporins (Velosef) for infections. Avoid completely: Brufen/Voltral/Ponstan (especially in 3rd trimester), high-dose Aspirin, Disprin, ACE inhibitors, ARBs, isotretinoin (Roaccutane). Always consult a doctor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the pregnancy warning signs that need immediate medical attention?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Go to a doctor or ER immediately if you experience: severe abdominal pain, heavy vaginal bleeding, severe headache, blurred vision, severe vomiting (unable to keep fluids down), high fever, burning urination, sudden severe swelling (face/hands), no fetal movement after 20 weeks, BP 140/90 or above (pre-eclampsia warning), regular contractions before 37 weeks (preterm labor), or water breaking before 37 weeks. These can indicate serious complications."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKTHF96"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar navbar--scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="/" class="navbar__brand">
+        <img src="../../assets/Icon-192.png" alt="Ilaaj AI" class="navbar__logo">
+        <span class="navbar__name">Ilaaj AI</span>
+      </a>
+      <div class="navbar__center" id="navLinks">
+        <a href="/#how-it-works" class="navbar__link">How It Works</a>
+        <a href="/#features" class="navbar__link">Features</a>
+        <a href="../../blog.html" class="navbar__link navbar__link--active">Blog</a>
+        <a href="/#faq" class="navbar__link">FAQ</a>
+      </div>
+      <div class="navbar__right">
+        <a href="https://app.ilaaj.ai" class="btn btn--primary btn--sm navbar__cta">
+          Get Free Advice
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile" id="mobileMenu">
+      <a href="/#how-it-works" class="navbar__mobile-link">How It Works</a>
+      <a href="/#features" class="navbar__mobile-link">Features</a>
+      <a href="../../blog.html" class="navbar__mobile-link">Blog</a>
+      <a href="/#faq" class="navbar__mobile-link">FAQ</a>
+      <a href="https://app.ilaaj.ai" class="btn btn--primary btn--full">Get Free Advice</a>
+    </div>
+  </nav>
+
+  <main>
+    <article class="blog-post">
+      <div class="container">
+        <a href="../../blog.html" class="blog-post__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Articles
+        </a>
+
+        <div class="blog-post__featured-image"><img src="https://res.cloudinary.com/df2jfaqf2/image/upload/f_auto,q_auto,w_1200/v1778419363/blog/pregnancy-week-by-week-urdu.jpg" alt="Pregnant woman holding belly"></div>
+
+        <div class="blog-post__author">
+          <img src="../../assets/Icon-192.png" alt="Ilaaj AI Medical Team" class="blog-post__author-avatar">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name">Ilaaj AI Medical Team</div>
+            <div class="blog-post__author-creds">PMDC-verified doctors reviewing every article</div>
+            <div class="blog-post__author-dates">Published: May 3, 2026 | Last reviewed: May 3, 2026</div>
+          </div>
+        </div>
+
+        <h1 class="blog-post__title">Pregnancy Week by Week — Complete Trimester Guide for Pakistan</h1>
+
+        <div class="blog-post__tldr">
+          <div class="blog-post__tldr-title">TL;DR — Key Takeaways</div>
+          <ul>
+            <li>Pregnancy is divided into 3 trimesters — approximately 12 weeks each</li>
+            <li>1st trimester: morning sickness, fatigue, fetal organs develop</li>
+            <li>2nd trimester: the "honeymoon phase" — feel baby movements</li>
+            <li>3rd trimester: rapid growth, prepare for delivery</li>
+            <li>Regular antenatal visits are essential throughout every trimester</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+<h2>The Complete Pregnancy Journey</h2>
+<p>A full pregnancy lasts 40 weeks (approximately 9 months) and is divided into 3 trimesters. Each trimester brings unique development for both mother and baby. In Pakistan, proper care, regular antenatal visits, and awareness are essential for a healthy pregnancy.</p>
+
+<table class="blog-post__quick-facts">
+  <caption>Pregnancy Trimesters Overview</caption>
+  <tbody>
+    <tr><td>1st Trimester</td><td>Weeks 1–12 (3 months)</td></tr>
+    <tr><td>2nd Trimester</td><td>Weeks 13–26 (3 months)</td></tr>
+    <tr><td>3rd Trimester</td><td>Weeks 27–40 (3+ months)</td></tr>
+    <tr><td>Full term</td><td>37–42 weeks</td></tr>
+    <tr><td>Pre-term</td><td>Before 37 weeks</td></tr>
+    <tr><td>Post-term</td><td>After 42 weeks</td></tr>
+  </tbody>
+</table>
+
+<h2>FIRST TRIMESTER (Weeks 1–12)</h2>
+
+<h3>Weeks 1–4 — Conception and Implantation</h3>
+<ul>
+<li>Count begins from the last menstrual period (LMP)</li>
+<li>Conception occurs at weeks 2–3</li>
+<li>Implantation at week 4</li>
+<li>Pregnancy test turns positive (HCG hormone)</li>
+<li>Symptoms often absent at this stage</li>
+</ul>
+
+<h3>Weeks 5–8 — Embryonic Development</h3>
+<p><strong>Mother's symptoms:</strong></p>
+<ul>
+<li>Missed period</li>
+<li>Morning sickness begins (usually weeks 6–8)</li>
+<li>Extreme fatigue</li>
+<li>Breast tenderness</li>
+<li>Frequent urination</li>
+<li>Mood swings</li>
+<li>Heightened smell sensitivity</li>
+<li>Food cravings or aversions</li>
+</ul>
+
+<p><strong>Baby's development:</strong></p>
+<ul>
+<li>Heartbeat begins (weeks 5–6)</li>
+<li>Brain, spine, and organs develop</li>
+<li>Limb buds appear</li>
+<li>Size: pea (week 6) → grape (week 8)</li>
+</ul>
+
+<h3>Weeks 9–12 — Fetal Stage Begins</h3>
+<p><strong>Mother's changes:</strong></p>
+<ul>
+<li>Morning sickness peaks then gradually eases</li>
+<li>Energy slowly returns</li>
+<li>Belly slightly visible (in slimmer women)</li>
+<li>First trimester ultrasound (NT scan)</li>
+</ul>
+
+<p><strong>Baby:</strong></p>
+<ul>
+<li>All major organs have formed</li>
+<li>Fingers and toes are separate</li>
+<li>Movements begin (mother cannot feel them yet)</li>
+<li>Size: lemon (week 12)</li>
+</ul>
+
+<h3>First Trimester Checklist:</h3>
+<ul>
+<li><strong>Confirm with gynecologist</strong> (urine test + ultrasound)</li>
+<li><strong>Start folic acid 400 mcg/day</strong> (prevents neural tube defects)</li>
+<li><strong>Iron and calcium</strong> supplements</li>
+<li><strong>Initial blood tests:</strong> CBC, blood group, HBsAg, HIV, syphilis, thyroid, blood sugar</li>
+<li><strong>NT scan</strong> (weeks 11–13) — Down's syndrome screening</li>
+<li><strong>Stop smoking and alcohol</strong></li>
+<li><strong>Reduce caffeine</strong> (max 200 mg/day)</li>
+<li><strong>Avoid raw foods</strong> (sushi, raw eggs)</li>
+<li><strong>Avoid cat litter</strong> (toxoplasmosis risk)</li>
+</ul>
+
+<h3>Common Concerns:</h3>
+<ul>
+<li><strong>Morning sickness:</strong> Ginger, small frequent meals, vitamin B6</li>
+<li><strong>Constipation:</strong> Fiber, water, walking</li>
+<li><strong>Acidity:</strong> Antacids (on doctor's advice)</li>
+<li><strong>Bleeding:</strong> Light spotting may be normal; heavy or bright red bleeding — see a doctor immediately</li>
+</ul>
+
+<h2>SECOND TRIMESTER (Weeks 13–26)</h2>
+
+<h3>Weeks 13–16 — The Honeymoon Phase Begins</h3>
+<p><strong>Mother's changes:</strong></p>
+<ul>
+<li>Morning sickness mostly gone</li>
+<li>Energy returns</li>
+<li>Belly becomes visible</li>
+<li>Maternity clothes needed</li>
+<li>Skin glow</li>
+<li>Constipation and indigestion may continue</li>
+</ul>
+
+<p><strong>Baby:</strong></p>
+<ul>
+<li>Hair and eyebrows develop</li>
+<li>External genitalia formed (gender can be seen on ultrasound)</li>
+<li>Bones harden</li>
+<li>Size: avocado (week 16)</li>
+</ul>
+
+<h3>Weeks 17–20 — Quickening (First Baby Movements)</h3>
+<ul>
+<li><strong>First baby movements</strong> (quickening) felt by mother</li>
+<li>Initially feels like flutters</li>
+<li>Anomaly scan / Level 2 ultrasound (weeks 18–20) — very important!</li>
+<li>Gender confirmed</li>
+<li>Round ligament pain (lower belly)</li>
+</ul>
+
+<h3>Weeks 21–26 — Significant Growth</h3>
+<p><strong>Mother:</strong></p>
+<ul>
+<li>Belly noticeably larger</li>
+<li>Stretch marks may appear</li>
+<li>Backache</li>
+<li>Leg cramps (calcium deficiency)</li>
+<li>Glucose challenge test (weeks 24–28) — screens for gestational diabetes</li>
+<li>Tdap vaccine (weeks 27–36)</li>
+</ul>
+
+<p><strong>Baby:</strong></p>
+<ul>
+<li>Lungs developing</li>
+<li>Eyes open</li>
+<li>Hearing develops — recognizes voices</li>
+<li>Sleep-wake cycles established</li>
+<li>Size: papaya (week 24)</li>
+<li>Viable outside uterus with intensive care (24+ weeks)</li>
+</ul>
+
+<h3>Second Trimester Checklist:</h3>
+<ul>
+<li><strong>Anomaly scan</strong> (weeks 18–22) — most important ultrasound of pregnancy</li>
+<li><strong>Glucose tolerance test</strong> (weeks 24–28)</li>
+<li><strong>Continue iron supplements</strong></li>
+<li><strong>Start antenatal classes</strong></li>
+<li><strong>Maternity belt</strong> for backache relief</li>
+<li><strong>Sleep on left side</strong> (improves blood flow)</li>
+<li><strong>Calcium intake</strong> (1000 mg/day)</li>
+</ul>
+
+<div class="blog-post__inline-cta">
+  <p>Need to consult a gynecologist at any stage of pregnancy? Female doctors are available 24/7 on Ilaaj AI — from home, in complete privacy.</p>
+  <a href="https://app.ilaaj.ai">Talk to a Gynecologist</a>
+</div>
+
+<h2>THIRD TRIMESTER (Weeks 27–40)</h2>
+
+<h3>Weeks 27–30 — Major Growth Phase</h3>
+<p><strong>Mother:</strong></p>
+<ul>
+<li>Significant fatigue returns</li>
+<li>Heartburn worsens</li>
+<li>Shortness of breath (uterus presses on diaphragm)</li>
+<li>Frequent urination</li>
+<li>Difficulty sleeping</li>
+<li>Stretch marks</li>
+<li>Swelling in hands and feet</li>
+<li>Carpal tunnel syndrome possible</li>
+<li>Braxton Hicks contractions (false labor)</li>
+</ul>
+
+<p><strong>Baby:</strong></p>
+<ul>
+<li>Brain developing rapidly</li>
+<li>Eyes open and close</li>
+<li>Fat layer building up</li>
+<li>Size: cauliflower (week 28)</li>
+</ul>
+
+<h3>Weeks 31–34 — Final Preparations</h3>
+<ul>
+<li>Baby moves to head-down position (in most cases)</li>
+<li>Lung surfactant developing</li>
+<li>Bones almost fully developed (skull remains soft for delivery)</li>
+<li>Pack hospital bag</li>
+<li>Finalize birth plan</li>
+<li>Select a pediatrician</li>
+</ul>
+
+<h3>Weeks 35–37 — Almost There</h3>
+<p><strong>Mother:</strong></p>
+<ul>
+<li>Pelvic pressure</li>
+<li>Lightening (baby drops lower into pelvis)</li>
+<li>Cervix may start dilating</li>
+<li>Mucus plug discharge</li>
+<li>Bowels more active</li>
+<li>"Nesting" instinct</li>
+</ul>
+
+<p><strong>Baby:</strong></p>
+<ul>
+<li>Classified as "early term"</li>
+<li>Brain growing rapidly</li>
+<li>Fat continues accumulating</li>
+<li>Position fixed</li>
+</ul>
+
+<h3>Weeks 38–40 — Full Term</h3>
+<ul>
+<li>Baby fully developed</li>
+<li>Average weight 3–3.5 kg</li>
+<li>Average length 50 cm</li>
+<li>Labor signs:
+<ul>
+<li>Regular contractions (every 5 minutes, lasting 1 minute, for 1 hour)</li>
+<li>Water breaking</li>
+<li>Bloody show</li>
+<li>Severe back pain</li>
+</ul>
+</li>
+</ul>
+
+<h3>Third Trimester Checklist:</h3>
+<ul>
+<li><strong>Bi-weekly visits</strong> weeks 28–36, then weekly thereafter</li>
+<li><strong>Group B Strep test</strong> (weeks 35–37)</li>
+<li><strong>Hospital tour</strong></li>
+<li><strong>Pack hospital bag</strong></li>
+<li><strong>Finalize birth plan</strong></li>
+<li><strong>Breastfeeding classes</strong></li>
+<li><strong>Select a pediatrician</strong></li>
+<li><strong>Newborn essentials</strong> (clothes, diapers, crib)</li>
+</ul>
+
+<h2>Warning Signs — See a Doctor Immediately</h2>
+
+<h3>During Any Trimester:</h3>
+<ul>
+<li>Severe abdominal pain</li>
+<li>Heavy vaginal bleeding</li>
+<li>Severe headache</li>
+<li>Blurred vision</li>
+<li>Severe vomiting (unable to keep fluids down)</li>
+<li>High fever</li>
+<li>Burning urination</li>
+<li>Sudden severe swelling</li>
+<li>No fetal movement (after 20 weeks)</li>
+</ul>
+
+<h3>Pre-eclampsia (Serious):</h3>
+<ul>
+<li>BP 140/90 or above</li>
+<li>Severe headache</li>
+<li>Vision changes</li>
+<li>Sudden swelling (face, hands)</li>
+<li>Pain in upper right abdomen</li>
+<li>Sudden weight gain</li>
+</ul>
+
+<h3>Preterm Labor (Before 37 Weeks):</h3>
+<ul>
+<li>Regular contractions (every 10 minutes)</li>
+<li>Pelvic pressure</li>
+<li>Lower back pain</li>
+<li>Change in vaginal discharge</li>
+<li>Water breaking</li>
+</ul>
+
+<h2>Diet and Lifestyle</h2>
+
+<h3>Foods to Eat:</h3>
+<ul>
+<li>Whole grains (whole-wheat roti, brown rice, oats)</li>
+<li>Protein: eggs, fish (low-mercury), chicken, lentils</li>
+<li>Calcium: milk, yogurt, spinach, broccoli</li>
+<li>Iron: spinach, well-cooked meat, dates</li>
+<li>Folate: green leafy vegetables</li>
+<li>Vitamin C: kinno, mosambi, capsicum</li>
+<li>Healthy fats: almonds, walnuts</li>
+</ul>
+
+<h3>Foods to Avoid:</h3>
+<ul>
+<li>Raw meat, sushi, raw eggs</li>
+<li>Unpasteurized dairy</li>
+<li>High-mercury fish (king mackerel, swordfish)</li>
+<li>Excess caffeine (max 200 mg/day)</li>
+<li>Alcohol (zero tolerance)</li>
+<li>Smoking, paan, gutka</li>
+<li>Soft cheeses (Brie, Camembert)</li>
+<li>Liver (very high in vitamin A)</li>
+<li>Some herbal teas</li>
+</ul>
+
+<h2>Pakistani Context</h2>
+
+<h3>Cultural Considerations:</h3>
+<ul>
+<li><strong>Family pressure</strong> regarding gender — gender selection is unethical and illegal in Pakistan</li>
+<li><strong>Joint family</strong> support is helpful, but family advice may conflict with medical guidance — follow your doctor</li>
+<li><strong>Traditional practices</strong> (post-natal heating, certain foods) — discuss all traditional practices with your gynecologist</li>
+<li><strong>Religious considerations:</strong> Fasting during Ramadan — doctor consultation is essential before deciding</li>
+<li><strong>Hospital choice:</strong> Government hospitals, private hospitals, or charity hospitals (Edhi, Bait-ul-Maal) are all available options</li>
+</ul>
+
+<h3>Common Issues in Pakistan:</h3>
+<ul>
+<li>Anemia (iron deficiency) — affects 50%+ of pregnant women in Pakistan</li>
+<li>Vitamin D deficiency</li>
+<li>Calcium deficiency</li>
+<li>Gestational diabetes (South Asians are at higher risk)</li>
+<li>Pre-eclampsia</li>
+</ul>
+
+<h2>Postpartum — A Brief Note</h2>
+<p>After delivery:</p>
+<ul>
+<li>Postpartum bleeding (lochia) — lasts 4–6 weeks</li>
+<li>Establishing breastfeeding</li>
+<li>Sleep deprivation</li>
+<li>Postpartum depression is possible (under-recognized in Pakistan — seek help if needed)</li>
+<li>Family planning consultation at 6 weeks postpartum</li>
+<li>Doctor follow-up at 6 weeks</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>Pregnancy is an <strong>amazing journey</strong> that becomes safer and more joyful with proper care, regular antenatal visits, a healthy diet, and awareness. Pregnant women in Pakistan need access to quality healthcare — clinic visits, lab tests, ultrasounds, and emergency support. <strong>Ilaaj AI</strong> has female gynecologists available 24/7 — for pregnancy concerns, regular check-ins, and emergency guidance, all from the comfort of home.</p>
+        </div>
+
+        <div class="blog-post__faq">
+          <h2>Frequently Asked Questions</h2>
+          <div class="blog-post__faq-item">
+            <h3>What are the early signs of pregnancy?</h3>
+            <p>Common early signs (weeks 4–8): missed period, morning sickness (nausea/vomiting — usually starts weeks 6–8), extreme fatigue, breast tenderness, frequent urination, mood swings, heightened smell sensitivity, food cravings or aversions. A urine pregnancy test (from week 4) confirms pregnancy. Doctor confirmation and first ultrasound at weeks 6–8. Symptoms vary between women.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>When should I see a gynecologist during pregnancy?</h3>
+            <p><strong>Book your first appointment as soon as pregnancy is confirmed.</strong> Recommended schedule: <strong>1st trimester</strong> — every 4 weeks, <strong>2nd trimester</strong> — every 4 weeks, <strong>3rd trimester weeks 28–36</strong> — every 2 weeks, <strong>week 36 onward</strong> — weekly. Key scans: NT scan (weeks 11–13), anomaly scan (weeks 18–22), glucose tolerance test (weeks 24–28). High-risk pregnancies require more frequent visits.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>What should I eat and avoid during pregnancy?</h3>
+            <p><strong>Eat:</strong> whole grains (whole-wheat roti, brown rice), protein (eggs, low-mercury fish, chicken, lentils), calcium (milk, spinach), iron (spinach, well-cooked meat, dates), folate (green leafy vegetables), vitamin C fruits, healthy fats (almonds, walnuts). <strong>Avoid:</strong> raw meat/eggs/sushi, unpasteurized dairy, high-mercury fish, excess caffeine (max 200 mg/day), alcohol completely, smoking/paan/gutka, soft cheeses, liver, some herbal teas.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>Which medications are safe during pregnancy?</h3>
+            <p><strong>Generally safe:</strong> Paracetamol (Panadol — for fever/pain), iron supplements, calcium, folic acid, prenatal vitamins, Lactulose (for constipation), ranitidine/Risek (for acidity — on doctor's advice), penicillins (Augmentin) and cephalosporins (Velosef) for infections. <strong>Avoid completely:</strong> Brufen/Voltral/Ponstan (especially in 3rd trimester), high-dose Aspirin, Disprin, ACE inhibitors, ARBs, isotretinoin (Roaccutane). Always consult a doctor first.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>What pregnancy warning signs need immediate medical attention?</h3>
+            <p><strong>Go to a doctor or ER immediately</strong> if you have: severe abdominal pain, heavy vaginal bleeding, severe headache, blurred vision, severe vomiting (cannot keep fluids down), high fever, burning urination, sudden severe swelling (face/hands), no fetal movement after 20 weeks, BP 140/90 or above (pre-eclampsia warning), regular contractions before 37 weeks (preterm labor), or water breaking before 37 weeks. These can all indicate serious complications.</p>
+          </div>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="blog-post__related">
+          <h2>Related Articles</h2>
+          <ul class="blog-post__related-list">
+            <li><a href="periods-irregular-ka-ilaj.html">Irregular Periods — Causes and Treatment</a></li>
+            <li><a href="calpol-syrup-dose.html">Calpol Syrup — Dosage Guide for Children</a></li>
+            <li><a href="../../blog.html">Browse All Health Articles &rarr;</a></li>
+          </ul>
+        </div>
+
+        <div class="blog-post__about">
+          <img src="../../assets/Icon-192.png" alt="Ilaaj AI" class="blog-post__about-logo">
+          <div class="blog-post__about-text">
+            <strong>About Ilaaj AI</strong>
+            <p>Ilaaj AI is Pakistan's first AI-powered health platform. Chat about your symptoms in Urdu or English, get AI-powered triage, and receive doctor-verified prescriptions — affordable and accessible, 24/7.</p>
+          </div>
+        </div>
+
+        <div class="blog-post__cta">
+          <div class="blog-post__cta-card">
+            <h3 class="blog-post__cta-title">Need Health Advice?</h3>
+            <p class="blog-post__cta-desc">Chat with our AI health assistant in any language. Get doctor-verified prescriptions at affordable rates.</p>
+            <div class="blog-post__cta-actions">
+              <a href="https://app.ilaaj.ai" class="btn btn--hero-primary">Try Ilaaj AI Now</a>
+              <a href="../../blog.html" class="btn--outline">Read More Articles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <img src="../../assets/ilaaj-logo.jpg" alt="Ilaaj AI" class="footer__logo-img" width="36" height="36" loading="lazy">
+            <span class="footer__logo-text">Ilaaj AI</span>
+          </div>
+          <p class="footer__brand-desc">Pakistan's first AI-powered health platform. Chat about your symptoms in any language, get AI triage, and receive doctor-verified prescriptions &mdash; affordable and accessible, 24/7.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/ilaaj_ai/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.516 2.497 5.783 2.225 7.149 2.163 8.415 2.105 8.795 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.987 15.668 24 15.259 24 12s-.013-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324A6.162 6.162 0 0 0 12 5.838zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61588590745625" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+            <a href="https://x.com/ilaajai" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Product</h4>
+          <ul class="footer__links">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#how-it-works">How It Works</a></li>
+            <li><a href="/#doctors">Our Doctors</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="../../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../../terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="../../support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <p class="footer__contact-text">Questions or feedback?</p>
+          <a href="mailto:support@ilaaj.ai" class="footer__email">support@ilaaj.ai</a>
+          <p class="footer__emergency">For emergencies, call <strong>1122</strong> (Rescue)</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span class="footer-year"></span> Ilaaj AI. All rights reserved.</p>
+        <p class="footer__disclaimer">Ilaaj AI is for general health consultations and non-emergency medical guidance. For emergencies, call 1122 (Rescue) or visit the nearest hospital.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+    document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());
+  </script>
+  <!-- Tawk.to Live Chat (lazy-loaded) -->
+  <script>
+  (function() {
+    var tawkLoaded = false;
+    function loadTawk() {
+      if (tawkLoaded) return;
+      tawkLoaded = true;
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/69ce56b0127eae1c37be0e72/1jl70596p';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    }
+    document.addEventListener('scroll', loadTawk, {once: true});
+    document.addEventListener('click', loadTawk, {once: true});
+    document.addEventListener('mouseover', loadTawk, {once: true});
+  })();
+  </script>
+</body>
+</html>
