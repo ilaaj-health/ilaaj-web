@@ -35,8 +35,8 @@ const today = new Date().toISOString().split('T')[0];
                   </div>
                   <div class="blog-card__body">
                     <span class="blog-card__date">{post.date}</span>
-                    <h2 class="blog-card__title">{post.title}</h2>
-                    <p class="blog-card__excerpt">{post.excerpt}</p>
+                    <h2 class="blog-card__title">{post.enTitle ?? post.title}</h2>
+                    <p class="blog-card__excerpt">{post.enExcerpt ?? post.excerpt}</p>
                     <span class="blog-card__read-more">
                       Read Article
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>

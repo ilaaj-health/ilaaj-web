@@ -19,7 +19,9 @@ try {
   const e = raw.lastIndexOf('</article>');
   if (s >= 0 && e > s) {
     articleHtml = raw.slice(raw.indexOf('>', s) + 1, e)
-      .replace(/href="\.\.\/blog\.html"/g, 'href="/pk/blog"');
+      .replace(/href="\.\.\/blog\.html"/g, 'href="/pk/blog"')
+      .replace(/src="\.\.\/assets\//g, 'src="/assets/')
+      .replace(/href="\.\.\/assets\//g, 'href="/assets/');
   }
 } catch {}
 

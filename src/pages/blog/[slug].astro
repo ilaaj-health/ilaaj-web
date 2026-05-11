@@ -11,24 +11,41 @@ export function getStaticPaths() {
 const { post } = Astro.props;
 
 let articleHtml = '';
+let hasEnVersion = false;
 try {
-  const raw = fs.readFileSync(
-    path.join(process.cwd(), 'blog', `${post.slug}.html`), 'utf-8'
-  );
+  const enPath = path.join(process.cwd(), 'blog', 'en', `${post.slug}.html`);
+  const raw = fs.readFileSync(enPath, 'utf-8');
   const s = raw.indexOf('<article');
   const e = raw.lastIndexOf('</article>');
   if (s >= 0 && e > s) {
     articleHtml = raw.slice(raw.indexOf('>', s) + 1, e)
-      .replace(/href="\.\.\/blog\.html"/g, 'href="/blog"');
+      .replace(/href="\.\.\/blog\.html"/g, 'href="/blog"')
+      .replace(/href="\.\.\/\.\.\/blog\.html"/g, 'href="/blog"');
+    hasEnVersion = true;
   }
 } catch {}
+
+if (!hasEnVersion) {
+  try {
+    const raw = fs.readFileSync(
+      path.join(process.cwd(), 'blog', `${post.slug}.html`), 'utf-8'
+    );
+    const s = raw.indexOf('<article');
+    const e = raw.lastIndexOf('</article>');
+    if (s >= 0 && e > s) {
+      articleHtml = raw.slice(raw.indexOf('>', s) + 1, e)
+        .replace(/href="\.\.\/blog\.html"/g, 'href="/blog"');
+    }
+  } catch {}
+}
 ---
 
 <BaseLayout
   lang="en"
-  title={`${post.title} | Ilaaj AI`}
-  description={post.excerpt}
-  canonical={`https://www.ilaaj.ai/blog/${post.slug}`}
+  title={`${hasEnVersion && post.enTitle ? post.enTitle : post.title} | Ilaaj AI`}
+  description={hasEnVersion && post.enExcerpt ? post.enExcerpt : post.excerpt}
+  canonical={hasEnVersion ? `https://www.ilaaj.ai/blog/${post.slug}` : `https://www.ilaaj.ai/pk/blog/${post.slug}`}
+  noindex={!hasEnVersion}
   ogImage={post.img}
 >
   <main>

@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Sentry: error tracking + session replay -->
+  <script src="https://js.sentry-cdn.com/defa6ca82daea4d4c49a8b69b87c53cc.min.js" crossorigin="anonymous"></script>
+  <script>
+    window.sentryOnLoad = function () {
+      Sentry.init({
+        integrations: [Sentry.replayIntegration({ maskAllText: false, blockAllMedia: false })],
+        tracesSampleRate: 0.1,
+        replaysSessionSampleRate: 0.1,
+        replaysOnErrorSampleRate: 1.0,
+      });
+    };
+  </script>
+  <!-- PostHog: product analytics + session replay -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_xjBQ5vUS7nTJz4jHta6d5dDE7jHdtFjFuqkxAJjvcFzo', { api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only', cross_subdomain_cookie: true });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XKTHF96');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1697266221447949');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1697266221447949&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ilaaj AI vs Marham vs Oladoc — Best Online Doctor App in Pakistan? | Ilaaj AI</title>
+  <meta name="description" content="Detailed comparison of Ilaaj AI, Marham, and Oladoc. Pricing, features, doctor availability, and which is the best online doctor app in Pakistan? An honest review.">
+  <meta name="robots" content="noindex,follow" data-scheduled="1">
+  <meta name="keywords" content="ilaaj vs marham, marham vs oladoc, oladoc vs ilaaj, best online doctor app pakistan, marham app review, oladoc review">
+  <meta name="geo.region" content="PK">
+  <meta name="geo.placename" content="Pakistan">
+  <meta name="google-site-verification" content="8RtzwgVYowrMGF4E77jnKOX33seYEQTuXmxps2XkPxI">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.ilaaj.ai/blog/ilaaj-vs-marham-vs-oladoc">
+  <link rel="alternate" hreflang="ur-PK" href="https://www.ilaaj.ai/pk/blog/ilaaj-vs-marham-vs-oladoc" />
+  <link rel="alternate" hreflang="en" href="https://www.ilaaj.ai/blog/ilaaj-vs-marham-vs-oladoc" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ilaaj.ai/blog/ilaaj-vs-marham-vs-oladoc" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/logo/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/logo/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/logo/site.webmanifest" />
+
+  <!-- PWA / Mobile -->
+  <meta name="theme-color" content="#00897B">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="IlaajAI">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ilaaj AI vs Marham vs Oladoc — Best Online Doctor App in Pakistan? | Ilaaj AI">
+  <meta property="og:description" content="Detailed comparison of Ilaaj AI, Marham, and Oladoc. Pricing, features, doctor availability, and which is the best online doctor app in Pakistan? An honest review.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ilaaj.ai/blog/ilaaj-vs-marham-vs-oladoc">
+  <meta property="og:image" content="https://res.cloudinary.com/df2jfaqf2/image/upload/f_auto,q_auto,w_1200/v1778419355/blog/ilaaj-vs-marham-vs-oladoc.jpg">
+  <meta property="og:image:alt" content="Mobile health apps comparison">
+  <meta property="og:site_name" content="Ilaaj AI">
+  <meta property="og:locale" content="en_PK">
+  <meta property="article:published_time" content="2026-05-03T17:45:00.000Z">
+  <meta property="article:modified_time" content="2026-05-03T17:45:00.000Z">
+  <meta property="article:author" content="Ilaaj AI Medical Team">
+  <meta property="article:section" content="Comparison">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ilaajai">
+  <meta name="twitter:creator" content="@ilaajai">
+  <meta name="twitter:title" content="Ilaaj AI vs Marham vs Oladoc — Best Online Doctor App in Pakistan? | Ilaaj AI">
+  <meta name="twitter:description" content="Detailed comparison of Ilaaj AI, Marham, and Oladoc. Pricing, features, doctor availability, and which is the best online doctor app in Pakistan? An honest review.">
+  <meta name="twitter:image" content="https://res.cloudinary.com/df2jfaqf2/image/upload/f_auto,q_auto,w_1200/v1778419355/blog/ilaaj-vs-marham-vs-oladoc.jpg">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNTMD61HWL"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KNTMD61HWL');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="../../css/blog.css">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.ilaaj.ai/blog/ilaaj-vs-marham-vs-oladoc"
+  },
+  "headline": "Ilaaj AI vs Marham vs Oladoc — Best Online Doctor App in Pakistan?",
+  "description": "Detailed comparison of Ilaaj AI, Marham, and Oladoc. Pricing, features, doctor availability, and which is the best online doctor app in Pakistan?",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://res.cloudinary.com/df2jfaqf2/image/upload/f_auto,q_auto,w_1200/v1778419355/blog/ilaaj-vs-marham-vs-oladoc.jpg"
+  },
+  "datePublished": "2026-05-03T17:45:00.000Z",
+  "dateModified": "2026-05-03T17:45:00.000Z",
+  "author": {
+    "@type": "Organization",
+    "name": "Ilaaj AI Medical Team",
+    "url": "https://www.ilaaj.ai/doctors"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ilaaj AI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.ilaaj.ai/assets/Icon-192.png"
+    }
+  },
+  "keywords": "ilaaj vs marham, marham vs oladoc, oladoc vs ilaaj, best online doctor app pakistan, marham app review, oladoc review",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Ilaaj AI Blog",
+    "url": "https://www.ilaaj.ai/blog"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.ilaaj.ai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.ilaaj.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Ilaaj AI vs Marham vs Oladoc — Best Online Doctor App in Pakistan?",
+      "item": "https://www.ilaaj.ai/blog/ilaaj-vs-marham-vs-oladoc"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which is the best online doctor app in Pakistan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on your use case. Ilaaj AI is best for common conditions, fast access, and affordability — AI assessment plus PMDC doctor verification in 5–15 minutes. Marham has the largest specialist directory, with a strong presence in Karachi. Oladoc leads in Lahore and Islamabad with a modern UX. The smart approach is to use all three depending on the situation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much cheaper is Ilaaj AI compared to Marham?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ilaaj AI is significantly cheaper than traditional consultation. Doctor consultations on Marham and Oladoc average Rs. 1,500–5,000. Ilaaj AI's flat-rate pricing is significantly lower. The AI assessment is free (payment is only required for prescription verification). For Pakistanis who prioritize affordability, Ilaaj AI is the most accessible option."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between Marham and Oladoc?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both are similar appointment-based doctor booking platforms. Marham: Pakistan's largest doctor network, strong brand recognition, dominant in Karachi, hospital partnerships (Fatima Memorial). Oladoc: Leader in Lahore and Islamabad, better modern UI/UX, more insurance integrations. Both offer excellent specialist breadth. Choose based on your city and specialist preference."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is online doctor consultation safe in Pakistan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, as long as you use verified platforms. Marham, Oladoc, and Ilaaj AI all verify PMDC-registered doctors. However, all of these are complementary to in-person care, not a replacement. They are safe and effective for common conditions, refills, and follow-ups. For true emergencies (chest pain, stroke, severe trauma), call 1122 or go to a hospital ER. Visit a clinic in person when a physical examination is needed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Ilaaj AI's unique selling point?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ilaaj AI has 3 unique advantages: 1) AI structured intake — structured assessment in 5–7 focused questions (on Marham and Oladoc you explain everything to the doctor yourself), 2) Roman Urdu native (other platforms are English-heavy), 3) 5–15 minute total time versus a 2–7 day appointment wait. The AI plus PMDC doctor verification combination is unique in Pakistan. Voice messages, family profiles, and 24/7 availability are additional benefits."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKTHF96"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar navbar--scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="/" class="navbar__brand">
+        <img src="../../assets/Icon-192.png" alt="Ilaaj AI" class="navbar__logo">
+        <span class="navbar__name">Ilaaj AI</span>
+      </a>
+      <div class="navbar__center" id="navLinks">
+        <a href="/#how-it-works" class="navbar__link">How It Works</a>
+        <a href="/#features" class="navbar__link">Features</a>
+        <a href="../../blog.html" class="navbar__link navbar__link--active">Blog</a>
+        <a href="/#faq" class="navbar__link">FAQ</a>
+      </div>
+      <div class="navbar__right">
+        <a href="https://app.ilaaj.ai" class="btn btn--primary btn--sm navbar__cta">
+          Get Free Advice
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile" id="mobileMenu">
+      <a href="/#how-it-works" class="navbar__mobile-link">How It Works</a>
+      <a href="/#features" class="navbar__mobile-link">Features</a>
+      <a href="../../blog.html" class="navbar__mobile-link">Blog</a>
+      <a href="/#faq" class="navbar__mobile-link">FAQ</a>
+      <a href="https://app.ilaaj.ai" class="btn btn--primary btn--full">Get Free Advice</a>
+    </div>
+  </nav>
+
+  <main>
+    <article class="blog-post">
+      <div class="container">
+        <a href="../../blog.html" class="blog-post__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Articles
+        </a>
+
+        <div class="blog-post__featured-image"><img src="https://res.cloudinary.com/df2jfaqf2/image/upload/f_auto,q_auto,w_1200/v1778419355/blog/ilaaj-vs-marham-vs-oladoc.jpg" alt="Mobile health apps comparison"></div>
+
+        <div class="blog-post__author">
+          <img src="../../assets/Icon-192.png" alt="Ilaaj AI Medical Team" class="blog-post__author-avatar">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name">Ilaaj AI Medical Team</div>
+            <div class="blog-post__author-creds">PMDC-verified doctors reviewing every article</div>
+            <div class="blog-post__author-dates">Published: May 3, 2026 | Last reviewed: May 3, 2026</div>
+          </div>
+        </div>
+
+        <h1 class="blog-post__title">Ilaaj AI vs Marham vs Oladoc — Best Online Doctor App in Pakistan?</h1>
+
+        <div class="blog-post__tldr">
+          <div class="blog-post__tldr-title">TL;DR — Key Takeaways</div>
+          <ul>
+            <li>Marham and Oladoc are traditional appointment-based platforms</li>
+            <li>Ilaaj AI's unique advantage: AI assessment plus doctor verification</li>
+            <li>Oladoc leads in Punjab, Marham is strongest in Karachi</li>
+            <li>Roman Urdu support is native only on Ilaaj AI</li>
+            <li>Choose based on pricing and your specific use case</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+<h2>The Online Doctor App Landscape in Pakistan</h2>
+<p>Pakistan's digital healthcare market is being shaped by three major players: <strong>Marham, Oladoc, and Ilaaj AI</strong>. Each has a different approach, different strengths, and different weaknesses. This honest comparison will help you make the right choice.</p>
+
+<table class="blog-post__quick-facts">
+  <caption>Quick Comparison</caption>
+  <tbody>
+    <tr><td>Marham</td><td>Largest doctor directory, traditional appointments</td></tr>
+    <tr><td>Oladoc</td><td>Punjab-focused doctor booking platform</td></tr>
+    <tr><td>Ilaaj AI</td><td>AI + PMDC doctor verification, Roman Urdu native</td></tr>
+  </tbody>
+</table>
+
+<h2>Marham — Detailed Review</h2>
+
+<h3>What It Is</h3>
+<p>Pakistan's largest online doctor directory and booking platform. 25,000+ doctors listed across multiple cities.</p>
+
+<h3>Strengths</h3>
+<ul>
+<li><strong>Very large doctor network</strong> — every specialty available</li>
+<li><strong>Brand recognition</strong> — TV ads, well established</li>
+<li><strong>Hospital partnerships</strong> — Fatima Memorial and others</li>
+<li><strong>App and website</strong> — well developed</li>
+<li><strong>Dominant in Karachi</strong></li>
+<li><strong>Doctor reviews and ratings</strong></li>
+<li><strong>Lab test integration</strong></li>
+</ul>
+
+<h3>Weaknesses</h3>
+<ul>
+<li><strong>Traditional model</strong> — book an appointment, wait for the doctor's slot</li>
+<li><strong>Wait times</strong> often 2–7 days for specialists</li>
+<li><strong>Pricing varies</strong> — some doctors are expensive</li>
+<li><strong>No AI assessment</strong> — you explain symptoms directly to the doctor yourself</li>
+<li><strong>English-heavy interface</strong></li>
+<li><strong>Quality inconsistency</strong> — different doctors deliver different quality</li>
+</ul>
+
+<h3>Best For</h3>
+<ul>
+<li>Booking a specific specialist appointment (cardiologist, gynecologist)</li>
+<li>Users based in Karachi</li>
+<li>Those who want to read doctor reviews before choosing</li>
+<li>Hospital follow-ups</li>
+</ul>
+
+<h2>Oladoc — Detailed Review</h2>
+
+<h3>What It Is</h3>
+<p>Oladoc is also a doctor booking platform — but stronger in Punjab (Lahore, Islamabad). Newer than Marham but growing rapidly.</p>
+
+<h3>Strengths</h3>
+<ul>
+<li><strong>Leader in Lahore and Islamabad</strong></li>
+<li><strong>Clean, modern app</strong></li>
+<li><strong>Detailed doctor profiles</strong></li>
+<li><strong>Online video consultations</strong> available</li>
+<li><strong>PCR/lab test booking</strong></li>
+<li><strong>Insurance partnerships</strong></li>
+<li><strong>Better UI/UX</strong> than Marham</li>
+</ul>
+
+<h3>Weaknesses</h3>
+<ul>
+<li><strong>Weaker presence in Karachi</strong></li>
+<li><strong>Same model as Marham</strong> — appointment-based, no AI</li>
+<li><strong>English-focused</strong></li>
+<li><strong>Pricing transparent but can be expensive</strong></li>
+<li><strong>No 24/7 instant access</strong> — appointments only</li>
+</ul>
+
+<h3>Best For</h3>
+<ul>
+<li>Users in Lahore and Islamabad</li>
+<li>Specialist appointments</li>
+<li>Those who prefer a modern UX</li>
+<li>Insurance integration</li>
+</ul>
+
+<h2>Ilaaj AI — Detailed Review</h2>
+
+<h3>What It Is</h3>
+<p>Pakistan's first AI-powered healthcare platform — a unique combination of AI structured assessment plus PMDC doctor verification.</p>
+
+<h3>Strengths</h3>
+<ul>
+<li><strong>Fast AI triage</strong> — structured assessment in 5–7 questions</li>
+<li><strong>PMDC doctor verification</strong> on every prescription</li>
+<li><strong>5–15 minutes total time</strong> (Marham/Oladoc require 2–7 days wait)</li>
+<li><strong>Roman Urdu native</strong> — Pakistan's realistic everyday language</li>
+<li><strong>Voice message support</strong></li>
+<li><strong>Available 24/7</strong> — no appointment needed</li>
+<li><strong>Significantly cheaper</strong> than traditional consultation</li>
+<li><strong>Family profiles built in</strong></li>
+<li><strong>Privacy-friendly</strong> for sensitive topics</li>
+</ul>
+
+<h3>Weaknesses</h3>
+<ul>
+<li><strong>Limited specialist scope</strong> — best for common conditions; complex cases need in-person care</li>
+<li><strong>Newer brand</strong> — less recognition than Marham/Oladoc</li>
+<li><strong>No physical examination</strong></li>
+<li><strong>No imaging interpretation</strong></li>
+<li><strong>Not for emergencies</strong> (no platform is)</li>
+</ul>
+
+<h3>Best For</h3>
+<ul>
+<li>Acute common conditions (fever, headache, stomach pain, cough)</li>
+<li>Chronic disease refills (blood pressure, diabetes, thyroid)</li>
+<li>After-hours, weekend, and late-night issues</li>
+<li>Roman Urdu and Urdu speakers</li>
+<li>Family healthcare (multiple members)</li>
+<li>Privacy-sensitive consultations (mental health, gynecology, sexual health)</li>
+<li>Those who prioritize affordability</li>
+<li>Rural users without clinic access</li>
+</ul>
+
+<div class="blog-post__inline-cta">
+  <p>Try Ilaaj AI now — your first AI doctor consultation, from home.</p>
+  <a href="https://app.ilaaj.ai">Try Ilaaj AI Free</a>
+</div>
+
+<h2>Side-by-Side Comparison Table</h2>
+
+<table class="blog-post__quick-facts">
+  <thead><tr><td><strong>Feature</strong></td><td><strong>Marham</strong></td><td><strong>Oladoc</strong></td><td><strong>Ilaaj AI</strong></td></tr></thead>
+  <tbody>
+    <tr><td>Time to consultation</td><td>2–7 days</td><td>1–5 days</td><td>5–15 min</td></tr>
+    <tr><td>AI assessment</td><td>No</td><td>No</td><td>Yes</td></tr>
+    <tr><td>Doctor verification</td><td>Yes</td><td>Yes</td><td>Yes (PMDC)</td></tr>
+    <tr><td>Roman Urdu native</td><td>Limited</td><td>Limited</td><td>Yes</td></tr>
+    <tr><td>Voice messages</td><td>No</td><td>No</td><td>Yes</td></tr>
+    <tr><td>24/7 instant access</td><td>No</td><td>No</td><td>Yes</td></tr>
+    <tr><td>Family profiles</td><td>Limited</td><td>Limited</td><td>Built in</td></tr>
+    <tr><td>Doctor network size</td><td>Largest</td><td>Large</td><td>Curated</td></tr>
+    <tr><td>City coverage</td><td>All major cities</td><td>Punjab focus</td><td>Nationwide</td></tr>
+    <tr><td>Specialist breadth</td><td>Excellent</td><td>Excellent</td><td>Common conditions</td></tr>
+    <tr><td>Price (avg)</td><td>Rs. 1,500–5,000</td><td>Rs. 1,500–5,000</td><td>Significantly less</td></tr>
+    <tr><td>Insurance</td><td>Some</td><td>Yes</td><td>Limited</td></tr>
+    <tr><td>App quality</td><td>Good</td><td>Excellent</td><td>Excellent</td></tr>
+    <tr><td>Best for</td><td>Specialists, hospitals</td><td>Lahore/ISB urban</td><td>Common conditions, speed</td></tr>
+  </tbody>
+</table>
+
+<h2>Use Case Recommendations</h2>
+
+<h3>"I have a fever and it's late at night":</h3>
+<p><strong>Ilaaj AI</strong> — 24/7, fast, affordable.</p>
+
+<h3>"I have chest pain":</h3>
+<p><strong>1122 (Rescue)</strong> — this is an emergency; no app is appropriate.</p>
+
+<h3>"I need a cardiologist consultation":</h3>
+<p><strong>Marham or Oladoc</strong> — broad specialist network.</p>
+
+<h3>"My child has had a cough for 3 days":</h3>
+<p><strong>Ilaaj AI</strong> — pediatric common condition, fast guidance.</p>
+
+<h3>"I'm in Lahore and need a dermatology clinic":</h3>
+<p><strong>Oladoc</strong> — strong dermatologist network in Lahore.</p>
+
+<h3>"I need a blood pressure medication refill":</h3>
+<p><strong>Ilaaj AI</strong> — fast refill, no clinic visit needed.</p>
+
+<h3>"I need a second opinion on surgery":</h3>
+<p><strong>Marham or Oladoc</strong> — established specialists.</p>
+
+<h3>"Period issues — I need a private consultation with a female doctor":</h3>
+<p><strong>Ilaaj AI</strong> — privacy, female doctors, fast access.</p>
+
+<h3>"Mental health crisis":</h3>
+<p><strong>Umang 1166</strong> for immediate help, then <strong>Ilaaj AI</strong> for follow-up psychiatrist consultation.</p>
+
+<h3>"Hospital follow-up after surgery":</h3>
+<p><strong>Marham</strong> — hospital partnerships.</p>
+
+<h2>Pricing Transparency</h2>
+<p>Healthcare pricing in Pakistan is often opaque. All three platforms try to be transparent:</p>
+<ul>
+<li><strong>Marham:</strong> Consultation fee shown on doctor profiles; range is very wide (Rs. 500–5,000)</li>
+<li><strong>Oladoc:</strong> Similar transparent fee display</li>
+<li><strong>Ilaaj AI:</strong> Flat-rate pricing, all-inclusive, significantly cheaper than a traditional clinic visit</li>
+</ul>
+
+<h2>Doctor Quality</h2>
+<p>All platforms verify PMDC registration. However:</p>
+<ul>
+<li><strong>Marham/Oladoc:</strong> User reviews available, but individual doctor experience varies</li>
+<li><strong>Ilaaj AI:</strong> Curated PMDC doctor pool; AI's standardized intake adds consistency to the quality of each assessment</li>
+</ul>
+
+<h2>The Combined Approach (Smart Use)</h2>
+<p>The smart move for Pakistanis is to use all three apps <strong>in combination</strong>:</p>
+<ul>
+<li><strong>Ilaaj AI</strong> for: 24/7 acute issues, refills, common conditions, fast access</li>
+<li><strong>Marham/Oladoc</strong> for: Specialist appointments, surgery consultations, hospital follow-ups</li>
+<li><strong>1122</strong> for: True emergencies</li>
+</ul>
+
+<h2>Future Outlook</h2>
+<p>Pakistan's digital healthcare market is growing:</p>
+<ul>
+<li><strong>Marham/Oladoc:</strong> Specialist marketplace will continue to expand</li>
+<li><strong>Ilaaj AI:</strong> AI-powered fast care is expanding</li>
+<li><strong>Insurance integration:</strong> All platforms are working on this</li>
+<li><strong>Government initiatives:</strong> Digital health in Punjab and Sindh — public-private possibilities ahead</li>
+</ul>
+
+<h2>Conclusion — Honest Recommendation</h2>
+<p>In Pakistan, <strong>there is no single "best" platform</strong> — each has a different use case:</p>
+
+<ul>
+<li><strong>Ilaaj AI:</strong> Fast, affordable, AI + doctor — best for everyday health needs and common conditions</li>
+<li><strong>Marham:</strong> Best for finding specific specialists across Pakistan, especially in Karachi</li>
+<li><strong>Oladoc:</strong> Best for Lahore and Islamabad specialist appointments with a modern UX</li>
+</ul>
+
+<p>Smart Pakistanis use all three depending on the situation. But for 80% of common health issues (fever, headache, stomach pain, cough, period problems, refills), <strong>Ilaaj AI</strong> is the most efficient and affordable option. <strong>Try it today</strong>.</p>
+        </div>
+
+        <div class="blog-post__faq">
+          <h2>Frequently Asked Questions</h2>
+          <div class="blog-post__faq-item">
+            <h3>Which is the best online doctor app in Pakistan?</h3>
+            <p>It depends on your use case. <strong>Ilaaj AI</strong> is best for common conditions, fast access, and affordability — AI assessment plus PMDC doctor verification in 5–15 minutes. <strong>Marham</strong> has the largest specialist directory, with a strong presence in Karachi. <strong>Oladoc</strong> leads in Lahore and Islamabad with a modern UX. The smart approach is to use all three depending on the situation.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>How much cheaper is Ilaaj AI compared to Marham?</h3>
+            <p>Ilaaj AI is <strong>significantly cheaper</strong> than traditional consultation. Doctor consultations on Marham and Oladoc average Rs. 1,500–5,000. Ilaaj AI's flat-rate pricing is significantly lower. The AI assessment is free (payment is only required for prescription verification). For Pakistanis who prioritize affordability, Ilaaj AI is the most accessible option.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>What is the difference between Marham and Oladoc?</h3>
+            <p>Both are similar appointment-based doctor booking platforms. <strong>Marham</strong>: Pakistan's largest doctor network, strong brand recognition, dominant in Karachi, hospital partnerships (Fatima Memorial). <strong>Oladoc</strong>: Leader in Lahore and Islamabad, better modern UI/UX, more insurance integrations. Both offer excellent specialist breadth. Choose based on your city and specialist preference.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>Is online doctor consultation safe in Pakistan?</h3>
+            <p>Yes, as long as you use verified platforms. Marham, Oladoc, and Ilaaj AI all verify PMDC-registered doctors. However, all of these are <strong>complementary to in-person care</strong>, not a replacement. They are safe and effective for common conditions, refills, and follow-ups. For <strong>true emergencies</strong> (chest pain, stroke, severe trauma), call 1122 or go to a hospital ER. Visit a clinic in person when a physical examination is needed.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>What is Ilaaj AI's unique selling point?</h3>
+            <p>Ilaaj AI has <strong>3 unique advantages</strong>: 1) AI structured intake — structured assessment in 5–7 focused questions (on Marham and Oladoc you explain everything to the doctor yourself), 2) Roman Urdu native (other platforms are English-heavy), 3) 5–15 minute total time versus a 2–7 day appointment wait. The AI plus PMDC doctor verification combination is unique in Pakistan. Voice messages, family profiles, and 24/7 availability are additional benefits.</p>
+          </div>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="blog-post__related">
+          <h2>Related Articles</h2>
+          <ul class="blog-post__related-list">
+            <li><a href="ai-doctor-pakistan.html">AI Doctor Pakistan — How Ilaaj Works</a></li>
+            <li><a href="ai-prescription-pakistan.html">AI Prescription Pakistan</a></li>
+            <li><a href="../../blog.html">Browse All Health Articles &rarr;</a></li>
+          </ul>
+        </div>
+
+        <div class="blog-post__about">
+          <img src="../../assets/Icon-192.png" alt="Ilaaj AI" class="blog-post__about-logo">
+          <div class="blog-post__about-text">
+            <strong>About Ilaaj AI</strong>
+            <p>Ilaaj AI is Pakistan's first AI-powered health platform. Chat about your symptoms in Urdu or English, get AI-powered triage, and receive doctor-verified prescriptions — affordable and accessible, 24/7.</p>
+          </div>
+        </div>
+
+        <div class="blog-post__cta">
+          <div class="blog-post__cta-card">
+            <h3 class="blog-post__cta-title">See the Difference Yourself</h3>
+            <p class="blog-post__cta-desc">Try Pakistan's fastest AI doctor consultation — free assessment, PMDC-verified prescription in minutes. No appointment needed.</p>
+            <div class="blog-post__cta-actions">
+              <a href="https://app.ilaaj.ai" class="btn btn--hero-primary">Try Ilaaj AI Now</a>
+              <a href="../../blog.html" class="btn--outline">Read More Articles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <img src="../../assets/ilaaj-logo.jpg" alt="Ilaaj AI" class="footer__logo-img" width="36" height="36" loading="lazy">
+            <span class="footer__logo-text">Ilaaj AI</span>
+          </div>
+          <p class="footer__brand-desc">Pakistan's first AI-powered health platform. Chat about your symptoms in any language, get AI triage, and receive doctor-verified prescriptions &mdash; affordable and accessible, 24/7.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/ilaaj_ai/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.516 2.497 5.783 2.225 7.149 2.163 8.415 2.105 8.795 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.987 15.668 24 15.259 24 12s-.013-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324A6.162 6.162 0 0 0 12 5.838zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61588590745625" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+            <a href="https://x.com/ilaajai" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Product</h4>
+          <ul class="footer__links">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#how-it-works">How It Works</a></li>
+            <li><a href="/#doctors">Our Doctors</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="../../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../../terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="../../support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <p class="footer__contact-text">Questions or feedback?</p>
+          <a href="mailto:support@ilaaj.ai" class="footer__email">support@ilaaj.ai</a>
+          <p class="footer__emergency">For emergencies, call <strong>1122</strong> (Rescue)</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span class="footer-year"></span> Ilaaj AI. All rights reserved.</p>
+        <p class="footer__disclaimer">Ilaaj AI is for general health consultations and non-emergency medical guidance. For emergencies, call 1122 (Rescue) or visit the nearest hospital.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+    document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());
+  </script>
+  <!-- Tawk.to Live Chat (lazy-loaded) -->
+  <script>
+  (function() {
+    var tawkLoaded = false;
+    function loadTawk() {
+      if (tawkLoaded) return;
+      tawkLoaded = true;
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/69ce56b0127eae1c37be0e72/1jl70596p';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    }
+    document.addEventListener('scroll', loadTawk, {once: true});
+    document.addEventListener('click', loadTawk, {once: true});
+    document.addEventListener('mouseover', loadTawk, {once: true});
+  })();
+  </script>
+</body>
+</html>
