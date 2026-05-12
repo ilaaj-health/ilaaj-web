@@ -272,27 +272,29 @@ ul {
   transform: none;
 }
 
-.js-ready .reveal {
+/* Only off-screen elements get this class via JS — in-viewport content stays visible for crawlers */
+.reveal-pending {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
-.reveal--delay-1 {
+.reveal--delay-1.reveal-pending {
   transition-delay: 0.15s;
 }
 
-.reveal--delay-2 {
+.reveal--delay-2.reveal-pending {
   transition-delay: 0.3s;
 }
 
-.reveal--delay-3 {
+.reveal--delay-3.reveal-pending {
   transition-delay: 0.45s;
 }
 
 .reveal.revealed {
   opacity: 1;
   transform: translateY(0);
+  transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
 /* ==================== NAVBAR ==================== */
