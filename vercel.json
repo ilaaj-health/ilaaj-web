@@ -17,7 +17,7 @@
       "permanent": false
     },
     {
-      "source": "/:path((?!pk|ur|_astro|_vercel|api|assets|favicon|robots|sitemap).+)",
+      "source": "/:path((?!pk|ur|_astro|_vercel|api|assets|favicon|apple-touch-icon|Icon-192|manifest|robots|sitemap|llms).+)",
       "has": [{ "type": "header", "key": "x-vercel-ip-country", "value": "PK" }],
       "missing": [{ "type": "cookie", "key": "ilaaj-lang-manual" }],
       "destination": "/pk/:path",
@@ -43,7 +43,7 @@
         { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
         { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" },
         { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" },
-        { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://connect.facebook.net https://us.i.posthog.com https://browser.sentry-cdn.com https://js.sentry-cdn.com https://embed.tawk.to https://va.tawk.to; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https: blob:; connect-src 'self' https://us.i.posthog.com https://ingest.sentry.io https://www.google-analytics.com https://region1.google-analytics.com https://connect.facebook.net https://api.tawk.to https://va.tawk.to wss://ss.tawk.to; frame-src https://www.googletagmanager.com https://embed.tawk.to; worker-src blob:;" }
+        { "key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://connect.facebook.net https://us.i.posthog.com https://us-assets.i.posthog.com https://browser.sentry-cdn.com https://js.sentry-cdn.com https://www.clarity.ms https://embed.tawk.to https://va.tawk.to https://static-v.tawk.to; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https: blob:; connect-src 'self' https://us.i.posthog.com https://us-assets.i.posthog.com https://ingest.sentry.io https://*.ingest.us.sentry.io https://browser.sentry-cdn.com https://js.sentry-cdn.com https://www.google-analytics.com https://region1.google-analytics.com https://connect.facebook.net https://www.facebook.com https://graph.facebook.com https://www.clarity.ms https://*.clarity.ms https://api.tawk.to https://embed.tawk.to https://va.tawk.to https://*.tawk.to wss://ss.tawk.to wss://*.tawk.to; frame-src https://www.googletagmanager.com https://embed.tawk.to https://va.tawk.to; worker-src blob:;" }
       ]
     },
     {
