@@ -1,0 +1,31 @@
+
+> ilaaj-web@1.0.0 dev
+> astro dev --host 127.0.0.1
+
+[2m13:10:04[22m [34m[types][39m Generated [2m2ms[22m
+[2m13:10:04[22m [34m[content][39m Syncing content
+[2m13:10:04[22m [34m[content][39m Astro config changed
+[2m13:10:04[22m [34m[content][39m Clearing content store
+[2m13:10:04[22m [34m[content][39m Synced content
+[2m13:10:04[22m [34m[vite][39m Re-optimizing dependencies because vite config has changed
+[2m13:10:04[22m [34m[vite][39m Port 4321 is in use, trying another one...
+
+[42m[1m astro [22m[49m [32mv5.18.1[39m [2mready in[22m 1017 [2mms[22m
+
+[2m┃[22m Local    [36mhttp://127.0.0.1:4322/[39m
+
+[2m13:10:05[22m [32mwatching for file changes...[39m
+
+[43m[30m update [39m[49m [33m▶ New version of Astro available: 6.3.5[39m
+  Run [36mnpx @astrojs/upgrade[39m to update
+
+[2m13:10:23[22m [34m[200][39m / [2m135ms[22m
+[2m13:10:31[22m [34m[200][39m / [2m23ms[22m
+[2m13:10:32[22m [34m[200][39m / [2m11ms[22m
+[2m13:10:35[22m [34m[200][39m /pk [2m12ms[22m
+[2m13:10:42[22m [34m[200][39m / [2m14ms[22m
+[2m13:10:43[22m [34m[200][39m /pk [2m15ms[22m
+[2m13:10:48[22m [34m[200][39m /pk [2m22ms[22m
+[2m13:29:47[22m [34m[200][39m / [2m40ms[22m
+[2m13:29:48[22m [34m[200][39m /pk [2m18ms[22m
+[2m15:09:26[22m [34m[200][39m /pk [2m306ms[22m
