@@ -22,6 +22,7 @@
   border-radius: 9999px; background: #ccfbf1; color: #0f766e;
   font-size: 11px; letter-spacing: 0.1em; font-weight: 700;
   text-transform: uppercase; margin-bottom: 1.5rem;
+  cursor: default; user-select: none;
 }
 .hero-title {
   font-family: 'Space Grotesk', Inter, system-ui, sans-serif;
