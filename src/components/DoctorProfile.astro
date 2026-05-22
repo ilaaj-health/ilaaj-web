@@ -1,5 +1,6 @@
 ---
 import type { Doctor } from '../data/doctors';
+import { bios } from '../data/doctor-bios';
 import type { Lang } from '../i18n/utils';
 import '../styles/doctor-profile.css';
 
@@ -7,18 +8,12 @@ interface Props { doctor: Doctor; lang?: Lang; }
 const { doctor: d, lang = 'en' } = Astro.props;
 const isPk = lang === 'pk';
 
-const specInfo: Record<string, { en: string; pk: string }> = {
-  'General Physician': { en: 'common illnesses, fever, infections, and everyday chronic-disease management', pk: 'aam bimariyon, bukhar, infections aur rozmarra chronic conditions' },
-  'General Practitioner': { en: 'primary care, preventive health, and management of common medical conditions', pk: 'primary care, ehtiyaati sehat aur aam medical masail' },
-  'Gynaecologist': { en: "women's health, pregnancy care, menstrual and reproductive concerns", pk: 'khawateen ki sehat, hamal, aur menstrual masail' },
-  'Dermatologist': { en: 'skin, hair, acne, and a wide range of dermatological conditions', pk: 'jild, baal, acne aur jild ke deegar masail' },
-};
-const info = specInfo[d.spec] ?? specInfo['General Practitioner'];
-const treats = isPk ? info.pk : info.en;
-
-const bio = isPk
-  ? `${d.name} aik PMDC-registered ${d.spec} hain jinke paas ${d.exp} ka clinical tajurba hai. Yeh ${treats} mein madad farmate hain. Ilaaj AI par yeh patient cases review aur verify karte hain — taake har prescription kisi licensed doctor se approved ho.`
-  : `${d.name} is a PMDC-registered ${d.spec} with ${d.exp} of clinical experience, helping patients with ${treats}. On Ilaaj AI, ${d.name.split(' ')[0]} ${d.name.split(' ')[1] ?? ''} reviews and verifies patient cases so every prescription is approved by a licensed physician.`;
+const custom = bios[d.slug];
+const bio = custom
+  ? (isPk ? custom.pk : custom.en)
+  : (isPk
+      ? `${d.name} aik PMDC-registered ${d.spec} hain jinke paas ${d.exp} ka clinical tajurba hai. Ilaaj AI par yeh patient cases review aur verify karte hain — taake har prescription kisi licensed doctor se approved ho.`
+      : `${d.name} is a PMDC-registered ${d.spec} with ${d.exp} of clinical experience. On Ilaaj AI ${d.name} reviews and verifies patient cases so every prescription is approved by a licensed physician.`);
 
 const chips = [...d.qual.split(',').map((q) => q.trim()), `${d.exp} Exp.`];
 const t = isPk
