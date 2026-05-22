@@ -29,8 +29,8 @@ const listUrl = isPk ? '/pk/doctors' : '/doctors';
       <div class="docp__head">
         <img src={d.photoLg} alt={d.name} class="docp__photo" width="160" height="160" loading="eager" />
         <div class="docp__head-info">
-          <span class="section-header__tag">{t.verified}</span>
-          <h1 class="docp__name">{d.name}</h1>
+          <span class="docp__verified">{t.verified}</span>
+          <h1 class="docp__name">{d.name} <svg class="docp__check" width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="var(--primary-600)"/><path d="M7 12l3 3 7-7" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></h1>
           <p class="docp__spec">{d.spec}</p>
           <div class="docp__chips">{chips.map((c) => <span class="dp-chip">{c}</span>)}</div>
           <a href="https://app.ilaaj.ai/chat" class="btn btn--hero-primary docp__cta">{t.book}</a>

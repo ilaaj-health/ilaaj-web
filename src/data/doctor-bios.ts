@@ -2,9 +2,9 @@
 export interface Bio { en: string; pk: string; }
 
 export const bios: Record<string, Bio> = {
-  'dr-m-mujeed-ur-rehman': {
-    en: 'Dr. M Mujeed ur Rehman is a PMDC-registered General Physician (MBBS, RMP) with 5 years of frontline clinical practice. He focuses on accurate first-contact diagnosis for everyday complaints — fevers, infections, body aches and seasonal illness — and is known for explaining conditions in simple, reassuring language. On Ilaaj AI he reviews each patient case and signs off prescriptions personally.',
-    pk: 'Dr. M Mujeed ur Rehman aik PMDC-registered General Physician (MBBS, RMP) hain jinke paas 5 saal ka clinical tajurba hai. Woh bukhar, infections, jismani dard aur mausmi bimariyon ki sahih tashkhees par tawajjo dete hain aur mareezon ko aasan zubaan mein samjhate hain. Ilaaj AI par har prescription woh khud review kar ke approve karte hain.',
+  'dr-m-mujeeb-ur-rehman': {
+    en: 'Dr. M Mujeeb ur Rehman is a PMDC-registered General Physician (MBBS, RMP) with 5 years of frontline clinical practice. He focuses on accurate first-contact diagnosis for everyday complaints — fevers, infections, body aches and seasonal illness — and is known for explaining conditions in simple, reassuring language. On Ilaaj AI he reviews each patient case and signs off prescriptions personally.',
+    pk: 'Dr. M Mujeeb ur Rehman aik PMDC-registered General Physician (MBBS, RMP) hain jinke paas 5 saal ka clinical tajurba hai. Woh bukhar, infections, jismani dard aur mausmi bimariyon ki sahih tashkhees par tawajjo dete hain aur mareezon ko aasan zubaan mein samjhate hain. Ilaaj AI par har prescription woh khud review kar ke approve karte hain.',
   },
   'dr-maria-mohsin': {
     en: 'Dr. Maria Mohsin is an MBBS General Physician with 4 years of experience managing common adult and family-health concerns. She takes a careful, patient-first approach to fever, flu, stomach issues and minor infections, and is mindful about prescribing antibiotics only when truly needed. Every prescription she approves on Ilaaj AI is doctor-verified.',

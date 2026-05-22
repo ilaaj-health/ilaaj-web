@@ -15,7 +15,7 @@ function opt(url: string, w: number) {
 const C = 'https://res.cloudinary.com/dpaz2mhy6/image/upload/';
 
 const raw = [
-  { name: 'Dr. M Mujeed ur Rehman', spec: 'General Physician', qual: 'MBBS, RMP', exp: '5 Yrs', img: 'v1774861881/l2qbg2ewfvhjvg2rmxsl.jpg' },
+  { name: 'Dr. M Mujeeb ur Rehman', spec: 'General Physician', qual: 'MBBS, RMP', exp: '5 Yrs', img: 'v1774861881/l2qbg2ewfvhjvg2rmxsl.jpg' },
   { name: 'Dr. Maria Mohsin', spec: 'General Physician', qual: 'MBBS', exp: '4 Yrs', img: 'v1774970468/n6aksbu49oalzyjl4qzg.jpg' },
   { name: 'Dr. Sikandar Zulfiqar', spec: 'General Physician', qual: 'MBBS', exp: '4 Yrs', img: 'v1774955149/edxuypgskvkedpdq5dqd.jpg' },
   { name: 'Dr. Tabinda', spec: 'General Physician', qual: 'MBBS', exp: '4 Yrs', img: 'v1775058269/xetfs13oxme0bkvqpnpj.jpg' },
