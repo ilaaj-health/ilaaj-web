@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import DoctorProfile from '../../../components/DoctorProfile.astro';
+import { doctors } from '../../../data/doctors';
+
+export function getStaticPaths() {
+  return doctors.map((d) => ({ params: { slug: d.slug }, props: { doctor: d } }));
+}
+
+const { doctor: d } = Astro.props;
+const url = `https://www.ilaaj.ai/pk/doctors/${d.slug}`;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Physician', '@id': url, name: d.name, medicalSpecialty: d.spec,
+      hasCredential: d.qual, image: d.photoLg, url,
+      worksFor: { '@id': 'https://www.ilaaj.ai/#organization' },
+      areaServed: 'PK', availableService: { '@type': 'MedicalProcedure', name: 'Online Consultation' },
+    },
+    {
+      '@type': 'BreadcrumbList', itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Doctors', item: 'https://www.ilaaj.ai/pk/doctors' },
+        { '@type': 'ListItem', position: 2, name: d.name, item: url },
+      ],
+    },
+  ],
+};
+---
+
+<BaseLayout
+  lang="pk"
+  title={`${d.name} — ${d.spec} (${d.qual}) | Ilaaj AI`}
+  description={`${d.name} aik PMDC-registered ${d.spec} hain — ${d.exp} ka tajurba. Ilaaj AI par doctor-verified online consultation book karein.`}
+  canonical={url}
+  ogImage={d.photoLg}
+  keywords={`${d.name}, ${d.spec} Pakistan, online doctor Pakistan, PMDC verified doctor, ${d.qual}`}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  </Fragment>
+  <DoctorProfile doctor={d} lang="pk" />
+</BaseLayout>
