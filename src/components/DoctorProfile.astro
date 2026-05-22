@@ -1,0 +1,54 @@
+---
+import type { Doctor } from '../data/doctors';
+import type { Lang } from '../i18n/utils';
+import '../styles/doctor-profile.css';
+
+interface Props { doctor: Doctor; lang?: Lang; }
+const { doctor: d, lang = 'en' } = Astro.props;
+const isPk = lang === 'pk';
+
+const specInfo: Record<string, { en: string; pk: string }> = {
+  'General Physician': { en: 'common illnesses, fever, infections, and everyday chronic-disease management', pk: 'aam bimariyon, bukhar, infections aur rozmarra chronic conditions' },
+  'General Practitioner': { en: 'primary care, preventive health, and management of common medical conditions', pk: 'primary care, ehtiyaati sehat aur aam medical masail' },
+  'Gynaecologist': { en: "women's health, pregnancy care, menstrual and reproductive concerns", pk: 'khawateen ki sehat, hamal, aur menstrual masail' },
+  'Dermatologist': { en: 'skin, hair, acne, and a wide range of dermatological conditions', pk: 'jild, baal, acne aur jild ke deegar masail' },
+};
+const info = specInfo[d.spec] ?? specInfo['General Practitioner'];
+const treats = isPk ? info.pk : info.en;
+
+const bio = isPk
+  ? `${d.name} aik PMDC-registered ${d.spec} hain jinke paas ${d.exp} ka clinical tajurba hai. Yeh ${treats} mein madad farmate hain. Ilaaj AI par yeh patient cases review aur verify karte hain — taake har prescription kisi licensed doctor se approved ho.`
+  : `${d.name} is a PMDC-registered ${d.spec} with ${d.exp} of clinical experience, helping patients with ${treats}. On Ilaaj AI, ${d.name.split(' ')[0]} ${d.name.split(' ')[1] ?? ''} reviews and verifies patient cases so every prescription is approved by a licensed physician.`;
+
+const chips = [...d.qual.split(',').map((q) => q.trim()), `${d.exp} Exp.`];
+const t = isPk
+  ? { back: '← Sab Doctors', verified: 'PMDC Verified', book: 'Appointment Book Karein', about: 'Taaruf', quals: 'Qualifications', trust: 'Har prescription PMDC-registered doctor verify karta hai.' }
+  : { back: '← All Doctors', verified: 'PMDC Verified', book: 'Book Appointment', about: 'About', quals: 'Qualifications', trust: 'Every prescription is verified by a PMDC-registered doctor.' };
+const listUrl = isPk ? '/pk/doctors' : '/doctors';
+---
+
+<main class="docp">
+  <div class="container">
+    <a href={listUrl} class="docp__back">{t.back}</a>
+    <div class="docp__card">
+      <div class="docp__head">
+        <img src={d.photoLg} alt={d.name} class="docp__photo" width="160" height="160" loading="eager" />
+        <div class="docp__head-info">
+          <span class="section-header__tag">{t.verified}</span>
+          <h1 class="docp__name">{d.name}</h1>
+          <p class="docp__spec">{d.spec}</p>
+          <div class="docp__chips">{chips.map((c) => <span class="dp-chip">{c}</span>)}</div>
+          <a href="https://app.ilaaj.ai/chat" class="btn btn--hero-primary docp__cta">{t.book}</a>
+        </div>
+      </div>
+      <div class="docp__body">
+        <h2 class="docp__h2">{t.about}</h2>
+        <p class="docp__bio">{bio}</p>
+        <div class="docp__trust">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="var(--primary-600)"/><path d="M7 12l3 3 7-7" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>{t.trust}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

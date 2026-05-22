@@ -1,0 +1,44 @@
+export interface Doctor {
+  slug: string;
+  name: string;
+  spec: string;
+  qual: string;
+  exp: string;
+  photo: string;
+  photoLg: string;
+}
+
+function opt(url: string, w: number) {
+  return url.replace('/upload/', `/upload/f_auto,q_auto,w_${w},h_${w},c_fill,g_face/`);
+}
+
+const C = 'https://res.cloudinary.com/dpaz2mhy6/image/upload/';
+
+const raw = [
+  { name: 'Dr. M Mujeed ur Rehman', spec: 'General Physician', qual: 'MBBS, RMP', exp: '5 Yrs', img: 'v1774861881/l2qbg2ewfvhjvg2rmxsl.jpg' },
+  { name: 'Dr. Maria Mohsin', spec: 'General Physician', qual: 'MBBS', exp: '4 Yrs', img: 'v1774970468/n6aksbu49oalzyjl4qzg.jpg' },
+  { name: 'Dr. Sikandar Zulfiqar', spec: 'General Physician', qual: 'MBBS', exp: '4 Yrs', img: 'v1774955149/edxuypgskvkedpdq5dqd.jpg' },
+  { name: 'Dr. Tabinda', spec: 'General Physician', qual: 'MBBS', exp: '4 Yrs', img: 'v1775058269/xetfs13oxme0bkvqpnpj.jpg' },
+  { name: 'Dr. Wasifa Ahmad', spec: 'General Practitioner', qual: 'MBBS', exp: '4+ Yrs', img: 'v1775137767/wrihl0ul6buppj7conzr.jpg' },
+  { name: 'Dr. Sabeen Fatima Rizvi', spec: 'General Practitioner', qual: 'MBBS, MCPS', exp: '10+ Yrs', img: 'v1775648768/e2j611x9q2viow8s6mbt.png' },
+  { name: 'Dr. Sara Ali Khan', spec: 'Gynaecologist', qual: 'MBBS, FCPS, MRCOG-1', exp: '10 Yrs', img: 'v1776350887/ged3x1h29plfzzblkrwh.png' },
+  { name: 'Dr. Saira Zafar', spec: 'General Practitioner', qual: 'MBBS, MHPE', exp: '10.5 Yrs', img: 'v1776334958/zwpaowaamnt8euxzlkzh.png' },
+  { name: 'Dr. Umme Aeman Khan', spec: 'Dermatologist', qual: 'FCPS Derm, SCE UK', exp: '11 Yrs', img: 'v1777285210/hjtt4bqgajqutvxsh783.png' },
+  { name: 'Dr. Hadia Nadeem', spec: 'General Physician', qual: 'MBBS (RMP)', exp: '6 Yrs', img: 'v1777026468/djo9viajggkqf2kjkn0j.jpg' },
+  { name: 'Dr. Muneeb Mubashar', spec: 'General Practitioner', qual: 'MBBS, MPH', exp: '4 Yrs', img: 'v1776844359/qdfkg95niecs74jtefgm.jpg' },
+  { name: 'Dr. Ibtasam Ahmad', spec: 'General Practitioner', qual: 'MBBS, PGR', exp: '7 Yrs', img: 'v1777365610/pbf9ztkeyfytmbtm4dsc.jpg' },
+];
+
+export const doctors: Doctor[] = raw.map((d) => ({
+  slug: d.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''),
+  name: d.name,
+  spec: d.spec,
+  qual: d.qual,
+  exp: d.exp,
+  photo: opt(C + d.img, 176),
+  photoLg: opt(C + d.img, 320),
+}));
+
+export function getDoctor(slug: string): Doctor | undefined {
+  return doctors.find((d) => d.slug === slug);
+}

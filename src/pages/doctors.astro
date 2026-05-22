@@ -1,6 +1,18 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import DoctorsList from '../components/home/DoctorsList.astro';
+import { doctors } from '../data/doctors';
+
+const physicianSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Ilaaj AI PMDC-Verified Doctors",
+  "url": "https://www.ilaaj.ai/doctors",
+  "itemListElement": doctors.map((d, i) => ({
+    "@type": "ListItem", "position": i + 1, "url": `https://www.ilaaj.ai/doctors/${d.slug}`,
+    "item": { "@type": "Physician", "name": d.name, "medicalSpecialty": d.spec, "hasCredential": d.qual, "url": `https://www.ilaaj.ai/doctors/${d.slug}`, "worksFor": { "@id": "https://www.ilaaj.ai/#organization" } }
+  }))
+};
 ---
 
 <BaseLayout
@@ -9,6 +21,9 @@ import DoctorsList from '../components/home/DoctorsList.astro';
   description="Meet 13+ PMDC-registered doctors who verify every prescription on Ilaaj AI. GPs, gynaecologists, dermatologists across Pakistan."
   canonical="https://www.ilaaj.ai/doctors"
 >
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(physicianSchema)} />
+  </Fragment>
   <main>
     <section class="doctors-hero">
       <div class="container">
@@ -20,7 +35,7 @@ import DoctorsList from '../components/home/DoctorsList.astro';
       </div>
     </section>
 
-    <DoctorsList />
+    <DoctorsList lang="en" />
 
     <section class="cta">
       <div class="container">
