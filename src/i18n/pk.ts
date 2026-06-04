@@ -14,6 +14,7 @@ const pk = {
   'footer.legal': 'Legal',
   'footer.privacy': 'Privacy Policy',
   'footer.terms': 'Terms & Conditions',
+  'footer.pricing': 'Pricing',
   'footer.refund': 'Refund Policy',
   'footer.return': 'Return Policy',
   'footer.shipping': 'Shipping Policy',

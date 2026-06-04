@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import '../../styles/legal.css';
+const minFee = 200;
+const maxFee = 1500;
+---
+
+<BaseLayout
+  lang="ur"
+  hasUrdu={true}
+  title="قیمتیں | علاج AI"
+  description="علاج AI کی مشاورت کی قیمتیں پاکستانی روپے میں۔ ڈاکٹر سے تصدیق شدہ مشاورت، نسخے کی تصدیق شامل۔ شفاف فیس، کوئی پوشیدہ چارجز نہیں۔"
+  canonical="https://www.ilaaj.ai/ur/pricing"
+  keywords="علاج AI قیمتیں, آن لائن ڈاکٹر مشاورت فیس پاکستان, ٹیلی میڈیسن قیمت PKR, نسخہ تصدیق فیس"
+>
+  <main>
+    <section class="legal-hero">
+      <div class="container">
+        <div class="legal-hero__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--primary-600)" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <h1 class="legal-hero__title">قیمتیں</h1>
+        <p class="legal-hero__meta">پاکستانی روپے (PKR) میں شفاف فیس</p>
+      </div>
+    </section>
+
+    <div class="legal-body">
+      <div class="container">
+        <div class="legal-content">
+          <div class="legal-section">
+            <h2>ڈاکٹر سے تصدیق شدہ مشاورت</h2>
+            <p>مشاورت میں AI کی مدد سے علامات کا جائزہ شامل ہے جسے PMDC رجسٹرڈ ڈاکٹر دیکھتا اور تصدیق کرتا ہے، اور مناسب صورت میں ڈاکٹر سے تصدیق شدہ ڈیجیٹل نسخہ بھی شامل ہے۔ <strong>نسخے کی تصدیق مشاورت کی فیس میں شامل ہے — کوئی الگ چارج نہیں۔</strong></p>
+            <p>مشاورت کی فیس <strong>مقررہ نہیں</strong> اور منتخب کردہ ڈاکٹر اور طبی شعبے کے مطابق مختلف ہوتی ہے۔ فیس عام طور پر فی مشاورت <strong>PKR {minFee.toLocaleString()} سے PKR {maxFee.toLocaleString()}</strong> کے درمیان ہوتی ہے۔ آپ کے منتخب ڈاکٹر کی درست فیس ادائیگی کی تصدیق سے پہلے واضح طور پر دکھائی جاتی ہے۔</p>
+          </div>
+          <div class="legal-section">
+            <h2>کیا شامل ہے</h2>
+            <ul>
+              <li>اردو یا انگریزی میں AI کی مدد سے علامات کا جائزہ</li>
+              <li>PMDC رجسٹرڈ ڈاکٹر کی جانب سے جائزہ اور تصدیق</li>
+              <li>ڈاکٹر سے تصدیق شدہ ڈیجیٹل نسخہ (طبی طور پر مناسب صورت میں)</li>
+              <li>نتائج اور نسخے کی ایپ میں براہ راست فراہمی</li>
+            </ul>
+          </div>
+          <div class="legal-section">
+            <h2>کرنسی اور ٹیکس</h2>
+            <p>تمام قیمتیں <strong>پاکستانی روپے (PKR)</strong> میں درج اور وصول کی جاتی ہیں۔ قابلِ اطلاق ٹیکس، اگر کوئی ہو، ادائیگی سے پہلے چیک آؤٹ پر دکھائے جاتے ہیں۔</p>
+          </div>
+          <div class="legal-section">
+            <h2>ادائیگیاں</h2>
+            <p>ادائیگیاں ہمارے پیمنٹ پارٹنر کے ذریعے محفوظ طریقے سے کی جاتی ہیں۔ آپ کسی بھی ادائیگی کی تصدیق سے پہلے حتمی رقم PKR میں دیکھیں گے۔ آپ کی واضح تصدیق کے بغیر کوئی چارج نہیں کیا جاتا۔</p>
+          </div>
+          <div class="legal-section">
+            <h2>رقم کی واپسی</h2>
+            <p>اگر کوئی ادا شدہ مشاورت فراہم نہ ہو سکی یا غلطی سے چارج کی گئی، تو آپ رقم کی واپسی کے اہل ہو سکتے ہیں۔ تفصیل کے لیے ہماری <a href="/ur/refund-policy">رقم واپسی کی پالیسی</a> دیکھیں۔</p>
+          </div>
+          <div class="legal-section legal-section--highlight legal-contact">
+            <h2>قیمتوں کے بارے میں سوالات؟</h2>
+            <p><strong>ای میل:</strong> <a href="mailto:support@ilaaj.ai">support@ilaaj.ai</a></p>
+            <p><strong>فون:</strong> ‎+92-324-819-9663 (پیر تا جمعہ، صبح 9 تا شام 6 PKT)</p>
+            <p><strong>پتہ:</strong> آفس 7، پلاٹ 782، بلاک G4، فیز 2، جوہر ٹاؤن، لاہور، 54782، پاکستان</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

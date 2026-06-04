@@ -14,6 +14,7 @@ const ur = {
   'footer.legal': 'قانونی',
   'footer.privacy': 'پرائیویسی پالیسی',
   'footer.terms': 'شرائط و ضوابط',
+  'footer.pricing': 'قیمتیں',
   'footer.refund': 'ریفنڈ پالیسی',
   'footer.return': 'ریٹرن پالیسی',
   'footer.shipping': 'شپنگ پالیسی',

@@ -8,7 +8,7 @@ import Comparison from '../../components/home/Comparison.astro';
 import DoctorsPreview from '../../components/home/DoctorsPreview.astro';
 
 const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
-  { "@type": "Question", "name": "How affordable is Ilaaj AI?", "acceptedAnswer": { "@type": "Answer", "text": "Extremely affordable. AI consultation and doctor verification are free (PKR 0) — you only pay for optional medicines or lab tests, with every price clearly shown in Pakistani Rupees (PKR) before payment. No hidden fees." }},
+  { "@type": "Question", "name": "How much does Ilaaj AI cost?", "acceptedAnswer": { "@type": "Answer", "text": "Doctor-verified consultations are paid and priced in Pakistani Rupees (PKR). Fees vary by doctor and specialty, typically PKR 200 to PKR 1,500 per consultation, with prescription verification included. The exact fee is always shown before you confirm and pay. No hidden fees." }},
   { "@type": "Question", "name": "How does the doctor verification work?", "acceptedAnswer": { "@type": "Answer", "text": "After the AI collects your symptoms, a licensed doctor reviews the full session transcript and approves the prescription with their name on it." }},
   { "@type": "Question", "name": "What languages can I chat in?", "acceptedAnswer": { "@type": "Answer", "text": "Urdu, English, Roman Urdu, Hindi, Arabic, or any language. We have native Nastaliq RTL support and voice message support." }},
   { "@type": "Question", "name": "What should I do in an emergency?", "acceptedAnswer": { "@type": "Answer", "text": "For serious emergencies, call 1122 (Rescue) or go to the nearest hospital. Ilaaj AI is for general consultations, not emergencies." }}
@@ -21,9 +21,9 @@ const siteSchema = { "@context": "https://schema.org", "@type": "WebSite", "@id"
   lang="pk"
   hasUrdu={true}
   title="Ilaaj AI — Pakistan's First AI Health Platform"
-  description="Get instant AI medical assessments verified by PMDC-certified doctors. Chat in Urdu or English, get a doctor-verified prescription in 15-20 minutes. Free, anonymous, 24/7."
+  description="Get instant AI medical assessments verified by PMDC-certified doctors. Chat in Urdu or English, get a doctor-verified prescription in 15-20 minutes. Affordable, anonymous, 24/7."
   canonical="https://www.ilaaj.ai/pk/"
-  keywords="AI doctor Pakistan, free online doctor Pakistan, AI health assistant, medical advice Urdu, telemedicine Pakistan, online doctor consultation free, AI prescription Pakistan, doctor verified prescription, ilaaj AI, symptom checker Pakistan, medical AI chatbot, family health app Pakistan, digital health Pakistan, online doctor Urdu, health tech Pakistan, free doctor advice Pakistan, telehealth Pakistan"
+  keywords="AI doctor Pakistan, online doctor Pakistan, AI health assistant, medical advice Urdu, telemedicine Pakistan, online doctor consultation, AI prescription Pakistan, doctor verified prescription, ilaaj AI, symptom checker Pakistan, medical AI chatbot, family health app Pakistan, digital health Pakistan, online doctor Urdu, health tech Pakistan, doctor advice Pakistan, telehealth Pakistan"
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>
