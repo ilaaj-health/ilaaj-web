@@ -1678,6 +1678,32 @@ ul {
   color: var(--primary-300);
 }
 
+.footer__phone {
+  display: inline-block;
+  font-size: var(--font-size-sm);
+  color: var(--primary-400);
+  font-weight: 500;
+  transition: color var(--transition-fast);
+  margin-bottom: 0.5rem;
+}
+
+.footer__phone:hover {
+  color: var(--primary-300);
+}
+
+.footer__hours {
+  font-size: var(--font-size-xs);
+  color: var(--gray-400);
+  margin-bottom: 0.5rem;
+}
+
+.footer__address {
+  font-size: var(--font-size-xs);
+  color: var(--gray-500);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
 .footer__emergency {
   font-size: var(--font-size-xs);
   color: var(--gray-500);
