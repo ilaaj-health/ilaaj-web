@@ -7,9 +7,9 @@ export const catsPk = [
 
 export const sectionsPk = [
   { id: 'general', title: 'Aam Sawalat', items: [
-    { q: 'Ilaaj AI kya hai aur yeh kaise kaam karta hai?', a: 'Ilaaj AI Pakistan ka pehla AI-powered digital health platform hai. Aap apne symptoms bataen, AI assess karta hai, aur PMDC-verified doctor verify karta hai. Bilkul muft, 24/7 available.' },
+    { q: 'Ilaaj AI kya hai aur yeh kaise kaam karta hai?', a: 'Ilaaj AI Pakistan ka pehla AI-powered digital health platform hai. Aap apne symptoms bataen, AI assess karta hai, aur PMDC-verified doctor verify karta hai. 24/7 available.' },
     { q: 'Kya yeh service poore Pakistan mein available hai?', a: 'Haan — digital consultation aur AI diagnostics poore mulk mein available hain. Medicine delivery aur lab tests Karachi, Lahore, Islamabad aur Faisalabad mein operate karte hain.' },
-    { q: 'Ilaaj AI kitna affordable hai?', a: 'AI consultation aur doctor verification bilkul free hain (PKR 0). Medicines ya lab tests sirf aap ke choose karne par pay karte hain — har item ki exact price Pakistani Rupees (PKR) mein payment se pehle dikhai jaati hai. Koi hidden charges nahi, koi consultation fee nahi.' },
+    { q: 'Ilaaj AI ki qeemat kitni hai?', a: 'Doctor-verified consultation paid hai aur Pakistani Rupees (PKR) mein priced hai. Fees fixed nahi — doctor aur specialty ke mutabiq mukhtalif hoti hai, aam tor par PKR 200 se PKR 1,500 fi consultation, jis mein prescription verification shamil hai. Exact fee payment se pehle dikhai jaati hai. Koi hidden charges nahi. Tafseel ke liye hamara Pricing page dekhein.' },
   ]},
   { id: 'security', title: 'Privacy & Data', items: [
     { q: 'Kya mera medical data secure hai?', a: 'Haan. Hum bank-grade AES-256 encryption use karte hain, HIPAA principles follow karte hain. Aapki medical history sirf aap aur jo doctor aap choose karein unhe accessible hai.' },

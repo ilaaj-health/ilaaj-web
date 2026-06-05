@@ -1,0 +1,65 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/legal.css';
+const minFee = 200;
+const maxFee = 1500;
+---
+
+<BaseLayout
+  lang="en"
+  title="Pricing | Ilaaj AI"
+  description="Ilaaj AI consultation pricing in PKR. Doctor-verified consultations with prescription verification included. Transparent fees, no hidden charges."
+  canonical="https://www.ilaaj.ai/pricing"
+  keywords="ilaaj AI pricing, online doctor consultation fee Pakistan, telemedicine price PKR, prescription verification fee"
+>
+  <main>
+    <section class="legal-hero">
+      <div class="container">
+        <div class="legal-hero__icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--primary-600)" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <h1 class="legal-hero__title">Pricing</h1>
+        <p class="legal-hero__meta">Transparent fees in Pakistani Rupees (PKR)</p>
+      </div>
+    </section>
+
+    <div class="legal-body">
+      <div class="container">
+        <div class="legal-content">
+          <div class="legal-section">
+            <h2>Doctor-Verified Consultation</h2>
+            <p>A consultation includes an AI-assisted symptom assessment reviewed and verified by a PMDC-registered doctor, along with a doctor-verified digital prescription where appropriate. <strong>Prescription verification is included in the consultation fee — there is no separate charge.</strong></p>
+            <p>Consultation fees are <strong>not fixed</strong> and vary depending on the doctor and medical specialty selected. Fees typically range from <strong>PKR {minFee.toLocaleString()} to PKR {maxFee.toLocaleString()}</strong> per consultation. The exact fee for your selected doctor is always shown clearly before you confirm and pay.</p>
+          </div>
+          <div class="legal-section">
+            <h2>What's Included</h2>
+            <ul>
+              <li>AI-assisted symptom assessment in Urdu or English</li>
+              <li>Review and verification by a PMDC-registered doctor</li>
+              <li>Doctor-verified digital prescription (where clinically appropriate)</li>
+              <li>Delivery of results and prescription directly in the app</li>
+            </ul>
+          </div>
+          <div class="legal-section">
+            <h2>Currency &amp; Taxes</h2>
+            <p>All prices are listed and charged in <strong>Pakistani Rupees (PKR)</strong>. Applicable taxes, if any, are shown at checkout before payment.</p>
+          </div>
+          <div class="legal-section">
+            <h2>Payments</h2>
+            <p>Payments are processed securely through our payment partner. You will see the final amount in PKR before confirming any payment. No charges are made without your explicit confirmation.</p>
+          </div>
+          <div class="legal-section">
+            <h2>Refunds</h2>
+            <p>If a paid consultation was not delivered or was charged in error, you may be eligible for a refund. See our <a href="/refund-policy">Refund Policy</a> for details.</p>
+          </div>
+          <div class="legal-section legal-section--highlight legal-contact">
+            <h2>Questions About Pricing?</h2>
+            <p><strong>Email:</strong> <a href="mailto:support@ilaaj.ai">support@ilaaj.ai</a></p>
+            <p><strong>Phone:</strong> +92-324-819-9663 (Mon–Fri, 9AM–6PM PKT)</p>
+            <p><strong>Address:</strong> Office 7, Plot 782, Block G4, Phase 2, Johar Town, Lahore, 54782, Pakistan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

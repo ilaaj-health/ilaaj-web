@@ -2,93 +2,165 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.ilaaj.ai/</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/blog</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/doctors</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/ur</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/faq</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/support</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/privacy-policy</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/terms-and-conditions</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/pk/</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/pk/blog</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/pk/doctors</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/pk/faq</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/pk/support</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/pk/privacy-policy</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/pk/terms-and-conditions</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.ilaaj.ai/blog/brufen-400-uses</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ilaaj.ai/blog/panadol-extra-uses</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ilaaj.ai/blog/panadol-uses-dosage</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ilaaj.ai/blog/allergy-ka-ilaj</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ilaaj.ai/blog/motapa-kam-karne-ka-tarika</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ilaaj.ai/blog/qabz-ka-ilaj</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ilaaj.ai/blog/depression-ka-ilaj</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ilaaj.ai/blog/gala-kharab-ka-ilaj</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ilaaj.ai/blog/kamar-dard-ka-ilaj</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ilaaj.ai/blog/acne-ka-ilaj</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ilaaj.ai/blog/baal-jhadne-ka-ilaj</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ilaaj.ai/blog/periods-irregular-ka-ilaj</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/blog/chat-with-ai-doctor</loc>
@@ -271,78 +343,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.ilaaj.ai/blog/brufen-400-uses</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.ilaaj.ai/blog/panadol-extra-uses</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.ilaaj.ai/blog/panadol-uses-dosage</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.ilaaj.ai/blog/allergy-ka-ilaj</loc>
-    <lastmod>2026-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.ilaaj.ai/blog/motapa-kam-karne-ka-tarika</loc>
-    <lastmod>2026-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.ilaaj.ai/blog/qabz-ka-ilaj</loc>
-    <lastmod>2026-05-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.ilaaj.ai/blog/depression-ka-ilaj</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.ilaaj.ai/blog/gala-kharab-ka-ilaj</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.ilaaj.ai/blog/kamar-dard-ka-ilaj</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.ilaaj.ai/blog/acne-ka-ilaj</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.ilaaj.ai/blog/baal-jhadne-ka-ilaj</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.ilaaj.ai/blog/periods-irregular-ka-ilaj</loc>
-    <lastmod>2026-05-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.ilaaj.ai/blog/blood-pressure-ka-ilaj</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -440,145 +440,145 @@
   </url>
   <url>
     <loc>https://www.ilaaj.ai/doctors/dr-m-mujeeb-ur-rehman</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/pk/doctors/dr-m-mujeeb-ur-rehman</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/doctors/dr-maria-mohsin</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/pk/doctors/dr-maria-mohsin</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/doctors/dr-sikandar-zulfiqar</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/pk/doctors/dr-sikandar-zulfiqar</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/doctors/dr-tabinda</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/pk/doctors/dr-tabinda</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/doctors/dr-wasifa-ahmad</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/pk/doctors/dr-wasifa-ahmad</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/doctors/dr-sabeen-fatima-rizvi</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/pk/doctors/dr-sabeen-fatima-rizvi</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/doctors/dr-sara-ali-khan</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/pk/doctors/dr-sara-ali-khan</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/doctors/dr-saira-zafar</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/pk/doctors/dr-saira-zafar</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/doctors/dr-umme-aeman-khan</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/pk/doctors/dr-umme-aeman-khan</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/doctors/dr-hadia-nadeem</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/pk/doctors/dr-hadia-nadeem</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/doctors/dr-muneeb-mubashar</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/pk/doctors/dr-muneeb-mubashar</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/doctors/dr-ibtasam-ahmad</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.ilaaj.ai/pk/doctors/dr-ibtasam-ahmad</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
