@@ -10,34 +10,39 @@ export function getStaticPaths() {
 
 const { post } = Astro.props;
 
-let articleHtml = '';
-let hasEnVersion = false;
-try {
-  const enPath = path.join(process.cwd(), 'blog', 'en', `${post.slug}.html`);
-  const raw = fs.readFileSync(enPath, 'utf-8');
+function readArticle(file: string, normalize: (s: string) => string) {
+  const raw = fs.readFileSync(file, 'utf-8');
   const s = raw.indexOf('<article');
   const e = raw.lastIndexOf('</article>');
-  if (s >= 0 && e > s) {
-    articleHtml = raw.slice(raw.indexOf('>', s) + 1, e)
-      .replace(/href="\.\.\/blog\.html"/g, 'href="/blog"')
-      .replace(/href="\.\.\/\.\.\/blog\.html"/g, 'href="/blog"');
-    hasEnVersion = true;
-  }
+  if (s < 0 || e <= s) return null;
+  return { html: normalize(raw.slice(raw.indexOf('>', s) + 1, e)), raw };
+}
+
+let articleHtml = '';
+let hasEnVersion = false;
+let sourceRaw = '';
+try {
+  const r = readArticle(
+    path.join(process.cwd(), 'blog', 'en', `${post.slug}.html`),
+    h => h.replace(/href="\.\.\/blog\.html"/g, 'href="/blog"')
+          .replace(/href="\.\.\/\.\.\/blog\.html"/g, 'href="/blog"')
+  );
+  if (r) { articleHtml = r.html; sourceRaw = r.raw; hasEnVersion = true; }
 } catch {}
 
 if (!hasEnVersion) {
   try {
-    const raw = fs.readFileSync(
-      path.join(process.cwd(), 'blog', `${post.slug}.html`), 'utf-8'
+    const r = readArticle(
+      path.join(process.cwd(), 'blog', `${post.slug}.html`),
+      h => h.replace(/href="\.\.\/blog\.html"/g, 'href="/blog"')
     );
-    const s = raw.indexOf('<article');
-    const e = raw.lastIndexOf('</article>');
-    if (s >= 0 && e > s) {
-      articleHtml = raw.slice(raw.indexOf('>', s) + 1, e)
-        .replace(/href="\.\.\/blog\.html"/g, 'href="/blog"');
-    }
+    if (r) { articleHtml = r.html; sourceRaw = r.raw; }
   } catch {}
 }
+
+// Restore the hand-authored JSON-LD (MedicalWebPage, BreadcrumbList, FAQPage)
+// from the source <head> — the article-only extraction above otherwise drops it.
+const jsonLd = (sourceRaw.match(/<script type="application\/ld\+json">[\s\S]*?<\/script>/g) || []).join('\n');
 ---
 
 <BaseLayout
@@ -48,6 +53,7 @@ if (!hasEnVersion) {
   noindex={!hasEnVersion}
   ogImage={post.img}
 >
+  {jsonLd && <Fragment slot="head" set:html={jsonLd} />}
   <main>
     {articleHtml
       ? <article class="blog-post" set:html={articleHtml} />
