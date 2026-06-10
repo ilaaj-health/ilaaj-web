@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <!-- Sentry: error tracking + session replay -->
+  <script src="https://js.sentry-cdn.com/defa6ca82daea4d4c49a8b69b87c53cc.min.js" crossorigin="anonymous"></script>
+  <script>
+    window.sentryOnLoad = function () {
+      Sentry.init({
+        integrations: [Sentry.replayIntegration({ maskAllText: false, blockAllMedia: false })],
+        tracesSampleRate: 0.1,
+        replaysSessionSampleRate: 0.1,
+        replaysOnErrorSampleRate: 1.0,
+      });
+    };
+  </script>
+  <!-- PostHog: product analytics + session replay -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_xjBQ5vUS7nTJz4jHta6d5dDE7jHdtFjFuqkxAJjvcFzo', { api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only', cross_subdomain_cookie: true });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XKTHF96');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1697266221447949');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1697266221447949&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Behoshi (Fainting) Ki Wajah, Symptoms Aur Fori Ilaj | Ilaaj AI</title>
+  <meta name="description" content="Behoshi (syncope) ki wajah — vasovagal, cardiac, dehydration. Pakistan garmi mein common. Fori first aid, danger signs aur kab ER jaana zaruri — complete guide Ilaaj AI.">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="behoshi ka ilaj, fainting causes urdu, syncope pakistan, behosh hona, chakkar aana ilaj">
+  <meta name="geo.region" content="PK">
+  <meta name="geo.placename" content="Pakistan">
+  <meta name="google-site-verification" content="8RtzwgVYowrMGF4E77jnKOX33seYEQTuXmxps2XkPxI">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.ilaaj.ai/blog/behoshi-ki-wajah">
+  <link rel="alternate" hreflang="ur-PK" href="https://www.ilaaj.ai/blog/behoshi-ki-wajah" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ilaaj.ai/blog/behoshi-ki-wajah" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/logo/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/logo/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/logo/site.webmanifest" />
+
+  <!-- PWA / Mobile -->
+  <meta name="theme-color" content="#00897B">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="IlaajAI">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Behoshi (Fainting) Ki Wajah, Symptoms Aur Fori Ilaj | Ilaaj AI">
+  <meta property="og:description" content="Behoshi (syncope) ki wajah — vasovagal, cardiac, dehydration. Pakistan garmi mein common. Fori first aid, danger signs aur kab ER jaana zaruri — complete guide Ilaaj AI.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ilaaj.ai/blog/behoshi-ki-wajah">
+  <meta property="og:image" content="https://images.pexels.com/photos/5979728/pexels-photo-5979728.jpeg?auto=compress&cs=tinysrgb&w=1200">
+  <meta property="og:image:alt" content="Woman with dizziness — fainting">
+  <meta property="og:site_name" content="Ilaaj AI">
+  <meta property="og:locale" content="ur_PK">
+  <meta property="article:published_time" content="2026-06-05T09:00:00.000Z">
+  <meta property="article:modified_time" content="2026-06-05T09:00:00.000Z">
+  <meta property="article:author" content="Ilaaj AI Medical Team">
+  <meta property="article:section" content="Neurology">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ilaajai">
+  <meta name="twitter:creator" content="@ilaajai">
+  <meta name="twitter:title" content="Behoshi (Fainting) Ki Wajah, Symptoms Aur Fori Ilaj | Ilaaj AI">
+  <meta name="twitter:description" content="Behoshi (syncope) ki wajah — vasovagal, cardiac, dehydration. Pakistan garmi mein common. Fori first aid, danger signs aur kab ER jaana zaruri — complete guide Ilaaj AI.">
+  <meta name="twitter:image" content="https://images.pexels.com/photos/5979728/pexels-photo-5979728.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNTMD61HWL"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KNTMD61HWL');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/blog.css">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.ilaaj.ai/blog/behoshi-ki-wajah"
+  },
+  "headline": "Behoshi (Fainting) Ki Wajah, Symptoms Aur Fori Ilaj",
+  "description": "Behoshi (syncope) ki wajah — vasovagal, cardiac, dehydration. Pakistan garmi mein common. Fori first aid, danger signs aur kab ER jaana zaruri — complete guide Ilaaj AI.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://images.pexels.com/photos/5979728/pexels-photo-5979728.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  },
+  "datePublished": "2026-06-05T09:00:00.000Z",
+  "dateModified": "2026-06-05T09:00:00.000Z",
+  "author": {
+    "@type": "Organization",
+    "name": "Ilaaj AI Medical Team",
+    "url": "https://www.ilaaj.ai/doctors"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ilaaj AI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.ilaaj.ai/assets/Icon-192.png"
+    }
+  },
+  "keywords": "behoshi ka ilaj, fainting causes urdu, syncope pakistan, behosh hona, chakkar aana ilaj",
+  "inLanguage": "ur",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Ilaaj AI Blog",
+    "url": "https://www.ilaaj.ai/blog"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.ilaaj.ai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.ilaaj.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Behoshi (Fainting) Ki Wajah, Symptoms Aur Fori Ilaj",
+      "item": "https://www.ilaaj.ai/blog/behoshi-ki-wajah"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Behoshi ki sab se aam wajah kya hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sab se aam wajah vasovagal syncope hai — yeh almost 50% cases mein hota hai. Trigger emotional shock, khoon dekhna, dard, garmi mein dair tak khara rehna (mosque, assembly), ya bahut deir tak peshab rokna ho sakta hai. Pakistan ki garmi aur dehydration is ko aur barhati hai. Pre-syncope symptoms — nausea, paseena, kaano mein bhanbhanaht, dheemi nazar — agar pehchaan lo, to lait kar bach sakte ho."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Behoshi ho jaye to fori first aid kya karein?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sab se pehlay banday ko peeth ke bal flat lita do aur paon 30 cm uncha kar do (takiya ya kursi pe rakh do) — is se khoon dimaag mein wapas pohanchta hai. Collar, belt, dupatta dheela kar dein. Khirki kholo, fan chala do, garmi se dur le jao. Munh par paani na chirko — yeh purani nuskha hai, asar nahi karta. Hosh aane ke baad 15 minute aaram se laita rehne dein, foran khara mat karein."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Behoshi mein kab ER jaana zaruri hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Foran 1122 ya hospital lay jao agar: 1-2 minute mein hosh na aaye, dauray (seizure) pade, chest pain ya saans phulay, hosh aane ke baad confusion ho, exertion (daud, exercise) ke doran behoshi ho, ya umar daraz banda baar baar behosh ho raha ho. Bina warning ke achanak behoshi cardiac (dil) problem ki nishani ho sakti hai — yeh emergency hai. Hamla khwateen mein behoshi bhi foran check karwana zaruri."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kya dehydration se behoshi hoti hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bilkul. Pakistan ki garmi mein dehydration behoshi ki bohat aam wajah hai — khaaskar mosques mein lambi namaz, school assemblies, construction work, ya outdoor jobs. Paani kam hone se khoon ka volume kam, BP drop, aur dimaag tak oxygen kam pohanchti hai. Bachao ke liye din mein 8-10 glass paani, oral rehydration solution (ORS), namak normal range mein, aur sharbat/lassi summer mein lein. Rozay mein iftar pe ekdam zyada paani aur Sehri mein bharpoor liquids."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vasovagal behoshi se bachao ke liye kya karein?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Trigger pehchaano (khoon, lambi standing, garmi, dard) aur avoid karo. Pre-syncope symptoms (nausea, paseena, kaano mein bhanbhanaht) shuru hon to foran baith jao ya lait jao, paon uncha karo. Counter-pressure maneuvers — paon cross karke squeeze karna, mutthi band karna — 30-60 second mein BP barhate hain. Roz kaafi paani aur thoda extra namak (doctor se mashwara). Raat ko bistar ka sirhana 10 cm uncha rakhein. Beta-blockers ya fludrocortisone bohat severe cases mein doctor likh sakta hai."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKTHF96"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar navbar--scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="/" class="navbar__brand">
+        <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="navbar__logo">
+        <span class="navbar__name">Ilaaj AI</span>
+      </a>
+      <div class="navbar__center" id="navLinks">
+        <a href="/#how-it-works" class="navbar__link">How It Works</a>
+        <a href="/#features" class="navbar__link">Features</a>
+        <a href="/blog" class="navbar__link navbar__link--active">Blog</a>
+        <a href="/#faq" class="navbar__link">FAQ</a>
+      </div>
+      <div class="navbar__right">
+        <a href="https://app.ilaaj.ai" class="btn btn--primary btn--sm navbar__cta">
+          Muft Mashwara Lein
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile" id="mobileMenu">
+      <a href="/#how-it-works" class="navbar__mobile-link">How It Works</a>
+      <a href="/#features" class="navbar__mobile-link">Features</a>
+      <a href="/blog" class="navbar__mobile-link">Blog</a>
+      <a href="/#faq" class="navbar__mobile-link">FAQ</a>
+      <a href="https://app.ilaaj.ai" class="btn btn--primary btn--full">Muft Mashwara Lein</a>
+    </div>
+  </nav>
+
+  <main>
+    <article class="blog-post">
+      <div class="container">
+        <a href="/blog" class="blog-post__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Articles
+        </a>
+
+        <div class="blog-post__featured-image"><img src="https://images.pexels.com/photos/5979728/pexels-photo-5979728.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Woman with dizziness — fainting"></div>
+
+        <div class="blog-post__author">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI Medical Team" class="blog-post__author-avatar">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name">Ilaaj AI Medical Team</div>
+            <div class="blog-post__author-creds">PMDC-verified doctors reviewing every article</div>
+            <div class="blog-post__author-dates">Published: June 5, 2026 | Last reviewed: June 5, 2026</div>
+          </div>
+        </div>
+
+        <h1 class="blog-post__title">Behoshi (Fainting) Ki Wajah, Symptoms Aur Fori Ilaj</h1>
+
+        <div class="blog-post__tldr">
+          <div class="blog-post__tldr-title">TL;DR — Key Takeaways</div>
+          <ul>
+            <li>Behoshi (syncope) achanak hosh kho dena hai — dimaag tak khoon kam pohanchne se</li>
+            <li>Sab se aam wajah vasovagal (~50%) — garmi, dard, emotional shock, lambi standing</li>
+            <li>Pakistan ki garmi aur dehydration is ka bara trigger hai</li>
+            <li>First aid: lait do, paon uncha karo (30 cm), kapra dheela, fan chalao</li>
+            <li>Chest pain, exertion ke doran, ya 1-2 min mein hosh na aaye = foran 1122 / ER</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+<h2>Behoshi Kya Hoti Hai?</h2>
+<p>Behoshi (syncope) ka matlab hai achanak hosh ka kho dena, jo aksar sirf chand seconds se 1-2 minute tak chalti hai. Iski bunyaadi wajah hai dimaag (brain) tak khoon ka kam pohanchna. Yeh ek alarm signal hai — kabhi mamuli vasovagal episode, kabhi dil (cardiac) ki sangeen bemari. Pakistan mein garmi, dehydration, low blood pressure aur anemia (Hb kam) ki wajah se behoshi bohat aam masla hai — khaaskar mosques, school assemblies, aur outdoor work mein.</p>
+
+<table class="blog-post__quick-facts">
+  <caption>Behoshi — Aam Wajuhat (Causes)</caption>
+  <tbody>
+    <tr><td>Vasovagal (~50%)</td><td>Khoon dekhna, dard, garmi, lambi standing, emotional shock</td></tr>
+    <tr><td>Orthostatic</td><td>Achanak khara hona — BP drop, dehydration, BP ki dawai</td></tr>
+    <tr><td>Cardiac (khatarnak)</td><td>Arrhythmia, heart block, aortic stenosis — bina warning</td></tr>
+    <tr><td>Neurological</td><td>Seizure, TIA / stroke, migraine, vertigo</td></tr>
+    <tr><td>Metabolic</td><td>Low sugar (hypoglycemia), low oxygen, anemia</td></tr>
+    <tr><td>Pregnancy</td><td>BP changes, low sugar, dehydration — foran check</td></tr>
+  </tbody>
+</table>
+
+<h2>Behoshi Se Pehlay Ke Signs (Pre-syncope)</h2>
+<p>Aksar behoshi se 10-30 second pehlay yeh symptoms hote hain — agar pehchaan lo to foran baith ya lait kar bach sakte ho:</p>
+<ul>
+<li>Nausea (matli), pet mein khaali pan ka ehsaas</li>
+<li>Thanda paseena (cold sweat), khaaskar mathay aur honth ke upar</li>
+<li>Kaano mein bhanbhanaht (tinnitus) ya halki si gunj</li>
+<li>Nazar dim ya dhundli hona, "tunnel vision"</li>
+<li>Light-headedness, chakkar (dizziness), kamzori</li>
+<li>Chehra zard (pale) ho jana</li>
+</ul>
+
+<h2>Behoshi Ki Aam Wajuhat — Detail Mein</h2>
+
+<h3>1. Vasovagal Syncope (Sab Se Aam)</h3>
+<p>Yeh almost 50% behoshi cases ki wajah hai. Vagus nerve achanak heart rate aur BP gira deti hai. Triggers: lambi standing (namaz, assembly), garmi, khoon dekhna, sui ka khauf, shadeed dard, sneezing/coughing, ya peshab karne ke doran.</p>
+
+<h3>2. Orthostatic Hypotension</h3>
+<p>Achanak baithay se ya laite se khara hone par BP girta hai. Aam wajuhat: dehydration (Pakistan garmi!), BP ki dawai (Amlodipine, diuretics), antidepressants, Parkinson's, diabetes (autonomic neuropathy), aur khoon ki kami (anemia).</p>
+
+<h3>3. Cardiac Syncope — Sab Se Khatarnak</h3>
+<p>Bina warning ke achanak, ya exertion (daud, exercise) ke doran behoshi. Wajuhat: arrhythmia (bradycardia, tachycardia, heart block), aortic stenosis, MI (heart attack), pulmonary embolism. Yeh ER case hai — ECG aur echo zaruri.</p>
+
+<h3>4. Neurological</h3>
+<p>Seizure (mirgi) bhi hosh khoti hai magar uske saath jhatkay, jeebh kaatna, peshab nikalna, aur baad mein confusion (post-ictal) hota hai. TIA ya stroke mein chehre/haath mein kamzori bhi hoti hai.</p>
+
+<h3>5. Hypoglycemia (Low Sugar)</h3>
+<p>Diabetics jo insulin ya sulfonylurea (Daonil) le rahay hain — agar khana miss kar dein, low sugar se behoshi. Glucose ya meetha foran dein.</p>
+
+<h3>6. Anemia</h3>
+<p>Pakistan mein khwateen mein Hb 10 se kam hona bohat aam hai (periods, pregnancy, diet). Khaali pet kharay hone se behoshi — iron deficiency check karwain.</p>
+
+<h2>Fori First Aid (Jab Koi Behosh Ho Jaye)</h2>
+<ol>
+<li><strong>Flat lita do</strong> — peeth ke bal, paon 30 cm uncha (takiya, kursi pe). Yeh dimaag tak khoon wapas bhejta hai.</li>
+<li><strong>Tight kapde dheelay karein</strong> — collar, belt, dupatta, tie.</li>
+<li><strong>Hawa do</strong> — khirki kholo, fan, A/C. Garmi se foran dur le jao.</li>
+<li><strong>Recovery position</strong> (side per) agar ulti aa sakti hai.</li>
+<li><strong>Munh par paani mat chirko</strong> — yeh purani nuskha hai, asar nahi karta aur saans bhi block kar sakta hai.</li>
+<li><strong>Khaali pet ho to</strong>: hosh aane par 1 glass meetha sharbat / juice — sugar low ho to faida.</li>
+<li><strong>Hosh aane ke baad foran mat uthain</strong> — 15 minute lait jaane dein, phir slowly baithein.</li>
+</ol>
+
+<div class="blog-post__inline-cta">
+  <p>Aap ya ghar mein koi baar baar behosh ho raha hai? Ilaaj AI pe symptoms detail mein bata kar PMDC-verified doctor se foran mashwara lein — ghar baithe.</p>
+  <a href="https://app.ilaaj.ai">Abhi Doctor Se Milein</a>
+</div>
+
+<h2>Kab Foran ER / 1122 Call Karein?</h2>
+<ul>
+<li>1-2 minute mein hosh wapas nahi aaya</li>
+<li>Saath dauray (seizure), jeebh kaatna, peshab nikalna</li>
+<li>Chest pain, saans phulna, ya dhadkan tez/uljhi hui</li>
+<li>Hosh aane ke baad confusion, batting karne mein dikkat</li>
+<li>Exertion (daudna, exercise, seerian) ke doran behoshi</li>
+<li>Umar daraz banda jo baar baar behosh ho raha hai</li>
+<li>Hamla khatoon (pregnancy) mein behoshi</li>
+<li>Achanak, bina kisi warning ke behoshi (cardiac suspect)</li>
+<li>Sir pe chot lagi ho gir kar — head injury rule out</li>
+</ul>
+
+<h2>Doctor Kya Tests Karega?</h2>
+<ul>
+<li><strong>ECG</strong> — dil ki rhythm dekhne ke liye (har syncope mein zaruri)</li>
+<li><strong>BP lying + standing</strong> — orthostatic check (2-3 minute kharay hone ke baad)</li>
+<li><strong>Blood sugar (random)</strong> — hypoglycemia rule out</li>
+<li><strong>CBC</strong> — anemia (Hb level) check</li>
+<li><strong>Echo</strong> — cardiac structure check, aortic stenosis ya cardiomyopathy</li>
+<li><strong>Tilt-table test</strong> — vasovagal confirm</li>
+<li><strong>Holter monitor</strong> (24-48 hour ECG) — arrhythmia agar baar baar</li>
+<li><strong>EEG / CT brain</strong> — seizure ya stroke suspect ho to</li>
+</ul>
+
+<h2>Vasovagal Behoshi Se Bachao</h2>
+<ul>
+<li>Triggers identify karo aur avoid karo (khoon, lambi standing, garmi)</li>
+<li>Pre-syncope symptoms shuru hon to foran baith jao, paon uncha</li>
+<li>Counter-pressure: paon cross karke squeeze, mutthi band karna — BP barhata hai</li>
+<li>Roz 8-10 glass paani — Pakistan garmi mein ORS bhi</li>
+<li>Doctor se mashwara karke namak thoda barha sakte ho</li>
+<li>Raat ko bistar ka sirhana 10 cm uncha</li>
+<li>Bahut severe cases mein doctor beta-blocker ya fludrocortisone likh sakta hai</li>
+</ul>
+
+<h2>Pakistan Mein Khaaskar — Garmi Aur Behoshi</h2>
+<p>Karachi, Lahore, Multan, Sukkur mein May-August ka garmi 40-48&deg;C reach karta hai. Mosque mein juma namaz, school morning assembly, aur outdoor labour mein behoshi ke cases acharaj nahi. Bachao: paani ki bottle hamesha saath, ORS sachet rakhein, dhoop mein topi/chhata, suti kapde, aur prolonged standing avoid karein. Rozay mein iftar pe ekdam fast paani aur sehri mein bharpoor liquids zaruri. Agar baar baar behoshi ho rahi ho, doctor se BP, Hb aur ECG zarur karwain.</p>
+
+<h2>Conclusion</h2>
+<p>Behoshi mostly mamuli vasovagal hoti hai jo flat litate hi theek ho jati hai. Magar cardiac, neurological aur metabolic wajuhat ko ignore karna jaan-leva ho sakta hai. Pre-syncope symptoms pehchanna, fori first aid, aur danger signs maloom hona har Pakistani ke liye life-skill hai. <strong>Ilaaj AI</strong> pe apne symptoms detail mein bata kar AI triage + licensed doctor mashwara hasil karein — sasti rates pe, 24/7.</p>
+        </div>
+
+        <div class="blog-post__faq">
+          <h2>Frequently Asked Questions</h2>
+          <details class="blog-post__faq-item">
+            <summary>Behoshi ki sab se aam wajah kya hai?</summary>
+            <div class="blog-post__faq-answer">Sab se aam wajah vasovagal syncope hai — yeh almost 50% cases mein hota hai. Trigger emotional shock, khoon dekhna, dard, garmi mein dair tak khara rehna (mosque, assembly), ya bahut deir tak peshab rokna ho sakta hai. Pakistan ki garmi aur dehydration is ko aur barhati hai. Pre-syncope symptoms — nausea, paseena, kaano mein bhanbhanaht, dheemi nazar — agar pehchaan lo, to lait kar bach sakte ho.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Behoshi ho jaye to fori first aid kya karein?</summary>
+            <div class="blog-post__faq-answer">Sab se pehlay banday ko peeth ke bal flat lita do aur paon 30 cm uncha kar do (takiya ya kursi pe rakh do) — is se khoon dimaag mein wapas pohanchta hai. Collar, belt, dupatta dheela kar dein. Khirki kholo, fan chala do, garmi se dur le jao. Munh par paani na chirko — yeh purani nuskha hai, asar nahi karta. Hosh aane ke baad 15 minute aaram se laita rehne dein, foran khara mat karein.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Behoshi mein kab ER jaana zaruri hai?</summary>
+            <div class="blog-post__faq-answer">Foran 1122 ya hospital lay jao agar: 1-2 minute mein hosh na aaye, dauray (seizure) pade, chest pain ya saans phulay, hosh aane ke baad confusion ho, exertion (daud, exercise) ke doran behoshi ho, ya umar daraz banda baar baar behosh ho raha ho. Bina warning ke achanak behoshi cardiac (dil) problem ki nishani ho sakti hai — yeh emergency hai. Hamla khwateen mein behoshi bhi foran check karwana zaruri.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Kya dehydration se behoshi hoti hai?</summary>
+            <div class="blog-post__faq-answer">Bilkul. Pakistan ki garmi mein dehydration behoshi ki bohat aam wajah hai — khaaskar mosques mein lambi namaz, school assemblies, construction work, ya outdoor jobs. Paani kam hone se khoon ka volume kam, BP drop, aur dimaag tak oxygen kam pohanchti hai. Bachao ke liye din mein 8-10 glass paani, oral rehydration solution (ORS), namak normal range mein, aur sharbat/lassi summer mein lein. Rozay mein iftar pe ekdam zyada paani aur Sehri mein bharpoor liquids.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Vasovagal behoshi se bachao ke liye kya karein?</summary>
+            <div class="blog-post__faq-answer">Trigger pehchaano (khoon, lambi standing, garmi, dard) aur avoid karo. Pre-syncope symptoms (nausea, paseena, kaano mein bhanbhanaht) shuru hon to foran baith jao ya lait jao, paon uncha karo. Counter-pressure maneuvers — paon cross karke squeeze karna, mutthi band karna — 30-60 second mein BP barhate hain. Roz kaafi paani aur thoda extra namak (doctor se mashwara). Raat ko bistar ka sirhana 10 cm uncha rakhein. Beta-blockers ya fludrocortisone bohat severe cases mein doctor likh sakta hai.</div>
+          </details>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="blog-post__related">
+          <h2>Related Articles</h2>
+          <ul class="blog-post__related-list">
+            <li><a href="/blog/blood-pressure-ka-ilaj">Blood Pressure Ka Ilaj — High aur Low BP Treatment</a></li>
+            <li><a href="/blog/sugar-ka-ilaj">Sugar Ka Ilaj — Diabetes Type 2 Treatment Pakistan</a></li>
+            <li><a href="/blog/bukhar-ka-ilaj">Bukhar Ka Ilaj — Mosmi, Dengue aur Typhoid</a></li>
+            <li><a href="/blog">Browse All Health Articles &rarr;</a></li>
+          </ul>
+        </div>
+
+        <div class="blog-post__about">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="blog-post__about-logo">
+          <div class="blog-post__about-text">
+            <strong>About Ilaaj AI</strong>
+            <p>Ilaaj AI is Pakistan's first AI-powered health platform. Chat about your symptoms in Urdu or English, get AI-powered triage, and receive doctor-verified prescriptions — affordable and accessible, 24/7.</p>
+          </div>
+        </div>
+
+        <div class="blog-post__cta">
+          <div class="blog-post__cta-card">
+            <h3 class="blog-post__cta-title">Need Health Advice?</h3>
+            <p class="blog-post__cta-desc">Chat with our AI health assistant in any language. Get doctor-verified prescriptions at affordable rates.</p>
+            <div class="blog-post__cta-actions">
+              <a href="https://app.ilaaj.ai" class="btn btn--hero-primary">Try Ilaaj AI Now</a>
+              <a href="/blog" class="btn--outline">Read More Articles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <img src="../assets/ilaaj-logo.jpg" alt="Ilaaj AI" class="footer__logo-img" width="36" height="36" loading="lazy">
+            <span class="footer__logo-text">Ilaaj AI</span>
+          </div>
+          <p class="footer__brand-desc">Pakistan's first AI-powered health platform. Chat about your symptoms in any language, get AI triage, and receive doctor-verified prescriptions &mdash; affordable and accessible, 24/7.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/ilaaj_ai/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.516 2.497 5.783 2.225 7.149 2.163 8.415 2.105 8.795 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.987 15.668 24 15.259 24 12s-.013-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324A6.162 6.162 0 0 0 12 5.838zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61588590745625" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+            <a href="https://x.com/ilaajai" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Product</h4>
+          <ul class="footer__links">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#how-it-works">How It Works</a></li>
+            <li><a href="/#doctors">Our Doctors</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="../support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <p class="footer__contact-text">Questions or feedback?</p>
+          <a href="mailto:support@ilaaj.ai" class="footer__email">support@ilaaj.ai</a>
+          <p class="footer__emergency">For emergencies, call <strong>1122</strong> (Rescue)</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span class="footer-year"></span> Ilaaj AI. All rights reserved.</p>
+        <p class="footer__disclaimer">Ilaaj AI is for general health consultations and non-emergency medical guidance. For emergencies, call 1122 (Rescue) or visit the nearest hospital.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+    document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());
+  </script>
+  <!-- Tawk.to Live Chat (lazy-loaded) -->
+  <script>
+  (function() {
+    var tawkLoaded = false;
+    function loadTawk() {
+      if (tawkLoaded) return;
+      tawkLoaded = true;
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/69ce56b0127eae1c37be0e72/1jl70596p';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    }
+    document.addEventListener('scroll', loadTawk, {once: true});
+    document.addEventListener('click', loadTawk, {once: true});
+    document.addEventListener('mouseover', loadTawk, {once: true});
+  })();
+  </script>
+</body>
+</html>

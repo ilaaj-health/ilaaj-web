@@ -1,0 +1,47 @@
+name: Daily Rebuild (auto-publish scheduled blog posts)
+
+# Why: blog posts in src/data/blog-posts.ts use a `scheduled` field for staged
+# publishing. The client-side JS already reveals them on their scheduled date,
+# but for SEO (sitemap, Schema.org itemListElement, server-rendered HTML) we
+# trigger a fresh Vercel build once per day so the new posts are baked into
+# the static output too.
+
+on:
+  # Daily at 19:01 UTC = 00:01 Pakistan Standard Time (UTC+5)
+  schedule:
+    - cron: '1 19 * * *'
+
+  # Allow manual trigger from the GitHub Actions tab
+  workflow_dispatch:
+
+jobs:
+  trigger-vercel-deploy:
+    name: Trigger Vercel deploy via deploy hook
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Ensure VERCEL_DEPLOY_HOOK secret is set
+        run: |
+          if [ -z "${{ secrets.VERCEL_DEPLOY_HOOK }}" ]; then
+            echo "::error::VERCEL_DEPLOY_HOOK secret is not set."
+            echo "Go to your Vercel project: Settings -> Git -> Deploy Hooks,"
+            echo "create a hook (any name, branch: main), copy the URL, then in"
+            echo "this GitHub repo: Settings -> Secrets and variables -> Actions"
+            echo "-> New repository secret -> name VERCEL_DEPLOY_HOOK, value <URL>."
+            exit 1
+          fi
+
+      - name: POST the Vercel deploy hook
+        run: |
+          echo "Triggering Vercel deploy at $(date -u) UTC"
+          response=$(curl -s -w "\n%{http_code}" -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}")
+          body=$(echo "$response" | head -n -1)
+          status=$(echo "$response" | tail -n 1)
+          echo "Vercel API status: $status"
+          echo "Body: $body"
+          if [ "$status" != "200" ] && [ "$status" != "201" ]; then
+            echo "::error::Vercel deploy hook returned non-2xx status: $status"
+            exit 1
+          fi
+          echo "Deploy successfully queued. Vercel will build and roll out shortly."

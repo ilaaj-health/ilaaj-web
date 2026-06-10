@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <!-- Sentry: error tracking + session replay -->
+  <script src="https://js.sentry-cdn.com/defa6ca82daea4d4c49a8b69b87c53cc.min.js" crossorigin="anonymous"></script>
+  <script>
+    window.sentryOnLoad = function () {
+      Sentry.init({
+        integrations: [Sentry.replayIntegration({ maskAllText: false, blockAllMedia: false })],
+        tracesSampleRate: 0.1,
+        replaysSessionSampleRate: 0.1,
+        replaysOnErrorSampleRate: 1.0,
+      });
+    };
+  </script>
+  <!-- PostHog: product analytics + session replay -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_xjBQ5vUS7nTJz4jHta6d5dDE7jHdtFjFuqkxAJjvcFzo', { api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only', cross_subdomain_cookie: true });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XKTHF96');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1697266221447949');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1697266221447949&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bachon Ke Jukam Ka Ilaj — Safe Medicine Aur Ghareloo Tareeqe | Ilaaj AI</title>
+  <meta name="description" content="Bachon ke jukam ka safe ilaj. 90% jukam viral hai. Janein konsi cough syrup khatarnak hai, Calpol dose, ghareloo tareeqe aur kab doctor zaruri — Ilaaj AI ki complete guide.">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="bachon ka jukam ka ilaj, baby cold treatment urdu, child cough syrup pakistan, infant cold remedies, paediatric flu pakistan">
+  <meta name="geo.region" content="PK">
+  <meta name="geo.placename" content="Pakistan">
+  <meta name="google-site-verification" content="8RtzwgVYowrMGF4E77jnKOX33seYEQTuXmxps2XkPxI">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.ilaaj.ai/blog/bachon-ka-jukam">
+  <link rel="alternate" hreflang="ur-PK" href="https://www.ilaaj.ai/blog/bachon-ka-jukam" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ilaaj.ai/blog/bachon-ka-jukam" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/logo/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/logo/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/logo/site.webmanifest" />
+
+  <!-- PWA / Mobile -->
+  <meta name="theme-color" content="#00897B">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="IlaajAI">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Bachon Ke Jukam Ka Ilaj — Safe Medicine Aur Ghareloo Tareeqe | Ilaaj AI">
+  <meta property="og:description" content="Bachon ke jukam ka safe ilaj. 90% jukam viral hai. Janein konsi cough syrup khatarnak hai, Calpol dose, ghareloo tareeqe aur kab doctor zaruri — Ilaaj AI ki complete guide.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ilaaj.ai/blog/bachon-ka-jukam">
+  <meta property="og:image" content="https://images.pexels.com/photos/3887619/pexels-photo-3887619.jpeg?auto=compress&cs=tinysrgb&w=1200">
+  <meta property="og:image:alt" content="Sick child in bed with tissue — pediatric cold">
+  <meta property="og:site_name" content="Ilaaj AI">
+  <meta property="og:locale" content="ur_PK">
+  <meta property="article:published_time" content="2026-06-01T09:00:00.000Z">
+  <meta property="article:modified_time" content="2026-06-01T09:00:00.000Z">
+  <meta property="article:author" content="Ilaaj AI Medical Team">
+  <meta property="article:section" content="Pediatric Health">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ilaajai">
+  <meta name="twitter:creator" content="@ilaajai">
+  <meta name="twitter:title" content="Bachon Ke Jukam Ka Ilaj — Safe Medicine Aur Ghareloo Tareeqe | Ilaaj AI">
+  <meta name="twitter:description" content="Bachon ke jukam ka safe ilaj. 90% jukam viral hai. Janein konsi cough syrup khatarnak hai, Calpol dose, ghareloo tareeqe aur kab doctor zaruri — Ilaaj AI ki complete guide.">
+  <meta name="twitter:image" content="https://images.pexels.com/photos/3887619/pexels-photo-3887619.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNTMD61HWL"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KNTMD61HWL');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/blog.css">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.ilaaj.ai/blog/bachon-ka-jukam"
+  },
+  "headline": "Bachon Ke Jukam Ka Ilaj — Safe Medicine Aur Ghareloo Tareeqe",
+  "description": "Bachon ke jukam ka safe ilaj. 90% jukam viral hai. Janein konsi cough syrup khatarnak hai, Calpol dose, ghareloo tareeqe aur kab doctor zaruri — Ilaaj AI ki complete guide.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://images.pexels.com/photos/3887619/pexels-photo-3887619.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  },
+  "datePublished": "2026-06-01T09:00:00.000Z",
+  "dateModified": "2026-06-01T09:00:00.000Z",
+  "author": {
+    "@type": "Organization",
+    "name": "Ilaaj AI Medical Team",
+    "url": "https://www.ilaaj.ai/doctors"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ilaaj AI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.ilaaj.ai/assets/Icon-192.png"
+    }
+  },
+  "keywords": "bachon ka jukam ka ilaj, baby cold treatment urdu, child cough syrup pakistan, infant cold remedies, paediatric flu pakistan",
+  "inLanguage": "ur",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Ilaaj AI Blog",
+    "url": "https://www.ilaaj.ai/blog"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.ilaaj.ai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.ilaaj.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Bachon Ke Jukam Ka Ilaj — Safe Medicine Aur Ghareloo Tareeqe",
+      "item": "https://www.ilaaj.ai/blog/bachon-ka-jukam"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Bachon ko cough syrup deni chahiye ya nahi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "6 saal se kam bachon ko OTC cough syrup (Hydryllin, Coferb, Actifed, multi-symptom combos) NA dein. FDA aur AAP ka clear warning hai — yeh dawai bachon mein effective nahi aur side effects (drowsiness, breathing slow, dil ki dharkan tez) ka khatra hai. Iske bajaye saline nasal drops, humidifier, aur shahad (1 saal se zyada bachon ke liye) use karein. Khansi hafte se zyada chal rahi hai to doctor se milein."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bachon ke jukam mein Calpol kab aur kitni dein?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Calpol (paracetamol) sirf bukhar 38°C (100.4°F) se upar ya bacha takleef mein ho to dein. Dose weight ke hisab se: 15 mg per kg har 6 ghante ke baad. 10 kg bacha = 150 mg = 6 ml Calpol 120/5 ml syrup. Din mein 4 baar se zyada nahi. Bilkul khaali pet na dein. 3 mahine se kam ke bacha ka bukhar = doctor se foran milein, khud dawai mat dein."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kya naye born baby ko shahad dena safe hai jukam mein?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NAHI. 1 saal se kam bachon ko shahad bilkul mat dein — infant botulism ka khatra hai jo jaan leva ho sakta hai. Shahad mein moujood Clostridium botulinum bacteria ke spores chote bachon ke gut mein toxin paida karte hain. 1 saal ke baad shahad khansi ke liye safe aur effective hai — 1/2 chamach sone se pehlay. WHO aur AAP ne 1 saal se upar ke bachon mein shahad ko cough suppressant ke tor pe recommend kiya hai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bachon ko saal mein kitni baar jukam normal hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pakistan mein chote bachon (5 saal se kam) ko saal mein 6-8 baar jukam hona bilkul normal hai. School ya daycare jaane wale bachon mein 10-12 baar bhi possible hai — yeh unka immune system seekhne ka process hai. Har jukam 5-7 din mein khud theek ho jata hai. Zyada concern karne wali baat tab hai jab jukam hafton chale, har baar bukhar 39°C+ ho, ya bacha din-ba-din kamzor ho raha ho — tab pediatrician se milein."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bacha jukam mein doodh peena chod de to kya karein?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Naak band hone se bachay ko doodh peenay mein takleef hoti hai. Doodh pilane se 5 minute pehlay saline nasal drops (2-3 drops har nakhuna) dalein aur phir bulb syringe se naak saaf karein. Chote portions mein bar bar pilain. Maa ka doodh jaari rakhein — yeh immunity aur hydration dono mein madad karta hai. 6 mahine se zyada bacha hai to thoda paani bhi dein. Agar 8 ghante se peshab nahi aaya, mun sukha hai, ya bacha sust hai — yeh dehydration ki nishani hai, foran doctor ko dikhain."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKTHF96"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar navbar--scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="/" class="navbar__brand">
+        <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="navbar__logo">
+        <span class="navbar__name">Ilaaj AI</span>
+      </a>
+      <div class="navbar__center" id="navLinks">
+        <a href="/#how-it-works" class="navbar__link">How It Works</a>
+        <a href="/#features" class="navbar__link">Features</a>
+        <a href="/blog" class="navbar__link navbar__link--active">Blog</a>
+        <a href="/#faq" class="navbar__link">FAQ</a>
+      </div>
+      <div class="navbar__right">
+        <a href="https://app.ilaaj.ai" class="btn btn--primary btn--sm navbar__cta">
+          Muft Mashwara Lein
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile" id="mobileMenu">
+      <a href="/#how-it-works" class="navbar__mobile-link">How It Works</a>
+      <a href="/#features" class="navbar__mobile-link">Features</a>
+      <a href="/blog" class="navbar__mobile-link">Blog</a>
+      <a href="/#faq" class="navbar__mobile-link">FAQ</a>
+      <a href="https://app.ilaaj.ai" class="btn btn--primary btn--full">Muft Mashwara Lein</a>
+    </div>
+  </nav>
+
+  <main>
+    <article class="blog-post">
+      <div class="container">
+        <a href="/blog" class="blog-post__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Articles
+        </a>
+
+        <div class="blog-post__featured-image"><img src="https://images.pexels.com/photos/3887619/pexels-photo-3887619.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Sick child in bed with tissue — pediatric cold"></div>
+
+        <div class="blog-post__author">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI Medical Team" class="blog-post__author-avatar">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name">Ilaaj AI Medical Team</div>
+            <div class="blog-post__author-creds">PMDC-verified doctors reviewing every article</div>
+            <div class="blog-post__author-dates">Published: June 1, 2026 | Last reviewed: June 1, 2026</div>
+          </div>
+        </div>
+
+        <h1 class="blog-post__title">Bachon Ke Jukam Ka Ilaj — Safe Medicine Aur Ghareloo Tareeqe</h1>
+
+        <div class="blog-post__tldr">
+          <div class="blog-post__tldr-title">TL;DR — Key Takeaways</div>
+          <ul>
+            <li>90% bachon ka jukam viral hai — khud 5-7 din mein theek ho jata hai</li>
+            <li>6 saal se kam bachon ko OTC cough syrup (Hydryllin, Coferb) NA dein — FDA warning</li>
+            <li>Safe: saline nasal drops, Calpol bukhar ke liye, humidifier, rest</li>
+            <li>1 saal se kam bacha ko shahad NA dein — botulism ka khatra</li>
+            <li>3 mahine se kam mein koi bhi bukhar = foran doctor</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+<h2>Bachon Mein Jukam Kyun Itna Aam Hai?</h2>
+<p>Pakistan mein chote bachon ko saal mein 6-8 baar jukam (common cold) hona bilkul normal hai. Yeh unke developing immune system ka seekhne ka process hai. Wajah aksar 200+ viruses mein se koi ek hota hai — rhinovirus sab se common. Daycare, school, ya bhai-behnon se infection phailta hai. Achi baat: 90% jukam viral hai aur bina antibiotics ke khud theek ho jata hai.</p>
+
+<table class="blog-post__quick-facts">
+  <caption>Bachon Ke Jukam — Quick Facts</caption>
+  <tbody>
+    <tr><td>Aam Symptoms</td><td>Naak band/behna, halki khansi, chinkein, halka bukhar, gala kharab</td></tr>
+    <tr><td>Duration</td><td>5-7 din (khansi 2 hafte tak chal sakti hai)</td></tr>
+    <tr><td>Wajah</td><td>200+ viruses — rhinovirus sab se common</td></tr>
+    <tr><td>Saal Mein Frequency</td><td>5 saal se kam bachon mein 6-8 baar normal hai</td></tr>
+    <tr><td>Antibiotics</td><td>Zaruri NAHI — viral hai, antibiotics kaam nahi karte</td></tr>
+    <tr><td>Emergency Sign</td><td>3 mahine se kam ka bukhar, sans phulna, dehydration</td></tr>
+  </tbody>
+</table>
+
+<h2>Bachon Ke Jukam Ke Symptoms</h2>
+<p>Common cold (nazla zukam) ke symptoms aksar yeh hote hain:</p>
+<ul>
+<li>Naak behna ya band hona (rhinorrhea)</li>
+<li>Halki khansi, khaaskar raat ko</li>
+<li>Halka bukhar 38°C (100.4°F) tak</li>
+<li>Chinkein aana</li>
+<li>Gala kharab ya kharoshta</li>
+<li>Aankhein paani bharna</li>
+<li>Bhukh kam lagna, mood off</li>
+<li>Disturbed sleep — naak band hone se</li>
+</ul>
+
+<h2>Safe Ghareloo Tareeqe (Home Remedies)</h2>
+
+<h3>1. Saline Nasal Drops + Bulb Suction</h3>
+<p>Yeh sab se safe aur effective tareeqa hai chote bachon ke liye. Pakistani pharmacies mein Nasivion saline, Sterimar, ya simple Normal Saline drops milti hain. Har nakhuna mein 2-3 drops dalein, 1 minute wait karein, phir bulb syringe se naak saaf karein. Doodh pilane se 5-10 minute pehlay use karna best hai.</p>
+
+<h3>2. Humidifier ya Steam</h3>
+<p>Kamre mein humidifier rakhain ya bathroom mein garam pani ka steam — 5-10 minute. Yeh naak ki sukhi membranes ko soothe karta hai aur mucus thin karta hai. Bacha ko direct steam mat dein, room mein bhaap kafi hai.</p>
+
+<h3>3. Sir Thoda Uncha Rakhain</h3>
+<p>Sone ke waqt bacha ka sir thoda uncha (mattress ke neeche towel se incline karein) — naak band hone mein madad karta hai. 1 saal se kam bachon mein pillow MAT use karein (SIDS risk).</p>
+
+<h3>4. Garam Drinks (1 Saal Se Upar)</h3>
+<p>Yakhni, halka adrak wala doodh, paani — gala soothe karte hain aur hydration maintain karte hain. Maa ka doodh peene wale bachon mein breastfeeding zyada karein.</p>
+
+<h3>5. Shahad (Sirf 1 Saal Ke Baad)</h3>
+<p>1/2 chamach shahad sone se pehlay — research shows khansi mein dextromethorphan jitna effective. <strong>1 saal se kam bachon ko shahad bilkul NAHI dein</strong> — infant botulism jaan leva ho sakta hai.</p>
+
+<h3>6. Garmi Pani Sponging</h3>
+<p>102°F+ bukhar mein neem garam pani (NOT cold, NOT alcohol) se sponging — peshani, bagal, groin pe. Yeh temperature dheere se kam karta hai jab ke Calpol asar dikhata hai.</p>
+
+<h2>Konsi Dawai Safe Hai, Konsi Khatarnak?</h2>
+
+<h3>Safe Medicines:</h3>
+<ul>
+<li><strong>Calpol / Panadol syrup (paracetamol):</strong> Bukhar 38°C+ ya bacha takleef mein ho to. Dose: 15 mg/kg har 6 ghante.</li>
+<li><strong>Brufen syrup (ibuprofen):</strong> 6 mahine se upar ke bachon mein high fever ke liye. Dose: 10 mg/kg har 6-8 ghante. Khaali pet mat dein.</li>
+<li><strong>Saline nasal drops:</strong> Har umar mein safe.</li>
+</ul>
+
+<h3>Khatarnak — AVOID Under 6 Years:</h3>
+<ul>
+<li><strong>Cough syrups:</strong> Hydryllin, Coferb, Actifed, Phenergan — sedation aur breathing slow karte hain</li>
+<li><strong>Decongestants:</strong> Pseudoephedrine syrups — heart rate badhate hain</li>
+<li><strong>Multi-symptom combos:</strong> Theraflu, Disprin Forte, ya "cold & flu" syrups</li>
+<li><strong>Aspirin (Disprin):</strong> Reye's syndrome ka risk — viral infection mein liver fail kar sakta hai</li>
+</ul>
+<p>FDA aur American Academy of Pediatrics (AAP) ka clear stance hai: chote bachon mein OTC cough/cold dawai effective NAHI aur side effects ka risk zyada hai.</p>
+
+<div class="blog-post__inline-cta">
+  <p>Bacha ka jukam 1 hafte se zyada chal raha hai ya bukhar 102°F+ hai? Ilaaj AI pe pediatric-trained doctor se chand minute mein mashwara lein — ghar baithe, Roman Urdu mein.</p>
+  <a href="https://app.ilaaj.ai">Abhi Doctor Se Milein</a>
+</div>
+
+<h2>Kab Doctor Se Foran Milein?</h2>
+<p>Yeh red flags ignore mat karein — foran pediatrician ya emergency:</p>
+<ul>
+<li><strong>3 mahine se kam bacha mein koi bhi bukhar</strong> — yeh aksar serious infection ki nishani hai</li>
+<li>Bukhar 102°F (39°C) se upar 3 din se zyada</li>
+<li>Sans phulna, sans lene mein takleef, sans ki awaz (wheezing/stridor)</li>
+<li>Dehydration ki nishani: 8 ghante peshab nahi, mun sukha, ankhein dhansi hui</li>
+<li>Kaan kheechna ya kaan se paani — otitis media ka shubha</li>
+<li>Bacha bohat sust, doodh chod raha, ya jaga nahi rahe</li>
+<li>Khansi 3 hafte se zyada — TB ya whooping cough screen karna</li>
+<li>Hari/peeli mucus 10+ din — bacterial sinusitis ka shubha</li>
+</ul>
+
+<h2>Jukam Se Bachao — Roz Ki Aadat</h2>
+<ul>
+<li>Haath dhone ki aadat — bachay ko 6 saal ki umar tak alarm laga ke seekhayein</li>
+<li>Bimar bachon se distance — school se ghar aate hi haath dhulwain</li>
+<li>Maa ka doodh — pehlay 6 mahine exclusive breastfeeding immunity barhati hai</li>
+<li>Flu vaccine — 6 mahine se upar bachon mein har saal recommended</li>
+<li>Smoking se door rakhain — second-hand smoke jukam frequency 2x karta hai</li>
+<li>Vitamin D sufficient rakhain (Pakistan mein deficiency aam) — immunity ke liye zaruri</li>
+<li>Achi neend, balanced diet, phal aur sabzi mein vitamin C</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>Bachon ka jukam aksar khud theek hone wali viral bimari hai — antibiotics aur strong cough syrups ki zarurat nahi. Sab se zaruri: rest, hydration, saline nasal drops aur Calpol sirf bukhar ke liye. <strong>Ilaaj AI</strong> pe aap apne bacha ke symptoms detail mein discuss kar sakte hain, AI ka fast triage le sakte hain, aur agar zarurat ho to PMDC-verified pediatrician se ghar baithe consult kar sakte hain.</p>
+        </div>
+
+        <div class="blog-post__faq">
+          <h2>Frequently Asked Questions</h2>
+          <details class="blog-post__faq-item">
+            <summary>Bachon ko cough syrup deni chahiye ya nahi?</summary>
+            <div class="blog-post__faq-answer">6 saal se kam bachon ko OTC cough syrup (Hydryllin, Coferb, Actifed, multi-symptom combos) NA dein. FDA aur AAP ka clear warning hai — yeh dawai bachon mein effective nahi aur side effects (drowsiness, breathing slow, dil ki dharkan tez) ka khatra hai. Iske bajaye saline nasal drops, humidifier, aur shahad (1 saal se zyada bachon ke liye) use karein. Khansi hafte se zyada chal rahi hai to doctor se milein.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Bachon ke jukam mein Calpol kab aur kitni dein?</summary>
+            <div class="blog-post__faq-answer">Calpol (paracetamol) sirf bukhar 38°C (100.4°F) se upar ya bacha takleef mein ho to dein. Dose weight ke hisab se: 15 mg per kg har 6 ghante ke baad. 10 kg bacha = 150 mg = 6 ml Calpol 120/5 ml syrup. Din mein 4 baar se zyada nahi. Bilkul khaali pet na dein. 3 mahine se kam ke bacha ka bukhar = doctor se foran milein, khud dawai mat dein.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Kya naye born baby ko shahad dena safe hai jukam mein?</summary>
+            <div class="blog-post__faq-answer">NAHI. 1 saal se kam bachon ko shahad bilkul mat dein — infant botulism ka khatra hai jo jaan leva ho sakta hai. Shahad mein moujood Clostridium botulinum bacteria ke spores chote bachon ke gut mein toxin paida karte hain. 1 saal ke baad shahad khansi ke liye safe aur effective hai — 1/2 chamach sone se pehlay. WHO aur AAP ne 1 saal se upar ke bachon mein shahad ko cough suppressant ke tor pe recommend kiya hai.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Bachon ko saal mein kitni baar jukam normal hai?</summary>
+            <div class="blog-post__faq-answer">Pakistan mein chote bachon (5 saal se kam) ko saal mein 6-8 baar jukam hona bilkul normal hai. School ya daycare jaane wale bachon mein 10-12 baar bhi possible hai — yeh unka immune system seekhne ka process hai. Har jukam 5-7 din mein khud theek ho jata hai. Zyada concern karne wali baat tab hai jab jukam hafton chale, har baar bukhar 39°C+ ho, ya bacha din-ba-din kamzor ho raha ho — tab pediatrician se milein.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Bacha jukam mein doodh peena chod de to kya karein?</summary>
+            <div class="blog-post__faq-answer">Naak band hone se bachay ko doodh peenay mein takleef hoti hai. Doodh pilane se 5 minute pehlay saline nasal drops (2-3 drops har nakhuna) dalein aur phir bulb syringe se naak saaf karein. Chote portions mein bar bar pilain. Maa ka doodh jaari rakhein — yeh immunity aur hydration dono mein madad karta hai. 6 mahine se zyada bacha hai to thoda paani bhi dein. Agar 8 ghante se peshab nahi aaya, mun sukha hai, ya bacha sust hai — yeh dehydration ki nishani hai, foran doctor ko dikhain.</div>
+          </details>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="blog-post__related">
+          <h2>Related Articles</h2>
+          <ul class="blog-post__related-list">
+            <li><a href="/blog/calpol-syrup-dose">Calpol Syrup — Bachon Ke Liye Correct Dose, Use aur Warnings</a></li>
+            <li><a href="/blog/khansi-ka-ilaj">Khansi Ka Ilaj — Wajah, Ghareloo Tareeqay aur Best Medicine</a></li>
+            <li><a href="/blog/bachon-ki-bimari-ai-mashwara">Bachon ki Bimari: AI se Fori Mashwara</a></li>
+            <li><a href="/blog">Browse All Health Articles &rarr;</a></li>
+          </ul>
+        </div>
+
+        <div class="blog-post__about">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="blog-post__about-logo">
+          <div class="blog-post__about-text">
+            <strong>About Ilaaj AI</strong>
+            <p>Ilaaj AI is Pakistan's first AI-powered health platform. Chat about your symptoms in Urdu or English, get AI-powered triage, and receive doctor-verified prescriptions — affordable and accessible, 24/7.</p>
+          </div>
+        </div>
+
+        <div class="blog-post__cta">
+          <div class="blog-post__cta-card">
+            <h3 class="blog-post__cta-title">Need Health Advice?</h3>
+            <p class="blog-post__cta-desc">Chat with our AI health assistant in any language. Get doctor-verified prescriptions at affordable rates.</p>
+            <div class="blog-post__cta-actions">
+              <a href="https://app.ilaaj.ai" class="btn btn--hero-primary">Try Ilaaj AI Now</a>
+              <a href="/blog" class="btn--outline">Read More Articles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <img src="../assets/ilaaj-logo.jpg" alt="Ilaaj AI" class="footer__logo-img" width="36" height="36" loading="lazy">
+            <span class="footer__logo-text">Ilaaj AI</span>
+          </div>
+          <p class="footer__brand-desc">Pakistan's first AI-powered health platform. Chat about your symptoms in any language, get AI triage, and receive doctor-verified prescriptions &mdash; affordable and accessible, 24/7.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/ilaaj_ai/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.516 2.497 5.783 2.225 7.149 2.163 8.415 2.105 8.795 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.987 15.668 24 15.259 24 12s-.013-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324A6.162 6.162 0 0 0 12 5.838zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61588590745625" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+            <a href="https://x.com/ilaajai" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Product</h4>
+          <ul class="footer__links">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#how-it-works">How It Works</a></li>
+            <li><a href="/#doctors">Our Doctors</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="../support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <p class="footer__contact-text">Questions or feedback?</p>
+          <a href="mailto:support@ilaaj.ai" class="footer__email">support@ilaaj.ai</a>
+          <p class="footer__emergency">For emergencies, call <strong>1122</strong> (Rescue)</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span class="footer-year"></span> Ilaaj AI. All rights reserved.</p>
+        <p class="footer__disclaimer">Ilaaj AI is for general health consultations and non-emergency medical guidance. For emergencies, call 1122 (Rescue) or visit the nearest hospital.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+    document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());
+  </script>
+  <!-- Tawk.to Live Chat (lazy-loaded) -->
+  <script>
+  (function() {
+    var tawkLoaded = false;
+    function loadTawk() {
+      if (tawkLoaded) return;
+      tawkLoaded = true;
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/69ce56b0127eae1c37be0e72/1jl70596p';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    }
+    document.addEventListener('scroll', loadTawk, {once: true});
+    document.addEventListener('click', loadTawk, {once: true});
+    document.addEventListener('mouseover', loadTawk, {once: true});
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <!-- Sentry: error tracking + session replay -->
+  <script src="https://js.sentry-cdn.com/defa6ca82daea4d4c49a8b69b87c53cc.min.js" crossorigin="anonymous"></script>
+  <script>
+    window.sentryOnLoad = function () {
+      Sentry.init({
+        integrations: [Sentry.replayIntegration({ maskAllText: false, blockAllMedia: false })],
+        tracesSampleRate: 0.1,
+        replaysSessionSampleRate: 0.1,
+        replaysOnErrorSampleRate: 1.0,
+      });
+    };
+  </script>
+  <!-- PostHog: product analytics + session replay -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_xjBQ5vUS7nTJz4jHta6d5dDE7jHdtFjFuqkxAJjvcFzo', { api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only', cross_subdomain_cookie: true });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XKTHF96');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1697266221447949');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1697266221447949&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disprin Bachon Ko Mat Dein — Reye Syndrome Ka Khatra | Ilaaj AI</title>
+  <meta name="description" content="Disprin (aspirin) bachon ke liye khatarnak hai — Reye syndrome fatal liver aur brain damage. Pakistani walidain ke liye safer alternatives aur warning.">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="disprin bachon, aspirin reye syndrome, disprin bachon ko nahi, bachon ka bukhar, aspirin warning urdu">
+  <meta name="geo.region" content="PK">
+  <meta name="geo.placename" content="Pakistan">
+  <meta name="google-site-verification" content="8RtzwgVYowrMGF4E77jnKOX33seYEQTuXmxps2XkPxI">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.ilaaj.ai/blog/disprin-bachon-warning">
+  <link rel="alternate" hreflang="ur-PK" href="https://www.ilaaj.ai/blog/disprin-bachon-warning" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ilaaj.ai/blog/disprin-bachon-warning" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/logo/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/logo/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/logo/site.webmanifest" />
+
+  <!-- PWA / Mobile -->
+  <meta name="theme-color" content="#00897B">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="IlaajAI">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Disprin Bachon Ko Mat Dein — Reye Syndrome Ka Khatra | Ilaaj AI">
+  <meta property="og:description" content="Disprin (aspirin) bachon ke liye khatarnak hai — Reye syndrome fatal liver aur brain damage. Pakistani walidain ke liye safer alternatives aur warning.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ilaaj.ai/blog/disprin-bachon-warning">
+  <meta property="og:image" content="https://images.pexels.com/photos/7083682/pexels-photo-7083682.jpeg?auto=compress&cs=tinysrgb&w=1200">
+  <meta property="og:image:alt" content="White round tablets — aspirin safety warning">
+  <meta property="og:site_name" content="Ilaaj AI">
+  <meta property="og:locale" content="ur_PK">
+  <meta property="article:published_time" content="2026-05-29T09:00:00.000Z">
+  <meta property="article:modified_time" content="2026-05-29T09:00:00.000Z">
+  <meta property="article:author" content="Ilaaj AI Medical Team">
+  <meta property="article:section" content="Pediatric Safety">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ilaajai">
+  <meta name="twitter:creator" content="@ilaajai">
+  <meta name="twitter:title" content="Disprin Bachon Ko Mat Dein — Reye Syndrome Ka Khatra | Ilaaj AI">
+  <meta name="twitter:description" content="Disprin (aspirin) bachon ke liye khatarnak hai — Reye syndrome fatal liver aur brain damage. Pakistani walidain ke liye safer alternatives aur warning.">
+  <meta name="twitter:image" content="https://images.pexels.com/photos/7083682/pexels-photo-7083682.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNTMD61HWL"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KNTMD61HWL');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/blog.css">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.ilaaj.ai/blog/disprin-bachon-warning"
+  },
+  "headline": "Disprin Bachon Ko Mat Dein — Reye Syndrome Ka Khatra",
+  "description": "Disprin (aspirin) bachon ke liye khatarnak hai — Reye syndrome fatal liver aur brain damage. Pakistani walidain ke liye safer alternatives aur warning.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://images.pexels.com/photos/7083682/pexels-photo-7083682.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  },
+  "datePublished": "2026-05-29T09:00:00.000Z",
+  "dateModified": "2026-05-29T09:00:00.000Z",
+  "author": {
+    "@type": "Organization",
+    "name": "Ilaaj AI Medical Team",
+    "url": "https://www.ilaaj.ai/doctors"
+  },
+  "reviewedBy": { "@type": "Person", "name": "Dr. Saira Zafar", "jobTitle": "General Practitioner", "url": "https://www.ilaaj.ai/doctors/dr-saira-zafar" },
+  "lastReviewed": "2026-05-29",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ilaaj AI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.ilaaj.ai/assets/Icon-192.png"
+    }
+  },
+  "keywords": "disprin bachon, aspirin reye syndrome, disprin bachon ko nahi, bachon ka bukhar, aspirin warning urdu",
+  "inLanguage": "ur",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Ilaaj AI Blog",
+    "url": "https://www.ilaaj.ai/blog"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.ilaaj.ai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.ilaaj.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Disprin Bachon Ko Mat Dein — Reye Syndrome Ka Khatra",
+      "item": "https://www.ilaaj.ai/blog/disprin-bachon-warning"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Disprin bachon ko kyun nahi deni chahiye?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Disprin (aspirin) 16 saal se kam bachon mein viral infections — chickenpox, flu, dengue — ke dauran Reye syndrome paida kar sakti hai. Yeh ek rare magar jaanleva bimari hai jis mein liver aur dimagh dono kharab hote hain. FDA, NHS aur WHO sab ne 1980s se yeh warning de rakhi hai. Pakistan mein bhi bachon ke bukhar mein aspirin ki bilkul ijazat nahi."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Reye syndrome ki alamaat kya hain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Aspirin lene ke 2-7 din baad: mutawatir ulti, ghuneem aana ya behoshi, behavior mein achanak tabdeeli (chirhna, ulta seedha bolna), saans tez chalna, hath paer mein jhatkay. Yeh emergency hai — foran hospital lay jaein, kyun ke bina foran ilaj ke bacha jaan se ja sakta hai ya permanent brain damage ho sakta hai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Pakistani dadi naani disprin ka pani peelati thi — kya yeh galat hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Haan, yeh ab medically galat aur khatarnak mana jata hai. Pehlay yeh tradition aam thi magar 1980s mein research ne sabit kar diya ke bachon mein aspirin se Reye syndrome ka direct taluq hai. Aaj duniya bhar ke pediatricians is ke khilaf hain. Mohabbat ke jazbe ko purani tradition ki bajaye nai medical research ke saath jorein — bache ki jaan zyada qeemti hai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kya aspirin sirf chickenpox aur flu mein khatarnak hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Khaaskar viral infections — chickenpox (sheetla), flu, dengue, measles — mein khatra sab se zyada hai. Magar kisi bhi bukhar ki shuruat mein walidain ko pata nahi hota ke wajah viral hai ya bacterial. Isi liye precaution yeh hai ke 16 saal se kam bachon ko kabhi bhi aspirin na dein. Safe rule: bachon ke liye paracetamol ya ibuprofen hi."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kya aspirin kabhi bhi bachon mein use hoti hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sirf ek exception hai — Kawasaki disease (ek rare bachpan ki bimari jis mein arteries soojti hain). Is mein pediatrician ki sakht nigrani mein chhoti dose di jati hai. Self-medication ke liye kabhi nahi. Adults ke liye aspirin heart attack aur stroke ki prevention mein theek hai magar bachon ki dawai cabinet mein iska koi maqam nahi."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKTHF96"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar navbar--scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="/" class="navbar__brand">
+        <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="navbar__logo">
+        <span class="navbar__name">Ilaaj AI</span>
+      </a>
+      <div class="navbar__center" id="navLinks">
+        <a href="/#how-it-works" class="navbar__link">How It Works</a>
+        <a href="/#features" class="navbar__link">Features</a>
+        <a href="/blog" class="navbar__link navbar__link--active">Blog</a>
+        <a href="/#faq" class="navbar__link">FAQ</a>
+      </div>
+      <div class="navbar__right">
+        <a href="https://app.ilaaj.ai" class="btn btn--primary btn--sm navbar__cta">
+          Muft Mashwara Lein
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile" id="mobileMenu">
+      <a href="/#how-it-works" class="navbar__mobile-link">How It Works</a>
+      <a href="/#features" class="navbar__mobile-link">Features</a>
+      <a href="/blog" class="navbar__mobile-link">Blog</a>
+      <a href="/#faq" class="navbar__mobile-link">FAQ</a>
+      <a href="https://app.ilaaj.ai" class="btn btn--primary btn--full">Muft Mashwara Lein</a>
+    </div>
+  </nav>
+
+  <main>
+    <article class="blog-post">
+      <div class="container">
+        <a href="/blog" class="blog-post__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Articles
+        </a>
+
+        <div class="blog-post__featured-image"><img src="https://images.pexels.com/photos/7083682/pexels-photo-7083682.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="White round tablets — aspirin safety warning"></div>
+
+        <div class="blog-post__author">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI Medical Team" class="blog-post__author-avatar">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name">Ilaaj AI Medical Team</div>
+            <div class="blog-post__author-creds">PMDC-verified doctors reviewing every article</div>
+            <div class="blog-post__author-dates">Published: May 29, 2026 | Last reviewed: May 29, 2026</div>
+          </div>
+        </div>
+
+        <div class="blog-post__author blog-post__author--reviewer">
+          <img src="https://res.cloudinary.com/dpaz2mhy6/image/upload/f_auto,q_auto,w_96,h_96,c_fill,g_face/v1776334958/zwpaowaamnt8euxzlkzh.png" alt="Dr. Saira Zafar" class="blog-post__author-avatar" loading="lazy">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name"><a href="/doctors/dr-saira-zafar">Dr. Saira Zafar</a></div>
+            <div class="blog-post__author-creds blog-post__author-creds--reviewer">Medically reviewed by — PMDC-verified General Practitioner</div>
+            <div class="blog-post__author-dates">Reviewed on: May 29, 2026</div>
+          </div>
+        </div>
+
+        <h1 class="blog-post__title">Disprin Bachon Ko Mat Dein — Reye Syndrome Ka Khatra</h1>
+
+        <div class="blog-post__tldr">
+          <div class="blog-post__tldr-title">TL;DR — Key Takeaways</div>
+          <ul>
+            <li>Disprin (aspirin) 16 saal se kam bachon ke liye khatarnak hai</li>
+            <li>Viral infections (chickenpox, flu, dengue) mein Reye syndrome ka khatra</li>
+            <li>Reye syndrome — fatal liver aur brain damage, mortality 30-40%</li>
+            <li>Safer alternatives: Paracetamol (Calpol/Panadol syrup) aur Brufen</li>
+            <li>Pakistani "dadi-naani disprin pani" tradition ab medically khatarnak mani jati hai</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+<h2>Disprin Kya Hai Aur Bachon Mein Kyun Khatarnak?</h2>
+<p>Disprin Pakistan mein aspirin (acetylsalicylic acid) ka sab se mashhoor brand hai. Yeh adults ke liye dard, bukhar aur khaaskar dil ki bimari (heart attack, stroke ki prevention) mein bohat zaroori dawai hai. Magar <strong>16 saal se kam bachon ke liye yeh dawai khatarnak hai</strong> — kyun ke viral infections ke saath milne pe yeh ek jaanleva bimari paida kar sakti hai jise <em>Reye Syndrome</em> kehte hain.</p>
+
+<p>Pakistan mein purane waqton mein dadi-naani aksar bukhar wale bache ko Disprin ka pani peelati thi — yeh aam tradition thi. Magar 1980s ke baad medical research ne saaf kar diya ke bachon mein aspirin Reye syndrome ka direct cause hai. USA mein 1980 ke baad warning lagne ke baad Reye syndrome ke cases 95% kam ho gaye — yeh sabit karta hai ke yeh hai kitna sahih hisaab.</p>
+
+<table class="blog-post__quick-facts">
+  <caption>Disprin (Aspirin) — Bachon Mein Quick Facts</caption>
+  <tbody>
+    <tr><td>Active ingredient</td><td>Acetylsalicylic acid (aspirin)</td></tr>
+    <tr><td>Safe age</td><td>16 saal aur upar</td></tr>
+    <tr><td>Bachon mein khatra</td><td>Reye Syndrome — fatal hepato-encephalopathy</td></tr>
+    <tr><td>Trigger viral infections</td><td>Chickenpox, flu, dengue, measles</td></tr>
+    <tr><td>Mortality rate</td><td>30-40% (early diagnosis se kam)</td></tr>
+    <tr><td>Safe alternatives</td><td>Paracetamol, Ibuprofen (Brufen)</td></tr>
+  </tbody>
+</table>
+
+<h2>Reye Syndrome — Kya Hota Hai?</h2>
+<p>Reye Syndrome ek rare magar jaanleva bimari hai jis mein <strong>liver mein fat jamne lagti hai</strong> aur saath hi <strong>dimagh sojh jata hai (encephalopathy)</strong>. Yeh aksar tab hoti hai jab bacha pehlay viral infection (jaise flu ya chickenpox) se theek ho raha ho aur usay aspirin di gayi ho.</p>
+
+<h3>Reye Syndrome Ki Alamaat (Phases)</h3>
+<ul>
+<li><strong>Stage 1:</strong> Mutawatir ulti, sustness, neend zyada</li>
+<li><strong>Stage 2:</strong> Confusion, irritability, ghair zaruri behavior</li>
+<li><strong>Stage 3:</strong> Coma, saans tez, hath paer mein jhatkay</li>
+<li><strong>Stage 4-5:</strong> Behoshi, multi-organ failure</li>
+</ul>
+
+<p>Bina foran ilaj ke 30-40% bachon ki maut ho jati hai. Bach jane wale bachon mein bhi <strong>permanent brain damage</strong>, learning disabilities aur seizures common hain. Agar aspirin lene ke baad bacha 3-7 din mein achanak ulti karne lage aur behavior badle — <strong>foran emergency mein jaein</strong>.</p>
+
+<h2>Pakistan Mein Khaas Khayal Rakhne Wali Conditions</h2>
+<p>Pakistan mein yeh bimariyan aam hain — in mein bilkul aspirin nahi:</p>
+<ul>
+<li><strong>Dengue bukhar:</strong> Karachi, Lahore, Rawalpindi ke seasonal outbreaks. Dengue mein khoon bahane ka khatra hota hai aur aspirin yeh khatra aur barhati hai</li>
+<li><strong>Chickenpox (sheetla):</strong> Bachpan ki aam bimari, Reye syndrome ka strongest trigger</li>
+<li><strong>Flu / saalana zukam:</strong> Sardiyon mein aam, viral infection</li>
+<li><strong>Measles / khasra:</strong> Pakistan mein abhi mukammal eradicate nahi hua</li>
+<li><strong>Typhoid:</strong> Aspirin se khoon bahane ka khatra</li>
+</ul>
+
+<div class="blog-post__inline-cta">
+  <p>Bache ka bukhar utar nahi raha ya samajh nahi aa raha kaunsi dawai safe hai? Ilaaj AI pe PMDC-verified pediatrician se chand minute mein guidance lein.</p>
+  <a href="https://app.ilaaj.ai">Pediatrician Se Mashwara Lein</a>
+</div>
+
+<h2>Bachon Ke Liye Safe Alternatives</h2>
+
+<h3>1. Paracetamol (Calpol, Panadol Syrup)</h3>
+<p>3 mahine se barhe har bache ke liye safe. Dose: 10-15 mg/kg har 4-6 ghante baad. Bukhar aur halki dard mein first-line dawai. Pakistan mein har medical store pe milti hai.</p>
+
+<h3>2. Ibuprofen (Brufen Syrup, Nurofen)</h3>
+<p>6 mahine se barhe bachon ke liye. Dose: 5-10 mg/kg har 6-8 ghante. Soojan aur dard mein ziada asar daar. Khaane ya doodh ke saath dein.</p>
+
+<h3>3. Garam Patti Aur Spongebath</h3>
+<p>Shadeed bukhar mein bache ko neem garam pani se sponge karein aur halka kapra pehnaein. Yeh safe aur asar daar hai.</p>
+
+<h2>Aam Galat Faimiyan (Myths)</h2>
+<ul>
+<li><strong>"Disprin se khoon patla hota hai to bukhar jaldi utarta hai"</strong> — Galat. Khoon patla hone aur bukhar utarne ka taluq nahi. Yeh khatarnak misconception hai</li>
+<li><strong>"Mere bare bhai ko bachpan mein di thi, kuch nahi hua"</strong> — Reye syndrome rare hai, magar jab hota hai 30-40% mortality. Risk lene jaisa nahi</li>
+<li><strong>"Bahar ke mulkon ke rules Pakistan mein nahi chalte"</strong> — Bachon ka liver aur dimagh duniya bhar mein same hai. Yeh medical reality hai, regulation nahi</li>
+<li><strong>"Sirf chickenpox mein khatarnak hai"</strong> — Galat. Har viral infection mein khatra hai</li>
+</ul>
+
+<h2>Aapko Kya Karna Chahiye</h2>
+<ul>
+<li>Ghar ki dawai box mein se Disprin alag jagah rakhein — bachon ke pahonch se door</li>
+<li>"Dard bandh karne wali" combination tablets ka label parhain — aspirin / ASA / acetylsalicylic acid likha ho to bachon ko mat dein</li>
+<li>Bukhar mein hamesha Calpol ya Panadol syrup pehlay try karein</li>
+<li>Padosi/rishtedaar ki "ek aadhi goli to chal jati hai" wali baat na manein</li>
+<li>Agar galti se di gayi ho aur bacha ulti kar raha ho ya sust ho jaye — foran emergency mein jaein</li>
+</ul>
+
+<h2>Adults Ke Liye Disprin — Theek Hai</h2>
+<p>Yeh article sirf bachon ke baare mein hai. Disprin (low-dose aspirin) <strong>adults ke liye bohat zaroori dawai hai</strong> — heart attack ki prevention, stroke ka risk kam karna, aur dil ki dawai ka aham hissa. Doctor ki recommendation pe lambay arsay tak roz lene mein koi haraj nahi. Misunderstand na karein — yeh dawai apni jagah pe theek hai, sirf <strong>16 saal se kam bachon</strong> ki bukhar ki dawai nahi.</p>
+
+<h2>Conclusion</h2>
+<p>Disprin ek behtareen adult dawai hai magar <strong>16 saal se kam bachon ki bukhar ya dard ke liye is ka koi kirdar nahi</strong>. Reye Syndrome rare hai magar fatal — aur jab safe alternatives (paracetamol, ibuprofen) maujood hain to kyun risk lein? Pakistani walidain ko purani traditions chodke modern, doctor-approved guidance follow karni chahiye. <strong>Ilaaj AI</strong> pe aap apne bache ke symptoms detail mein bata kar PMDC-verified pediatrician se safe prescription le sakte hain, ghar baithay.</p>
+        </div>
+
+        <div class="blog-post__faq">
+          <h2>Frequently Asked Questions</h2>
+          <details class="blog-post__faq-item">
+            <summary>Disprin bachon ko kyun nahi deni chahiye?</summary>
+            <div class="blog-post__faq-answer">Disprin (aspirin) 16 saal se kam bachon mein viral infections — chickenpox, flu, dengue — ke dauran Reye syndrome paida kar sakti hai. Yeh ek rare magar jaanleva bimari hai jis mein liver aur dimagh dono kharab hote hain. FDA, NHS aur WHO sab ne 1980s se yeh warning de rakhi hai. Pakistan mein bhi bachon ke bukhar mein aspirin ki bilkul ijazat nahi.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Reye syndrome ki alamaat kya hain?</summary>
+            <div class="blog-post__faq-answer">Aspirin lene ke 2-7 din baad: mutawatir ulti, ghuneem aana ya behoshi, behavior mein achanak tabdeeli (chirhna, ulta seedha bolna), saans tez chalna, hath paer mein jhatkay. Yeh emergency hai — foran hospital lay jaein, kyun ke bina foran ilaj ke bacha jaan se ja sakta hai ya permanent brain damage ho sakta hai.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Pakistani dadi naani disprin ka pani peelati thi — kya yeh galat hai?</summary>
+            <div class="blog-post__faq-answer">Haan, yeh ab medically galat aur khatarnak mana jata hai. Pehlay yeh tradition aam thi magar 1980s mein research ne sabit kar diya ke bachon mein aspirin se Reye syndrome ka direct taluq hai. Aaj duniya bhar ke pediatricians is ke khilaf hain. Mohabbat ke jazbe ko purani tradition ki bajaye nai medical research ke saath jorein — bache ki jaan zyada qeemti hai.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Kya aspirin sirf chickenpox aur flu mein khatarnak hai?</summary>
+            <div class="blog-post__faq-answer">Khaaskar viral infections — chickenpox (sheetla), flu, dengue, measles — mein khatra sab se zyada hai. Magar kisi bhi bukhar ki shuruat mein walidain ko pata nahi hota ke wajah viral hai ya bacterial. Isi liye precaution yeh hai ke 16 saal se kam bachon ko kabhi bhi aspirin na dein. Safe rule: bachon ke liye paracetamol ya ibuprofen hi.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Kya aspirin kabhi bhi bachon mein use hoti hai?</summary>
+            <div class="blog-post__faq-answer">Sirf ek exception hai — Kawasaki disease (ek rare bachpan ki bimari jis mein arteries soojti hain). Is mein pediatrician ki sakht nigrani mein chhoti dose di jati hai. Self-medication ke liye kabhi nahi. Adults ke liye aspirin heart attack aur stroke ki prevention mein theek hai magar bachon ki dawai cabinet mein iska koi maqam nahi.</div>
+          </details>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="blog-post__related">
+          <h2>Related Articles</h2>
+          <ul class="blog-post__related-list">
+            <li><a href="/blog/disprin-uses">Disprin Uses Adults Ke Liye — Heart Attack Prevention</a></li>
+            <li><a href="/blog/calpol-syrup-dose">Calpol Syrup Bachon Ke Liye — Sahih Dose Guide</a></li>
+            <li><a href="/blog/nimesulide-bachon-warning">Nimesulide Bachon Ko Kyun Nahi Deni Chahiye</a></li>
+            <li><a href="/blog">Browse All Health Articles &rarr;</a></li>
+          </ul>
+        </div>
+
+        <div class="blog-post__about">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="blog-post__about-logo">
+          <div class="blog-post__about-text">
+            <strong>About Ilaaj AI</strong>
+            <p>Ilaaj AI is Pakistan's first AI-powered health platform. Chat about your symptoms in Urdu or English, get AI-powered triage, and receive doctor-verified prescriptions — affordable and accessible, 24/7.</p>
+          </div>
+        </div>
+
+        <div class="blog-post__cta">
+          <div class="blog-post__cta-card">
+            <h3 class="blog-post__cta-title">Need Health Advice?</h3>
+            <p class="blog-post__cta-desc">Chat with our AI health assistant in any language. Get doctor-verified prescriptions at affordable rates.</p>
+            <div class="blog-post__cta-actions">
+              <a href="https://app.ilaaj.ai" class="btn btn--hero-primary">Try Ilaaj AI Now</a>
+              <a href="/blog" class="btn--outline">Read More Articles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <img src="../assets/ilaaj-logo.jpg" alt="Ilaaj AI" class="footer__logo-img" width="36" height="36" loading="lazy">
+            <span class="footer__logo-text">Ilaaj AI</span>
+          </div>
+          <p class="footer__brand-desc">Pakistan's first AI-powered health platform. Chat about your symptoms in any language, get AI triage, and receive doctor-verified prescriptions &mdash; affordable and accessible, 24/7.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/ilaaj_ai/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.516 2.497 5.783 2.225 7.149 2.163 8.415 2.105 8.795 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.987 15.668 24 15.259 24 12s-.013-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324A6.162 6.162 0 0 0 12 5.838zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61588590745625" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+            <a href="https://x.com/ilaajai" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Product</h4>
+          <ul class="footer__links">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#how-it-works">How It Works</a></li>
+            <li><a href="/#doctors">Our Doctors</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="../support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <p class="footer__contact-text">Questions or feedback?</p>
+          <a href="mailto:support@ilaaj.ai" class="footer__email">support@ilaaj.ai</a>
+          <p class="footer__emergency">For emergencies, call <strong>1122</strong> (Rescue)</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span class="footer-year"></span> Ilaaj AI. All rights reserved.</p>
+        <p class="footer__disclaimer">Ilaaj AI is for general health consultations and non-emergency medical guidance. For emergencies, call 1122 (Rescue) or visit the nearest hospital.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+    document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());
+  </script>
+  <!-- Tawk.to Live Chat (lazy-loaded) -->
+  <script>
+  (function() {
+    var tawkLoaded = false;
+    function loadTawk() {
+      if (tawkLoaded) return;
+      tawkLoaded = true;
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/69ce56b0127eae1c37be0e72/1jl70596p';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    }
+    document.addEventListener('scroll', loadTawk, {once: true});
+    document.addEventListener('click', loadTawk, {once: true});
+    document.addEventListener('mouseover', loadTawk, {once: true});
+  })();
+  </script>
+</body>
+</html>

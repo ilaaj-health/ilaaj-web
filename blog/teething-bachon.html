@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <!-- Sentry: error tracking + session replay -->
+  <script src="https://js.sentry-cdn.com/defa6ca82daea4d4c49a8b69b87c53cc.min.js" crossorigin="anonymous"></script>
+  <script>
+    window.sentryOnLoad = function () {
+      Sentry.init({
+        integrations: [Sentry.replayIntegration({ maskAllText: false, blockAllMedia: false })],
+        tracesSampleRate: 0.1,
+        replaysSessionSampleRate: 0.1,
+        replaysOnErrorSampleRate: 1.0,
+      });
+    };
+  </script>
+  <!-- PostHog: product analytics + session replay -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_xjBQ5vUS7nTJz4jHta6d5dDE7jHdtFjFuqkxAJjvcFzo', { api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only', cross_subdomain_cookie: true });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XKTHF96');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1697266221447949');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1697266221447949&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teething — Bachon Ke Daant Nikalne Ka Time Aur Care | Ilaaj AI</title>
+  <meta name="description" content="Bachon ke daant kab nikalte hain, symptoms, safe relief aur kya avoid karein. Teething gel ki warning aur Pakistan mein safe dental care — Ilaaj AI guide.">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="teething bachon, bachon ke daant nikalna, teething symptoms urdu, baby teething care, teething gel warning">
+  <meta name="geo.region" content="PK">
+  <meta name="geo.placename" content="Pakistan">
+  <meta name="google-site-verification" content="8RtzwgVYowrMGF4E77jnKOX33seYEQTuXmxps2XkPxI">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.ilaaj.ai/blog/teething-bachon">
+  <link rel="alternate" hreflang="ur-PK" href="https://www.ilaaj.ai/blog/teething-bachon" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ilaaj.ai/blog/teething-bachon" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/logo/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/logo/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/logo/site.webmanifest" />
+
+  <!-- PWA / Mobile -->
+  <meta name="theme-color" content="#00897B">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="IlaajAI">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Teething — Bachon Ke Daant Nikalne Ka Time Aur Care | Ilaaj AI">
+  <meta property="og:description" content="Bachon ke daant kab nikalte hain, symptoms, safe relief aur kya avoid karein. Teething gel ki warning aur Pakistan mein safe dental care — Ilaaj AI guide.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ilaaj.ai/blog/teething-bachon">
+  <meta property="og:image" content="https://images.pexels.com/photos/31137017/pexels-photo-31137017.jpeg?auto=compress&cs=tinysrgb&w=1200">
+  <meta property="og:image:alt" content="Baby with teething toy">
+  <meta property="og:site_name" content="Ilaaj AI">
+  <meta property="og:locale" content="ur_PK">
+  <meta property="article:published_time" content="2026-06-01T09:00:00.000Z">
+  <meta property="article:modified_time" content="2026-06-01T09:00:00.000Z">
+  <meta property="article:author" content="Ilaaj AI Medical Team">
+  <meta property="article:section" content="Pediatric Health">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ilaajai">
+  <meta name="twitter:creator" content="@ilaajai">
+  <meta name="twitter:title" content="Teething — Bachon Ke Daant Nikalne Ka Time Aur Care | Ilaaj AI">
+  <meta name="twitter:description" content="Bachon ke daant kab nikalte hain, symptoms, safe relief aur kya avoid karein. Teething gel ki warning aur Pakistan mein safe dental care — Ilaaj AI guide.">
+  <meta name="twitter:image" content="https://images.pexels.com/photos/31137017/pexels-photo-31137017.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNTMD61HWL"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KNTMD61HWL');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/blog.css">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.ilaaj.ai/blog/teething-bachon"
+  },
+  "headline": "Teething — Bachon Ke Daant Nikalne Ka Time Aur Care",
+  "description": "Bachon ke daant kab nikalte hain, symptoms, safe relief aur kya avoid karein. Teething gel ki warning aur Pakistan mein safe dental care.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://images.pexels.com/photos/31137017/pexels-photo-31137017.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  },
+  "datePublished": "2026-06-01T09:00:00.000Z",
+  "dateModified": "2026-06-01T09:00:00.000Z",
+  "author": {
+    "@type": "Organization",
+    "name": "Ilaaj AI Medical Team",
+    "url": "https://www.ilaaj.ai/doctors"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ilaaj AI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.ilaaj.ai/assets/Icon-192.png"
+    }
+  },
+  "keywords": "teething bachon, bachon ke daant nikalna, teething symptoms urdu, baby teething care, teething gel warning",
+  "inLanguage": "ur",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Ilaaj AI Blog",
+    "url": "https://www.ilaaj.ai/blog"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.ilaaj.ai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.ilaaj.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Teething — Bachon Ke Daant Nikalne Ka Time Aur Care",
+      "item": "https://www.ilaaj.ai/blog/teething-bachon"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Bachon ke daant kab nikalna shuru hote hain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zyada tar bachon ke daant 4 se 7 month ki umar mein nikalna shuru hote hain. Niche ke do incisor (front teeth) pehlay aate hain, phir upar ke do. Saare 20 baby teeth aam tor pe 2.5 se 3 saal tak complete ho jaate hain. Kuch bachon mein daant 12 month tak nahi nikalte — yeh bhi normal range mein hai, fikr ki baat nahi."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Teething mein bukhar aur dast hota hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yeh aam ghalat fehmi hai. Teething sirf halki bukhar (100°F se kam) wajah ban sakti hai, magar 101°F se zyada bukhar, dast, ya ulti teething ki nishani NAHI hai — yeh kisi infection ki taraf ishara karte hain. Aise mein doctor ko dikhain — teething ko ilzaam de kar bachay ka infection miss na karein."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Teething ki takleef mein kya dein?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Safe options: cold teething ring (fridge mein, freezer mein nahi), saaf ungli se gum massage, soft chewy toy, breastfeeding ya cuddle. Agar bohat bechain ho to Calpol (paracetamol) doctor ki guidance pe de sakte hain. Avoid karein: benzocaine wale teething gels (Bonjela), homeopathic teething tablets, aur amber teething necklaces — yeh sab FDA warnings rakhte hain."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Pehlay daant nikalne ke baad kya safai karein?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pehlay daant ke saath hi dental care shuru karein. Gaaz ya soft cloth ko paani mein bhigo kar gums aur naye daant saaf karein subah-sham. 18 month ke baad chote bachon ka soft toothbrush + chawal ke daane jitna fluoride toothpaste (rice grain size) use karein. Doodh ki bottle mun mein le kar sona daant kharab kar deta hai — yeh aadat na dalein."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Pehli dental visit kab honi chahiye?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "American Academy of Pediatric Dentistry ka rule hai: pehla dental visit pehlay daant nikalne ke 6 mahine ke andar ya 1 saal ki umar tak. Pakistan mein bhi kai pediatric dentists yeh service dete hain. Yeh visit mostly assessment aur parents ki guidance ke liye hoti hai — agay ki cavities aur dental problems ko rokne mein bohat madad karti hai."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKTHF96"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar navbar--scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="/" class="navbar__brand">
+        <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="navbar__logo">
+        <span class="navbar__name">Ilaaj AI</span>
+      </a>
+      <div class="navbar__center" id="navLinks">
+        <a href="/#how-it-works" class="navbar__link">How It Works</a>
+        <a href="/#features" class="navbar__link">Features</a>
+        <a href="/blog" class="navbar__link navbar__link--active">Blog</a>
+        <a href="/#faq" class="navbar__link">FAQ</a>
+      </div>
+      <div class="navbar__right">
+        <a href="https://app.ilaaj.ai" class="btn btn--primary btn--sm navbar__cta">
+          Muft Mashwara Lein
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile" id="mobileMenu">
+      <a href="/#how-it-works" class="navbar__mobile-link">How It Works</a>
+      <a href="/#features" class="navbar__mobile-link">Features</a>
+      <a href="/blog" class="navbar__mobile-link">Blog</a>
+      <a href="/#faq" class="navbar__mobile-link">FAQ</a>
+      <a href="https://app.ilaaj.ai" class="btn btn--primary btn--full">Muft Mashwara Lein</a>
+    </div>
+  </nav>
+
+  <main>
+    <article class="blog-post">
+      <div class="container">
+        <a href="/blog" class="blog-post__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Articles
+        </a>
+
+        <div class="blog-post__featured-image"><img src="https://images.pexels.com/photos/31137017/pexels-photo-31137017.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Baby with teething toy"></div>
+
+        <div class="blog-post__author">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI Medical Team" class="blog-post__author-avatar">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name">Ilaaj AI Medical Team</div>
+            <div class="blog-post__author-creds">PMDC-verified doctors reviewing every article</div>
+            <div class="blog-post__author-dates">Published: June 1, 2026 | Last reviewed: June 1, 2026</div>
+          </div>
+        </div>
+
+        <h1 class="blog-post__title">Teething — Bachon Ke Daant Nikalne Ka Time Aur Care</h1>
+
+        <div class="blog-post__tldr">
+          <div class="blog-post__tldr-title">TL;DR — Key Takeaways</div>
+          <ul>
+            <li>Pehlay daant 4-7 month, saare 20 baby teeth 2.5-3 saal tak complete</li>
+            <li>Symptoms: rir behna, gum khujli, finger chewing, halki irritability</li>
+            <li>Teh dard ki tez bukhar (101°F+), dast ya ulti TEETHING NAHI — infection check karein</li>
+            <li>Safe relief: cold teething ring, gum massage, breastfeeding</li>
+            <li>AVOID: benzocaine teething gels, homeopathic tablets, amber necklaces</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+<h2>Teething Kya Hai Aur Kab Shuru Hoti Hai?</h2>
+<p>Teething yaani daant nikalna har bachay ki growth ka natural marhala hai. Pakistan mein walidain aksar fikar mein hote hain ke bacha bechain hai, kya yeh teething hai? Daant 4 se 7 month ki umar mein shuru hote hain, magar 3 month ya 12 month tak bhi range normal hai. Sab se pehlay <strong>niche ke do front incisors</strong>, phir upar ke do, phir lateral incisors aur molars.</p>
+
+<table class="blog-post__quick-facts">
+  <caption>Teething — Timeline Aur Quick Facts</caption>
+  <tbody>
+    <tr><td>Shuru hone ki umar</td><td>4-7 month (3-12 month tak normal)</td></tr>
+    <tr><td>Pehlay nikalne wale</td><td>Niche ke do incisors</td></tr>
+    <tr><td>Saare 20 milk teeth</td><td>2.5-3 saal tak complete</td></tr>
+    <tr><td>Real symptoms</td><td>Rir, gum khujli, irritability, halki bukhar</td></tr>
+    <tr><td>NOT teething</td><td>Tez bukhar 101°F+, dast, ulti, persistent cough</td></tr>
+    <tr><td>Pehli dental visit</td><td>1 saal ki umar tak</td></tr>
+  </tbody>
+</table>
+
+<h2>Teething Ke Asli Symptoms</h2>
+<p>Yeh symptoms 3-5 din pehlay shuru hote hain aur daant nikalne ke baad theek ho jate hain:</p>
+<ul>
+<li><strong>Rir behna (excessive drool):</strong> Itna ke bib bhig jaye — sab se aam nishani</li>
+<li><strong>Gums sooj jana aur halki red:</strong> Cheek bhi red ho sakti hai</li>
+<li><strong>Mun mein cheez daalna:</strong> Ungli, khilona, jo bhi mile</li>
+<li><strong>Halki irritability aur chid-chid:</strong> Khaaskar shaam ko</li>
+<li><strong>Neend mein khalal:</strong> Bar bar uthna</li>
+<li><strong>Bhook thoda kam:</strong> Magar doodh peena chodna nahi chahiye</li>
+<li><strong>Halki bukhar (100°F se kam):</strong> Magar yeh debate hai, zyada tar studies kehti hain teething sirf temperature thoda barhati hai</li>
+</ul>
+
+<h2>Symptoms Jo Teething Nahi Hain</h2>
+<p>Yeh bohat important hai — Pakistan mein "daant nikal raha hai" keh kar serious symptoms ignore ho jaate hain. <strong>Teething yeh nahi karti:</strong></p>
+<ul>
+<li><strong>Tez bukhar 101°F (38.3°C) se zyada</strong> — yeh infection ki nishani hai</li>
+<li><strong>Dast ya watery stool</strong> — gastroenteritis check karein</li>
+<li><strong>Ulti (vomiting)</strong> — alag wajah search karein</li>
+<li><strong>Khansi ya nak behna</strong> — yeh viral cold hai, teething nahi</li>
+<li><strong>Persistent rash poore jism pe</strong> — allergy ya infection</li>
+<li><strong>Bohat lethargy, doodh chodna</strong> — emergency, foran doctor</li>
+</ul>
+<p>Yeh symptoms hone pe doctor ko zarur dikhain. Teething ke saath sath koi aur problem ho sakti hai jo treat karni zaruri hai.</p>
+
+<h2>Safe Relief — Kya Dein Bachay Ko</h2>
+
+<h3>1. Cold Teething Ring</h3>
+<p>Silicone ya rubber ka teething ring fridge mein 30 minute thanda karein — <strong>freezer mein nahi</strong>, kyunke jamma hua plastic gums kaat sakta hai. Cold gums ko numb karta hai aur sojish kam karta hai.</p>
+
+<h3>2. Saaf Ungli Se Gum Massage</h3>
+<p>Apne hath achi tarah dho kar, ungli se gently 2 minute gums massage karein. Yeh sab se asaan aur effective tareeqa hai.</p>
+
+<h3>3. Soft Chewy Toy</h3>
+<p>BPA-free silicone teether jo bacha chaba sake. Choking hazard ka khayal rakhein — saare tukde fix hone chahiye.</p>
+
+<h3>4. Cold Washcloth</h3>
+<p>Saaf gele washcloth ko fridge mein 15 minute rakhein, phir bachay ko chabane ke liye dein.</p>
+
+<h3>5. Breastfeeding Aur Comfort</h3>
+<p>Maa ka doodh aur cuddle bachay ko sab se zyada sukoon dete hain. Yeh teething phase ka emotional support hai.</p>
+
+<h3>6. Calpol (Sirf Zaroorat Mein)</h3>
+<p>Agar bacha bohat bechain ho to <strong>Calpol syrup</strong> doctor ki guidance pe dose ke mutabiq de sakte hain. Brufen 6 month se zyada bachon ke liye. <strong>Disprin ya aspirin kabhi na dein.</strong></p>
+
+<div class="blog-post__inline-cta">
+  <p>Bacha bohat bechain hai aur teething ke baray mein guidance chahiye? Ilaaj AI pe pediatrician se ghar baithay mashwara lein.</p>
+  <a href="https://app.ilaaj.ai">Abhi Doctor Se Milein</a>
+</div>
+
+<h2>Yeh Cheezein BILKUL Avoid Karein</h2>
+
+<h3>1. Benzocaine Teething Gels (Bonjela, Mucopain)</h3>
+<p>US FDA ne 2018 mein <strong>2 saal se kam bachon mein benzocaine</strong> ko ban kiya hai — methemoglobinemia naam ka serious aur jaan leva blood disorder ho sakta hai. Pakistan mein yeh gels milte hain magar bachon ko na lagayein.</p>
+
+<h3>2. Homeopathic Teething Tablets</h3>
+<p>FDA warning hai ke kuch homeopathic teething tablets aur gels mein <strong>belladonna</strong> ki inconsistent quantities thi jo bachon mein seizures aur deaths ka baais bani. Mukammal avoid karein.</p>
+
+<h3>3. Amber Teething Necklaces</h3>
+<p>Pakistan aur internationally bohat popular hain magar AAP aur dentists is se mana karte hain — <strong>strangulation aur choking ka serious hazard</strong>. Koi scientific evidence nahi ke yeh kaam karte hain.</p>
+
+<h3>4. Solid Foods Choking Hazard</h3>
+<p>Carrot, biscuit ya hard rusks jo tukde mein toot sakein — choking risk. Sirf supervised soft snacks dein agar weaning shuru ho.</p>
+
+<h3>5. Adult Painkillers</h3>
+<p>Disprin (aspirin) <strong>Reye's syndrome</strong> ka khatra. Nimesulide bachon mein liver damage. Sirf paracetamol/ibuprofen pediatric formulation.</p>
+
+<h2>Dental Care Shuru Karein</h2>
+<p>Pehlay daant ke saath hi dental care ki aadat dalein:</p>
+<ul>
+<li><strong>Gauze ya soft cloth</strong> ko paani mein bhigo kar gums saaf karein, har feed ke baad</li>
+<li><strong>Pehlay daant nikalne pe</strong> silicone finger brush use karein</li>
+<li><strong>18 month ke baad</strong> baby toothbrush + chawal ke daane jitna fluoride toothpaste</li>
+<li><strong>Doodh ki bottle mun mein lekar sona</strong> bilkul band — "baby bottle tooth decay" ho jata hai</li>
+<li><strong>Pehla dental visit</strong> 1 saal ki umar tak ya pehlay daant ke 6 mahine andar</li>
+<li>Meetha juice aur cookies kam, paani zyada</li>
+</ul>
+
+<h2>Walidain Ke Liye Reassurance</h2>
+<p>Teething temporary phase hai. Har bacha alag pace pe daant nikalta hai — apne bachay ko cousin ya bhai-behan se compare na karein. Agar 12 month tak koi daant nahi nikla to dentist ya pediatrician se rabta karein, magar yeh bhi mostly normal variation hoti hai. Kuch bachon mein 2 daant ek hi waqt nikalte hain, kuch mein gaps hote hain — sab acceptable.</p>
+
+<h2>Conclusion</h2>
+<p>Teething bachay ki normal development ka hissa hai — care aur sabar chahiye, panic nahi. <strong>Cold rings, gum massage, aur breastfeeding</strong> safe relief hain. Benzocaine gels aur amber necklaces ka chakar na karein — yeh nuksaan dete hain. Aur sab se zaruri: tez bukhar ya dast ko teething ki ilzaam dekar ignore na karein. <strong>Ilaaj AI</strong> pe aap kisi bhi waqt PMDC-verified pediatrician se ghar baithe mashwara le sakte hain — sirf chand minute mein.</p>
+        </div>
+
+        <div class="blog-post__faq">
+          <h2>Frequently Asked Questions</h2>
+          <details class="blog-post__faq-item">
+            <summary>Bachon ke daant kab nikalna shuru hote hain?</summary>
+            <div class="blog-post__faq-answer">Zyada tar bachon ke daant 4 se 7 month ki umar mein nikalna shuru hote hain. Niche ke do incisor (front teeth) pehlay aate hain, phir upar ke do. Saare 20 baby teeth aam tor pe 2.5 se 3 saal tak complete ho jaate hain. Kuch bachon mein daant 12 month tak nahi nikalte — yeh bhi normal range mein hai, fikr ki baat nahi.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Teething mein bukhar aur dast hota hai?</summary>
+            <div class="blog-post__faq-answer">Yeh aam ghalat fehmi hai. Teething sirf halki bukhar (100°F se kam) wajah ban sakti hai, magar 101°F se zyada bukhar, dast, ya ulti teething ki nishani NAHI hai — yeh kisi infection ki taraf ishara karte hain. Aise mein doctor ko dikhain — teething ko ilzaam de kar bachay ka infection miss na karein.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Teething ki takleef mein kya dein?</summary>
+            <div class="blog-post__faq-answer">Safe options: cold teething ring (fridge mein, freezer mein nahi), saaf ungli se gum massage, soft chewy toy, breastfeeding ya cuddle. Agar bohat bechain ho to Calpol (paracetamol) doctor ki guidance pe de sakte hain. Avoid karein: benzocaine wale teething gels (Bonjela), homeopathic teething tablets, aur amber teething necklaces — yeh sab FDA warnings rakhte hain.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Pehlay daant nikalne ke baad kya safai karein?</summary>
+            <div class="blog-post__faq-answer">Pehlay daant ke saath hi dental care shuru karein. Gaaz ya soft cloth ko paani mein bhigo kar gums aur naye daant saaf karein subah-sham. 18 month ke baad chote bachon ka soft toothbrush + chawal ke daane jitna fluoride toothpaste (rice grain size) use karein. Doodh ki bottle mun mein le kar sona daant kharab kar deta hai — yeh aadat na dalein.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Pehli dental visit kab honi chahiye?</summary>
+            <div class="blog-post__faq-answer">American Academy of Pediatric Dentistry ka rule hai: pehla dental visit pehlay daant nikalne ke 6 mahine ke andar ya 1 saal ki umar tak. Pakistan mein bhi kai pediatric dentists yeh service dete hain. Yeh visit mostly assessment aur parents ki guidance ke liye hoti hai — agay ki cavities aur dental problems ko rokne mein bohat madad karti hai.</div>
+          </details>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="blog-post__related">
+          <h2>Related Articles</h2>
+          <ul class="blog-post__related-list">
+            <li><a href="/blog/bachon-ki-bimari-ai-mashwara">Bachon Ki Bimari Mein AI Mashwara — Kab Aur Kaise</a></li>
+            <li><a href="/blog/calpol-syrup-dose">Calpol Syrup Dose — Bachon Ke Liye Safe Quantity</a></li>
+            <li><a href="/blog/weaning-bachon">Weaning — Bachon Ko Solid Food Kab Aur Kaise</a></li>
+            <li><a href="/blog">Browse All Health Articles &rarr;</a></li>
+          </ul>
+        </div>
+
+        <div class="blog-post__about">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="blog-post__about-logo">
+          <div class="blog-post__about-text">
+            <strong>About Ilaaj AI</strong>
+            <p>Ilaaj AI is Pakistan's first AI-powered health platform. Chat about your symptoms in Urdu or English, get AI-powered triage, and receive doctor-verified prescriptions — affordable and accessible, 24/7.</p>
+          </div>
+        </div>
+
+        <div class="blog-post__cta">
+          <div class="blog-post__cta-card">
+            <h3 class="blog-post__cta-title">Need Health Advice?</h3>
+            <p class="blog-post__cta-desc">Chat with our AI health assistant in any language. Get doctor-verified prescriptions at affordable rates.</p>
+            <div class="blog-post__cta-actions">
+              <a href="https://app.ilaaj.ai" class="btn btn--hero-primary">Try Ilaaj AI Now</a>
+              <a href="/blog" class="btn--outline">Read More Articles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <img src="../assets/ilaaj-logo.jpg" alt="Ilaaj AI" class="footer__logo-img" width="36" height="36" loading="lazy">
+            <span class="footer__logo-text">Ilaaj AI</span>
+          </div>
+          <p class="footer__brand-desc">Pakistan's first AI-powered health platform. Chat about your symptoms in any language, get AI triage, and receive doctor-verified prescriptions &mdash; affordable and accessible, 24/7.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/ilaaj_ai/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.516 2.497 5.783 2.225 7.149 2.163 8.415 2.105 8.795 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.987 15.668 24 15.259 24 12s-.013-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324A6.162 6.162 0 0 0 12 5.838zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61588590745625" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+            <a href="https://x.com/ilaajai" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Product</h4>
+          <ul class="footer__links">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#how-it-works">How It Works</a></li>
+            <li><a href="/#doctors">Our Doctors</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="../support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <p class="footer__contact-text">Questions or feedback?</p>
+          <a href="mailto:support@ilaaj.ai" class="footer__email">support@ilaaj.ai</a>
+          <p class="footer__emergency">For emergencies, call <strong>1122</strong> (Rescue)</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span class="footer-year"></span> Ilaaj AI. All rights reserved.</p>
+        <p class="footer__disclaimer">Ilaaj AI is for general health consultations and non-emergency medical guidance. For emergencies, call 1122 (Rescue) or visit the nearest hospital.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+    document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());
+  </script>
+  <!-- Tawk.to Live Chat (lazy-loaded) -->
+  <script>
+  (function() {
+    var tawkLoaded = false;
+    function loadTawk() {
+      if (tawkLoaded) return;
+      tawkLoaded = true;
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/69ce56b0127eae1c37be0e72/1jl70596p';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    }
+    document.addEventListener('scroll', loadTawk, {once: true});
+    document.addEventListener('click', loadTawk, {once: true});
+    document.addEventListener('mouseover', loadTawk, {once: true});
+  })();
+  </script>
+</body>
+</html>
