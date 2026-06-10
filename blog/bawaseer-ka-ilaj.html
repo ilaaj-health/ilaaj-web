@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <!-- Sentry: error tracking + session replay -->
+  <script src="https://js.sentry-cdn.com/defa6ca82daea4d4c49a8b69b87c53cc.min.js" crossorigin="anonymous"></script>
+  <script>
+    window.sentryOnLoad = function () {
+      Sentry.init({
+        integrations: [Sentry.replayIntegration({ maskAllText: false, blockAllMedia: false })],
+        tracesSampleRate: 0.1,
+        replaysSessionSampleRate: 0.1,
+        replaysOnErrorSampleRate: 1.0,
+      });
+    };
+  </script>
+  <!-- PostHog: product analytics + session replay -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_xjBQ5vUS7nTJz4jHta6d5dDE7jHdtFjFuqkxAJjvcFzo', { api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only', cross_subdomain_cookie: true });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XKTHF96');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1697266221447949');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1697266221447949&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bawaseer Ka Ilaj — Symptoms, Ghareloo Aur Best Medicine Pakistan | Ilaaj AI</title>
+  <meta name="description" content="Bawaseer (piles/hemorrhoids) ka ilaj. Internal aur external bawaseer ki symptoms, ghareloo tareeqay, sitz bath, fiber diet aur Pakistan mein best medicines — Ilaaj AI guide.">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="bawaseer ka ilaj, piles ka ilaj urdu, hemorrhoids treatment pakistan, bawaseer ki medicine, daflon, anusol">
+  <meta name="geo.region" content="PK">
+  <meta name="geo.placename" content="Pakistan">
+  <meta name="google-site-verification" content="8RtzwgVYowrMGF4E77jnKOX33seYEQTuXmxps2XkPxI">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.ilaaj.ai/blog/bawaseer-ka-ilaj">
+  <link rel="alternate" hreflang="ur-PK" href="https://www.ilaaj.ai/blog/bawaseer-ka-ilaj" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ilaaj.ai/blog/bawaseer-ka-ilaj" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/logo/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/logo/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/logo/site.webmanifest" />
+
+  <!-- PWA / Mobile -->
+  <meta name="theme-color" content="#00897B">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="IlaajAI">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Bawaseer Ka Ilaj — Symptoms, Ghareloo Aur Best Medicine Pakistan | Ilaaj AI">
+  <meta property="og:description" content="Bawaseer (piles/hemorrhoids) ka ilaj. Internal aur external bawaseer ki symptoms, ghareloo tareeqay, sitz bath, fiber diet aur Pakistan mein best medicines — Ilaaj AI guide.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ilaaj.ai/blog/bawaseer-ka-ilaj">
+  <meta property="og:image" content="https://images.pexels.com/photos/7298672/pexels-photo-7298672.jpeg?auto=compress&cs=tinysrgb&w=1200">
+  <meta property="og:image:alt" content="Person with lower abdominal discomfort — bawaseer">
+  <meta property="og:site_name" content="Ilaaj AI">
+  <meta property="og:locale" content="ur_PK">
+  <meta property="article:published_time" content="2026-05-30T09:00:00.000Z">
+  <meta property="article:modified_time" content="2026-05-30T09:00:00.000Z">
+  <meta property="article:author" content="Ilaaj AI Medical Team">
+  <meta property="article:section" content="Digestive Health">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ilaajai">
+  <meta name="twitter:creator" content="@ilaajai">
+  <meta name="twitter:title" content="Bawaseer Ka Ilaj — Symptoms, Ghareloo Aur Best Medicine Pakistan | Ilaaj AI">
+  <meta name="twitter:description" content="Bawaseer (piles/hemorrhoids) ka ilaj. Internal aur external bawaseer ki symptoms, ghareloo tareeqay, sitz bath, fiber diet aur Pakistan mein best medicines — Ilaaj AI guide.">
+  <meta name="twitter:image" content="https://images.pexels.com/photos/7298672/pexels-photo-7298672.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNTMD61HWL"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KNTMD61HWL');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/blog.css">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.ilaaj.ai/blog/bawaseer-ka-ilaj"
+  },
+  "headline": "Bawaseer Ka Ilaj — Symptoms, Ghareloo Aur Best Medicine Pakistan",
+  "description": "Bawaseer (piles/hemorrhoids) ka ilaj. Internal aur external bawaseer ki symptoms, ghareloo tareeqay, sitz bath, fiber diet aur Pakistan mein best medicines — Ilaaj AI guide.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://images.pexels.com/photos/7298672/pexels-photo-7298672.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  },
+  "datePublished": "2026-05-30T09:00:00.000Z",
+  "dateModified": "2026-05-30T09:00:00.000Z",
+  "author": {
+    "@type": "Organization",
+    "name": "Ilaaj AI Medical Team",
+    "url": "https://www.ilaaj.ai/doctors"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ilaaj AI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.ilaaj.ai/assets/Icon-192.png"
+    }
+  },
+  "keywords": "bawaseer ka ilaj, piles ka ilaj urdu, hemorrhoids treatment pakistan, bawaseer ki medicine, daflon, anusol",
+  "inLanguage": "ur",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Ilaaj AI Blog",
+    "url": "https://www.ilaaj.ai/blog"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.ilaaj.ai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.ilaaj.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Bawaseer Ka Ilaj — Symptoms, Ghareloo Aur Best Medicine Pakistan",
+      "item": "https://www.ilaaj.ai/blog/bawaseer-ka-ilaj"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Bawaseer ki best medicine kaunsi hai Pakistan mein?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Daflon 500 mg din mein 2 baar (oral) bleeding aur sojish kam karta hai. Local relief ke liye Anusol ya Proctosedyl ointment/suppository — khujli, dard aur jalan mein farq daalti hai. Saath mein fiber (Isabgol/psyllium 1 chamach raat ko), 3-4 liter pani aur sitz bath sab se zaruri hain. 1 hafte tak farq na ho ya khoon zyada ho to doctor se milein."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bawaseer mein khoon aaye to kya karein?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chamakdar laal khoon paikhana ke saath ya tissue pe nazar aana grade 1-2 bawaseer ki aam nishani hai. Fiber barhain, paani zyada piyo, Daflon shuru karein aur sitz bath lein. Magar agar khoon zyada ho, chakkar aayein, ya kaali potty ho (yeh upper GI bleeding ho sakti hai), to foran doctor ko dikhain — colonoscopy ki zarurat ho sakti hai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Sitz bath kaise karein bawaseer ke liye?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ek bare tub ya basin mein neem garam pani (itna garam ke haath bardasht kar le) bhar lein. Us mein 10-15 minute baith jaain taa ke anal area pani mein doob jaye. Yeh din mein 2-3 baar karein — khaaskar paikhana ke baad. Sojish, dard aur khujli mein fori aaram milta hai. Pani mein namak ya betadine zaruri nahi."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bawaseer ki surgery kab zaruri hoti hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Grade 3 aur 4 bawaseer (jab piles bahar nikal aaye aur khud andar na jaye, ya haath se push karna pare), recurrent heavy bleeding, ya 3 mahine ke conservative ilaj ke baad farq na pare — surgery zaruri ho jati hai. Common procedures: rubber band ligation (out-patient), sclerotherapy aur hemorrhoidectomy. Surgeon se consult karein."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Pregnancy mein bawaseer ka ilaj kya hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pregnancy mein bawaseer bohat aam hai — uterus ka pressure aur qabz dono wajah hain. Safest options: sitz bath, fiber diet (sabzi, phal, isabgol), 3 liter pani roz, walking. Daflon aur kuch ointments doctor ke mashware se safe hain magar bina poochay koi dawai na lein. Khush khabri yeh hai ke delivery ke baad zyadatar khud theek ho jate hain."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKTHF96"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar navbar--scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="/" class="navbar__brand">
+        <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="navbar__logo">
+        <span class="navbar__name">Ilaaj AI</span>
+      </a>
+      <div class="navbar__center" id="navLinks">
+        <a href="/#how-it-works" class="navbar__link">How It Works</a>
+        <a href="/#features" class="navbar__link">Features</a>
+        <a href="/blog" class="navbar__link navbar__link--active">Blog</a>
+        <a href="/#faq" class="navbar__link">FAQ</a>
+      </div>
+      <div class="navbar__right">
+        <a href="https://app.ilaaj.ai" class="btn btn--primary btn--sm navbar__cta">
+          Muft Mashwara Lein
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile" id="mobileMenu">
+      <a href="/#how-it-works" class="navbar__mobile-link">How It Works</a>
+      <a href="/#features" class="navbar__mobile-link">Features</a>
+      <a href="/blog" class="navbar__mobile-link">Blog</a>
+      <a href="/#faq" class="navbar__mobile-link">FAQ</a>
+      <a href="https://app.ilaaj.ai" class="btn btn--primary btn--full">Muft Mashwara Lein</a>
+    </div>
+  </nav>
+
+  <main>
+    <article class="blog-post">
+      <div class="container">
+        <a href="/blog" class="blog-post__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Articles
+        </a>
+
+        <div class="blog-post__featured-image"><img src="https://images.pexels.com/photos/7298672/pexels-photo-7298672.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Person with lower abdominal discomfort — bawaseer"></div>
+
+        <div class="blog-post__author">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI Medical Team" class="blog-post__author-avatar">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name">Ilaaj AI Medical Team</div>
+            <div class="blog-post__author-creds">PMDC-verified doctors reviewing every article</div>
+            <div class="blog-post__author-dates">Published: May 30, 2026 | Last reviewed: May 30, 2026</div>
+          </div>
+        </div>
+
+        <h1 class="blog-post__title">Bawaseer Ka Ilaj — Symptoms, Ghareloo Aur Best Medicine Pakistan</h1>
+
+        <div class="blog-post__tldr">
+          <div class="blog-post__tldr-title">TL;DR — Key Takeaways</div>
+          <ul>
+            <li>Bawaseer (hemorrhoids) Pakistan mein bohat aam hai — almost 50% adults ko zindagi mein kabhi na kabhi hota hai</li>
+            <li>Internal bawaseer mein zyadatar dard nahi hota magar chamakdar laal khoon aata hai; external mein dard, khujli aur lump hota hai</li>
+            <li>Ghareloo ilaj: sitz bath 10 minute din mein 2 baar, isabgol/fiber, 3-4 liter paani aur walking</li>
+            <li>Common medicines: Daflon 500 mg, Anusol ointment, Proctosedyl suppository</li>
+            <li>Heavy bleeding, lump jo wapis andar na jaye, ya shadeed dard mein foran doctor se milein</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+<h2>Bawaseer Kya Hai?</h2>
+<p>Bawaseer (hemorrhoids / piles) anus aur lower rectum mein moti aur sooji huyi naseinh (swollen veins) ko kehte hain. Pakistan mein yeh bohat aam masla hai — andaza hai ke har 2 mein se 1 baligh shakhs ko zindagi mein kabhi na kabhi bawaseer hota hai. Garmi, masaledar khaana, kam paani aur ghanton baithay rehne wali jobs is ko aur barhati hain. Sharm ki wajah se loag aksar baat nahi karte, magar bawaseer ka ilaj seedha aur effective hai.</p>
+
+<table class="blog-post__quick-facts">
+  <caption>Bawaseer — Quick Facts</caption>
+  <tbody>
+    <tr><td>Internal</td><td>Rectum ke andar — dard nahi, chamakdar laal khoon</td></tr>
+    <tr><td>External</td><td>Anus ke bahar — dard, khujli, lump mehsoos hota hai</td></tr>
+    <tr><td>Grade 1</td><td>Sirf bleeding, koi prolapse nahi</td></tr>
+    <tr><td>Grade 2</td><td>Paikhana ke waqt bahar aata hai, khud wapis chala jata hai</td></tr>
+    <tr><td>Grade 3</td><td>Bahar aata hai, haath se push karna parta hai</td></tr>
+    <tr><td>Grade 4</td><td>Hamesha bahar, wapis nahi jata — surgery zaruri</td></tr>
+  </tbody>
+</table>
+
+<h2>Bawaseer Ki Wajuhat</h2>
+<ul>
+<li><strong>Qabz (constipation):</strong> Sab se badi wajah — sakht potty aur zor lagana naseinh ko phaata hai</li>
+<li><strong>Ghanton baithay rehna:</strong> Office jobs, driving aur toilet pe phone use karna</li>
+<li><strong>Garmi mein paani kam peena:</strong> Khaaskar Karachi aur Lahore ki garmi mein dehydration qabz banata hai</li>
+<li><strong>Pregnancy:</strong> Uterus ka pressure pelvic veins pe parta hai</li>
+<li><strong>Heavy weight lifting:</strong> Gym mein bina technique ke dead-lift karna</li>
+<li><strong>Kam fiber wali diet:</strong> Sirf naan, roti, chawal — kam sabzi aur phal</li>
+<li><strong>Family history aur bharti umar (40+)</strong></li>
+</ul>
+
+<h2>Bawaseer Ki Symptoms</h2>
+<ul>
+<li>Paikhana ke saath ya baad mein <strong>chamakdar laal khoon</strong> — tissue pe ya toilet bowl mein</li>
+<li>Anal area mein <strong>khujli aur jalan</strong></li>
+<li>Anus ke bahar <strong>lump (ghulti) mehsoos hona</strong> — khaaskar baithne ke baad</li>
+<li>Paikhana ke baad bhi pet bhara mehsoos hona (incomplete evacuation)</li>
+<li>External bawaseer mein <strong>shadeed dard</strong> agar khoon jam jaye (thrombosed pile)</li>
+<li>Mucus discharge aur kapron pe halki staining</li>
+</ul>
+
+<h2>Bawaseer Ka Ghareloo Ilaj</h2>
+
+<h3>1. Warm Sitz Bath</h3>
+<p>Sab se zyada effective ghareloo remedy. Neem garam pani mein 10-15 minute baithna — din mein 2-3 baar, khaaskar paikhana ke baad. Sojish, khujli aur dard mein fori aaram. Pani mein kuch zaruri nahi.</p>
+
+<h3>2. Fiber Barhao (Isabgol / Phal-Sabzi)</h3>
+<p>Roz raat ko 1-2 chamach isabgol (psyllium) ek glass pani mein ghol kar peena potty narm karta hai. Sath mein keela, papita, palak, methi, chana aur dalia diet mein lazmi shamil karein.</p>
+
+<h3>3. Paani — 3 Se 4 Liter Roz</h3>
+<p>Garmi mein khaaskar — dehydration qabz aur bawaseer dono ko bigarti hai. Subah uthtay hi 2 glass neem garam pani.</p>
+
+<h3>4. Masaledar Aur Fried Khaane Se Parhez</h3>
+<p>Mirch-masala, biryani, fried food, achaar aur chai/coffee bawaseer ki jalan ko barhate hain. 2-3 hafte ke liye band karein.</p>
+
+<h3>5. Walking Aur Toilet Mein Kam Waqt</h3>
+<p>Roz 30 minute walking circulation theek karti hai. Toilet pe 5 minute se zyada na baithein — phone aur kitaab andar mat le jain.</p>
+
+<h2>Bawaseer Ki Best Medicines (Pakistan Mein)</h2>
+<p>Yeh dawai pharmacies pe milti hain magar 1 hafte se zyada bina doctor ke use na karein:</p>
+<ul>
+<li><strong>Daflon 500 mg:</strong> Oral tablet — pehle 4 din mein 6 tablets daily (acute), phir 2 tablets daily — bleeding aur sojish mein effective</li>
+<li><strong>Anusol ointment/suppository:</strong> Local application — khujli aur halki bleeding ke liye</li>
+<li><strong>Proctosedyl (steroid + anesthetic):</strong> Shadeed dard aur sojish mein — 5-7 din se zyada nahi</li>
+<li><strong>Faktu / Xyloproct:</strong> Anesthetic ointments — local numbing</li>
+<li><strong>Lactulose syrup ya Movicol sachets:</strong> Potty narm karne ke liye</li>
+<li><strong>Isabgol (Metamucil / Konsyl):</strong> Roz ki fiber supplement</li>
+</ul>
+
+<div class="blog-post__inline-cta">
+  <p>Bawaseer mein khoon aa raha hai ya 1 hafte se farq nahi par raha? Ilaaj AI pe ghar baithe doctor-verified prescription chand minute mein hasil karein.</p>
+  <a href="https://app.ilaaj.ai">Abhi Doctor Se Milein</a>
+</div>
+
+<h2>Surgery Aur Procedures</h2>
+<p>Grade 3-4 ya recurrent bawaseer mein conservative ilaj kafi nahi hota. Common options:</p>
+<ul>
+<li><strong>Rubber band ligation:</strong> Out-patient procedure — pile ki base pe band lagaya jata hai, 7-10 din mein khud girr jata hai. Bohat common aur effective.</li>
+<li><strong>Sclerotherapy:</strong> Injection se pile ko shrink karte hain</li>
+<li><strong>Infrared coagulation:</strong> Heat se shrink karna</li>
+<li><strong>Hemorrhoidectomy:</strong> Surgical removal — grade 4 ke liye, magar recovery lambi hai</li>
+<li><strong>Stapled hemorrhoidopexy:</strong> Naya minimal-invasive option</li>
+</ul>
+
+<h2>Pregnancy Mein Bawaseer</h2>
+<p>Hamla khwateen mein bohat common hai khaaskar 3rd trimester aur delivery ke baad. Safe ilaj: sitz bath, isabgol, paani, walking. Daflon aur kuch ointments doctor ke mashware se safe hain. Khush khabri: delivery ke 4-6 hafton mein zyadatar bawaseer khud theek ho jate hain. Bina doctor poochay koi bhi dawai mat lein pregnancy mein.</p>
+
+<h2>Kab Doctor Se Foran Milein?</h2>
+<ul>
+<li>Khoon zyada ya har baar paikhana ke saath aa raha ho</li>
+<li>Chakkar aana, kamzori — anemia ka shubha</li>
+<li>Lump bahar aa kar wapis andar nahi ja raha</li>
+<li>Shadeed dard, bukhar aur sojish (thrombosed pile ya infection)</li>
+<li>Kaali ya tarry potty — yeh upper GI bleeding hai, bawaseer nahi</li>
+<li>50 saal se zyada umar aur naya bleeding (colon cancer screening zaruri)</li>
+<li>3 hafte ke ghareloo ilaj ke baad bhi farq na pare</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>Bawaseer ek aam masla hai aur uska ilaj mojood hai — sharm na karein, baat karein. Zyadatar cases (grade 1-2) sirf fiber, paani aur sitz bath se theek ho jate hain. Magar khoon, dard ya 3 hafte se zyada chalti symptoms ko ignore na karein. <strong>Ilaaj AI</strong> pe aap ghar baithe AI + PMDC-verified doctor dono se private consultation le sakte hain — sasti rates pe aur full confidentiality ke saath.</p>
+        </div>
+
+        <div class="blog-post__faq">
+          <h2>Frequently Asked Questions</h2>
+          <details class="blog-post__faq-item">
+            <summary>Bawaseer ki best medicine kaunsi hai Pakistan mein?</summary>
+            <div class="blog-post__faq-answer">Daflon 500 mg din mein 2 baar (oral) bleeding aur sojish kam karta hai. Local relief ke liye Anusol ya Proctosedyl ointment/suppository — khujli, dard aur jalan mein farq daalti hai. Saath mein fiber (Isabgol/psyllium 1 chamach raat ko), 3-4 liter pani aur sitz bath sab se zaruri hain. 1 hafte tak farq na ho ya khoon zyada ho to doctor se milein.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Bawaseer mein khoon aaye to kya karein?</summary>
+            <div class="blog-post__faq-answer">Chamakdar laal khoon paikhana ke saath ya tissue pe nazar aana grade 1-2 bawaseer ki aam nishani hai. Fiber barhain, paani zyada piyo, Daflon shuru karein aur sitz bath lein. Magar agar khoon zyada ho, chakkar aayein, ya kaali potty ho (yeh upper GI bleeding ho sakti hai), to foran doctor ko dikhain — colonoscopy ki zarurat ho sakti hai.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Sitz bath kaise karein bawaseer ke liye?</summary>
+            <div class="blog-post__faq-answer">Ek bare tub ya basin mein neem garam pani (itna garam ke haath bardasht kar le) bhar lein. Us mein 10-15 minute baith jaain taa ke anal area pani mein doob jaye. Yeh din mein 2-3 baar karein — khaaskar paikhana ke baad. Sojish, dard aur khujli mein fori aaram milta hai. Pani mein namak ya betadine zaruri nahi.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Bawaseer ki surgery kab zaruri hoti hai?</summary>
+            <div class="blog-post__faq-answer">Grade 3 aur 4 bawaseer (jab piles bahar nikal aaye aur khud andar na jaye, ya haath se push karna pare), recurrent heavy bleeding, ya 3 mahine ke conservative ilaj ke baad farq na pare — surgery zaruri ho jati hai. Common procedures: rubber band ligation (out-patient), sclerotherapy aur hemorrhoidectomy. Surgeon se consult karein.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Pregnancy mein bawaseer ka ilaj kya hai?</summary>
+            <div class="blog-post__faq-answer">Pregnancy mein bawaseer bohat aam hai — uterus ka pressure aur qabz dono wajah hain. Safest options: sitz bath, fiber diet (sabzi, phal, isabgol), 3 liter pani roz, walking. Daflon aur kuch ointments doctor ke mashware se safe hain magar bina poochay koi dawai na lein. Khush khabri yeh hai ke delivery ke baad zyadatar khud theek ho jate hain.</div>
+          </details>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="blog-post__related">
+          <h2>Related Articles</h2>
+          <ul class="blog-post__related-list">
+            <li><a href="/blog/qabz-ka-ilaj">Qabz Ka Ilaj — Constipation Home Remedies</a></li>
+            <li><a href="/blog/pet-dard-ka-ilaj">Pet Dard Ka Ilaj — Wajah Aur Best Medicine</a></li>
+            <li><a href="/blog/motapa-kam-karne-ka-tarika">Motapa Kam Karne Ka Tarika — Weight Loss Guide</a></li>
+            <li><a href="/blog">Browse All Health Articles &rarr;</a></li>
+          </ul>
+        </div>
+
+        <div class="blog-post__about">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="blog-post__about-logo">
+          <div class="blog-post__about-text">
+            <strong>About Ilaaj AI</strong>
+            <p>Ilaaj AI is Pakistan's first AI-powered health platform. Chat about your symptoms in Urdu or English, get AI-powered triage, and receive doctor-verified prescriptions — affordable and accessible, 24/7.</p>
+          </div>
+        </div>
+
+        <div class="blog-post__cta">
+          <div class="blog-post__cta-card">
+            <h3 class="blog-post__cta-title">Need Health Advice?</h3>
+            <p class="blog-post__cta-desc">Chat with our AI health assistant in any language. Get doctor-verified prescriptions at affordable rates.</p>
+            <div class="blog-post__cta-actions">
+              <a href="https://app.ilaaj.ai" class="btn btn--hero-primary">Try Ilaaj AI Now</a>
+              <a href="/blog" class="btn--outline">Read More Articles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <img src="../assets/ilaaj-logo.jpg" alt="Ilaaj AI" class="footer__logo-img" width="36" height="36" loading="lazy">
+            <span class="footer__logo-text">Ilaaj AI</span>
+          </div>
+          <p class="footer__brand-desc">Pakistan's first AI-powered health platform. Chat about your symptoms in any language, get AI triage, and receive doctor-verified prescriptions &mdash; affordable and accessible, 24/7.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/ilaaj_ai/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.516 2.497 5.783 2.225 7.149 2.163 8.415 2.105 8.795 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.987 15.668 24 15.259 24 12s-.013-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324A6.162 6.162 0 0 0 12 5.838zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61588590745625" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+            <a href="https://x.com/ilaajai" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Product</h4>
+          <ul class="footer__links">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#how-it-works">How It Works</a></li>
+            <li><a href="/#doctors">Our Doctors</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="../support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <p class="footer__contact-text">Questions or feedback?</p>
+          <a href="mailto:support@ilaaj.ai" class="footer__email">support@ilaaj.ai</a>
+          <p class="footer__emergency">For emergencies, call <strong>1122</strong> (Rescue)</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span class="footer-year"></span> Ilaaj AI. All rights reserved.</p>
+        <p class="footer__disclaimer">Ilaaj AI is for general health consultations and non-emergency medical guidance. For emergencies, call 1122 (Rescue) or visit the nearest hospital.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+    document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());
+  </script>
+  <!-- Tawk.to Live Chat (lazy-loaded) -->
+  <script>
+  (function() {
+    var tawkLoaded = false;
+    function loadTawk() {
+      if (tawkLoaded) return;
+      tawkLoaded = true;
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/69ce56b0127eae1c37be0e72/1jl70596p';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    }
+    document.addEventListener('scroll', loadTawk, {once: true});
+    document.addEventListener('click', loadTawk, {once: true});
+    document.addEventListener('mouseover', loadTawk, {once: true});
+  })();
+  </script>
+</body>
+</html>

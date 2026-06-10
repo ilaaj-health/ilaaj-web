@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <!-- Sentry: error tracking + session replay -->
+  <script src="https://js.sentry-cdn.com/defa6ca82daea4d4c49a8b69b87c53cc.min.js" crossorigin="anonymous"></script>
+  <script>
+    window.sentryOnLoad = function () {
+      Sentry.init({
+        integrations: [Sentry.replayIntegration({ maskAllText: false, blockAllMedia: false })],
+        tracesSampleRate: 0.1,
+        replaysSessionSampleRate: 0.1,
+        replaysOnErrorSampleRate: 1.0,
+      });
+    };
+  </script>
+  <!-- PostHog: product analytics + session replay -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_xjBQ5vUS7nTJz4jHta6d5dDE7jHdtFjFuqkxAJjvcFzo', { api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only', cross_subdomain_cookie: true });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XKTHF96');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1697266221447949');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1697266221447949&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eltroxin — Thyroid Ka Ilaj, Dose Aur Side Effects | Ilaaj AI</title>
+  <meta name="description" content="Eltroxin (levothyroxine) Pakistan mein hypothyroidism ka first-line ilaj hai. Khaali pet correct dose, side effects, pregnancy mein adjustments aur TSH monitoring — complete Urdu guide.">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="eltroxin uses pakistan, levothyroxine urdu, thyroid ka ilaj, hypothyroidism treatment, eltroxin dose, thyroid ki dawai">
+  <meta name="geo.region" content="PK">
+  <meta name="geo.placename" content="Pakistan">
+  <meta name="google-site-verification" content="8RtzwgVYowrMGF4E77jnKOX33seYEQTuXmxps2XkPxI">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.ilaaj.ai/blog/eltroxin-uses-pakistan">
+  <link rel="alternate" hreflang="ur-PK" href="https://www.ilaaj.ai/blog/eltroxin-uses-pakistan" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ilaaj.ai/blog/eltroxin-uses-pakistan" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/logo/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/logo/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/logo/site.webmanifest" />
+
+  <!-- PWA / Mobile -->
+  <meta name="theme-color" content="#00897B">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="IlaajAI">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Eltroxin — Thyroid Ka Ilaj, Dose Aur Side Effects | Ilaaj AI">
+  <meta property="og:description" content="Eltroxin (levothyroxine) Pakistan mein hypothyroidism ka first-line ilaj hai. Khaali pet correct dose, side effects, pregnancy mein adjustments aur TSH monitoring — complete Urdu guide.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ilaaj.ai/blog/eltroxin-uses-pakistan">
+  <meta property="og:image" content="https://images.pexels.com/photos/16051964/pexels-photo-16051964.jpeg?auto=compress&cs=tinysrgb&w=1200">
+  <meta property="og:image:alt" content="Thyroid tablets in vial — Eltroxin levothyroxine">
+  <meta property="og:site_name" content="Ilaaj AI">
+  <meta property="og:locale" content="ur_PK">
+  <meta property="article:published_time" content="2026-05-27T09:00:00.000Z">
+  <meta property="article:modified_time" content="2026-05-27T09:00:00.000Z">
+  <meta property="article:author" content="Ilaaj AI Medical Team">
+  <meta property="article:section" content="Endocrinology">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ilaajai">
+  <meta name="twitter:creator" content="@ilaajai">
+  <meta name="twitter:title" content="Eltroxin — Thyroid Ka Ilaj, Dose Aur Side Effects | Ilaaj AI">
+  <meta name="twitter:description" content="Eltroxin (levothyroxine) Pakistan mein hypothyroidism ka first-line ilaj hai. Khaali pet correct dose, side effects, pregnancy mein adjustments aur TSH monitoring — complete Urdu guide.">
+  <meta name="twitter:image" content="https://images.pexels.com/photos/16051964/pexels-photo-16051964.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNTMD61HWL"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KNTMD61HWL');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/blog.css">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.ilaaj.ai/blog/eltroxin-uses-pakistan"
+  },
+  "headline": "Eltroxin — Thyroid Ka Ilaj, Dose Aur Side Effects",
+  "description": "Eltroxin (levothyroxine) Pakistan mein hypothyroidism ka first-line ilaj hai. Khaali pet correct dose, side effects, pregnancy mein adjustments aur TSH monitoring — complete Urdu guide.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://images.pexels.com/photos/16051964/pexels-photo-16051964.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  },
+  "datePublished": "2026-05-27T09:00:00.000Z",
+  "dateModified": "2026-05-27T09:00:00.000Z",
+  "author": {
+    "@type": "Organization",
+    "name": "Ilaaj AI Medical Team",
+    "url": "https://www.ilaaj.ai/doctors"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ilaaj AI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.ilaaj.ai/assets/Icon-192.png"
+    }
+  },
+  "keywords": "eltroxin uses pakistan, levothyroxine urdu, thyroid ka ilaj, hypothyroidism treatment, eltroxin dose, thyroid ki dawai",
+  "inLanguage": "ur",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Ilaaj AI Blog",
+    "url": "https://www.ilaaj.ai/blog"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.ilaaj.ai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.ilaaj.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Eltroxin — Thyroid Ka Ilaj, Dose Aur Side Effects",
+      "item": "https://www.ilaaj.ai/blog/eltroxin-uses-pakistan"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Eltroxin kab aur kaise lein?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Eltroxin subah uth kar khaali pet, nashtay se 30-60 minute pehlay, sirf paani ke saath lein. Chai, doodh, calcium ya iron ki dawai ke saath bilkul na lein — yeh thyroid hormone ka absorption 40-50% tak kam kar dete hain. Agar subah mushkil hai to sone se pehlay (akhri khaane ke 4 ghante baad) bhi le sakte hain."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Eltroxin ki dose kaise determine hoti hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dose TSH level, umar, wazan aur baqi medical conditions par depend karta hai. Aam tor par 50-100 mcg shuruwati dose hai, aur 1.6 mcg per kg per day target. Buzurg aur dil ke marizo mein 25 mcg se shuru karte hain. Har 6-8 hafte TSH check kar ke doctor dose adjust karta hai jab tak TSH 0.5-2.5 mIU/L ke beech aa jaye, phir saal mein 1-2 baar test kaafi hai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hypothyroidism ke symptoms kya hain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pakistan mein 30-50 saal ki khwateen mein sab se aam — bayhad thakawat, wazan barhna, sardi zyada lagna, qabz, baalon ka jhadna aur patle hona, dry skin, mood low, period mein irregularity, aur memory mein kami. Bachon mein growth ruk jana aur taleem mein peechay rehna. Aksar yeh symptoms ahista ahista shuru hote hain isliye log dair se doctor ke pass jate hain. TSH test sab se reliable diagnosis hai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kya pregnancy mein Eltroxin safe hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bilkul safe hai — balke hamla khwateen ke liye zaruri hai. Untreated hypothyroidism miscarriage, preterm birth aur bachay ki dimaagi nashunuma par bura asar daalti hai. Hamal mein zyadtar khwateen ko dose 30-50% barhane ki zarurat parti hai. TSH test har 4-6 hafte karwana zaruri hai, target TSH pehlay trimester mein 2.5 se kam. Apni gynecologist ko zaroor batayein agar Eltroxin chal rahi hai aur hamal ki planning kar rahi hain."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Eltroxin kitne arsay tak leni padti hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zyadtar cases mein lifelong. Hypothyroidism aksar permanent condition hai — thyroid gland natural hormone nahi bana pati to bahar se replacement zaruri hai. Achanak band karne se thakawat, wazan, depression sab wapas a jate hain. Sirf kuch cases — jaise post-partum thyroiditis ya temporary thyroid inflammation — mein dawai 6-12 mahine baad band ho sakti hai, woh bhi doctor ki nigrani mein TSH dobara test kar ke."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKTHF96"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar navbar--scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="/" class="navbar__brand">
+        <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="navbar__logo">
+        <span class="navbar__name">Ilaaj AI</span>
+      </a>
+      <div class="navbar__center" id="navLinks">
+        <a href="/#how-it-works" class="navbar__link">How It Works</a>
+        <a href="/#features" class="navbar__link">Features</a>
+        <a href="/blog" class="navbar__link navbar__link--active">Blog</a>
+        <a href="/#faq" class="navbar__link">FAQ</a>
+      </div>
+      <div class="navbar__right">
+        <a href="https://app.ilaaj.ai" class="btn btn--primary btn--sm navbar__cta">
+          Muft Mashwara Lein
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile" id="mobileMenu">
+      <a href="/#how-it-works" class="navbar__mobile-link">How It Works</a>
+      <a href="/#features" class="navbar__mobile-link">Features</a>
+      <a href="/blog" class="navbar__mobile-link">Blog</a>
+      <a href="/#faq" class="navbar__mobile-link">FAQ</a>
+      <a href="https://app.ilaaj.ai" class="btn btn--primary btn--full">Muft Mashwara Lein</a>
+    </div>
+  </nav>
+
+  <main>
+    <article class="blog-post">
+      <div class="container">
+        <a href="/blog" class="blog-post__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Articles
+        </a>
+
+        <div class="blog-post__featured-image"><img src="https://images.pexels.com/photos/16051964/pexels-photo-16051964.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Thyroid tablets in vial — Eltroxin levothyroxine"></div>
+
+        <div class="blog-post__author">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI Medical Team" class="blog-post__author-avatar">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name">Ilaaj AI Medical Team</div>
+            <div class="blog-post__author-creds">PMDC-verified doctors reviewing every article</div>
+            <div class="blog-post__author-dates">Published: May 27, 2026 | Last reviewed: May 27, 2026</div>
+          </div>
+        </div>
+
+        <h1 class="blog-post__title">Eltroxin — Thyroid Ka Ilaj, Dose Aur Side Effects</h1>
+
+        <div class="blog-post__tldr">
+          <div class="blog-post__tldr-title">TL;DR — Key Takeaways</div>
+          <ul>
+            <li>Eltroxin (levothyroxine) synthetic thyroid hormone hai — hypothyroidism ka first-line ilaj</li>
+            <li>Pakistan mein 30-50 saal ki khwateen mein bohat aam masla</li>
+            <li>Subah khaali pet, nashtay se 30-60 minute pehlay, sirf paani ke saath</li>
+            <li>Calcium, iron aur doodh absorption ko bohat kam kar dete hain — gap rakhein</li>
+            <li>Aksar lifelong dawai — TSH har 6 mahine ya saal mein check karwayein</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+<h2>Eltroxin Kya Hai?</h2>
+<p>Eltroxin GSK ki banai hui synthetic levothyroxine (T4 hormone) hai jo body ki natural thyroid hormone ki kami poori karti hai. Hypothyroidism (under-active thyroid) Pakistan mein bohat aam problem hai — khaaskar 30-50 saal ki khwateen mein. Thyroid gland metabolism, body temperature, energy, mood, aur wazan — sab control karti hai. Jab yeh kaam karna chod de to pori body sust ho jati hai.</p>
+
+<table class="blog-post__quick-facts">
+  <caption>Eltroxin — Quick Facts</caption>
+  <tbody>
+    <tr><td>Salt</td><td>Levothyroxine Sodium (T4)</td></tr>
+    <tr><td>Class</td><td>Thyroid Hormone Replacement</td></tr>
+    <tr><td>Strengths</td><td>25, 50, 75, 100, 125, 150 mcg</td></tr>
+    <tr><td>Standard Adult Dose</td><td>50-100 mcg din mein ek baar</td></tr>
+    <tr><td>Kaise Lein</td><td>Subah khaali pet, paani ke saath</td></tr>
+    <tr><td>Asar Shuru</td><td>2-3 hafte mein mehsoos</td></tr>
+    <tr><td>Full Effect</td><td>4-6 hafte</td></tr>
+    <tr><td>Pakistan Price</td><td>Rs. 250-450 (100 tabs)</td></tr>
+    <tr><td>Use Period</td><td>Aksar lifelong</td></tr>
+  </tbody>
+</table>
+
+<h2>Pakistan Mein Thyroid Ki Beemari Kitni Aam Hai?</h2>
+<p>Pakistan Society of Endocrinology ke mutabiq 15-20% baligh khwateen ko life mein kabhi na kabhi thyroid ki problem hoti hai. Punjab aur KP ke kuch ilaqon mein iodine deficiency ki wajah se rate aur zyada hai. Khwateen mein hypothyroidism mardo se 5-8 guna zyada hota hai. Pregnancy ke baad (postpartum thyroiditis), 35 ke baad, aur family mein thyroid problem ho to risk barh jata hai. Karachi aur Lahore mein urban awareness barh rahi hai magar choti shehron aur dehi ilaqon mein ab bhi log "thakawat" ko sirf kaam ya umar samajh kar diagnose karwane mein dair karte hain.</p>
+
+<h2>Hypothyroidism Ke Symptoms</h2>
+<ul>
+<li>Bayhad thakawat, sustay, neend zyada</li>
+<li>Wazan barhna bina khaane mein farq</li>
+<li>Sardi zyada lagna, hath paaon thande</li>
+<li>Qabz</li>
+<li>Baalon ka jhadna, baal patle hone</li>
+<li>Dry skin, nakhun toot-na</li>
+<li>Mood low, depression jaisi feeling</li>
+<li>Period mein irregularity, heavy bleeding</li>
+<li>Yaadasht aur concentration mein kami ("brain fog")</li>
+<li>Awaaz mein bharipan, gala phulna (goiter)</li>
+<li>Bachay mein growth ruk jana</li>
+</ul>
+
+<h2>Diagnosis — TSH Test</h2>
+<p>Sab se reliable test TSH (Thyroid Stimulating Hormone) hai. Normal range 0.5-4.5 mIU/L. Hypothyroidism mein TSH zyada hota hai. Doctor saath mein Free T4 aur kabhi anti-TPO antibodies bhi test karte hain Hashimoto's diagnose karne ke liye. Pakistan mein test Rs. 800-1500 mein lab se ho jata hai.</p>
+
+<h2>Eltroxin Ki Sahi Dose Aur Tareeqa</h2>
+<ul>
+<li><strong>Young, healthy adults:</strong> 50-100 mcg se shuru, full dose 1.6 mcg/kg/day</li>
+<li><strong>Buzurg ya heart patients:</strong> 25 mcg se shuru, ahista barhana</li>
+<li><strong>Hamla khwateen:</strong> Pre-pregnancy dose se 30-50% zyada</li>
+<li><strong>Bachay:</strong> Wazan ke hisab se, pediatric endocrinologist set karta hai</li>
+</ul>
+<p><strong>Bohat Important — Kaise Lein:</strong></p>
+<ul>
+<li>Subah uth kar khaali pet, sirf paani ke saath</li>
+<li>Nashtay se 30-60 minute pehlay</li>
+<li>Chai/coffee mein bhi 30-60 minute gap</li>
+<li>Calcium, iron, multivitamin ke saath 4 ghante ka gap</li>
+<li>Antacids (Risek, Gaviscon) se bhi 4 ghante</li>
+<li>Soya products absorption kam karte hain</li>
+</ul>
+
+<div class="blog-post__inline-cta">
+  <p>Thyroid ke symptoms hain magar test confirm nahi kara? Ya Eltroxin chal rahi magar thakawat baqi hai? Ilaaj AI pe PMDC-verified doctor se mashwara lein.</p>
+  <a href="https://app.ilaaj.ai">Abhi Doctor Se Milein</a>
+</div>
+
+<h2>TSH Monitoring — Test Kab Karayein?</h2>
+<ul>
+<li>Dawai start ya dose change ke 6-8 hafte baad TSH test</li>
+<li>Stable hone tak har 8 hafte test</li>
+<li>Phir saal mein 1-2 baar kaafi</li>
+<li>Pregnancy mein har 4-6 hafte</li>
+<li>Symptoms wapas aa rahe ho to test pehlay</li>
+<li>Naya khaane peenay ya nayi dawai shuru ho to bhi test</li>
+</ul>
+
+<h2>Eltroxin Ke Side Effects</h2>
+<p>Agar dose sahi hai to side effects nahi hote — yeh aap ki body ka apna natural hormone hai. Side effects mostly over-dosing se hote hain:</p>
+<ul>
+<li>Dil ki tez dharkan, palpitations</li>
+<li>Wazan kam hona, bhook bohat lagna</li>
+<li>Garmi zyada lagna, paseena aana</li>
+<li>Neend mein khalal</li>
+<li>Bechaini, anxiety, hath kanpana</li>
+<li>Dast</li>
+<li>Period mein irregular</li>
+</ul>
+<p>Yeh symptoms ho to TSH test karwayein — dose kam karne ki zarurat ho sakti hai. Bohat lambi over-treatment se osteoporosis aur atrial fibrillation ka risk barhta hai khaaskar bzurg khwateen mein.</p>
+
+<h2>Drug Interactions — Yeh Dawaiyan Absorption Kam Karti Hain</h2>
+<ul>
+<li><strong>Calcium aur Iron supplements:</strong> 4 ghante gap</li>
+<li><strong>Antacids aur PPI (Risek, Nexium):</strong> 4 ghante gap</li>
+<li><strong>Multivitamins:</strong> 4 ghante gap</li>
+<li><strong>Sucralfate:</strong> Ulcer ki dawai — 4 ghante gap</li>
+<li><strong>Cholesterol dawaiyan (cholestyramine):</strong> Gap rakhein</li>
+<li><strong>Estrogen pills:</strong> Eltroxin ki zarurat barhati hain</li>
+<li><strong>Warfarin (blood thinner):</strong> Effect barhta hai — INR monitor</li>
+</ul>
+
+<h2>Lifestyle Tips Thyroid Patients Ke Liye</h2>
+<ul>
+<li>Iodized namak use karein (Pakistan mein iodine kam hai)</li>
+<li>Seafood, machli, anday — natural T4 ka source</li>
+<li>Roz exercise — wazan aur metabolism ke liye</li>
+<li>Selenium aur Zinc kam diet ho to supplement (doctor se poochein)</li>
+<li>Stress management — yoga, meditation, dua</li>
+<li>Soya aur cruciferous sabziyaan (band gobhi, broccoli) zyada na khaayein — magar zaroori bhi nahi ke bilkul band karein</li>
+<li>Smoking band — thyroid eye disease aur autoimmune problems barhati hai</li>
+</ul>
+
+<h2>Kab Doctor Se Foran Milein?</h2>
+<ul>
+<li>Dil ki bohat tez dharkan ya seenay mein dard</li>
+<li>Saans phulna ya pair sojhna</li>
+<li>Achanak shadeed bechaini, hath kanpana</li>
+<li>Wazan tezi se kam ya barh raha</li>
+<li>Pregnancy ki planning ya hamal confirm — dose review</li>
+<li>2 mahine se symptoms wapas aa rahe ho dawai ke bawajood</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>Eltroxin Pakistan mein hypothyroidism ka safe, effective aur sasti dawai hai. Magar yeh sirf tablet nigalna nahi — sahi timing, khaali pet, doosri dawaiyon se gap, aur regular TSH monitoring sab zaruri hain. Aksar yeh dawai lifelong leni hoti hai, magar agar sahi se ho to thyroid patient bilkul normal zindagi guzar sakta hai. <strong>Ilaaj AI</strong> par aap apni TSH reports aur symptoms share kar ke PMDC-licensed endocrinologist se mashwara le sakte hain — ghar baithay, sasti rates pe.</p>
+        </div>
+
+        <div class="blog-post__faq">
+          <h2>Frequently Asked Questions</h2>
+          <details class="blog-post__faq-item">
+            <summary>Eltroxin kab aur kaise lein?</summary>
+            <div class="blog-post__faq-answer">Eltroxin subah uth kar khaali pet, nashtay se 30-60 minute pehlay, sirf paani ke saath lein. Chai, doodh, calcium ya iron ki dawai ke saath bilkul na lein — yeh thyroid hormone ka absorption 40-50% tak kam kar dete hain. Agar subah mushkil hai to sone se pehlay (akhri khaane ke 4 ghante baad) bhi le sakte hain.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Eltroxin ki dose kaise determine hoti hai?</summary>
+            <div class="blog-post__faq-answer">Dose TSH level, umar, wazan aur baqi medical conditions par depend karta hai. Aam tor par 50-100 mcg shuruwati dose hai, aur 1.6 mcg per kg per day target. Buzurg aur dil ke marizo mein 25 mcg se shuru karte hain. Har 6-8 hafte TSH check kar ke doctor dose adjust karta hai jab tak TSH 0.5-2.5 mIU/L ke beech aa jaye, phir saal mein 1-2 baar test kaafi hai.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Hypothyroidism ke symptoms kya hain?</summary>
+            <div class="blog-post__faq-answer">Pakistan mein 30-50 saal ki khwateen mein sab se aam — bayhad thakawat, wazan barhna, sardi zyada lagna, qabz, baalon ka jhadna aur patle hona, dry skin, mood low, period mein irregularity, aur memory mein kami. Bachon mein growth ruk jana aur taleem mein peechay rehna. Aksar yeh symptoms ahista ahista shuru hote hain isliye log dair se doctor ke pass jate hain. TSH test sab se reliable diagnosis hai.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Kya pregnancy mein Eltroxin safe hai?</summary>
+            <div class="blog-post__faq-answer">Bilkul safe hai — balke hamla khwateen ke liye zaruri hai. Untreated hypothyroidism miscarriage, preterm birth aur bachay ki dimaagi nashunuma par bura asar daalti hai. Hamal mein zyadtar khwateen ko dose 30-50% barhane ki zarurat parti hai. TSH test har 4-6 hafte karwana zaruri hai, target TSH pehlay trimester mein 2.5 se kam. Apni gynecologist ko zaroor batayein agar Eltroxin chal rahi hai aur hamal ki planning kar rahi hain.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Eltroxin kitne arsay tak leni padti hai?</summary>
+            <div class="blog-post__faq-answer">Zyadtar cases mein lifelong. Hypothyroidism aksar permanent condition hai — thyroid gland natural hormone nahi bana pati to bahar se replacement zaruri hai. Achanak band karne se thakawat, wazan, depression sab wapas a jate hain. Sirf kuch cases — jaise post-partum thyroiditis ya temporary thyroid inflammation — mein dawai 6-12 mahine baad band ho sakti hai, woh bhi doctor ki nigrani mein TSH dobara test kar ke.</div>
+          </details>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="blog-post__related">
+          <h2>Related Articles</h2>
+          <ul class="blog-post__related-list">
+            <li><a href="/blog/metformin-500-uses-urdu">Metformin 500 mg — Uses, Dosage, Side Effects Pakistan</a></li>
+            <li><a href="/blog/sugar-kya-hai">Sugar Kya Hai — Diabetes Ki Wajah, Symptoms aur Ilaj</a></li>
+            <li><a href="/blog/motapa-kam-karne-ka-tarika">Motapa Kam Karne Ka Tarika — Diet, Exercise aur Pakistani Lifestyle</a></li>
+            <li><a href="/blog">Browse All Health Articles &rarr;</a></li>
+          </ul>
+        </div>
+
+        <div class="blog-post__about">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="blog-post__about-logo">
+          <div class="blog-post__about-text">
+            <strong>About Ilaaj AI</strong>
+            <p>Ilaaj AI is Pakistan's first AI-powered health platform. Chat about your symptoms in Urdu or English, get AI-powered triage, and receive doctor-verified prescriptions — affordable and accessible, 24/7.</p>
+          </div>
+        </div>
+
+        <div class="blog-post__cta">
+          <div class="blog-post__cta-card">
+            <h3 class="blog-post__cta-title">Need Health Advice?</h3>
+            <p class="blog-post__cta-desc">Chat with our AI health assistant in any language. Get doctor-verified prescriptions at affordable rates.</p>
+            <div class="blog-post__cta-actions">
+              <a href="https://app.ilaaj.ai" class="btn btn--hero-primary">Try Ilaaj AI Now</a>
+              <a href="/blog" class="btn--outline">Read More Articles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <img src="../assets/ilaaj-logo.jpg" alt="Ilaaj AI" class="footer__logo-img" width="36" height="36" loading="lazy">
+            <span class="footer__logo-text">Ilaaj AI</span>
+          </div>
+          <p class="footer__brand-desc">Pakistan's first AI-powered health platform. Chat about your symptoms in any language, get AI triage, and receive doctor-verified prescriptions &mdash; affordable and accessible, 24/7.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/ilaaj_ai/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.516 2.497 5.783 2.225 7.149 2.163 8.415 2.105 8.795 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.987 15.668 24 15.259 24 12s-.013-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324A6.162 6.162 0 0 0 12 5.838zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61588590745625" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+            <a href="https://x.com/ilaajai" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Product</h4>
+          <ul class="footer__links">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#how-it-works">How It Works</a></li>
+            <li><a href="/#doctors">Our Doctors</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="../support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <p class="footer__contact-text">Questions or feedback?</p>
+          <a href="mailto:support@ilaaj.ai" class="footer__email">support@ilaaj.ai</a>
+          <p class="footer__emergency">For emergencies, call <strong>1122</strong> (Rescue)</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span class="footer-year"></span> Ilaaj AI. All rights reserved.</p>
+        <p class="footer__disclaimer">Ilaaj AI is for general health consultations and non-emergency medical guidance. For emergencies, call 1122 (Rescue) or visit the nearest hospital.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+    document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());
+  </script>
+  <!-- Tawk.to Live Chat (lazy-loaded) -->
+  <script>
+  (function() {
+    var tawkLoaded = false;
+    function loadTawk() {
+      if (tawkLoaded) return;
+      tawkLoaded = true;
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/69ce56b0127eae1c37be0e72/1jl70596p';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    }
+    document.addEventListener('scroll', loadTawk, {once: true});
+    document.addEventListener('click', loadTawk, {once: true});
+    document.addEventListener('mouseover', loadTawk, {once: true});
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <!-- Sentry: error tracking + session replay -->
+  <script src="https://js.sentry-cdn.com/defa6ca82daea4d4c49a8b69b87c53cc.min.js" crossorigin="anonymous"></script>
+  <script>
+    window.sentryOnLoad = function () {
+      Sentry.init({
+        integrations: [Sentry.replayIntegration({ maskAllText: false, blockAllMedia: false })],
+        tracesSampleRate: 0.1,
+        replaysSessionSampleRate: 0.1,
+        replaysOnErrorSampleRate: 1.0,
+      });
+    };
+  </script>
+  <!-- PostHog: product analytics + session replay -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_xjBQ5vUS7nTJz4jHta6d5dDE7jHdtFjFuqkxAJjvcFzo', { api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only', cross_subdomain_cookie: true });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XKTHF96');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1697266221447949');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1697266221447949&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pakistan Mein Bachon Ka Vaccination Schedule (EPI Guide) | Ilaaj AI</title>
+  <meta name="description" content="Pakistan ka complete EPI vaccination schedule — birth se 15 mahine tak. BCG, OPV, Penta, PCV, Measles aur typhoid. Free vaccines, side effects aur myths.">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="vaccination schedule pakistan, EPI schedule urdu, bachon ke teekay, immunization pakistan, polio drops">
+  <meta name="geo.region" content="PK">
+  <meta name="geo.placename" content="Pakistan">
+  <meta name="google-site-verification" content="8RtzwgVYowrMGF4E77jnKOX33seYEQTuXmxps2XkPxI">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.ilaaj.ai/blog/vaccination-schedule-pakistan">
+  <link rel="alternate" hreflang="ur-PK" href="https://www.ilaaj.ai/blog/vaccination-schedule-pakistan" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ilaaj.ai/blog/vaccination-schedule-pakistan" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/logo/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/logo/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/logo/site.webmanifest" />
+
+  <!-- PWA / Mobile -->
+  <meta name="theme-color" content="#00897B">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="IlaajAI">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pakistan Mein Bachon Ka Vaccination Schedule (EPI Guide) | Ilaaj AI">
+  <meta property="og:description" content="Pakistan ka complete EPI vaccination schedule — birth se 15 mahine tak. BCG, OPV, Penta, PCV, Measles aur typhoid. Free vaccines, side effects aur myths.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ilaaj.ai/blog/vaccination-schedule-pakistan">
+  <meta property="og:image" content="https://images.pexels.com/photos/19550819/pexels-photo-19550819.jpeg?auto=compress&cs=tinysrgb&w=1200">
+  <meta property="og:image:alt" content="Baby receiving vaccination">
+  <meta property="og:site_name" content="Ilaaj AI">
+  <meta property="og:locale" content="ur_PK">
+  <meta property="article:published_time" content="2026-06-02T09:00:00.000Z">
+  <meta property="article:modified_time" content="2026-06-02T09:00:00.000Z">
+  <meta property="article:author" content="Ilaaj AI Medical Team">
+  <meta property="article:section" content="Child Health">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ilaajai">
+  <meta name="twitter:creator" content="@ilaajai">
+  <meta name="twitter:title" content="Pakistan Mein Bachon Ka Vaccination Schedule (EPI Guide) | Ilaaj AI">
+  <meta name="twitter:description" content="Pakistan ka complete EPI vaccination schedule — birth se 15 mahine tak. BCG, OPV, Penta, PCV, Measles aur typhoid. Free vaccines, side effects aur myths.">
+  <meta name="twitter:image" content="https://images.pexels.com/photos/19550819/pexels-photo-19550819.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNTMD61HWL"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KNTMD61HWL');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/blog.css">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.ilaaj.ai/blog/vaccination-schedule-pakistan"
+  },
+  "headline": "Pakistan Mein Bachon Ka Vaccination Schedule (EPI Guide)",
+  "description": "Pakistan ka complete EPI vaccination schedule — birth se 15 mahine tak. BCG, OPV, Penta, PCV, Measles aur typhoid. Free vaccines, side effects aur myths.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://images.pexels.com/photos/19550819/pexels-photo-19550819.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  },
+  "datePublished": "2026-06-02T09:00:00.000Z",
+  "dateModified": "2026-06-02T09:00:00.000Z",
+  "author": {
+    "@type": "Organization",
+    "name": "Ilaaj AI Medical Team",
+    "url": "https://www.ilaaj.ai/doctors"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ilaaj AI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.ilaaj.ai/assets/Icon-192.png"
+    }
+  },
+  "keywords": "vaccination schedule pakistan, EPI schedule urdu, bachon ke teekay, immunization pakistan, polio drops",
+  "inLanguage": "ur",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Ilaaj AI Blog",
+    "url": "https://www.ilaaj.ai/blog"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.ilaaj.ai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.ilaaj.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Pakistan Mein Bachon Ka Vaccination Schedule (EPI Guide)",
+      "item": "https://www.ilaaj.ai/blog/vaccination-schedule-pakistan"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Pakistan mein EPI vaccines kahan se free milti hain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "EPI (Expanded Programme on Immunization) ke tahat saari vaccines bilkul muft milti hain — government Basic Health Units (BHU), Rural Health Centres (RHC), Tehsil/District hospitals, Civil Dispensaries, aur Lady Health Worker visits par. Sirf pink immunization card sambhal kar rakhain. Private hospital se bhi yahi vaccines available hain magar fee lagti hai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Penta vaccine mein kaun kaun si beemariyaan cover hoti hain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pentavalent vaccine ek hi shot mein 5 beemariyon se bachao karta hai: Diphtheria, Pertussis (whooping cough), Tetanus, Hepatitis B, aur Haemophilus influenzae type b (Hib). Yeh 6, 10, aur 14 hafton par lagti hai. Pehle alag alag shots lagte the, ab ek injection mein sab — kam dard, behtar coverage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vaccine ke baad bukhar aaye to kya karein?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vaccination ke 24-48 ghante mein halka bukhar, injection wali jagah lal hona aur sujan, halki sustai — sab normal hain aur 2 din mein theek ho jate hain. Calpol (paracetamol) wazn ke hisab se dein. Injection site par thandi patti rakhain. 39C se zyada bukhar, persistent rona, dauray, ya sujan barhti rahe to foran doctor ko dikhain."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kya vaccine ki khurak miss ho jaye to dobara start karna parta hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nahi — catch-up possible hai aur dobara shuru karne ki zarurat nahi. Jahan se miss hui wahin se continue kar sakte hain magar pediatrician se mashwara zaruri. Polio campaign ke dauran additional OPV drops bilkul safe hain — routine doses se extra protection. Pink card sambhal kar rakhain taake doctor schedule track kar sake."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kya vaccines safe aur halal hain? Autism wali baat sach hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vaccines bilkul safe hain aur Pakistan mein use hone wali vaccines halal-certified hain (Islamic Advisory Group ne approve kiya). Autism ka vaccines se taluq science mein bilkul disprove ho chuka hai — yeh ek discredited 1998 ki study thi jo wapas le li gayi thi. Polio drops, MMR, sab safe hain. Multiple vaccines ek hi visit par dena bhi safe hai — immune system pe bojh nahi parta."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKTHF96"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar navbar--scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="/" class="navbar__brand">
+        <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="navbar__logo">
+        <span class="navbar__name">Ilaaj AI</span>
+      </a>
+      <div class="navbar__center" id="navLinks">
+        <a href="/#how-it-works" class="navbar__link">How It Works</a>
+        <a href="/#features" class="navbar__link">Features</a>
+        <a href="/blog" class="navbar__link navbar__link--active">Blog</a>
+        <a href="/#faq" class="navbar__link">FAQ</a>
+      </div>
+      <div class="navbar__right">
+        <a href="https://app.ilaaj.ai" class="btn btn--primary btn--sm navbar__cta">
+          Muft Mashwara Lein
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile" id="mobileMenu">
+      <a href="/#how-it-works" class="navbar__mobile-link">How It Works</a>
+      <a href="/#features" class="navbar__mobile-link">Features</a>
+      <a href="/blog" class="navbar__mobile-link">Blog</a>
+      <a href="/#faq" class="navbar__mobile-link">FAQ</a>
+      <a href="https://app.ilaaj.ai" class="btn btn--primary btn--full">Muft Mashwara Lein</a>
+    </div>
+  </nav>
+
+  <main>
+    <article class="blog-post">
+      <div class="container">
+        <a href="/blog" class="blog-post__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Articles
+        </a>
+
+        <div class="blog-post__featured-image"><img src="https://images.pexels.com/photos/19550819/pexels-photo-19550819.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Baby receiving vaccination"></div>
+
+        <div class="blog-post__author">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI Medical Team" class="blog-post__author-avatar">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name">Ilaaj AI Medical Team</div>
+            <div class="blog-post__author-creds">PMDC-verified doctors reviewing every article</div>
+            <div class="blog-post__author-dates">Published: June 2, 2026 | Last reviewed: June 2, 2026</div>
+          </div>
+        </div>
+
+        <h1 class="blog-post__title">Pakistan Mein Bachon Ka Vaccination Schedule (EPI Guide)</h1>
+
+        <div class="blog-post__tldr">
+          <div class="blog-post__tldr-title">TL;DR — Key Takeaways</div>
+          <ul>
+            <li>EPI (Expanded Programme on Immunization) Pakistan ke government centers par FREE hai</li>
+            <li>10+ jaanleva bemariyon se bachao — TB, polio, hepatitis B, measles, typhoid wagaira</li>
+            <li>Schedule: Birth, 6 hafte, 10 hafte, 14 hafte, 9 mahine, 15 mahine</li>
+            <li>Side effects aksar mamoli — bukhar 24-48 ghante, injection site par lali</li>
+            <li>Polio campaign workers se "qatre" zaroor lein — additional doses bilkul safe hain</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+<h2>EPI Kya Hai Aur Kahan Milta Hai</h2>
+<p>EPI ka matlab hai <strong>Expanded Programme on Immunization</strong> — Pakistan government ka national immunization program jo bachon ko 10+ khatarnaak bimariyon se bachata hai. Yeh sab vaccines bilkul <strong>free</strong> milti hain government ke Basic Health Units (BHU), Rural Health Centres (RHC), Civil Dispensaries, Tehsil aur District hospitals, aur Lady Health Worker visits par. Apna pink immunization card sambhal kar rakhna zaruri hai — har visit pe stamp lagwana.</p>
+
+<table class="blog-post__quick-facts">
+  <caption>Pakistan EPI Schedule — Memorize This</caption>
+  <tbody>
+    <tr><td><strong>Birth (Paida hote hi)</strong></td><td>BCG (TB), OPV-0, Hepatitis B</td></tr>
+    <tr><td><strong>6 hafte</strong></td><td>OPV-1, Penta-1, PCV-1, Rota-1</td></tr>
+    <tr><td><strong>10 hafte</strong></td><td>OPV-2, Penta-2, PCV-2, Rota-2</td></tr>
+    <tr><td><strong>14 hafte</strong></td><td>OPV-3, Penta-3, PCV-3, IPV (injection)</td></tr>
+    <tr><td><strong>9 mahine</strong></td><td>Measles-1, Typhoid conjugate</td></tr>
+    <tr><td><strong>15 mahine</strong></td><td>Measles-2</td></tr>
+    <tr><td><strong>Pregnant women</strong></td><td>Tetanus Toxoid (TT-1 to TT-5)</td></tr>
+  </tbody>
+</table>
+
+<h2>Har Vaccine Kis Bimari Se Bachata Hai</h2>
+<ul>
+<li><strong>BCG:</strong> Tuberculosis (TB) — Pakistan mein TB common hai, isliye paida hote hi lagti hai</li>
+<li><strong>OPV (oral polio):</strong> Polio ke qatre — Pakistan abhi bhi polio endemic hai, har dose zaruri</li>
+<li><strong>Hepatitis B:</strong> Liver ki bimari aur liver cancer</li>
+<li><strong>Pentavalent (Penta):</strong> 5-in-1 — Diphtheria, Pertussis (whooping cough), Tetanus, Hep B, Hib (meningitis)</li>
+<li><strong>PCV (Pneumococcal):</strong> Pneumonia aur meningitis</li>
+<li><strong>Rota:</strong> Rotavirus dast — Pakistan mein bachon ki #2 mortality cause</li>
+<li><strong>IPV (injectable polio):</strong> Additional polio protection</li>
+<li><strong>Measles:</strong> Khasra — jaanleva ban sakta hai</li>
+<li><strong>Typhoid Conjugate (TCV):</strong> 2019 se EPI mein shamil — Pakistan mein typhoid bohot zyada</li>
+</ul>
+
+<h2>Birth Doses — Paida Hote Hi</h2>
+<p>Paida hote hi 3 vaccines: <strong>BCG</strong> (bain bazu pe injection — chota nishan hamesha ke liye reh sakta hai, yeh normal hai), <strong>OPV-0</strong> (muh mein qatre), aur <strong>Hepatitis B</strong> (injection). Aksar hospital mein paida hone par yeh do days mein lag jaati hain. Agar ghar par paida hua to 14 din ke andar nearest BHU lay jaein.</p>
+
+<h2>6, 10, 14 Hafte Ki Visits</h2>
+<p>Yeh routine visits sab se important hain — har visit pe 3-4 vaccines lagti hain. Multiple vaccines ek saath safe hain — research ne prove kiya hai immune system pe bojh nahi parta. Penta thigh (jangh) mein lagti hai, OPV muh mein qatre, Rota bhi muh mein liquid.</p>
+
+<div class="blog-post__inline-cta">
+  <p>Vaccination schedule confusing lag raha hai ya koi dose miss ho gayi? Ilaaj AI pe pediatrician se foran mashwara lein aur catch-up plan banayein.</p>
+  <a href="https://app.ilaaj.ai">Abhi Doctor Se Milein</a>
+</div>
+
+<h2>9 Aur 15 Mahine — Measles Aur Typhoid</h2>
+<p>9 mahine pe <strong>Measles-1</strong> (khasra) aur <strong>Typhoid Conjugate Vaccine</strong> lagti hai. 15 mahine pe Measles-2 booster. Measles ke 2 doses 95% protection dete hain. Typhoid conjugate vaccine 2019 se Pakistan ke routine schedule mein add hua — yeh XDR typhoid jo Pakistan mein zyada hai us se bachata hai.</p>
+
+<h2>Vaccine Ke Side Effects — Kya Normal Hai</h2>
+<p>Mamoli side effects bilkul normal hain aur batate hain ke vaccine kaam kar rahi hai:</p>
+<ul>
+<li>Halka bukhar 24-48 ghante (Calpol/paracetamol wazn ke hisab se dein)</li>
+<li>Injection wali jagah lali, sujan, ya halka dard</li>
+<li>Halki sustai, zyada sona, kam khaana 1-2 din</li>
+<li>Halki fussiness ya rona</li>
+</ul>
+<p><strong>Serious reactions bohot rare hain</strong> — 30 minute clinic mein ruk kar dekh lena ideal hai. Allergic reaction ki nishani: tezi se rash, chehre/zubaan sujan, saans phoolna — foran emergency.</p>
+
+<h2>Foran Doctor Se Milein Agar:</h2>
+<ul>
+<li>Bukhar 39C (102.2F) se zyada</li>
+<li>Persistent rona 3+ ghante</li>
+<li>Daura (seizure)</li>
+<li>Bachay ki sustai bohot zyada, jagana mushkil</li>
+<li>Allergic reaction — sujan, rash spreading, breathing trouble</li>
+<li>Injection site par badhti hui sujan ya pus</li>
+</ul>
+
+<h2>Aam Galat Fehmiyaan Door Karein</h2>
+<p><strong>"Vaccines se autism hota hai" — Ghalat.</strong> 1998 ki ek study jhooti thi aur withdraw ho chuki hai. Lakhon bachon par research ne saabit kiya: vaccines aur autism mein koi taluq nahi.</p>
+<p><strong>"Polio qatre se bachay ko nuksan hota hai" — Bilkul ghalat.</strong> Polio Pakistan se khatm karne ki koshish jari hai. Campaign mein additional drops bilkul safe hain — extra protection dete hain. Workers ko gate par mat rokein.</p>
+<p><strong>"Vaccines mein haraam ajzaa hote hain" — Ghalat.</strong> Pakistan mein use hone wali EPI vaccines Islamic Advisory Group se halal-certified hain.</p>
+<p><strong>"Multiple vaccines ek hi din mein khatarnaak hain" — Ghalat.</strong> Bachon ka immune system roz lakhon germs handle karta hai. 4-5 vaccines ek saath bilkul safe aur efficient hain.</p>
+<p><strong>"Vaccines bandiyaan banane ke liye hain" — Bilkul jhooti propaganda.</strong> Yeh khatarnaak afwah hai jis se Pakistan mein bachay marte hain.</p>
+
+<h2>Pink Card Sambhal Kar Rakhain</h2>
+<p>Immunization card school admission, Pakistan se bahar travel (yellow fever certificate ya polio certificate), aur catch-up doses ke liye zaruri hai. Photo bhi mobile mein rakhain backup ke liye. Khaarij ho jaye to nearest health centre se duplicate ban sakti hai.</p>
+
+<h2>Conclusion</h2>
+<p>Vaccination Pakistan ke bachon ki sab se sasti, asaan aur asar daar protection hai — bilkul free, sirf ehsas chahiye. Schedule yaad rakhain ya phone mein reminder lagayein. <strong>Ilaaj AI</strong> par aap apne bachay ka schedule check karwa sakte hain, miss hone wali doses par pediatrician se mashwara le sakte hain — ghar baithe, kisi waqt bhi.</p>
+        </div>
+
+        <div class="blog-post__faq">
+          <h2>Frequently Asked Questions</h2>
+          <details class="blog-post__faq-item">
+            <summary>Pakistan mein EPI vaccines kahan se free milti hain?</summary>
+            <div class="blog-post__faq-answer">EPI (Expanded Programme on Immunization) ke tahat saari vaccines bilkul muft milti hain — government Basic Health Units (BHU), Rural Health Centres (RHC), Tehsil/District hospitals, Civil Dispensaries, aur Lady Health Worker visits par. Sirf pink immunization card sambhal kar rakhain. Private hospital se bhi yahi vaccines available hain magar fee lagti hai.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Penta vaccine mein kaun kaun si beemariyaan cover hoti hain?</summary>
+            <div class="blog-post__faq-answer">Pentavalent vaccine ek hi shot mein 5 beemariyon se bachao karta hai: Diphtheria, Pertussis (whooping cough), Tetanus, Hepatitis B, aur Haemophilus influenzae type b (Hib). Yeh 6, 10, aur 14 hafton par lagti hai. Pehle alag alag shots lagte the, ab ek injection mein sab — kam dard, behtar coverage.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Vaccine ke baad bukhar aaye to kya karein?</summary>
+            <div class="blog-post__faq-answer">Vaccination ke 24-48 ghante mein halka bukhar, injection wali jagah lal hona aur sujan, halki sustai — sab normal hain aur 2 din mein theek ho jate hain. Calpol (paracetamol) wazn ke hisab se dein. Injection site par thandi patti rakhain. 39C se zyada bukhar, persistent rona, dauray, ya sujan barhti rahe to foran doctor ko dikhain.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Kya vaccine ki khurak miss ho jaye to dobara start karna parta hai?</summary>
+            <div class="blog-post__faq-answer">Nahi — catch-up possible hai aur dobara shuru karne ki zarurat nahi. Jahan se miss hui wahin se continue kar sakte hain magar pediatrician se mashwara zaruri. Polio campaign ke dauran additional OPV drops bilkul safe hain — routine doses se extra protection. Pink card sambhal kar rakhain taake doctor schedule track kar sake.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Kya vaccines safe aur halal hain? Autism wali baat sach hai?</summary>
+            <div class="blog-post__faq-answer">Vaccines bilkul safe hain aur Pakistan mein use hone wali vaccines halal-certified hain (Islamic Advisory Group ne approve kiya). Autism ka vaccines se taluq science mein bilkul disprove ho chuka hai — yeh ek discredited 1998 ki study thi jo wapas le li gayi thi. Polio drops, MMR, sab safe hain. Multiple vaccines ek hi visit par dena bhi safe hai — immune system pe bojh nahi parta.</div>
+          </details>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="blog-post__related">
+          <h2>Related Articles</h2>
+          <ul class="blog-post__related-list">
+            <li><a href="/blog/bachon-ki-bimari-ai-mashwara">Bachon Ki Bimari Mein AI Mashwara — Online Pediatrician</a></li>
+            <li><a href="/blog/bachon-mein-dast">Bachon Mein Dast Ka Ilaj — ORS Aur Zaruri Ehtiyat</a></li>
+            <li><a href="/blog/dengue-ki-alamat">Dengue Ki Alamat Aur Ilaj — Mosquito Fever Guide</a></li>
+            <li><a href="/blog">Browse All Health Articles &rarr;</a></li>
+          </ul>
+        </div>
+
+        <div class="blog-post__about">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="blog-post__about-logo">
+          <div class="blog-post__about-text">
+            <strong>About Ilaaj AI</strong>
+            <p>Ilaaj AI is Pakistan's first AI-powered health platform. Chat about your symptoms in Urdu or English, get AI-powered triage, and receive doctor-verified prescriptions — affordable and accessible, 24/7.</p>
+          </div>
+        </div>
+
+        <div class="blog-post__cta">
+          <div class="blog-post__cta-card">
+            <h3 class="blog-post__cta-title">Need Health Advice?</h3>
+            <p class="blog-post__cta-desc">Chat with our AI health assistant in any language. Get doctor-verified prescriptions at affordable rates.</p>
+            <div class="blog-post__cta-actions">
+              <a href="https://app.ilaaj.ai" class="btn btn--hero-primary">Try Ilaaj AI Now</a>
+              <a href="/blog" class="btn--outline">Read More Articles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <img src="../assets/ilaaj-logo.jpg" alt="Ilaaj AI" class="footer__logo-img" width="36" height="36" loading="lazy">
+            <span class="footer__logo-text">Ilaaj AI</span>
+          </div>
+          <p class="footer__brand-desc">Pakistan's first AI-powered health platform. Chat about your symptoms in any language, get AI triage, and receive doctor-verified prescriptions &mdash; affordable and accessible, 24/7.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/ilaaj_ai/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.516 2.497 5.783 2.225 7.149 2.163 8.415 2.105 8.795 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.987 15.668 24 15.259 24 12s-.013-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324A6.162 6.162 0 0 0 12 5.838zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61588590745625" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+            <a href="https://x.com/ilaajai" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Product</h4>
+          <ul class="footer__links">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#how-it-works">How It Works</a></li>
+            <li><a href="/#doctors">Our Doctors</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="../support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <p class="footer__contact-text">Questions or feedback?</p>
+          <a href="mailto:support@ilaaj.ai" class="footer__email">support@ilaaj.ai</a>
+          <p class="footer__emergency">For emergencies, call <strong>1122</strong> (Rescue)</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span class="footer-year"></span> Ilaaj AI. All rights reserved.</p>
+        <p class="footer__disclaimer">Ilaaj AI is for general health consultations and non-emergency medical guidance. For emergencies, call 1122 (Rescue) or visit the nearest hospital.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+    document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());
+  </script>
+  <!-- Tawk.to Live Chat (lazy-loaded) -->
+  <script>
+  (function() {
+    var tawkLoaded = false;
+    function loadTawk() {
+      if (tawkLoaded) return;
+      tawkLoaded = true;
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/69ce56b0127eae1c37be0e72/1jl70596p';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    }
+    document.addEventListener('scroll', loadTawk, {once: true});
+    document.addEventListener('click', loadTawk, {once: true});
+    document.addEventListener('mouseover', loadTawk, {once: true});
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <!-- Sentry: error tracking + session replay -->
+  <script src="https://js.sentry-cdn.com/defa6ca82daea4d4c49a8b69b87c53cc.min.js" crossorigin="anonymous"></script>
+  <script>
+    window.sentryOnLoad = function () {
+      Sentry.init({
+        integrations: [Sentry.replayIntegration({ maskAllText: false, blockAllMedia: false })],
+        tracesSampleRate: 0.1,
+        replaysSessionSampleRate: 0.1,
+        replaysOnErrorSampleRate: 1.0,
+      });
+    };
+  </script>
+  <!-- PostHog: product analytics + session replay -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_xjBQ5vUS7nTJz4jHta6d5dDE7jHdtFjFuqkxAJjvcFzo', { api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only', cross_subdomain_cookie: true });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XKTHF96');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1697266221447949');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1697266221447949&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naak Se Khoon (Nakseer) — Wajah, Ilaj Aur Emergency Signs | Ilaaj AI</title>
+  <meta name="description" content="Naak se khoon (nakseer / epistaxis) ki wajuhat, fori first aid steps, bachon mein recurrent nakseer, aur kab ER zaruri hai. Ilaaj AI ki complete Urdu guide.">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="naak se khoon ka ilaj, nakseer urdu, nosebleed pakistan, epistaxis treatment, naak khoon first aid">
+  <meta name="geo.region" content="PK">
+  <meta name="geo.placename" content="Pakistan">
+  <meta name="google-site-verification" content="8RtzwgVYowrMGF4E77jnKOX33seYEQTuXmxps2XkPxI">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.ilaaj.ai/blog/naak-se-khoon">
+  <link rel="alternate" hreflang="ur-PK" href="https://www.ilaaj.ai/blog/naak-se-khoon" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ilaaj.ai/blog/naak-se-khoon" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/logo/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/logo/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/logo/site.webmanifest" />
+
+  <!-- PWA / Mobile -->
+  <meta name="theme-color" content="#00897B">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="IlaajAI">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Naak Se Khoon (Nakseer) — Wajah, Ilaj Aur Emergency Signs | Ilaaj AI">
+  <meta property="og:description" content="Naak se khoon (nakseer / epistaxis) ki wajuhat, fori first aid steps, bachon mein recurrent nakseer, aur kab ER zaruri hai. Ilaaj AI ki complete Urdu guide.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ilaaj.ai/blog/naak-se-khoon">
+  <meta property="og:image" content="https://images.pexels.com/photos/7699322/pexels-photo-7699322.jpeg?auto=compress&cs=tinysrgb&w=1200">
+  <meta property="og:image:alt" content="Person with nosebleed — nakseer">
+  <meta property="og:site_name" content="Ilaaj AI">
+  <meta property="og:locale" content="ur_PK">
+  <meta property="article:published_time" content="2026-05-31T09:00:00.000Z">
+  <meta property="article:modified_time" content="2026-05-31T09:00:00.000Z">
+  <meta property="article:author" content="Ilaaj AI Medical Team">
+  <meta property="article:section" content="ENT Health">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ilaajai">
+  <meta name="twitter:creator" content="@ilaajai">
+  <meta name="twitter:title" content="Naak Se Khoon (Nakseer) — Wajah, Ilaj Aur Emergency Signs | Ilaaj AI">
+  <meta name="twitter:description" content="Naak se khoon (nakseer / epistaxis) ki wajuhat, fori first aid steps, bachon mein recurrent nakseer, aur kab ER zaruri hai. Ilaaj AI ki complete Urdu guide.">
+  <meta name="twitter:image" content="https://images.pexels.com/photos/7699322/pexels-photo-7699322.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNTMD61HWL"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KNTMD61HWL');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/blog.css">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.ilaaj.ai/blog/naak-se-khoon"
+  },
+  "headline": "Naak Se Khoon (Nakseer) — Wajah, Ilaj Aur Emergency Signs",
+  "description": "Naak se khoon (nakseer / epistaxis) ki wajuhat, fori first aid steps, bachon mein recurrent nakseer, aur kab ER zaruri hai. Ilaaj AI ki complete Urdu guide.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://images.pexels.com/photos/7699322/pexels-photo-7699322.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  },
+  "datePublished": "2026-05-31T09:00:00.000Z",
+  "dateModified": "2026-05-31T09:00:00.000Z",
+  "author": {
+    "@type": "Organization",
+    "name": "Ilaaj AI Medical Team",
+    "url": "https://www.ilaaj.ai/doctors"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ilaaj AI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.ilaaj.ai/assets/Icon-192.png"
+    }
+  },
+  "keywords": "naak se khoon ka ilaj, nakseer urdu, nosebleed pakistan, epistaxis treatment, naak khoon first aid",
+  "inLanguage": "ur",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Ilaaj AI Blog",
+    "url": "https://www.ilaaj.ai/blog"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.ilaaj.ai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.ilaaj.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Naak Se Khoon (Nakseer) — Wajah, Ilaj Aur Emergency Signs",
+      "item": "https://www.ilaaj.ai/blog/naak-se-khoon"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Nakseer (naak se khoon) ki sab se aam wajah kya hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pakistan mein nakseer ki sab se aam wajah garmi mein dry hawa aur sardiyon mein dry winter air hai jisse naak ki andar ki rag (Little's area) fat jati hai. Bachon mein naak mein ungli daalna sab se common reason hai. Bare logon mein high blood pressure, allergy, blood thinner dawai (aspirin, warfarin), aur smog bhi wajuhat hain. 90% se zyada nakseer anterior (naak ke aage wale hisse se) hoti hai jo asaani se control ho jati hai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Naak se khoon nikal raha ho to kya karein?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sab se pehle ghabraein nahi aur lait na jaein. Sir aage jhukao (peeche bilkul nahi — warna khoon throat mein jata hai aur ulti hoti hai). Naak ka soft part (haddi nahi) angootha aur ungli se 10 minute continuous pinch karein — beech mein chod kar check mat karein. Mouth se sans lo, maathay par thanda cloth ya ice rakhein, aur muh mein ice cube chusna bhi madad karta hai. Agar 20 minute mein bleeding ruk nahi rahi to ER jaein."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bachon mein baar baar nakseer kyun hoti hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bachon mein recurrent nakseer aksar naak mein ungli daalne ki aadat, dry air, allergy, ya kabhi kabhi sardi/zukam se naak ki rag fat jane se hoti hai. Bachon ke fingernails kaat dein, room mein humidifier ya pani ka katora rakhein, aur saline nasal drops (Nasovin, NaCl 0.9%) din mein 2-3 baar use karein. Vaseline ka chota sa tukda naak ke andar bhi madadgar hai. Agar mahine mein 4+ baar ho, ek hi naak se ho, ya bohat zyada bleed ho to ENT specialist ki zarurat hai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kya high blood pressure se nakseer hoti hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "High blood pressure khud se nakseer shuru karne ki badi wajah nahi, magar agar nakseer shuru ho gayi hai to high BP bleeding ko control hone se rokta hai aur lambi karta hai. Pakistan mein adhker BP wale logon ko nakseer ke waqt BP zaroor check karwana chahiye. Achanak bohat tez BP (180/120 se upar) khud bhi emergency hai. Niyamat rakheen, sir aage jhukayein, aur foran BP check karwain."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kab nakseer ke liye foran ER jaayein?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Foran emergency room jaein agar: (1) 20 minute proper pinch karne ke baad bhi bleeding ruk nahi rahi, (2) bohat tez bleeding ya bare clots nikal rahe hain, (3) saath mein chakkar aana, kamzori, ya behoshi hai, (4) head injury ya chot ke baad nakseer hui ho, (5) sans lene mein takleef ho rahi hai, (6) blood thinner (warfarin, aspirin) lete hain aur bleeding control nahi ho rahi, ya (7) bukhar, rash ya jism mein khoon ke daag bhi hain (bleeding disorder ki nishani)."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKTHF96"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar navbar--scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="/" class="navbar__brand">
+        <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="navbar__logo">
+        <span class="navbar__name">Ilaaj AI</span>
+      </a>
+      <div class="navbar__center" id="navLinks">
+        <a href="/#how-it-works" class="navbar__link">How It Works</a>
+        <a href="/#features" class="navbar__link">Features</a>
+        <a href="/blog" class="navbar__link navbar__link--active">Blog</a>
+        <a href="/#faq" class="navbar__link">FAQ</a>
+      </div>
+      <div class="navbar__right">
+        <a href="https://app.ilaaj.ai" class="btn btn--primary btn--sm navbar__cta">
+          Muft Mashwara Lein
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile" id="mobileMenu">
+      <a href="/#how-it-works" class="navbar__mobile-link">How It Works</a>
+      <a href="/#features" class="navbar__mobile-link">Features</a>
+      <a href="/blog" class="navbar__mobile-link">Blog</a>
+      <a href="/#faq" class="navbar__mobile-link">FAQ</a>
+      <a href="https://app.ilaaj.ai" class="btn btn--primary btn--full">Muft Mashwara Lein</a>
+    </div>
+  </nav>
+
+  <main>
+    <article class="blog-post">
+      <div class="container">
+        <a href="/blog" class="blog-post__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Articles
+        </a>
+
+        <div class="blog-post__featured-image"><img src="https://images.pexels.com/photos/7699322/pexels-photo-7699322.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Person with nosebleed — nakseer"></div>
+
+        <div class="blog-post__author">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI Medical Team" class="blog-post__author-avatar">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name">Ilaaj AI Medical Team</div>
+            <div class="blog-post__author-creds">PMDC-verified doctors reviewing every article</div>
+            <div class="blog-post__author-dates">Published: May 31, 2026 | Last reviewed: May 31, 2026</div>
+          </div>
+        </div>
+
+        <h1 class="blog-post__title">Naak Se Khoon (Nakseer) — Wajah, Ilaj Aur Emergency Signs</h1>
+
+        <div class="blog-post__tldr">
+          <div class="blog-post__tldr-title">TL;DR — Key Takeaways</div>
+          <ul>
+            <li>Nakseer (epistaxis) ki sab se aam wajah dry air, naak mein ungli, aur Pakistan ki garmi/smog hai</li>
+            <li>First aid: sir AAGE jhukao (peeche NAHI), naak ka soft part 10 minute continuous pinch</li>
+            <li>90% nakseer anterior (sasti control), posterior serious hoti hai</li>
+            <li>Bachon mein recurrent: humidifier, saline drops, fingernails kaat dein</li>
+            <li>20 minute uncontrolled bleeding, head injury, ya kamzori = foran ER</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+<h2>Nakseer Kya Hai?</h2>
+<p>Naak se khoon ana ko Urdu mein <strong>nakseer</strong> aur medical zubaan mein <strong>epistaxis</strong> kehte hain. Pakistan mein yeh bohat aam shikayat hai — khaaskar garmi ke mausam mein jab hawa khushk hoti hai, aur sardiyon mein heater ki dry air mein. 90% se zyada cases anterior (naak ke aage wale "Little's area" se) hote hain jo ghar par 10 minute mein control kiye ja sakte hain. Sirf kuch cases posterior (naak ke peechle hisse se) hote hain jo zyada serious hote hain.</p>
+
+<table class="blog-post__quick-facts">
+  <caption>Nakseer Ki Aam Wajuhat</caption>
+  <tbody>
+    <tr><td>Dry air (garmi / sardi)</td><td>Pakistan ki khushk hawa, AC, heater</td></tr>
+    <tr><td>Naak mein ungli (bachon)</td><td>Bachon mein sab se common wajah</td></tr>
+    <tr><td>Smog aur pollution</td><td>Lahore aur Karachi ki winter smog</td></tr>
+    <tr><td>Allergy aur sneezing</td><td>Naak ki rag bar bar phati</td></tr>
+    <tr><td>High blood pressure</td><td>Bleeding lambi karta hai (start nahi)</td></tr>
+    <tr><td>Blood thinners</td><td>Aspirin, Loprin, Warfarin, Clopidogrel</td></tr>
+    <tr><td>Chot / Trauma</td><td>Naak pe lagna, accident</td></tr>
+    <tr><td>Bleeding disorders</td><td>Platelet kami, dengue, leukemia (rare)</td></tr>
+  </tbody>
+</table>
+
+<h2>Pehlay 10 Minute — First Aid Steps</h2>
+<p>Yeh sab se important section hai. Sahi tareeqe se bohat se nakseer ghar par control ho jate hain:</p>
+
+<h3>1. Pareshaan Na Hon, Aage Jhukein</h3>
+<p>Sir <strong>aage</strong> ki taraf jhukao. <strong>Peeche jhukana ya lait jana sab se bari ghalti hai</strong> — khoon throat mein chala jata hai, ulti ata hai, aur estimate karna mushkil ho jata hai ke kitna bleed hua.</p>
+
+<h3>2. Naak Ka Soft Part Pinch Karein</h3>
+<p>Naak ki <strong>haddi nahi</strong> — sirf neeche wala <strong>soft part</strong> angootha aur ungli se firmly pinch karein. <strong>10 minute continuous, beech mein chod kar check mat karein.</strong> Yeh sab se zyada log galti karte hain — 2-3 minute mein check karte hain aur clot toot jata hai.</p>
+
+<h3>3. Mouth Se Sans Lein</h3>
+<p>Aaram se mouth se sans lein. Khoon thook dein, nigalein nahi (kyunki naak ke andar ka khoon nigalna ulti karta hai).</p>
+
+<h3>4. Thanda Cloth Ya Ice</h3>
+<p>Maathay aur naak ke upar thanda cloth ya ice pack rakhein — yeh blood vessels constrict karta hai. Ek <strong>ice cube muh mein chusna</strong> bhi madadgar hai (taluwa se constriction).</p>
+
+<h3>5. 10 Minute Baad Check</h3>
+<p>Agar bleeding ruk gayi: <strong>2 ghante tak naak na sa(n)kein, na hi muh khol kar zor laga ke kuch karein</strong>. Lambi cheez ya tea/coffee thoda time avoid karein. Agar 20 minute baad bhi bleeding jaari hai — ER jaein.</p>
+
+<div class="blog-post__inline-cta">
+  <p>Nakseer baar baar ho rahi hai ya control nahi ho rahi? Ilaaj AI pe AI assistant + ENT-trained doctor se chand minute mein consultation lein.</p>
+  <a href="https://app.ilaaj.ai">Abhi Doctor Se Milein</a>
+</div>
+
+<h2>Kya NA Karein</h2>
+<ul>
+<li><strong>Lait na jaein</strong> — khoon throat mein jayega aur ulti hogi</li>
+<li>Sir peeche na karein — yeh sab se common ghalti hai</li>
+<li>Naak ko cotton / tissue se tightly band na karein</li>
+<li>Naak ki haddi pinch na karein — soft part hi pakdein</li>
+<li>10 minute se pehle check kar ke pinch chod na dein</li>
+<li>Bleeding ke baad nikalne wala thakka khichein nahi</li>
+<li>Aspirin, Loprin, Disprin avoid karein (bleeding zyada karte hain)</li>
+</ul>
+
+<h2>Bachon Mein Recurrent Nakseer</h2>
+<p>Bachon mein baar baar nakseer aksar chand cheezon se hoti hai:</p>
+<ul>
+<li><strong>Naak mein ungli daalne ki aadat:</strong> Fingernails chote rakhein, samjhayein</li>
+<li><strong>Dry air:</strong> Room mein humidifier, ya pani ka katora rakhein</li>
+<li><strong>Saline nasal drops (Nasovin, NaCl 0.9%):</strong> Din mein 2-3 baar har naak mein 2 drops</li>
+<li><strong>Vaseline:</strong> Roz raat ko cotton bud se chota sa Vaseline naak ke andar lagaayein</li>
+<li><strong>Allergy:</strong> Ghar mein dhool kam karein, allergy medicine doctor se</li>
+</ul>
+<p>Agar mahine mein 4+ baar nakseer, ek hi naak se baar baar, ya bohat zyada bleed ho to <strong>ENT specialist</strong> dikhaayein — cautery (silver nitrate) se rag close ki ja sakti hai.</p>
+
+<h2>High BP Aur Nakseer</h2>
+<p>Pakistan mein adher (middle-age) logon mein high BP nakseer ka aam scenario hai. <strong>BP khud nakseer shuru nahi karta</strong>, magar bleeding lambi karta hai. Nakseer ke waqt foran BP check karwain — agar 180/120 se upar ho to hospital jaayein. BP medicine regular lein, namak kam karein.</p>
+
+<h2>Foran ER Jaein</h2>
+<ul>
+<li>20+ minute proper pinch karne ke baad bhi bleeding na ruke</li>
+<li>Bohat tez bleeding ya bare clots</li>
+<li>Sans phulna, kamzori, behoshi ya pale skin</li>
+<li>Head injury ya accident ke baad nakseer</li>
+<li>Blood thinner (warfarin, aspirin) le rahe hain aur control nahi ho rahi</li>
+<li>Bukhar, jism par khoon ke daag, mason ke saath bleeding (platelet ya dengue check)</li>
+<li>Sirf ek naak se baar baar nakseer (tumor rule out)</li>
+</ul>
+
+<h2>Bachao Aur Roz Ki Aadat</h2>
+<ul>
+<li>Garmi aur smog mein paani zyada piyo, AC room mein humidifier use karein</li>
+<li>Naak ke andar Vaseline ya saline drops moisturize ke liye</li>
+<li>Smog mein bahar mask pehnein (N95 ya surgical)</li>
+<li>BP regular check aur control karein</li>
+<li>Allergy mein doctor ki batayi nasal spray</li>
+<li>Smoking aur paan/chaaliya band</li>
+<li>Aspirin / Loprin bina doctor ki ijazat na lein</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>Nakseer aksar dikhne mein khofnak lagti hai magar 90% cases sahi first aid se 10 minute mein control ho jate hain. Sab se aham yaad rakhne wali baat: <strong>sir aage jhukao, soft part pinch karein, 10 minute beech mein chod na hi check karein</strong>. Recurrent nakseer, blood thinner par bleeding, ya 20 minute uncontrolled bleeding ko ignore na karein. <strong>Ilaaj AI</strong> pe symptoms detail mein share karein aur AI + PMDC-verified doctor se mashwara lein — ghar baithe, 24/7 available.</p>
+        </div>
+
+        <div class="blog-post__faq">
+          <h2>Frequently Asked Questions</h2>
+          <details class="blog-post__faq-item">
+            <summary>Nakseer (naak se khoon) ki sab se aam wajah kya hai?</summary>
+            <div class="blog-post__faq-answer">Pakistan mein nakseer ki sab se aam wajah garmi mein dry hawa aur sardiyon mein dry winter air hai jisse naak ki andar ki rag (Little's area) fat jati hai. Bachon mein naak mein ungli daalna sab se common reason hai. Bare logon mein high blood pressure, allergy, blood thinner dawai (aspirin, warfarin), aur smog bhi wajuhat hain. 90% se zyada nakseer anterior (naak ke aage wale hisse se) hoti hai jo asaani se control ho jati hai.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Naak se khoon nikal raha ho to kya karein?</summary>
+            <div class="blog-post__faq-answer">Sab se pehle ghabraein nahi aur lait na jaein. Sir aage jhukao (peeche bilkul nahi — warna khoon throat mein jata hai aur ulti hoti hai). Naak ka soft part (haddi nahi) angootha aur ungli se 10 minute continuous pinch karein — beech mein chod kar check mat karein. Mouth se sans lo, maathay par thanda cloth ya ice rakhein, aur muh mein ice cube chusna bhi madad karta hai. Agar 20 minute mein bleeding ruk nahi rahi to ER jaein.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Bachon mein baar baar nakseer kyun hoti hai?</summary>
+            <div class="blog-post__faq-answer">Bachon mein recurrent nakseer aksar naak mein ungli daalne ki aadat, dry air, allergy, ya kabhi kabhi sardi/zukam se naak ki rag fat jane se hoti hai. Bachon ke fingernails kaat dein, room mein humidifier ya pani ka katora rakhein, aur saline nasal drops (Nasovin, NaCl 0.9%) din mein 2-3 baar use karein. Vaseline ka chota sa tukda naak ke andar bhi madadgar hai. Agar mahine mein 4+ baar ho, ek hi naak se ho, ya bohat zyada bleed ho to ENT specialist ki zarurat hai.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Kya high blood pressure se nakseer hoti hai?</summary>
+            <div class="blog-post__faq-answer">High blood pressure khud se nakseer shuru karne ki badi wajah nahi, magar agar nakseer shuru ho gayi hai to high BP bleeding ko control hone se rokta hai aur lambi karta hai. Pakistan mein adhker BP wale logon ko nakseer ke waqt BP zaroor check karwana chahiye. Achanak bohat tez BP (180/120 se upar) khud bhi emergency hai. Niyamat rakheen, sir aage jhukayein, aur foran BP check karwain.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Kab nakseer ke liye foran ER jaayein?</summary>
+            <div class="blog-post__faq-answer">Foran emergency room jaein agar: (1) 20 minute proper pinch karne ke baad bhi bleeding ruk nahi rahi, (2) bohat tez bleeding ya bare clots nikal rahe hain, (3) saath mein chakkar aana, kamzori, ya behoshi hai, (4) head injury ya chot ke baad nakseer hui ho, (5) sans lene mein takleef ho rahi hai, (6) blood thinner (warfarin, aspirin) lete hain aur bleeding control nahi ho rahi, ya (7) bukhar, rash ya jism mein khoon ke daag bhi hain (bleeding disorder ki nishani).</div>
+          </details>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="blog-post__related">
+          <h2>Related Articles</h2>
+          <ul class="blog-post__related-list">
+            <li><a href="/blog/blood-pressure-ka-ilaj">Blood Pressure Ka Ilaj — High BP Treatment</a></li>
+            <li><a href="/blog/allergy-ka-ilaj">Allergy Ka Ilaj — Pakistan Urdu Guide</a></li>
+            <li><a href="/blog/bukhar-ka-ilaj">Bukhar Ka Ilaj — Mosmi, Dengue Aur Typhoid</a></li>
+            <li><a href="/blog">Browse All Health Articles &rarr;</a></li>
+          </ul>
+        </div>
+
+        <div class="blog-post__about">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="blog-post__about-logo">
+          <div class="blog-post__about-text">
+            <strong>About Ilaaj AI</strong>
+            <p>Ilaaj AI is Pakistan's first AI-powered health platform. Chat about your symptoms in Urdu or English, get AI-powered triage, and receive doctor-verified prescriptions — affordable and accessible, 24/7.</p>
+          </div>
+        </div>
+
+        <div class="blog-post__cta">
+          <div class="blog-post__cta-card">
+            <h3 class="blog-post__cta-title">Need Health Advice?</h3>
+            <p class="blog-post__cta-desc">Chat with our AI health assistant in any language. Get doctor-verified prescriptions at affordable rates.</p>
+            <div class="blog-post__cta-actions">
+              <a href="https://app.ilaaj.ai" class="btn btn--hero-primary">Try Ilaaj AI Now</a>
+              <a href="/blog" class="btn--outline">Read More Articles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <img src="../assets/ilaaj-logo.jpg" alt="Ilaaj AI" class="footer__logo-img" width="36" height="36" loading="lazy">
+            <span class="footer__logo-text">Ilaaj AI</span>
+          </div>
+          <p class="footer__brand-desc">Pakistan's first AI-powered health platform. Chat about your symptoms in any language, get AI triage, and receive doctor-verified prescriptions &mdash; affordable and accessible, 24/7.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/ilaaj_ai/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.516 2.497 5.783 2.225 7.149 2.163 8.415 2.105 8.795 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.987 15.668 24 15.259 24 12s-.013-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324A6.162 6.162 0 0 0 12 5.838zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61588590745625" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+            <a href="https://x.com/ilaajai" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Product</h4>
+          <ul class="footer__links">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#how-it-works">How It Works</a></li>
+            <li><a href="/#doctors">Our Doctors</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="../support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <p class="footer__contact-text">Questions or feedback?</p>
+          <a href="mailto:support@ilaaj.ai" class="footer__email">support@ilaaj.ai</a>
+          <p class="footer__emergency">For emergencies, call <strong>1122</strong> (Rescue)</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span class="footer-year"></span> Ilaaj AI. All rights reserved.</p>
+        <p class="footer__disclaimer">Ilaaj AI is for general health consultations and non-emergency medical guidance. For emergencies, call 1122 (Rescue) or visit the nearest hospital.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+    document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());
+  </script>
+  <!-- Tawk.to Live Chat (lazy-loaded) -->
+  <script>
+  (function() {
+    var tawkLoaded = false;
+    function loadTawk() {
+      if (tawkLoaded) return;
+      tawkLoaded = true;
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/69ce56b0127eae1c37be0e72/1jl70596p';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    }
+    document.addEventListener('scroll', loadTawk, {once: true});
+    document.addEventListener('click', loadTawk, {once: true});
+    document.addEventListener('mouseover', loadTawk, {once: true});
+  })();
+  </script>
+</body>
+</html>
