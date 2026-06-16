@@ -13,6 +13,7 @@ function opt(url: string, w: number) {
 }
 
 const C = 'https://res.cloudinary.com/dpaz2mhy6/image/upload/';
+const PLACEHOLDER = 'v1774861881/placeholder-doctor.png';
 
 const raw = [
   { name: 'Dr. M Mujeeb ur Rehman', spec: 'General Physician', qual: 'MBBS, RMP', exp: '5 Yrs', img: 'v1774861881/l2qbg2ewfvhjvg2rmxsl.jpg' },
@@ -27,6 +28,14 @@ const raw = [
   { name: 'Dr. Hadia Nadeem', spec: 'General Physician', qual: 'MBBS (RMP)', exp: '6 Yrs', img: 'v1777026468/djo9viajggkqf2kjkn0j.jpg' },
   { name: 'Dr. Muneeb Mubashar', spec: 'General Practitioner', qual: 'MBBS, MPH', exp: '4 Yrs', img: 'v1776844359/qdfkg95niecs74jtefgm.jpg' },
   { name: 'Dr. Ibtasam Ahmad', spec: 'General Practitioner', qual: 'MBBS, PGR', exp: '7 Yrs', img: 'v1777365610/pbf9ztkeyfytmbtm4dsc.jpg' },
+  { name: 'Dr. Ayesha Rashid', spec: 'General Physician', qual: 'MBBS, RMP', exp: '2 Yrs', img: 'v1781080297/zz9azsaxwivd7lq4dvdf.jpg' },
+  { name: 'Dr. Waqas Gondal', spec: 'General Physician', qual: 'BSc, MBBS, MD', exp: '10 Yrs', img: 'v1777463924/houbvfpagsenyg03ltur.jpg' },
+  { name: 'Dr. Muhammad Waqas', spec: 'General Physician', qual: 'MBBS', exp: '3 Yrs', img: 'v1776319721/ihntsflyie7xx0gw6awl.jpg' },
+  { name: 'Dr. Muhammad Ammad', spec: 'General Physician', qual: 'MBBS, BSc', exp: '2 Yrs', img: 'v1775052795/neutkyyyjgrq5gcoz5rj.jpg' },
+  { name: 'Dr. Wadood Khan', spec: 'General Physician', qual: 'MBBS', exp: '11 Yrs', img: 'v1773748446/fi3hmia3erqrxpfsba8w.webp' },
+  { name: 'Dr. Altaf H. Malik', spec: 'Dermatologist', qual: 'MBBS, FCPS Derm', exp: '10 Yrs', img: 'v1773748446/fi3hmia3erqrxpfsba8w.webp' },
+  { name: 'Dr. Saira Zahid Khan', spec: 'General Physician', qual: 'MBBS', exp: '6 Yrs', img: 'v1780304931/muyu69ivrafbkjqrqu2d.jpg' },
+  { name: 'Dr. Mahnoor Zafar', spec: 'General Physician', qual: 'MBBS', exp: '5 Yrs', img: 'v1776350887/ged3x1h29plfzzblkrwh.png' },
 ];
 
 export const doctors: Doctor[] = raw.map((d) => ({
@@ -35,8 +44,8 @@ export const doctors: Doctor[] = raw.map((d) => ({
   spec: d.spec,
   qual: d.qual,
   exp: d.exp,
-  photo: opt(C + d.img, 176),
-  photoLg: opt(C + d.img, 320),
+  photo: opt(C + (d.img || PLACEHOLDER), 176),
+  photoLg: opt(C + (d.img || PLACEHOLDER), 320),
 }));
 
 export function getDoctor(slug: string): Doctor | undefined {
