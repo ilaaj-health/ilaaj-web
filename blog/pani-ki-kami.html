@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <!-- Sentry: error tracking + session replay -->
+  <script src="https://js.sentry-cdn.com/defa6ca82daea4d4c49a8b69b87c53cc.min.js" crossorigin="anonymous"></script>
+  <script>
+    window.sentryOnLoad = function () {
+      Sentry.init({
+        integrations: [Sentry.replayIntegration({ maskAllText: false, blockAllMedia: false })],
+        tracesSampleRate: 0.1,
+        replaysSessionSampleRate: 0.1,
+        replaysOnErrorSampleRate: 1.0,
+      });
+    };
+  </script>
+  <!-- PostHog: product analytics + session replay -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_xjBQ5vUS7nTJz4jHta6d5dDE7jHdtFjFuqkxAJjvcFzo', { api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only', cross_subdomain_cookie: true });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XKTHF96');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1697266221447949');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1697266221447949&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pani Ki Kami (Dehydration) Ka Ilaj — Symptoms Aur ORS Guide | Ilaaj AI</title>
+  <meta name="description" content="Dehydration ka ilaj — pani ki kami ke symptoms, ORS banana, bachon mein khaas ehtiyat. Pakistan garmi guide.">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="pani ki kami, dehydration treatment, ORS kaise banaye, dehydration symptoms, garmi mein pani, bachon mein dehydration">
+  <meta name="geo.region" content="PK">
+  <meta name="geo.placename" content="Pakistan">
+  <meta name="google-site-verification" content="8RtzwgVYowrMGF4E77jnKOX33seYEQTuXmxps2XkPxI">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.ilaaj.ai/blog/pani-ki-kami">
+  <link rel="alternate" hreflang="ur-PK" href="https://www.ilaaj.ai/blog/pani-ki-kami" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ilaaj.ai/blog/pani-ki-kami" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/logo/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/logo/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/logo/site.webmanifest" />
+
+  <!-- PWA / Mobile -->
+  <meta name="theme-color" content="#00897B">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="IlaajAI">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pani Ki Kami (Dehydration) Ka Ilaj — Symptoms Aur ORS Guide | Ilaaj AI">
+  <meta property="og:description" content="Dehydration ka ilaj — pani ki kami ke symptoms, ORS banana, bachon mein khaas ehtiyat. Pakistan garmi guide.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ilaaj.ai/blog/pani-ki-kami">
+  <meta property="og:image" content="https://images.pexels.com/photos/4920467/pexels-photo-4920467.jpeg?auto=compress&cs=tinysrgb&w=1200">
+  <meta property="og:image:alt" content="Glass of water — dehydration prevention">
+  <meta property="og:site_name" content="Ilaaj AI">
+  <meta property="og:locale" content="ur_PK">
+  <meta property="article:published_time" content="2026-06-26T09:00:00.000Z">
+  <meta property="article:modified_time" content="2026-06-26T09:00:00.000Z">
+  <meta property="article:author" content="Ilaaj AI Medical Team">
+  <meta property="article:section" content="Emergency">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ilaajai">
+  <meta name="twitter:creator" content="@ilaajai">
+  <meta name="twitter:title" content="Pani Ki Kami (Dehydration) Ka Ilaj — Symptoms Aur ORS Guide | Ilaaj AI">
+  <meta name="twitter:description" content="Dehydration ka ilaj — pani ki kami ke symptoms, ORS banana, bachon mein khaas ehtiyat. Pakistan garmi guide.">
+  <meta name="twitter:image" content="https://images.pexels.com/photos/4920467/pexels-photo-4920467.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNTMD61HWL"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KNTMD61HWL');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/blog.css">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.ilaaj.ai/blog/pani-ki-kami"
+  },
+  "headline": "Pani Ki Kami (Dehydration) Ka Ilaj — Symptoms Aur ORS Guide Pakistan Mein",
+  "description": "Dehydration ka ilaj — pani ki kami ke symptoms, ORS banana, bachon mein khaas ehtiyat. Pakistan garmi guide.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://images.pexels.com/photos/4920467/pexels-photo-4920467.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  },
+  "datePublished": "2026-06-26T09:00:00.000Z",
+  "dateModified": "2026-06-26T09:00:00.000Z",
+  "author": {
+    "@type": "Organization",
+    "name": "Ilaaj AI Medical Team",
+    "url": "https://www.ilaaj.ai/doctors"
+  },
+  "reviewedBy": { "@type": "Person", "name": "Dr. Saira Zafar", "jobTitle": "General Practitioner", "url": "https://www.ilaaj.ai/doctors/dr-saira-zafar" },
+  "lastReviewed": "2026-06-26",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ilaaj AI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.ilaaj.ai/assets/Icon-192.png"
+    }
+  },
+  "keywords": "pani ki kami, dehydration treatment, ORS kaise banaye, dehydration symptoms, garmi mein pani, bachon mein dehydration",
+  "inLanguage": "ur",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Ilaaj AI Blog",
+    "url": "https://www.ilaaj.ai/blog"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.ilaaj.ai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.ilaaj.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Pani Ki Kami (Dehydration) Ka Ilaj — Symptoms Aur ORS Guide Pakistan Mein",
+      "item": "https://www.ilaaj.ai/blog/pani-ki-kami"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "ORS ghar pe kaise banayein?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "1 liter saaf (boiled ya filtered) pani mein 6 level chammach cheeni aur aadha chammach namak milayein. Achi tarah hila kar piyo. Yeh WHO recommended formula hai. Pharmacy se bhi ORS packet milta hai Rs. 10-20 mein. Tayar ORS 24 ghante ke andar use karein."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Din mein kitna pani peena chahiye?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Normal mausam mein 8-10 glasses (2-2.5 liter) minimum. Pakistan ki garmi mein 3-4 liter zaruri hai. Agar mehnat ya exercise karte hain to aur zyada. Dark peela peshab matlab aap kam pani pee rahe hain — halka peela ya clear hona chahiye."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bachon mein dehydration ki kya nishani hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "6+ ghante diaper dry rahe, rote waqt aansoo na ayein, monh aur zuban dry ho, baby bohat sust ya chirhchirha ho, sunken aankhen. Newborn mein sir ka naram hissa (fontanelle) andar dhas jana. Yeh sab signs hain to foran hospital jayein aur ORS dete rahein."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ramadan mein dehydration se kaise bachein?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sehri mein khoob pani piyo (2-3 glass minimum). Iftar pe pehle pani aur ORS piyo, phir khaana. Chai/coffee kam piyo — yeh peshab zyada karati hain. Din mein dhoop aur garmi se bachein. Agar bohat zyada kamzori, chakkar, ya confusion ho to roza torna zaruri hai — sehat pehle hai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Dehydration mein sirf pani peena kafi hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sirf pani kafi NAHI hai agar zyada pani lose hua hai (dast, ulti, zyada pasina). Body ko electrolytes (namak, potassium) bhi chahiye. Isliye ORS best hai — isme pani, namak, aur cheeni ka sahi balance hota hai. Coconut water aur nimbu pani bhi helpful hain."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKTHF96"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar navbar--scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="/" class="navbar__brand">
+        <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="navbar__logo">
+        <span class="navbar__name">Ilaaj AI</span>
+      </a>
+      <div class="navbar__center" id="navLinks">
+        <a href="/#how-it-works" class="navbar__link">How It Works</a>
+        <a href="/#features" class="navbar__link">Features</a>
+        <a href="/blog" class="navbar__link navbar__link--active">Blog</a>
+        <a href="/#faq" class="navbar__link">FAQ</a>
+      </div>
+      <div class="navbar__right">
+        <a href="https://app.ilaaj.ai" class="btn btn--primary btn--sm navbar__cta">
+          Muft Mashwara Lein
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile" id="mobileMenu">
+      <a href="/#how-it-works" class="navbar__mobile-link">How It Works</a>
+      <a href="/#features" class="navbar__mobile-link">Features</a>
+      <a href="/blog" class="navbar__mobile-link">Blog</a>
+      <a href="/#faq" class="navbar__mobile-link">FAQ</a>
+      <a href="https://app.ilaaj.ai" class="btn btn--primary btn--full">Muft Mashwara Lein</a>
+    </div>
+  </nav>
+
+  <main>
+    <article class="blog-post">
+      <div class="container">
+        <a href="/blog" class="blog-post__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Articles
+        </a>
+
+        <div class="blog-post__featured-image"><img src="https://images.pexels.com/photos/4920467/pexels-photo-4920467.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Glass of water — dehydration prevention"></div>
+
+        <div class="blog-post__author">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI Medical Team" class="blog-post__author-avatar">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name">Ilaaj AI Medical Team</div>
+            <div class="blog-post__author-creds">PMDC-verified doctors reviewing every article</div>
+            <div class="blog-post__author-dates">Published: June 26, 2026 | Last reviewed: June 26, 2026</div>
+          </div>
+        </div>
+
+        <div class="blog-post__author blog-post__author--reviewer">
+          <img src="https://res.cloudinary.com/dpaz2mhy6/image/upload/f_auto,q_auto,w_96,h_96,c_fill,g_face/v1776334958/zwpaowaamnt8euxzlkzh.png" alt="Dr. Saira Zafar" class="blog-post__author-avatar" loading="lazy">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name"><a href="/doctors/dr-saira-zafar">Dr. Saira Zafar</a></div>
+            <div class="blog-post__author-creds blog-post__author-creds--reviewer">Medically reviewed by — PMDC-verified General Practitioner</div>
+            <div class="blog-post__author-dates">Reviewed on: June 26, 2026</div>
+          </div>
+        </div>
+
+        <h1 class="blog-post__title">Pani Ki Kami (Dehydration) Ka Ilaj — Symptoms Aur ORS Guide Pakistan Mein</h1>
+
+        <div class="blog-post__tldr">
+          <div class="blog-post__tldr-title">TL;DR — Key Takeaways</div>
+          <ul>
+            <li>Dehydration tab hoti hai jab body pani aur electrolytes lose kare — intake se zyada</li>
+            <li>Pakistan ki garmi (45°C+) mein dehydration bohat common hai</li>
+            <li>ORS sabse zaruri ilaj hai — ghar pe bhi bana sakte hain</li>
+            <li>Bachon mein dehydration jaldi khatarnak ho sakti hai</li>
+            <li>Severe dehydration (confusion, no urine) = EMERGENCY — IV fluids zaruri</li>
+            <li>Din mein 8-10 glasses pani minimum piyo, garmi mein 3-4 liter</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+<h2>Dehydration (Pani Ki Kami) Kya Hai?</h2>
+<p>Dehydration us waqt hoti hai jab aap ki body zyada pani aur electrolytes lose kare jitna aap andar le rahe hain. Hamara jism <strong>60-70% pani</strong> se bana hota hai — yeh pani har organ ke kaam ke liye zaruri hai: digestion, blood circulation, temperature control, aur kidney function sab pani pe depend karte hain.</p>
+
+<p>Jab body mein pani ki kami hoti hai to khoon gaarha ho jata hai, blood pressure gir sakta hai, kidneys sahi kaam nahi karti, aur dimagh ko bhi asar hota hai. Pakistan mein <strong>garmi ke mausam (May-September)</strong> mein dehydration bohat aam hai, khaaskar Sindh, Punjab aur Balochistan ke ilaqon mein jahaan temperature <strong>45°C se bhi upar</strong> chala jata hai.</p>
+
+<p><strong>Bachay aur buzurg</strong> sabse zyada risk mein hote hain kyunke bachon ki body choti hai aur jaldi pani lose karti hai, jabke buzurgon mein pyaas ka ehsaas kam hota hai aur aksar kafi pani nahi peete.</p>
+
+<h2>Dehydration Ki Wajuhaat</h2>
+<p>Pakistan mein dehydration ki sabse aam wajuhaat yeh hain:</p>
+<ul>
+<li><strong>Shadeed garmi aur loo (heat):</strong> Pakistan ke kai ilaqon mein garmi 45°C+ hoti hai — Jacobabad, Multan, Sibi, Nawabshah. Iss garmi mein body bohat zyada pasina nikaalti hai aur pani tezi se kam hota hai.</li>
+<li><strong>Exercise aur jismani mehnat:</strong> Construction workers, labourers, farmers, aur delivery riders dhoop mein kaam karte hain — inhe dehydration ka sabse zyada khatra hai.</li>
+<li><strong>Dast (diarrhea) aur ulti:</strong> Food poisoning, gastro, cholera — yeh sab bimariyan bohat zyada pani aur electrolytes body se nikaal deti hain. Pakistan mein ganda pani aur bahar ka khaana iska bada sabab hai.</li>
+<li><strong>Bukhar:</strong> Tez bukhar mein body zyada pasina nikaalti hai aur metabolism barh jata hai — pani ki zarurat badh jati hai.</li>
+<li><strong>Diabetes:</strong> Sugar zyada hone se baar baar peshab aata hai — isse bhi pani ki kami hoti hai.</li>
+<li><strong>Kafi pani na peena:</strong> Bohat se log din bhar mein sirf 3-4 glass pani peete hain — yeh kafi nahi hai, khaaskar garmi mein.</li>
+<li><strong>Ramadan mein roza:</strong> Garmi ke mausam mein 14-16 ghante ka roza rakhne se body mein pani ki kami ho sakti hai, khaaskar agar sehri mein kafi pani nahi piya.</li>
+</ul>
+
+<h2>Dehydration Ki Stages (Severity Levels)</h2>
+<p>Dehydration ki teen stages hoti hain — har ek ka ilaj alag hai:</p>
+
+<table class="blog-post__quick-facts">
+  <caption>Dehydration Ki Stages — Symptoms Aur Severity</caption>
+  <tbody>
+    <tr><td><strong>Mild (Halki)</strong></td><td>Pyaas lagna, monh khushk hona, dark peela peshab, halka sir dard, thakawat</td></tr>
+    <tr><td><strong>Moderate (Darmiyani)</strong></td><td>Bohat zyada pyaas, dry aur phati hui lips, sunken aankhen, fast heartbeat (dil ki dhadkan tez), peshab bohat kam ya dark, chakkar aana</td></tr>
+    <tr><td><strong>Severe (Shadeed) — EMERGENCY</strong></td><td>Peshab bilkul band, confusion ya behoshi, bohat tez dhadkan, low blood pressure, dry aur sookhti jild, haath pair thande — FORAN HOSPITAL JAYEIN</td></tr>
+  </tbody>
+</table>
+
+<p><strong>Yaad rakhein:</strong> Mild dehydration ghar pe ORS aur pani se theek ho sakti hai. Magar severe dehydration mein <strong>IV drip (nass mein pani)</strong> zaruri hoti hai — yeh sirf hospital mein hota hai.</p>
+
+<h2>Pakistan Mein Khaas Risk Factors</h2>
+<p>Pakistan mein dehydration ke kuch khaas risk factors hain jo doosre mulkon se mukhtalif hain:</p>
+<ul>
+<li><strong>Extreme garmi:</strong> Sindh (Jacobabad, Nawabshah), Punjab (Multan, Bahawalpur), aur Balochistan (Sibi, Turbat) mein summers mein 45-52°C tak temperature jata hai. Heat stroke aur dehydration yahan leading health emergencies hain.</li>
+<li><strong>Labourers aur outdoor workers:</strong> Construction workers, farmers, rickshaw/delivery riders — yeh log din bhar dhoop mein kaam karte hain bina kafi pani ke. Sindh aur Punjab mein har saal garmi se kayi deaths hoti hain.</li>
+<li><strong>Ramadan mein roza:</strong> Jab Ramadan garmi mein aaye to 14-16 ghante ka roza body pe bohat mushkil hota hai. Sehri mein kafi pani na peena sabse badi ghalti hai.</li>
+<li><strong>Load shedding aur bijli ka masla:</strong> AC ya fan na chalne se ghar ke andar bhi garmi barh jati hai, aur body zyada pasina nikaalti hai.</li>
+<li><strong>Bachay jo bahar khelte hain:</strong> Pakistan mein bachay aksar garmi mein bhi bahar khelte hain — inhe pyaas ka ehsaas kam hota hai aur pani nahi peete.</li>
+<li><strong>Akele rehne wale buzurg:</strong> Bohat se buzurg akele rehte hain aur pyaas ka ehsaas kam hone ki wajah se dehydrated ho jate hain.</li>
+<li><strong>Diarrheal diseases:</strong> Pakistan mein ganda pani aur food poisoning se dast bohat aam hai — yeh dehydration ki sabse bari wajah hai bachon mein.</li>
+</ul>
+
+<h2>ORS — Sabse Zaruri Ilaj</h2>
+
+<h3>ORS Kya Hai?</h3>
+<p><strong>ORS (Oral Rehydration Solution)</strong> dehydration ka sabse zaruri aur sabse effective ilaj hai. Yeh <strong>WHO (World Health Organization)</strong> ka recommended formula hai jo duniya bhar mein dehydration se hone wali lakho mawtein rok chuka hai. ORS mein pani, namak (sodium), aur cheeni (glucose) ka aisa balance hota hai jo body ko bohat jaldi absorb hota hai — sirf pani se kahin zyada effective.</p>
+
+<h3>Ghar Pe ORS Kaise Banayein</h3>
+<p>Agar pharmacy band hai ya ORS packet available nahi, to ghar pe ORS banana bohat aasaan hai:</p>
+<ul>
+<li><strong>1 liter saaf pani</strong> lein — boiled ya filtered. Agar koi option na ho to normal saaf pani bhi chalega.</li>
+<li><strong>6 level chammach cheeni</strong> (chai wale chammach — bhari hua nahi, level hona chahiye)</li>
+<li><strong>Aadha (1/2) chammach namak</strong></li>
+<li>Achi tarah hila kar milayein — bas ORS tayar hai!</li>
+</ul>
+<p>Pharmacy se bhi ORS packet milta hai — <strong>Rs. 10-20</strong> mein. Popular brands: Pedialyte, ORS-WHO, Hydrite. Tayar ORS <strong>24 ghante ke andar</strong> use kar lein, uske baad pheink dein aur naya banayein.</p>
+
+<h3>ORS Kaise Dein</h3>
+<p>ORS dene ka tareeqa bhi important hai — ghalat tareeqa se ulti ho sakti hai:</p>
+<ul>
+<li><strong>Thode thode ghunt mein piyo</strong> — ek dafa mein bohat zyada mat piyo warna ulti ho sakti hai.</li>
+<li><strong>Bachon mein:</strong> Har 5 minute mein 1-2 chammach dein. Baby ko spoon ya dropper se dein, bottle se nahi.</li>
+<li><strong>Ulti ke baad:</strong> 10 minute ruk jaein, phir dobara thode thode se shuru karein.</li>
+<li><strong>Dast ke har episode ke baad:</strong> 1 glass (200-250 ml) ORS extra piyo.</li>
+<li><strong>Normal taste:</strong> ORS ka taste halka namkeen-metha hona chahiye — agar bohat namkeen ya bohat meetha lage to measurement ghalat hai.</li>
+</ul>
+
+<div class="blog-post__inline-cta">
+  <p>Dehydration ki symptoms mehsoos ho rahi hain? Ilaaj AI pe doctor se abhi mashwara karein — sahi hydration plan milega.</p>
+  <a href="https://app.ilaaj.ai">Doctor Se Foran Mashwara</a>
+</div>
+
+<h2>Bachon Mein Dehydration — Khaas Ehtiyat</h2>
+<p>Bachon mein dehydration <strong>bohat jaldi khatarnak</strong> ho sakti hai kyunke unki body choti hai aur pani ka reserve kam hota hai. Pakistan mein har saal hazaron bachay dast aur dehydration se faut hote hain — yeh sab rokna mumkin hai agar waqt pe ORS diya jaye.</p>
+
+<p><strong>Bachon mein dehydration ki nishaniyaan:</strong></p>
+<ul>
+<li><strong>Diaper 6+ ghante dry rahe</strong> — yeh serious warning sign hai</li>
+<li><strong>Rote waqt aansoo na ayein</strong> — matlab body mein pani bohat kam hai</li>
+<li><strong>Sunken fontanelle:</strong> Newborn mein sir ka naram hissa (fontanelle) andar dhas jana</li>
+<li><strong>Baby bohat sust ya chirhchirha ho</strong> — normal se zyada rona ya bilkul response na dena</li>
+<li><strong>Dry lips aur zuban</strong> — monh ke andar khushki</li>
+<li><strong>Sunken aankhen</strong> — aankhen andar dhansi hui lagein</li>
+</ul>
+
+<p><strong>Bachon mein kya karein:</strong></p>
+<ul>
+<li><strong>Breastfeeding continue rakhein</strong> — maa ka doodh band mat karein, yeh best hydration hai</li>
+<li><strong>ORS thodi thodi miqdar mein dein</strong> — har 5 minute mein 1-2 chammach</li>
+<li>Agar baby ORS nahi pee raha to spoon ya syringe (bina needle) se dein</li>
+<li>Ulti ho rahi ho to 10 minute baad dobara try karein</li>
+<li><strong>Agar baby bohat sust, no urine, ya behosh ho to FORAN hospital jayein</strong></li>
+</ul>
+
+<h2>Dehydration Ka Ilaj — Stage Ke Mutabiq</h2>
+
+<p><strong>Mild Dehydration (Halki Pani Ki Kami):</strong></p>
+<ul>
+<li>Ghar pe ilaj mumkin hai</li>
+<li>ORS piyo — har ghante mein 1-2 glass</li>
+<li>Saada pani bhi zyada piyo</li>
+<li>Nimbu pani, lassi, coconut water bhi helpful hain</li>
+<li>Thanda aur saaye wala jagah mein aaram karein</li>
+<li>Halka khaana — tarbooz, kharbooza, kheera, dahi</li>
+</ul>
+
+<p><strong>Moderate Dehydration (Darmiyani):</strong></p>
+<ul>
+<li>ORS aggressively piyo — 2-3 liter pehle 4 ghanton mein</li>
+<li>Doctor se zarur milein — phone pe ya clinic</li>
+<li>Agar ORS rakh nahi pa rahe (ulti) to doctor IV fluids de sakta hai</li>
+<li>Bachon mein moderate dehydration = doctor zaruri</li>
+<li>Electrolyte drinks (pharmacy se) bhi le sakte hain</li>
+</ul>
+
+<p><strong>Severe Dehydration (Shadeed) — EMERGENCY:</strong></p>
+<ul>
+<li><strong>FORAN hospital jayein — 1122 call karein agar zarurat ho</strong></li>
+<li>IV fluids (nass mein pani) zaruri hai — sirf moonh se dena kafi nahi</li>
+<li>Blood pressure aur kidney function monitor hoga</li>
+<li>Hospital mein electrolytes check hongay aur accordingly treatment milega</li>
+<li>Severe dehydration se organ failure aur death ho sakti hai — halka mat lein</li>
+</ul>
+
+<h2>Dehydration Se Bachao (Prevention)</h2>
+<p>Dehydration se bachna uske ilaj se kahin aasaan hai. Yeh tips follow karein:</p>
+<ul>
+<li><strong>Din mein 8-10 glasses pani minimum piyo</strong> — yeh roughly 2-2.5 liter banta hai. Ek bottle saath rakhein aur thodi der baad peete rahein.</li>
+<li><strong>Garmi mein 3-4 liter pani zaruri:</strong> Pakistan ki garmi mein normal se do guna pani chahiye. Sirf pyaas lagne ka intezar mat karein — pyaas lagne tak body pehle se dehydrated hoti hai.</li>
+<li><strong>Light aur loose kapray pehnein:</strong> Cotton ke halke rang ke kapray garmi mein best hain. Dark aur tight kapray body ko aur garam karte hain.</li>
+<li><strong>Peak dhoop se bachein (12 baje se 3 baje):</strong> Agar mumkin ho to dopahar ki dhoop mein bahar mat jayein. Labourers ko is waqt break lena chahiye.</li>
+<li><strong>Exercise aur mehnat ke dauraan breaks lein:</strong> Har 20-30 minute baad pani piyo. Sports drinks ya ORS bhi le sakte hain.</li>
+<li><strong>Pani walay phal khayein:</strong> Tarbooz (watermelon), kharbooza (muskmelon), kheera (cucumber), oranges — yeh sab 80-90% pani hote hain aur hydration mein madad karte hain.</li>
+<li><strong>Dark peshab = warning sign:</strong> Agar peshab dark peela ya brownish hai to matlab aap kam pani pee rahe hain. Healthy peshab halka peela ya almost clear hona chahiye.</li>
+<li><strong>Ramadan mein sehri pe pani zyada piyo:</strong> Sehri mein 2-3 glass pani zarur piyo. Iftar pe pehle pani, phir khaana. Chai/coffee zyada mat piyo — yeh diuretic hain aur peshab zyada karati hain.</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>Dehydration ko halka mat lein — yeh ek <strong>jaan leva emergency</strong> ban sakti hai agar waqt pe ilaj na ho. Acha khabar yeh hai ke dehydration se bachna aur iska ilaj dono aasaan hain — <strong>ORS ghar pe bana sakte hain</strong>, pani zyada piyo, aur garmi mein apna aur apne bachon ka khayal rakhein.</p>
+
+<p>Agar aap ya aap ke kisi apne mein dehydration ki symptoms hain — pyaas, dark peshab, chakkar, kamzori — to pehle ORS shuru karein aur phir <strong>Ilaaj AI</strong> pe doctor se mashwara karein. AI aap ki symptoms ka analysis karega aur licensed doctor sahi hydration plan aur treatment recommend karega — sirf chand minute mein, ghar baithe.</p>
+        </div>
+
+        <div class="blog-post__faq">
+          <h2>Frequently Asked Questions</h2>
+          <details class="blog-post__faq-item">
+            <summary>ORS ghar pe kaise banayein?</summary>
+            <div class="blog-post__faq-answer">1 liter saaf (boiled ya filtered) pani mein 6 level chammach cheeni aur aadha chammach namak milayein. Achi tarah hila kar piyo. Yeh WHO recommended formula hai. Pharmacy se bhi ORS packet milta hai Rs. 10-20 mein. Tayar ORS 24 ghante ke andar use karein.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Din mein kitna pani peena chahiye?</summary>
+            <div class="blog-post__faq-answer">Normal mausam mein 8-10 glasses (2-2.5 liter) minimum. Pakistan ki garmi mein 3-4 liter zaruri hai. Agar mehnat ya exercise karte hain to aur zyada. Dark peela peshab matlab aap kam pani pee rahe hain — halka peela ya clear hona chahiye.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Bachon mein dehydration ki kya nishani hai?</summary>
+            <div class="blog-post__faq-answer">6+ ghante diaper dry rahe, rote waqt aansoo na ayein, monh aur zuban dry ho, baby bohat sust ya chirhchirha ho, sunken aankhen. Newborn mein sir ka naram hissa (fontanelle) andar dhas jana. Yeh sab signs hain to foran hospital jayein aur ORS dete rahein.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Ramadan mein dehydration se kaise bachein?</summary>
+            <div class="blog-post__faq-answer">Sehri mein khoob pani piyo (2-3 glass minimum). Iftar pe pehle pani aur ORS piyo, phir khaana. Chai/coffee kam piyo — yeh peshab zyada karati hain. Din mein dhoop aur garmi se bachein. Agar bohat zyada kamzori, chakkar, ya confusion ho to roza torna zaruri hai — sehat pehle hai.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Dehydration mein sirf pani peena kafi hai?</summary>
+            <div class="blog-post__faq-answer">Sirf pani kafi NAHI hai agar zyada pani lose hua hai (dast, ulti, zyada pasina). Body ko electrolytes (namak, potassium) bhi chahiye. Isliye ORS best hai — isme pani, namak, aur cheeni ka sahi balance hota hai. Coconut water aur nimbu pani bhi helpful hain.</div>
+          </details>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="blog-post__related">
+          <h2>Related Articles</h2>
+          <ul class="blog-post__related-list">
+            <li><a href="/blog/food-poisoning-ilaj">Food Poisoning Ka Ilaj</a></li>
+            <li><a href="/blog/bukhar-ka-ilaj">Bukhar Ka Ilaj</a></li>
+            <li><a href="/blog">Browse All Health Articles &rarr;</a></li>
+          </ul>
+        </div>
+
+        <div class="blog-post__about">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="blog-post__about-logo">
+          <div class="blog-post__about-text">
+            <strong>About Ilaaj AI</strong>
+            <p>Ilaaj AI is Pakistan's first AI-powered health platform. Chat about your symptoms in Urdu or English, get AI-powered triage, and receive doctor-verified prescriptions — affordable and accessible, 24/7.</p>
+          </div>
+        </div>
+
+        <div class="blog-post__cta">
+          <div class="blog-post__cta-card">
+            <h3 class="blog-post__cta-title">Need Health Advice?</h3>
+            <p class="blog-post__cta-desc">Chat with our AI health assistant in any language. Get doctor-verified prescriptions at affordable rates.</p>
+            <div class="blog-post__cta-actions">
+              <a href="https://app.ilaaj.ai" class="btn btn--hero-primary">Try Ilaaj AI Now</a>
+              <a href="/blog" class="btn--outline">Read More Articles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <img src="../assets/ilaaj-logo.jpg" alt="Ilaaj AI" class="footer__logo-img" width="36" height="36" loading="lazy">
+            <span class="footer__logo-text">Ilaaj AI</span>
+          </div>
+          <p class="footer__brand-desc">Pakistan's first AI-powered health platform. Chat about your symptoms in any language, get AI triage, and receive doctor-verified prescriptions &mdash; affordable and accessible, 24/7.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/ilaaj_ai/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.516 2.497 5.783 2.225 7.149 2.163 8.415 2.105 8.795 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.987 15.668 24 15.259 24 12s-.013-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324A6.162 6.162 0 0 0 12 5.838zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61588590745625" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+            <a href="https://x.com/ilaajai" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Product</h4>
+          <ul class="footer__links">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#how-it-works">How It Works</a></li>
+            <li><a href="/#doctors">Our Doctors</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="../support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <p class="footer__contact-text">Questions or feedback?</p>
+          <a href="mailto:support@ilaaj.ai" class="footer__email">support@ilaaj.ai</a>
+          <p class="footer__emergency">For emergencies, call <strong>1122</strong> (Rescue)</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span class="footer-year"></span> Ilaaj AI. All rights reserved.</p>
+        <p class="footer__disclaimer">Ilaaj AI is for general health consultations and non-emergency medical guidance. For emergencies, call 1122 (Rescue) or visit the nearest hospital.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+    document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());
+  </script>
+  <!-- Tawk.to Live Chat (lazy-loaded) -->
+  <script>
+  (function() {
+    var tawkLoaded = false;
+    function loadTawk() {
+      if (tawkLoaded) return;
+      tawkLoaded = true;
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/69ce56b0127eae1c37be0e72/1jl70596p';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    }
+    document.addEventListener('scroll', loadTawk, {once: true});
+    document.addEventListener('click', loadTawk, {once: true});
+    document.addEventListener('mouseover', loadTawk, {once: true});
+  })();
+  </script>
+</body>
+</html>
