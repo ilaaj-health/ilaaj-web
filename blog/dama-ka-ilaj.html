@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <!-- Sentry: error tracking + session replay -->
+  <script src="https://js.sentry-cdn.com/defa6ca82daea4d4c49a8b69b87c53cc.min.js" crossorigin="anonymous"></script>
+  <script>
+    window.sentryOnLoad = function () {
+      Sentry.init({
+        integrations: [Sentry.replayIntegration({ maskAllText: false, blockAllMedia: false })],
+        tracesSampleRate: 0.1,
+        replaysSessionSampleRate: 0.1,
+        replaysOnErrorSampleRate: 1.0,
+      });
+    };
+  </script>
+  <!-- PostHog: product analytics + session replay -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_xjBQ5vUS7nTJz4jHta6d5dDE7jHdtFjFuqkxAJjvcFzo', { api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only', cross_subdomain_cookie: true });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XKTHF96');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1697266221447949');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1697266221447949&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dama Ka Ilaj — Asthma Symptoms Aur Treatment Pakistan | Ilaaj AI</title>
+  <meta name="description" content="Dama (asthma) ka ilaj — inhaler use, triggers, smog se bachao. Pakistan mein asthma control guide.">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="dama ka ilaj, asthma treatment pakistan, inhaler kaise use karein, sans phoolna, asthma symptoms, smog asthma">
+  <meta name="geo.region" content="PK">
+  <meta name="geo.placename" content="Pakistan">
+  <meta name="google-site-verification" content="8RtzwgVYowrMGF4E77jnKOX33seYEQTuXmxps2XkPxI">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.ilaaj.ai/blog/dama-ka-ilaj">
+  <link rel="alternate" hreflang="ur-PK" href="https://www.ilaaj.ai/blog/dama-ka-ilaj" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ilaaj.ai/blog/dama-ka-ilaj" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/logo/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/logo/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/logo/site.webmanifest" />
+
+  <!-- PWA / Mobile -->
+  <meta name="theme-color" content="#00897B">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="IlaajAI">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dama Ka Ilaj — Asthma Symptoms Aur Treatment Pakistan | Ilaaj AI">
+  <meta property="og:description" content="Dama (asthma) ka ilaj — inhaler use, triggers, smog se bachao. Pakistan mein asthma control guide.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ilaaj.ai/blog/dama-ka-ilaj">
+  <meta property="og:image" content="https://images.pexels.com/photos/30425693/pexels-photo-30425693.jpeg?auto=compress&cs=tinysrgb&w=1200">
+  <meta property="og:image:alt" content="Person using asthma inhaler">
+  <meta property="og:site_name" content="Ilaaj AI">
+  <meta property="og:locale" content="ur_PK">
+  <meta property="article:published_time" content="2026-06-23T09:00:00.000Z">
+  <meta property="article:modified_time" content="2026-06-23T09:00:00.000Z">
+  <meta property="article:author" content="Ilaaj AI Medical Team">
+  <meta property="article:section" content="Respiratory">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ilaajai">
+  <meta name="twitter:creator" content="@ilaajai">
+  <meta name="twitter:title" content="Dama Ka Ilaj — Asthma Symptoms Aur Treatment Pakistan | Ilaaj AI">
+  <meta name="twitter:description" content="Dama (asthma) ka ilaj — inhaler use, triggers, smog se bachao. Pakistan mein asthma control guide.">
+  <meta name="twitter:image" content="https://images.pexels.com/photos/30425693/pexels-photo-30425693.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNTMD61HWL"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KNTMD61HWL');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/blog.css">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.ilaaj.ai/blog/dama-ka-ilaj"
+  },
+  "headline": "Dama Ka Ilaj — Asthma Symptoms Aur Treatment Pakistan",
+  "description": "Dama (asthma) ka ilaj — inhaler use, triggers, smog se bachao. Pakistan mein asthma control guide.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://images.pexels.com/photos/30425693/pexels-photo-30425693.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  },
+  "datePublished": "2026-06-23T09:00:00.000Z",
+  "dateModified": "2026-06-23T09:00:00.000Z",
+  "author": {
+    "@type": "Organization",
+    "name": "Ilaaj AI Medical Team",
+    "url": "https://www.ilaaj.ai/doctors"
+  },
+  "reviewedBy": { "@type": "Person", "name": "Dr. Saira Zafar", "jobTitle": "General Practitioner", "url": "https://www.ilaaj.ai/doctors/dr-saira-zafar" },
+  "lastReviewed": "2026-06-23",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ilaaj AI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.ilaaj.ai/assets/Icon-192.png"
+    }
+  },
+  "keywords": "dama ka ilaj, asthma treatment pakistan, inhaler kaise use karein, sans phoolna, asthma symptoms, smog asthma",
+  "inLanguage": "ur",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Ilaaj AI Blog",
+    "url": "https://www.ilaaj.ai/blog"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.ilaaj.ai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.ilaaj.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Dama Ka Ilaj — Asthma Symptoms Aur Treatment Pakistan",
+      "item": "https://www.ilaaj.ai/blog/dama-ka-ilaj"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Kya inhaler ki aadat par jaati hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nahi — yeh sabse barri ghaltfehmi hai. Inhaler ki aadat NAHI parti. Reliever inhaler (Ventolin) sirf zarurat pe use hota hai. Controller inhaler (steroid) roz lena zaruri hai kyunke yeh inflammation rokta hai — yeh aadat nahi, ilaj hai. Jaise sugar ki dawai roz leni parti hai, waise hi asthma ki controller medicine roz zaruri hai. Inhaler chorna asthma bigaar deta hai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Asthma mein nebulizer kab zaruri hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nebulizer tab zaruri hai jab: inhaler se kafi rahat na mile, sans lene mein bohat zyada mushkil ho, chota bacha inhaler use nahi kar sake (2 saal se kam), ya emergency mein. Hospital mein doctors nebulizer dete hain acute attacks mein. Ghar mein nebulizer rakhna achi baat hai magar doctor ki hidayat ke mutabiq use karein. Spacer ke saath inhaler bhi utna hi effective hai — nebulizer zaruri nahi har baar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Smog season mein asthma patients kya karein?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Smog season (November-February) mein: subah ki walk avoid karein (smog zyada hoti hai), N95 mask use karein bahar jaate waqt, ghar mein air purifier rakhein ya kam az kam khirkiyan band rakhein, controller inhaler ki dose doctor se barha kar lein, reliever inhaler hamesha saath rakhein, aur AQI app check karein — 150+ pe bahar na jayein. Doctor se pehle se action plan banwa lein."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kya bachon ka asthma theek ho sakta hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kuch bachon mein asthma barre hone pe better ho jata hai ya bilkul chala jata hai — khaaskar mild asthma mein. Magar yeh guarantee nahi hai. Taqreeban 50-60% bachay jinhein childhood asthma hota hai, unke symptoms teenage tak kam ho jate hain. Allergic asthma aur severe asthma zyada tar life-long rehta hai. Bachon mein bhi proper treatment zaruri hai — inhaler se lung development better hoti hai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Inhaler sahi tareeqe se kaise use karein?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Inhaler use karne ka sahi tareeqa: (1) Inhaler ko acha se hilayein, (2) Sans poori bahar nikaalein, (3) Inhaler moonh mein rakhein aur lips se seal karein, (4) Dheere dheere sans andar lein aur saath mein inhaler press karein, (5) 10 second tak sans rokein, (6) Dheere se sans chhorein. Spacer use karna bohat behtar hai — dawai seedhe phephron mein jaati hai. Steroid inhaler ke baad kulla zarur karein — moonh mein fungal infection se bachao."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKTHF96"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar navbar--scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="/" class="navbar__brand">
+        <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="navbar__logo">
+        <span class="navbar__name">Ilaaj AI</span>
+      </a>
+      <div class="navbar__center" id="navLinks">
+        <a href="/#how-it-works" class="navbar__link">How It Works</a>
+        <a href="/#features" class="navbar__link">Features</a>
+        <a href="/blog" class="navbar__link navbar__link--active">Blog</a>
+        <a href="/#faq" class="navbar__link">FAQ</a>
+      </div>
+      <div class="navbar__right">
+        <a href="https://app.ilaaj.ai" class="btn btn--primary btn--sm navbar__cta">
+          Muft Mashwara Lein
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile" id="mobileMenu">
+      <a href="/#how-it-works" class="navbar__mobile-link">How It Works</a>
+      <a href="/#features" class="navbar__mobile-link">Features</a>
+      <a href="/blog" class="navbar__mobile-link">Blog</a>
+      <a href="/#faq" class="navbar__mobile-link">FAQ</a>
+      <a href="https://app.ilaaj.ai" class="btn btn--primary btn--full">Muft Mashwara Lein</a>
+    </div>
+  </nav>
+
+  <main>
+    <article class="blog-post">
+      <div class="container">
+        <a href="/blog" class="blog-post__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Articles
+        </a>
+
+        <div class="blog-post__featured-image"><img src="https://images.pexels.com/photos/30425693/pexels-photo-30425693.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Person using asthma inhaler"></div>
+
+        <div class="blog-post__author">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI Medical Team" class="blog-post__author-avatar">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name">Ilaaj AI Medical Team</div>
+            <div class="blog-post__author-creds">PMDC-verified doctors reviewing every article</div>
+            <div class="blog-post__author-dates">Published: June 23, 2026 | Last reviewed: June 23, 2026</div>
+          </div>
+        </div>
+
+        <div class="blog-post__author blog-post__author--reviewer">
+          <img src="https://res.cloudinary.com/dpaz2mhy6/image/upload/f_auto,q_auto,w_96,h_96,c_fill,g_face/v1776334958/zwpaowaamnt8euxzlkzh.png" alt="Dr. Saira Zafar" class="blog-post__author-avatar" loading="lazy">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name"><a href="/doctors/dr-saira-zafar">Dr. Saira Zafar</a></div>
+            <div class="blog-post__author-creds blog-post__author-creds--reviewer">Medically reviewed by — PMDC-verified General Practitioner</div>
+            <div class="blog-post__author-dates">Reviewed on: June 23, 2026</div>
+          </div>
+        </div>
+
+        <h1 class="blog-post__title">Dama Ka Ilaj — Asthma Symptoms Aur Treatment Pakistan Mein</h1>
+
+        <div class="blog-post__tldr">
+          <div class="blog-post__tldr-title">TL;DR — Key Takeaways</div>
+          <ul>
+            <li>Dama (asthma) mein airways tang aur suji hoti hain — sans lena mushkil</li>
+            <li>Smog, dhool, pollen, thandi hawa — Pakistan mein common triggers</li>
+            <li>Reliever inhaler (Ventolin) attack ke liye, Controller inhaler roz ke liye</li>
+            <li>Inhaler ki aadat NAHI parti — yeh myth hai</li>
+            <li>Spacer ke saath inhaler use karna bohat zaruri hai</li>
+            <li>Blue lips, bol nahi sakte, pasliyan dikhen = EMERGENCY — 1122 call karein</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+<h2>Dama (Asthma) Kya Hai?</h2>
+<p>Dama ya asthma ek <strong>phephron ki chronic bimari</strong> hai jismein aap ki airways (sans ki naliyan) <strong>tang, suji hui aur zyada mucus</strong> banati hain. Iska nateeja yeh hota hai ke sans lena mushkil ho jata hai, khansi aati hai, seene mein tightness hoti hai, aur seeti ki awaaz (wheeze) aati hai.</p>
+
+<p>Achi baat yeh hai ke asthma <strong>reversible</strong> hai — yani dawai se airways wapas khul jaati hain. Magar agar ilaj na ho to attacks shadeed ho sakte hain aur jaanlewi bhi ho sakte hain.</p>
+
+<table class="blog-post__quick-facts">
+  <caption>Pakistan Mein Asthma Facts</caption>
+  <tbody>
+    <tr><td>Patients</td><td>Taqreeban 15-20 million Pakistanis ko asthma hai</td></tr>
+    <tr><td>Bachon mein</td><td>School-age bachon mein 10-15% mein asthma symptoms hain</td></tr>
+    <tr><td>Smog crisis</td><td>Lahore/Karachi mein smog season asthma attacks 3-4 guna barha deta hai</td></tr>
+    <tr><td>Underdiagnosed</td><td>Bohat se log "chhati ki bimari" samajh kar ilaj nahi karwate</td></tr>
+  </tbody>
+</table>
+
+<h2>Dama Ki Alamat (Symptoms)</h2>
+<ul>
+<li><strong>Sans phoolna:</strong> Khaaskar raat ko ya subah jaldi — halki mehnat se bhi dam phoolna</li>
+<li><strong>Seeti ki awaaz (Wheeze):</strong> Sans lete waqt seeti jaisi awaaz — khaaskar sans chhorte waqt</li>
+<li><strong>Chest tightness:</strong> Seena tang feel hona, jaise kisi ne daboch liya ho</li>
+<li><strong>Khansi:</strong> Raat ko ya subah — khushk ya halki balgham wali, exercise ke baad bhi</li>
+<li><strong>Symptoms trigger se barhte hain:</strong> Dhool, smog, thandi hawa, exercise, ya infection</li>
+</ul>
+
+<h2>Pakistan Mein Asthma Triggers</h2>
+<p>Asthma ke symptoms kuch cheezon se "trigger" hote hain — yani barhte hain. Pakistan mein common triggers:</p>
+
+<h3>Environmental Triggers:</h3>
+<ul>
+<li><strong>Smog:</strong> Lahore aur Karachi mein November-February — AQI 300+ hona aam baat hai</li>
+<li><strong>Dhool-mitti:</strong> Construction, kachchi sarkein, sandstorms</li>
+<li><strong>Pollen:</strong> Spring mein (March-April) paper mulberry ke trees se</li>
+<li><strong>Dhuan:</strong> Cooking ka dhuan, agarbatti, cigarette smoke (active + passive)</li>
+<li><strong>Thandi hawa:</strong> Winter mein subah ki thandi hawa</li>
+</ul>
+
+<h3>Other Triggers:</h3>
+<ul>
+<li><strong>Exercise:</strong> Tez daurna ya heavy exercise — khaaskar thandi hawa mein</li>
+<li><strong>Infections:</strong> Nazla zukaam, flu — viral infection asthma bigaar dete hain</li>
+<li><strong>Allergies:</strong> Dust mites, cockroach droppings, pet dander, mold</li>
+<li><strong>Stress aur emotions:</strong> Shadeed ghussa, rona, hansi bhi trigger kar sakti hai</li>
+<li><strong>Kuch dawaiyan:</strong> Aspirin, Brufen (NSAIDs), beta-blockers</li>
+</ul>
+
+<h2>Diagnosis — Asthma Kaise Confirm Hota Hai?</h2>
+<h3>Spirometry Test:</h3>
+<p>Yeh sabse important test hai. Machine mein zor se sans phoonkna hota hai — airways ki capacity measure hoti hai. Phir <strong>reliever inhaler</strong> diya jata hai aur dobara test hota hai — agar numbers improve ho jayein to asthma confirm hai.</p>
+
+<h3>Peak Flow Meter:</h3>
+<p>Yeh chhota sa device hai jo ghar mein use hota hai. Roz subah aur shaam phoonk kar apni lung function track kar sakte hain. Doctor asthma action plan mein iska istamal batata hai.</p>
+
+<div class="blog-post__inline-cta">
+  <p>Sans phoolna ya baar baar khansi hai? Ilaaj AI pe doctor se abhi mashwara karein — sahi diagnosis aur inhaler prescription milega.</p>
+  <a href="https://app.ilaaj.ai">Doctor Se Abhi Mashwara Karein</a>
+</div>
+
+<h2>Asthma Ka Ilaj — Medicines</h2>
+<p>Asthma ki dawaiyan do tarah ki hoti hain:</p>
+
+<h3>1. Reliever (Rescue) Inhaler — Attack Ke Liye</h3>
+<ul>
+<li><strong>Ventolin / Salbutamol (blue inhaler):</strong> Attack aaye to 2 puffs lein</li>
+<li>Yeh airways ko <strong>foran kholta hai</strong> — 5-10 minute mein asar</li>
+<li>Sirf zarurat pe use karein — agar hafte mein 2+ baar zarurat ho to controller chahiye</li>
+<li>Exercise se pehle bhi 2 puffs le sakte hain (exercise-induced asthma mein)</li>
+</ul>
+
+<h3>2. Controller (Preventer) Inhaler — Roz Ke Liye</h3>
+<ul>
+<li><strong>Seretide (fluticasone + salmeterol):</strong> Combination inhaler — steroid + long-acting bronchodilator</li>
+<li><strong>Symbicort (budesonide + formoterol):</strong> Alternative combination</li>
+<li><strong>Qvar / Flixotide:</strong> Sirf steroid inhaler — mild asthma mein</li>
+<li>Roz <strong>subah aur shaam</strong> lena hai — chahe symptoms na hon</li>
+<li>Yeh airways ki <strong>inflammation (sujan) kam karti hai</strong> — attacks rokti hai</li>
+</ul>
+
+<h2>Inhaler Sahi Tareeqe Se Kaise Use Karein?</h2>
+<p>Pakistan mein <strong>70-80% patients inhaler ghalat tareeqe se use karte hain</strong> — isliye dawai kaam nahi karti. Sahi tareeqa:</p>
+<ol>
+<li>Inhaler ko <strong>acha se hilayein</strong> (shake) — 4-5 baar</li>
+<li>Sans <strong>poori bahar nikaalein</strong></li>
+<li>Inhaler moonh mein rakhein, <strong>lips se seal</strong> karein</li>
+<li><strong>Dheere dheere sans andar lein</strong> aur saath mein inhaler press karein</li>
+<li><strong>10 second tak sans rokein</strong></li>
+<li>Dheere se sans chhorein</li>
+<li>Agar doosra puff chahiye to <strong>30-60 second wait</strong> karein</li>
+</ol>
+
+<h3>Spacer Ka Istamal:</h3>
+<p><strong>Spacer</strong> ek plastic tube hai jo inhaler ke saath lagti hai. Isse dawai <strong>seedhe phephron mein jaati hai</strong> — moonh aur gale mein kam rehti hai. Bachon ke liye spacer LAZMI hai. Adults ke liye bhi highly recommended. Pakistan mein spacer Rs 500-1000 mein milta hai.</p>
+
+<p><strong>Steroid inhaler ke baad:</strong> Moonh mein <strong>kulla zarur karein</strong> — warna oral thrush (fungal infection) ho sakti hai.</p>
+
+<h2>Asthma Action Plan — Green, Yellow, Red Zones</h2>
+<table class="blog-post__quick-facts">
+  <caption>Asthma Action Plan</caption>
+  <tbody>
+    <tr><td><strong>GREEN Zone</strong></td><td>Symptoms nahi — normal activities. Controller inhaler jaari rakhein.</td></tr>
+    <tr><td><strong>YELLOW Zone</strong></td><td>Sans phoolna, khansi barhi. Reliever inhaler lein. Agar 20 min mein behtar na ho, dobara lein. Doctor se raabta karein.</td></tr>
+    <tr><td><strong>RED Zone</strong></td><td>Shadeed sans ki takleef. Reliever har 20 min pe. FORAN hospital jayein ya 1122 call karein.</td></tr>
+  </tbody>
+</table>
+
+<h2>Emergency Signs — Foran Hospital Jayein</h2>
+<ul>
+<li><strong>Hont neele (blue lips):</strong> Oxygen ki kami — yeh emergency hai</li>
+<li><strong>Poora jumla bol nahi sakte:</strong> Itni sans ki takleef ke baat nahi ho rahi</li>
+<li><strong>Pasliyan dikhna:</strong> Sans lete waqt seene ki haddiyan saaf dikhen</li>
+<li>Reliever inhaler se <strong>koi farq nahi</strong> par raha</li>
+<li><strong>Behoshi ya confusion</strong></li>
+<li>Bachon mein <strong>doodh peena ya rona band</strong></li>
+</ul>
+
+<h2>Asthma Ke Myths — Sach Kya Hai?</h2>
+<h3>Myth: "Inhaler ki aadat par jaati hai"</h3>
+<p><strong>GHALAT.</strong> Inhaler ki aadat nahi parti. Controller inhaler roz isliye leni hai kyunke asthma ek chronic bimari hai — jaise diabetes mein dawai roz leni parti hai. Inhaler chorna attacks aur bigaar ka sabab banta hai.</p>
+
+<h3>Myth: "Steroid inhaler khatarnak hai"</h3>
+<p><strong>GHALAT.</strong> Inhaled steroids ki dose bohat kam hoti hai — seedhe phephron mein jaati hai. Yeh oral steroids (goli) se bilkul alag hai. Inhaled steroids saalon tak safely li jaati hain. Side effects minimal hain (sirf moonh mein fungal infection agar kulla na karein).</p>
+
+<h3>Myth: "Asthma mein exercise nahi karni chahiye"</h3>
+<p><strong>GHALAT.</strong> Exercise asthma patients ke liye FAYDA-MAND hai. Swimming best exercise hai. Exercise se pehle reliever inhaler lein. Warm-up karein. Sirf smog/thandi hawa mein outdoor exercise avoid karein.</p>
+
+<h2>Smog Season Ki Tayyari</h2>
+<ul>
+<li>October se <strong>controller inhaler ki dose</strong> doctor se barha kar lein</li>
+<li><strong>N95 mask</strong> khareedein — regular mask kaam nahi karta smog ke liye</li>
+<li>Ghar mein <strong>air purifier</strong> rakhein — ya kam az kam khirkiyan band rakhein</li>
+<li>Subah ki walk <strong>avoid karein</strong> (smog subah zyada hoti hai)</li>
+<li><strong>AQI app</strong> check karein — 150+ pe ghar se bahar kam jayein</li>
+<li>Reliever inhaler <strong>hamesha saath</strong> rakhein</li>
+<li>Flu vaccine lagwa lein — infection asthma bigaarta hai</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>Dama (asthma) ek qabil-e-ilaj bimari hai — sahi dawai se <strong>normal zindagi guzar sakte hain</strong>. Inhaler se mat darein, triggers se bachein, controller medicine regularly lein, aur emergency plan tayaar rakhein. Smog season mein khaaskar khayal rakhein. <strong>Ilaaj AI</strong> pe doctor se mashwara karein — AI aap ki symptoms analyze karega aur licensed doctor sahi inhaler aur treatment plan dega, ghar baithay chand minute mein.</p>
+        </div>
+
+        <div class="blog-post__faq">
+          <h2>Frequently Asked Questions</h2>
+          <details class="blog-post__faq-item">
+            <summary>Kya inhaler ki aadat par jaati hai?</summary>
+            <div class="blog-post__faq-answer">Nahi — yeh sabse barri ghaltfehmi hai. Inhaler ki aadat NAHI parti. Reliever inhaler (Ventolin) sirf zarurat pe use hota hai. Controller inhaler (steroid) roz lena zaruri hai kyunke yeh inflammation rokta hai — yeh aadat nahi, ilaj hai. Jaise sugar ki dawai roz leni parti hai, waise hi asthma ki controller medicine roz zaruri hai. Inhaler chorna asthma bigaar deta hai.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Asthma mein nebulizer kab zaruri hai?</summary>
+            <div class="blog-post__faq-answer">Nebulizer tab zaruri hai jab: inhaler se kafi rahat na mile, sans lene mein bohat zyada mushkil ho, chota bacha inhaler use nahi kar sake (2 saal se kam), ya emergency mein. Hospital mein doctors nebulizer dete hain acute attacks mein. Ghar mein nebulizer rakhna achi baat hai magar doctor ki hidayat ke mutabiq use karein. Spacer ke saath inhaler bhi utna hi effective hai — nebulizer zaruri nahi har baar.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Smog season mein asthma patients kya karein?</summary>
+            <div class="blog-post__faq-answer">Smog season (November-February) mein: subah ki walk avoid karein (smog zyada hoti hai), N95 mask use karein bahar jaate waqt, ghar mein air purifier rakhein ya kam az kam khirkiyan band rakhein, controller inhaler ki dose doctor se barha kar lein, reliever inhaler hamesha saath rakhein, aur AQI app check karein — 150+ pe bahar na jayein. Doctor se pehle se action plan banwa lein.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Kya bachon ka asthma theek ho sakta hai?</summary>
+            <div class="blog-post__faq-answer">Kuch bachon mein asthma barre hone pe better ho jata hai ya bilkul chala jata hai — khaaskar mild asthma mein. Magar yeh guarantee nahi hai. Taqreeban 50-60% bachay jinhein childhood asthma hota hai, unke symptoms teenage tak kam ho jate hain. Allergic asthma aur severe asthma zyada tar life-long rehta hai. Bachon mein bhi proper treatment zaruri hai — inhaler se lung development better hoti hai.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Inhaler sahi tareeqe se kaise use karein?</summary>
+            <div class="blog-post__faq-answer">Inhaler use karne ka sahi tareeqa: (1) Inhaler ko acha se hilayein, (2) Sans poori bahar nikaalein, (3) Inhaler moonh mein rakhein aur lips se seal karein, (4) Dheere dheere sans andar lein aur saath mein inhaler press karein, (5) 10 second tak sans rokein, (6) Dheere se sans chhorein. Spacer use karna bohat behtar hai — dawai seedhe phephron mein jaati hai. Steroid inhaler ke baad kulla zarur karein — moonh mein fungal infection se bachao.</div>
+          </details>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="blog-post__related">
+          <h2>Related Articles</h2>
+          <ul class="blog-post__related-list">
+            <li><a href="/blog/khansi-ka-ilaj">Khansi Ka Ilaj — Khushk aur Balgham Wali</a></li>
+            <li><a href="/blog/bukhar-ka-ilaj">Bukhar Ka Ilaj — Mosmi, Dengue aur Typhoid</a></li>
+            <li><a href="/blog">Browse All Health Articles &rarr;</a></li>
+          </ul>
+        </div>
+
+        <div class="blog-post__about">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="blog-post__about-logo">
+          <div class="blog-post__about-text">
+            <strong>About Ilaaj AI</strong>
+            <p>Ilaaj AI is Pakistan's first AI-powered health platform. Chat about your symptoms in Urdu or English, get AI-powered triage, and receive doctor-verified prescriptions — affordable and accessible, 24/7.</p>
+          </div>
+        </div>
+
+        <div class="blog-post__cta">
+          <div class="blog-post__cta-card">
+            <h3 class="blog-post__cta-title">Need Health Advice?</h3>
+            <p class="blog-post__cta-desc">Chat with our AI health assistant in any language. Get doctor-verified prescriptions at affordable rates.</p>
+            <div class="blog-post__cta-actions">
+              <a href="https://app.ilaaj.ai" class="btn btn--hero-primary">Try Ilaaj AI Now</a>
+              <a href="/blog" class="btn--outline">Read More Articles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <img src="../assets/ilaaj-logo.jpg" alt="Ilaaj AI" class="footer__logo-img" width="36" height="36" loading="lazy">
+            <span class="footer__logo-text">Ilaaj AI</span>
+          </div>
+          <p class="footer__brand-desc">Pakistan's first AI-powered health platform. Chat about your symptoms in any language, get AI triage, and receive doctor-verified prescriptions &mdash; affordable and accessible, 24/7.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/ilaaj_ai/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.516 2.497 5.783 2.225 7.149 2.163 8.415 2.105 8.795 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.987 15.668 24 15.259 24 12s-.013-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324A6.162 6.162 0 0 0 12 5.838zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61588590745625" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+            <a href="https://x.com/ilaajai" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Product</h4>
+          <ul class="footer__links">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#how-it-works">How It Works</a></li>
+            <li><a href="/#doctors">Our Doctors</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="../support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <p class="footer__contact-text">Questions or feedback?</p>
+          <a href="mailto:support@ilaaj.ai" class="footer__email">support@ilaaj.ai</a>
+          <p class="footer__emergency">For emergencies, call <strong>1122</strong> (Rescue)</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span class="footer-year"></span> Ilaaj AI. All rights reserved.</p>
+        <p class="footer__disclaimer">Ilaaj AI is for general health consultations and non-emergency medical guidance. For emergencies, call 1122 (Rescue) or visit the nearest hospital.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+    document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());
+  </script>
+  <!-- Tawk.to Live Chat (lazy-loaded) -->
+  <script>
+  (function() {
+    var tawkLoaded = false;
+    function loadTawk() {
+      if (tawkLoaded) return;
+      tawkLoaded = true;
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/69ce56b0127eae1c37be0e72/1jl70596p';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    }
+    document.addEventListener('scroll', loadTawk, {once: true});
+    document.addEventListener('click', loadTawk, {once: true});
+    document.addEventListener('mouseover', loadTawk, {once: true});
+  })();
+  </script>
+</body>
+</html>

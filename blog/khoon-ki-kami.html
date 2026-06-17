@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <!-- Sentry: error tracking + session replay -->
+  <script src="https://js.sentry-cdn.com/defa6ca82daea4d4c49a8b69b87c53cc.min.js" crossorigin="anonymous"></script>
+  <script>
+    window.sentryOnLoad = function () {
+      Sentry.init({
+        integrations: [Sentry.replayIntegration({ maskAllText: false, blockAllMedia: false })],
+        tracesSampleRate: 0.1,
+        replaysSessionSampleRate: 0.1,
+        replaysOnErrorSampleRate: 1.0,
+      });
+    };
+  </script>
+  <!-- PostHog: product analytics + session replay -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_xjBQ5vUS7nTJz4jHta6d5dDE7jHdtFjFuqkxAJjvcFzo', { api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only', cross_subdomain_cookie: true });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XKTHF96');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1697266221447949');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1697266221447949&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khoon Ki Kami (Anemia) Ka Ilaj — Symptoms Aur Diet Pakistan | Ilaaj AI</title>
+  <meta name="description" content="Khoon ki kami (anemia) ka ilaj — iron, B12, folate deficiency. Symptoms, diet, iron-rich foods aur supplements. Pakistan guide.">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="khoon ki kami ka ilaj, anemia treatment pakistan, iron ki kami, hemoglobin badhana, iron rich foods, khoon ki kami ki alamat">
+  <meta name="geo.region" content="PK">
+  <meta name="geo.placename" content="Pakistan">
+  <meta name="google-site-verification" content="8RtzwgVYowrMGF4E77jnKOX33seYEQTuXmxps2XkPxI">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.ilaaj.ai/blog/khoon-ki-kami">
+  <link rel="alternate" hreflang="ur-PK" href="https://www.ilaaj.ai/blog/khoon-ki-kami" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ilaaj.ai/blog/khoon-ki-kami" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/logo/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/logo/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/logo/site.webmanifest" />
+
+  <!-- PWA / Mobile -->
+  <meta name="theme-color" content="#00897B">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="IlaajAI">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Khoon Ki Kami (Anemia) Ka Ilaj — Symptoms Aur Diet Pakistan | Ilaaj AI">
+  <meta property="og:description" content="Khoon ki kami (anemia) ka ilaj — iron, B12, folate deficiency. Symptoms, diet, iron-rich foods aur supplements. Pakistan guide.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ilaaj.ai/blog/khoon-ki-kami">
+  <meta property="og:image" content="https://images.pexels.com/photos/3908178/pexels-photo-3908178.jpeg?auto=compress&cs=tinysrgb&w=1200">
+  <meta property="og:image:alt" content="Blood test tubes for anemia diagnosis">
+  <meta property="og:site_name" content="Ilaaj AI">
+  <meta property="og:locale" content="ur_PK">
+  <meta property="article:published_time" content="2026-06-22T09:00:00.000Z">
+  <meta property="article:modified_time" content="2026-06-22T09:00:00.000Z">
+  <meta property="article:author" content="Ilaaj AI Medical Team">
+  <meta property="article:section" content="Nutrition">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ilaajai">
+  <meta name="twitter:creator" content="@ilaajai">
+  <meta name="twitter:title" content="Khoon Ki Kami (Anemia) Ka Ilaj — Symptoms Aur Diet Pakistan | Ilaaj AI">
+  <meta name="twitter:description" content="Khoon ki kami (anemia) ka ilaj — iron, B12, folate deficiency. Symptoms, diet, iron-rich foods aur supplements. Pakistan guide.">
+  <meta name="twitter:image" content="https://images.pexels.com/photos/3908178/pexels-photo-3908178.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNTMD61HWL"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KNTMD61HWL');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/blog.css">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.ilaaj.ai/blog/khoon-ki-kami"
+  },
+  "headline": "Khoon Ki Kami (Anemia) Ka Ilaj — Symptoms Aur Diet Pakistan",
+  "description": "Khoon ki kami (anemia) ka ilaj — iron, B12, folate deficiency. Symptoms, diet, iron-rich foods aur supplements. Pakistan guide.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://images.pexels.com/photos/3908178/pexels-photo-3908178.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  },
+  "datePublished": "2026-06-22T09:00:00.000Z",
+  "dateModified": "2026-06-22T09:00:00.000Z",
+  "author": {
+    "@type": "Organization",
+    "name": "Ilaaj AI Medical Team",
+    "url": "https://www.ilaaj.ai/doctors"
+  },
+  "reviewedBy": { "@type": "Person", "name": "Dr. Saira Zafar", "jobTitle": "General Practitioner", "url": "https://www.ilaaj.ai/doctors/dr-saira-zafar" },
+  "lastReviewed": "2026-06-22",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ilaaj AI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.ilaaj.ai/assets/Icon-192.png"
+    }
+  },
+  "keywords": "khoon ki kami ka ilaj, anemia treatment pakistan, iron ki kami, hemoglobin badhana, iron rich foods, khoon ki kami ki alamat",
+  "inLanguage": "ur",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Ilaaj AI Blog",
+    "url": "https://www.ilaaj.ai/blog"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.ilaaj.ai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.ilaaj.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Khoon Ki Kami (Anemia) Ka Ilaj — Symptoms Aur Diet Pakistan",
+      "item": "https://www.ilaaj.ai/blog/khoon-ki-kami"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Khoon ki kami ki sabse aam wajah kya hai Pakistan mein?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pakistan mein khoon ki kami ki sabse aam wajah iron deficiency hai. Khaaskar khawateen mein haiz (periods) ki wajah se iron zyada kharach hota hai aur diet mein iron-rich foods kam hote hain. Bachon mein bhi iron ki kami bohat aam hai — taqreeban 40% Pakistani bachon mein anemia payi jaati hai. Iske ilawa B12 ki kami (vegetarian diet ya gastric issues) aur thalassemia trait bhi Pakistan mein common hain."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hemoglobin normal kitna hona chahiye?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mardon mein normal hemoglobin 13-17 g/dL hota hai aur khawateen mein 12-16 g/dL. Haamilah (pregnant) khawateen mein 11 g/dL se upar normal maana jata hai. Agar hemoglobin 7 g/dL se kam ho jaye to yeh severe anemia hai aur blood transfusion ki zarurat par sakti hai. CBC test se hemoglobin check hota hai jo Pakistan mein Rs 300-500 mein ho jata hai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Iron ki goli kaise lein — khaali pet ya khaane ke baad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Iron ki goli khaali pet lene se best absorb hoti hai — subah nashte se 1 ghanta pehle ya raat ko sone se pehle. Vitamin C (nimbu paani, narangi) saath mein lein to absorption 2-3 guna barh jaati hai. Chai aur doodh iron absorption rok dete hain, isliye iron lene ke 2 ghante baad hi chai piyen. Agar khaali pet lene se pet mein jalan ya ulti ho to khaane ke baad le sakte hain."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Khoon ki kami mein kya khaana chahiye?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Iron-rich foods mein kaleji (chicken/mutton liver) sabse best hai, phir red meat, channay, palak, gur, kishmish, anaar, aur sabut anday. Heme iron (gosht se milne wala) non-heme iron (sabziyon se) se behtar absorb hota hai. Vitamin C wali cheezein (amrood, narangi, nimbu) saath khayen to iron absorption behtar hoti hai. Chai khaane ke foran baad mat piyen — 1-2 ghante ka gap rakhein."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Thalassemia minor aur iron deficiency anemia mein kya farq hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Thalassemia minor ek genetic condition hai jo Pakistan mein 5-8% logon mein payi jaati hai. Isme hemoglobin thoda kam hota hai magar iron supplements NAHI dene chahiye kyunke iron ki kami nahi hoti. Iron deficiency mein serum ferritin kam hota hai jabke thalassemia minor mein ferritin normal ya zyada hota hai. Farq CBC aur serum ferritin test se pata chalta hai. Thalassemia minor mein iron supplements lena nuksan-deh ho sakta hai — iron overload ho sakta hai."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKTHF96"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar navbar--scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="/" class="navbar__brand">
+        <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="navbar__logo">
+        <span class="navbar__name">Ilaaj AI</span>
+      </a>
+      <div class="navbar__center" id="navLinks">
+        <a href="/#how-it-works" class="navbar__link">How It Works</a>
+        <a href="/#features" class="navbar__link">Features</a>
+        <a href="/blog" class="navbar__link navbar__link--active">Blog</a>
+        <a href="/#faq" class="navbar__link">FAQ</a>
+      </div>
+      <div class="navbar__right">
+        <a href="https://app.ilaaj.ai" class="btn btn--primary btn--sm navbar__cta">
+          Muft Mashwara Lein
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile" id="mobileMenu">
+      <a href="/#how-it-works" class="navbar__mobile-link">How It Works</a>
+      <a href="/#features" class="navbar__mobile-link">Features</a>
+      <a href="/blog" class="navbar__mobile-link">Blog</a>
+      <a href="/#faq" class="navbar__mobile-link">FAQ</a>
+      <a href="https://app.ilaaj.ai" class="btn btn--primary btn--full">Muft Mashwara Lein</a>
+    </div>
+  </nav>
+
+  <main>
+    <article class="blog-post">
+      <div class="container">
+        <a href="/blog" class="blog-post__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Articles
+        </a>
+
+        <div class="blog-post__featured-image"><img src="https://images.pexels.com/photos/3908178/pexels-photo-3908178.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Blood test tubes for anemia diagnosis"></div>
+
+        <div class="blog-post__author">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI Medical Team" class="blog-post__author-avatar">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name">Ilaaj AI Medical Team</div>
+            <div class="blog-post__author-creds">PMDC-verified doctors reviewing every article</div>
+            <div class="blog-post__author-dates">Published: June 22, 2026 | Last reviewed: June 22, 2026</div>
+          </div>
+        </div>
+
+        <div class="blog-post__author blog-post__author--reviewer">
+          <img src="https://res.cloudinary.com/dpaz2mhy6/image/upload/f_auto,q_auto,w_96,h_96,c_fill,g_face/v1776334958/zwpaowaamnt8euxzlkzh.png" alt="Dr. Saira Zafar" class="blog-post__author-avatar" loading="lazy">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name"><a href="/doctors/dr-saira-zafar">Dr. Saira Zafar</a></div>
+            <div class="blog-post__author-creds blog-post__author-creds--reviewer">Medically reviewed by — PMDC-verified General Practitioner</div>
+            <div class="blog-post__author-dates">Reviewed on: June 22, 2026</div>
+          </div>
+        </div>
+
+        <h1 class="blog-post__title">Khoon Ki Kami (Anemia) Ka Ilaj — Symptoms Aur Diet Pakistan Mein</h1>
+
+        <div class="blog-post__tldr">
+          <div class="blog-post__tldr-title">TL;DR — Key Takeaways</div>
+          <ul>
+            <li>Pakistan mein 50%+ khawateen aur 40% bachon mein khoon ki kami hai</li>
+            <li>Iron deficiency anemia sabse aam type hai</li>
+            <li>Thakawat, rang peela, chakkar, baal jharna — yeh sab alamat hain</li>
+            <li>CBC aur serum ferritin test se diagnosis hoti hai</li>
+            <li>Kaleji, channay, palak, gur, anaar — iron ke behtareen sources</li>
+            <li>Iron supplement vitamin C ke saath lein, chai ke saath NAHI</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+<h2>Khoon Ki Kami (Anemia) Kya Hai?</h2>
+<p>Khoon ki kami ya anemia us haalat ko kehte hain jab aap ke khoon mein <strong>hemoglobin</strong> ya <strong>red blood cells (RBCs)</strong> normal se kam ho jayen. Hemoglobin woh protein hai jo oxygen ko phephron se poore jism tak le jaata hai. Jab yeh kam hota hai to jism ke har hisse ko oxygen kam milti hai — isliye thakawat, kamzori aur chakkar aate hain.</p>
+
+<p>Pakistan mein yeh masla bohat barra hai — <strong>WHO ke mutabiq 50% se zyada Pakistani khawateen</strong> aur <strong>40% bachon</strong> mein anemia payi jaati hai. Magar achi baat yeh hai ke zyada tar cases diet aur supplements se theek ho sakte hain.</p>
+
+<table class="blog-post__quick-facts">
+  <caption>Anemia Ki Types Jo Pakistan Mein Aam Hain</caption>
+  <tbody>
+    <tr><td>Iron Deficiency Anemia</td><td>Sabse aam — iron ki kami se, khaaskar khawateen mein</td></tr>
+    <tr><td>B12 Deficiency</td><td>Vegetarian diet, gastric issues ya metformin se</td></tr>
+    <tr><td>Folate Deficiency</td><td>Pregnancy mein zyada common, sabziyan kam khane se</td></tr>
+    <tr><td>Thalassemia Minor</td><td>Genetic — Pakistan mein 5-8% log carrier hain</td></tr>
+    <tr><td>Anemia of Chronic Disease</td><td>TB, kidney disease ya chronic infections se</td></tr>
+  </tbody>
+</table>
+
+<h2>Khoon Ki Kami Ki Alamat (Symptoms)</h2>
+<p>Anemia ki alamat dheere dheere aati hain isliye bohat log saalon tak anjaan rehte hain. Yeh symptoms dekhein:</p>
+<ul>
+<li><strong>Thakawat aur kamzori</strong> — subah uth kar bhi thake hue feel karna</li>
+<li><strong>Rang peela</strong> ya safed hona — chehra, haath ki hatheli, ankhon ke neeche</li>
+<li><strong>Chakkar aana</strong> — khaaskar khare hone pe</li>
+<li><strong>Sans phoolna</strong> — halki chalne pe bhi dam phoolna</li>
+<li><strong>Baal jharna</strong> — bohat zyada hair fall</li>
+<li><strong>Nakhun tootna</strong> ya chamchee ki shakal ke nakhun (koilonychia)</li>
+<li><strong>Dil ki dharkan tez</strong> hona (palpitations)</li>
+<li><strong>Sir dard</strong> aur concentrate nahi kar pana</li>
+<li><strong>Pica</strong> — mitti, chalk ya baraf khane ki ajeeb khwahish (iron ki shadeed kami mein)</li>
+<li>Zuban mein dard ya sujan (glossitis) — B12 ki kami mein</li>
+</ul>
+
+<h2>Pakistan Mein Khoon Ki Kami Kyun Itni Aam Hai?</h2>
+<p>Pakistan mein anemia ki bohat si wajuhaat hain:</p>
+<ul>
+<li><strong>Diet mein iron kam:</strong> Roti aur chai pe based diet mein iron bohat kam hota hai</li>
+<li><strong>Chai ka zyada istamal:</strong> Chai mein tannins iron absorption 60-70% tak rok dete hain</li>
+<li><strong>Haiz (periods):</strong> Khawateen mein heavy periods se iron loss hota hai</li>
+<li><strong>Bar bar pregnancy:</strong> Har pregnancy mein iron stores kam hote hain</li>
+<li><strong>Intestinal worms:</strong> Dehati ilaaqon mein hookworm infection se chronic blood loss</li>
+<li><strong>Thalassemia carriers:</strong> 5-8% Pakistani thalassemia minor carrier hain</li>
+<li><strong>Poverty:</strong> Gosht aur protein-rich khaana mehenga hai</li>
+</ul>
+
+<h2>Diagnosis — Kaunse Tests Zaruri Hain?</h2>
+<p>Khoon ki kami ka pata lagane ke liye yeh tests karwayein:</p>
+
+<h3>1. CBC (Complete Blood Count)</h3>
+<p>Yeh sabse pehla aur basic test hai. Isse hemoglobin level, RBC count, MCV (cell size) aur MCH pata chalta hai. Pakistan mein Rs 300-500 mein ho jaata hai.</p>
+
+<h3>2. Serum Ferritin</h3>
+<p>Yeh test jism mein <strong>iron stores</strong> check karta hai. Ferritin kam hai to iron deficiency confirm hai. Normal range 20-200 ng/mL hai — magar 30 se kam bhi functional iron deficiency ho sakti hai.</p>
+
+<h3>3. Serum B12 aur Folate</h3>
+<p>Agar CBC mein MCV zyada aaye (macrocytic anemia) to B12 aur folate levels check karwayein.</p>
+
+<h3>4. Peripheral Blood Smear</h3>
+<p>Microscope ke neeche khoon ki cells ki shakal dekhte hain — thalassemia, sickle cell ya hor problems ka pata lagta hai.</p>
+
+<div class="blog-post__inline-cta">
+  <p>Khoon ki kami ke symptoms mehsoos kar rahe hain? Ilaaj AI pe abhi doctor se mashwara karein — sahi tests aur treatment ka plan milega.</p>
+  <a href="https://app.ilaaj.ai">Doctor Se Abhi Mashwara Karein</a>
+</div>
+
+<h2>Iron-Rich Foods — Kya Khayen?</h2>
+<p>Iron do tarah ka hota hai: <strong>Heme iron</strong> (gosht se — behtar absorb hota hai) aur <strong>Non-heme iron</strong> (sabziyon se — kam absorb hota hai magar vitamin C se absorption barh jaati hai).</p>
+
+<h3>Best Iron-Rich Foods Pakistan Mein:</h3>
+<ul>
+<li><strong>Kaleji (liver):</strong> Chicken ya mutton ki kaleji — sabse zyada iron (100g mein 6-9 mg iron)</li>
+<li><strong>Red meat:</strong> Beef ya mutton — heme iron ka acha source</li>
+<li><strong>Channay (chickpeas):</strong> Sasta aur iron se bharpur — daal ki tarah bana sakte hain</li>
+<li><strong>Palak (spinach):</strong> Non-heme iron — nimbu nichore kar khayen</li>
+<li><strong>Gur (jaggery):</strong> Cheeni ki jagah gur istamal karein</li>
+<li><strong>Anaar (pomegranate):</strong> Iron + vitamin C dono hain</li>
+<li><strong>Kishmish aur khajoor:</strong> Snack mein khayein</li>
+<li><strong>Sabut anday:</strong> Yolk mein iron hota hai</li>
+<li><strong>Daalein:</strong> Masoor, moong, channay ki daal</li>
+</ul>
+
+<h3>Iron Absorption Badhane Ke Tips:</h3>
+<ul>
+<li>Khaane ke saath <strong>vitamin C</strong> lein — nimbu, narangi, amrood, tamatar</li>
+<li>Khaane ke foran baad <strong>chai mat piyen</strong> — 1-2 ghante ka gap rakhein</li>
+<li>Doodh bhi iron absorption kam karta hai — iron supplement ke saath na lein</li>
+<li>Iron aur calcium supplements ek saath na lein</li>
+</ul>
+
+<h2>Iron Supplements — Kaise Lein?</h2>
+<p>Agar sirf diet se hemoglobin nahi barh raha ya kami zyada hai to doctor iron supplement likhega:</p>
+
+<h3>Ferrous Sulfate (sabse common):</h3>
+<ul>
+<li>Dose: 200 mg tablet (65 mg elemental iron) — din mein 1-2 baar</li>
+<li><strong>Khaali pet</strong> lein — subah nashte se 1 ghanta pehle best hai</li>
+<li><strong>Vitamin C</strong> (nimbu paani ya narangi) saath mein lein — absorption 2-3 guna barh jaati hai</li>
+<li>Chai, doodh, calcium se 2 ghante door rakhein</li>
+</ul>
+
+<h3>Side Effects Aur Unka Hal:</h3>
+<ul>
+<li><strong>Qabz (constipation):</strong> Bohat aam hai — isabgol ya zyada pani piyen</li>
+<li><strong>Pet mein dard/jalan:</strong> Khaane ke baad le sakte hain (absorption thodi kam hogi)</li>
+<li><strong>Kaala stool:</strong> Yeh <strong>normal</strong> hai — iron ki wajah se hota hai, ghabrayein nahi</li>
+<li><strong>Ulti/matli:</strong> Dose kam kar ke dheere dheere badhayein</li>
+</ul>
+
+<p><strong>Important:</strong> Iron supplement ka course <strong>3-6 mahine</strong> ka hota hai — hemoglobin normal hone ke baad bhi 3 mahine aur lein taake stores bhar jayein.</p>
+
+<h2>B12 Ki Kami Ka Ilaj</h2>
+<p>B12 deficiency Pakistan mein un logon mein zyada hai jo:</p>
+<ul>
+<li>Gosht kam ya bilkul nahi khaate</li>
+<li>Metformin (sugar ki dawai) lete hain</li>
+<li>Pet ke masle hain (gastritis, H. pylori)</li>
+<li>Buzurg hain — absorption age ke saath kam hoti hai</li>
+</ul>
+<p>B12 ki kami mein haathon paon mein sunn-pan, yaaddaasht kamzor hona, aur zuban mein dard hota hai. Treatment mein B12 injections (Neurobion) ya oral methylcobalamin tablets di jaati hain.</p>
+
+<h2>Kab Blood Transfusion Zaruri Hai?</h2>
+<p>Blood transfusion sirf <strong>severe cases</strong> mein zaruri hota hai:</p>
+<ul>
+<li>Hemoglobin <strong>7 g/dL se kam</strong> ho</li>
+<li>Patient ko <strong>sans lene mein mushkil</strong> ho</li>
+<li>Dil ki dharkan bohat tez ho ya <strong>heart failure</strong> ke signs hon</li>
+<li><strong>Active bleeding</strong> ho (surgery, delivery, accident)</li>
+</ul>
+<p>Mild aur moderate anemia mein transfusion ki zarurat NAHI hoti — iron supplements aur diet kafi hain.</p>
+
+<h2>Thalassemia Minor — Aik Zaruri Baat</h2>
+<p>Pakistan mein <strong>5-8% log thalassemia minor carrier</strong> hain. Inka hemoglobin thoda kam rehta hai (10-12 g/dL) magar yeh iron deficiency NAHI hai. Farq yeh hai:</p>
+<ul>
+<li>Thalassemia minor mein <strong>serum ferritin normal</strong> ya zyada hota hai</li>
+<li>Iron supplements lena <strong>nuksan-deh</strong> ho sakta hai — iron overload ka khatra</li>
+<li>CBC mein MCV kam hota hai (microcytic) magar RBC count zyada hota hai</li>
+<li><strong>HbA2 test</strong> (Hb electrophoresis) se confirm hota hai</li>
+</ul>
+<p>Agar aap ka hemoglobin hamesha thoda kam rehta hai aur iron supplements se farq nahi parta to thalassemia minor ka test zarur karwayein.</p>
+
+<h2>Conclusion</h2>
+<p>Khoon ki kami Pakistan mein bohat aam hai magar <strong>pehchan aur ilaj asaan hai</strong>. Iron-rich diet khayein, chai khaane ke foran baad na piyen, aur agar symptoms hon to CBC test karwa lein. Apni marzi se iron supplements shuru na karein — pehle test karwa ke wajah confirm karein. <strong>Ilaaj AI</strong> pe doctor se mashwara karein — AI aap ki symptoms ka analysis karega aur licensed doctor sahi tests aur treatment recommend karega, ghar baithay sirf chand minute mein.</p>
+        </div>
+
+        <div class="blog-post__faq">
+          <h2>Frequently Asked Questions</h2>
+          <details class="blog-post__faq-item">
+            <summary>Khoon ki kami ki sabse aam wajah kya hai Pakistan mein?</summary>
+            <div class="blog-post__faq-answer">Pakistan mein khoon ki kami ki sabse aam wajah iron deficiency hai. Khaaskar khawateen mein haiz (periods) ki wajah se iron zyada kharach hota hai aur diet mein iron-rich foods kam hote hain. Bachon mein bhi iron ki kami bohat aam hai — taqreeban 40% Pakistani bachon mein anemia payi jaati hai. Iske ilawa B12 ki kami (vegetarian diet ya gastric issues) aur thalassemia trait bhi Pakistan mein common hain.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Hemoglobin normal kitna hona chahiye?</summary>
+            <div class="blog-post__faq-answer">Mardon mein normal hemoglobin 13-17 g/dL hota hai aur khawateen mein 12-16 g/dL. Haamilah (pregnant) khawateen mein 11 g/dL se upar normal maana jata hai. Agar hemoglobin 7 g/dL se kam ho jaye to yeh severe anemia hai aur blood transfusion ki zarurat par sakti hai. CBC test se hemoglobin check hota hai jo Pakistan mein Rs 300-500 mein ho jata hai.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Iron ki goli kaise lein — khaali pet ya khaane ke baad?</summary>
+            <div class="blog-post__faq-answer">Iron ki goli khaali pet lene se best absorb hoti hai — subah nashte se 1 ghanta pehle ya raat ko sone se pehle. Vitamin C (nimbu paani, narangi) saath mein lein to absorption 2-3 guna barh jaati hai. Chai aur doodh iron absorption rok dete hain, isliye iron lene ke 2 ghante baad hi chai piyen. Agar khaali pet lene se pet mein jalan ya ulti ho to khaane ke baad le sakte hain.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Khoon ki kami mein kya khaana chahiye?</summary>
+            <div class="blog-post__faq-answer">Iron-rich foods mein kaleji (chicken/mutton liver) sabse best hai, phir red meat, channay, palak, gur, kishmish, anaar, aur sabut anday. Heme iron (gosht se milne wala) non-heme iron (sabziyon se) se behtar absorb hota hai. Vitamin C wali cheezein (amrood, narangi, nimbu) saath khayen to iron absorption behtar hoti hai. Chai khaane ke foran baad mat piyen — 1-2 ghante ka gap rakhein.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Thalassemia minor aur iron deficiency anemia mein kya farq hai?</summary>
+            <div class="blog-post__faq-answer">Thalassemia minor ek genetic condition hai jo Pakistan mein 5-8% logon mein payi jaati hai. Isme hemoglobin thoda kam hota hai magar iron supplements NAHI dene chahiye kyunke iron ki kami nahi hoti. Iron deficiency mein serum ferritin kam hota hai jabke thalassemia minor mein ferritin normal ya zyada hota hai. Farq CBC aur serum ferritin test se pata chalta hai. Thalassemia minor mein iron supplements lena nuksan-deh ho sakta hai — iron overload ho sakta hai.</div>
+          </details>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="blog-post__related">
+          <h2>Related Articles</h2>
+          <ul class="blog-post__related-list">
+            <li><a href="/blog/vitamin-d-ki-kami">Vitamin D Ki Kami — Symptoms, Test Aur Ilaj</a></li>
+            <li><a href="/blog/bukhar-ka-ilaj">Bukhar Ka Ilaj — Mosmi, Dengue aur Typhoid</a></li>
+            <li><a href="/blog">Browse All Health Articles &rarr;</a></li>
+          </ul>
+        </div>
+
+        <div class="blog-post__about">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="blog-post__about-logo">
+          <div class="blog-post__about-text">
+            <strong>About Ilaaj AI</strong>
+            <p>Ilaaj AI is Pakistan's first AI-powered health platform. Chat about your symptoms in Urdu or English, get AI-powered triage, and receive doctor-verified prescriptions — affordable and accessible, 24/7.</p>
+          </div>
+        </div>
+
+        <div class="blog-post__cta">
+          <div class="blog-post__cta-card">
+            <h3 class="blog-post__cta-title">Need Health Advice?</h3>
+            <p class="blog-post__cta-desc">Chat with our AI health assistant in any language. Get doctor-verified prescriptions at affordable rates.</p>
+            <div class="blog-post__cta-actions">
+              <a href="https://app.ilaaj.ai" class="btn btn--hero-primary">Try Ilaaj AI Now</a>
+              <a href="/blog" class="btn--outline">Read More Articles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <img src="../assets/ilaaj-logo.jpg" alt="Ilaaj AI" class="footer__logo-img" width="36" height="36" loading="lazy">
+            <span class="footer__logo-text">Ilaaj AI</span>
+          </div>
+          <p class="footer__brand-desc">Pakistan's first AI-powered health platform. Chat about your symptoms in any language, get AI triage, and receive doctor-verified prescriptions &mdash; affordable and accessible, 24/7.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/ilaaj_ai/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.516 2.497 5.783 2.225 7.149 2.163 8.415 2.105 8.795 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.987 15.668 24 15.259 24 12s-.013-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324A6.162 6.162 0 0 0 12 5.838zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61588590745625" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+            <a href="https://x.com/ilaajai" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Product</h4>
+          <ul class="footer__links">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#how-it-works">How It Works</a></li>
+            <li><a href="/#doctors">Our Doctors</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="../support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <p class="footer__contact-text">Questions or feedback?</p>
+          <a href="mailto:support@ilaaj.ai" class="footer__email">support@ilaaj.ai</a>
+          <p class="footer__emergency">For emergencies, call <strong>1122</strong> (Rescue)</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span class="footer-year"></span> Ilaaj AI. All rights reserved.</p>
+        <p class="footer__disclaimer">Ilaaj AI is for general health consultations and non-emergency medical guidance. For emergencies, call 1122 (Rescue) or visit the nearest hospital.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+    document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());
+  </script>
+  <!-- Tawk.to Live Chat (lazy-loaded) -->
+  <script>
+  (function() {
+    var tawkLoaded = false;
+    function loadTawk() {
+      if (tawkLoaded) return;
+      tawkLoaded = true;
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/69ce56b0127eae1c37be0e72/1jl70596p';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    }
+    document.addEventListener('scroll', loadTawk, {once: true});
+    document.addEventListener('click', loadTawk, {once: true});
+    document.addEventListener('mouseover', loadTawk, {once: true});
+  })();
+  </script>
+</body>
+</html>

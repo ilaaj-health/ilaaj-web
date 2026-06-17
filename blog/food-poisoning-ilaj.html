@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <!-- Sentry: error tracking + session replay -->
+  <script src="https://js.sentry-cdn.com/defa6ca82daea4d4c49a8b69b87c53cc.min.js" crossorigin="anonymous"></script>
+  <script>
+    window.sentryOnLoad = function () {
+      Sentry.init({
+        integrations: [Sentry.replayIntegration({ maskAllText: false, blockAllMedia: false })],
+        tracesSampleRate: 0.1,
+        replaysSessionSampleRate: 0.1,
+        replaysOnErrorSampleRate: 1.0,
+      });
+    };
+  </script>
+  <!-- PostHog: product analytics + session replay -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_xjBQ5vUS7nTJz4jHta6d5dDE7jHdtFjFuqkxAJjvcFzo', { api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only', cross_subdomain_cookie: true });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XKTHF96');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1697266221447949');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1697266221447949&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Poisoning Ka Ilaj — Symptoms Aur Ghareloo Treatment | Ilaaj AI</title>
+  <meta name="description" content="Food poisoning ka ilaj — ulti, dast, pet mein maror. Ghareloo nuskhe, ORS aur kab hospital. Pakistan street food guide.">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="food poisoning ka ilaj, ulti dast ka ilaj, kharab khaana, food poisoning treatment, stomach infection, pet mein maror">
+  <meta name="geo.region" content="PK">
+  <meta name="geo.placename" content="Pakistan">
+  <meta name="google-site-verification" content="8RtzwgVYowrMGF4E77jnKOX33seYEQTuXmxps2XkPxI">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.ilaaj.ai/blog/food-poisoning-ilaj">
+  <link rel="alternate" hreflang="ur-PK" href="https://www.ilaaj.ai/blog/food-poisoning-ilaj" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ilaaj.ai/blog/food-poisoning-ilaj" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/logo/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/logo/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/logo/site.webmanifest" />
+
+  <!-- PWA / Mobile -->
+  <meta name="theme-color" content="#00897B">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="IlaajAI">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Food Poisoning Ka Ilaj — Symptoms Aur Ghareloo Treatment | Ilaaj AI">
+  <meta property="og:description" content="Food poisoning ka ilaj — ulti, dast, pet mein maror. Ghareloo nuskhe, ORS aur kab hospital. Pakistan street food guide.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ilaaj.ai/blog/food-poisoning-ilaj">
+  <meta property="og:image" content="https://images.pexels.com/photos/15335236/pexels-photo-15335236.jpeg?auto=compress&cs=tinysrgb&w=1200">
+  <meta property="og:image:alt" content="Street food stall — food poisoning risk">
+  <meta property="og:site_name" content="Ilaaj AI">
+  <meta property="og:locale" content="ur_PK">
+  <meta property="article:published_time" content="2026-06-26T09:00:00.000Z">
+  <meta property="article:modified_time" content="2026-06-26T09:00:00.000Z">
+  <meta property="article:author" content="Ilaaj AI Medical Team">
+  <meta property="article:section" content="Gastro">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ilaajai">
+  <meta name="twitter:creator" content="@ilaajai">
+  <meta name="twitter:title" content="Food Poisoning Ka Ilaj — Symptoms Aur Ghareloo Treatment | Ilaaj AI">
+  <meta name="twitter:description" content="Food poisoning ka ilaj — ulti, dast, pet mein maror. Ghareloo nuskhe, ORS aur kab hospital. Pakistan street food guide.">
+  <meta name="twitter:image" content="https://images.pexels.com/photos/15335236/pexels-photo-15335236.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNTMD61HWL"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KNTMD61HWL');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/blog.css">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.ilaaj.ai/blog/food-poisoning-ilaj"
+  },
+  "headline": "Food Poisoning Ka Ilaj — Symptoms Aur Ghareloo Treatment Pakistan Mein",
+  "description": "Food poisoning ka ilaj — ulti, dast, pet mein maror. Ghareloo nuskhe, ORS aur kab hospital. Pakistan street food guide.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://images.pexels.com/photos/15335236/pexels-photo-15335236.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  },
+  "datePublished": "2026-06-26T09:00:00.000Z",
+  "dateModified": "2026-06-26T09:00:00.000Z",
+  "author": {
+    "@type": "Organization",
+    "name": "Ilaaj AI Medical Team",
+    "url": "https://www.ilaaj.ai/doctors"
+  },
+  "reviewedBy": { "@type": "Person", "name": "Dr. Saira Zafar", "jobTitle": "General Practitioner", "url": "https://www.ilaaj.ai/doctors/dr-saira-zafar" },
+  "lastReviewed": "2026-06-26",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ilaaj AI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.ilaaj.ai/assets/Icon-192.png"
+    }
+  },
+  "keywords": "food poisoning ka ilaj, ulti dast ka ilaj, kharab khaana, food poisoning treatment, stomach infection, pet mein maror",
+  "inLanguage": "ur",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Ilaaj AI Blog",
+    "url": "https://www.ilaaj.ai/blog"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.ilaaj.ai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.ilaaj.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Food Poisoning Ka Ilaj — Symptoms Aur Ghareloo Treatment Pakistan Mein",
+      "item": "https://www.ilaaj.ai/blog/food-poisoning-ilaj"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Food poisoning kitne din mein theek hota hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zyada tar food poisoning 1-3 din mein khud theek ho jati hai agar ORS aur fluids lete rahein. Magar agar 3 din se zyada symptoms rahein, bloody stool ho, ya bukhar 102°F+ ho to doctor se zarur milein. Bachon aur elderly mein jaldi hospital jayein."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Food poisoning mein kya khaana chahiye?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BRAT diet follow karein: banana, rice (sada chawal), applesauce, toast. Yakhni (soup), nimbu pani, aur ORS piyo. Dairy, fried, masaledar, aur heavy khaana avoid karein jab tak puri tarah theek na ho jayein. Thoda thoda kha kar shuru karein."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kya food poisoning mein antibiotics leni chahiye?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Har food poisoning mein antibiotics zaruri NAHI hain. Zyada tar cases viral ya toxin-based hote hain jo khud theek hote hain. Antibiotics sirf bacterial infection confirm hone pe doctor deta hai. Apni marzi se antibiotics lena nuksan kar sakta hai — good bacteria bhi mar jate hain."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Food poisoning aur stomach flu mein kya farq hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Food poisoning contaminated KHAANE se hoti hai aur symptoms jaldi aate hain (2-6 ghante). Stomach flu (gastroenteritis) virus se hoti hai aur phailti hai person-to-person. Dono ka ilaj similar hai — ORS, fluids, rest. Magar food poisoning mein aksar specific khaana identify ho jata hai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bachon mein food poisoning ka ilaj kya hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bachon mein dehydration ka khatra zyada hota hai. ORS chote chote ghunt mein dete rahein — har 5 minute mein 1-2 chammach. Breast-feeding continue karein. Agar bacha 6+ ghante peshab na kare, rota ho magar aansoo na ayein, ya bohat sust ho to foran hospital lay jayein."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKTHF96"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar navbar--scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="/" class="navbar__brand">
+        <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="navbar__logo">
+        <span class="navbar__name">Ilaaj AI</span>
+      </a>
+      <div class="navbar__center" id="navLinks">
+        <a href="/#how-it-works" class="navbar__link">How It Works</a>
+        <a href="/#features" class="navbar__link">Features</a>
+        <a href="/blog" class="navbar__link navbar__link--active">Blog</a>
+        <a href="/#faq" class="navbar__link">FAQ</a>
+      </div>
+      <div class="navbar__right">
+        <a href="https://app.ilaaj.ai" class="btn btn--primary btn--sm navbar__cta">
+          Muft Mashwara Lein
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile" id="mobileMenu">
+      <a href="/#how-it-works" class="navbar__mobile-link">How It Works</a>
+      <a href="/#features" class="navbar__mobile-link">Features</a>
+      <a href="/blog" class="navbar__mobile-link">Blog</a>
+      <a href="/#faq" class="navbar__mobile-link">FAQ</a>
+      <a href="https://app.ilaaj.ai" class="btn btn--primary btn--full">Muft Mashwara Lein</a>
+    </div>
+  </nav>
+
+  <main>
+    <article class="blog-post">
+      <div class="container">
+        <a href="/blog" class="blog-post__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Articles
+        </a>
+
+        <div class="blog-post__featured-image"><img src="https://images.pexels.com/photos/15335236/pexels-photo-15335236.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Street food stall — food poisoning risk"></div>
+
+        <div class="blog-post__author">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI Medical Team" class="blog-post__author-avatar">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name">Ilaaj AI Medical Team</div>
+            <div class="blog-post__author-creds">PMDC-verified doctors reviewing every article</div>
+            <div class="blog-post__author-dates">Published: June 26, 2026 | Last reviewed: June 26, 2026</div>
+          </div>
+        </div>
+
+        <div class="blog-post__author blog-post__author--reviewer">
+          <img src="https://res.cloudinary.com/dpaz2mhy6/image/upload/f_auto,q_auto,w_96,h_96,c_fill,g_face/v1776334958/zwpaowaamnt8euxzlkzh.png" alt="Dr. Saira Zafar" class="blog-post__author-avatar" loading="lazy">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name"><a href="/doctors/dr-saira-zafar">Dr. Saira Zafar</a></div>
+            <div class="blog-post__author-creds blog-post__author-creds--reviewer">Medically reviewed by — PMDC-verified General Practitioner</div>
+            <div class="blog-post__author-dates">Reviewed on: June 26, 2026</div>
+          </div>
+        </div>
+
+        <h1 class="blog-post__title">Food Poisoning Ka Ilaj — Symptoms Aur Ghareloo Treatment Pakistan Mein</h1>
+
+        <div class="blog-post__tldr">
+          <div class="blog-post__tldr-title">TL;DR — Key Takeaways</div>
+          <ul>
+            <li>Food poisoning contaminated khaane se hota hai — bacteria, virus ya toxins</li>
+            <li>ORS sabse zaruri ilaj hai</li>
+            <li>Zyada tar cases 1-3 din mein khud theek ho jate hain</li>
+            <li>Bloody diarrhea mein Imodium AVOID karein</li>
+            <li>24+ ghante vomiting, bloody stool, ya high fever = hospital</li>
+            <li>Street food garam aur fresh khayein, tap water avoid karein</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+<h2>Food Poisoning Kya Hai?</h2>
+<p>Food poisoning tab hoti hai jab aap aisa khaana kha lein jis mein bacteria, virus, ya toxins (zeher) maujood hon. Yeh contaminated khaana aap ke pet mein infection ya irritation paida karta hai jis se ulti, dast, aur pet mein dard shuru ho jata hai. Pakistan mein food poisoning bohat aam hai — khaaskar garam mosam mein jab khaana jaldi kharab hota hai aur bacteria tezi se barhte hain.</p>
+
+<p>Pakistan ka street food culture bohat rich hai magar open environment mein khaana tayyar hone ki wajah se contamination ka khatra zyada rehta hai. Makkhiyan, ganda pani, aur bina fridge ke khaana rakhna — yeh sab food poisoning ki wajuhaat hain. Achi baat yeh hai ke zyada tar food poisoning ke cases mild hote hain aur 1-3 din mein khud theek ho jate hain agar aap ORS aur fluids lete rahein. Magar kuch severe cases mein — khaaskar bachon, elderly, aur pregnant women mein — food poisoning khatarnak ho sakti hai aur hospital jaana zaruri ho jata hai.</p>
+
+<p>Food poisoning ko samajhna zaruri hai taake aap ghar pe sahi ilaj kar sakein aur yeh jaan sakein ke kab doctor ke paas jaana chahiye. Is article mein hum food poisoning ki wajuhaat, symptoms, ghareloo ilaj, medicines, aur prevention ke baare mein detail mein baat karenge — Pakistan ke context mein.</p>
+
+<h2>Food Poisoning Ki Common Wajuhaat Pakistan Mein</h2>
+<p>Pakistan mein food poisoning ki kuch khaas wajuhaat hain jo hamare maashre aur mosam se juri hain. Sabse bari wajah <strong>street food</strong> hai jo open environment mein tayyar hota hai — makkhiyan baithti hain, dhool urta hai, aur aksar khaana tayyar karne wale haath nahi dhote. Garam mosam (April se September) mein bacteria ka reproduction rate double ho jata hai, isliye garmi mein food poisoning ke cases dramatically barh jate hain.</p>
+
+<p><strong>Baasi khaana</strong> bhi ek bari wajah hai. Pakistan mein bohat se gharoon mein fridge nahi hota ya load shedding ki wajah se fridge kaam nahi karta. Room temperature pe khaana 2 ghante se zyada rakhna bacteria ke liye ideal breeding ground ban jata hai. <strong>Raw ya undercooked meat</strong>, khaaskar chicken, Salmonella aur Campylobacter bacteria ka source hota hai. Pakistani cuisine mein chicken bohat use hota hai — agar yeh achi tarah nahi paka to infection ka strong chance hai.</p>
+
+<p>Garam mosam mein <strong>dairy products</strong> jaise doodh, dahi, aur khoya bohat jaldi spoil hote hain. Mithai ki dukaan pe rakhi mithai aksar contaminated hoti hai. <strong>Contaminated pani</strong> bhi ek major factor hai — Pakistan ke bohat se areas mein tap water directly peena khatarnak hai kyunke sewage aur drinking water ki lines mix ho jati hain.</p>
+
+<table class="blog-post__quick-facts">
+  <caption>Food Poisoning Ke Common Bacteria Aur Unke Sources</caption>
+  <tbody>
+    <tr><td><strong>Salmonella</strong></td><td>Raw chicken, anday, unpasteurized doodh — symptoms 12-72 ghante mein</td></tr>
+    <tr><td><strong>E. coli</strong></td><td>Undercooked beef, contaminated pani, raw sabziyan — bloody diarrhea ka sabab</td></tr>
+    <tr><td><strong>Staphylococcus aureus</strong></td><td>Haath se tayyar kiya hua khaana (sandwiches, mithai) — 2-6 ghante mein ulti shuru</td></tr>
+    <tr><td><strong>Campylobacter</strong></td><td>Raw/undercooked poultry — Pakistan mein bohat aam</td></tr>
+    <tr><td><strong>Vibrio/Cholera</strong></td><td>Contaminated pani — flood ke baad cases barhte hain</td></tr>
+  </tbody>
+</table>
+
+<h2>Food Poisoning Ki Symptoms Aur Timeline</h2>
+<p>Food poisoning ki symptoms is baat pe depend karti hain ke kaunsa bacteria ya toxin khaane mein tha. Har ek ka apna timeline hota hai:</p>
+
+<p><strong>2-6 ghante baad (Staphylococcus toxin):</strong> Yeh sabse jaldi shuru hone wali food poisoning hai. Jab khaana tayyar karne wale ke haathon se Staph bacteria khaane mein aata hai to yeh toxin produce karta hai. Symptoms mein shadeed ulti, nausea (ji machalna), aur pet mein maror hota hai. Yeh aksar mithai, cream-based khaane, ya sandwiches se hota hai. Achi baat yeh hai ke yeh aksar 24 ghanton mein khud theek ho jata hai.</p>
+
+<p><strong>6-24 ghante baad (Clostridium perfringens, Bacillus cereus):</strong> Is stage mein watery diarrhea (pani jaisa dast), pet mein cramping, aur halka nausea hota hai. Yeh aksar un khaanon se hota hai jo bohat der se room temperature pe rakhe hon — jaise buffet ka khaana, reheated rice, ya daig ka khaana jo raat bhar bahar raha ho. Bukhar aksar nahi hota is type mein.</p>
+
+<p><strong>12-72 ghante baad (Salmonella, E. coli, Campylobacter):</strong> Yeh zyada serious form hai. Bukhar ke saath diarrhea, pet mein shadeed dard, badan dard, aur kamzori hoti hai. Salmonella aksar raw chicken ya andon se aata hai. E. coli se <strong>bloody diarrhea</strong> ho sakta hai jo ek warning sign hai — is mein Imodium bilkul na lein kyunke bacteria jism se bahar nikalna zaruri hai. Campylobacter Pakistan mein undercooked poultry se bohat aam hai.</p>
+
+<p><strong>Zaroori baat:</strong> Agar dast mein khoon aaye, bukhar 102°F se zyada ho, ya symptoms 3 din se zyada rahein to yeh mild food poisoning nahi — doctor se zarur milein.</p>
+
+<h2>Food Poisoning Ki Aam Alamat</h2>
+<ul>
+<li><strong>Ulti (Vomiting):</strong> Aksar sabse pehle shuru hoti hai, bar bar aati hai</li>
+<li><strong>Dast (Diarrhea):</strong> Watery ya kabhi bloody — din mein kai baar</li>
+<li><strong>Pet mein maror aur dard:</strong> Cramping type ka dard jo waves mein aata hai</li>
+<li><strong>Bukhar:</strong> Halka se tez — bacterial infection mein zyada hota hai</li>
+<li><strong>Badan dard aur kamzori:</strong> Pura jism toota hua mehsoos hota hai</li>
+<li><strong>Sar dard:</strong> Dehydration aur infection dono ki wajah se</li>
+</ul>
+
+<h2>Ghareloo Ilaj — Ghar Pe Kya Karein</h2>
+<p><strong>ORS (Oral Rehydration Solution) sabse zaruri ilaj hai.</strong> Food poisoning mein sab se bada khatra dehydration (pani ki kami) ka hota hai — ulti aur dast se jism ka pani aur namak (electrolytes) tezi se khatam hote hain. ORS in sab ko replace karta hai. Pharmacy se ORS ka packet lein (Pakistan mein har medical store pe milta hai, sirf 10-20 rupees ka hota hai) aur 1 liter saaf pani mein ghol kar thoda thoda piyo.</p>
+
+<p><strong>Ghar pe ORS banane ka tareeqa:</strong> Agar pharmacy na ja sakein to ghar pe ORS bana saktay hain — 1 liter <em>saaf ubla hua pani</em> lein, us mein <strong>6 chammach cheeni</strong> aur <strong>aadha chammach namak</strong> milayein. Achi tarah ghol kar thoda thoda piyo. Yeh lifesaving formula hai — WHO ne recommend kiya hua hai. Bachon ko chote chote ghunt mein dein, ek baar mein zyada na pilayein warna ulti ho sakti hai.</p>
+
+<p><strong>BRAT diet follow karein:</strong> Jab bhook lagne lage (aksar 6-12 ghante baad) to halka khaana shuru karein. BRAT diet ka matlab hai — <strong>B</strong>anana (kela), <strong>R</strong>ice (sada chawal), <strong>A</strong>pplesauce, <strong>T</strong>oast (sada double roti). Yeh sab bland khaane hain jo pet pe burden nahi dalte aur digestion mein asaan hain. Kela potassium bhi deta hai jo dast se khatam hota hai.</p>
+
+<p><strong>Clear fluids piyo:</strong> ORS ke alawa nimbu pani (thoda namak ke saath), yakhni (chicken ya sabzi soup), green tea, aur coconut water piyo. Cold drinks aur caffeinated beverages avoid karein — yeh dehydration barhate hain. Doodh, lassi, aur dairy products bilkul avoid karein jab tak puri tarah theek na ho jayein kyunke inflamed pet dairy digest nahi kar pata.</p>
+
+<p><strong>Aaram karein:</strong> Jism ko infection se larne ke liye energy chahiye. Kaam pe mat jayein, physically exert na karein. Lait kar rest karein. Spicy, fried, masaledar, heavy khaana bilkul avoid karein — yeh pet ki inflammation aur barha dega. Thoda thoda kha kar shuru karein, ek baar mein bohat zyada na khayein.</p>
+
+<h2>Food Poisoning Ki Medicines</h2>
+<p>Food poisoning mein zyada tar dawai ki zarurat nahi parti — ORS aur rest se theek ho jata hai. Magar kuch medicines symptoms ko control karne mein madad karti hain:</p>
+
+<p><strong>Anti-nausea (ulti band karne ke liye):</strong> Maxolon (Metoclopramide) ulti ko control karta hai. Yeh tablet ya injection dono mein milta hai. Agar bar bar ulti ho rahi ho aur ORS bhi andar nahi reh raha to Maxolon lena faidemand hai taake fluids andar rahein. Magar yeh doctor ki advice se lein, khaaskar bachon mein.</p>
+
+<p><strong>Pet ki maror ke liye:</strong> Buscopan (Hyoscine butylbromide) pet ki cramping aur maror mein relief deta hai. Yeh intestinal spasms ko relax karta hai. Pakistan mein pharmacy pe asaani se milta hai. 1-2 tablets din mein 3 baar le sakte hain.</p>
+
+<p><strong>Imodium (Loperamide) — EHTIYAT SE:</strong> Imodium dast ko rokta hai magar yeh <strong>SIRF watery diarrhea</strong> mein lein. Agar dast mein <strong>khoon aaye ya bukhar tez ho to Imodium bilkul AVOID karein</strong> — kyunke yeh bacteria ko jism ke andar rok leta hai jo nikalna zaruri hai. Bloody diarrhea mein Imodium lena condition ko serious bana sakta hai.</p>
+
+<p><strong>Antibiotics:</strong> Har food poisoning mein antibiotics zaruri NAHI hain. Zyada tar cases viral ya toxin-based hote hain jin mein antibiotics koi kaam nahi karte. Antibiotics <strong>sirf doctor ki advice pe</strong> lein — jab bacterial infection confirm ho (stool test se). Pakistan mein apni marzi se antibiotics lena ek bari problem hai — isse antibiotic resistance barhti hai aur good bacteria bhi mar jate hain.</p>
+
+<p><strong>Probiotics:</strong> Recovery mein probiotics (jaise Saccharomyces boulardii) helpful hain. Yeh achay bacteria hain jo pet ki flora ko wapas normal karte hain. Antibiotics ke baad khaaskar faidemand hain. Pakistan mein Enflor sachets ya Bio-K capsules mil jate hain.</p>
+
+<div class="blog-post__inline-cta">
+  <p>Ulti dast band nahi ho rahe? Ilaaj AI pe doctor se abhi mashwara karein — sahi dawai aur hydration plan milega.</p>
+  <a href="https://app.ilaaj.ai">Doctor Se Foran Mashwara</a>
+</div>
+
+<h2>Kab Hospital Zaruri Hai?</h2>
+<p>Zyada tar food poisoning ghar pe theek ho jati hai, magar kuch situations mein hospital jaana <strong>lazmi</strong> hai. In warning signs ko ignore na karein:</p>
+
+<ul>
+<li><strong>24+ ghante se ulti band nahi ho rahi:</strong> Agar ek din se zyada ulti ho rahi hai aur kuch bhi andar nahi reh raha — na ORS, na pani — to dehydration ka shadeed khatra hai. Hospital mein IV drip se fluids diye jayenge.</li>
+<li><strong>Bloody stool (dast mein khoon):</strong> Yeh E. coli ya Shigella infection ki nishani hai jo serious ho sakta hai. Khaaskar bachon mein bloody diarrhea emergency hai.</li>
+<li><strong>Tez bukhar 102°F (39°C) se zyada:</strong> High fever bacterial infection ki taraf ishaara karta hai jis mein antibiotics zaruri ho sakte hain.</li>
+<li><strong>Bachay, pregnant women, elderly:</strong> In groups mein immune system kamzor hota hai aur dehydration jaldi hoti hai. Bachon mein khaaskar 6+ ghante peshab na aana danger sign hai.</li>
+<li><strong>Dehydration ke signs:</strong> Moonh sukha, ankhein dhans jayein, peshab bohat kam ya dark yellow, chakkar aana, kharay hone pe sir ghumna — yeh sab severe dehydration ki alamaat hain.</li>
+<li><strong>Shadeed pet ka dard:</strong> Agar pet mein itna dard ho ke seedha kharay na ho sakein ya dard ek jagah pe concentrated ho to yeh appendicitis ya peritonitis bhi ho sakta hai — foran emergency jayein.</li>
+</ul>
+
+<h2>Food Poisoning Se Bachao (Prevention)</h2>
+<p>Food poisoning se bachna uske ilaj se behtar hai. Kuch simple aadatein aap ko aur aap ke gharwalon ko food poisoning se bacha sakti hain:</p>
+
+<p><strong>Haath dhona:</strong> Khaana banane se pehle, khaane se pehle, aur washroom jaane ke baad sabun se kam az kam 20 second haath dhoyein. Yeh akeli aadat 50% se zyada infections rok sakti hai. Bachon ko bhi yeh aadat lagayein.</p>
+
+<p><strong>Khaana achi tarah pakao:</strong> Chicken ko achi tarah pakao — pink portion bilkul na rahe. Beef aur mutton ko bhi proper temperature pe pakao. Anday bhi achi tarah ubaal kar ya fry kar ke khayein — neem pakay anday Salmonella ka source hote hain. Khaana garam serve karein — bacteria garam temperature pe nahi barhte.</p>
+
+<p><strong>Fridge mein rakhein:</strong> Bacha hua khaana 2 ghante ke andar fridge mein rakh dein. Load shedding ke dauran fridge ka darwaza kam se kam kholein taake temperature maintain rahe. Fridge ka temperature 4°C (40°F) se neeche rakhein. Baasi khaana reheat karte waqt achi tarah garam karein — sirf neem garam karna kafi nahi.</p>
+
+<p><strong>Street food garam aur fresh khayein:</strong> Agar bahar khaana kha rahe hain to woh stall chunein jahan khaana aap ke saamne tayyar ho raha ho aur garam serve ho. Pehle se kata hua fruit, khulay juice, aur thande khaane avoid karein. Gol gappe aur chaat ka pani khaaskar contamination-prone hota hai.</p>
+
+<p><strong>Tap water avoid karein:</strong> Pakistan mein direct tap water peena avoid karein. Filtered ya boiled pani piyo. Bahar bottled water lein — magar seal check karein ke duplicate na ho. Baraf (ice) bhi aksar tap water se banti hai — juice ya drinks mein baraf avoid karein.</p>
+
+<p><strong>Fruits aur sabziyan dho kar khao:</strong> Kachay phal aur sabziyan saaf pani se achi tarah dho kar khayein. Jahan possible ho chilka utaar kar khayein. Salad aur raw vegetables bahar khaane se avoid karein kyunke aap nahi jaante ke kaise dhoye gaye hain.</p>
+
+<h2>Conclusion</h2>
+<p>Food poisoning se ghabrana nahi chahiye — zyada tar cases mild hote hain aur 1-3 din mein ghar pe ORS aur rest se theek ho jate hain. Magar dehydration se bachna sabse zaruri hai — ORS aur fluids jism mein pani aur namak ki kami puri karte hain jo ulti aur dast se hoti hai. BRAT diet follow karein, dairy aur spicy khaana avoid karein, aur jism ko rest dein.</p>
+
+<p>Magar agar symptoms serious hon — bloody stool, tez bukhar, 24 ghante se zyada ulti, ya dehydration ke signs — to waqt zaya na karein aur <strong>Ilaaj AI</strong> pe doctor se mashwara karein. AI aap ki symptoms ka analysis karega aur licensed doctor sahi dawai, hydration plan, aur zaruri tests recommend karega — sirf chand minute mein, ghar baithay.</p>
+        </div>
+
+        <div class="blog-post__faq">
+          <h2>Frequently Asked Questions</h2>
+          <details class="blog-post__faq-item">
+            <summary>Food poisoning kitne din mein theek hota hai?</summary>
+            <div class="blog-post__faq-answer">Zyada tar food poisoning 1-3 din mein khud theek ho jati hai agar ORS aur fluids lete rahein. Magar agar 3 din se zyada symptoms rahein, bloody stool ho, ya bukhar 102°F+ ho to doctor se zarur milein. Bachon aur elderly mein jaldi hospital jayein.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Food poisoning mein kya khaana chahiye?</summary>
+            <div class="blog-post__faq-answer">BRAT diet follow karein: banana, rice (sada chawal), applesauce, toast. Yakhni (soup), nimbu pani, aur ORS piyo. Dairy, fried, masaledar, aur heavy khaana avoid karein jab tak puri tarah theek na ho jayein. Thoda thoda kha kar shuru karein.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Kya food poisoning mein antibiotics leni chahiye?</summary>
+            <div class="blog-post__faq-answer">Har food poisoning mein antibiotics zaruri NAHI hain. Zyada tar cases viral ya toxin-based hote hain jo khud theek hote hain. Antibiotics sirf bacterial infection confirm hone pe doctor deta hai. Apni marzi se antibiotics lena nuksan kar sakta hai — good bacteria bhi mar jate hain.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Food poisoning aur stomach flu mein kya farq hai?</summary>
+            <div class="blog-post__faq-answer">Food poisoning contaminated KHAANE se hoti hai aur symptoms jaldi aate hain (2-6 ghante). Stomach flu (gastroenteritis) virus se hoti hai aur phailti hai person-to-person. Dono ka ilaj similar hai — ORS, fluids, rest. Magar food poisoning mein aksar specific khaana identify ho jata hai.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Bachon mein food poisoning ka ilaj kya hai?</summary>
+            <div class="blog-post__faq-answer">Bachon mein dehydration ka khatra zyada hota hai. ORS chote chote ghunt mein dete rahein — har 5 minute mein 1-2 chammach. Breast-feeding continue karein. Agar bacha 6+ ghante peshab na kare, rota ho magar aansoo na ayein, ya bohat sust ho to foran hospital lay jayein.</div>
+          </details>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="blog-post__related">
+          <h2>Related Articles</h2>
+          <ul class="blog-post__related-list">
+            <li><a href="/blog/pani-ki-kami">Pani Ki Kami (Dehydration) Ka Ilaj — ORS Guide</a></li>
+            <li><a href="/blog/yarkan-ka-ilaj">Yarkan Ka Ilaj — Jaundice Symptoms Aur Treatment</a></li>
+            <li><a href="/blog">Browse All Health Articles &rarr;</a></li>
+          </ul>
+        </div>
+
+        <div class="blog-post__about">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="blog-post__about-logo">
+          <div class="blog-post__about-text">
+            <strong>About Ilaaj AI</strong>
+            <p>Ilaaj AI is Pakistan's first AI-powered health platform. Chat about your symptoms in Urdu or English, get AI-powered triage, and receive doctor-verified prescriptions — affordable and accessible, 24/7.</p>
+          </div>
+        </div>
+
+        <div class="blog-post__cta">
+          <div class="blog-post__cta-card">
+            <h3 class="blog-post__cta-title">Need Health Advice?</h3>
+            <p class="blog-post__cta-desc">Chat with our AI health assistant in any language. Get doctor-verified prescriptions at affordable rates.</p>
+            <div class="blog-post__cta-actions">
+              <a href="https://app.ilaaj.ai" class="btn btn--hero-primary">Try Ilaaj AI Now</a>
+              <a href="/blog" class="btn--outline">Read More Articles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <img src="../assets/ilaaj-logo.jpg" alt="Ilaaj AI" class="footer__logo-img" width="36" height="36" loading="lazy">
+            <span class="footer__logo-text">Ilaaj AI</span>
+          </div>
+          <p class="footer__brand-desc">Pakistan's first AI-powered health platform. Chat about your symptoms in any language, get AI triage, and receive doctor-verified prescriptions &mdash; affordable and accessible, 24/7.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/ilaaj_ai/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.516 2.497 5.783 2.225 7.149 2.163 8.415 2.105 8.795 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.987 15.668 24 15.259 24 12s-.013-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324A6.162 6.162 0 0 0 12 5.838zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61588590745625" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+            <a href="https://x.com/ilaajai" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Product</h4>
+          <ul class="footer__links">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#how-it-works">How It Works</a></li>
+            <li><a href="/#doctors">Our Doctors</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="../support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <p class="footer__contact-text">Questions or feedback?</p>
+          <a href="mailto:support@ilaaj.ai" class="footer__email">support@ilaaj.ai</a>
+          <p class="footer__emergency">For emergencies, call <strong>1122</strong> (Rescue)</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span class="footer-year"></span> Ilaaj AI. All rights reserved.</p>
+        <p class="footer__disclaimer">Ilaaj AI is for general health consultations and non-emergency medical guidance. For emergencies, call 1122 (Rescue) or visit the nearest hospital.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+    document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());
+  </script>
+  <!-- Tawk.to Live Chat (lazy-loaded) -->
+  <script>
+  (function() {
+    var tawkLoaded = false;
+    function loadTawk() {
+      if (tawkLoaded) return;
+      tawkLoaded = true;
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/69ce56b0127eae1c37be0e72/1jl70596p';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    }
+    document.addEventListener('scroll', loadTawk, {once: true});
+    document.addEventListener('click', loadTawk, {once: true});
+    document.addEventListener('mouseover', loadTawk, {once: true});
+  })();
+  </script>
+</body>
+</html>

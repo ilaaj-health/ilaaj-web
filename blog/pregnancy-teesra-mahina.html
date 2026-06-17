@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <!-- Sentry: error tracking + session replay -->
+  <script src="https://js.sentry-cdn.com/defa6ca82daea4d4c49a8b69b87c53cc.min.js" crossorigin="anonymous"></script>
+  <script>
+    window.sentryOnLoad = function () {
+      Sentry.init({
+        integrations: [Sentry.replayIntegration({ maskAllText: false, blockAllMedia: false })],
+        tracesSampleRate: 0.1,
+        replaysSessionSampleRate: 0.1,
+        replaysOnErrorSampleRate: 1.0,
+      });
+    };
+  </script>
+  <!-- PostHog: product analytics + session replay -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_xjBQ5vUS7nTJz4jHta6d5dDE7jHdtFjFuqkxAJjvcFzo', { api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only', cross_subdomain_cookie: true });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XKTHF96');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1697266221447949');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1697266221447949&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pregnancy Ka Teesra Mahina — Symptoms, Care Aur Diet | Ilaaj AI</title>
+  <meta name="description" content="Pregnancy teesra mahina (weeks 9-12) — baby organs develop, morning sickness peak. First trimester screening, supplements. Pakistan guide.">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="pregnancy teesra mahina, pregnancy third month, pregnancy week 9-12, first trimester, morning sickness, pregnancy diet pakistan">
+  <meta name="geo.region" content="PK">
+  <meta name="geo.placename" content="Pakistan">
+  <meta name="google-site-verification" content="8RtzwgVYowrMGF4E77jnKOX33seYEQTuXmxps2XkPxI">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.ilaaj.ai/blog/pregnancy-teesra-mahina">
+  <link rel="alternate" hreflang="ur-PK" href="https://www.ilaaj.ai/blog/pregnancy-teesra-mahina" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ilaaj.ai/blog/pregnancy-teesra-mahina" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/logo/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/logo/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/logo/site.webmanifest" />
+
+  <!-- PWA / Mobile -->
+  <meta name="theme-color" content="#00897B">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="IlaajAI">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pregnancy Ka Teesra Mahina — Symptoms, Care Aur Diet | Ilaaj AI">
+  <meta property="og:description" content="Pregnancy teesra mahina (weeks 9-12) — baby organs develop, morning sickness peak. First trimester screening, supplements. Pakistan guide.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ilaaj.ai/blog/pregnancy-teesra-mahina">
+  <meta property="og:image" content="https://images.pexels.com/photos/5424708/pexels-photo-5424708.jpeg?auto=compress&cs=tinysrgb&w=1200">
+  <meta property="og:image:alt" content="Pregnant woman holding her belly — third month pregnancy">
+  <meta property="og:site_name" content="Ilaaj AI">
+  <meta property="og:locale" content="ur_PK">
+  <meta property="article:published_time" content="2026-06-29T09:00:00.000Z">
+  <meta property="article:modified_time" content="2026-06-29T09:00:00.000Z">
+  <meta property="article:author" content="Ilaaj AI Medical Team">
+  <meta property="article:section" content="Pregnancy">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ilaajai">
+  <meta name="twitter:creator" content="@ilaajai">
+  <meta name="twitter:title" content="Pregnancy Ka Teesra Mahina — Symptoms, Care Aur Diet | Ilaaj AI">
+  <meta name="twitter:description" content="Pregnancy teesra mahina (weeks 9-12) — baby organs develop, morning sickness peak. First trimester screening, supplements. Pakistan guide.">
+  <meta name="twitter:image" content="https://images.pexels.com/photos/5424708/pexels-photo-5424708.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNTMD61HWL"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KNTMD61HWL');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/blog.css">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.ilaaj.ai/blog/pregnancy-teesra-mahina"
+  },
+  "headline": "Pregnancy Ka Teesra Mahina — Baby Ki Growth, Symptoms Aur Care",
+  "description": "Pregnancy teesra mahina (weeks 9-12) — baby organs develop, morning sickness peak. First trimester screening, supplements. Pakistan guide.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://images.pexels.com/photos/5424708/pexels-photo-5424708.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  },
+  "datePublished": "2026-06-29T09:00:00.000Z",
+  "dateModified": "2026-06-29T09:00:00.000Z",
+  "author": {
+    "@type": "Organization",
+    "name": "Ilaaj AI Medical Team",
+    "url": "https://www.ilaaj.ai/doctors"
+  },
+  "reviewedBy": { "@type": "Person", "name": "Dr. Saira Zafar", "jobTitle": "General Practitioner", "url": "https://www.ilaaj.ai/doctors/dr-saira-zafar" },
+  "lastReviewed": "2026-06-29",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ilaaj AI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.ilaaj.ai/assets/Icon-192.png"
+    }
+  },
+  "keywords": "pregnancy teesra mahina, pregnancy third month, pregnancy week 9-12, first trimester, morning sickness, pregnancy diet pakistan",
+  "inLanguage": "ur",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Ilaaj AI Blog",
+    "url": "https://www.ilaaj.ai/blog"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.ilaaj.ai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.ilaaj.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Pregnancy Ka Teesra Mahina",
+      "item": "https://www.ilaaj.ai/blog/pregnancy-teesra-mahina"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Pregnancy ke teesre mahine mein kya kya hota hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Baby 3 inch ka ho jata hai, ungliyan/paon ki ungliyan banti hain, dil ki dharkan 150-170 bpm, organs develop hote hain. Maa ko morning sickness peak, thakawat, frequent urination hoti hai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Teesre mahine mein kaunse tests zaruri hain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NT scan (nuchal translucency) 11-14 weeks pe, blood tests Down syndrome risk ke liye, dating scan due date confirm karne ke liye, CBC, blood group, hepatitis screening, urine routine."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Morning sickness ka kya ilaj hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chhoti magar frequent meals lein, subah khali pet na uthein — dry crackers rakhein, adrak wali chai piyen, vitamin B6 doctor ki advice pe, zyada masaledar khaana avoid karein. Week 12 ke baad aksar behtar hoti hai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Pregnancy mein kaunsi cheezein avoid karni chahiyen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Raw/undercooked meat aur eggs, unpasteurized dairy, papaya/pineapple zyada, bhari weight uthana, X-rays, koi bhi dawai bina doctor ke, smoking/alcohol/caffeine zyada."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Folic acid kitne din tak leni chahiye?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Folic acid 400mcg rozana pehle trimester bhar zaruri hai — ideally pregnancy se pehle shuru karein. Yeh baby ke neural tube defects (brain/spine) se bachaati hai. Doctor aksar pregnancy ke end tak continue karte hain."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKTHF96"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar navbar--scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="/" class="navbar__brand">
+        <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="navbar__logo">
+        <span class="navbar__name">Ilaaj AI</span>
+      </a>
+      <div class="navbar__center" id="navLinks">
+        <a href="/#how-it-works" class="navbar__link">How It Works</a>
+        <a href="/#features" class="navbar__link">Features</a>
+        <a href="/blog" class="navbar__link navbar__link--active">Blog</a>
+        <a href="/#faq" class="navbar__link">FAQ</a>
+      </div>
+      <div class="navbar__right">
+        <a href="https://app.ilaaj.ai" class="btn btn--primary btn--sm navbar__cta">
+          Muft Mashwara Lein
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile" id="mobileMenu">
+      <a href="/#how-it-works" class="navbar__mobile-link">How It Works</a>
+      <a href="/#features" class="navbar__mobile-link">Features</a>
+      <a href="/blog" class="navbar__mobile-link">Blog</a>
+      <a href="/#faq" class="navbar__mobile-link">FAQ</a>
+      <a href="https://app.ilaaj.ai" class="btn btn--primary btn--full">Muft Mashwara Lein</a>
+    </div>
+  </nav>
+
+  <main>
+    <article class="blog-post">
+      <div class="container">
+        <a href="/blog" class="blog-post__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Articles
+        </a>
+
+        <div class="blog-post__featured-image"><img src="https://images.pexels.com/photos/5424708/pexels-photo-5424708.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Pregnant woman holding her belly — third month pregnancy"></div>
+
+        <div class="blog-post__author">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI Medical Team" class="blog-post__author-avatar">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name">Ilaaj AI Medical Team</div>
+            <div class="blog-post__author-creds">PMDC-verified doctors reviewing every article</div>
+            <div class="blog-post__author-dates">Published: June 29, 2026 | Last reviewed: June 29, 2026</div>
+          </div>
+        </div>
+
+        <div class="blog-post__author blog-post__author--reviewer">
+          <img src="https://res.cloudinary.com/dpaz2mhy6/image/upload/f_auto,q_auto,w_96,h_96,c_fill,g_face/v1776334958/zwpaowaamnt8euxzlkzh.png" alt="Dr. Saira Zafar" class="blog-post__author-avatar" loading="lazy">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name"><a href="/doctors/dr-saira-zafar">Dr. Saira Zafar</a></div>
+            <div class="blog-post__author-creds blog-post__author-creds--reviewer">Medically reviewed by — PMDC-verified General Practitioner</div>
+            <div class="blog-post__author-dates">Reviewed on: June 29, 2026</div>
+          </div>
+        </div>
+
+        <h1 class="blog-post__title">Pregnancy Ka Teesra Mahina — Baby Ki Growth, Symptoms Aur Care</h1>
+
+        <div class="blog-post__tldr">
+          <div class="blog-post__tldr-title">TL;DR — Key Takeaways</div>
+          <ul>
+            <li>Teesra mahina weeks 9-12 hota hai — first trimester ka aakhri hissa</li>
+            <li>Baby 3 inch ka ho jata hai, ungliyan banti hain, dil 150-170 bpm pe dharkta hai</li>
+            <li>Morning sickness is mahine peak pe hoti hai — week 12 ke baad aksar behtar</li>
+            <li>NT scan (nuchal translucency) 11-14 weeks pe zaruri hai — Down syndrome screening</li>
+            <li>Folic acid 400mcg + iron 60mg daily zaruri supplements hain</li>
+            <li>Bleeding, severe cramping, ya high fever ho to foran doctor ko milein</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+<h2>Teesra Mahina Kya Hota Hai? (Weeks 9-12)</h2>
+<p>Pregnancy ka teesra mahina <strong>week 9 se week 12</strong> tak hota hai — yeh aap ke <em>first trimester ka aakhri hissa</em> hai. Is waqt tak aap ke baby ke tamam major organs banne shuru ho chuke hain aur ab woh rapidly grow kar rahe hain. Bohat si maaon ke liye yeh mushkil mahina hota hai kyunke morning sickness apne peak pe hoti hai — magar good news yeh hai ke week 12 ke baad aksar yeh symptoms behtar hone lagte hain.</p>
+
+<p>Is mahine mein aap ka pehla major ultrasound (dating scan) hota hai jis mein baby ki heartbeat sunai deti hai — yeh bohat emotional aur exciting moment hota hai.</p>
+
+<h2>Baby Ki Development — Teesre Mahine Mein Kya Hota Hai?</h2>
+<p>Teesre mahine mein aap ka baby ek aakhrot ke size se badh kar <strong>lagbhag 3 inches (7.5 cm)</strong> ka ho jata hai. Yeh development ka bohat critical phase hai:</p>
+
+<ul>
+<li><strong>Ungliyan aur paon ki ungliyan</strong> (fingers and toes) properly ban jaati hain</li>
+<li><strong>Dil ki dharkan</strong> 150-170 beats per minute pe hoti hai — Doppler se sunai de sakti hai</li>
+<li><strong>Brain ka rapid growth</strong> — har minute mein hazaron naye neurons bante hain</li>
+<li>Kidneys, liver, aur intestines develop ho rahe hain</li>
+<li>Baby ke <strong>nails</strong> banne shuru hote hain</li>
+<li>Chehra zyada human shape le raha hai — naak, hoont, aur ears ban rahe hain</li>
+<li>Baby haath pair hilana shuru karta hai — magar abhi aap mehsoos nahi kar saktin</li>
+<li>Reproductive organs develop ho rahe hain (magar ultrasound pe gender abhi nazar nahi aata)</li>
+</ul>
+
+<table class="blog-post__quick-facts">
+  <caption>Teesre Mahine Ki Key Milestones</caption>
+  <tbody>
+    <tr><td>Baby ka size</td><td>~3 inches (lime ke barabar)</td></tr>
+    <tr><td>Weight</td><td>~1 ounce (28 grams)</td></tr>
+    <tr><td>Heartbeat</td><td>150-170 bpm</td></tr>
+    <tr><td>Major development</td><td>Organs, brain, fingers/toes</td></tr>
+    <tr><td>Miscarriage risk</td><td>Week 12 ke baad significantly kam</td></tr>
+  </tbody>
+</table>
+
+<h2>Maa Ke Symptoms — Teesre Mahine Mein Kya Mehsoos Hota Hai?</h2>
+<p>Teesra mahina aksar pregnancy ka sab se mushkil hissa hota hai symptoms ke lihaaz se. Yeh common symptoms hain:</p>
+
+<h3>Morning Sickness (Matlipan/Ulti)</h3>
+<p>Morning sickness is mahine mein apne <strong>peak</strong> pe hoti hai. "Morning" naam misleading hai — yeh din ke kisi bhi waqt ho sakti hai. Kuch auraton ko sirf matli hoti hai, kuch ko baarish aati hai. <strong>Week 12 ke baad aksar yeh behtar hone lagti hai</strong> kyunke hCG hormone levels stabilize hote hain.</p>
+
+<h3>Thakawat (Fatigue)</h3>
+<p>Shadeed thakawat first trimester ki hallmark hai. Aap ka jism baby ke liye placenta bana raha hai aur blood volume barh raha hai — yeh sab energy leta hai. <strong>Zyada se zyada aaram karein</strong> — raat ko jaldi soyen aur agar mumkin ho to din mein bhi short nap lein.</p>
+
+<h3>Frequent Urination</h3>
+<p>Baarha washroom jana parna — yeh growing uterus bladder pe pressure dalti hai aur blood volume barhne se kidneys zyada kaam karti hain.</p>
+
+<h3>Breast Changes</h3>
+<p>Breasts mein swelling, tenderness, aur nipples ka rang gehra hona. Yeh sab hormonal changes ki wajah se hota hai aur normal hai.</p>
+
+<h3>Mood Swings</h3>
+<p>Achanak khush hona, phir rona — hormones (progesterone aur estrogen) ki wajah se mood zyada fluctuate karta hai. Yeh bilkul normal hai.</p>
+
+<h3>Food Cravings aur Aversions</h3>
+<p>Kuch khaano ki achanak bohat craving hona aur kuch khaano ki smell se matli aana. Har aurat ka experience different hota hai.</p>
+
+<h2>First Trimester Screening — Zaruri Tests</h2>
+<p>Teesra mahina wo waqt hai jab kuch bohat <strong>important screening tests</strong> hote hain:</p>
+
+<h3>NT Scan (Nuchal Translucency) — 11-14 Weeks</h3>
+<p>Yeh ultrasound baby ki gardan ke peeche ki fluid thickness measure karta hai. Agar yeh <strong>normal se zyada</strong> ho to Down syndrome (Trisomy 21) aur kuch doosre chromosomal abnormalities ka risk barh jata hai. Yeh <strong>screening test</strong> hai, diagnosis nahi — matlab yeh batata hai ke risk zyada hai ya kam, magar confirm nahi karta.</p>
+
+<h3>Blood Tests (Double/Triple Marker)</h3>
+<p>NT scan ke saath blood tests (PAPP-A aur free beta-hCG) bhi hote hain jo Down syndrome aur Edwards syndrome ke risk ko aur accurately calculate karte hain.</p>
+
+<h3>Dating Scan</h3>
+<p>Yeh scan baby ki <strong>due date confirm</strong> karta hai aur check karta hai ke baby properly grow kar raha hai. Heartbeat confirm hoti hai aur multiple pregnancy (twins) bhi pata chalti hai.</p>
+
+<h3>Routine Blood Work</h3>
+<ul>
+<li><strong>CBC</strong> (Complete Blood Count) — anaemia check</li>
+<li><strong>Blood group aur Rh factor</strong> — bohat zaruri hai</li>
+<li><strong>Hepatitis B aur C screening</strong></li>
+<li><strong>HIV screening</strong></li>
+<li><strong>Blood sugar</strong> (fasting/random)</li>
+<li><strong>Urine routine</strong> — infection check</li>
+<li><strong>Thyroid function</strong> (TSH)</li>
+</ul>
+
+<div class="blog-post__inline-cta">
+  <p>First trimester tests ke baare mein confused hain? Ilaaj AI pe doctor se poochhein — woh aap ki reports samjhaein ge aur sahi guidance dein ge.</p>
+  <a href="https://app.ilaaj.ai">Doctor Se Abhi Mashwara Karein</a>
+</div>
+
+<h2>Zaruri Supplements — Teesre Mahine Mein Kya Lein?</h2>
+<p>Pregnancy mein sahi supplements lena maa aur baby dono ke liye bohat zaruri hai:</p>
+
+<h3>Folic Acid — 400mcg Daily (Zaruri!)</h3>
+<p>Folic acid baby ke <strong>neural tube defects</strong> (brain aur spine ki problems) se bachaati hai. Yeh <strong>pehle trimester mein sab se zyada zaruri</strong> hai. Ideally pregnancy se 3 mahine pehle shuru karein. Doctor aksar pregnancy ke end tak continue karte hain.</p>
+
+<h3>Iron — 60mg Daily</h3>
+<p>Pakistan mein anaemia bohat aam hai pregnant women mein. Iron supplement <strong>blood banane mein madad</strong> karta hai kyunke pregnancy mein blood volume 50% tak barh jata hai. Iron ko <strong>orange juice ya vitamin C ke saath</strong> lein taake absorption behtar ho. Chai/doodh ke saath na lein.</p>
+
+<h3>Calcium</h3>
+<p>Baby ki haddiyan banne ke liye calcium zaruri hai. Agar aap dairy products kam khaati hain to supplement lein. 1000mg daily recommended hai.</p>
+
+<h3>Vitamin D</h3>
+<p>Vitamin D calcium ki absorption mein madad karta hai. Pakistan mein despite sunny weather, Vitamin D deficiency bohat aam hai. Doctor se check karwayein.</p>
+
+<h2>Diet Aur Khaana — Matli Mein Kya Khaein?</h2>
+<p>Teesre mahine mein morning sickness ki wajah se khaana mushkil ho sakta hai. Yeh tips follow karein:</p>
+
+<h3>Morning Sickness Ke Liye Diet Tips</h3>
+<ul>
+<li><strong>Chhoti magar frequent meals</strong> lein — din mein 5-6 baar thoda thoda khaein</li>
+<li><strong>Subah khali pet na uthein</strong> — bedside pe dry crackers/biscuits rakhein, uthne se pehle khaein</li>
+<li><strong>Adrak (ginger) wali chai</strong> matli mein faydemand hai</li>
+<li>Bohat <strong>masaledar, oily, ya strong smell</strong> wala khaana avoid karein</li>
+<li><strong>Cold foods</strong> aksar behtar tolerate hote hain (smell kam hoti hai)</li>
+<li>Khaane ke beech mein <strong>pani piyen</strong>, khaane ke saath nahi</li>
+</ul>
+
+<h3>Kya Khaein?</h3>
+<ul>
+<li><strong>Protein-rich:</strong> anday, daal, chicken, dahi, paneer</li>
+<li><strong>Iron-rich:</strong> palak, chana, kaleji (cooked), kishmish</li>
+<li><strong>Calcium-rich:</strong> doodh, dahi, cheese, lassi</li>
+<li><strong>Fruits:</strong> kelay, seb, narangi, amrood</li>
+<li><strong>Whole grains:</strong> roti (atta wali), brown rice, daliya</li>
+<li><strong>Pani:</strong> 8-10 glasses rozana — dehydration se bachna zaruri hai</li>
+</ul>
+
+<h2>Kya Avoid Karein — Pregnancy Mein Mana</h2>
+<p>Teesre mahine mein (aur puri pregnancy mein) yeh cheezein <strong>avoid karein</strong>:</p>
+
+<ul>
+<li><strong>Raw/undercooked meat aur eggs</strong> — Salmonella aur Toxoplasmosis ka khatra</li>
+<li><strong>Unpasteurized dairy</strong> — Listeria infection ho sakti hai</li>
+<li><strong>Papaya (kaccha)</strong> aur <strong>pineapple zyada</strong> — kuch research mein uterine contractions se jora gaya hai</li>
+<li><strong>Bhari weight uthana</strong> — first trimester mein khaaskar avoid karein</li>
+<li><strong>X-rays</strong> — agar zaruri ho to doctor ko pregnancy ke baare mein zarur batayein</li>
+<li><strong>Koi bhi dawai bina doctor ke</strong> — even painkiller ya cold medicine</li>
+<li><strong>Smoking aur alcohol</strong> — bilkul band</li>
+<li><strong>Caffeine zyada</strong> — 200mg/day se kam (1-2 cups chai okay hai)</li>
+<li><strong>Hot tubs/sauna</strong> — body temperature zyada barhna baby ke liye harmful hai</li>
+</ul>
+
+<h2>Exercise Aur Physical Activity</h2>
+<p>Pregnancy mein exercise bilkul safe aur <strong>recommended</strong> hai — magar kuch precautions ke saath:</p>
+
+<h3>Safe Exercises:</h3>
+<ul>
+<li><strong>Walking</strong> — sab se behtareen aur safest exercise. Rozana 20-30 minutes</li>
+<li><strong>Prenatal yoga</strong> — flexibility aur breathing mein madad karta hai</li>
+<li><strong>Swimming</strong> — joints pe kam pressure, comfortable rehti hai</li>
+<li><strong>Light stretching</strong> — body ko flexible rakhta hai</li>
+</ul>
+
+<h3>Avoid Karein:</h3>
+<ul>
+<li>Contact sports (football, basketball)</li>
+<li>Heavy weight lifting</li>
+<li>High-intensity exercise (agar pehle se karti nahi thin)</li>
+<li>Pet ke bal laitne wali exercises</li>
+<li>Bohat garmi mein bahar exercise</li>
+</ul>
+
+<p><strong>Rule of thumb:</strong> Exercise ke dauran baat kar sakein to intensity theek hai. Sans phoolne lage to slow karein.</p>
+
+<h2>Red Flags — Kab Doctor Ko Foran Milein?</h2>
+<p>Kuch symptoms aise hain jin mein <strong>foran doctor se milna zaruri</strong> hai:</p>
+
+<ul>
+<li><strong>Bleeding (khoon aana)</strong> — chahe thoda bhi ho, doctor ko zarur batayein</li>
+<li><strong>Severe cramping</strong> — halki cramping normal hai, magar shadeed dard nahi</li>
+<li><strong>High fever</strong> (101°F+) — infection ka sign ho sakta hai</li>
+<li><strong>Symptoms achanak gayab ho jaein</strong> — breast tenderness aur matli achanak band hona kabhi kabhi missed miscarriage ka sign hota hai</li>
+<li><strong>Severe vomiting</strong> — kuch bhi andar na reh raha ho (hyperemesis gravidarum)</li>
+<li><strong>Burning/pain in urination</strong> — UTI ka sign</li>
+<li><strong>Dizziness ya behoshi</strong></li>
+</ul>
+
+<p><strong>Pakistan mein emergency:</strong> Agar bleeding heavy ho ya shadeed dard ho to nearest hospital emergency jaein. Lahore, Karachi, Islamabad mein major hospitals mein 24/7 OB-GYN emergency hoti hai.</p>
+
+<div class="blog-post__inline-cta">
+  <p>Koi symptom worry kar raha hai? Ilaaj AI pe abhi doctor se baat karein — 24/7 available, affordable consultation.</p>
+  <a href="https://app.ilaaj.ai">Abhi Doctor Se Poochhein</a>
+</div>
+
+<h2>Pakistan Mein Antenatal Care — Pehli Visit</h2>
+<p>Agar aap ne abhi tak OB-GYN (lady doctor) ko nahi dikhaya to teesra mahina <strong>pehli visit ka ideal waqt</strong> hai. Pakistan mein antenatal care ke key steps:</p>
+
+<h3>Pehli Visit Mein Kya Hoga:</h3>
+<ul>
+<li>Complete <strong>medical history</strong> — pehle ki pregnancies, koi bimari, family history</li>
+<li><strong>Physical examination</strong> — weight, blood pressure, general health</li>
+<li><strong>Blood tests</strong> — blood group, Rh factor, CBC, hepatitis B/C, HIV, blood sugar</li>
+<li><strong>Urine test</strong> — infection aur protein check</li>
+<li><strong>Ultrasound</strong> — baby ki heartbeat aur growth confirm</li>
+<li><strong>Supplements prescription</strong> — folic acid, iron, calcium</li>
+</ul>
+
+<h3>Pakistan Mein Costs:</h3>
+<p>Government hospitals (Lady Aitchison Lahore, Jinnah Hospital Karachi, PIMS Islamabad) mein antenatal care bohat sasti ya free hoti hai. Private mein pehli visit Rs. 1500-5000 tak hoti hai depending on city aur hospital. NT scan Rs. 3000-8000 ke beech hota hai.</p>
+
+<h3>Visits Ka Schedule:</h3>
+<p>Normal pregnancy mein doctor aksar yeh schedule follow karte hain:</p>
+<ul>
+<li>Week 8-12: Pehli visit + dating scan</li>
+<li>Week 11-14: NT scan</li>
+<li>Week 18-22: Anomaly scan (detailed ultrasound)</li>
+<li>Har 4 weeks mein checkup (28 weeks tak)</li>
+<li>Har 2 weeks (28-36 weeks)</li>
+<li>Har week (36 weeks ke baad delivery tak)</li>
+</ul>
+
+<h2>Emotional Wellbeing — Apna Khayal Rakhein</h2>
+<p>Pregnancy mein sirf physical health nahi, <strong>mental health</strong> bhi zaruri hai:</p>
+
+<ul>
+<li>Mood swings normal hain — apne aap ko blame na karein</li>
+<li>Partner aur family se baat karein — feelings share karein</li>
+<li>Zyada stress na lein — meditation ya deep breathing try karein</li>
+<li>Miscarriage ka dar hona normal hai — magar week 12 ke baad risk bohat kam ho jata hai</li>
+<li>Agar sadness ya anxiety bohat zyada ho to doctor se zarur batayein — perinatal depression real hai</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>Pregnancy ka teesra mahina challenging hai — morning sickness, thakawat, aur anxiety sab mil kar mushkil lagte hain. Magar yeh bhi wo waqt hai jab aap ka baby tezi se grow kar raha hai, ungliyan ban rahi hain, dil dharak raha hai. <strong>Week 12 ke baad</strong> aksar symptoms behtar hote hain aur second trimester ka comfortable phase shuru hota hai.</p>
+
+<p>Apni <strong>antenatal visits schedule pe rakhein</strong>, supplements regularly lein, healthy khaein, aur koi bhi red flag ho to doctor se milein. Agar koi sawal hai — chahe chota ho ya bara — <strong>Ilaaj AI</strong> pe doctor se mashwara karein. AI aap ki symptoms samjhega aur licensed doctor sahi guidance dega — affordable aur accessible, 24/7.</p>
+        </div>
+
+        <div class="blog-post__faq">
+          <h2>Frequently Asked Questions</h2>
+          <details class="blog-post__faq-item">
+            <summary>Pregnancy ke teesre mahine mein kya kya hota hai?</summary>
+            <div class="blog-post__faq-answer">Baby 3 inch ka ho jata hai, ungliyan/paon ki ungliyan banti hain, dil ki dharkan 150-170 bpm, organs develop hote hain. Maa ko morning sickness peak, thakawat, frequent urination hoti hai.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Teesre mahine mein kaunse tests zaruri hain?</summary>
+            <div class="blog-post__faq-answer">NT scan (nuchal translucency) 11-14 weeks pe, blood tests Down syndrome risk ke liye, dating scan due date confirm karne ke liye, CBC, blood group, hepatitis screening, urine routine.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Morning sickness ka kya ilaj hai?</summary>
+            <div class="blog-post__faq-answer">Chhoti magar frequent meals lein, subah khali pet na uthein — dry crackers rakhein, adrak wali chai piyen, vitamin B6 doctor ki advice pe, zyada masaledar khaana avoid karein. Week 12 ke baad aksar behtar hoti hai.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Pregnancy mein kaunsi cheezein avoid karni chahiyen?</summary>
+            <div class="blog-post__faq-answer">Raw/undercooked meat aur eggs, unpasteurized dairy, papaya/pineapple zyada, bhari weight uthana, X-rays, koi bhi dawai bina doctor ke, smoking/alcohol/caffeine zyada.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Folic acid kitne din tak leni chahiye?</summary>
+            <div class="blog-post__faq-answer">Folic acid 400mcg rozana pehle trimester bhar zaruri hai — ideally pregnancy se pehle shuru karein. Yeh baby ke neural tube defects (brain/spine) se bachaati hai. Doctor aksar pregnancy ke end tak continue karte hain.</div>
+          </details>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="blog-post__related">
+          <h2>Related Articles</h2>
+          <ul class="blog-post__related-list">
+            <li><a href="/blog/bukhar-ka-ilaj">Bukhar Ka Ilaj</a></li>
+            <li><a href="/blog/sir-dard-ka-ilaj">Sir Dard Ka Ilaj</a></li>
+            <li><a href="/blog">Browse All Health Articles &rarr;</a></li>
+          </ul>
+        </div>
+
+        <div class="blog-post__about">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="blog-post__about-logo">
+          <div class="blog-post__about-text">
+            <strong>About Ilaaj AI</strong>
+            <p>Ilaaj AI is Pakistan's first AI-powered health platform. Chat about your symptoms in Urdu or English, get AI-powered triage, and receive doctor-verified prescriptions — affordable and accessible, 24/7.</p>
+          </div>
+        </div>
+
+        <div class="blog-post__cta">
+          <div class="blog-post__cta-card">
+            <h3 class="blog-post__cta-title">Need Health Advice?</h3>
+            <p class="blog-post__cta-desc">Chat with our AI health assistant in any language. Get doctor-verified prescriptions at affordable rates.</p>
+            <div class="blog-post__cta-actions">
+              <a href="https://app.ilaaj.ai" class="btn btn--hero-primary">Try Ilaaj AI Now</a>
+              <a href="/blog" class="btn--outline">Read More Articles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <img src="../assets/ilaaj-logo.jpg" alt="Ilaaj AI" class="footer__logo-img" width="36" height="36" loading="lazy">
+            <span class="footer__logo-text">Ilaaj AI</span>
+          </div>
+          <p class="footer__brand-desc">Pakistan's first AI-powered health platform. Chat about your symptoms in any language, get AI triage, and receive doctor-verified prescriptions &mdash; affordable and accessible, 24/7.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/ilaaj_ai/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.516 2.497 5.783 2.225 7.149 2.163 8.415 2.105 8.795 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.987 15.668 24 15.259 24 12s-.013-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324A6.162 6.162 0 0 0 12 5.838zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61588590745625" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+            <a href="https://x.com/ilaajai" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Product</h4>
+          <ul class="footer__links">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#how-it-works">How It Works</a></li>
+            <li><a href="/#doctors">Our Doctors</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="../support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <p class="footer__contact-text">Questions or feedback?</p>
+          <a href="mailto:support@ilaaj.ai" class="footer__email">support@ilaaj.ai</a>
+          <p class="footer__emergency">For emergencies, call <strong>1122</strong> (Rescue)</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span class="footer-year"></span> Ilaaj AI. All rights reserved.</p>
+        <p class="footer__disclaimer">Ilaaj AI is for general health consultations and non-emergency medical guidance. For emergencies, call 1122 (Rescue) or visit the nearest hospital.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+    document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());
+  </script>
+  <!-- Tawk.to Live Chat (lazy-loaded) -->
+  <script>
+  (function() {
+    var tawkLoaded = false;
+    function loadTawk() {
+      if (tawkLoaded) return;
+      tawkLoaded = true;
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/69ce56b0127eae1c37be0e72/1jl70596p';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    }
+    document.addEventListener('scroll', loadTawk, {once: true});
+    document.addEventListener('click', loadTawk, {once: true});
+    document.addEventListener('mouseover', loadTawk, {once: true});
+  })();
+  </script>
+</body>
+</html>

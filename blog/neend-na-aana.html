@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+  <!-- Sentry: error tracking + session replay -->
+  <script src="https://js.sentry-cdn.com/defa6ca82daea4d4c49a8b69b87c53cc.min.js" crossorigin="anonymous"></script>
+  <script>
+    window.sentryOnLoad = function () {
+      Sentry.init({
+        integrations: [Sentry.replayIntegration({ maskAllText: false, blockAllMedia: false })],
+        tracesSampleRate: 0.1,
+        replaysSessionSampleRate: 0.1,
+        replaysOnErrorSampleRate: 1.0,
+      });
+    };
+  </script>
+  <!-- PostHog: product analytics + session replay -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_xjBQ5vUS7nTJz4jHta6d5dDE7jHdtFjFuqkxAJjvcFzo', { api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only', cross_subdomain_cookie: true });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XKTHF96');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1697266221447949');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1697266221447949&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neend Na Aana (Insomnia) Ka Ilaj — Sleep Tips Pakistan | Ilaaj AI</title>
+  <meta name="description" content="Insomnia ka ilaj — neend na aana, raat ko jagagna. Sleep hygiene, melatonin aur medicine. Pakistan-specific guide.">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="neend na aana ka ilaj, insomnia treatment pakistan, sleep tips, neend ki tablet, melatonin, sleep hygiene">
+  <meta name="geo.region" content="PK">
+  <meta name="geo.placename" content="Pakistan">
+  <meta name="google-site-verification" content="8RtzwgVYowrMGF4E77jnKOX33seYEQTuXmxps2XkPxI">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.ilaaj.ai/blog/neend-na-aana">
+  <link rel="alternate" hreflang="ur-PK" href="https://www.ilaaj.ai/blog/neend-na-aana" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ilaaj.ai/blog/neend-na-aana" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/logo/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/logo/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/logo/site.webmanifest" />
+
+  <!-- PWA / Mobile -->
+  <meta name="theme-color" content="#00897B">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="IlaajAI">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Neend Na Aana (Insomnia) Ka Ilaj — Sleep Tips Pakistan | Ilaaj AI">
+  <meta property="og:description" content="Insomnia ka ilaj — neend na aana, raat ko jagagna. Sleep hygiene, melatonin aur medicine. Pakistan-specific guide.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ilaaj.ai/blog/neend-na-aana">
+  <meta property="og:image" content="https://images.pexels.com/photos/8410719/pexels-photo-8410719.jpeg?auto=compress&cs=tinysrgb&w=1200">
+  <meta property="og:image:alt" content="Person having trouble sleeping — insomnia">
+  <meta property="og:site_name" content="Ilaaj AI">
+  <meta property="og:locale" content="ur_PK">
+  <meta property="article:published_time" content="2026-06-22T09:00:00.000Z">
+  <meta property="article:modified_time" content="2026-06-22T09:00:00.000Z">
+  <meta property="article:author" content="Ilaaj AI Medical Team">
+  <meta property="article:section" content="Mental Health">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ilaajai">
+  <meta name="twitter:creator" content="@ilaajai">
+  <meta name="twitter:title" content="Neend Na Aana (Insomnia) Ka Ilaj — Sleep Tips Pakistan | Ilaaj AI">
+  <meta name="twitter:description" content="Insomnia ka ilaj — neend na aana, raat ko jagagna. Sleep hygiene, melatonin aur medicine. Pakistan-specific guide.">
+  <meta name="twitter:image" content="https://images.pexels.com/photos/8410719/pexels-photo-8410719.jpeg?auto=compress&cs=tinysrgb&w=1200">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNTMD61HWL"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KNTMD61HWL');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/blog.css">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.ilaaj.ai/blog/neend-na-aana"
+  },
+  "headline": "Neend Na Aana (Insomnia) Ka Ilaj — Sleep Tips Pakistan",
+  "description": "Insomnia ka ilaj — neend na aana, raat ko jagagna. Sleep hygiene, melatonin aur medicine. Pakistan-specific guide.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://images.pexels.com/photos/8410719/pexels-photo-8410719.jpeg?auto=compress&cs=tinysrgb&w=1200"
+  },
+  "datePublished": "2026-06-22T09:00:00.000Z",
+  "dateModified": "2026-06-22T09:00:00.000Z",
+  "author": {
+    "@type": "Organization",
+    "name": "Ilaaj AI Medical Team",
+    "url": "https://www.ilaaj.ai/doctors"
+  },
+  "reviewedBy": { "@type": "Person", "name": "Dr. Saira Zafar", "jobTitle": "General Practitioner", "url": "https://www.ilaaj.ai/doctors/dr-saira-zafar" },
+  "lastReviewed": "2026-06-22",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ilaaj AI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.ilaaj.ai/assets/Icon-192.png"
+    }
+  },
+  "keywords": "neend na aana ka ilaj, insomnia treatment pakistan, sleep tips, neend ki tablet, melatonin, sleep hygiene",
+  "inLanguage": "ur",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Ilaaj AI Blog",
+    "url": "https://www.ilaaj.ai/blog"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.ilaaj.ai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.ilaaj.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Neend Na Aana (Insomnia) Ka Ilaj — Sleep Tips Pakistan",
+      "item": "https://www.ilaaj.ai/blog/neend-na-aana"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Raat ko neend kyun nahi aati?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Neend na aane ki sab se aam wajuhat hain: mobile/social media ka zyada istemal (blue light melatonin rok deti hai), zyada chai/coffee (caffeine 6-8 ghante tak asar karti hai), stress aur anxiety, sone ka fixed schedule na hona, kamre mein roshni ya shor, aur BP/thyroid ki dawaiyan. Pakistan mein raat ko 1-2 baje tak mobile dekhna sab se bari wajah hai. Sone se 1 ghanta pehle mobile band karein."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Neend ki tablet safe hai ya nahi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Melatonin (1-3mg) relatively safe hai aur OTC milti hai — short-term use ke liye theek hai. Magar prescription sleeping pills jaise Zolpidem (Stilnox) aur Benzodiazepines (Lexotanil, Valium) aadat bana sakte hain aur lambe waqt tak lene se kaam karna band kar dete hain. Inhe sirf doctor ki supervision mein aur short-term (2-4 hafte) lein. Kabhi apni marzi se sleeping pills shuru na karein — pehle sleep hygiene try karein."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kitne ghante neend zaruri hai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Adults (18-64 saal) ke liye 7-9 ghante neend zaruri hai. Buzurgon (65+) ke liye 7-8 ghante. Teenagers ke liye 8-10 ghante. Bachon (6-12 saal) ke liye 9-12 ghante. Zaruri yeh nahi ke kitni der soyen balke neend ki quality kaisi hai — agar 7 ghante ke baad bhi thake uthein to neend ki quality kharaab hai. Deep sleep aur REM sleep dono zaruri hain."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Chai kitni peeni chahiye agar neend nahi aati?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Agar neend ki problem hai to chai/coffee sirf subah 1-2 cup tak rakhein — dopahar 2 baje ke baad caffeine bilkul nahi leni chahiye. Caffeine ka asar 6-8 ghante tak rehta hai. Pakistan mein raat 10 baje chai peena bohat aam hai — yeh neend kharaab karne ki sab se bari wajah hai. Raat ko chamomile tea ya garam doodh piyo — yeh neend laane mein madad karte hain."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kab doctor ko dikhana zaruri hai neend ke liye?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Doctor ko dikhayein agar: 3 hafte se zyada roz neend na aa rahi ho, din mein itni thakawat ho ke kaam na ho sake, kharrate bohat zyada aate hon (sleep apnea ka khatra), neend mein sans ruk rahi ho, raat ko tangein bechain hoti hon (restless legs), ya neend ki kami se BP/sugar control nahi ho raha. Doctor sleep study recommend kar sakta hai jo sleep disorders diagnose karta hai."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKTHF96"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar navbar--scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="/" class="navbar__brand">
+        <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="navbar__logo">
+        <span class="navbar__name">Ilaaj AI</span>
+      </a>
+      <div class="navbar__center" id="navLinks">
+        <a href="/#how-it-works" class="navbar__link">How It Works</a>
+        <a href="/#features" class="navbar__link">Features</a>
+        <a href="/blog" class="navbar__link navbar__link--active">Blog</a>
+        <a href="/#faq" class="navbar__link">FAQ</a>
+      </div>
+      <div class="navbar__right">
+        <a href="https://app.ilaaj.ai" class="btn btn--primary btn--sm navbar__cta">
+          Muft Mashwara Lein
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile" id="mobileMenu">
+      <a href="/#how-it-works" class="navbar__mobile-link">How It Works</a>
+      <a href="/#features" class="navbar__mobile-link">Features</a>
+      <a href="/blog" class="navbar__mobile-link">Blog</a>
+      <a href="/#faq" class="navbar__mobile-link">FAQ</a>
+      <a href="https://app.ilaaj.ai" class="btn btn--primary btn--full">Muft Mashwara Lein</a>
+    </div>
+  </nav>
+
+  <main>
+    <article class="blog-post">
+      <div class="container">
+        <a href="/blog" class="blog-post__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Articles
+        </a>
+
+        <div class="blog-post__featured-image"><img src="https://images.pexels.com/photos/8410719/pexels-photo-8410719.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Person having trouble sleeping — insomnia"></div>
+
+        <div class="blog-post__author">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI Medical Team" class="blog-post__author-avatar">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name">Ilaaj AI Medical Team</div>
+            <div class="blog-post__author-creds">PMDC-verified doctors reviewing every article</div>
+            <div class="blog-post__author-dates">Published: June 22, 2026 | Last reviewed: June 22, 2026</div>
+          </div>
+        </div>
+
+        <div class="blog-post__author blog-post__author--reviewer">
+          <img src="https://res.cloudinary.com/dpaz2mhy6/image/upload/f_auto,q_auto,w_96,h_96,c_fill,g_face/v1776334958/zwpaowaamnt8euxzlkzh.png" alt="Dr. Saira Zafar" class="blog-post__author-avatar" loading="lazy">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name"><a href="/doctors/dr-saira-zafar">Dr. Saira Zafar</a></div>
+            <div class="blog-post__author-creds blog-post__author-creds--reviewer">Medically reviewed by — PMDC-verified General Practitioner</div>
+            <div class="blog-post__author-dates">Reviewed on: June 22, 2026</div>
+          </div>
+        </div>
+
+        <h1 class="blog-post__title">Neend Na Aana (Insomnia) Ka Ilaj — Sleep Tips Pakistan Mein</h1>
+
+        <div class="blog-post__tldr">
+          <div class="blog-post__tldr-title">TL;DR — Key Takeaways</div>
+          <ul>
+            <li>Pakistan mein 40%+ adults ko neend ki koi na koi problem hai</li>
+            <li>Mobile/social media raat ko sab se bari wajah hai — blue light melatonin rokti hai</li>
+            <li>Chai dopahar 2 baje ke baad bilkul nahi — caffeine 6-8 ghante tak asar karti hai</li>
+            <li>Sleep hygiene se 70%+ insomnia cases mein farq parta hai</li>
+            <li>Sleeping pills aadat bana sakti hain — sirf doctor ke saath</li>
+            <li>Agar 3 hafte se zyada neend na aaye to doctor zaruri hai</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+<h2>Insomnia (Neend Na Aana) Kya Hai?</h2>
+<p>Insomnia ka matlab hai <strong>neend na aana ya achi neend na aana</strong> — chahe sone mein mushkil ho, raat ko baar baar jaag jaein, ya subah bohat jaldi aankhein khul jaein. Agar yeh problem haftay mein 3 ya zyada raatein ho aur <strong>din ki zindagi mutasir</strong> ho rahi ho (thakawat, mood kharaab, kaam mein dhyan na lagay) to ise insomnia kehte hain.</p>
+
+<p>Pakistan mein neend ki problem <strong>bohat aam</strong> hai — studies ke mutabiq <strong>40% se zyada adults</strong> ko kisi na kisi waqt insomnia hota hai. Magar log ise bimari nahi samajhte — "bas thori tension hai" keh ke nazarandaaz kar dete hain. Haqeeqat mein chronic insomnia se <strong>BP barhna, sugar, depression, aur dil ki bimariyan</strong> ho sakti hain.</p>
+
+<table class="blog-post__quick-facts">
+  <caption>Insomnia Ki Types</caption>
+  <tbody>
+    <tr><td><strong>Acute Insomnia</strong></td><td>Chand dinon ya hafton ki — stress, safar, ya bimari se</td></tr>
+    <tr><td><strong>Chronic Insomnia</strong></td><td>3 mahine se zyada, haftay mein 3+ raatein — ilaj zaruri</td></tr>
+    <tr><td><strong>Onset Insomnia</strong></td><td>Sone mein mushkil — bistar pe 30+ minute lag jaate hain</td></tr>
+    <tr><td><strong>Maintenance Insomnia</strong></td><td>Beech raat jaag jana aur dubara neend na aana</td></tr>
+  </tbody>
+</table>
+
+<h2>Pakistan Mein Neend Na Aane Ki Wajuhat</h2>
+<p>Pakistan mein insomnia ki kuch <strong>khaas wajuhat</strong> hain jo dusre mulkon se different hain:</p>
+
+<h3>Mobile Aur Social Media</h3>
+<p>Yeh <strong>Pakistan mein insomnia ki sab se bari wajah</strong> hai. Raat ko bistar mein let ke TikTok, Instagram, YouTube, WhatsApp dekhna — <strong>blue light</strong> aap ke brain ko signal deta hai ke abhi din hai, aur <strong>melatonin (neend ka hormone) release nahi hota</strong>. Studies show karte hain ke sone se 1 ghanta pehle screen dekhne se neend aane mein <strong>average 45 minute</strong> zyada lagte hain.</p>
+
+<h3>Chai Ka Excess</h3>
+<p>Pakistan mein roz <strong>6-8 cup chai</strong> peena normal maana jata hai — magar har cup mein 40-60mg caffeine hoti hai. Raat 10-11 baje chai peena <strong>sab se badi ghalti</strong> hai — caffeine ka asar <strong>6-8 ghante</strong> tak rehta hai. Yani agar raat 10 baje chai pi to subah 4-6 baje tak caffeine kaam kar rahi hai.</p>
+
+<h3>Stress Aur Anxiety</h3>
+<p>Mehngai, job ki tension, family problems, exams — Pakistan mein stress ke sources bohat hain. Jab dimagh mein <strong>fikren chal rahi hon</strong> to neend aana mushkil ho jata hai.</p>
+
+<h3>Noise Pollution</h3>
+<p>Pakistani shahron mein <strong>traffic, masjid ke loudspeaker, generator, aur pados ka shor</strong> — yeh sab neend torne ki wajah bante hain. Lahore aur Karachi duniya ke sab se zyada noisy shahron mein shamil hain.</p>
+
+<h3>Load Shedding</h3>
+<p>Bijli band, pankha band, garmi mein <strong>pasina — neend kaise aaye?</strong> Garmi ke mausam mein load shedding insomnia ki wajah banti hai.</p>
+
+<h3>Medical Wajuhat</h3>
+<ul>
+<li>Anxiety aur depression — sab se common medical cause</li>
+<li>Thyroid problems (hyperthyroidism)</li>
+<li>Chronic pain — kamar dard, joints ka dard</li>
+<li>Sleep apnea — kharrate + neend mein sans rokna</li>
+<li>Restless Leg Syndrome — tangon mein beychaini</li>
+<li>BP aur asthma ki dawaiyan bhi neend mutasir karti hain</li>
+</ul>
+
+<div class="blog-post__inline-cta">
+  <p>Raat ko neend nahi aati? Ilaaj AI pe doctor se baat karein — wajah pata lagayega aur safe ilaj batayega.</p>
+  <a href="https://app.ilaaj.ai">Doctor Se Abhi Mashwara Karein</a>
+</div>
+
+<h2>Neend Na Aane Ke Health Effects</h2>
+<p>Log sochte hain "bas thori neend kam hui" — magar chronic insomnia ke <strong>serious health effects</strong> hain:</p>
+<ul>
+<li><strong>Mental health:</strong> Depression ka khatra 3-4 guna barh jata hai, anxiety barhti hai</li>
+<li><strong>BP (High Blood Pressure):</strong> Kam neend se BP barhta hai — heart attack ka khatra</li>
+<li><strong>Sugar/Diabetes:</strong> Sleep deprivation insulin resistance barhata hai</li>
+<li><strong>Weight gain:</strong> Kam neend se bhook barhti hai (ghrelin hormone) — motapa</li>
+<li><strong>Immune system kamzor:</strong> Bimariyan zyada lagti hain</li>
+<li><strong>Concentration kam:</strong> Kaam, padhai mein dhyan na lagay</li>
+<li><strong>Accidents:</strong> Drowsy driving se har saal hazaron accidents hote hain</li>
+<li><strong>Mood swings:</strong> Chidchidapan, gussa, emotional instability</li>
+</ul>
+
+<h2>Sleep Hygiene — Neend Behtar Karne Ke Rules</h2>
+<p>Sleep hygiene ka matlab hai wo <strong>aadaat aur maahol</strong> jo achi neend ke liye zaruri hain. <strong>70% se zyada insomnia cases</strong> sirf sleep hygiene se behtar ho jaate hain:</p>
+
+<h3>Fixed Schedule:</h3>
+<ul>
+<li><strong>Roz ek hi waqt soyen aur uthein</strong> — weekend pe bhi (yeh sab se important rule hai)</li>
+<li>Body ki internal clock (circadian rhythm) set hoti hai — neend apne aap aane lagti hai</li>
+<li>Alarm se uthein — snooze mat karein</li>
+</ul>
+
+<h3>Screen-Free Zone:</h3>
+<ul>
+<li><strong>Sone se 1 ghanta pehle mobile, laptop, TV band</strong></li>
+<li>Blue light filter apps kafi nahi — content bhi brain ko stimulate karta hai</li>
+<li>Mobile bedroom se bahar rakhein — alarm ke liye ghariyal (clock) rakhein</li>
+</ul>
+
+<h3>Kamre Ka Maahol:</h3>
+<ul>
+<li><strong>Andheraa:</strong> Curtains se roshni band karein — darkness mein melatonin release hota hai</li>
+<li><strong>Thanda:</strong> Ideal temperature 18-22°C — garmi mein pankha/AC zaruri</li>
+<li><strong>Khamoshi:</strong> Ear plugs ya white noise machine try karein</li>
+<li>Bistar sirf sone ke liye — kaam, khana, mobile bistar pe nahi</li>
+</ul>
+
+<h3>Caffeine Control:</h3>
+<ul>
+<li>Chai/coffee <strong>dopahar 2 baje ke baad bilkul nahi</strong></li>
+<li>Din mein maximum <strong>2 cup</strong> chai — zyada nahi</li>
+<li>Green tea mein bhi caffeine hoti hai — raat ko mat piyo</li>
+<li>Cola, energy drinks bhi caffeine walay hain</li>
+</ul>
+
+<h2>Ghareloo Nuskhe — Natural Sleep Aids</h2>
+<p>Yeh safe aur natural tareeqay neend laane mein madad kar sakte hain:</p>
+<ul>
+<li><strong>Garam doodh:</strong> Sone se 30 minute pehle — tryptophan neend laane mein madad karta hai</li>
+<li><strong>Chamomile tea:</strong> Caffeine-free — naturally calming hai</li>
+<li><strong>Lavender:</strong> Lavender oil takiye pe 1-2 boond — relaxation mein madad karta hai</li>
+<li><strong>Garam paani se nahana:</strong> Sone se 1-2 ghanta pehle — body temperature drop neend signal deta hai</li>
+<li><strong>Khajourein:</strong> 2-3 khajoorein sone se pehle — natural melatonin source</li>
+<li><strong>Deep breathing:</strong> 4-7-8 technique (4 sec andar, 7 sec hold, 8 sec bahar) — body relax hoti hai</li>
+</ul>
+
+<h2>Neend Ki Dawaiyan — Kya Safe Hai?</h2>
+<p><strong>Dawai hamesha doctor ke mashware se lein</strong> — Pakistan mein sleeping pills bina prescription mil jaati hain magar yeh khatarnak hai:</p>
+
+<h3>Melatonin (OTC):</h3>
+<ul>
+<li>Body ka natural sleep hormone — supplement form mein milta hai</li>
+<li><strong>1-3mg sone se 30-60 minute pehle</strong> lein</li>
+<li>Jet lag aur shift workers ke liye khaaskar useful</li>
+<li>Relatively safe hai magar 4 hafte se zyada bina doctor ke na lein</li>
+<li>Pakistan mein pharmacies pe Rs. 500-1,500 mein milti hai</li>
+</ul>
+
+<h3>Prescription Medicines:</h3>
+<ul>
+<li><strong>Zolpidem (Stilnox):</strong> Short-acting — sone mein madad karta hai magar <strong>aadat ban sakti hai</strong></li>
+<li><strong>Trazodone:</strong> Low-dose — insomnia + depression ke liye, relatively safe</li>
+<li><strong>Benzodiazepines (Lexotanil, Valium):</strong> <strong>BOHAT aadat-forming</strong> — sirf short-term, sirf doctor ke saath</li>
+<li><strong>Antihistamines (Phenergan):</strong> Over-the-counter — drowsiness karti hai magar long-term ke liye nahi</li>
+</ul>
+<p><strong>WARNING:</strong> Pakistan mein Lexotanil aur Valium bina prescription milti hain — log apni marzi se lete hain. Yeh <strong>bohat khatarnak</strong> hai — aadat, tolerance, aur withdrawal seizures ho sakte hain.</p>
+
+<h2>CBT-I — Insomnia Ki Best Therapy</h2>
+<p>CBT-I (Cognitive Behavioral Therapy for Insomnia) insomnia ke ilaj ka <strong>gold standard</strong> hai — research se sabit hai ke dawai se bhi zyada effective hai long-term:</p>
+<ul>
+<li><strong>Sleep restriction:</strong> Bistar mein sirf utna waqt jitni actual neend aati hai — dheere dheere barhate hain</li>
+<li><strong>Stimulus control:</strong> Bistar sirf sone ke liye — 20 minute neend na aaye to uth jaein, kuch boring karein, neend aaye to wapas aayein</li>
+<li><strong>Cognitive restructuring:</strong> "Mujhe neend nahi aayegi" jaisi negative thoughts ko challenge karna</li>
+<li><strong>Relaxation training:</strong> Progressive muscle relaxation, breathing exercises</li>
+<li>Aksar <strong>6-8 sessions</strong> mein significant improvement</li>
+<li>Online CBT-I programs bhi available hain</li>
+</ul>
+
+<h2>Exercise Aur Neend</h2>
+<p>Regular exercise neend ke liye <strong>bohat faydemand</strong> hai:</p>
+<ul>
+<li>Roz <strong>30 minute moderate exercise</strong> (brisk walk, cycling) neend ki quality significantly improve karta hai</li>
+<li>Magar <strong>sone se 3-4 ghante pehle</strong> exercise khatam kar lein — late night exercise neend kharaab karti hai</li>
+<li>Subah ya dopahar ki exercise sab se best hai</li>
+<li>Yoga aur stretching sone se pehle okay hai — yeh relax karti hai</li>
+</ul>
+
+<h2>Kab Doctor Zaruri Hai?</h2>
+<ul>
+<li>Insomnia <strong>3 hafte se zyada</strong> ho</li>
+<li>Din mein itni <strong>thakawat</strong> ho ke kaam ya gaari chalana mushkil ho</li>
+<li><strong>Kharrate bohat zyada</strong> aate hon ya partner kahe ke neend mein sans ruk rahi hai (sleep apnea)</li>
+<li><strong>Tangon mein beychaini</strong> — hilane ka dil kare (restless legs)</li>
+<li>Neend ki kami se <strong>BP ya sugar control nahi</strong> ho raha</li>
+<li>Depression ya anxiety ke saath insomnia ho</li>
+<li>Apni marzi se sleeping pills le rahe hon aur <strong>band nahi kar pa rahe</strong></li>
+</ul>
+<p>Doctor <strong>sleep study (polysomnography)</strong> recommend kar sakta hai jo raat bhar neend ki recording karta hai — sleep apnea, restless legs, aur doosre disorders diagnose karta hai.</p>
+
+<div class="blog-post__inline-cta">
+  <p>Neend ki problem se preshan hain? Ilaaj AI pe doctor se baat karein — wajah samjhega aur safe treatment plan banayega. Koi sleeping pills ki zarurat bhi nahi ho sakti.</p>
+  <a href="https://app.ilaaj.ai">Abhi Muft Mashwara Lein</a>
+</div>
+
+<h2>Conclusion</h2>
+<p>Neend na aana sirf "thori tension" nahi — yeh ek <strong>real medical problem</strong> hai jo aap ki physical aur mental health dono ko nuqsaan pahunchati hai. Khush-khabri yeh hai ke <strong>70%+ cases sirf sleep hygiene</strong> (fixed schedule, no screen, no late chai) se behtar ho jaate hain. Sleeping pills sirf temporary hal hain — asl ilaj <strong>CBT-I aur lifestyle changes</strong> hain. Agar aap ki neend 3 hafte se zyada kharaab hai to <strong>Ilaaj AI</strong> pe doctor se mashwara karein — AI symptoms analyze karega aur doctor safe aur effective treatment plan banayega.</p>
+        </div>
+
+        <div class="blog-post__faq">
+          <h2>Frequently Asked Questions</h2>
+          <details class="blog-post__faq-item">
+            <summary>Raat ko neend kyun nahi aati?</summary>
+            <div class="blog-post__faq-answer">Neend na aane ki sab se aam wajuhat hain: mobile/social media ka zyada istemal (blue light melatonin rok deti hai), zyada chai/coffee (caffeine 6-8 ghante tak asar karti hai), stress aur anxiety, sone ka fixed schedule na hona, kamre mein roshni ya shor, aur BP/thyroid ki dawaiyan. Pakistan mein raat ko 1-2 baje tak mobile dekhna sab se bari wajah hai. Sone se 1 ghanta pehle mobile band karein.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Neend ki tablet safe hai ya nahi?</summary>
+            <div class="blog-post__faq-answer">Melatonin (1-3mg) relatively safe hai aur OTC milti hai — short-term use ke liye theek hai. Magar prescription sleeping pills jaise Zolpidem (Stilnox) aur Benzodiazepines (Lexotanil, Valium) aadat bana sakte hain aur lambe waqt tak lene se kaam karna band kar dete hain. Inhe sirf doctor ki supervision mein aur short-term (2-4 hafte) lein. Kabhi apni marzi se sleeping pills shuru na karein — pehle sleep hygiene try karein.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Kitne ghante neend zaruri hai?</summary>
+            <div class="blog-post__faq-answer">Adults (18-64 saal) ke liye 7-9 ghante neend zaruri hai. Buzurgon (65+) ke liye 7-8 ghante. Teenagers ke liye 8-10 ghante. Bachon (6-12 saal) ke liye 9-12 ghante. Zaruri yeh nahi ke kitni der soyen balke neend ki quality kaisi hai — agar 7 ghante ke baad bhi thake uthein to neend ki quality kharaab hai. Deep sleep aur REM sleep dono zaruri hain.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Chai kitni peeni chahiye agar neend nahi aati?</summary>
+            <div class="blog-post__faq-answer">Agar neend ki problem hai to chai/coffee sirf subah 1-2 cup tak rakhein — dopahar 2 baje ke baad caffeine bilkul nahi leni chahiye. Caffeine ka asar 6-8 ghante tak rehta hai. Pakistan mein raat 10 baje chai peena bohat aam hai — yeh neend kharaab karne ki sab se bari wajah hai. Raat ko chamomile tea ya garam doodh piyo — yeh neend laane mein madad karte hain.</div>
+          </details>
+          <details class="blog-post__faq-item">
+            <summary>Kab doctor ko dikhana zaruri hai neend ke liye?</summary>
+            <div class="blog-post__faq-answer">Doctor ko dikhayein agar: 3 hafte se zyada roz neend na aa rahi ho, din mein itni thakawat ho ke kaam na ho sake, kharrate bohat zyada aate hon (sleep apnea ka khatra), neend mein sans ruk rahi ho, raat ko tangein bechain hoti hon (restless legs), ya neend ki kami se BP/sugar control nahi ho raha. Doctor sleep study recommend kar sakta hai jo sleep disorders diagnose karta hai.</div>
+          </details>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="blog-post__related">
+          <h2>Related Articles</h2>
+          <ul class="blog-post__related-list">
+            <li><a href="/blog/anxiety-ka-ilaj">Anxiety Ka Ilaj — Ghabrahat Aur Panic Attack</a></li>
+            <li><a href="/blog/sir-dard-ka-ilaj">Sir Dard Ka Ilaj — Wajah aur Treatment</a></li>
+            <li><a href="/blog">Browse All Health Articles &rarr;</a></li>
+          </ul>
+        </div>
+
+        <div class="blog-post__about">
+          <img src="../assets/Icon-192.png" alt="Ilaaj AI" class="blog-post__about-logo">
+          <div class="blog-post__about-text">
+            <strong>About Ilaaj AI</strong>
+            <p>Ilaaj AI is Pakistan's first AI-powered health platform. Chat about your symptoms in Urdu or English, get AI-powered triage, and receive doctor-verified prescriptions — affordable and accessible, 24/7.</p>
+          </div>
+        </div>
+
+        <div class="blog-post__cta">
+          <div class="blog-post__cta-card">
+            <h3 class="blog-post__cta-title">Need Health Advice?</h3>
+            <p class="blog-post__cta-desc">Chat with our AI health assistant in any language. Get doctor-verified prescriptions at affordable rates.</p>
+            <div class="blog-post__cta-actions">
+              <a href="https://app.ilaaj.ai" class="btn btn--hero-primary">Try Ilaaj AI Now</a>
+              <a href="/blog" class="btn--outline">Read More Articles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <img src="../assets/ilaaj-logo.jpg" alt="Ilaaj AI" class="footer__logo-img" width="36" height="36" loading="lazy">
+            <span class="footer__logo-text">Ilaaj AI</span>
+          </div>
+          <p class="footer__brand-desc">Pakistan's first AI-powered health platform. Chat about your symptoms in any language, get AI triage, and receive doctor-verified prescriptions &mdash; affordable and accessible, 24/7.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/ilaaj_ai/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.516 2.497 5.783 2.225 7.149 2.163 8.415 2.105 8.795 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.987 15.668 24 15.259 24 12s-.013-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324A6.162 6.162 0 0 0 12 5.838zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61588590745625" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+            <a href="https://x.com/ilaajai" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Product</h4>
+          <ul class="footer__links">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#how-it-works">How It Works</a></li>
+            <li><a href="/#doctors">Our Doctors</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="../support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <p class="footer__contact-text">Questions or feedback?</p>
+          <a href="mailto:support@ilaaj.ai" class="footer__email">support@ilaaj.ai</a>
+          <p class="footer__emergency">For emergencies, call <strong>1122</strong> (Rescue)</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span class="footer-year"></span> Ilaaj AI. All rights reserved.</p>
+        <p class="footer__disclaimer">Ilaaj AI is for general health consultations and non-emergency medical guidance. For emergencies, call 1122 (Rescue) or visit the nearest hospital.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+    document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());
+  </script>
+  <!-- Tawk.to Live Chat (lazy-loaded) -->
+  <script>
+  (function() {
+    var tawkLoaded = false;
+    function loadTawk() {
+      if (tawkLoaded) return;
+      tawkLoaded = true;
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/69ce56b0127eae1c37be0e72/1jl70596p';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    }
+    document.addEventListener('scroll', loadTawk, {once: true});
+    document.addEventListener('click', loadTawk, {once: true});
+    document.addEventListener('mouseover', loadTawk, {once: true});
+  })();
+  </script>
+</body>
+</html>
