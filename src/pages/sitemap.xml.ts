@@ -31,7 +31,7 @@ const staticPages = [
 ];
 
 function clusterAlts(en: string, pk: string, ur?: string): Alt[] {
-  const alts: Alt[] = [{ hreflang: 'en', loc: en }, { hreflang: 'ur-PK', loc: pk }];
+  const alts: Alt[] = [{ hreflang: 'en', loc: en }, { hreflang: 'en-PK', loc: pk }];
   if (ur) alts.push({ hreflang: 'ur', loc: ur });
   alts.push({ hreflang: 'x-default', loc: en });
   return alts;
@@ -55,7 +55,7 @@ export const GET: APIRoute = () => {
       const enLoc = `/blog/${p.slug}`;
       const pkLoc = `/pk/blog/${p.slug}`;
       const en = hasEn(p.slug);
-      const alts: Alt[] = [{ hreflang: 'ur-PK', loc: pkLoc }];
+      const alts: Alt[] = [{ hreflang: 'en-PK', loc: pkLoc }];
       if (en) { alts.unshift({ hreflang: 'en', loc: enLoc }); alts.push({ hreflang: 'x-default', loc: enLoc }); }
       else { alts.push({ hreflang: 'x-default', loc: pkLoc }); }
       const out = [url(pkLoc, lastmod, 'monthly', '0.6', alts)];
