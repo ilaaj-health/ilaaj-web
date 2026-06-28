@@ -14,10 +14,9 @@ const schema = {
   '@context': 'https://schema.org',
   '@graph': [
     {
-      '@type': 'Physician', '@id': url, name: d.name, medicalSpecialty: d.spec,
-      hasCredential: d.qual, image: d.photoLg, url,
+      '@type': 'Person', '@id': url, name: d.name, jobTitle: d.spec,
+      hasCredential: d.qual, knowsAbout: d.spec, image: d.photoLg, url,
       worksFor: { '@id': 'https://www.ilaaj.ai/#organization' },
-      areaServed: 'PK', availableService: { '@type': 'MedicalProcedure', name: 'Online Consultation' },
     },
     {
       '@type': 'BreadcrumbList', itemListElement: [
