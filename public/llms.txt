@@ -75,6 +75,12 @@ Ilaaj AI is a telemedicine platform serving Pakistan. Users describe symptoms vi
 - [Nospa (Drotaverine) Uses](https://www.ilaaj.ai/blog/nospa-tablet-uses/): Antispasmodic for stomach cramps, IBS, biliary colic, renal colic, and period pain — safe in dengue, dose and interactions.
 - [Nuberol Forte Uses](https://www.ilaaj.ai/blog/nuberol-forte-uses/): Orphenadrine + paracetamol muscle relaxant for back pain and spasm — causes drowsiness, do not drive, anticholinergic warnings.
 - [Motilium (Domperidone) Uses](https://www.ilaaj.ai/blog/motilium-tablet-uses/): Anti-nausea prokinetic for nausea, vomiting, gastroparesis, bloating — cardiac QT risk at high doses, lactation use.
+- [Glucophage Tablet Uses](https://www.ilaaj.ai/blog/glucophage-tablet-uses/): Metformin first-line treatment for type 2 diabetes and PCOS — dosage titration, GI side effects, B12 deficiency risk, kidney function monitoring.
+- [Buscopan Tablet Uses](https://www.ilaaj.ai/blog/buscopan-tablet-uses/): Hyoscine butylbromide for stomach cramps, IBS, biliary and renal colic, period pain, bladder spasms — anticholinergic cautions, glaucoma and BPH contraindication.
+- [Zentel Tablet Uses](https://www.ilaaj.ai/blog/zentel-tablet-uses/): Albendazole 400mg single-dose deworming for roundworm, hookworm, whipworm and pinworm — family treatment protocol, absolute contraindication in pregnancy.
+- [Cetirizine Tablet Uses](https://www.ilaaj.ai/blog/cetirizine-tablet-uses/): Second-generation antihistamine for dust allergy, hives, hay fever, allergic conjunctivitis — comparison with loratadine and levocetirizine, dosage by age.
+- [Panadol CF Uses](https://www.ilaaj.ai/blog/panadol-cf-uses/): Paracetamol + caffeine + phenylephrine for cold, flu, nasal congestion and headache — paracetamol double-dosing danger, hypertension and MAOI warnings.
+- [Atorvastatin Tablet Uses](https://www.ilaaj.ai/blog/atorvastatin-tablet-uses/): HMG-CoA reductase inhibitor for high cholesterol and cardiovascular prevention — 60% LDL reduction, myopathy warning, drug interactions, pregnancy contraindication.
 
 ### AI Health Platform Guides
 - [AI Doctor Pakistan](https://www.ilaaj.ai/blog/ai-doctor-pakistan/): Pakistan's first AI doctor platform with Roman Urdu support and PMDC-verified prescriptions.
