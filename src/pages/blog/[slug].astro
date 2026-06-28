@@ -43,6 +43,17 @@ if (!hasEnVersion) {
 // Restore the hand-authored JSON-LD (MedicalWebPage, BreadcrumbList, FAQPage)
 // from the source <head> — the article-only extraction above otherwise drops it.
 const jsonLd = (sourceRaw.match(/<script type="application\/ld\+json">[\s\S]*?<\/script>/g) || []).join('\n');
+
+const speakableSchema = '<script type="application/ld+json">' + JSON.stringify({
+  "@context": "https://schema.org/",
+  "@type": "WebPage",
+  "name": hasEnVersion && post.enTitle ? post.enTitle : post.title,
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".blog-post__tldr", "h2", ".blog-post__content"]
+  },
+  "url": 'https://www.ilaaj.ai/blog/' + post.slug
+}) + '</script>';
 ---
 
 <BaseLayout
@@ -54,6 +65,7 @@ const jsonLd = (sourceRaw.match(/<script type="application\/ld\+json">[\s\S]*?<\
   ogImage={post.img}
 >
   {jsonLd && <Fragment slot="head" set:html={jsonLd} />}
+  <Fragment slot="head" set:html={speakableSchema} />
   <main>
     {articleHtml
       ? <article class="blog-post" set:html={articleHtml} />
