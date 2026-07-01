@@ -9,8 +9,8 @@ const physicianSchema = {
   "name": "Ilaaj AI PMDC-Verified Doctors",
   "url": "https://www.ilaaj.ai/pk/doctors",
   "itemListElement": doctors.map((d, i) => ({
-    "@type": "ListItem", "position": i + 1, "url": `https://www.ilaaj.ai/pk/doctors/${d.slug}`,
-    "item": { "@type": "Physician", "name": d.name, "medicalSpecialty": d.spec, "hasCredential": d.qual, "url": `https://www.ilaaj.ai/pk/doctors/${d.slug}`, "worksFor": { "@id": "https://www.ilaaj.ai/#organization" } }
+    "@type": "ListItem", "position": i + 1,
+    "item": { "@type": "Person", "name": d.name, "jobTitle": d.spec, "hasCredential": d.qual, "url": `https://www.ilaaj.ai/pk/doctors/${d.slug}`, "worksFor": { "@id": "https://www.ilaaj.ai/#organization" } }
   }))
 };
 ---

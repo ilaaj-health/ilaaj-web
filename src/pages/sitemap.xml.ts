@@ -21,7 +21,7 @@ function url(loc: string, lastmod: string, changefreq: string, priority: string,
 
 // Static pages: en + pk (+ ur for home). x-default points to en.
 const staticPages = [
-  { en: '/', pk: '/pk/', ur: '/ur/', priority: '1.0', changefreq: 'daily' },
+  { en: '/', pk: '/pk', ur: '/ur', priority: '1.0', changefreq: 'daily' },
   { en: '/blog', pk: '/pk/blog', ur: undefined, priority: '0.9', changefreq: 'weekly' },
   { en: '/doctors', pk: '/pk/doctors', ur: undefined, priority: '0.8', changefreq: 'monthly' },
   { en: '/faq', pk: '/pk/faq', ur: undefined, priority: '0.7', changefreq: 'monthly' },

@@ -1,5 +1,6 @@
 ---
 import { posts } from '../../../data/blog-posts';
+import { fixBlogLinks } from '../../../data/fix-blog-links';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -18,8 +19,7 @@ try {
   const s = raw.indexOf('<article');
   const e = raw.lastIndexOf('</article>');
   if (s >= 0 && e > s) {
-    articleHtml = raw.slice(raw.indexOf('>', s) + 1, e)
-      .replace(/href="\.\.\/blog\.html"/g, 'href="/pk/blog"')
+    articleHtml = fixBlogLinks(raw.slice(raw.indexOf('>', s) + 1, e), '/pk')
       .replace(/src="\.\.\/assets\//g, 'src="/assets/')
       .replace(/href="\.\.\/assets\//g, 'href="/assets/');
   }
