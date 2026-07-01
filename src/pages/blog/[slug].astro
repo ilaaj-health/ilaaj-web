@@ -1,5 +1,6 @@
 ---
 import { posts } from '../../data/blog-posts';
+import { fixBlogLinks } from '../../data/fix-blog-links';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -24,8 +25,7 @@ let sourceRaw = '';
 try {
   const r = readArticle(
     path.join(process.cwd(), 'blog', 'en', `${post.slug}.html`),
-    h => h.replace(/href="\.\.\/blog\.html"/g, 'href="/blog"')
-          .replace(/href="\.\.\/\.\.\/blog\.html"/g, 'href="/blog"')
+    h => fixBlogLinks(h, '')
   );
   if (r) { articleHtml = r.html; sourceRaw = r.raw; hasEnVersion = true; }
 } catch {}
@@ -34,7 +34,7 @@ if (!hasEnVersion) {
   try {
     const r = readArticle(
       path.join(process.cwd(), 'blog', `${post.slug}.html`),
-      h => h.replace(/href="\.\.\/blog\.html"/g, 'href="/blog"')
+      h => fixBlogLinks(h, '')
     );
     if (r) { articleHtml = r.html; sourceRaw = r.raw; }
   } catch {}
