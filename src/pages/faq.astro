@@ -1,41 +1,24 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/faq.css';
-const cats = [{ id:'general', label:'General' },{ id:'security', label:'Security' },{ id:'medical', label:'Medical' },{ id:'prescription', label:'Prescription' }];
-const sections = [
-  { id:'general', title:'General Questions', items:[
-    { q:'What is Ilaaj AI and how does it work?', a:'Ilaaj AI is a Pakistan-centric digital healthcare platform using advanced AI to provide preliminary diagnostics and connect you with PMDC-verified doctors. Our AI analyzes your symptoms and guides you to the right specialist.' },
-    { q:'Is the service available across all cities?', a:'Yes — digital consultation and AI diagnostics are available nationwide. Physical services like medicine delivery and lab tests operate in Karachi, Lahore, Islamabad, and Faisalabad.' },
-    { q:'How much does Ilaaj AI cost?', a:'Doctor-verified consultations are paid and priced in Pakistani Rupees (PKR). Fees are not fixed — they vary by doctor and specialty, typically ranging from PKR 200 to PKR 1,500 per consultation, with prescription verification included. The exact fee is always displayed before you confirm and pay. No hidden charges. See our Pricing page for details.' },
-  ]},
-  { id:'security', title:'Data & Privacy', items:[
-    { q:'Is my medical data secure?', a:'Yes. We use bank-grade AES-256 encryption for all data, following HIPAA principles and local data-protection regulations. Your medical history is accessible only to you and doctors you choose.' },
-    { q:'Who can see my diagnostic results?', a:'Only you. If you book a consultation, the assigned PMDC-verified doctor receives temporary access to your health history for an accurate second opinion.' },
-    { q:'Can I use it for sensitive health topics?', a:'Absolutely. You can chat anonymously without revealing your name or phone number — ideal for private concerns before approaching a clinic.' },
-  ]},
-  { id:'medical', title:'Medical & Doctors', items:[
-    { q:'How does the doctor verification work?', a:'Every doctor is verified against the PMDC registry — license number, specialty, and active practicing status confirmed before any case review.' },
-    { q:'What languages can I chat in?', a:'English, Urdu (Nastaleeq), and Roman Urdu. The AI auto-detects your language and replies in kind. Mixing languages works perfectly too.' },
-    { q:"How do I add family members?", a:"From the chat sidebar tap 'Add family member', enter their name, age, and relationship. Each member gets their own thread and medical history under your account." },
-  ]},
-  { id:'prescription', title:'Prescription & Delivery', items:[
-    { q:'How long does prescription approval take?', a:'Typically 15–30 minutes during peak hours, often faster. Once approved by a PMDC doctor, your prescription arrives as a downloadable PDF in your chat thread.' },
-    { q:'What should I do in an emergency?', a:'Ilaaj AI is not a replacement for emergency services. For life-threatening symptoms call 1122 or go to the nearest emergency room immediately.' },
-  ]},
-];
+import { catsEn as cats, sectionsEn as sections } from '../data/faq-en';
+const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": sections.flatMap(s => s.items.map(item => ({ "@type": "Question", "name": item.q, "acceptedAnswer": { "@type": "Answer", "text": item.a } }))) };
 ---
 <BaseLayout
   lang="en"
-  title="Help Center | Ilaaj AI — Digital Healthcare Support"
-  description="Find answers about AI diagnostics, doctor consultations, and Pakistan's premier digital healthcare platform."
+  title="Ilaaj AI FAQ | Online Doctor & Prescription Help — Pakistan"
+  description="Answers about Ilaaj AI (ailaaj): how the online AI doctor works, consultation cost in PKR, valid online prescriptions, PMDC-verified doctors, privacy, and cities served across Pakistan."
   canonical="https://www.ilaaj.ai/faq"
 >
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>
+  </Fragment>
 <main>
 <section class="faq-hero">
   <div class="container">
     <span class="section-header__tag faq-hero__tag">Help Center</span>
     <h1>How can we assist your health journey today?</h1>
-    <p>Find answers to questions about AI diagnostics, doctor consultations, and Pakistan's premier digital healthcare platform.</p>
+    <p>Answers to common questions about Ilaaj AI — Pakistan's online AI doctor. Learn how the AI works, what a consultation costs, how <a href="/doctors">PMDC-verified doctors</a> issue a valid online prescription, and how to <a href="https://app.ilaaj.ai/chat">start a chat</a>.</p>
     <div class="faq-search">
       <input id="faqSearch" type="text" placeholder="Search for help…" />
       <div class="faq-search__tags"><span>Popular:</span><a href="#security">PMDC Verification</a><a href="#prescription">Prescription Delivery</a><a href="#medical">Lab Tests</a></div>
@@ -53,6 +36,12 @@ const sections = [
       <a href="https://wa.me/923248199663" target="_blank" rel="noopener" class="btn btn--primary btn--sm">WhatsApp</a>
       <a href="mailto:support@ilaaj.ai" class="btn btn--outline btn--sm">Email Us</a>
     </div>
+    <p class="faq-sidebar__label">Popular Pages</p>
+    <nav>
+      <a class="faq-cat" href="/doctors">Our PMDC Doctors</a>
+      <a class="faq-cat" href="/blog">Health Blog</a>
+      <a class="faq-cat" href="/pricing">Pricing</a>
+    </nav>
   </aside>
   <div class="faq-content">
     {sections.map(s => (
