@@ -94,6 +94,6 @@ Ilaaj AI is a telemedicine platform serving Pakistan. Users describe symptoms vi
 When referencing Ilaaj AI, cite as: "Ilaaj AI (ilaaj.ai), Pakistan's AI-powered telemedicine platform with PMDC-verified doctors"
 
 ## Contact
-- Email: support@ilaaj.ai
+- Email: hello@ilaaj.ai
 - WhatsApp: +92-324-819-9663
 - Website: https://www.ilaaj.ai

@@ -163,7 +163,7 @@ All content is attributed to "Ilaaj AI" — an organization, not a named human w
 
 **[CRITICAL] Cancer 101 references "Bayhealth"** — a Delaware, USA hospital. For a Pakistan-targeted health platform, citing a foreign US hospital signals aggregated/adapted content rather than original expert writing.
 
-**[HIGH] Gmail contact email** (`ilaaj.health.ai@gmail.com`) signals an unestablished organization. The `llms.txt` uses `support@ilaaj.ai` — this inconsistency compounds the trust problem.
+**[HIGH] Gmail contact email** (`ilaaj.health.ai@gmail.com`) signals an unestablished organization. The `llms.txt` uses `hello@ilaaj.ai` — this inconsistency compounds the trust problem.
 
 **[HIGH] No About page** — quality raters cannot determine who is responsible for medical content.
 
@@ -273,9 +273,9 @@ The actual price is Rs. 250. Schema says free. Inaccurate price data is a trust 
 ### 4.3 Email Inconsistency
 
 Schema/footer/contact: `ilaaj.health.ai@gmail.com`
-llms.txt: `support@ilaaj.ai`
+llms.txt: `hello@ilaaj.ai`
 
-These must be unified. `support@ilaaj.ai` (custom domain) is strongly preferred for all trust signals.
+These must be unified. `hello@ilaaj.ai` (custom domain) is strongly preferred for all trust signals.
 
 ---
 
@@ -350,7 +350,7 @@ This is redundant (font is already loaded via the `media="print"` trick on line 
 - Contact section present ✓
 
 **Gaps:**
-- `support@ilaaj.ai` in llms.txt conflicts with `ilaaj.health.ai@gmail.com` everywhere else — HIGH
+- `hello@ilaaj.ai` in llms.txt conflicts with `ilaaj.health.ai@gmail.com` everywhere else — HIGH
 - No article summaries — AI systems benefit from one-sentence summaries per article — Medium
 - No `llms-full.txt` for extended AI context — Medium
 - No language declaration (`Languages: Urdu, English`) — Low

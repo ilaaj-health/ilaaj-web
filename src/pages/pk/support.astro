@@ -32,7 +32,7 @@ import '../../styles/support.css';
             </div>
             <h3>Email Us</h3>
             <p>Send us an email anytime</p>
-            <a href="mailto:support@ilaaj.ai">support@ilaaj.ai</a>
+            <a href="mailto:hello@ilaaj.ai">hello@ilaaj.ai</a>
           </div>
           <div class="contact-card contact-card--phone">
             <div class="contact-card__icon">
@@ -105,6 +105,6 @@ import '../../styles/support.css';
     const email = (document.getElementById('email') as HTMLInputElement).value;
     const message = (document.getElementById('message') as HTMLTextAreaElement).value;
     const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
-    window.location.href = `mailto:support@ilaaj.ai?subject=${encodeURIComponent(subject + ' - Ilaaj AI Support')}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:hello@ilaaj.ai?subject=${encodeURIComponent(subject + ' - Ilaaj AI Support')}&body=${encodeURIComponent(body)}`;
   });
 </script>

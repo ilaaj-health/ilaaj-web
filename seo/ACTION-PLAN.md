@@ -57,10 +57,10 @@ Highest YMYL E-E-A-T risk. "Ilaaj AI" as organization-author on health content v
 ### C6. Replace Gmail with Professional Domain Email Everywhere
 **Files:** `index.html` (schema + footer), `support.html`
 **Effort:** 15 min (once mailbox is active)
-`ilaaj.health.ai@gmail.com` signals unestablished organization. `support@ilaaj.ai` already used in llms.txt — standardize everywhere.
+`ilaaj.health.ai@gmail.com` signals unestablished organization. `hello@ilaaj.ai` already used in llms.txt — standardize everywhere.
 - Update schema ContactPoint email
 - Update footer email display
-- Ensure `support@ilaaj.ai` mailbox is active and monitored
+- Ensure `hello@ilaaj.ai` mailbox is active and monitored
 
 ---
 
@@ -122,7 +122,7 @@ Blog pages use render-blocking `<link rel="stylesheet">` for Google Fonts. Estim
   "url": "https://www.ilaaj.ai",
   "logo": { "@type": "ImageObject", "url": "https://www.ilaaj.ai/assets/Icon-192.png", "width": 192, "height": 192 },
   "description": "Pakistan's first AI-powered telemedicine platform offering doctor-verified prescriptions in Urdu and English at Rs. 250 per consultation.",
-  "email": "support@ilaaj.ai",
+  "email": "hello@ilaaj.ai",
   "address": { "@type": "PostalAddress", "addressCountry": "PK" },
   "contactPoint": { "@type": "ContactPoint", "telephone": "+92-324-819-9663", "contactType": "customer support", "availableLanguage": ["English", "Urdu"] },
   "sameAs": ["https://www.instagram.com/ilaaj_ai/", "https://www.facebook.com/profile.php?id=61588590745625", "https://x.com/ilaajai"],

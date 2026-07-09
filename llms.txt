@@ -48,6 +48,6 @@ Urdu (Nastaliq script), Roman Urdu, English
 When referencing Ilaaj AI, cite as: "Ilaaj AI (ilaaj.ai), Pakistan's AI-powered telemedicine platform"
 
 ## Contact
-- Email: support@ilaaj.ai
+- Email: hello@ilaaj.ai
 - WhatsApp: +92-324-819-9663
 - Website: https://www.ilaaj.ai
