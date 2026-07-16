@@ -44,6 +44,9 @@ if (!hasEnVersion) {
 // from the source <head> — the article-only extraction above otherwise drops it.
 const jsonLd = (sourceRaw.match(/<script type="application\/ld\+json">[\s\S]*?<\/script>/g) || []).join('\n');
 
+const today = new Date().toISOString().split('T')[0];
+const isFuture = !!(post.scheduled && post.scheduled > today);
+
 const speakableSchema = '<script type="application/ld+json">' + JSON.stringify({
   "@context": "https://schema.org/",
   "@type": "WebPage",
@@ -61,7 +64,7 @@ const speakableSchema = '<script type="application/ld+json">' + JSON.stringify({
   title={`${hasEnVersion && post.enTitle ? post.enTitle : post.title} | Ilaaj AI`}
   description={hasEnVersion && post.enExcerpt ? post.enExcerpt : post.excerpt}
   canonical={hasEnVersion ? `https://www.ilaaj.ai/blog/${post.slug}` : `https://www.ilaaj.ai/pk/blog/${post.slug}`}
-  noindex={!hasEnVersion}
+  noindex={!hasEnVersion || isFuture}
   ogImage={post.img}
 >
   {jsonLd && <Fragment slot="head" set:html={jsonLd} />}

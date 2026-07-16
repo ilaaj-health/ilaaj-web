@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Sentry: error tracking + session replay -->
+  <script src="https://js.sentry-cdn.com/defa6ca82daea4d4c49a8b69b87c53cc.min.js" crossorigin="anonymous"></script>
+  <script>
+    window.sentryOnLoad = function () {
+      Sentry.init({
+        integrations: [Sentry.replayIntegration({ maskAllText: false, blockAllMedia: false })],
+        tracesSampleRate: 0.1,
+        replaysSessionSampleRate: 0.1,
+        replaysOnErrorSampleRate: 1.0,
+      });
+    };
+  </script>
+  <!-- PostHog: product analytics + session replay -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_xjBQ5vUS7nTJz4jHta6d5dDE7jHdtFjFuqkxAJjvcFzo', { api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only', cross_subdomain_cookie: true });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XKTHF96');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1697266221447949');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1697266221447949&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fatty Liver Treatment — Causes, Diet and Reversal | Ilaaj AI</title>
+  <meta name="description" content="Fatty liver disease treatment — causes, symptoms, diet plan and how to reverse it. Complete guide for Pakistan.">
+  <meta name="robots" content="noindex,follow" data-scheduled="1">
+  <meta name="keywords" content="fatty liver treatment pakistan, fatty liver diet, fatty liver symptoms, fatty liver reversal, NAFLD treatment">
+  <meta name="geo.region" content="PK">
+  <meta name="geo.placename" content="Pakistan">
+  <meta name="google-site-verification" content="8RtzwgVYowrMGF4E77jnKOX33seYEQTuXmxps2XkPxI">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.ilaaj.ai/blog/fatty-liver-ka-ilaj">
+  <link rel="alternate" hreflang="ur-PK" href="https://www.ilaaj.ai/pk/blog/fatty-liver-ka-ilaj" />
+  <link rel="alternate" hreflang="en" href="https://www.ilaaj.ai/blog/fatty-liver-ka-ilaj" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ilaaj.ai/blog/fatty-liver-ka-ilaj" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/logo/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/logo/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/logo/site.webmanifest" />
+
+  <!-- PWA / Mobile -->
+  <meta name="theme-color" content="#00897B">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="IlaajAI">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Fatty Liver Treatment — Diet and Recovery in Pakistan">
+  <meta property="og:description" content="Fatty liver disease treatment — causes, symptoms, diet plan and how to reverse it. Complete guide.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ilaaj.ai/blog/fatty-liver-ka-ilaj">
+  <meta property="og:image" content="https://ilaaj.s3.ap-southeast-2.amazonaws.com/blog/fatty-liver-ka-ilaj.jpg">
+  <meta property="og:image:alt" content="Medical illustration comparing healthy liver and fatty liver">
+  <meta property="og:site_name" content="Ilaaj AI">
+  <meta property="og:locale" content="en_PK">
+  <meta property="article:published_time" content="2026-07-18T09:00:00.000Z">
+  <meta property="article:modified_time" content="2026-07-18T09:00:00.000Z">
+  <meta property="article:author" content="Ilaaj AI Medical Team">
+  <meta property="article:section" content="Gastroenterology">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ilaajai">
+  <meta name="twitter:creator" content="@ilaajai">
+  <meta name="twitter:title" content="Fatty Liver Treatment — Diet and Recovery in Pakistan">
+  <meta name="twitter:description" content="Fatty liver disease treatment — causes, symptoms, diet plan and how to reverse it. Complete guide.">
+  <meta name="twitter:image" content="https://ilaaj.s3.ap-southeast-2.amazonaws.com/blog/fatty-liver-ka-ilaj.jpg">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNTMD61HWL"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KNTMD61HWL');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="../../css/blog.css">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.ilaaj.ai/blog/fatty-liver-ka-ilaj"
+  },
+  "headline": "Fatty Liver Treatment — Causes, Diet and Reversal Guide",
+  "description": "Fatty liver disease treatment — causes, symptoms, diet plan and how to reverse it. Complete guide for Pakistan.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://ilaaj.s3.ap-southeast-2.amazonaws.com/blog/fatty-liver-ka-ilaj.jpg"
+  },
+  "datePublished": "2026-07-18T09:00:00.000Z",
+  "dateModified": "2026-07-18T09:00:00.000Z",
+  "author": {
+    "@type": "Organization",
+    "name": "Ilaaj AI Medical Team",
+    "url": "https://www.ilaaj.ai/doctors"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ilaaj AI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.ilaaj.ai/assets/Icon-192.png"
+    }
+  },
+  "keywords": "fatty liver treatment pakistan, fatty liver diet, fatty liver symptoms, fatty liver reversal, NAFLD treatment",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Ilaaj AI Blog",
+    "url": "https://www.ilaaj.ai/blog"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.ilaaj.ai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.ilaaj.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Fatty Liver Treatment — Causes, Diet and Reversal Guide",
+      "item": "https://www.ilaaj.ai/blog/fatty-liver-ka-ilaj"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can fatty liver be cured?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, early-stage fatty liver is completely reversible — losing 7-10% of body weight, along with a healthy diet and regular exercise, can significantly reduce fat in the liver. Advanced stages (fibrosis, cirrhosis) can cause permanent damage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the best diet for fatty liver?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A low-sugar, low-fried diet — more vegetables, fruits, whole grains, and lean protein. Completely avoid sugar, soft drinks, fried food, and alcohol. A Mediterranean-style diet is considered best for fatty liver."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does fatty liver only affect overweight people?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, most cases are related to obesity, but people of normal weight can also develop 'lean NAFLD,' especially if they have diabetes or insulin resistance. Genetics also plays a role."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between fatty liver and cirrhosis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fatty liver is an early, reversible stage where only fat accumulates. If ignored, it can progress to NASH (inflammation) and then fibrosis (scarring), eventually reaching end-stage cirrhosis — which is permanent and life-threatening."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is fatty liver diagnosed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most cases are found accidentally during a routine ultrasound. A Liver Function Test (LFT) checks enzyme levels. A FibroScan or, rarely, a biopsy may be needed to confirm diagnosis and severity."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKTHF96"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar navbar--scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="/" class="navbar__brand">
+        <img src="../../assets/Icon-192.png" alt="Ilaaj AI" class="navbar__logo">
+        <span class="navbar__name">Ilaaj AI</span>
+      </a>
+      <div class="navbar__center" id="navLinks">
+        <a href="/#how-it-works" class="navbar__link">How It Works</a>
+        <a href="/#features" class="navbar__link">Features</a>
+        <a href="../../blog.html" class="navbar__link navbar__link--active">Blog</a>
+        <a href="/#faq" class="navbar__link">FAQ</a>
+      </div>
+      <div class="navbar__right">
+        <a href="https://app.ilaaj.ai" class="btn btn--primary btn--sm navbar__cta">
+          Get Free Advice
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile" id="mobileMenu">
+      <a href="/#how-it-works" class="navbar__mobile-link">How It Works</a>
+      <a href="/#features" class="navbar__mobile-link">Features</a>
+      <a href="../../blog.html" class="navbar__mobile-link">Blog</a>
+      <a href="/#faq" class="navbar__mobile-link">FAQ</a>
+      <a href="https://app.ilaaj.ai" class="btn btn--primary btn--full">Get Free Advice</a>
+    </div>
+  </nav>
+
+  <main>
+    <article class="blog-post">
+      <div class="container">
+        <a href="../../blog.html" class="blog-post__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Articles
+        </a>
+
+        <div class="blog-post__featured-image"><img src="https://ilaaj.s3.ap-southeast-2.amazonaws.com/blog/fatty-liver-ka-ilaj.jpg" alt="Medical illustration comparing healthy liver and fatty liver"></div>
+
+        <div class="blog-post__author">
+          <img src="../../assets/Icon-192.png" alt="Ilaaj AI Medical Team" class="blog-post__author-avatar">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name">Ilaaj AI Medical Team</div>
+            <div class="blog-post__author-creds">PMDC-verified doctors reviewing every article</div>
+            <div class="blog-post__author-dates">Published: July 18, 2026 | Last reviewed: July 18, 2026</div>
+          </div>
+        </div>
+
+        <h1 class="blog-post__title">Fatty Liver Treatment — Causes, Diet and Reversal Guide</h1>
+
+        <div class="blog-post__tldr">
+          <div class="blog-post__tldr-title">TL;DR — Key Takeaways</div>
+          <ul>
+            <li>Fatty liver is a buildup of excess fat in the liver</li>
+            <li>Most cases have no symptoms — often found accidentally on ultrasound</li>
+            <li>Obesity, diabetes, and alcohol are the biggest causes</li>
+            <li>Weight loss and diet change can reverse fatty liver</li>
+            <li>Leaving it untreated risks cirrhosis and liver failure</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+
+<table class="blog-post__quick-facts">
+  <caption>Fatty Liver — Quick Facts</caption>
+  <tbody>
+    <tr><td>Types</td><td>NAFLD (non-alcoholic), Alcoholic fatty liver</td></tr>
+    <tr><td>Prevalence in Pakistan</td><td>Very common — linked to obesity and diabetes</td></tr>
+    <tr><td>Diagnosis</td><td>Ultrasound, Liver Function Test (LFT)</td></tr>
+    <tr><td>Reversible?</td><td>Yes, in early stages, with diet and weight loss</td></tr>
+    <tr><td>Main risk factor</td><td>Obesity, high sugar, high-fat diet</td></tr>
+  </tbody>
+</table>
+<h2>What Is Fatty Liver?</h2>
+<p>Fatty liver disease occurs when excess fat builds up in liver cells — a normal liver has some fat, but exceeding 5% is classified as fatty liver. It is very common in Pakistan due to rising obesity and diabetes rates.</p>
+
+<h2>Types</h2>
+<ul>
+<li><strong>NAFLD (Non-Alcoholic Fatty Liver Disease)</strong> — the most common type in Pakistan, unrelated to alcohol</li>
+<li><strong>Alcoholic Fatty Liver</strong> — caused by excessive alcohol consumption</li>
+<li><strong>NASH (Non-Alcoholic Steatohepatitis)</strong> — an advanced stage where inflammation also begins</li>
+</ul>
+
+<h2>Symptoms</h2>
+<p>Most people have <strong>no symptoms at all</strong> — it's often discovered accidentally during a routine ultrasound. In advanced stages:</p>
+<ul>
+<li>Fatigue</li>
+<li>Mild pain or heaviness in the right upper abdomen</li>
+<li>Weakness</li>
+<li>Weight loss (in advanced cases)</li>
+<li>Yellowing of skin or eyes (jaundice — severe cases)</li>
+</ul>
+
+<h2>Causes</h2>
+<ul>
+<li><strong>Obesity/overweight</strong> — the biggest cause</li>
+<li><strong>Type 2 diabetes/insulin resistance</strong></li>
+<li><strong>High cholesterol/triglycerides</strong></li>
+<li><strong>Excessive alcohol consumption</strong></li>
+<li><strong>Fast, oily, and sugary diet</strong></li>
+<li><strong>Sedentary lifestyle</strong></li>
+<li><strong>Certain medications</strong> (long-term steroids)</li>
+</ul>
+
+<h2>Diagnosis</h2>
+<p>An <strong>ultrasound</strong> is usually the first test that reveals fatty liver, often during a routine checkup. A <strong>Liver Function Test (LFT)</strong> checks liver enzymes. In advanced cases, a FibroScan or biopsy determines the level of liver damage.</p>
+
+<h2>Treatment — Weight Loss Is Most Effective</h2>
+<ul>
+<li><strong>Losing 7-10% of body weight</strong> can significantly reduce fatty liver</li>
+<li><strong>Gradual weight loss</strong> — 0.5-1kg per week, avoid crash dieting</li>
+<li><strong>Regular exercise</strong> — 150 minutes of moderate activity per week</li>
+<li><strong>Reduce sugar and processed food</strong></li>
+<li><strong>Stop alcohol completely</strong></li>
+</ul>
+
+<h2>Fatty Liver Diet</h2>
+<h3>Eat:</h3>
+<ul>
+<li>Vegetables, fruits (especially low-sugar options)</li>
+<li>Whole grains — oats, brown rice</li>
+<li>Lean protein — fish, skinless chicken</li>
+<li>Olive oil, nuts (in moderation)</li>
+<li>Green tea</li>
+</ul>
+<h3>Avoid:</h3>
+<ul>
+<li>Fried and oily food</li>
+<li>Sugar, sweets, soft drinks</li>
+<li>Excessive white bread, white rice</li>
+<li>Excessive red meat</li>
+<li>Alcohol</li>
+</ul>
+
+<div class="blog-post__inline-cta">
+  <p>Diagnosed with fatty liver on ultrasound? Consult a doctor on Ilaaj AI for a diet plan and monitoring guidance.</p>
+  <a href="https://app.ilaaj.ai/chat">Consult a Doctor Now</a>
+</div>
+
+<h2>When to See a Doctor</h2>
+<ul>
+<li>Persistent pain in the right upper abdomen</li>
+<li>Unexplained weight loss</li>
+<li>Jaundice (yellow skin or eyes)</li>
+<li>Abdominal swelling (fluid accumulation)</li>
+<li>Elevated liver enzymes on LFT</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>Early-stage fatty liver is <strong>fully reversible</strong> through lifestyle changes alone — weight loss, healthy diet, and exercise. Ignoring it can lead to NASH, fibrosis, and eventually cirrhosis. Discuss your diet plan and regular monitoring with a doctor on <strong>Ilaaj AI</strong>.</p>
+        </div>
+
+        <div class="blog-post__faq">
+          <h2>Frequently Asked Questions</h2>
+          <div class="blog-post__faq-item">
+            <h3>Can fatty liver be cured?</h3>
+            <p>Yes, early-stage fatty liver is completely reversible — losing 7-10% of body weight, along with a healthy diet and regular exercise, can significantly reduce fat in the liver. Advanced stages (fibrosis, cirrhosis) can cause permanent damage.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>What is the best diet for fatty liver?</h3>
+            <p>A low-sugar, low-fried diet — more vegetables, fruits, whole grains, and lean protein. Completely avoid sugar, soft drinks, fried food, and alcohol. A Mediterranean-style diet is considered best for fatty liver.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>Does fatty liver only affect overweight people?</h3>
+            <p>No, most cases are related to obesity, but people of normal weight can also develop 'lean NAFLD,' especially if they have diabetes or insulin resistance. Genetics also plays a role.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>What's the difference between fatty liver and cirrhosis?</h3>
+            <p>Fatty liver is an early, reversible stage where only fat accumulates. If ignored, it can progress to NASH (inflammation) and then fibrosis (scarring), eventually reaching end-stage cirrhosis — which is permanent and life-threatening.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>How is fatty liver diagnosed?</h3>
+            <p>Most cases are found accidentally during a routine ultrasound. A Liver Function Test (LFT) checks enzyme levels. A FibroScan or, rarely, a biopsy may be needed to confirm diagnosis and severity.</p>
+          </div>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="blog-post__related">
+          <h2>Related Articles</h2>
+          <ul class="blog-post__related-list">
+            <li><a href="../../blog/lft-test-kya-hai.html">LFT Test Explained — Liver Function Guide</a></li>
+            <li><a href="../../blog/hba1c-test-kya-hai.html">HbA1c Test Explained — Diabetes Monitoring</a></li>
+            <li><a href="../../blog.html">Browse All Health Articles &rarr;</a></li>
+          </ul>
+        </div>
+
+        <div class="blog-post__about">
+          <img src="../../assets/Icon-192.png" alt="Ilaaj AI" class="blog-post__about-logo">
+          <div class="blog-post__about-text">
+            <strong>About Ilaaj AI</strong>
+            <p>Ilaaj AI is Pakistan's first AI-powered health platform. Chat about your symptoms in Urdu or English, get AI-powered triage, and receive doctor-verified prescriptions — affordable and accessible, 24/7.</p>
+          </div>
+        </div>
+
+        <div class="blog-post__cta">
+          <div class="blog-post__cta-card">
+            <h3 class="blog-post__cta-title">Need Health Advice?</h3>
+            <p class="blog-post__cta-desc">Chat with our AI health assistant in any language. Get doctor-verified prescriptions at affordable rates.</p>
+            <div class="blog-post__cta-actions">
+              <a href="https://app.ilaaj.ai/chat" class="btn btn--hero-primary">Start Consultation</a>
+              <a href="../../blog.html" class="btn--outline">Read More Articles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <img src="../../assets/ilaaj-logo.jpg" alt="Ilaaj AI" class="footer__logo-img" width="36" height="36" loading="lazy">
+            <span class="footer__logo-text">Ilaaj AI</span>
+          </div>
+          <p class="footer__brand-desc">Pakistan's first AI-powered health platform. Chat about your symptoms in any language, get AI triage, and receive doctor-verified prescriptions &mdash; affordable and accessible, 24/7.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/ilaaj_ai/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.516 2.497 5.783 2.225 7.149 2.163 8.415 2.105 8.795 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.987 15.668 24 15.259 24 12s-.013-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324A6.162 6.162 0 0 0 12 5.838zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61588590745625" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+            <a href="https://x.com/ilaajai" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Product</h4>
+          <ul class="footer__links">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#how-it-works">How It Works</a></li>
+            <li><a href="/#doctors">Our Doctors</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="../../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../../terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="../../support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <p class="footer__contact-text">Questions or feedback?</p>
+          <a href="mailto:hello@ilaaj.ai" class="footer__email">hello@ilaaj.ai</a>
+          <p class="footer__emergency">For emergencies, call <strong>1122</strong> (Rescue)</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span class="footer-year"></span> Ilaaj AI. All rights reserved.</p>
+        <p class="footer__disclaimer">Ilaaj AI is for general health consultations and non-emergency medical guidance. For emergencies, call 1122 (Rescue) or visit the nearest hospital.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+    document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());
+  </script>
+  <!-- Tawk.to Live Chat (lazy-loaded) -->
+  <script>
+  (function() {
+    var tawkLoaded = false;
+    function loadTawk() {
+      if (tawkLoaded) return;
+      tawkLoaded = true;
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/69ce56b0127eae1c37be0e72/1jl70596p';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    }
+    document.addEventListener('scroll', loadTawk, {once: true});
+    document.addEventListener('click', loadTawk, {once: true});
+    document.addEventListener('mouseover', loadTawk, {once: true});
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Sentry: error tracking + session replay -->
+  <script src="https://js.sentry-cdn.com/defa6ca82daea4d4c49a8b69b87c53cc.min.js" crossorigin="anonymous"></script>
+  <script>
+    window.sentryOnLoad = function () {
+      Sentry.init({
+        integrations: [Sentry.replayIntegration({ maskAllText: false, blockAllMedia: false })],
+        tracesSampleRate: 0.1,
+        replaysSessionSampleRate: 0.1,
+        replaysOnErrorSampleRate: 1.0,
+      });
+    };
+  </script>
+  <!-- PostHog: product analytics + session replay -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_xjBQ5vUS7nTJz4jHta6d5dDE7jHdtFjFuqkxAJjvcFzo', { api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only', cross_subdomain_cookie: true });
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5XKTHF96');</script>
+  <!-- End Google Tag Manager -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1697266221447949');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1697266221447949&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How the AI Health App Works — Triage and Doctor Verification | Ilaaj AI</title>
+  <meta name="description" content="How does Ilaaj AI's triage and doctor-verification flow actually work — complete guide to the technical process.">
+  <meta name="robots" content="noindex,follow" data-scheduled="1">
+  <meta name="keywords" content="how ai health app works, how ilaaj ai works, ai triage explained, doctor verification process">
+  <meta name="geo.region" content="PK">
+  <meta name="geo.placename" content="Pakistan">
+  <meta name="google-site-verification" content="8RtzwgVYowrMGF4E77jnKOX33seYEQTuXmxps2XkPxI">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.ilaaj.ai/blog/ai-health-app-kaise-kaam-karta-hai">
+  <link rel="alternate" hreflang="ur-PK" href="https://www.ilaaj.ai/pk/blog/ai-health-app-kaise-kaam-karta-hai" />
+  <link rel="alternate" hreflang="en" href="https://www.ilaaj.ai/blog/ai-health-app-kaise-kaam-karta-hai" />
+  <link rel="alternate" hreflang="x-default" href="https://www.ilaaj.ai/blog/ai-health-app-kaise-kaam-karta-hai" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/logo/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/logo/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/logo/site.webmanifest" />
+
+  <!-- PWA / Mobile -->
+  <meta name="theme-color" content="#00897B">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="IlaajAI">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="How the AI Health App Works — Complete Guide">
+  <meta property="og:description" content="How does Ilaaj AI's triage and doctor-verification flow actually work — complete guide.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ilaaj.ai/blog/ai-health-app-kaise-kaam-karta-hai">
+  <meta property="og:image" content="https://ilaaj.s3.ap-southeast-2.amazonaws.com/blog/ai-health-app-kaise-kaam-karta-hai.jpg">
+  <meta property="og:image:alt" content="Illustration of AI triage chat flow connecting to a verified doctor">
+  <meta property="og:site_name" content="Ilaaj AI">
+  <meta property="og:locale" content="en_PK">
+  <meta property="article:published_time" content="2026-07-30T11:00:00.000Z">
+  <meta property="article:modified_time" content="2026-07-30T11:00:00.000Z">
+  <meta property="article:author" content="Ilaaj AI Medical Team">
+  <meta property="article:section" content="AI Healthcare">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ilaajai">
+  <meta name="twitter:creator" content="@ilaajai">
+  <meta name="twitter:title" content="How the AI Health App Works — Complete Guide">
+  <meta name="twitter:description" content="How does Ilaaj AI's triage and doctor-verification flow actually work — complete guide.">
+  <meta name="twitter:image" content="https://ilaaj.s3.ap-southeast-2.amazonaws.com/blog/ai-health-app-kaise-kaam-karta-hai.jpg">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNTMD61HWL"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KNTMD61HWL');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="../../css/blog.css">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.ilaaj.ai/blog/ai-health-app-kaise-kaam-karta-hai"
+  },
+  "headline": "How the AI Health App Works — Triage and Doctor Verification Guide",
+  "description": "How does Ilaaj AI's triage and doctor-verification flow actually work — complete guide to the technical process.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://ilaaj.s3.ap-southeast-2.amazonaws.com/blog/ai-health-app-kaise-kaam-karta-hai.jpg"
+  },
+  "datePublished": "2026-07-30T11:00:00.000Z",
+  "dateModified": "2026-07-30T11:00:00.000Z",
+  "author": {
+    "@type": "Organization",
+    "name": "Ilaaj AI Medical Team",
+    "url": "https://www.ilaaj.ai/doctors"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ilaaj AI",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.ilaaj.ai/assets/Icon-192.png"
+    }
+  },
+  "keywords": "how ai health app works, how ilaaj ai works, ai triage explained, doctor verification process",
+  "inLanguage": "en",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Ilaaj AI Blog",
+    "url": "https://www.ilaaj.ai/blog"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.ilaaj.ai/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.ilaaj.ai/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How the AI Health App Works — Triage and Doctor Verification Guide",
+      "item": "https://www.ilaaj.ai/blog/ai-health-app-kaise-kaam-karta-hai"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can the AI approve a prescription on its own?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, the AI only creates a draft prescription — final approval always comes from a licensed PMDC doctor who reviews the entire chat history and medical context. An AI-only prescription is never legally valid."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the AI do if I have an emergency symptom?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The AI's red flag detection system stops the normal flow as soon as it identifies emergency-level symptoms (chest pain, stroke signs, severe bleeding) and immediately refers the user to emergency care (1122 or the nearest ER)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take a doctor to review the AI's draft?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In most cases, just a few minutes — the entire process (from symptom input to final approval) takes 15-20 minutes on average, including doctor review."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the AI system only understand Urdu or Roman Urdu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, Ilaaj AI naturally works in Roman Urdu, Urdu script, and English — users can interact in whichever language they're comfortable with."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "For what conditions is the AI not appropriate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Emergency situations like chest pain, stroke symptoms, severe trauma, severe allergic reactions, and suicide risk are outside the AI's scope — for these, the system immediately triggers an emergency referral instead of the normal consultation flow."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XKTHF96"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <nav class="navbar navbar--scrolled" id="navbar">
+    <div class="container navbar__inner">
+      <a href="/" class="navbar__brand">
+        <img src="../../assets/Icon-192.png" alt="Ilaaj AI" class="navbar__logo">
+        <span class="navbar__name">Ilaaj AI</span>
+      </a>
+      <div class="navbar__center" id="navLinks">
+        <a href="/#how-it-works" class="navbar__link">How It Works</a>
+        <a href="/#features" class="navbar__link">Features</a>
+        <a href="../../blog.html" class="navbar__link navbar__link--active">Blog</a>
+        <a href="/#faq" class="navbar__link">FAQ</a>
+      </div>
+      <div class="navbar__right">
+        <a href="https://app.ilaaj.ai" class="btn btn--primary btn--sm navbar__cta">
+          Get Free Advice
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__mobile" id="mobileMenu">
+      <a href="/#how-it-works" class="navbar__mobile-link">How It Works</a>
+      <a href="/#features" class="navbar__mobile-link">Features</a>
+      <a href="../../blog.html" class="navbar__mobile-link">Blog</a>
+      <a href="/#faq" class="navbar__mobile-link">FAQ</a>
+      <a href="https://app.ilaaj.ai" class="btn btn--primary btn--full">Get Free Advice</a>
+    </div>
+  </nav>
+
+  <main>
+    <article class="blog-post">
+      <div class="container">
+        <a href="../../blog.html" class="blog-post__back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          All Articles
+        </a>
+
+        <div class="blog-post__featured-image"><img src="https://ilaaj.s3.ap-southeast-2.amazonaws.com/blog/ai-health-app-kaise-kaam-karta-hai.jpg" alt="Illustration of AI triage chat flow connecting to a verified doctor"></div>
+
+        <div class="blog-post__author">
+          <img src="../../assets/Icon-192.png" alt="Ilaaj AI Medical Team" class="blog-post__author-avatar">
+          <div class="blog-post__author-info">
+            <div class="blog-post__author-name">Ilaaj AI Medical Team</div>
+            <div class="blog-post__author-creds">PMDC-verified doctors reviewing every article</div>
+            <div class="blog-post__author-dates">Published: July 30, 2026 | Last reviewed: July 30, 2026</div>
+          </div>
+        </div>
+
+        <h1 class="blog-post__title">How the AI Health App Works — Triage and Doctor Verification Guide</h1>
+
+        <div class="blog-post__tldr">
+          <div class="blog-post__tldr-title">TL;DR — Key Takeaways</div>
+          <ul>
+            <li>AI triage assesses patient symptoms in a structured way</li>
+            <li>The AI creates a draft prescription but never approves it itself</li>
+            <li>Every prescription is reviewed by a licensed PMDC doctor</li>
+            <li>This combination merges AI speed with a doctor's legal authority</li>
+            <li>For red flag symptoms, the AI immediately advises ER referral</li>
+          </ul>
+        </div>
+
+        <div class="blog-post__content">
+
+<table class="blog-post__quick-facts">
+  <caption>AI Health App Process — Quick Facts</caption>
+  <tbody>
+    <tr><td>AI's role</td><td>Structured intake, symptom assessment, draft prescription</td></tr>
+    <tr><td>Doctor's role</td><td>Final review, approval, or modification</td></tr>
+    <tr><td>Safety mechanism</td><td>Red flag detection — emergency referral</td></tr>
+    <tr><td>Language processing</td><td>Roman Urdu, Urdu, English</td></tr>
+    <tr><td>Legal validity</td><td>Only a doctor-approved prescription is valid</td></tr>
+  </tbody>
+</table>
+<h2>The Core Concept of an AI Health App</h2>
+<p>Ilaaj AI's fundamental principle is simple: <strong>the AI performs fast, structured clinical reasoning; a licensed doctor provides trust and legal validity</strong>. Combining these two elements creates a system that is both fast and safe.</p>
+
+<h2>Step-by-Step Technical Process</h2>
+
+<h3>1. Symptom Intake — Natural Language Processing</h3>
+<p>When a user types their complaint (in Roman Urdu, Urdu, or English), the AI uses natural language processing to understand symptoms, duration, and severity. It also understands casual, conversational input — like "my head is hurting" or "mera sir dard kar raha hai".</p>
+
+<h3>2. Structured Question-Card System</h3>
+<p>The AI doesn't ask overwhelming open-ended questions — instead it asks <strong>5-7 focused, tap-to-select questions</strong> that collect clinically relevant information:</p>
+<ul>
+<li>Symptom severity (scale-based)</li>
+<li>Duration and onset pattern</li>
+<li>Associated symptoms (for red flag screening)</li>
+<li>Medical history and current medications</li>
+<li>Allergies</li>
+</ul>
+
+<h3>3. Red Flag Detection</h3>
+<p>A critical function of the AI is <strong>identifying red flag symptoms</strong> — if any emergency-level symptom is mentioned (like severe chest pain, breathing difficulty, stroke signs), the system immediately refers the user to emergency care rather than continuing the normal consultation flow.</p>
+
+<h3>4. Draft Prescription Generation</h3>
+<p>Based on the collected information, the AI generates a <strong>structured draft prescription</strong> including possible diagnosis, recommended medications with dosage, lifestyle advice, and red-flag warnings. This is <strong>a draft, not final</strong> — clearly labeled as such.</p>
+
+<div class="blog-post__inline-cta">
+  <p>Experience this process yourself — start your first AI-assisted consultation.</p>
+  <a href="https://app.ilaaj.ai/chat">Start a Consultation</a>
+</div>
+
+<h3>5. Doctor Review — The Most Important Step</h3>
+<p>This is Ilaaj AI's <strong>most critical differentiator</strong>. Every AI-generated draft goes to a <strong>licensed PMDC-registered doctor</strong> who:</p>
+<ul>
+<li>Reviews the entire chat history</li>
+<li>Checks the patient's medical history</li>
+<li>Verifies the AI's diagnosis and recommendations</li>
+<li>Approves it as-is, or modifies it</li>
+<li>Applies their own professional judgment</li>
+</ul>
+
+<h3>6. Legal Validity</h3>
+<p>Only a <strong>doctor-approved</strong> prescription is legally valid — the AI's draft is never final on its own. The prescription is delivered with the doctor's digital signature and PMDC number, accepted at any pharmacy in Pakistan.</p>
+
+<h2>Safety Mechanisms</h2>
+<ul>
+<li><strong>Multi-layer red flag screening</strong> — emergency referral based on symptom severity</li>
+<li><strong>Doctor oversight</strong> — human verification on every single prescription</li>
+<li><strong>Clear disclaimers</strong> — AI-generated content is clearly labeled</li>
+<li><strong>Data encryption</strong> — to protect patient privacy</li>
+<li><strong>Scope limitation</strong> — the AI only handles common, non-emergency conditions</li>
+</ul>
+
+<h2>Where the AI Works — And Where It Doesn't</h2>
+<h3>AI-suitable:</h3>
+<ul>
+<li>Common infections — fever, cough, cold</li>
+<li>Minor injuries and pain</li>
+<li>Skin issues</li>
+<li>Chronic disease follow-ups</li>
+<li>Medication refills</li>
+</ul>
+<h3>Outside the AI's Scope — Emergency Referral:</h3>
+<ul>
+<li>Chest pain (heart attack risk)</li>
+<li>Stroke symptoms</li>
+<li>Severe trauma</li>
+<li>Severe allergic reactions</li>
+<li>Suicide risk</li>
+</ul>
+
+<h2>Why Is This System Trustworthy?</h2>
+<p>Traditional pure-AI health apps (that give direct diagnoses without doctor verification) carry risk because AI models can sometimes misinterpret. Ilaaj AI's <strong>human-in-the-loop</strong> approach ensures that no prescription reaches a patient without professional oversight.</p>
+
+<h2>Conclusion</h2>
+<p>Ilaaj AI's triage and doctor-verification system <strong>combines the AI's efficiency with a doctor's medical authority</strong> — the result is a fast, accessible, yet medically safe healthcare solution. Experience this process yourself on <strong>Ilaaj AI</strong>.</p>
+        </div>
+
+        <div class="blog-post__faq">
+          <h2>Frequently Asked Questions</h2>
+          <div class="blog-post__faq-item">
+            <h3>Can the AI approve a prescription on its own?</h3>
+            <p>No, the AI only creates a draft prescription — final approval always comes from a licensed PMDC doctor who reviews the entire chat history and medical context. An AI-only prescription is never legally valid.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>What does the AI do if I have an emergency symptom?</h3>
+            <p>The AI's red flag detection system stops the normal flow as soon as it identifies emergency-level symptoms (chest pain, stroke signs, severe bleeding) and immediately refers the user to emergency care (1122 or the nearest ER).</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>How long does it take a doctor to review the AI's draft?</h3>
+            <p>In most cases, just a few minutes — the entire process (from symptom input to final approval) takes 15-20 minutes on average, including doctor review.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>Does the AI system only understand Urdu or Roman Urdu?</h3>
+            <p>No, Ilaaj AI naturally works in Roman Urdu, Urdu script, and English — users can interact in whichever language they're comfortable with.</p>
+          </div>
+          <div class="blog-post__faq-item">
+            <h3>For what conditions is the AI not appropriate?</h3>
+            <p>Emergency situations like chest pain, stroke symptoms, severe trauma, severe allergic reactions, and suicide risk are outside the AI's scope — for these, the system immediately triggers an emergency referral instead of the normal consultation flow.</p>
+          </div>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="blog-post__related">
+          <h2>Related Articles</h2>
+          <ul class="blog-post__related-list">
+            <li><a href="../../blog/online-mashwara-kaise-len.html">How to Get an Online Consultation</a></li>
+            <li><a href="../../blog/online-medicine-delivery-pakistan.html">Online Medicine Delivery in Pakistan</a></li>
+            <li><a href="../../blog.html">Browse All Health Articles &rarr;</a></li>
+          </ul>
+        </div>
+
+        <div class="blog-post__about">
+          <img src="../../assets/Icon-192.png" alt="Ilaaj AI" class="blog-post__about-logo">
+          <div class="blog-post__about-text">
+            <strong>About Ilaaj AI</strong>
+            <p>Ilaaj AI is Pakistan's first AI-powered health platform. Chat about your symptoms in Urdu or English, get AI-powered triage, and receive doctor-verified prescriptions — affordable and accessible, 24/7.</p>
+          </div>
+        </div>
+
+        <div class="blog-post__cta">
+          <div class="blog-post__cta-card">
+            <h3 class="blog-post__cta-title">Need Health Advice?</h3>
+            <p class="blog-post__cta-desc">Chat with our AI health assistant in any language. Get doctor-verified prescriptions at affordable rates.</p>
+            <div class="blog-post__cta-actions">
+              <a href="https://app.ilaaj.ai/chat" class="btn btn--hero-primary">Start Consultation</a>
+              <a href="../../blog.html" class="btn--outline">Read More Articles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <img src="../../assets/ilaaj-logo.jpg" alt="Ilaaj AI" class="footer__logo-img" width="36" height="36" loading="lazy">
+            <span class="footer__logo-text">Ilaaj AI</span>
+          </div>
+          <p class="footer__brand-desc">Pakistan's first AI-powered health platform. Chat about your symptoms in any language, get AI triage, and receive doctor-verified prescriptions &mdash; affordable and accessible, 24/7.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/ilaaj_ai/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.516 2.497 5.783 2.225 7.149 2.163 8.415 2.105 8.795 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038C23.987 15.668 24 15.259 24 12s-.013-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.013 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324A6.162 6.162 0 0 0 12 5.838zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61588590745625" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+            <a href="https://x.com/ilaajai" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="footer__social-link">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Product</h4>
+          <ul class="footer__links">
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#how-it-works">How It Works</a></li>
+            <li><a href="/#doctors">Our Doctors</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Legal</h4>
+          <ul class="footer__links">
+            <li><a href="../../privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="../../terms-and-conditions.html">Terms &amp; Conditions</a></li>
+            <li><a href="../../support.html">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">Contact</h4>
+          <p class="footer__contact-text">Questions or feedback?</p>
+          <a href="mailto:hello@ilaaj.ai" class="footer__email">hello@ilaaj.ai</a>
+          <p class="footer__emergency">For emergencies, call <strong>1122</strong> (Rescue)</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span class="footer-year"></span> Ilaaj AI. All rights reserved.</p>
+        <p class="footer__disclaimer">Ilaaj AI is for general health consultations and non-emergency medical guidance. For emergencies, call 1122 (Rescue) or visit the nearest hospital.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+    document.querySelectorAll('.footer-year').forEach(el => el.textContent = new Date().getFullYear());
+  </script>
+  <!-- Tawk.to Live Chat (lazy-loaded) -->
+  <script>
+  (function() {
+    var tawkLoaded = false;
+    function loadTawk() {
+      if (tawkLoaded) return;
+      tawkLoaded = true;
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/69ce56b0127eae1c37be0e72/1jl70596p';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    }
+    document.addEventListener('scroll', loadTawk, {once: true});
+    document.addEventListener('click', loadTawk, {once: true});
+    document.addEventListener('mouseover', loadTawk, {once: true});
+  })();
+  </script>
+</body>
+</html>

@@ -49,7 +49,10 @@ export const GET: APIRoute = () => {
     .join('');
 
   // Posts: pk version always indexable; en version only when an EN source file exists.
+  // Skip posts still scheduled for the future — no point submitting a URL Google will
+  // just find noindex on (see blog/[slug].astro's isFuture check).
   const postEntries = posts
+    .filter(p => !p.scheduled || p.scheduled <= TODAY)
     .flatMap(p => {
       const lastmod = p.scheduled ?? new Date(p.date).toISOString().split('T')[0];
       const enLoc = `/blog/${p.slug}`;
