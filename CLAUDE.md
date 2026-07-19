@@ -33,7 +33,7 @@ public/           # Static assets (images, icons, fonts)
 - Use Astro's built-in i18n routing (`astro.config.ts` i18n config).
 
 ## Analytics & Scripts
-- PostHog, GTM, Sentry scripts go in `BaseLayout.astro` only — never in individual pages.
+- Analytics scripts (GTM, Microsoft Clarity, Sentry) go in `BaseLayout.astro` only — never in individual pages. (PostHog was removed — do not re-add.)
 - Ad traffic redirect script (fbclid/gclid → app.ilaaj.ai/chat) goes in BaseLayout head.
 
 ## SEO
