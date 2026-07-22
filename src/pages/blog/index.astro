@@ -3,6 +3,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { posts } from '../../data/blog-posts';
 
 const today = new Date().toISOString().split('T')[0];
+// Newest first. A blog listing must lead with the most recent posts, not the raw
+// order entries sit in the data file (new posts get appended to the end there).
+// Sort by scheduled date, falling back to the display date, descending.
+const sortedPosts = [...posts].sort((a, b) =>
+  new Date(b.scheduled ?? b.date).getTime() - new Date(a.scheduled ?? a.date).getTime()
+);
 ---
 
 <BaseLayout
@@ -25,7 +31,7 @@ const today = new Date().toISOString().split('T')[0];
     <section class="blog-grid-section">
       <div class="container">
         <div class="blog-grid">
-          {posts.map(post => {
+          {sortedPosts.map(post => {
             const isHidden = post.scheduled && post.scheduled > today;
             return (
               <div data-scheduled={post.scheduled} hidden={isHidden || undefined}>

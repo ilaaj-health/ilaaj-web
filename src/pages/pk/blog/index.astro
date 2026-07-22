@@ -3,7 +3,12 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { posts } from '../../../data/blog-posts';
 
 const today = new Date().toISOString().split('T')[0];
-const visiblePosts = posts.filter(p => !p.scheduled || p.scheduled <= today);
+// Newest first (see blog/index.astro) — new posts are appended to the data file,
+// so without sorting the listing leads with the oldest batch.
+const sortedPosts = [...posts].sort((a, b) =>
+  new Date(b.scheduled ?? b.date).getTime() - new Date(a.scheduled ?? a.date).getTime()
+);
+const visiblePosts = sortedPosts.filter(p => !p.scheduled || p.scheduled <= today);
 const collectionSchema = { "@context": "https://schema.org", "@type": "CollectionPage", "name": "Ilaaj AI Health Blog", "url": "https://www.ilaaj.ai/blog", "description": "Expert health articles in Urdu & English for Pakistanis", "publisher": { "@type": "Organization", "name": "Ilaaj AI", "url": "https://www.ilaaj.ai" }, "itemListElement": visiblePosts.map((p, i) => ({ "@type": "ListItem", "position": i + 1, "name": p.title, "url": `https://www.ilaaj.ai/blog/${p.slug}` })) };
 const breadcrumbSchema = { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.ilaaj.ai/" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.ilaaj.ai/blog" }] };
 
@@ -35,7 +40,7 @@ const arrowSvg = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" st
     <section class="blog-grid-section">
       <div class="container">
         <div class="blog-grid">
-          {posts.map(post => {
+          {sortedPosts.map(post => {
             const isHidden = post.scheduled && post.scheduled > today;
             return (
               <div data-scheduled={post.scheduled} hidden={isHidden || undefined}>
