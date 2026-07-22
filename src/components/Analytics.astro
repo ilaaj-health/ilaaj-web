@@ -62,6 +62,26 @@
   })();
 </script>
 
+<!-- Funnel: fire consultation_cta_click on any "Get consultation" CTA into the app.
+     Site-wide delegated listener so every entry point (Hero, Nav, Footer, blog CTAs)
+     is covered. Pushes to dataLayer (GTM convention); GTM replays the queue on load. -->
+<script is:inline>
+  (function () {
+    window.dataLayer = window.dataLayer || [];
+    document.addEventListener('click', function (e) {
+      var t = e.target;
+      var a = t && t.closest ? t.closest('a[href*="app.ilaaj.ai/chat"]') : null;
+      if (!a) return;
+      window.dataLayer.push({
+        event: 'consultation_cta_click',
+        cta_location: a.className || 'unknown',
+        link_url: a.href,
+        link_text: (a.textContent || '').trim().slice(0, 80)
+      });
+    }, true);
+  })();
+</script>
+
 <!-- Microsoft Clarity (lazy) -->
 <script is:inline>
   (function () {
