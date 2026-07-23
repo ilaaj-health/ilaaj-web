@@ -36,31 +36,34 @@
 </script>
 
 
-<!-- GTM (lazy) -->
+<!-- GA4 (direct gtag, lazy) — replaces GTM-5XKTHF96, whose empty container fired
+     no tags (www sent zero GA4 data). Stub queues calls; gtag.js replays on load. -->
 <script is:inline>
   (function () {
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function () { dataLayer.push(arguments); };
+    gtag('js', new Date()); gtag('config', 'G-KNTMD61HWL');
     var loaded = false;
     function load() {
       if (loaded) return; loaded = true;
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5XKTHF96');
+      var s = document.createElement('script');
+      s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=G-KNTMD61HWL';
+      document.head.appendChild(s);
     }
     ['scroll','click','touchstart','mousemove'].forEach(function(e){ document.addEventListener(e, load, {once:true,passive:true}); });
     'requestIdleCallback' in window ? requestIdleCallback(load,{timeout:3000}) : setTimeout(load,3000);
   })();
 </script>
 
-<!-- Funnel: fire consultation_cta_click on any "Get consultation" CTA into the app.
-     Site-wide delegated listener so every entry point (Hero, Nav, Footer, blog CTAs)
-     is covered. Pushes to dataLayer (GTM convention); GTM replays the queue on load. -->
+<!-- Funnel: consultation_cta_click on any CTA into the app (Hero, Nav, Footer,
+     HowItWorks, blog). Via the gtag stub above — pre-load clicks queue, not drop. -->
 <script is:inline>
   (function () {
-    window.dataLayer = window.dataLayer || [];
     document.addEventListener('click', function (e) {
       var t = e.target;
-      var a = t && t.closest ? t.closest('a[href*="app.ilaaj.ai/chat"]') : null;
+      var a = t && t.closest ? t.closest('a[href*="app.ilaaj.ai"]') : null;
       if (!a) return;
-      window.dataLayer.push({
-        event: 'consultation_cta_click',
+      window.gtag('event', 'consultation_cta_click', {
         cta_location: a.className || 'unknown',
         link_url: a.href,
         link_text: (a.textContent || '').trim().slice(0, 80)
